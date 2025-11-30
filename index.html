@@ -16,7 +16,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 100vh; /* Allow scrolling if needed */
+            min-height: 100vh;
             text-align: center;
         }
 
@@ -26,13 +26,13 @@
         h2 { font-size: 1.5rem; font-weight: 300; margin-bottom: 30px; color: #e9d5ff; }
         
         /* Section Headers */
-        h3 { font-size: 1.2rem; text-transform: uppercase; color: #a78bfa; margin-top: 40px; border-bottom: 1px solid #a78bfa; display: inline-block; padding-bottom: 5px;}
+        h3 { font-size: 1.2rem; text-transform: uppercase; color: #a78bfa; margin-top: 40px; margin-bottom: 20px; border-bottom: 1px solid #a78bfa; display: inline-block; padding-bottom: 5px;}
 
-        .btn-group { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px; }
+        .btn-group { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-bottom: 10px; }
         
         .btn {
             padding: 15px 25px; font-size: 1rem; font-weight: bold;
-            text-decoration: none; border-radius: 50px; transition: transform 0.2s; display: inline-block;
+            text-decoration: none; border-radius: 50px; transition: transform 0.2s; display: inline-block; margin-bottom: 10px;
         }
 
         /* PREMIUM BUTTONS */
@@ -40,7 +40,7 @@
         .btn-algebra { background-color: #3b82f6; color: white; border: 2px solid #3b82f6; } /* Blue */
 
         /* FREEBIE BUTTONS (Outline style) */
-        .btn-free { background-color: transparent; color: white; border: 2px solid #ffffff; font-size: 0.9rem; }
+        .btn-free { background-color: transparent; color: white; border: 2px solid #ffffff; font-size: 0.9rem; width: 280px; }
 
         /* SOCIAL BUTTONS */
         .btn-youtube { background-color: #cc0000; color: white; border: 2px solid #cc0000; }
@@ -51,6 +51,7 @@
         @media (max-width: 600px) {
             h1 { font-size: 2.5rem; }
             .btn-group { flex-direction: column; }
+            .btn-free { width: 100%; }
         }
     </style>
 </head>
@@ -65,24 +66,29 @@
             <!-- Number Booklet -->
             <a href="https://payhip.com/b/IVWzJ" class="btn btn-number">Buy Number Booklet (£14.99)</a>
             
-            <!-- Algebra Booklet (PASTE YOUR PAYHIP LINK HERE) -->
-            <a href="#" class="btn btn-algebra">Buy Algebra Booklet (£14.99)</a>
+            <!-- Algebra Booklet -->
+            <a href="PASTE_ALGEBRA_LINK_HERE" class="btn btn-algebra">Buy Algebra Booklet (£14.99)</a>
         </div>
 
         <!-- FREEBIES SECTION -->
         <h3>Free Sample Worksheets</h3>
+        <p style="font-size: 0.9rem; margin-bottom: 20px;">Download these worksheets for free to see the quality of our resources.</p>
+        
         <div class="btn-group">
-            <!-- Ensure these filenames match exactly what you uploaded to GitHub -->
+            <!-- MAKE SURE THESE MATCH YOUR FILENAMES ON GITHUB EXACTLY -->
             <a href="1.1 Natural Numbers.pdf" class="btn btn-free">1.1 Natural Numbers</a>
-            <a href="1.2a Squares.pdf" class="btn btn-free">1.2a Squares</a>
-            <!-- Add more lines here for 1.3, 1.4 etc -->
+            <a href="1.2 Squares and Cubes.pdf" class="btn btn-free">1.2 Squares & Cubes</a>
+        </div>
+        <div class="btn-group">
+            <a href="1.3 Prime Numbers.pdf" class="btn btn-free">1.3 Primes, HCF, LCM</a>
+            <a href="1.4 Rational Numbers.pdf" class="btn btn-free">1.4 Rational & Irrational</a>
         </div>
 
         <!-- CONNECT SECTION -->
         <div style="margin-top: 40px;">
             <div class="btn-group">
+                <a href="https://payhip.com/bradleysmaths" class="btn btn-shop">Browse Full Shop (Individual Sheets)</a>
                 <a href="https://www.youtube.com/@BradleysMaths" class="btn btn-youtube">Watch Video Solutions</a>
-                <a href="https://payhip.com/bradleysmaths" class="btn btn-shop">Browse Full Shop</a>
             </div>
         </div>
     </div>
