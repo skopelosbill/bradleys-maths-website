@@ -16,32 +16,37 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh; /* Allow scrolling if needed */
             text-align: center;
         }
 
-        .container { max-width: 800px; padding: 20px; }
+        .container { max-width: 800px; padding: 40px 20px; }
 
         h1 { font-size: 3.5rem; margin-bottom: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px;}
-        h2 { font-size: 1.5rem; font-weight: 300; margin-bottom: 40px; color: #e9d5ff; }
-        p { font-size: 1.2rem; line-height: 1.6; margin-bottom: 40px; }
+        h2 { font-size: 1.5rem; font-weight: 300; margin-bottom: 30px; color: #e9d5ff; }
+        
+        /* Section Headers */
+        h3 { font-size: 1.2rem; text-transform: uppercase; color: #a78bfa; margin-top: 40px; border-bottom: 1px solid #a78bfa; display: inline-block; padding-bottom: 5px;}
 
-        .btn-group { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+        .btn-group { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px; }
+        
         .btn {
-            padding: 15px 30px; font-size: 1.1rem; font-weight: bold;
-            text-decoration: none; border-radius: 50px; transition: transform 0.2s;
+            padding: 15px 25px; font-size: 1rem; font-weight: bold;
+            text-decoration: none; border-radius: 50px; transition: transform 0.2s; display: inline-block;
         }
-        
-        /* Product Button (Green for Number) */
-        .btn-product { background-color: #10b981; color: white; border: 2px solid #10b981; }
-        
-        /* YouTube Red */
-        .btn-youtube { background-color: #cc0000; color: white; border: 2px solid #cc0000; }
-        
-        /* Shop Button - White Outline */
-        .btn-shop { background-color: transparent; color: white; border: 2px solid white; }
 
-        .btn:hover { transform: scale(1.05); cursor: pointer; }
+        /* PREMIUM BUTTONS */
+        .btn-number { background-color: #10b981; color: white; border: 2px solid #10b981; } /* Green */
+        .btn-algebra { background-color: #3b82f6; color: white; border: 2px solid #3b82f6; } /* Blue */
+
+        /* FREEBIE BUTTONS (Outline style) */
+        .btn-free { background-color: transparent; color: white; border: 2px solid #ffffff; font-size: 0.9rem; }
+
+        /* SOCIAL BUTTONS */
+        .btn-youtube { background-color: #cc0000; color: white; border: 2px solid #cc0000; }
+        .btn-shop { background-color: #4c1d95; color: white; border: 2px solid #ffffff; }
+
+        .btn:hover { transform: scale(1.05); cursor: pointer; opacity: 0.9; }
 
         @media (max-width: 600px) {
             h1 { font-size: 2.5rem; }
@@ -52,21 +57,33 @@
 <body>
     <div class="container">
         <h1>Bradley's Maths</h1>
-        <h2>Professional GCSE Mathematics Resources</h2>
-        <p>
-            <b>The Complete GCSE Number Booklet is now available.</b><br>
-            Includes 33 worksheets and full exam-style model answers.<br>
-            Watch the video solutions on YouTube.
-        </p>
-        <div class="btn-group">
-            <!-- The Money Button -->
-            <a href="https://payhip.com/b/IVWzJ" class="btn btn-product">Buy Number Booklet (£14.99)</a>
-            
-            <!-- The Content Button -->
-            <a href="https://www.youtube.com/@BradleysMaths" class="btn btn-youtube">Watch Video Solutions</a>
+        <h2>Professional GCSE Resources</h2>
 
-            <!-- The Shop Button (For everything else) -->
-            <a href="https://payhip.com/bradleysmaths" class="btn btn-shop">Browse All Resources</a>
+        <!-- PREMIUM SECTION -->
+        <h3>Complete Course Booklets</h3>
+        <div class="btn-group">
+            <!-- Number Booklet -->
+            <a href="https://payhip.com/b/IVWzJ" class="btn btn-number">Buy Number Booklet (£14.99)</a>
+            
+            <!-- Algebra Booklet (PASTE YOUR PAYHIP LINK HERE) -->
+            <a href="#" class="btn btn-algebra">Buy Algebra Booklet (£14.99)</a>
+        </div>
+
+        <!-- FREEBIES SECTION -->
+        <h3>Free Sample Worksheets</h3>
+        <div class="btn-group">
+            <!-- Ensure these filenames match exactly what you uploaded to GitHub -->
+            <a href="1.1 Natural Numbers.pdf" class="btn btn-free">1.1 Natural Numbers</a>
+            <a href="1.2a Squares.pdf" class="btn btn-free">1.2a Squares</a>
+            <!-- Add more lines here for 1.3, 1.4 etc -->
+        </div>
+
+        <!-- CONNECT SECTION -->
+        <div style="margin-top: 40px;">
+            <div class="btn-group">
+                <a href="https://www.youtube.com/@BradleysMaths" class="btn btn-youtube">Watch Video Solutions</a>
+                <a href="https://payhip.com/bradleysmaths" class="btn btn-shop">Browse Full Shop</a>
+            </div>
         </div>
     </div>
 </body>
