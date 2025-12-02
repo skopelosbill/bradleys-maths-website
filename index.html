@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 1. STANDARD SEO (Privacy-First & Product-Focused) -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bradley's Maths | Professional GCSE Resources</title>
+    <title>Bradley's Maths | GCSE Higher Tier Mathematics Resources</title>
+    
+    <meta name="description" content="Professional GCSE Higher Tier Mathematics resources. Comprehensive, colour-coded algebra, number, and geometry worksheets with detailed step-by-step solutions. Aligned with AQA, Edexcel, OCR & WJEC.">
+    <meta name="keywords" content="GCSE Maths, Higher Tier, Algebra Worksheets, Maths Revision, AQA, Edexcel, OCR, WJEC, Grade 9 Maths, Colour Coded Maths">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Social Sharing (Open Graph) -->
+    <meta property="og:title" content="Bradley's Maths | Professional GCSE Resources">
+    <meta property="og:description" content="Master Higher Tier GCSE Maths. High-quality worksheets and answer booklets designed for the 9-1 syllabus.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bradleysmaths.co.uk">
+    <meta property="og:image" content="https://bradleysmaths.co.uk/logo.png"> <!-- Optional: Add a logo image later -->
+
+    <!-- 2. AISEO SCHEMA (Defining the Brand, not the Person) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "Bradley's Maths",
+          "url": "https://bradleysmaths.co.uk",
+          "logo": "https://bradleysmaths.co.uk/logo.png",
+          "description": "Publisher of high-quality educational resources for GCSE Higher Tier Mathematics."
+        },
+        {
+          "@type": "WebSite",
+          "name": "Bradley's Maths",
+          "url": "https://bradleysmaths.co.uk",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://bradleysmaths.co.uk/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "GCSE Algebra Booklet",
+          "description": "A comprehensive 44-worksheet collection covering the complete Higher Tier Algebra syllabus.",
+          "brand": { "@type": "Brand", "name": "Bradley's Maths" },
+          "offers": {
+            "@type": "Offer",
+            "price": "14.99",
+            "priceCurrency": "GBP",
+            "availability": "https://schema.org/InStock",
+            "url": "https://payhip.com/b/wRN86"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- 3. VISUAL STYLING (The Violet Brand) -->
     <style>
-        /* The Violet Brand */
         body {
             margin: 0;
             padding: 0;
@@ -15,38 +67,50 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
             min-height: 100vh;
             text-align: center;
         }
 
-        .container { max-width: 800px; padding: 40px 20px; }
+        .container { max-width: 800px; padding: 40px 20px; width: 100%; box-sizing: border-box; }
 
-        h1 { font-size: 3.5rem; margin-bottom: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px;}
-        h2 { font-size: 1.5rem; font-weight: 300; margin-bottom: 30px; color: #e9d5ff; }
+        h1 { font-size: 3.5rem; margin-bottom: 5px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-top: 20px;}
+        h2 { font-size: 1.4rem; font-weight: 300; margin-bottom: 30px; color: #e9d5ff; letter-spacing: 1px;}
         
         /* Section Headers */
         h3 { font-size: 1.2rem; text-transform: uppercase; color: #a78bfa; margin-top: 40px; margin-bottom: 20px; border-bottom: 1px solid #a78bfa; display: inline-block; padding-bottom: 5px;}
+        
+        /* The "Trust Badge" - Depersonalised */
+        .trust-badge {
+            background-color: rgba(255,255,255,0.1);
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+            color: #ddd6fe;
+            display: inline-block;
+        }
 
+        /* Buttons */
         .btn-group { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-bottom: 10px; }
         
         .btn {
             padding: 15px 25px; font-size: 1rem; font-weight: bold;
-            text-decoration: none; border-radius: 50px; transition: transform 0.2s; display: inline-block; margin-bottom: 10px;
+            text-decoration: none; border-radius: 50px; transition: transform 0.2s, box-shadow 0.2s; display: inline-block; margin-bottom: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
         }
 
         /* PREMIUM BUTTONS */
         .btn-number { background-color: #10b981; color: white; border: 2px solid #10b981; } /* Green */
         .btn-algebra { background-color: #3b82f6; color: white; border: 2px solid #3b82f6; } /* Blue */
 
-        /* FREEBIE BUTTONS (Outline style) */
+        /* FREEBIE BUTTONS */
         .btn-free { background-color: transparent; color: white; border: 2px solid #ffffff; font-size: 0.9rem; width: 280px; }
 
         /* SOCIAL BUTTONS */
         .btn-youtube { background-color: #cc0000; color: white; border: 2px solid #cc0000; }
-        .btn-shop { background-color: #4c1d95; color: white; border: 2px solid #ffffff; }
+        .btn-shop { background-color: #ffffff; color: #4c1d95; border: 2px solid #ffffff; }
 
-        .btn:hover { transform: scale(1.05); cursor: pointer; opacity: 0.9; }
+        .btn:hover { transform: translateY(-3px); cursor: pointer; opacity: 0.95; box-shadow: 0 6px 12px rgba(0,0,0,0.3); }
 
         @media (max-width: 600px) {
             h1 { font-size: 2.5rem; }
@@ -59,23 +123,23 @@
     <div class="container">
         <h1>Bradley's Maths</h1>
         <h2>Professional GCSE Resources</h2>
+        
+        <div class="trust-badge">
+            Excellence in Mathematics Education • Skopelos, Greece
+        </div>
 
         <!-- PREMIUM SECTION -->
         <h3>Complete Course Booklets</h3>
+        <p style="font-size: 0.9rem; margin-bottom: 20px; color: #ddd6fe;">Everything you need to master the topic. Notes, Examples, Worksheets & Answers.</p>
         <div class="btn-group">
-            <!-- Number Booklet -->
-            <a href="https://payhip.com/b/IVWzJ" class="btn btn-number">Buy Number Booklet (£14.99)</a>
-            
-            <!-- Algebra Booklet -->
-            <a href="https://payhip.com/b/wRN86" class="btn btn-algebra">Buy Algebra Booklet (£14.99)</a>
+            <a href="https://payhip.com/b/IVWzJ" class="btn btn-number">Number Booklet (£14.99)</a>
+            <a href="https://payhip.com/b/wRN86" class="btn btn-algebra">Algebra Booklet (£14.99)</a>
         </div>
 
         <!-- FREEBIES SECTION -->
         <h3>Free Sample Worksheets</h3>
-        <p style="font-size: 0.9rem; margin-bottom: 20px;">Download these worksheets for free to see the quality of our resources.</p>
-        
         <div class="btn-group">
-            <!-- MAKE SURE THESE MATCH YOUR FILENAMES ON GITHUB EXACTLY -->
+            <!-- Ensure these match your GitHub filenames exactly -->
             <a href="1.1 Natural Numbers and Integers.pdf" class="btn btn-free">1.1 Natural Numbers</a>
             <a href="1.2 Squares and Cubes.pdf" class="btn btn-free">1.2 Squares & Cubes</a>
         </div>
@@ -85,10 +149,10 @@
         </div>
 
         <!-- CONNECT SECTION -->
-        <div style="margin-top: 40px;">
+        <div style="margin-top: 50px; margin-bottom: 50px;">
             <div class="btn-group">
-                <a href="https://payhip.com/bradleysmaths" class="btn btn-shop">Browse Full Shop (Individual Sheets)</a>
-                <a href="https://www.youtube.com/@BradleysMaths" class="btn btn-youtube">Watch Video Solutions</a>
+                <a href="https://payhip.com/bradleysmaths" class="btn btn-shop">Full Store (Individual Sheets)</a>
+                <a href="https://www.youtube.com/@BradleysMaths" class="btn btn-youtube">YouTube Channel</a>
             </div>
         </div>
     </div>
