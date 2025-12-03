@@ -114,46 +114,292 @@
     <!-- 4. JAVASCRIPT ENGINE -->
     <script>
         // --- DATA: THE QUESTIONS ---
-        const problemBank = [
+       const problemBank = [
+            {
+                q: "Expand and simplify: $(2x + 3)(x - 5)$",
+                steps: [
+                    "Multiply the First terms: $2x \\times x = 2x^2$.",
+                    "Multiply the Outside/Inside terms: $2x \\times -5 = -10x$ and $3 \\times x = 3x$.",
+                    "Multiply the Last terms: $3 \\times -5 = -15$.",
+                    "Collect like terms: $-10x + 3x = -7x$.",
+                    "Final Answer: $$2x^2 - 7x - 15$$"
+                ]
+            },
+            {
+                q: "A bag contains red and blue marbles. P(Red) = 0.3. There are 14 blue marbles. Calculate the total number of marbles.",
+                steps: [
+                    "Find P(Blue). $$1 - 0.3 = 0.7$$",
+                    "We know that 0.7 of the total ($T$) is equal to 14 marbles. $$0.7 \\times T = 14$$",
+                    "Solve for $T$: $$T = 14 \\div 0.7 = 20$$",
+                    "Final Answer: $$20 \\text{ marbles}$$"
+                ]
+            },
             {
                 q: "Write $0.00405 \\times 10^7$ as an ordinary number.",
                 steps: [
-                    "Check the power of 10. It is $10^7$, which means we move the decimal point 7 places to the right.",
-                    "$$0.00405 \\rightarrow 40500$$",
+                    "Identify the power of 10. $10^7$ means moving the decimal point 7 places to the right.",
+                    "Move the point: $0.00405 \\rightarrow 40,500$",
                     "Final Answer: $$40,500$$"
                 ]
             },
             {
-                q: "Simplify fully: $(3x^4 y^2)^3$",
+                q: "A regular polygon has an exterior angle of $24^\\circ$. Work out the number of sides.",
                 steps: [
-                    "Apply the power of 3 to the coefficient (the number). $$3^3 = 27$$",
-                    "Apply the power of 3 to the indices (multiply them). $$x^{4 \\times 3} = x^{12}$$ $$y^{2 \\times 3} = y^6$$",
-                    "Combine the parts. Final Answer: $$27x^{12}y^6$$"
+                    "Recall the rule: Sum of exterior angles = $360^\\circ$.",
+                    "Formula: $n = \\frac{360}{\\text{exterior angle}}$.",
+                    "Calculation: $$360 \\div 24 = 15$$",
+                    "Final Answer: $$15 \\text{ sides}$$"
+                ]
+            },
+            {
+                q: "Solve the simultaneous equations:<br>$$5x + 2y = 22$$$$3x - y = 11$$",
+                steps: [
+                    "Label the equations (1) and (2). Multiply equation (2) by 2 to match the $y$ coefficients: $$6x - 2y = 22 \\quad (3)$$",
+                    "Add equation (1) and (3) to eliminate $y$: $$5x + 6x = 22 + 22 \\rightarrow 11x = 44$$",
+                    "Solve for $x$: $$x = 4$$",
+                    "Substitute $x=4$ into equation (2): $$3(4) - y = 11 \\rightarrow 12 - y = 11$$",
+                    "Final Answer: $$x = 4, \\quad y = 1$$"
+                ]
+            },
+            {
+                q: "Probability of rain on Sat is 0.4. If it rains Sat, P(rain Sun) = 0.8. If dry Sat, P(rain Sun) = 0.3. Find P(Rain on exactly one day).",
+                steps: [
+                    "Scenario 1: Rain Sat AND Dry Sun. $$0.4 \\times 0.2 = 0.08$$",
+                    "Scenario 2: Dry Sat AND Rain Sun. $$0.6 \\times 0.3 = 0.18$$",
+                    "Add probabilities: $$0.08 + 0.18$$",
+                    "Final Answer: $$0.26$$"
                 ]
             },
             {
                 q: "Rationalise the denominator and simplify: $\\frac{12}{\\sqrt{3}}$",
                 steps: [
-                    "Multiply top and bottom by $\\sqrt{3}$. $$\\frac{12 \\times \\sqrt{3}}{\\sqrt{3} \\times \\sqrt{3}}$$",
-                    "Simplify the denominator. $$\\frac{12\\sqrt{3}}{3}$$",
-                    "Divide 12 by 3. Final Answer: $$4\\sqrt{3}$$"
+                    "Multiply the numerator and denominator by $\\sqrt{3}$.",
+                    "$$\\frac{12 \\times \\sqrt{3}}{\\sqrt{3} \\times \\sqrt{3}} = \\frac{12\\sqrt{3}}{3}$$",
+                    "Simplify the fraction: $12 \\div 3 = 4$.",
+                    "Final Answer: $$4\\sqrt{3}$$"
                 ]
             },
             {
-                q: "Expand and simplify: $(2x + 3)(x - 5)$",
+                q: "Find the equation of the straight line which passes through the points $(2, 5)$ and $(4, 11)$.",
                 steps: [
-                    "Multiply the First terms: $2x \\times x = 2x^2$",
-                    "Multiply the Outside/Inside terms: $2x \\times -5 = -10x$ and $3 \\times x = 3x$",
-                    "Multiply the Last terms: $3 \\times -5 = -15$",
-                    "Collect like terms: $-10x + 3x = -7x$. Final Answer: $$2x^2 - 7x - 15$$"
+                    "Step 1: Find the Gradient ($m$). $$m = \\frac{\\text{change in } y}{\\text{change in } x} = \\frac{11-5}{4-2} = \\frac{6}{2} = 3$$",
+                    "Step 2: Use $y = mx + c$. Substitute $m=3$ and point $(2,5)$. $$5 = 3(2) + c \\rightarrow 5 = 6 + c$$",
+                    "Step 3: Solve for $c$. $$c = -1$$",
+                    "Final Answer: $$y = 3x - 1$$"
+                ]
+            },
+            {
+                q: "The functions $f$ and $g$ are such that $f(x) = 3x - 1$ and $g(x) = x^2 + 4$. Find $fg(2)$.",
+                steps: [
+                    "Find $g(2)$ first (inside function): $$g(2) = 2^2 + 4 = 8$$",
+                    "Substitute this result into $f(x)$: $$f(8) = 3(8) - 1$$",
+                    "$$24 - 1 = 23$$",
+                    "Final Answer: $$23$$"
+                ]
+            },
+            {
+                q: "Divide £720 in the ratio 3 : 4 : 2. Calculate the difference between the largest share and the smallest share.",
+                steps: [
+                    "Find the total parts: $3 + 4 + 2 = 9$.",
+                    "Find the value of one part: $£720 \\div 9 = £80$.",
+                    "Calculate shares: $$3 \\times 80 = 240$$ $$4 \\times 80 = 320$$ $$2 \\times 80 = 160$$",
+                    "Calculate difference: $320 - 160$.",
+                    "Final Answer: $$£160$$"
+                ]
+            },
+            {
+                q: "A cone has a radius of 5cm and a vertical height of 12cm. Calculate the **total surface area** of the cone in terms of $\\pi$.",
+                steps: [
+                    "Step 1: Find the Slant Height ($l$) using Pythagoras. $$l = \\sqrt{5^2 + 12^2} = \\sqrt{169} = 13$$",
+                    "Step 2: Curved Surface Area = $\\pi r l$. $$\\pi \\times 5 \\times 13 = 65\\pi$$",
+                    "Step 3: Base Area (Circle) = $\\pi r^2$. $$\\pi \\times 5^2 = 25\\pi$$",
+                    "Step 4: Total Area = Curved + Base. (Note: Do not use 1/3, that is for volume!)",
+                    "Final Answer: $$90\\pi \\text{ cm}^2$$"
+                ]
+            },
+            {
+                q: "There are $n$ sweets. 6 are orange. Hannah eats two. P(Two Orange) = $\\frac{1}{3}$. Show that $n^2 - n - 90 = 0$.",
+                steps: [
+                    "Probability of first orange: $\\frac{6}{n}$.",
+                    "Probability of second orange (one less sweet): $\\frac{5}{n-1}$.",
+                    "Multiply: $$\\frac{6}{n} \\times \\frac{5}{n-1} = \\frac{30}{n(n-1)}$$",
+                    "Equate to $\\frac{1}{3}$ and cross multiply: $$90 = n(n-1)$$",
+                    "Rearrange: $$n^2 - n - 90 = 0$$ (Q.E.D.)"
                 ]
             },
             {
                 q: "Factorise fully: $3x^2 - 27$",
                 steps: [
-                    "Step 1: Look for a common factor. Both terms divide by 3. $$3(x^2 - 9)$$",
-                    "Step 2: Spot the Difference of Two Squares inside the bracket. $$(x^2 - 9) = (x+3)(x-3)$$",
+                    "Step 1: Factor out the common term (3). $$3(x^2 - 9)$$",
+                    "Step 2: Identify the Difference of Two Squares inside the bracket. $$x^2 - 9 = (x+3)(x-3)$$",
                     "Final Answer: $$3(x+3)(x-3)$$"
+                ]
+            },
+            {
+                q: "Alice invests £6000 for 3 years at 2.5% compound interest per year. Calculate the value of the investment at the end of 3 years.",
+                steps: [
+                    "Identify the multiplier. An increase of 2.5% is $100\\% + 2.5\\% = 102.5\\%$, which is a multiplier of $1.025$.",
+                    "Apply the formula: Original $\\times$ Multiplier$^n$",
+                    "$$6000 \\times 1.025^3$$",
+                    "$$6000 \\times 1.07689... = 6461.34375$$",
+                    "Final Answer (to nearest penny): $$£6461.34$$"
+                ]
+            },
+            {
+                q: "Line A has equation $y = 2x + 3$. Line B is perpendicular to Line A and passes through $(4, 1)$. Find the equation of Line B.",
+                steps: [
+                    "Step 1: Find gradient of Line A. $m = 2$.",
+                    "Step 2: Perpendicular gradient is the negative reciprocal. $$m_{\\perp} = -\\frac{1}{2}$$",
+                    "Step 3: Use $y = mx + c$. Substitute $m = -0.5$ and point $(4,1)$. $$1 = -0.5(4) + c \\rightarrow 1 = -2 + c$$",
+                    "Step 4: Solve for $c$. $$c = 3$$",
+                    "Final Answer: $$y = -\\frac{1}{2}x + 3$$"
+                ]
+            },
+            {
+                q: "Solve the simultaneous equations:<br>$$y = 2x + 1$$$$x^2 + y^2 = 29$$",
+                steps: [
+                    "Substitute (1) into (2): $$x^2 + (2x+1)^2 = 29$$",
+                    "Expand: $$x^2 + (4x^2 + 4x + 1) = 29$$",
+                    "Simplify to quadratic form: $$5x^2 + 4x - 28 = 0$$",
+                    "Factorise: $$(5x + 14)(x - 2) = 0$$",
+                    "Find x-values: $x = 2$ and $x = -2.8$.",
+                    "Substitute back to find y: $$x=2 \\rightarrow y=5$$ $$x=-2.8 \\rightarrow y=-4.6$$"
+                ]
+            },
+            {
+                q: "In a histogram, a bar representing the class $10 < h \\le 30$ has a frequency of 12. Calculate the Frequency Density.",
+                steps: [
+                    "Formula: Frequency Density = Frequency $\\div$ Class Width.",
+                    "Class Width = $30 - 10 = 20$.",
+                    "Calculation: $$12 \\div 20$$",
+                    "Final Answer: $$0.6$$"
+                ]
+            },
+            {
+                q: "Write $5\\sqrt{27} - 2\\sqrt{75}$ in the form $k\\sqrt{3}$ where $k$ is an integer.",
+                steps: [
+                    "Simplify $\\sqrt{27}$: $\\sqrt{9 \\times 3} = 3\\sqrt{3}$. So, $5\\sqrt{27} = 5(3\\sqrt{3}) = 15\\sqrt{3}$.",
+                    "Simplify $\\sqrt{75}$: $\\sqrt{25 \\times 3} = 5\\sqrt{3}$. So, $2\\sqrt{75} = 2(5\\sqrt{3}) = 10\\sqrt{3}$.",
+                    "Subtract the terms: $$15\\sqrt{3} - 10\\sqrt{3}$$",
+                    "Final Answer: $$5\\sqrt{3}$$"
+                ]
+            },
+            {
+                q: "Make $t$ the subject of the formula: $p = \\sqrt{\\frac{3t}{m}}$",
+                steps: [
+                    "Square both sides: $$p^2 = \\frac{3t}{m}$$",
+                    "Multiply by $m$: $$mp^2 = 3t$$",
+                    "Divide by 3:",
+                    "Final Answer: $$t = \\frac{mp^2}{3}$$"
+                ]
+            },
+            {
+                q: "Two similar solids, A and B, have surface areas in the ratio $16 : 25$. The volume of solid B is $500 \\text{ cm}^3$. Calculate the volume of solid A.",
+                steps: [
+                    "Area Ratio = $16:25$.",
+                    "Length Ratio (square root) = $\\sqrt{16}:\\sqrt{25} = 4:5$.",
+                    "Volume Ratio (cube the length ratio) = $4^3:5^3 = 64:125$.",
+                    "Scale factor from B to A is $\\frac{64}{125}$.",
+                    "Calculation: $$500 \\times \\frac{64}{125} = 4 \\times 64 = 256$$",
+                    "Final Answer: $$256 \\text{ cm}^3$$"
+                ]
+            },
+            {
+                q: "Solve the equation algebraically: $\\frac{3}{x+2} + \\frac{4}{x-3} = 2$",
+                steps: [
+                    "Multiply by both denominators to clear fractions: $$3(x-3) + 4(x+2) = 2(x+2)(x-3)$$",
+                    "Expand brackets: $$3x - 9 + 4x + 8 = 2(x^2 - x - 6)$$",
+                    "Simplify: $$7x - 1 = 2x^2 - 2x - 12$$",
+                    "Rearrange to quadratic form (=0): $$2x^2 - 9x - 11 = 0$$",
+                    "Factorise $(2x - 11)(x + 1) = 0$.",
+                    "Final Answer: $$x = 5.5 \\quad \\text{or} \\quad x = -1$$"
+                ]
+            },
+            {
+                q: "A number $y$ is rounded to 1 decimal place. The result is 14.8. Write down the error interval for $y$.",
+                steps: [
+                    "Identify the place value. 1 decimal place means 0.1. The degree of accuracy is half this: $0.05$.",
+                    "Lower Bound: $14.8 - 0.05 = 14.75$",
+                    "Upper Bound: $14.8 + 0.05 = 14.85$",
+                    "Final Answer: $$14.75 \\leq y < 14.85$$"
+                ]
+            },
+            {
+                q: "100 students took a test. The cumulative frequency for Score $\\le 40$ is 25. For Score $\\le 60$ it is 60. Estimate the Median score.",
+                steps: [
+                    "The Median is the 50th student.",
+                    "The 50th student lies in the class interval $40 < s \\le 60$.",
+                    "There are 35 students in this interval ($60-25$). The median is the 25th person in this group.",
+                    "Linear Interpolation: $$40 + (\\frac{25}{35} \\times 20)$$",
+                    "Calculation: $40 + 14.28...$",
+                    "Final Answer: $$54.3$$ (to 1 d.p.)"
+                ]
+            },
+            {
+                q: "Find the coordinates of the turning point of the curve $y = x^2 + 6x + 14$ by completing the square.",
+                steps: [
+                    "Halve the coefficient of $x$: $(x+3)^2$.",
+                    "Subtract the square of 3: $$(x+3)^2 - 9 + 14$$",
+                    "Simplify: $$(x+3)^2 + 5$$",
+                    "The minimum value occurs when the bracket is 0 ($x=-3$). The y-value is then 5.",
+                    "Final Answer: $$(-3, 5)$$",
+                ]
+            },
+            {
+                q: "The equation of a circle is $x^2 + y^2 = 36$. Write down the coordinates of the centre and the length of the radius.",
+                steps: [
+                    "The standard form is $x^2 + y^2 = r^2$.",
+                    "The centre is at the origin.",
+                    "The radius is the square root of 36.",
+                    "Final Answer: Centre $$(0,0)$$, Radius $$6$$"
+                ]
+            },
+            {
+                q: "Simplify fully: $(3x^4 y^2)^3$",
+                steps: [
+                    "Apply the power of 3 to the coefficient: $3^3 = 27$",
+                    "Apply the power of 3 to the indices by multiplying: $$x^{4 \\times 3} = x^{12}$$ $$y^{2 \\times 3} = y^6$$",
+                    "Final Answer: $$27x^{12}y^6$$"
+                ]
+            },
+            {
+                q: "Solve the inequality: $x^2 - x - 20 < 0$",
+                steps: [
+                    "Find the critical values by solving $x^2 - x - 20 = 0$.",
+                    "Factorise: $(x-5)(x+4) = 0$. Critical values are $x=5$ and $x=-4$.",
+                    "Sketch the graph. It is a U-shaped parabola crossing at -4 and 5.",
+                    "Since we want $< 0$ (below the axis), we want the region between the values.",
+                    "Final Answer: $$-4 < x < 5$$"
+                ]
+            },
+            {
+                q: "Calculate the size of the angle opposite the 10cm side in a triangle with sides 7cm, 8cm, and 10cm.",
+                steps: [
+                    "Use the Cosine Rule: $a^2 = b^2 + c^2 - 2bc \\cos A$. Here, $a=10$.",
+                    "Rearrange for angle: $$\\cos A = \\frac{b^2 + c^2 - a^2}{2bc}$$",
+                    "Substitute: $$\\cos A = \\frac{7^2 + 8^2 - 10^2}{2 \\times 7 \\times 8} = \\frac{49 + 64 - 100}{112}$$",
+                    "$$\\cos A = \\frac{13}{112} = 0.116...$$",
+                    "Inverse Cosine: $A = \\cos^{-1}(0.116...)$",
+                    "Final Answer: $$83.3^\\circ$$"
+                ]
+            },
+            {
+                q: "$y$ is inversely proportional to the square of $x$. When $x = 4$, $y = 5$. Find the value of $y$ when $x = 2$.",
+                steps: [
+                    "Set up the equation: $y = \\frac{k}{x^2}$.",
+                    "Substitute values to find $k$: $$5 = \\frac{k}{4^2} \\rightarrow 5 = \\frac{k}{16} \\rightarrow k = 80$$",
+                    "Write the formula: $y = \\frac{80}{x^2}$.",
+                    "Substitute $x=2$: $$y = \\frac{80}{2^2} = \\frac{80}{4}$$",
+                    "Final Answer: $$y = 20$$"
+                ]
+            },
+            {
+                q: "Show that $(n+3)^2 - (n-3)^2$ is always a multiple of 12 for any integer $n$.",
+                steps: [
+                    "Expand both brackets: $$(n^2 + 6n + 9) - (n^2 - 6n + 9)$$",
+                    "Be careful with the negative sign: $$n^2 + 6n + 9 - n^2 + 6n - 9$$",
+                    "Simplify: $$12n$$",
+                    "Conclusion: Since $n$ is an integer, $12 \\times n$ is always a multiple of 12."
                 ]
             }
         ];
