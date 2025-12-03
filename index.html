@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- 1. SEO & BRANDING -->
@@ -7,7 +7,7 @@
     <title>Bradley's Maths | GCSE Higher Tier Resources</title>
     <meta name="description" content="Professional GCSE Higher Tier Mathematics resources. Comprehensive, colour-coded algebra, number, and geometry worksheets with detailed step-by-step solutions.">
     
-    <!-- 2. MATHJAX CONFIGURATION (The Fix for the Algebra display) -->
+    <!-- 2. MATHJAX CONFIGURATION -->
     <script>
       window.MathJax = {
         tex: {
@@ -75,6 +75,7 @@
         <h1>Bradley's Maths</h1>
         <h2>Professional GCSE Resources</h2>
         <div class="trust-badge">Professional UK Curriculum Resources</div>
+
         <!-- THE WIDGET -->
         <div class="daily-widget">
             <span class="widget-header">Problem of the Day | <span id="dateDisplay"></span></span>
@@ -113,8 +114,6 @@
     <!-- 4. JAVASCRIPT ENGINE -->
     <script>
         // --- DATA: THE QUESTIONS ---
-        // I have pre-loaded the first 5 questions from our list as a test.
-        // We can add the other 25 easily.
         const problemBank = [
             {
                 q: "Write $0.00405 \\times 10^7$ as an ordinary number.",
@@ -163,7 +162,7 @@
         const date = new Date();
         document.getElementById('dateDisplay').textContent = date.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
 
-        // Pick question based on day of month (Days 1-31 wrap around the list)
+        // Pick question based on day of month
         const dayIndex = (date.getDate() - 1) % problemBank.length;
         const todaysProblem = problemBank[dayIndex];
 
@@ -179,9 +178,6 @@
             stepDiv.innerHTML = `<span class="step-text">Step ${index + 1}:</span> ${stepContent}`;
             solutionArea.appendChild(stepDiv);
         });
-
-        // Refresh MathJax (Make the maths pretty)
-        MathJax.typeset();
 
         // --- INTERACTION: REVEAL STEPS ---
         let currentStep = 0;
