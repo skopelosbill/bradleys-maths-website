@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- 1. SEO & BRANDING -->
@@ -7,8 +7,14 @@
     <title>Bradley's Maths | GCSE Higher Tier Resources</title>
     <meta name="description" content="Professional GCSE Higher Tier Mathematics resources. Comprehensive, colour-coded algebra, number, and geometry worksheets with detailed step-by-step solutions.">
     
-    <!-- 2. MATHJAX (The Maths Engine) -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <!-- 2. MATHJAX CONFIGURATION (The Fix for the Algebra display) -->
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
     <!-- 3. STYLING -->
@@ -68,8 +74,7 @@
     <div class="container">
         <h1>Bradley's Maths</h1>
         <h2>Professional GCSE Resources</h2>
-        <div class="trust-badge">Excellence in Mathematics Education • Skopelos, Greece</div>
-
+        <div class="trust-badge">Professional UK Curriculum Resources</div>
         <!-- THE WIDGET -->
         <div class="daily-widget">
             <span class="widget-header">Problem of the Day | <span id="dateDisplay"></span></span>
