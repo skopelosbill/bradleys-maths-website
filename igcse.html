@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 1. SEO & BRANDING (Targeted at Parents/Students) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bradley's Maths | Cambridge IGCSE (0580) Course</title>
+    <meta name="description" content="Complete Cambridge IGCSE Mathematics (0580) home study course. Structured workbooks with detailed solutions designed to help students achieve top grades.">
+    
+    <!-- 2. MATHJAX CONFIGURATION -->
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!-- 3. STYLING (Identical to Main Site) -->
+    <style>
+        body {
+            margin: 0; padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #4c1d95; /* Deep Violet */
+            color: #ffffff;
+            display: flex; flex-direction: column; align-items: center;
+            min-height: 100vh;
+        }
+        .container { max-width: 800px; padding: 40px 20px; width: 100%; box-sizing: border-box; text-align: center; }
+        
+        h1 { font-size: 3.5rem; margin: 20px 0 5px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; }
+        h2 { font-size: 1.4rem; font-weight: 300; margin-bottom: 30px; color: #e9d5ff; }
+        h3 { font-size: 1.2rem; text-transform: uppercase; color: #a78bfa; margin-top: 40px; border-bottom: 1px solid #a78bfa; display: inline-block; padding-bottom: 5px; }
+
+        .trust-badge { background-color: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 8px; margin-bottom: 30px; font-size: 0.9rem; color: #ddd6fe; display: inline-block; }
+
+        /* BUTTONS */
+        .btn-group { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-bottom: 10px; }
+        .btn { padding: 15px 25px; font-size: 1rem; font-weight: bold; text-decoration: none; border-radius: 50px; transition: transform 0.2s; display: inline-block; margin-bottom: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.2); }
+        .btn:hover { transform: translateY(-3px); }
+        
+        /* Specific IGCSE Colours */
+        .btn-primary { background-color: #f59e0b; color: white; border: 2px solid #f59e0b; } /* Amber for IGCSE */
+        .btn-free { background-color: transparent; color: white; border: 2px solid #ffffff; width: 280px; font-size: 0.9rem; }
+        .btn-shop { background-color: #ffffff; color: #4c1d95; }
+
+        /* PROBLEM OF THE DAY WIDGET */
+        .daily-widget {
+            background-color: white; color: #1e1e1e;
+            border-radius: 15px; padding: 30px; margin: 30px 0;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            text-align: left;
+            border-left: 10px solid #f59e0b; /* Amber Border for IGCSE */
+            min-height: 200px;
+        }
+        .widget-header { color: #4c1d95; font-weight: 800; text-transform: uppercase; font-size: 0.9rem; margin-bottom: 15px; display: block; }
+        .question-box { font-size: 1.3rem; margin-bottom: 25px; font-weight: 500; }
+        
+        .step-container { margin-top: 15px; border-top: 1px dashed #ccc; padding-top: 15px; }
+        .step { font-size: 1.1rem; margin-bottom: 15px; display: none; /* Hidden by default */ }
+        .step-text { font-weight: bold; color: #4c1d95; font-size: 0.9rem; display: block; margin-bottom: 5px; }
+        
+        .reveal-btn { 
+            background: #4c1d95; color: white; border: none; padding: 10px 20px; 
+            border-radius: 5px; cursor: pointer; font-size: 1rem; font-weight: bold; transition: background 0.2s;
+        }
+        .reveal-btn:hover { background: #f59e0b; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Bradley's Maths</h1>
+        <h2>Cambridge IGCSE® (0580)</h2>
+       <div class="trust-badge">The Complete Structured Home-Study Course</div>
+
+        <!-- THE WIDGET -->
+        <div class="daily-widget">
+            <span class="widget-header">IGCSE Problem of the Day | <span id="dateDisplay"></span></span>
+            
+            <!-- The Question -->
+            <div id="math-question" class="question-box">Loading Question...</div>
+
+            <!-- The Button -->
+            <button id="stepBtn" class="reveal-btn" onclick="showNextStep()">Show Answer</button>
+
+            <!-- The Solution Steps Area -->
+            <div id="solution-area" class="step-container"></div>
+        </div>
+
+        <!-- PARENT/STUDENT SALES COPY -->
+        <h3>Structured Revision Workbooks</h3>
+        <p style="max-width: 600px; margin: 0 auto 30px auto; color: #e9d5ff; line-height: 1.6;">
+            Stop searching for random worksheets. Our 5-volume series covers the entire Cambridge 0580 Syllabus. 
+            Professional quality, detailed answer keys, and specific "Gold Standard" exam techniques.
+        </p>
+
+        <div class="btn-group">
+            <!-- Placeholders for your IGCSE store links -->
+            <a href="https://payhip.com/bradleysmaths" class="btn btn-primary">Browse the IGCSE Store</a>
+        </div>
+
+        <h3>Try Before You Buy</h3>
+        <p style="margin-bottom: 20px; color: #ddd6fe;">Download the first topic from our booklets for free.</p>
+        <div class="btn-group">
+            <!-- You can link these to your IGCSE PDFs when ready -->
+            <a href="#" class="btn btn-free">Number Sample (PDF)</a>
+            <a href="#" class="btn btn-free">Geometry Sample (PDF)</a>
+        </div>
+        
+        <div style="margin-top: 40px;">
+            <div class="btn-group">
+                <a href="index.html" class="btn btn-shop">Return to Main Site</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. JAVASCRIPT ENGINE -->
+    <script>
+        // --- DATA: IGCSE PLACEHOLDER ---
+        // You can populate this array with 0580 questions later.
+        const problemBank = [
+            {
+                q: "Welcome to the Bradley's Maths IGCSE Portal.<br><br>Daily revision questions covering the Cambridge 0580 syllabus will be appearing here soon.",
+                steps: [
+                    "This widget will update every day with a new exam-standard question.",
+                    "Detailed step-by-step solutions will be provided.",
+                    "Check back soon to start your daily practice streak!"
+                ]
+            }
+        ];
+
+        // --- ENGINE: DATE & DISPLAY ---
+        const date = new Date();
+        document.getElementById('dateDisplay').textContent = date.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
+
+        // Currently forcing the first item (Placeholder) until you add more questions
+        const todaysProblem = problemBank[0];
+
+        // Render Question
+        document.getElementById('math-question').innerHTML = todaysProblem.q;
+
+        // Render Steps (Hidden)
+        const solutionArea = document.getElementById('solution-area');
+        todaysProblem.steps.forEach((stepContent, index) => {
+            let stepDiv = document.createElement('div');
+            stepDiv.className = 'step';
+            stepDiv.id = 'step-' + index;
+            stepDiv.innerHTML = `<span class="step-text">Info:</span> ${stepContent}`;
+            solutionArea.appendChild(stepDiv);
+        });
+
+        // --- INTERACTION: REVEAL STEPS ---
+        let currentStep = 0;
+        const totalSteps = todaysProblem.steps.length;
+        const btn = document.getElementById('stepBtn');
+
+        function showNextStep() {
+            if (currentStep < totalSteps) {
+                // Reveal the next step
+                document.getElementById('step-' + currentStep).style.display = 'block';
+                currentStep++;
+                
+                // Update Button Text
+                if (currentStep < totalSteps) {
+                    btn.textContent = "Show More Info";
+                } else {
+                    btn.textContent = "Ready";
+                    btn.style.backgroundColor = "#f59e0b"; // Turn Amber
+                    btn.style.cursor = "default";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
