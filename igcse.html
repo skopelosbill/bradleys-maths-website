@@ -97,20 +97,16 @@
         </p>
 
         <div class="btn-group">
-            <!-- Placeholders for your IGCSE store links -->
-            <a href="https://payhip.com/https://payhip.com/b/krOXi" class="btn btn-primary">The Complete IGCSE Course Booklets</a>
+            <a href="https://payhip.com/bradleysmaths" class="btn btn-primary">Browse the IGCSE Store</a>
         </div>
 
         <h3>Try Before You Buy</h3>
-        <p style="margin-bottom: 20px; color: #ddd6fe;">Download five free samples, one from each booklet, to experience the quality of our work.</p>
-        <p style="margin-bottom: 20px; color: #ddd6fe;">Each sample is a complete worksheet and answer sheet in PDF format.</p>
+        <p style="margin-bottom: 20px; color: #ddd6fe;">Download the first topic from our booklets for free.</p>
         <div class="btn-group">
-            <!-- You can link these to your IGCSE PDFs when ready -->
-            <a href="#" class="btn btn-free">Angle_Properties</a>
-            <a href="#" class="btn btn-free">Arcs_and_Sectors</a>
-            <a href="#" class="btn btn-free">Sets_and_Venn_Diagrams</a>
-            <a href="#" class="btn btn-free">Solving_Equations_Graphically</a>
-            <a href="#" class="btn btn-free">Vector_Geometry</a>
+            <!-- Ensure your filenames match these exactly on GitHub! -->
+            <a href="IGCSE_Number_Sample.pdf" class="btn btn-free">Number Sample (PDF)</a>
+            <a href="IGCSE_Algebra_Sample.pdf" class="btn btn-free">Algebra Sample (PDF)</a>
+            <a href="IGCSE_Geometry_Sample.pdf" class="btn btn-free">Geometry Sample (PDF)</a>
         </div>
         
         <div style="margin-top: 40px;">
@@ -122,34 +118,48 @@
 
     <!-- 4. JAVASCRIPT ENGINE -->
     <script>
-        // --- DATA: IGCSE PLACEHOLDER ---
-        // You can populate this array with 0580 questions later.
+        // --- DATA: 31 QUESTIONS (2025 SYLLABUS) ---
         const problemBank = [
-            {
-                q: "NON-CALCULATOR. Shabir invested \$1800 at 4% per year simple interest.  Calculate the value of his investment after 8 years.",
-                steps: [
-                    "Calculate the interest in 1 year: $$\\frac{4 \\times 1800}{100} = \$72$$",
-                    "Multiply by 8 to get the interest earned in 8 years: $$ 8 \\times 72 = \$576$$",
-                    "Add the original sum: $$ 1800 + 576 = \$2376$$",
-                    "Final Answer: $$ \$2376 $$"
-                ]
-            },
-            {
-                q: "Welcome to the Bradley's Maths IGCSE Portal.<br><br>Daily revision questions covering the Cambridge 0580 syllabus will be appearing here soon.",
-                steps: [
-                    "This widget will update every day with a new exam-standard question.",
-                    "Detailed step-by-step solutions will be provided.",
-                    "Check back soon to start your daily practice streak!"
-                    ]
-            }
+            { q: "Simplify fully: $\\sqrt{50} + \\sqrt{32}$", steps: ["$\\sqrt{50} = \\sqrt{25 \\times 2} = 5\\sqrt{2}$", "$\\sqrt{32} = \\sqrt{16 \\times 2} = 4\\sqrt{2}$", "Add them: $5\\sqrt{2} + 4\\sqrt{2}$", "Final Answer: $$9\\sqrt{2}$$"] },
+            { q: "Expand and simplify: $(3 + \\sqrt{5})(3 - \\sqrt{5})$", steps: ["First: $3 \\times 3 = 9$", "Outer: $3 \\times -\\sqrt{5} = -3\\sqrt{5}$", "Inner: $\\sqrt{5} \\times 3 = +3\\sqrt{5}$", "Last: $\\sqrt{5} \\times -\\sqrt{5} = -5$", "Simplify: $9 - 5$", "Final Answer: $$4$$"] },
+            { q: "Rationalise the denominator: $\\frac{6}{\\sqrt{2}}$", steps: ["Multiply top and bottom by $\\sqrt{2}$", "$$\\frac{6\\sqrt{2}}{2}$$", "Simplify: $6 \\div 2 = 3$", "Final Answer: $$3\\sqrt{2}$$"] },
+            { q: "Write down the exact value of $\\tan 45^\\circ + \\sin 30^\\circ$", steps: ["Recall exact values: $\\tan 45^\\circ = 1$ and $\\sin 30^\\circ = 0.5$", "Add them: $1 + 0.5$", "Final Answer: $$1.5$$"] },
+            { q: "Show that $\\cos 60^\\circ \\times \\sin 30^\\circ = 0.25$", steps: ["$\\cos 60^\\circ = 0.5$", "$\\sin 30^\\circ = 0.5$", "Multiply: $0.5 \\times 0.5$", "Final Answer: $$0.25$$"] },
+            { q: "Evaluate $64^{2/3}$ without a calculator.", steps: ["The denominator (3) is the root: $\\sqrt[3]{64} = 4$", "The numerator (2) is the power: $4^2$", "Final Answer: $$16$$"] },
+            { q: "Simplify $(\\frac{27}{8})^{-1/3}$", steps: ["Negative power flips the fraction: $(\\frac{8}{27})^{1/3}$", "Cube root of top and bottom:", "$\\sqrt[3]{8} = 2$, $\\sqrt[3]{27} = 3$", "Final Answer: $$\\frac{2}{3}$$"] },
+            { q: "Calculate $(2 \\times 10^5) \\times (4 \\times 10^{-2})$ without a calculator.", steps: ["Multiply numbers: $2 \\times 4 = 8$", "Add powers: $5 + (-2) = 3$", "Final Answer: $$8 \\times 10^3$$"] },
+            { q: "Calculate $3\\frac{1}{4} - 1\\frac{5}{6}$ (show working).", steps: ["Convert to improper fractions: $\\frac{13}{4} - \\frac{11}{6}$", "Common denominator (12): $\\frac{39}{12} - \\frac{22}{12}$", "Subtract: $\\frac{17}{12}$", "Final Answer: $$1\\frac{5}{12}$$"] },
+            { q: "Convert $0.4\\dot{5}$ to a fraction in simplest form.", steps: ["$x = 0.4555...$", "$10x = 4.555...$", "$100x = 45.555...$", "Subtract: $90x = 41$", "Final Answer: $$\\frac{41}{90}$$"] },
+            { q: "Solve $x^2 + 4x - 7 = 0$. Give answer in the form $a \\pm \\sqrt{b}$.", steps: ["Quadratic Formula or Complete Square.", "$(x+2)^2 - 4 - 7 = 0$", "$(x+2)^2 = 11$", "$x+2 = \\pm\\sqrt{11}$", "Final Answer: $$-2 \\pm \\sqrt{11}$$"] },
+            { q: "Factorise $6x^2 - 13x - 5$.", steps: ["Find two numbers that multiply to $6 \\times -5 = -30$ and add to $-13$. (-15 and 2)", "Split middle term: $6x^2 - 15x + 2x - 5$", "Factorise pairs: $3x(2x-5) + 1(2x-5)$", "Final Answer: $$(2x-5)(3x+1)$$"] },
+            { q: "Make $x$ the subject: $y = \\frac{x+3}{x-2}$", steps: ["Multiply by $(x-2)$: $y(x-2) = x+3$", "Expand: $xy - 2y = x + 3$", "Collect x terms: $xy - x = 2y + 3$", "Factorise x: $x(y-1) = 2y + 3$", "Final Answer: $$x = \\frac{2y+3}{y-1}$$"] },
+            { q: "$f(x) = 2x - 3$. Find $f^{-1}(x)$.", steps: ["Let $y = 2x - 3$", "Swap x and y: $x = 2y - 3$", "Rearrange for y: $x + 3 = 2y$", "Final Answer: $$f^{-1}(x) = \\frac{x+3}{2}$$"] },
+            { q: "Find the range of $f(x) = x^2 + 3$ for the domain $x \\ge 0$.", steps: ["When $x=0$, $y=3$.", "As $x$ increases, $x^2 + 3$ increases.", "The graph starts at 3 and goes up.", "Final Answer: $$y \\ge 3$$"] },
+            { q: "Solve $10 - 3x < 4$.", steps: ["Subtract 10: $-3x < -6$", "Divide by -3 (Flip the sign!): $x > 2$", "Final Answer: $$x > 2$$"] },
+            { q: "Solve simultaneous equations: $3x+y=11$ and $2x-3y=11$.", steps: ["Multiply eq(1) by 3: $9x + 3y = 33$", "Add to eq(2): $11x = 44 \\rightarrow x=4$", "Sub into eq(1): $3(4) + y = 11 \\rightarrow 12 + y = 11$", "Final Answer: $$x=4, y=-1$$"] },
+            { q: "Find the $n$th term of: $3, 9, 19, 33, \\dots$", steps: ["1st Diff: 6, 10, 14. 2nd Diff: 4. So it is $2n^2$.", "Subtract $2n^2$ (2, 8, 18, 32) from sequence: 1, 1, 1, 1.", "The remainder is just +1.", "Final Answer: $$2n^2 + 1$$"] },
+            { q: "$y$ is inversely proportional to $x^2$. When $x=3, y=4$. Find $y$ when $x=2$.", steps: ["$y = k/x^2$", "$4 = k/9 \\rightarrow k=36$", "Formula: $y = 36/x^2$", "When $x=2$: $y = 36/4$", "Final Answer: $$y=9$$"] },
+            { q: "$\\vec{AB} = \\begin{pmatrix} 3 \\\\ -2 \\end{pmatrix}$. Calculate $|\\vec{AB}|$.", steps: ["Magnitude is Pythagoras: $\\sqrt{x^2 + y^2}$", "$\\sqrt{3^2 + (-2)^2} = \\sqrt{9+4}$", "Final Answer: $$\\sqrt{13}$$"] },
+            { q: "Points $A,B,C,D$ on circle. Angle $ABD=40^\\circ$. Find Angle $ACD$.", steps: ["Angles subtended by the same arc (AD) are equal.", "Angles in the same segment are equal.", "Final Answer: $$40^\\circ$$"] },
+            { q: "Cone: $r=5, l=13$. Calculate Volume.", steps: ["Find height $h = \\sqrt{13^2 - 5^2} = 12$", "Vol = $\\frac{1}{3}\\pi r^2 h$", "$\\frac{1}{3} \\times \\pi \\times 25 \\times 12 = 100\\pi$", "Final Answer: $$314.2 \\text{ cm}^3$$"] },
+            { q: "Triangle $ABC$: $c=8, b=7, B=50^\\circ$. Find Angle $C$.", steps: ["Sine Rule: $\\frac{\\sin C}{8} = \\frac{\\sin 50}{7}$", "$\\sin C = \\frac{8 \\sin 50}{7} = 0.875...$", "$C = \\sin^{-1}(0.875...)$", "Final Answer: $$61.1^\\circ$$"] },
+            { q: "Largest angle in triangle with sides 5, 7, 10.", steps: ["Largest angle is opposite longest side (10).", "Cosine Rule: $\\cos A = \\frac{5^2 + 7^2 - 10^2}{2 \\times 5 \\times 7}$", "$\\cos A = \\frac{25 + 49 - 100}{70} = \\frac{-26}{70}$", "Final Answer: $$111.8^\\circ$$"] },
+            { q: "Bag: 5 Red, 3 Blue. Pick 2 without replacement. P(Same Colour).", steps: ["RR: $\\frac{5}{8} \\times \\frac{4}{7} = \\frac{20}{56}$", "BB: $\\frac{3}{8} \\times \\frac{2}{7} = \\frac{6}{56}$", "Total: $\\frac{26}{56}$", "Final Answer: $$\\frac{13}{28}$$"] },
+            { q: "Invest $5000 at 2.4\\% for 5 years.", steps: ["Multiplier: $1.024$", "$5000 \\times 1.024^5$", "Final Answer: $$5629.50$$"] },
+            { q: "Turning point of $y = x^2 - 6x + 5$ using differentiation.", steps: ["$dy/dx = 2x - 6$", "Set to 0: $2x = 6 \\rightarrow x = 3$", "Find y: $3^2 - 6(3) + 5 = 9 - 18 + 5 = -4$", "Final Answer: $$(3, -4)$$"] },
+            { q: "Similar bottles. Vols 500, 1080. Small h=15. Find large H.", steps: ["Vol Ratio: $1080/500 = 2.16$", "Length Scale Factor = $\\sqrt[3]{2.16} = 1.2$", "$H = 15 \\times 1.2$", "Final Answer: $$18 \\text{ cm}$$"] },
+            { q: "Histogram: Class width 20, Freq 15. Find Freq Density.", steps: ["FD = Frequency $\\div$ Width", "$15 \\div 20$", "Final Answer: $$0.75$$"] },
+            { q: "$L=12.5$ (1dp), $W=8.4$ (1dp). Upper Bound of Area.", steps: ["Upper Bounds: $L=12.55, W=8.45$", "Area = $12.55 \\times 8.45$", "Final Answer: $$106.0475$$"] },
+            { q: "$\\vec{OA}=\\mathbf{a}, \\vec{OB}=\\mathbf{b}$. M is midpoint of AB. Find $\\vec{OM}$.", steps: ["$\\vec{OM} = \\vec{OA} + \\frac{1}{2}\\vec{AB}$", "$\\vec{AB} = \\mathbf{b} - \\mathbf{a}$", "$\\mathbf{a} + \\frac{1}{2}(\\mathbf{b} - \\mathbf{a}) = \\mathbf{a} + 0.5\\mathbf{b} - 0.5\\mathbf{a}$", "Final Answer: $$\\frac{1}{2}(\\mathbf{a} + \\mathbf{b})$$"] }
         ];
 
         // --- ENGINE: DATE & DISPLAY ---
         const date = new Date();
         document.getElementById('dateDisplay').textContent = date.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
 
-        // Currently forcing the first item (Placeholder) until you add more questions
-        const todaysProblem = problemBank[0];
+        // Cycle through the 31 questions based on the date
+        const dayIndex = (date.getDate() - 1) % problemBank.length;
+        const todaysProblem = problemBank[dayIndex];
 
         // Render Question
         document.getElementById('math-question').innerHTML = todaysProblem.q;
@@ -160,7 +170,7 @@
             let stepDiv = document.createElement('div');
             stepDiv.className = 'step';
             stepDiv.id = 'step-' + index;
-            stepDiv.innerHTML = `<span class="step-text">Info:</span> ${stepContent}`;
+            stepDiv.innerHTML = `<span class="step-text">Step ${index + 1}:</span> ${stepContent}`;
             solutionArea.appendChild(stepDiv);
         });
 
@@ -171,16 +181,14 @@
 
         function showNextStep() {
             if (currentStep < totalSteps) {
-                // Reveal the next step
                 document.getElementById('step-' + currentStep).style.display = 'block';
                 currentStep++;
                 
-                // Update Button Text
                 if (currentStep < totalSteps) {
-                    btn.textContent = "Show More Info";
+                    btn.textContent = "Show Next Step";
                 } else {
-                    btn.textContent = "Ready";
-                    btn.style.backgroundColor = "#f59e0b"; // Turn Amber
+                    btn.textContent = "Finished";
+                    btn.style.backgroundColor = "#f59e0b"; // IGCSE Amber
                     btn.style.cursor = "default";
                 }
             }
