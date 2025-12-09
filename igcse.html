@@ -297,8 +297,15 @@
         const dayIndex = (date.getDate() - 1) % problemBank.length;
         const todaysProblem = problemBank[dayIndex];
 
-        // Render Question
-        document.getElementById('math-question').innerHTML = todaysProblem.q;
+        // Render Question with Image Logic
+        let questionHTML = todaysProblem.q;
+
+        // Check if the problem has an image attached
+        if (todaysProblem.img) {
+            questionHTML += `<img src="${todaysProblem.img}" class="question-img" alt="Question Diagram">`;
+        }
+
+        document.getElementById('math-question').innerHTML = questionHTML;
 
         // Render Steps (Hidden)
         const solutionArea = document.getElementById('solution-area');
