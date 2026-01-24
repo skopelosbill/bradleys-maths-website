@@ -437,20 +437,26 @@
             }
         ];
 
-        // --- ENGINE: DATE & DISPLAY ---
+       // --- ENGINE: DATE & DISPLAY ---
         const date = new Date();
         document.getElementById('dateDisplay').textContent = date.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
 
-        // LOGIC FIX: Anchor the rotation to Jan 24, 2025
-        const startDate = new Date('2025-01-24'); // The cycle starts today
+        // ROBUST LOGIC: Calculate Day of Year (1-366)
+        const start = new Date(date.getFullYear(), 0, 0);
+        const diff = date - start;
+        const oneDay = 1000 * 60 * 60 * 24;
+        const dayOfYear = Math.floor(diff / oneDay);
+
+        // OFFSET: Adjust this number to align today (Jan 24) with Question 0
+        // Jan 24 is Day 24. We want Index 0. So we subtract 24.
+        const offset = 24; 
         
-        // Calculate days passed since Jan 24
-        const diffTime = date - startDate;
-        const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+        let dayIndex = (dayOfYear - offset) % problemBank.length;
         
-        // Ensure index is always positive and rotates safely
-        let dayIndex = diffDays % problemBank.length;
-        if (dayIndex < 0) dayIndex = 0; // Failsafe for timezone jitters on day 1
+        // Handle negative numbers (if we wrap around the year end or test early dates)
+        if (dayIndex < 0) {
+            dayIndex = problemBank.length + dayIndex;
+        }
 
         const todaysProblem = problemBank[dayIndex];
         
