@@ -437,9 +437,21 @@
             }
         ];
 
+        // --- ENGINE: DATE & DISPLAY ---
         const date = new Date();
         document.getElementById('dateDisplay').textContent = date.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
-        const dayIndex = (date.getDate() - 1) % problemBank.length;
+
+        // LOGIC FIX: Anchor the rotation to Jan 24, 2025
+        const startDate = new Date('2025-01-24'); // The cycle starts today
+        
+        // Calculate days passed since Jan 24
+        const diffTime = date - startDate;
+        const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+        
+        // Ensure index is always positive and rotates safely
+        let dayIndex = diffDays % problemBank.length;
+        if (dayIndex < 0) dayIndex = 0; // Failsafe for timezone jitters on day 1
+
         const todaysProblem = problemBank[dayIndex];
         
         let questionHTML = todaysProblem.q;
