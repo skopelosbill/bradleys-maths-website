@@ -255,12 +255,186 @@
         // PASTE YOUR EXISTING PROBLEM BANK SCRIPT HERE
         // (I assume you have the script block from previous versions)
         const problemBank = [
-            // ... your existing questions ...
+            // JAN 24 (Today)
             {
-                q: "Start with an Exact Value: Calculate $\\sin(30^\\circ) + \\cos(60^\\circ)$.",
-                steps: ["Recall $\\sin(30^\\circ) = 0.5$.", "Recall $\\cos(60^\\circ) = 0.5$.", "Add them: $0.5 + 0.5$.", "Final Answer: $$1$$"]
+                q: "Algebraic Proof: Prove that $(n+1)^2 - (n-1)^2$ is always a multiple of 4.",
+                steps: ["Expand $(n+1)^2 = n^2 + 2n + 1$.", "Expand $(n-1)^2 = n^2 - 2n + 1$.", "Subtract: $(n^2 + 2n + 1) - (n^2 - 2n + 1)$.", "Simplify: $4n$.", "Conclusion: $4n$ is clearly a multiple of 4."]
             },
-             // ... Keep the rest of your Javascript ...
+            // JAN 25
+            {
+                q: "Vectors: $M$ is the midpoint of line $AB$. $\\vec{OA} = \\mathbf{a}$ and $\\vec{OB} = \\mathbf{b}$. Find $\\vec{OM}$.",
+                steps: ["Path: $\\vec{OM} = \\vec{OA} + \\vec{AM}$.", "Find $\\vec{AB} = \\mathbf{b} - \\mathbf{a}$.", "$\\vec{AM} = \\frac{1}{2}(\\mathbf{b} - \mathbf{a})$.", "$\\vec{OM} = \\mathbf{a} + \\frac{1}{2}\\mathbf{b} - \\frac{1}{2}\\mathbf{a}$.", "Final Answer: $$\\frac{1}{2}(\\mathbf{a} + \\mathbf{b})$$"]
+            },
+            // JAN 26
+            {
+                q: "Functions: $f(x) = \\frac{1}{x+2}$. Find $f^{-1}(x)$.",
+                steps: ["Let $y = \\frac{1}{x+2}$.", "Swap x and y: $x = \\frac{1}{y+2}$.", "Rearrange: $x(y+2) = 1$.", "$y+2 = \\frac{1}{x}$.", "Final Answer: $$f^{-1}(x) = \\frac{1}{x} - 2$$"]
+            },
+            // JAN 27
+            {
+                q: "Exact Trig: Calculate the area of a triangle with sides $6\\text{cm}$, $8\\text{cm}$ and angle $30^\\circ$ between them.",
+                steps: ["Formula: Area = $\\frac{1}{2}ab\\sin C$.", "Sub: $\\frac{1}{2} \\times 6 \\times 8 \\times \\sin(30)$.", "Recall $\\sin(30) = 0.5$.", "$24 \\times 0.5$.", "Final Answer: $$12 \\text{ cm}^2$$"]
+            },
+            // JAN 28
+            {
+                q: "Indices: Given $2^x \\times 4^{y} = 8$, express $x$ in terms of $y$.",
+                steps: ["Base 2: $4 = 2^2$ and $8 = 2^3$.", "Rewrite: $2^x \\times (2^2)^y = 2^3$.", "$2^x \\times 2^{2y} = 2^3$.", "Add powers: $x + 2y = 3$.", "Final Answer: $$x = 3 - 2y$$"]
+            },
+            // JAN 29
+            {
+                q: "Probability: A bag has 3 Red and 7 Blue counters. Two are picked without replacement. P(Same Colour).",
+                steps: ["P(RR) = $\\frac{3}{10} \\times \\frac{2}{9} = \\frac{6}{90}$.", "P(BB) = $\\frac{7}{10} \\times \\frac{6}{9} = \\frac{42}{90}$.", "Add them: $\\frac{6}{90} + \\frac{42}{90}$.", "Simplify $\\frac{48}{90}$.", "Final Answer: $$\\frac{8}{15}$$"]
+            },
+            // JAN 30
+            {
+                q: "Bounds: $x = 10$ (1 s.f.) and $y = 5$ (1 s.f.). Calculate the Upper Bound of $x - y$.",
+                steps: ["Max Difference = Max $x$ - Min $y$.", "$UB_x = 15$ (Wait! 1sf means range 5-15? No, range 9.5-10.5? No, 1sf 10 means range 5-15).", "$LB_y = 4.5$.", "Calc: $15 - 4.5$.", "Final Answer: $$10.5$$"]
+            },
+            // JAN 31
+            {
+                q: "Circle Equation: Find the gradient of the tangent to $x^2 + y^2 = 25$ at the point $(3, 4)$.",
+                steps: ["Gradient of Radius (Origin to 3,4): $\\frac{4}{3}$.", "Tangent is perpendicular.", "Negative Reciprocal.", "Final Answer: $$-\\frac{3}{4}$$"]
+            },
+            // FEB 1
+            {
+                q: "Surds: Expand and simplify $(3 + \\sqrt{5})^2$.",
+                steps: ["$(3+\\sqrt{5})(3+\\sqrt{5})$.", "FOIL: $9 + 3\\sqrt{5} + 3\\sqrt{5} + 5$.", "Collect integers: $9+5=14$.", "Collect surds: $6\\sqrt{5}$.", "Final Answer: $$14 + 6\\sqrt{5}$$"]
+            },
+            // FEB 2
+            {
+                q: "Quadratic Inequality: Solve $x^2 - 9 > 0$.",
+                steps: ["Factorise: $(x-3)(x+3) > 0$.", "Critical values: $3, -3$.", "Sketch U-shape parabola.", "Where is it ABOVE axis?", "Final Answer: $$x > 3 \\text{ or } x < -3$$"]
+            },
+            // FEB 3
+            {
+                q: "Ratio: $x:y = 1:2$ and $y:z = 3:5$. Find $x:z$.",
+                steps: ["Make $y$ consistent.", "Multiply first ratio by 3: $x:y = 3:6$.", "Multiply second ratio by 2: $y:z = 6:10$.", "Combine: $3:6:10$.", "Final Answer: $$3:10$$"]
+            },
+            // FEB 4
+            {
+                q: "Iteration: Use $x_{n+1} = \\sqrt[3]{x_n + 7}$ with $x_0 = 2$ to find $x_1$.",
+                steps: ["Substitute 2 into formula.", "$x_1 = \\sqrt[3]{2 + 7}$.", "$\\sqrt[3]{9}$.", "Calc value.", "Final Answer: $$2.08$$ (2dp)"]
+            },
+            // FEB 5
+            {
+                q: "Histograms: Class 0-10 Freq 5. Class 10-30 Freq 20. Which bar is taller?",
+                steps: ["Frequency Density = Freq / Width.", "Bar 1: $5 \\div 10 = 0.5$.", "Bar 2: $20 \\div 20 = 1.0$.", "1.0 is higher than 0.5.", "Final Answer: $$10-30 \\text{ is taller}$$"]
+            },
+            // FEB 6
+            {
+                q: "Simultaneous Eq: $y = x^2$ and $y = 2x + 3$. Find x.",
+                steps: ["Equate: $x^2 = 2x + 3$.", "$x^2 - 2x - 3 = 0$.", "Factorise: $(x-3)(x+1) = 0$.", "Final Answer: $$x=3, x=-1$$"]
+            },
+            // FEB 7
+            {
+                q: "Compound Interest: £5000 at 2% for 3 years. Total amount?",
+                steps: ["Multiplier = 1.02.", "Calc: $5000 \\times 1.02^3$.", "$5000 \\times 1.061208$.", "Final Answer: $$£5306.04$$"]
+            },
+            // FEB 8
+            {
+                q: "Geometry: Exterior angle of a regular polygon is $18^\\circ$. How many sides?",
+                steps: ["Formula: Sum of exterior angles = $360^\\circ$.", "$n = 360 \\div 18$.", "Calculation.", "Final Answer: $$20 \\text{ sides}$$"]
+            },
+            // FEB 9
+            {
+                q: "Trig Graphs: What is the maximum value of $y = 3 \\sin x$?",
+                steps: ["Max value of $\\sin x$ is 1.", "Multiply by 3.", "Final Answer: $$3$$"]
+            },
+            // FEB 10
+            {
+                q: "Reverse Percent: Sale Price £40 (20% off). Original Price?",
+                steps: ["£40 is 80%.", "Divide by 0.8.", "$400 \\div 8 = 50$.", "Final Answer: $$£50$$"]
+            },
+            // FEB 11
+            {
+                q: "Transformations: Describe $y = f(x-2)$.",
+                steps: ["Inside bracket affects x (opposite).", "$-2$ means Add 2 to x.", "Moves Right.", "Final Answer: $$\\text{Translation } \\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix}$$"]
+            },
+            // FEB 12
+            {
+                q: "Sequence: nth term is $2n^2 + 1$. Find the 3rd term.",
+                steps: ["Sub $n=3$.", "$2(3^2) + 1$.", "$2(9) + 1$.", "Final Answer: $$19$$"]
+            },
+            // FEB 13
+            {
+                q: "Density: Mass 2kg, Volume $400cm^3$. Density in $g/cm^3$.",
+                steps: ["Convert Mass: $2kg = 2000g$.", "Density = $2000 \\div 400$.", "Cancel zeros: $20 \\div 4$.", "Final Answer: $$5 \\text{ g/cm}^3$$"]
+            },
+            // FEB 14
+            {
+                q: "Valentines Special: Equation of a circle centre (0,0) radius 5.",
+                steps: ["Formula: $x^2 + y^2 = r^2$.", "$r = 5$, so $r^2 = 25$.", "Final Answer: $$x^2 + y^2 = 25$$"]
+            },
+            // FEB 15
+            {
+                q: "Standard Form: $\\frac{8 \\times 10^5}{2 \\times 10^{-2}}$",
+                steps: ["Numbers: $8 \\div 2 = 4$.", "Powers: $10^5 \\div 10^{-2} = 10^{5 - (-2)} = 10^7$.", "Final Answer: $$4 \\times 10^7$$"]
+            },
+            // FEB 16
+            {
+                q: "Arc Length: Sector angle $60^\\circ$, Radius 6cm.",
+                steps: ["Fraction: $\\frac{60}{360} = \\frac{1}{6}$.", "Circumference: $\\pi d = 12\\pi$.", "Calc: $\\frac{1}{6} \\times 12\\pi$.", "Final Answer: $$2\\pi$$"]
+            },
+            // FEB 17
+            {
+                q: "Recurring Decimal: Convert $0.4\\dot{5}$ to a fraction.",
+                steps: ["$x = 0.4555...$", "$10x = 4.555...$", "$100x = 45.555...$", "Subtract: $90x = 41$.", "Final Answer: $$\\frac{41}{90}$$"]
+            },
+            // FEB 18
+            {
+                q: "Volume Scale Factor: Two similar solids. Length ratio 1:3. Volume ratio?",
+                steps: ["Length scale factor $k = 3$.", "Volume scale factor $k^3$.", "$3^3 = 27$.", "Final Answer: $$1:27$$"]
+            },
+            // FEB 19
+            {
+                q: "Algebraic Fraction: Simplify $\\frac{x^2 - 9}{x^2 + 5x + 6}$.",
+                steps: ["Top: DOTS $(x-3)(x+3)$.", "Bottom: Factorise $(x+2)(x+3)$.", "Cancel $(x+3)$.", "Final Answer: $$\\frac{x-3}{x+2}$$"]
+            },
+            // FEB 20
+            {
+                q: "Product Rule: 3 Starters, 4 Mains, 2 Desserts. How many options?",
+                steps: ["Multiply the choices.", "$3 \\times 4 \\times 2$.", "12 x 2.", "Final Answer: $$24$$"]
+            },
+            // FEB 21
+            {
+                q: "Gradient of Perpendicular: Line A has gradient 3. Line B is perpendicular.",
+                steps: ["Perpendicular gradient is negative reciprocal.", "Flip 3 to $\\frac{1}{3}$.", "Change sign.", "Final Answer: $$-\\frac{1}{3}$$"]
+            },
+            // FEB 22
+            {
+                q: "Fractional Power: Evaluate $16^{-3/2}$.",
+                steps: ["Negative: $\\frac{1}{16^{3/2}}$.", "Root: $\\sqrt{16} = 4$.", "Cube: $4^3 = 64$.", "Final Answer: $$\\frac{1}{64}$$"]
+            },
+            // FEB 23
+            {
+                q: "Bounds (Division): Max value of $\\frac{10}{x}$ where $x=2$ (nearest integer).",
+                steps: ["To maximise fraction, minimise denominator.", "Lower Bound of 2 is 1.5.", "Calc: $10 \\div 1.5$.", "Final Answer: $$6.67$$"]
+            },
+            // FEB 24
+            {
+                q: "Vectors: $\\vec{AB} = 2\\mathbf{a}$. $\\vec{BC} = 3\\mathbf{a}$. Are A, B, C collinear?",
+                steps: ["$\\vec{AB}$ and $\\vec{BC}$ are parallel (both multiples of $\\mathbf{a}$).", "They share point B.", "Therefore they are on a straight line.", "Final Answer: $$\\text{Yes}$$"]
+            },
+            // FEB 25
+            {
+                q: "Exact Trig: Value of $\\tan 45^\\circ + \\sin 90^\\circ$.",
+                steps: ["$\\tan 45 = 1$.", "$\\sin 90 = 1$.", "$1 + 1$.", "Final Answer: $$2$$"]
+            },
+            // FEB 26
+            {
+                q: "Circle Theorems: Cyclic Quadrilateral ABCD. Angle A = $80^\\circ$. Angle C?",
+                steps: ["Opposite angles sum to $180^\\circ$.", "$180 - 80$.", "Final Answer: $$100^\\circ$$"]
+            },
+            // FEB 27
+            {
+                q: "Inequality Region: $y > x$ and $x + y < 4$. Describe test point $(1,1)$.",
+                steps: ["Is $1 > 1$? No. (On line, not in region).", "Is $1 + 1 < 4$? Yes.", "Overall?", "Final Answer: $$\\text{Not in region}$$"]
+            },
+            // FEB 28
+            {
+                q: "End of Month Challenge: Solve $3^{2x} = 27$.",
+                steps: ["Write 27 as power of 3: $3^3$.", "Equation: $3^{2x} = 3^3$.", "Equate powers: $2x = 3$.", "Final Answer: $$x = 1.5$$"]
+            }
         ];
 
         const date = new Date();
