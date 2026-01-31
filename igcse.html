@@ -632,22 +632,29 @@
         ];
 
         // --- ENGINE: DATE & DISPLAY ---
-        const date = new Date();
-        document.getElementById('dateDisplay').textContent = date.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
+const date = new Date();
+date.setHours(0, 0, 0, 0); // ⭐ IMPORTANT FIX
 
-        // Cycle through the 31 questions based on the date
-        const dayIndex = (date.getDate() - 1) % problemBank.length;
-        const todaysProblem = problemBank[dayIndex];
+document.getElementById('dateDisplay').textContent =
+  date.toLocaleDateString('en-GB', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long'
+  });
 
-        // Render Question with Image Logic
-        let questionHTML = todaysProblem.q;
+// Cycle through the 31 questions based on the date
+const dayIndex = (date.getDate() - 1) % problemBank.length;
+const todaysProblem = problemBank[dayIndex];
 
-        // Check if the problem has an image attached
-        if (todaysProblem.img) {
-            questionHTML += `<img src="${todaysProblem.img}" class="question-img" alt="Question Diagram">`;
-        }
+// Render Question with Image Logic
+let questionHTML = todaysProblem.q;
 
-        document.getElementById('math-question').innerHTML = questionHTML;
+// Check if the problem has an image attached
+if (todaysProblem.img) {
+  questionHTML += `<img src="${todaysProblem.img}" class="question-img" alt="Question Diagram">`;
+}
+
+document.getElementById('math-question').innerHTML = questionHTML;
 
         // Render Steps (Hidden)
         const solutionArea = document.getElementById('solution-area');
