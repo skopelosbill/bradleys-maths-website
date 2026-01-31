@@ -256,169 +256,376 @@
 
         // --- DATA: 31 QUESTIONS (2025 SYLLABUS) ---
        const problemBank = [
-            // JAN 1
-            {
-                q: "Happy New Year! Simplify fully: $(16x^8)^{\\frac{1}{4}}$",
-                steps: ["Fourth root of 16 is 2.", "Power of x: $8 \\times 0.25 = 2$.", "Final Answer: $$2x^2$$"]
-            },
-            // JAN 2 - BILL'S GRADE 9 GEOMETRY SPECIAL
-            {
-                q: "ABCD is a cyclic quadrilateral. O (centre) lies on AD. Angle BOD is $72^\\circ$. BC=CD. Find angle ABC.",
-                img: "images/cyclic_quad_jan.png", 
-                steps: [
-                    "Step 1: AD is diameter, so $\\angle ABD = 90^\\circ$.",
-                    "Step 2: Triangle OBD is isosceles (radii). $\\angle OBD = (180-72)/2 = 54^\\circ$.",
-                    "Step 3: Equal chords BC=CD means equal angles at centre. $\\angle BOC = 36^\\circ$ and $\\angle COD = 36^\\circ$.",
-                    "Step 4: Angle at centre (COD=$36^\\circ$) is twice angle at circumference (CBD). So $\\angle CBD = 18^\\circ$.",
-                    "Step 5: Total Angle ABC = $90^\\circ + 18^\\circ$.",
-                    "Final Answer: $$108^\\circ$$"
-                ]
-            },
-            // JAN 3
-            {
-                q: "Differentiation: Find the coordinates of the turning point of $y = x^2 - 8x + 5$.",
-                steps: ["Differentiate: $\\frac{dy}{dx} = 2x - 8$.", "Set to 0 for stationary point: $2x - 8 = 0 \\rightarrow x = 4$.", "Substitute $x=4$ into $y$: $16 - 32 + 5$.", "Final Answer: $$(4, -11)$$"]
-            },
-            // JAN 4
-            {
-                q: "Sets: $n(\\xi) = 20, n(A) = 12, n(B) = 10, n(A \\cup B) = 18$. Find $n(A \\cap B)$.",
-                steps: ["Formula: $n(A \\cup B) = n(A) + n(B) - n(A \\cap B)$.", "$18 = 12 + 10 - x$.", "$18 = 22 - x$.", "Final Answer: $$4$$"]
-            },
-            // JAN 5 - REPLACED MATRICES WITH SURDS (New Non-Calc Topic)
-            {
-                q: "Surds: Rationalise the denominator of $\\frac{10}{\\sqrt{2}}$.",
-                steps: ["Multiply top and bottom by $\\sqrt{2}$.", "$\\frac{10\\sqrt{2}}{2}$.", "Simplify $10 \\div 2$.", "Final Answer: $$5\\sqrt{2}$$"]
-            },
-            // JAN 6
-            {
-                q: "Functions: $f(x) = 2x - 5$. Find $f^{-1}(x)$.",
-                steps: ["Let $y = 2x - 5$.", "Swap variables: $x = 2y - 5$.", "Rearrange: $x + 5 = 2y$.", "Final Answer: $$\\frac{x+5}{2}$$"]
-            },
-            // JAN 7
-            {
-                q: "Vectors: $\\vec{OP} = 2\\mathbf{a}$, $\\vec{OQ} = 3\\mathbf{b}$. M is midpoint of PQ. Find $\\vec{OM}$.",
-                steps: ["$\\vec{PQ} = -2\\mathbf{a} + 3\\mathbf{b}$.", "$\\vec{PM} = 0.5(-2\\mathbf{a} + 3\\mathbf{b}) = -\\mathbf{a} + 1.5\\mathbf{b}$.", "$\\vec{OM} = \\vec{OP} + \\vec{PM} = 2\\mathbf{a} - \\mathbf{a} + 1.5\\mathbf{b}$.", "Final Answer: $$\\mathbf{a} + 1.5\\mathbf{b}$$"]
-            },
-            // JAN 8
-            {
-                q: "Mensuration: Sector Angle $60^\\circ$, Radius 6cm. Find Area.",
-                steps: ["Formula: $\\frac{\\theta}{360} \\pi r^2$.", "$\\frac{60}{360} \\pi (36)$.", "$\\frac{1}{6} \\times 36\\pi$.", "Final Answer: $$6\\pi$$"]
-            },
-            // JAN 9 - REPLACED LINEAR PROGRAMMING WITH EXACT TRIG (New Topic)
-            {
-                q: "Exact Trig: Calculate the exact value of $\\sin(30^\\circ) \\times \\cos(45^\\circ)$.",
-                steps: ["$\\sin(30) = 0.5$.", "$\\cos(45) = \\frac{\\sqrt{2}}{2}$.", "Multiply: $\\frac{1}{2} \\times \\frac{\\sqrt{2}}{2}$.", "Final Answer: $$\\frac{\\sqrt{2}}{4}$$"]
-            },
-            // JAN 10
-            {
-                q: "Sequences: Find nth term of $5, 8, 11, 14...$",
-                steps: ["Difference is +3 ($3n$).", "0th term is $5 - 3 = 2$.", "Final Answer: $$3n + 2$$"]
-            },
-            // JAN 11
-            {
-                q: "Bounds: $L = 10$ (nearest integer). $W = 5$ (nearest integer). Max Area?",
-                steps: ["Max L = 10.5. Max W = 5.5.", "Area = $10.5 \\times 5.5$.", "Final Answer: $$57.75$$"]
-            },
-            // JAN 12
-            {
-                q: "Differentiation: Find gradient of $y = x^3$ at $x=2$.",
-                steps: ["Differentiate: $3x^2$.", "Substitute $x=2$.", "$3(2^2) = 3(4)$.", "Final Answer: $$12$$"]
-            },
-            // JAN 13
-            {
-                q: "Algebra: Solve $\\frac{2}{x} + \\frac{3}{x+1} = 1$.",
-                steps: ["Common denom: $2(x+1) + 3x = x(x+1)$.", "$2x + 2 + 3x = x^2 + x$.", "$5x + 2 = x^2 + x$.", "$x^2 - 4x - 2 = 0$.", "Use Quad Formula.", "Final Answer: $$x=4.45, x=-0.45$$"]
-            },
-            // JAN 14 - REPLACED MATRIX TRANSFORMATION WITH DOMAIN (New Emphasis)
-            {
-                q: "Functions: Find the value of $x$ that must be excluded from the domain of $f(x) = \\frac{1}{x-3}$.",
-                steps: ["The denominator cannot be zero.", "$x - 3 = 0$.", "$x = 3$.", "Final Answer: $$x \\neq 3$$"]
-            },
-            // JAN 15
-            {
-                q: "Statistics: Mean of 5 numbers is 12. Add a 6th number (18). New Mean?",
-                steps: ["Total of 5: $5 \\times 12 = 60$.", "New Total: $60 + 18 = 78$.", "Count: 6.", "Mean: $78 \\div 6$.", "Final Answer: $$13$$"]
-            },
-            // JAN 16
-            {
-                q: "Circle Theorems: Tangent meets Radius. Angle?",
-                steps: ["Fundamental Theorem.", "Angle between tangent and radius is always 90.", "Final Answer: $$90^\\circ$$"]
-            },
-            // JAN 17
-            {
-                q: "Compound Interest: $500 at 10% for 2 years.",
-                steps: ["Multiplier 1.1.", "$500 \\times 1.1^2$.", "$500 \\times 1.21$.", "Final Answer: $$605$$"]
-            },
-            // JAN 18
-            {
-                q: "Variation: $y$ inversely proportional to $x$. $x=2, y=10$. Formula?",
-                steps: ["$y = k/x$.", "$10 = k/2 \\rightarrow k=20$.", "Final Answer: $$y = \\frac{20}{x}$$"]
-            },
-            // JAN 19
-            {
-                q: "Polygons: Sum of interior angles of a pentagon.",
-                steps: ["Formula: $(n-2) \\times 180$.", "$(5-2) \\times 180$.", "$3 \\times 180$.", "Final Answer: $$540^\\circ$$"]
-            },
-            // JAN 20
-            {
-                q: "Indices: Simplify $(2x^{-2})^{-3}$.",
-                steps: ["Number: $2^{-3} = 1/8$.", "Power: $x^{-2 \\times -3} = x^6$.", "Final Answer: $$\\frac{x^6}{8}$$"]
-            },
-            // JAN 21
-            {
-                q: "Trig: Solve $\\sin x = 0.5$ for $0 \\le x \\le 360$.",
-                steps: ["Principal value: $30^\\circ$.", "Sine positive in 2nd quadrant: $180 - 30$.", "Final Answer: $$30^\\circ, 150^\\circ$$"]
-            },
-            // JAN 22
-            {
-                q: "Probability: P(A)=0.4, P(B)=0.5. Independent. P(A and B)?",
-                steps: ["Independent means multiply.", "$0.4 \\times 0.5$.", "Final Answer: $$0.2$$"]
-            },
-            // JAN 23
-            {
-                q: "Coordinate Geometry: Midpoint of $(2,4)$ and $(8,10)$.",
-                steps: ["Average x: $(2+8)/2 = 5$.", "Average y: $(4+10)/2 = 7$.", "Final Answer: $$(5, 7)$$"]
-            },
-            // JAN 24
-            {
-                q: "Limits: $x$ is 5.4 correct to 2 sig figs. Upper Bound?",
-                steps: ["Place value is 0.1.", "Half is 0.05.", "Final Answer: $$5.45$$"]
-            },
-            // JAN 25
-            {
-                q: "Speed: 20km in 30 mins. Find speed in km/h.",
-                steps: ["30 mins = 0.5 hours.", "Speed = Dist / Time.", "$20 / 0.5$.", "Final Answer: $$40 \\text{ km/h}$$"]
-            },
-            // JAN 26
-            {
-                q: "Factorise: $x^2 - 6x + 9$.",
-                steps: ["Factors of 9 that add to -6.", "-3 and -3.", "Final Answer: $$(x-3)^2$$"]
-            },
-            // JAN 27
-            {
-                q: "Vectors: $\\vec{a} = \\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix}, \\vec{b} = \\begin{pmatrix} -1 \\\\ 5 \\end{pmatrix}$. Find $2\\vec{a} + \\vec{b}$.",
-                steps: ["$2\\vec{a} = \\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix}$.", "Add x: $2 + -1 = 1$.", "Add y: $4 + 5 = 9$.", "Final Answer: $$\\begin{pmatrix} 1 \\\\ 9 \\end{pmatrix}$$"]
-            },
-            // JAN 28
-            {
-                q: "Simultaneous Eq: $y=3x$ and $x+y=20$.",
-                steps: ["Substitute: $x + 3x = 20$.", "$4x = 20 \\rightarrow x=5$.", "$y = 3(5) = 15$.", "Final Answer: $$x=5, y=15$$"]
-            },
-            // JAN 29
-            {
-                q: "Standard Form: $2.4 \\times 10^3 + 3.1 \\times 10^2$.",
-                steps: ["Convert to ordinary: $2400 + 310$.", "Add: $2710$.", "Convert back.", "Final Answer: $$2.71 \\times 10^3$$"]
-            },
-            // JAN 30
-            {
-                q: "Find the volume of a sphere with radius 3cm.",
-                steps: ["Formula: $\\frac{4}{3}\\pi r^3$.", "$\\frac{4}{3}\\pi (27)$.", "$4 \\times 9\\pi$.", "Final Answer: $$36\\pi$$"]
-            },
+           
             // JAN 31
             {
                 q: "Algebraic Proof: Show that the sum of 3 consecutive integers is a multiple of 3.",
                 steps: ["Terms: $n, n+1, n+2$.", "Sum: $3n + 3$.", "Factorise: $3(n+1)$.", "Conclusion: Multiple of 3."]
-            }
+            },
+           //1 Feb
+  {
+    "q": "Simplify $12a+4b-7a-5b$",
+    "img": "",
+    "steps": [
+      "Rewrite the expression to gather like terms: $12a - 7a + 4b - 5b$",
+      "Final answer: $$5a - b$$"
+    ]
+  },
+//2 Feb
+  {
+    "q": "The diagram shows two parallel lines intersecting two straight lines.\nFind the values of a, b and c",
+    "img": "images/feb_2.png",
+    "steps": [
+      "a = 143° (corresponding angles are equal).",
+      "b = 40° (alternate angles are equal).",
+      "c = 103° (exterior angle equals the sum of the two opposite interior angles).",
+      "Final answer: a = 143°, b = 40°, c = 103°"
+    ]
+  },
+//3 Feb
+  {
+    "q": "Jade invests €18000 at 5.25% per year compound interest.\nFind the value of her investment at the end of 10 years.\nGive your answer to the nearest ten thousand Euros.",
+    "img": "",
+    "steps": [
+      "$18000(1 + \\frac{5.25}{100})^{10}$",
+      "$= 18000(1.0525)^{10}$",
+      "$= 30025.73$",
+      "Final answer: €30000"
+    ]
+  },
+//4 Feb
+  {
+    "q": "A regular polygon has an interior angle of 165°.\nHow many sides does it have?",
+    "img": "",
+    "steps": [
+      "$180° - 165° = 15°$", 
+      "$\\frac{360°}{15°} = 24$",
+      "Final answer: 24 sides"
+    ]
+  },
+//5 Feb
+  {
+    "q": "Write the recurring decimal $ 0.6\\dot{4}$ as a fraction, giving your answer in its simplest form.",
+    "img": "",
+    "steps": [
+      "$ x = 0.6\\dot{4}$ (1)",
+      "$10x = 6.\\dot{4}$ (2)",
+      "$100x = 64.\\dot{4}$ (3)",
+      " (3) - (2): $90x = 58$",
+      "$x = \\frac{58}{90} = \\frac{29}{45}$",
+      "Final answer: $$\\frac{29}{45}$$"
+    ]
+  },
+//6 Feb
+  {
+    "q": "Consider the right angled triangle below:
+\n        a) Calculate the length of AB
+\n        b) Calculate the size of angle BAC",
+    "img": "feb_6.png",
+    "steps": [
+      "a) AB $= \\sqrt{20^2 + 7^2}$",
+      " $= \\sqrt{449} = 21.2$cm (3sf)",
+      "b) Angle BAC$ = \\tan^{-1} \\frac{20}{7}",
+      "$= 70.7° (1dp)"
+    ]
+  },
+//7 Feb
+  {
+    "q": "Consider the Venn diagram below.  The number in the universal set is 50.
+	\n $n(A)=32, n(B)=28, n(A \\cup B)' = 8$.
+	\n Find:
+	\n a) $n(A \\cap B)$
+	\n b) $n(A' \\cap B)$ ",
+    "img": "feb_7.png",            
+    "steps": [
+      "a) $A \\cup B = 50 - 8 = 42$",
+      "$A \\cup B = A + B - A \\cap B$",
+      "$ 42 = 32 + 28 - A \\cap B$",
+      "$ A \\cap B = 60-42 = 18$",
+      "b) $ n(A' \\cap B) = 28 - 18 = 10$"
+    ]
+  },
+//8 Feb
+{
+    "q": "Peter invests £20000 for 10 years.
+	\n At the end of the period his investment is worth £35817 (nearest pound).
+	\n Calculate the interest rate.",
+    "img": "",
+    "steps": [
+      "$20000\\left(1+\\frac{r}{100}\\right)^{10} = 35817$",
+      "$\\left(1+\\frac{r}{100}\\right)^{10} = \\frac{35817}{20000}$",
+      "$1+\\frac{r}{100} = \\left(\\frac{35817}{20000}\\right)^\\frac{1}{10}$",
+      "$\\frac{r}{100} = \\left(\\frac{35817}{20000}\\right)^\\frac{1}{10}-1$ ",
+      "$r = 100\\left[\\left(\\frac{35817}{20000}\\right)^\\frac{1}{10}-1\\right]",
+      "Final answer: $$6\\%$$"
+    ]
+  },
+//9 Feb
+{
+    "q": "$ y = sqrt[3]{\\left(\\frac{p^7}{q^2}\\right)}$
+	\n a) Find $y$ when $p = 9$ and $q=3$.
+	\n b) Rearrange the formula to make p the subject.",
+    "img": "",
+    "steps": [
+      "a) $ y = sqrt[3]{\\left(\\frac{9^7}{3^2}\\right)}$",
+      "$ y = sqrt[3]{\\left(\\frac{9^7}{9}\\right)}$",
+      "$ y = sqrt[3]{9^6}$",
+      "$ y = 9^2 = 81$",
+      "b) $y^3 = \\left(\\frac{p^7}{q^2}\\right)",
+      "$ p^7 = q^2y^3$",
+      "$p = sqrt[7]{q^2y^3}$"
+    ]
+  },
+//10 Feb
+{
+    "q": "The straight line $y=3x-1$ intersects the curve $y=2x^2-3x+2 in two points.
+	\n Find the coordinates of the points of intersection giving your answer correct to 2dp.",
+   "img": "",
+    "steps": [
+      "$2x^2-3x+2=3x-1$",
+      "$2x^2-6x+3=0$",
+      "$x=\\frac{6\\pm \\sqrt{36-(4)(2)(3)}}{4}$",
+      "$x=\\frac{6+\\sqrt{12}}{4}$ or $x=\\frac{6-\\sqrt{12}}{4}$",
+      "$x=2.37$ or $x=0.63$",
+      "If $x=2.37, y=6.10$, if $x=0.63, y=0.90$",
+      "Final answer: $(2.37,6.10), (0.63,0.90)"
+     ]
+  },
+//11 Feb
+{
+    "q": "$ \\mathbf{a} = \\begin{pmatrix} 5 \\\\ -2 \\end{pmatrix}  $ \\quad $ \\mathbf{b} = \\begin{pmatrix} -7 \\\\ 9 \\end{pmatrix}  $
+	\n a) Find $\\mathbf{a}-3\\mathbf{b}$.
+	\n b) Find the exact value of $|\\mathbf{b}|$",
+    "img": "",
+    "steps": [
+      "a) $ \\begin{pmatrix} 5 \\\\ -2 \\end{pmatrix}  - \\begin{pmatrix} -21 \\\\ 27 \\end{pmatrix} $",
+      "$ = \\begin{pmatrix} 26 \\\\ - 29 \\end{pmatrix} $",
+      "b) $\\sqrt{(-7)^2+9^2} = \\sqrt{49+81}$",
+      "$ = \\sqrt{130}"
+    ]
+  },
+//12 Feb
+{
+    "q": "The first four terms of a sequence are $ T_1=19,T_2=13, T_3=7, T_4=1 $
+	\n a) Find $T_5$
+	\n b) Find $T_n$.",
+    "img": "",
+    "steps": [
+      "a) Common difference: $-6$",
+      "$T_5 = 1 - 6 = -5$",
+      "b) $T_0 = 25$",
+      "$\\Rightarrow T_n = 25 - 6n$"
+    ]
+  },
+//13 Feb
+{
+    "q": "Find the value of \\Large$\\frac{3.6\times10^4}{1.8\\times10^{-3}}$\\normalsize giving your answer in standard form without using a calculator.",
+    "img": "",
+    "steps": [
+      "$3.6 \div 1.8 =2$",
+      "$10^4 \div 10^{-3} = 10^{4-(-3)}$",
+      "$ = 10^7$",
+      "Final answer:$$2\\times10^7$$"
+    ]
+  },
+//14 Feb
+{
+    "q": "The arithmetic mean of five numbers is $12$.
+	\n When a sixth number, $x$ is added the mean drops to $9$.
+	\n Find $x$.",
+    "img": "",
+    "steps": [
+      "$\\frac{60+x}{6}=9$",
+      "$60+x=54$"
+      "Final answer: $$x=-6$$"
+    ]
+  },
+//15 Feb
+{
+    "q": "In the diagram, below, points A, B, C and D all lie on the circumference of a circle.
+	\n Giving reasons, write down the size of $\\angle BDA, \\angle BCD and \\angle ABD$.",
+    "img": "images/feb_15.png",
+    "steps": [
+      "$\\angle BDA = 26^\\circ$ (angle in the same segment as $\\angle BCA$)",
+      "$\\angle BCD = 180-62=118^\\circ$ (opposite angles in a cyclic quadrilateral are supplementary)",
+      "$\\angle ABD = 180 - (62+26)=92^\\circ$ (angle sum of $\\triangle ABD$)"
+    ]
+  },
+//16 Feb
+{
+    "q": "$f(x)=3^x$
+	\n Find $x$ when $f^{-1}(x)=4$",
+    "img": "",
+    "steps": [
+      "$f^{-1}(x)=4\\Rightarrow f(4)=x$",
+      "$\\Rightarrow x=3^4$",
+      "Final answer: $$x=81$$"
+    ]
+  },
+// 17 Feb
+{
+    "q": "The diagram shows the end view of a storage unit in the shape of two congruent trapeziums.
+	\n a) Calculate the area of the end wall.
+	\n b) The length of the sloping roof (marked $x$).
+	\n c) The angle of the pitch of the roof (marked $y^\\circ$).",
+    "img": "images/feb_17.png",
+    "steps": [
+      "a) Area$=2\\times\\frac{1}{2}(a+b)\\times h$",
+      "$=2\\times\\frac{1}{2}(2.5 + 3)\\times 2.5$",
+      "$=5.5\\times2.5 = 13.75\\text{m}^2$",
+      "b) $x=\\sqrt{0.5^2+2.5^2}$",
+      "$=2.55\\text{m}$",
+      "c) $\\tan=\\frac{opp}{adj}$",
+      "$y=\\tan^{-1}\\left(\\frac{0.5}{2.5}\\right)$",
+      "$=11.3^\\circ$ \\text{1dp}."
+    ]
+  },
+// 18 Feb
+{
+    "q": "Factorise $30x^2+9x-3$",
+    "img": "",
+    "steps": [
+      "$30x^2+9x-3\\equiv 3(10x^2+3x-1)$
+      "$10\times-1=-10$",
+      "Factors of $-10$ that sum to $3$ are $5$ and $-2$",
+      "Express $3x$ as $5x-2x$ so $3(10x^2+5x-2x-1$",
+      "Factorise in pairs: $3(5x(2x+1)-1(2x+1)$",
+      "Final answer: $$3(5x-1)(2x+1)$$"
+    ]
+  },
+// 19 Feb
+{
+    "q": "Expand and simplify $(x+3)(x-5)(x-2)$",
+    "img": "",
+    "steps": [
+      "Humans are linear processors, don't try to expand the three brackets in one go!",
+      "$(x+3)(x-5)\\equiv x^2-2x-15$",
+      "$(x^2-2x-15)(x-2)\\equiv x(x^2-2x-15)-2(x^2-2x-15)$",
+      "$\\equiv x^3-2x^2-15x-2x^2+4x+30$",
+      "Final answer: $$x^3-4x^2-11x+30$$"
+    ]
+  },
+//20 Feb
+{
+  "q": "A cuboid is constructed to hold a single metal rod.
+\n Its dimensions are length 6cm, width 4cm and height 2.5cm.
+\n The rod fits exactly in the box without bending between the bottom left front corner and the top right back corner.
+\n a) Calculate the length of the rod correct to 3 sf.
+\n b) Calculate the angle the rod makes with the horizontal base of the cuboid correct to 1dp",
+  "img": "",
+  "steps": [
+    "a) Length of rod $= \\sqrt{6^2+4^2+2.5^2}$",
+    "$= 7.63$cm (3sf)",
+    "b) $\\sin\\theta=\\frac{\\text{opp}}{\\text{hyp}}$",
+    "$\\theta=\\sin^{-1}\\left(\\frac{2.5}{\\sqrt{6^2+4^2+2.5^2}}\\right)$",
+    "$=19.1^\\circ$ (1dp)"
+  ]
+},
+//21 Feb
+{
+  "q": "$y$ is inversely proportional to $\\sqrt{x+6}$.
+\n When $y=100$, $x=10$.
+\n Find $x$ when $y=40$",
+  "img": "",
+  "steps": [
+    "$y \\propto \\frac{1}{\\sqrt{x+6}} \\Rightarrow y=\\frac{k}{\\sqrt{x+6}}$",
+    "$100 = \\frac{k}{\\sqrt{10+6}}$",
+    "$100 = \\frac{k}{4} \\Rightarrow k=400$",
+    "$40 = \\frac{400}{\\sqrt{x+6}}$",
+    "$\\sqrt{x+6} = 10 \\Rightarrow x+6 = 100$",
+    "$x=94$",
+    "Final answer: $$x=94$$"
+  ]
+},
+
+//22 Feb
+{
+    "q": "Without using a calculator solve the equation $3+2\\sin x =4$ for $0^circ \\le x \\le 360^circ$",
+    "img": "",
+    "steps": [
+      "$3+2\\sin x =4$",
+      "$\\Rightarrow 2\\sin x =1$",
+      "$\\Rightarrow \\sin x =\\frac{1}{2}$",
+      "$\\Rightarrow x =\\sin^{-1}\\left(\\frac{1}{2}\\right)$",
+     "Final answer: $$x=30^\\circ \\text{or} x=180-30=150^\\circ$$."
+    ]
+  },
+//23 Feb
+{
+    "q": "Without using a calculator and giving your answer as a mixed number in it's simplest form, evaluate $1\\frac{3}{8}\\times2\\frac{2}{5}$",
+    "img": "",
+    "steps": [
+      "$1\\frac{3}{8}\\times2\\frac{2}{5}$",
+      "$=\\frac{11}{8}\\times\\frac{12}{5}$",
+      "$=\\frac{11\\times3}{2\\times5}",
+      "$=\\frac{33}{10}$",
+      "Final answer: 3\\frac{3}{10}"
+    ]
+  },
+//24 Feb
+{
+    "q": "Find the LCM of 24 and 84",
+    "img": "",
+    "steps": [
+      "$24=2^3\\times3$",
+      "$84=2^2\\times3\\times7$",
+      "LCM $=2^3\\times3\\times7$",
+      "Final answer: 168"
+    ]
+  },
+//25 Feb
+{
+  "q": "Solve the simultaneous equations:
+\n$3x+7y=22$
+\n$5x-3y=22$",
+  "img": "",
+  "steps": [
+    "Eq1: $3x+7y=22$, Eq2: $5x-3y=22$",
+    "Multiply Eq1 by 3: $9x+21y=66$ (Eq3), multiply Eq2 by 7: $35x-21y=154$ (Eq4)",
+    "Add Eq3 and Eq4: $44x=220$",
+    "$\\Rightarrow x=5$",
+    "Substitute $x=5$ into Eq1: $3(5)+7y=22$",
+    "$\\Rightarrow 15+7y=22 \\Rightarrow y=1$",
+    "Final answer: $x=5, y=1$"
+  ]
+},
+
+//26 Feb
+{
+    "q": "Consider the expressions:
+	\n $9a^2bc^2, 6a^4b^2c^4 \\text{and} 15a^6b^3c$
+	\n Write down a) the HCF, b) the LCM",
+    "img": "",
+    "steps": [
+      "a) HCF $= 3a^2bc$",
+      "b) LCM $= 90a^6b^3c^4$"
+    ]
+  },
+//27 Feb
+{
+  "q": "Rationalise the denominator of $\\frac{1}{3-\\sqrt{2}}$",
+  "img": "",
+  "steps": [
+    "$\\frac{1}{3-\\sqrt{2}} = \\frac{1 \\cdot (3+\\sqrt{2})}{(3-\\sqrt{2})(3+\\sqrt{2})}$",
+    "$= \\frac{3+\\sqrt{2}}{9-2}$",
+    "Final answer: $$\\frac{3+\\sqrt{2}}{7}$$"
+  ]
+},
+
+//28 Feb
+{
+  "q": "Simplify
+\n$\\frac{6x^2-7x-3}{9x^2-1}$",
+  "img": "",
+  "steps": [
+    "$6x^2-7x-3 = 6x^2-9x+2x-3$",
+    "$= 3x(2x-3)+1(2x-3)$",
+    "$= (3x+1)(2x-3)$",
+    "$9x^2-1 = (3x-1)(3x+1)$",
+    "Hence $\\frac{6x^2-7x-3}{9x^2-1} = \\frac{(3x+1)(2x-3)}{(3x-1)(3x+1)}$",
+    "Final answer: $$\\frac{2x-3}{3x-1}$$"
+  ]
+}
         ];
 
         // --- ENGINE: DATE & DISPLAY ---
