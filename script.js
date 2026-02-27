@@ -618,7 +618,7 @@ function toggleMenu() {
         const totalSteps = todaysProblem.steps.length;
         const btn = document.getElementById('stepBtn');
 
-        function showNextStep() {
+        window.showNextStep = function() {
             if (currentStep < totalSteps) {
                 document.getElementById('step-' + currentStep).style.display = 'block';
                 currentStep++;
