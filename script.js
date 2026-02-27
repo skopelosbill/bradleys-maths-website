@@ -1,4 +1,3 @@
-<script>
 function toggleMenu() {
             const nav = document.getElementById('navLinks');
             nav.classList.toggle('active');
@@ -633,4 +632,4 @@ function toggleMenu() {
             }
         }
     }); 
-</script>
+
