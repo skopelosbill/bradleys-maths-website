@@ -205,7 +205,7 @@ function toggleMenu() {
     "topic": "Pythagoras",
     "notice": "This is a non-calculator question.",
     "q": "The diagram shows $\\triangle ABC$.<br>$AB = 6$cm.<br>$AC = 8$cm.<br>$\\angle BAC = 90^\\circ$.<br>(a) Find $BC$.<br>(b) Find the area of $\\triangle ABC$.",
-    "img": "images/1_mar.png",
+    "img": "images/1_Mar_G.png",
     "steps": [
         "$BC^2 = 6^2 + 8^2$",
         "$= 36 + 64$",
@@ -245,7 +245,7 @@ function toggleMenu() {
     "topic": "Trigonometry",
     "notice": "",
     "q": "The diagram shows a right-angled triangle.<br>$\\angle A = 35^\\circ$.<br>The side opposite angle $A$ is 7cm.<br>Find the hypotenuse.<br>Give your answer to 1 decimal place.",
-    "img": "images/4_mar.png",
+    "img": "images/4_Mar_G.png",
     "steps": [
         "$\\sin 35^\\circ = \\dfrac{7}{h}$",
         "$h = \\dfrac{7}{\\sin 35^\\circ}$",
@@ -305,7 +305,7 @@ function toggleMenu() {
     "topic": "Circle Theorems",
     "notice": "This is a non-calculator question.",
     "q": "The diagram shows a circle with centre $O$.<br>$\\angle AOB = 110^\\circ$.<br>$\\angle ACB$ is an angle at the circumference standing on the same arc.<br>Find $\\angle ACB$.",
-    "img": "images/9_mar.png",
+    "img": "images/9_Mar_G.png",
     "steps": [
         "Angle at centre is twice angle at circumference.",
         "$\\angle ACB = \\dfrac{110}{2}$",
@@ -317,7 +317,7 @@ function toggleMenu() {
     "topic": "Quadratics",
     "notice": "This is a non-calculator question.",
     "q": "Solve:<br>$$x^2 - 5x + 6 = 0$$",
-    "img": "images/10_mar.png",
+    "img": "",
     "steps": [
         "$(x - 2)(x - 3) = 0$",
         "$x = 2$ or $x = 3$"
@@ -328,7 +328,7 @@ function toggleMenu() {
     "topic": "Volume - Cylinder",
     "notice": "",
     "q": "A cylinder has radius 4cm.<br>Its height is 10cm.<br>Calculate the volume.<br>Give your answer in terms of $\\pi$.",
-    "img": "images/11_mar.png",
+    "img": "images/11_Mar_G.png",
     "steps": [
         "$\\text{Volume} = \\pi r^2 h$",
         "$= \\pi \\times 4^2 \\times 10$",
@@ -353,7 +353,7 @@ function toggleMenu() {
     "topic": "Scatter Graphs",
     "notice": "",
     "q": "The scatter graph shows the relationship between hours studied and test score.<br>Describe the correlation.<br>Explain your answer.",
-    "img": "images/13_mar.png",
+    "img": "images/13_Mar_G.png",
     "steps": [
         "Positive correlation.",
         "As hours studied increases, test score increases."
@@ -420,7 +420,7 @@ function toggleMenu() {
     "topic": "Trigonometry - Cosine Rule",
     "notice": "",
     "q": "In triangle $ABC$,<br>$AB = 7$cm,<br>$AC = 9$cm,<br>$\\angle BAC = 120^\\circ$.<br>Find $BC$.<br>Give your answer to 1 decimal place.",
-    "img": "images/19_mar.png",
+    "img": "images/19_Mar_G.png",
     "steps": [
         "$BC^2 = 7^2 + 9^2 - 2(7)(9)\\cos 120^\\circ$",
         "$= 49 + 81 - 126(-0.5)$",
@@ -446,7 +446,7 @@ function toggleMenu() {
     "topic": "Cumulative Frequency",
     "notice": "",
     "q": "The cumulative frequency graph shows the masses of 80 students.<br>(a) Estimate the median.<br>(b) Estimate the interquartile range.",
-    "img": "images/21_mar.png",
+    "img": "images/21_Mar_G.png",
     "steps": [
         "Median at 40th value (read from graph).",
         "Lower quartile at 20th value.",
@@ -493,7 +493,7 @@ function toggleMenu() {
     "topic": "Circle Theorems",
     "notice": "This is a non-calculator question.",
     "q": "The diagram shows a cyclic quadrilateral $ABCD$.<br>$\\angle ABC = 78^\\circ$.<br>Find $\\angle ADC$.<br>Give a reason for your answer.",
-    "img": "images/25_mar.png",
+    "img": "images/25_Mar_G.png",
     "steps": [
         "Opposite angles in a cyclic quadrilateral sum to $180^\\circ$.",
         "$\\angle ADC = 180^\\circ - 78^\\circ$",
@@ -555,7 +555,7 @@ function toggleMenu() {
     "topic": "Transformations - Enlargement",
     "notice": "This is a non-calculator question.",
     "q": "Triangle A has vertices $(1,1)$, $(2,1)$, $(1,3)$.<br>Triangle B is an enlargement of Triangle A with scale factor $-2$ about the origin.<br>Write down the coordinates of Triangle B.",
-    "img": "images/30_mar.png",
+    "img": "images/30_Mar_G.png",
     "steps": [
         "$(1,1) \\rightarrow (-2,-2)$",
         "$(2,1) \\rightarrow (-4,-2)$",
