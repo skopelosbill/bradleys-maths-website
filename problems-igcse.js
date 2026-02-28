@@ -1,4 +1,4 @@
-[
+ const problemBank = [
 
 		    // JAN 30
             {
@@ -747,4 +747,4 @@
 "$27k^3$ is divisible by 27, QED" 
 ]
 } 
-        ]
+        ];
