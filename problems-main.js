@@ -1,4 +1,4 @@
-[
+const problemBank = [
             // JAN 24 (Today)
             {
                 q: "Algebraic Proof: Prove that $(n+1)^2 - (n-1)^2$ is always a multiple of 4.",
