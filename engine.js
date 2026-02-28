@@ -60,6 +60,7 @@ function toggleMenu() {
                     btn.style.cursor = "default";
                 }
             }
+        }
     }); 
 
 
