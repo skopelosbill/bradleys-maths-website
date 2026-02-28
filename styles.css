@@ -152,6 +152,8 @@ body {
 
     .nav-links.active {
         display: flex;
+        flex-direction: column;
+        z-index: 1001;
     }
 
     .nav-links a,
