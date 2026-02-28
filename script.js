@@ -3,9 +3,7 @@ function toggleMenu() {
             nav.classList.toggle('active');
         }
         document.addEventListener("DOMContentLoaded", function() {
-        // PASTE YOUR EXISTING PROBLEM BANK SCRIPT HERE
-        // (I assume you have the script block from previous versions)
-        const problemBank =
+       
 
        // --- ENGINE: DATE & DISPLAY ---
         const date = new Date();
