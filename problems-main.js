@@ -1,3 +1,4 @@
+const anchorDate = new Date("2025-01-24");
 const problemBank = [
             // JAN 24 (Today)
             {
