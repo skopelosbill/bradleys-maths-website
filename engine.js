@@ -3,7 +3,7 @@ function toggleMenu() {
             const nav = document.getElementById('navLinks');
             nav.classList.toggle('active');
         }
-        document.addEventListener("DOMContentLoaded", function() {
+      
        
 
        // --- ENGINE: DATE & DISPLAY ---
@@ -59,8 +59,7 @@ function toggleMenu() {
                     btn.style.backgroundColor = "#10b981"; 
                     btn.style.cursor = "default";
                 }
-            }     
-        }
+            }
     }); 
 
 
