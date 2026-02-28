@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function() {
 function toggleMenu() {
             const nav = document.getElementById('navLinks');
             nav.classList.toggle('active');
@@ -59,6 +60,7 @@ function toggleMenu() {
                     btn.style.cursor = "default";
                 }
             }
+});       
         }
     }); 
 
