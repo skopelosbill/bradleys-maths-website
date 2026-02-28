@@ -59,8 +59,7 @@ function toggleMenu() {
                     btn.style.backgroundColor = "#10b981"; 
                     btn.style.cursor = "default";
                 }
-            }
-});       
+            }     
         }
     }); 
 
