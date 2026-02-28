@@ -1,4 +1,4 @@
-const anchorDate = new Date("2025-01-30");
+const anchorDate = new Date("2026-01-30");
 const problemBank = [
 
 		    // JAN 30
