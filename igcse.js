@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         // --- DATA: 31 QUESTIONS (2025 SYLLABUS) ---
-       const problemBank = 
+       
 
 <!-- --- ENGINE: DATE & DISPLAY --- -->
 
