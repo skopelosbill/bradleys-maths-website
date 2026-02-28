@@ -1,9 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
+
 function toggleMenu() {
             const nav = document.getElementById('navLinks');
             nav.classList.toggle('active');
         }
-      
+document.addEventListener('DOMContentLoaded', function() {      
        
 
        // --- ENGINE: DATE & DISPLAY ---
