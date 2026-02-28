@@ -9,17 +9,17 @@ function toggleMenu() {
         const date = new Date();
         document.getElementById('dateDisplay').textContent = date.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
 
-        // ROBUST LOGIC: Calculate Day of Year (1-366)
-        const start = new Date(date.getFullYear(), 0, 0);
-        const diff = date - start;
-        const oneDay = 1000 * 60 * 60 * 24;
-        const dayOfYear = Math.floor(diff / oneDay);
+       const today = new Date();
 
-        // OFFSET: Adjust this number to align today (Jan 24) with Question 0
-        // Jan 24 is Day 24. We want Index 0. So we subtract 24.
-        const offset = 24; 
-        
-        let dayIndex = (dayOfYear - offset) % problemBank.length;
+            const oneDay = 1000 * 60 * 60 * 24;
+            const diffTime = today - anchorDate;
+            const daysSinceAnchor = Math.floor(diffTime / oneDay);
+
+            let dayIndex = daysSinceAnchor % problemBank.length;
+
+            if (dayIndex < 0) {
+                dayIndex = problemBank.length + dayIndex;
+}
         
         // Handle negative numbers (if we wrap around the year end or test early dates)
         if (dayIndex < 0) {
