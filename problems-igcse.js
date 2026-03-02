@@ -747,5 +747,18 @@ const problemBank = [
 "$n^3 = 27k^3$", 
 "$27k^3$ is divisible by 27, QED" 
 ]
-} 
+}
+	{
+	"date": "1 April",
+	"topic": "Coordinate Geometry",
+	"notice": "This is a non-calculator question",
+	"q": "Find the equation of the line passing through $(3,-4)$ and $(5,6)$",
+	"img": "",
+	"steps": [
+		"$m=\\text{gradient}=\\frac{\\text{rise}}{\\text{run}}=\\frac{6-(-4)}{5-3}=\\frac{10}{2}=5$",
+		"$y-6=5(x-5)$",
+		"$y=5x-25+6$",
+		"Final answer: $$y-5x-19$$"
+		]
+		},	
         ];
