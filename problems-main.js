@@ -521,51 +521,69 @@ const problemBank = [
         "$= \\dfrac{2}{7}$"
       ]
   },
-  {
-    "date": "28 March",
-    "topic": "Algebra - Proof",
-    "notice": "This is a non-calculator question.",
-    "q": "Prove that the square of any odd number is odd.",
-    "img": "",
-    "steps": [
-        "Let odd number $= 2n + 1$.",
-        "$(2n+1)^2 = 4n^2 + 4n + 1$",
-        "$= 2(2n^2 + 2n) + 1$",
-        "Therefore odd."
-      ]
-  },
-  {
-    "date": "29 March",
-    "topic": "Graphs - Equation of a Circle",
-    "notice": "",
-    "q": "Write down the equation of the circle with centre $(2,-3)$ and radius 5.",
-    "img": "",
-    "steps": [
-        "$(x-2)^2 + (y+3)^2 = 25$"
-      ]
-  },
-  {
-    "date": "30 March",
-    "topic": "Transformations - Enlargement",
-    "notice": "This is a non-calculator question.",
-    "q": "Triangle A has vertices $(1,1)$, $(2,1)$, $(1,3)$.<br>Triangle B is an enlargement of Triangle A with scale factor $-2$ about the origin.<br>Write down the coordinates of Triangle B.",
-    "img": "images/30_Mar_G.png",
-    "steps": [
-        "$(1,1) \\rightarrow (-2,-2)$",
-        "$(2,1) \\rightarrow (-4,-2)$",
-        "$(1,3) \\rightarrow (-2,-6)$"
-      ]
-  },
-  {
-    "date": "31 March",
-    "topic": "Algebra - Algebraic Proof",
-    "notice": "This is a non-calculator question.",
-    "q": "Prove that if $n$ is an integer,<br>$n^2 - n$ is always even.",
-    "img": "",
-      "steps": [
-        "$n^2 - n = n(n-1)$",
-        "One of two consecutive integers is even.",
-        "Therefore the product is even."
-      ]
-  }
+                        {
+                        "date": "28 March",
+                        "topic": "Algebra - Proof",
+                        "notice": "This is a non-calculator question.",
+                        "q": "Prove that the square of any odd number is odd.",
+                        "img": "",
+                        "steps": [
+                                "Let odd number $= 2n + 1$.",
+                                "$(2n+1)^2 = 4n^2 + 4n + 1$",
+                                "$= 2(2n^2 + 2n) + 1$",
+                                "Therefore odd."
+                        ]
+                        },
+                        {
+                        "date": "29 March",
+                        "topic": "Graphs - Equation of a Circle",
+                        "notice": "",
+                        "q": "Write down the equation of the circle with centre $(2,-3)$ and radius 5.",
+                        "img": "",
+                        "steps": [
+                                "$(x-2)^2 + (y+3)^2 = 25$"
+                        ]
+                        },
+                        {
+                        "date": "30 March",
+                        "topic": "Transformations - Enlargement",
+                        "notice": "This is a non-calculator question.",
+                        "q": "Triangle A has vertices $(1,1)$, $(2,1)$, $(1,3)$.<br>Triangle B is an enlargement of Triangle A with scale factor $-2$ about the origin.<br>Write down the coordinates of Triangle B.",
+                        "img": "images/30_Mar_G.png",
+                        "steps": [
+                                "$(1,1) \\rightarrow (-2,-2)$",
+                                "$(2,1) \\rightarrow (-4,-2)$",
+                                "$(1,3) \\rightarrow (-2,-6)$"
+                        ]
+                        },
+                        {
+                        "date": "31 March",
+                        "topic": "Algebra - Algebraic Proof",
+                        "notice": "This is a non-calculator question.",
+                        "q": "Prove that if $n$ is an integer,<br>$n^2 - n$ is always even.",
+                        "img": "",
+                        "steps": [
+                                    "$n^2 - n = n(n-1)$",
+                                    "One of two consecutive integers is even.",
+                                    "Therefore the product is even."
+                        ]
+                        },
+                        {
+                        "Date": "1 April",
+                        "topic": "Algebra - Factorising quadratics with negative coefficient of $x^2$",
+                        "notice": "This is a non-calculator question.",
+                        "q": "Factorise:<br>$$19x-6x^2-15$$",
+                        "img": "",
+                        "steps": [
+                                    "$-6\\times-15=90$",
+                                    "Factors of 90 that add to 19 are 9 and 10",
+                                    "$19x-6x^2-15\\equiv-6x^2+19x-15$",
+                                    "$\\equiv-6x^2+9x+10x-15$",
+                                    "$\\equiv-3x(2x-3)+5(2x-3)$",
+                                    "$\\equiv(5-3x)(2x-3)$",
+                                    "Final answer: $$(%-3x)(2x-3)$$"
+                                    ]
+                        },
+                                    
+                                    
       ]
