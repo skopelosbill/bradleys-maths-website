@@ -379,7 +379,8 @@ const problemBank = [
 "$f(g(x)) = 2(x^2 - 3) + 1$", 
 "$= 2x^2 - 6 + 1", "$= 2x^2 - 5$", 
 "$g(f(x)) = (2x+1)^2 - 3$", 
-"$= 4x^2 + 4x + 1 - 3$", "$= 4x^2 + 4x - 2$" 
+"$= 4x^2 + 4x + 1 - 3$", 
+"$= 4x^2 + 4x - 2$" 
 ] 
 }, 
 { 
@@ -391,7 +392,8 @@ const problemBank = [
 "steps": [ 
 "$\\angle C = 180 - 40 - 65 = 75^\\circ$", 
 "$\\frac{AC}{\\sin65} = \\frac{8}{\\sin75}$", 
-"$AC = \\frac{8\\sin65}{\\sin75}$", "$AC = 7.5$cm" 
+"$AC = \\frac{8\\sin65}{\\sin75}$", 
+"$AC = 7.5$cm" 
 ] 
 }, 
 { 
@@ -747,7 +749,7 @@ const problemBank = [
 "$n^3 = 27k^3$", 
 "$27k^3$ is divisible by 27, QED" 
 ]
-}
+},
 	{
 	"date": "1 April",
 	"topic": "Coordinate Geometry",
