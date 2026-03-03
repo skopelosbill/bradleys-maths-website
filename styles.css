@@ -218,13 +218,16 @@ h2 {
 }
 
 h3 {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    color: ##4c1d95;
-    margin-top: 40px;
-    border-bottom: 1px solid ##4c1d95;
+    font-size: 1.1rem;
+    text-transform: none;
+    color: #4c1d95;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    border-bottom: 1px solid #e0ddee;
     display: inline-block;
-    padding-bottom: 5px;
+    padding-bottom: 6px;
+    font-family: 'Merriweather', serif;
 }
 
 .trust-badge {
