@@ -191,9 +191,11 @@ body {
 /* ========================= */
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     padding: 40px 20px;
     width: 100%;
+    margin-top: 40px;
+    margin-bottom: 60px;
     box-sizing: border-box;
     text-align: center;
 }
@@ -218,9 +220,9 @@ h2 {
 h3 {
     font-size: 1.2rem;
     text-transform: uppercase;
-    color: #a78bfa;
+    color: ##4c1d95;
     margin-top: 40px;
-    border-bottom: 1px solid #a78bfa;
+    border-bottom: 1px solid ##4c1d95;
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -252,11 +254,11 @@ h3 {
     font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 6px;
     transition: transform 0.2s;
     display: inline-block;
     margin-bottom: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    
 }
 
 .btn:hover {
@@ -293,7 +295,7 @@ h3 {
     border-radius: 15px;
     padding: 30px;
     margin: 30px 0;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
     text-align: left;
     min-height: 200px;
 }
