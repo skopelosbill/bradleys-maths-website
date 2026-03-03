@@ -6,8 +6,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #4c1d95;
-    color: #ffffff;
+    background-color: #f7f6fb; /* Aubergine White */
+    color: #1f1f1f; /* Soft near-black */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +19,7 @@ body {
 /* ========================= */
 
 .navbar {
-    background-color: #310c6b;
+    background-color: #4c1d95;
     width: 100%;
     position: sticky;
     top: 0;
@@ -35,9 +35,10 @@ body {
 
 .nav-brand {
     font-size: 1.5rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 0.5px;
+    font-family: Georgia, 'Times New Roman', serif;
     color: white;
     text-decoration: none;
 }
@@ -145,7 +146,7 @@ body {
         top: 70px;
         left: 0;
         width: 100%;
-        background-color: #310c6b;
+        background-color: #4c1d95;
         padding: 20px 0;
         gap: 0;
     }
@@ -172,7 +173,7 @@ body {
     .dropdown-content {
         position: static;
         width: 100%;
-        background-color: #27065a;
+        background-color: #4c1d95;
     }
 
     .dropdown-content a {
@@ -198,18 +199,20 @@ body {
 }
 
 h1 {
-    font-size: 3.5rem;
-    margin: 20px 0 5px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-size: 3rem;
+    margin: 40px 0 10px;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #1f1f1f;
 }
 
 h2 {
-    font-size: 1.4rem;
-    font-weight: 300;
-    margin-bottom: 30px;
-    color: #e9d5ff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #555555;
 }
 
 h3 {
@@ -352,5 +355,5 @@ h3 {
 }
 
 .reveal-btn:hover {
-    background: #3b82f6;
+    background: #3b1674;
 }
