@@ -228,13 +228,13 @@ h3 {
 }
 
 .trust-badge {
-    background-color: rgba(255,255,255,0.1);
-    padding: 10px 20px;
-    border-radius: 8px;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
     margin-bottom: 30px;
-    font-size: 0.9rem;
-    color: #ddd6fe;
-    display: inline-block;
+    font-size: 0.95rem;
+    color: #555555;
+    display: block;
 }
 
 /* ========================= */
