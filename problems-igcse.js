@@ -392,9 +392,9 @@ const problemBank = [
 "img": "images/4_mar_igcse.png",
 "steps": [ 
 "$\\angle C = 180 - 40 - 65 = 75^\\circ$", 
-"$\\frac{AC}{\\sin65} = \\frac{8}{\\sin75}$", 
-"$AC = \\frac{8\\sin65}{\\sin75}$", 
-"$AC = 7.5$cm" 
+"$\\frac{AC}{\\sin75} = \\frac{8}{\\sin65}$", 
+"$AC = \\frac{8\\sin75}{\\sin65}$", 
+"$AC = 8.53$cm" 
 ] 
 }, 
 { 
