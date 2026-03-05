@@ -401,7 +401,7 @@ const problemBank = [
 "date": "5 March", 
 "topic": "Indices", 
 "notice": "This is a non-calculator question.", 
-"q": "Simplify.<br>,br.$$\\frac{5x^3 y^{-2}}{10x^{-1} y}$$", 
+"q": "Simplify:<br><br>$$\\frac{5x^3 y^{-2}}{10x^{-1} y}$$", 
 "img": "", 
 "steps": [ 
 "$= \\frac{5}{10} x^{3-(-1)} y^{-2-1}$", 
