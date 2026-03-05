@@ -763,5 +763,22 @@ const problemBank = [
 		"$y=5x-25+6$",
 		"Final answer: $$y-5x-19$$"
 		]
-		},	
-        ]
+	},	
+	{
+	"date": "2 April",
+	"topic": "Lowest Common Multiple",
+	"notice": "",
+	"q" : "Buses on three routes, A, B and C leave the bus station at 8am.<br>Route A buses leave every 20 minutes.<br>Route B buses leave every 30 minutes.<br>Route C buses leave every 45 minutes.<br><br>What time will it be when all three next leave the bus station together?",
+	"img": "",
+	"Steps": [
+		"$20=2^2\\times5$",
+		"$30=2\\times3\\times5$",
+		"$45=3^2\\times5$",
+		"$\\text{LCM }(20,30,45)=2^2\\times3^2\\times5=180$",
+		"$180\\text{ minutes}=3\\text{ hours}$",
+		"$8\\text{am)+3\\text{ hours}=11{am}$",
+		"Final answer: $$11\\text{am}$$"
+		]
+	},
+		
+]
