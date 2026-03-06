@@ -754,7 +754,7 @@ const problemBank = [
 	{
 	"date": "1 April",
 	"topic": "Coordinate Geometry",
-	"notice": "This is a non-calculator question",
+	"notice": "This is a non-calculator question.",
 	"q": "Find the equation of the line passing through $(3,-4)$ and $(5,6)$",
 	"img": "",
 	"steps": [
@@ -780,5 +780,21 @@ const problemBank = [
 		"Final answer: $$11\\text{am}$$"
 		]
 	},
-		
+	{
+	"date": "3 April",
+	"topic": "Quadratic Factorisation - negative coefficient of $x^2$",
+	"notice": "This is a non-calculator question.",
+	"q" : "Factorise: $$-2x^2+5x-3$$",
+	"img": "",
+	"Steps": [
+		"$-2\\times-3=6$",
+		"Factors of 6 that sum to 5 are 2 and 3",
+		"$-2x^2+5x-3\\equiv-2x^2+2x+3x-3$",
+		"$\\equiv-2x(x-1)+3(x-1)$",
+		"$\\equiv(3-2x)(x-1)$",
+		"\\textbf{Note: }\\text{there are two more equivalent alternative answers.}",
+		"$(2x-3)(1-x)\\text{ and }-(2x-3)(x-1)$",
+		"Final answer: $$(3-2x)(x-1)\\textbf{ or }(2x-3)(1-x)\\textbf{ or }-(2x-3)(x-1)$$"
+		]
+	},	
 ]
