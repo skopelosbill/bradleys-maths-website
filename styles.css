@@ -6,13 +6,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f7f6fb; /* Aubergine White */
-    color: #1f1f1f; /* Soft near-black */
+    background-color: #f7f6fb;
+    color: #1f1f1f;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
 }
+
 
 /* ========================= */
 /* NAVIGATION BAR */
@@ -36,9 +37,8 @@ body {
 .nav-brand {
     font-size: 1.5rem;
     font-weight: 600;
-    text-transform: none;
-    letter-spacing: 0.5px;
     font-family: 'Merriweather', serif;
+    letter-spacing: 0.5px;
     color: white;
     text-decoration: none;
 }
@@ -63,6 +63,7 @@ body {
     background-color: rgba(255,255,255,0.1);
     color: white;
 }
+
 .nav-links a.primary,
 .dropbtn.primary {
     color: #ffffff;
@@ -120,6 +121,7 @@ body {
     display: block;
 }
 
+
 /* ========================= */
 /* MOBILE NAVIGATION */
 /* ========================= */
@@ -134,6 +136,7 @@ body {
 }
 
 @media (max-width: 768px) {
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -148,7 +151,6 @@ body {
 
     .nav-links.active {
         display: flex;
-        flex-direction: column;
         z-index: 1001;
     }
 
@@ -173,13 +175,14 @@ body {
 
     .dropdown-content a {
         color: #e9d5ff;
-        padding-left: 0;
     }
 
     .hamburger {
         display: block;
     }
+
 }
+
 
 /* ========================= */
 /* PAGE CONTENT */
@@ -195,6 +198,16 @@ body {
     text-align: center;
 }
 
+.container p {
+    line-height: 1.6;
+    color: #3b2f4a;
+    font-size: 1rem;
+}
+
+.section-intro {
+    margin-bottom: 20px;
+}
+
 .info-panel {
     margin-top: 30px;
     background: rgba(255,255,255,0.08);
@@ -205,18 +218,23 @@ body {
 .info-panel h3 {
     margin-top: 0;
 }
-.container p {
-    line-height: 1.6;
-    color: #3b2f4a;
-    font-size: 1rem;
+
+.trust-badge {
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+    color: #6b6475;
+    display: block;
 }
+
+
+/* ========================= */
+/* HEADINGS */
+/* ========================= */
 
 h1 {
     font-size: 3rem;
     margin: 40px 0 10px;
     font-weight: 600;
-    text-transform: none;
-    letter-spacing: 0;
     font-family: 'Merriweather', serif;
     color: #3b2f4a;
 }
@@ -230,8 +248,6 @@ h2 {
 
 h3 {
     font-size: 1.1rem;
-    text-transform: none;
-    color: #4c1d95;
     margin-top: 50px;
     margin-bottom: 15px;
     font-weight: 600;
@@ -239,6 +255,7 @@ h3 {
     display: inline-block;
     padding-bottom: 6px;
     font-family: 'Merriweather', serif;
+    color: #4c1d95;
 }
 
 .gold-heading {
@@ -246,25 +263,6 @@ h3 {
     border-bottom: 1px solid #ffd700;
 }
 
-.section-intro {
-    margin-bottom: 20px;
-}
-
-.trust-badge {
-    background-color: transparent;
-    padding: 0;
-    border-radius: 0;
-    margin-bottom: 30px;
-    font-size: 0.95rem;
-    color: #6b6475;
-    display: block;
-}
-
-.container p {
-    line-height: 1.6;
-    color: #3b2f4a;
-    font-size: 1rem;
-}
 
 /* ========================= */
 /* BUTTONS */
@@ -287,14 +285,23 @@ h3 {
     transition: transform 0.2s;
     display: inline-block;
     margin-bottom: 10px;
-    
 }
 
 .btn:hover {
     transform: translateY(-3px);
 }
 
-/* GCSE Buttons */
+.btn-large {
+    width: 80%;
+    max-width: 400px;
+}
+
+.button-feature {
+    margin-top: 15px;
+}
+
+
+/* GCSE BUTTONS */
 
 .btn-number { background-color: #00e30b; color: white; border: 2px solid #00e30b; }
 .btn-algebra { background-color: #0404e0; color: white; border: 2px solid #0404e0; }
@@ -307,24 +314,17 @@ h3 {
 .btn-exam-c { background-color: #4c1d95; color: #ffffff; border: 2px solid #ffffff; }
 .btn-exam-bundle { background-color: #ffd700; color: #000000; border: 2px solid #000000; font-size: 1.1rem; }
 
-/* IGCSE Buttons */
+
+/* IGCSE BUTTONS */
 
 .btn-primary { background-color: #f59e0b; color: white; border: 2px solid #f59e0b; }
 .btn-free { background-color: transparent; color: white; border: 2px solid #ffffff; width: 280px; font-size: 0.9rem; }
 .btn-shop { background-color: #ffffff; color: #4c1d95; }
 .btn-youtube { background-color: #cc0000; color: white; }
 
-.button-feature {
-    margin-top: 15px;
-}
-
-.btn-large {
-    width: 80%;
-    max-width: 400px;
-}
 
 /* ========================= */
-/* WIDGET */
+/* DAILY QUESTION WIDGET */
 /* ========================= */
 
 .daily-widget {
@@ -341,8 +341,6 @@ h3 {
 .widget-header {
     background-color: #fbfaff;
     font-weight: 600;
-    text-transform: none;
-    letter-spacing: 0.03em;
     font-size: 0.9rem;
     margin-bottom: 15px;
     display: block;
@@ -392,12 +390,16 @@ h3 {
     cursor: pointer;
     font-size: 1rem;
     font-weight: 600;
-    transition: background 0.2s;
 }
 
 .reveal-btn:hover {
     background: #3b1674;
 }
+
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
 
 .footer {
     margin-top: 50px;
