@@ -29,6 +29,8 @@ const problemBank = [
   			},
 			//2 Feb
   			{
+				"Date": "2 Feb 2026",
+				"Topic": "Geometry - angles in parallel lines",
     			"q": "The diagram shows two parallel lines intersecting two straight lines.<br>Find the values of a, b and c",
     			"img": "images/feb_2.png",
     			"steps": [
@@ -40,6 +42,8 @@ const problemBank = [
   			},
 			//3 Feb
   			{
+				"Date": "3 Feb 2026",
+				"Topic": "Compound interest",
     			"q": "Jade invests €18000 at 5.25% per year compound interest.<br>Find the value of her investment at the end of 10 years.<br>Give your answer to the nearest ten thousand Euros.",
     			"img": "",
     			"steps": [
@@ -51,6 +55,8 @@ const problemBank = [
   			},
 			//4 Feb
   			{
+				"Date": "4 Feb 2026",
+				"Topic": "Geometry - Polygons",
     			"q": "A regular polygon has an interior angle of 165°.<br>How many sides does it have?",
     			"img": "",
     			"steps": [
@@ -61,6 +67,8 @@ const problemBank = [
   			},
 			//5 Feb
   			{
+				"Date": "5 Feb 2026",
+				"Topic": "Recurring decimals",
     			"q": "Write the recurring decimal $ 0.6\\dot{4}$ as a fraction, giving your answer in its simplest form.",
     			"img": "",
     			"steps": [
@@ -74,6 +82,8 @@ const problemBank = [
   			},
 			//6 Feb
   			{
+				"Date": "6 Feb 2026",
+				"Topic": "Pythagoras/sohcahtoa",
 			    "q": "Consider the right angled triangle below:<br>a) Calculate the length of AB<br>b) Calculate the size of angle BAC",
     			"img": "images/feb_6.png",
     			"steps": [
@@ -85,6 +95,8 @@ const problemBank = [
   			},
 			//7 Feb
   			{
+				"Date": "7 Feb 2026",
+				"Topic": "Venn diagrams",
     			"q": "Consider the Venn diagram below.<br>The number in the universal set is 50.<br>$n(A)=32, n(B)=28, n(A \\cup B)' = 8$.<br>Find:<br>a) $n(A \\cap B)$<br>b) $n(A' \\cap B)$",
     			"img": "images/feb_7.png",            
     			"steps": [
@@ -97,6 +109,8 @@ const problemBank = [
   			},
 			//8 Feb
 			{
+				"Date": "8 Feb 2026",
+				"Topic": "Compound interest - rate",
     			"q": "Peter invests £20000 for 10 years.<br>At the end of the period his investment is worth £35817 (nearest pound).<br>Calculate the interest rate.",
     			"img": "",
     			"steps": [
@@ -110,6 +124,8 @@ const problemBank = [
   			},
 			//9 Feb
 			{
+				"Date": "9 Feb 2026",
+				"Topic": "Algebra - Rearrange formula",
     			"q": "$y=\\sqrt[3]{\\left(\\frac{p^7}{q^2}\\right)}$<br>a) Find $y$ when $p = 9$ and $q=3$.<br>b) Rearrange the formula to make $p$ the subject.",
     			"img": "",
     			"steps": [
@@ -124,6 +140,8 @@ const problemBank = [
   			},
 			//10 Feb
 			{
+				"Date": "10 Feb 2026",
+				"Topic": "Algebra - Simultaneous Equations, linear and curve",
     			"q": "The straight line $y=3x-1$ intersects the curve $y=2x^2-3x+2$ in two points.<br>Find the coordinates of the points of intersection giving your answer correct to 2dp.",
    				"img": "",
     			"steps": [
@@ -138,6 +156,8 @@ const problemBank = [
   			},
 			//11 Feb
 			{
+				"Date": "11 Feb 2026",
+				"Topic": "Vectors",
     			"q": "$ \\mathbf{a} = \\begin{pmatrix} 5 \\\\ -2 \\end{pmatrix}  $ and $ \\mathbf{b} = \\begin{pmatrix} -7 \\\\ 9 \\end{pmatrix}$<br>a) Find $\\mathbf{a}-3\\mathbf{b}$.<br>b) Find the exact value of $|\\mathbf{b}|$",
     			"img": "",
     			"steps": [
@@ -149,6 +169,8 @@ const problemBank = [
   			},
 			//12 Feb
 			{
+				"Date": "12 Feb 2026",
+				"Topic": "Arithmetic sequence",
     			"q": "The first four terms of a sequence are:<br>$ T_1=19,T_2=13, T_3=7, T_4=1 $<br>a) Find $T_5$<br>b) Find $T_n$.",
     			"img": "",
     			"steps": [
@@ -160,6 +182,8 @@ const problemBank = [
   			},
 			//13 Feb
 			{
+				"Date": "13 Feb 2026",
+				"Topic": "Standard Form",
     			"q": "Find the value of $\\Large\\frac{3.6\\times10^4}{1.8\\times10^{-3}}\\normalsize$ giving your answer in standard form without using a calculator.",
     			"img": "",
     			"steps": [
@@ -171,6 +195,8 @@ const problemBank = [
   			},
 			//14 Feb
 			{
+				"Date": "14 Feb 2026",
+				"Topic": "Arithmetic Mean",
     			"q": "The arithmetic mean of five numbers is $12$.<br>When a sixth number, $x$ is added the mean drops to $9$.<br>Find $x$.",
     			"img": "",
     			"steps": [
@@ -181,6 +207,8 @@ const problemBank = [
   			},
 			//15 Feb
 			{
+				"Date": "1 Feb 2026",
+				"Topic": "Circle Theorems",
     			"q": "In the diagram, below, points A, B, C and D all lie on the circumference of a circle.<br>Giving reasons, write down the size of $\\angle BDA, \\angle BCD \\text{ and } \\angle ABD$.",
     			"img": "images/feb_15.png",
     			"steps": [
@@ -191,6 +219,8 @@ const problemBank = [
   			},
 			//16 Feb
 			{
+				"Date": "16 Feb 2026",
+				"Topic": "Inverse Functions",
     			"q": "$f(x)=3^x$<br>Find $x$ when $f^{-1}(x)=4$",
     			"img": "",
     			"steps": [
@@ -201,6 +231,8 @@ const problemBank = [
   			},
 			// 17 Feb
 			{
+				"Date": "17 Feb 2026",
+				"Topic": "Mensuration",
     			"q": "The diagram shows the end view of a storage unit in the shape of two congruent trapeziums.<br>a) Calculate the area of the end wall.<br>b) The length of the sloping roof (marked $x$).<br>c) The angle of the pitch of the roof (marked $y^\\circ$).",
     			"img": "images/feb_17.png",
     			"steps": [
@@ -216,6 +248,8 @@ const problemBank = [
   			},
 			// 18 Feb
 			{
+				"Date": "18 Feb 2026",
+				"Topic": "Algebra - Factorise quadratic",
     			"q": "Factorise $30x^2+9x-3$",
     			"img": "",
     			"steps": [
@@ -229,6 +263,8 @@ const problemBank = [
   			},
 			// 19 Feb
 			{
+				"Date": "19 Feb 2026",
+				"Topic": "Algebra - 3 bracket expansion",
     			"q": "Expand and simplify $(x+3)(x-5)(x-2)$",
     			"img": "",
     			"steps": [
@@ -241,6 +277,8 @@ const problemBank = [
   			},
 			//20 Feb
 			{
+				"Date": "20 Feb 2026",
+				"Topic": "3D Pythagoras",
   				"q": "A cuboid is constructed to hold a single metal rod.<br>Its dimensions are length 6cm, width 4cm and height 2.5cm.<br>The rod fits exactly in the box without bending between the bottom left front corner and the top right back corner.<br>a) Calculate the length of the rod correct to 3 sf.<br>b) Calculate the angle the rod makes with the horizontal base of the cuboid correct to 1dp",
   				"img": "",
   				"steps": [
@@ -253,6 +291,8 @@ const problemBank = [
 			},
 			//21 Feb
 			{
+				"Date": "21 Feb 2026",
+				"Topic": "Inverse proportion",
   				"q": "$y$ is inversely proportional to $\\sqrt{x+6}$.<br>When $y=100$, $x=10$.<br>Find $x$ when $y=40$",
   				"img": "",
   				"steps": [
@@ -268,6 +308,8 @@ const problemBank = [
 
 			//22 Feb
 			{
+				"Date": "22 Feb 2026",
+				"Topic": "Non-calculator Trigonometry",
     			"q": "Without using a calculator solve the equation $3+2\\sin x =4$ for $0^\\circ \\le x \\le 360^\\circ$",
     			"img": "",
     			"steps": [
@@ -280,6 +322,8 @@ const problemBank = [
   			},
 			//23 Feb
 			{
+				"Date": "23 Feb 2026",
+				"Topic": "4 Operations with mixed number",
     			"q": "Without using a calculator and giving your answer as a mixed number in it's simplest form, evaluate $1\\frac{3}{8}\\times2\\frac{2}{5}$",
     			"img": "",
     			"steps": [
@@ -292,6 +336,8 @@ const problemBank = [
   			},
 			//24 Feb
 			{
+				"Date": "24 Feb 2026",
+				"Topic": "Lowest Common Multiple",
     			"q": "Find the LCM of 24 and 84",
     			"img": "",
     			"steps": [
@@ -303,6 +349,8 @@ const problemBank = [
   			},
 			//25 Feb
 			{
+				"Date": "25 Feb 2026",
+				"Topic": "linear simultaneous equations",
   				"q": "Solve the simultaneous equations:<br>$3x+7y=22$<br>$5x-3y=22$",
   				"img": "",
   				"steps": [
@@ -318,6 +366,8 @@ const problemBank = [
 
 			//26 Feb
 			{
+				"Date": "26 Feb 2026",
+				"Topic": "HCF and LCM",
     			"q": "Consider the expressions:<br><br>$$9a^2bc^2, 6a^4b^2c^4 \\text{and} 15a^6b^3c$$<br>Write down:<br>a) the HCF<br>b) the LCM",
 			    "img": "",
     			"steps": [
@@ -327,6 +377,8 @@ const problemBank = [
  			},
 			//27 Feb
 			{
+				"Date": "27 Feb 2026",
+				"Topic": "Surds",
   				"q": "Rationalise the denominator of $\\frac{1}{3-\\sqrt{2}}$",
   				"img": "",
   				"steps": [
@@ -338,6 +390,8 @@ const problemBank = [
 
 			//28 Feb
 			{
+				"Date": "28 Feb 2026",
+				"Topic": "Algebra - Simplifying Expressions",
   				"q": "Simplify<br>$\\frac{6x^2-7x-3}{9x^2-1}$",
   				"img": "",
   				"steps": [
@@ -350,100 +404,101 @@ const problemBank = [
   				]
 			},
 		   { 
-				"date": "1 March", 
-"topic": "Vectors", 
-"notice": "This is a non-calculator question.", 
-"q": "Points A and B have position vectors $\\mathbf{a}$ and $\\mathbf{b}$ respectively.<br>Point C is such that $\\overrightarrow{AC} = 2\\overrightarrow{AB}$.<br>Find the position vector of C in terms of $\\mathbf{a}$ and $\\mathbf{b}$.",
-"img": "", 
-"steps": [ 
-"$\\overrightarrow{AB} = \\mathbf{b} - \\mathbf{a}$", 
-"$\\overrightarrow{AC} = 2(\\mathbf{b} - \\mathbf{a})$",
-"Position vector of C = $\\mathbf{a} + 2(\\mathbf{b} - \\mathbf{a})$",
-"$= 2\\mathbf{b} - \\mathbf{a}$" 
-]  
-}, 
-{ 
-"date": "2 March", 
-"topic": "Quadratic Formula", 
-"notice": "", 
-"q": "Solve.<br>$2x^2 - 3x - 5 = 0$.<br>Give your answers correct to 2 decimal places.", 
-"img": "",
-"steps": [
-"$x = \\frac{3 \\pm \\sqrt{(-3)^2 - 4(2)(-5)}}{2(2)}$", 
-"$= \\frac{3 \\pm \\sqrt{9 + 40}}{4}$", 
-"$= \\frac{3 \\pm 7}{4}$", 
-"$x = 2.50$ or $x = -1.00$" 
-]
-}, 
-{ 
-"date": "3 March", 
-"topic": "Functions", 
-"notice": "This is a non-calculator question.", 
-"q": "$f(x) = 2x + 1$.<br>$g(x) = x^2 - 3$.<br>(a) Find $f(g(x))$.<br>(b) Find $g(f(x))$.", 
-"img": "",
-"steps": [ 
-"$f(g(x)) = 2(x^2 - 3) + 1$", 
-"$= 2x^2 - 6 + 1$", 
-"$= 2x^2 - 5$", 
-"$g(f(x)) = (2x+1)^2 - 3$", 
-"$= 4x^2 + 4x + 1 - 3$", 
-"$= 4x^2 + 4x - 2$" 
-] 
-}, 
-{ 
-"date": "4 March", 
-"topic": "Trigonometry - Sine Rule", 
-"notice": "", 
-"q": "In triangle ABC,<br>$AB=8$cm,<br>$\\angle A = 40^\\circ$,<br>$\\angle B = 65^\\circ$.<br>Find $AC$.<br>Give your answer to 1 decimal place.", 
-"img": "images/4_mar_igcse.png",
-"steps": [ 
-"$\\angle C = 180 - 40 - 65 = 75^\\circ$", 
-"$\\frac{AC}{\\sin75} = \\frac{8}{\\sin65}$", 
-"$AC = \\frac{8\\sin75}{\\sin65}$", 
-"$AC = 8.53$cm" 
-] 
-}, 
-{ 
-"date": "5 March", 
-"topic": "Indices", 
-"notice": "This is a non-calculator question.", 
-"q": "Simplify:<br><br>$$\\frac{5x^3 y^{-2}}{10x^{-1} y}$$", 
-"img": "", 
-"steps": [ 
-"$= \\frac{5}{10} x^{3-(-1)} y^{-2-1}$", 
-"$= \\frac{1}{2} x^4 y^{-3}$", 
-"$= \\frac{x^4}{2y^3}$" 
-] 
-}, 
-{ 
-"date": "6 March", 
-"topic": "Simultaneous Equations (Quadratic & Linear)", 
-"notice": "This is a non-calculator question.", 
-"q": "Solve simultaneously.<br>$y = x + 1$<br>$x^2 + y^2 = 25$.", 
-"img": "", 
-"steps": [ 
-"Substitute $y = x+1$", 
-"$x^2 + (x+1)^2 = 25$", 
-"$x^2 + x^2 + 2x + 1 = 25$", 
-"$2x^2 + 2x - 24 = 0$", 
-"$x^2 + x - 12 = 0$", 
-"$(x+4)(x-3)=0$", 
-"$x = 3$ or $x = -4$", 
-"$y = 4$ or $y = -3$" 
-] 
-}, 
-{ 
-"date": "7 March", 
-"topic": "Vectors", 
-"notice": "", 
-"q": "Points A, B and C have position vectors<br>\\(\\vec{OA} = \\begin{pmatrix} 2 \\\\ -1 \\end{pmatrix}\\),<br>\\(\\vec{OB} = \\begin{pmatrix} 6 \\\\ 3 \\end{pmatrix}\\).<br>Point C lies on AB such that<br>\\(AC : CB = 1 : 2\\).<br><br>Find the position vector of C.",
-"img": "",
-"steps": [ 
-"\\(\\vec{AB} = \\begin{pmatrix} 4 \\\\ 4 \\end{pmatrix}\\)", 
-"C divides AB in ratio 1:2 → AC = 1/3 AB", 
-"\\(\\vec{AC} = \\begin{pmatrix} 4/3 \\\\ 4/3 \\end{pmatrix}\\)", 
-"\\(\\vec{OC} = \\begin{pmatrix} 2 \\\\ -1 \\end{pmatrix} + \\begin{pmatrix} 4/3 \\\\ 4/3 \\end{pmatrix}\\)",
- "\\(\\vec{OC} = \\begin{pmatrix} 10/3 \\\\ 1/3 \\end{pmatrix}\\)"
+				"date": "1 Mar 2026", 
+				"topic": "Vectors", 
+				"notice": "This is a non-calculator question.", 
+				"q": "Points A and B have position vectors $\\mathbf{a}$ and $\\mathbf{b}$ respectively.<br>Point C is such that $\\overrightarrow{AC} = 2\\overrightarrow{AB}$.<br>Find the position vector of C in terms of $\\mathbf{a}$ and $\\mathbf{b}$.",
+				"img": "", 
+				"steps": [ 
+					"$\\overrightarrow{AB} = \\mathbf{b} - \\mathbf{a}$", 
+					"$\\overrightarrow{AC} = 2(\\mathbf{b} - \\mathbf{a})$",
+					"Position vector of C = $\\mathbf{a} + 2(\\mathbf{b} - \\mathbf{a})$",
+					"Final Answer: $$= 2\\mathbf{b} - \\mathbf{a}$$" 
+					]  
+				}, 
+				{ 
+				"date": "2 Mar 2026",
+				"topic": "Quadratic Formula", 
+				"notice": "", 
+				"q": "Solve.<br>$2x^2 - 3x - 5 = 0$.<br>Give your answers correct to 2 decimal places.", 
+				"img": "",
+				"steps": [
+					"$x = \\frac{3 \\pm \\sqrt{(-3)^2 - 4(2)(-5)}}{2(2)}$", 
+					"$= \\frac{3 \\pm \\sqrt{9 + 40}}{4}$", 
+					"$= \\frac{3 \\pm 7}{4}$", 
+					"Final Answer: $$x = 2.50$ or $x = -1.00$$" 
+					]
+				}, 
+				{ 
+				"date": "3 Mar 2026", 
+				"topic": "Functions", 
+				"notice": "This is a non-calculator question.", 
+				"q": "$f(x) = 2x + 1$.<br>$g(x) = x^2 - 3$.<br>(a) Find $f(g(x))$.<br>(b) Find $g(f(x))$.", 
+				"img": "",
+				"steps": [ 
+					"$f(g(x)) = 2(x^2 - 3) + 1$", 
+					"$= 2x^2 - 6 + 1$", 
+					"$= 2x^2 - 5$", 
+					"$g(f(x)) = (2x+1)^2 - 3$", 
+					"$= 4x^2 + 4x + 1 - 3$", 
+					"Final answer: $$= 4x^2 + 4x - 2$$" 
+					] 
+				}, 
+				{ 
+				"date": "4 Mar 2026", 
+				"topic": "Trigonometry - Sine Rule", 
+				"notice": "", 
+				"q": "In triangle ABC,<br>$AB=8$cm,<br>$\\angle A = 40^\\circ$,<br>$\\angle B = 65^\\circ$.<br>Find $AC$.<br>Give your answer to 1 decimal place.", 
+				"img": "images/4_mar_igcse.png",
+				"steps": [ 
+					"$\\angle C = 180 - 40 - 65 = 75^\\circ$", 
+					"$\\frac{AC}{\\sin75} = \\frac{8}{\\sin65}$", 
+					"$AC = \\frac{8\\sin75}{\\sin65}$", 
+					"Final answer: $$AC = 8.53$$cm" 
+					] 
+				}, 
+				{ 
+				"date": "5 Mar 2026", 
+				"topic": "Indices", 
+				"notice": "This is a non-calculator question.", 
+				"q": "Simplify:<br><br>$$\\frac{5x^3 y^{-2}}{10x^{-1} y}$$", 
+				"img": "", 
+				"steps": [ 
+					"$= \\frac{5}{10} x^{3-(-1)} y^{-2-1}$", 
+					"$= \\frac{1}{2} x^4 y^{-3}$", 
+					"Final answer: $$= \\frac{x^4}{2y^3}$$" 
+					] 
+				}, 
+				{ 
+     			"date": "6 Mar 2026", 
+				"topic": "Simultaneous Equations (Quadratic & Linear)", 
+				"notice": "This is a non-calculator question.", 
+				"q": "Solve simultaneously.<br>$y = x + 1$<br>$x^2 + y^2 = 25$.", 
+				"img": "", 
+				"steps": [ 
+					"Substitute $y = x+1$", 
+					"$x^2 + (x+1)^2 = 25$", 
+					"$x^2 + x^2 + 2x + 1 = 25$", 
+					"$2x^2 + 2x - 24 = 0$", 
+					"$x^2 + x - 12 = 0$", 
+					"$(x+4)(x-3)=0$", 
+					"$x = -4$ or $x = 3$", 
+					"$\\Rightarrow y = -3$ or $y = 4$",
+					"Final answer: $$(-4,-3)\\text{ or} (3,4)$$"
+					] 
+				}, 
+				{ 
+				"date": "7 Mar 2026", 
+				"topic": "Vectors", 
+				"notice": "", 
+				"q": "Points A, B and C have position vectors<br>\\(\\vec{OA} = \\begin{pmatrix} 2 \\\\ -1 \\end{pmatrix}\\),<br>\\(\\vec{OB} = \\begin{pmatrix} 6 \\\\ 3 \\end{pmatrix}\\).<br>Point C lies on AB such that<br>\\(AC : CB = 1 : 2\\).<br><br>Find the position vector of C.",
+				"img": "",
+				"steps": [ 
+					"\\(\\vec{AB} = \\begin{pmatrix} 4 \\\\ 4 \\end{pmatrix}\\)", 
+					"C divides AB in ratio 1:2 → AC = 1/3 AB", 
+					"\\(\\vec{AC} = \\begin{pmatrix} 4/3 \\\\ 4/3 \\end{pmatrix}\\)", 
+					"\\(\\vec{OC} = \\begin{pmatrix} 2 \\\\ -1 \\end{pmatrix} + \\begin{pmatrix} 4/3 \\\\ 4/3 \\end{pmatrix}\\)",
+ 					"Final answer: $$\\vec{OC} = \\begin{pmatrix} 10/3 \\\\ 1/3 \\end{pmatrix}$$"
 ] 
 }, 
 { 
