@@ -761,7 +761,7 @@ const problemBank = [
 		"$m=\\text{gradient}=\\frac{\\text{rise}}{\\text{run}}=\\frac{6-(-4)}{5-3}=\\frac{10}{2}=5$",
 		"$y-6=5(x-5)$",
 		"$y=5x-25+6$",
-		"Final answer: $$y-5x-19$$"
+		"Final answer: $$y=5x-19$$"
 		]
 	},	
 	{
