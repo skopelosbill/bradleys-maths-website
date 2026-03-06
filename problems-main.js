@@ -584,6 +584,22 @@ const problemBank = [
                                     "Final answer: $$(%-3x)(2x-3)$$"
                                     ]
                         },
+                        {
+                        "Date": "2 April",
+                        "topic": "Coordinate Geometry",
+                        "notice": "This is a non-calculator question.",
+                        "q": "Points $A(-7,-23)$, $B(-1,-5)$ and $C(4,10)$ lie on the coordinate plane.<br><br>Prove that the three points are collinear.",
+                        "img": "",
+                        "steps": [
+                                    "$\text{Gradient }AB=\\dfrac{-5-(-23)}{-1-(-7)}=\\dfrac{18}{6}=3$",
+                                    "$\text{Gradient }BC=\\dfrac{10-(-5)}{4-(-1)}=\\dfrac{15}{5}=3$",
+                                    "$m_{AB}=m_{BC}\\Rightarrow AB \\parallel BC$",
+                                    "$B$ is a common point.",
+                                    "Hence, $AB$ and $BC$ are a single line",
+                                    "Final answer: $$Therefore, the points are collinear.$$"
+                                    ]
+                        },
+                        
                                     
                                     
       ]
