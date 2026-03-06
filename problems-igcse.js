@@ -3,17 +3,23 @@ const problemBank = [
 
 		    // JAN 30
             {
-                q: "Find the volume of a sphere with radius 3cm.",
+                "Date": "30 Jan 2026",
+				"Topic": "Volume",
+				q: "Find the volume of a sphere with radius 3cm.",
                 steps: ["Formula: $\\frac{4}{3}\\pi r^3$.", "$\\frac{4}{3}\\pi (27)$.", "$4 \\times 9\\pi$.", "Final Answer: $$36\\pi$$"]
             },
            
             // JAN 31
             {
-                q: "Algebraic Proof: Show that the sum of 3 consecutive integers is a multiple of 3.",
+				"Date": "31 Jan 2026",
+				"Topic": "Algebraic Proof",
+                q: "Show that the sum of 3 consecutive integers is a multiple of 3.",
                 steps: ["Terms: $n, n+1, n+2$.", "Sum: $3n + 3$.", "Factorise: $3(n+1)$.", "Conclusion: Multiple of 3."]
             },
            //1 Feb
   			{
+				"Date": "1 Feb 2026",
+				"Topic": "Algebra - Simplifying Expressions",
     			"q": "Simplify $12a+4b-7a-5b$",
    			 	"img": "",
     			"steps": [
