@@ -525,7 +525,7 @@ const problemBank = [
 "date": "10 March", 
 "topic": "Algebraic Fractions", 
 "notice": "This is a non-calculator question.", 
-"q": "Simplify.<br>$\\frac{x^2 - 9}{x^2 - 3x}$.", 
+"q": "Simplify:<br><br>$$\\frac{x^2 - 9}{x^2 - 3x}$$", 
 "img": "",  
 "steps": [ 
 "$= \\frac{(x-3)(x+3)}{x(x-3)}$",
