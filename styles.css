@@ -107,7 +107,7 @@ body{
     background-color: #ffffff;
     min-width: 220px;
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 1000;
     border-radius: 5px;
     overflow: hidden;
     top: 40px;
@@ -138,7 +138,14 @@ body{
 .dropdown .dropdown .dropdown-content {
     left: 100%;
     top: 0;
+    margin-left: 1px; /* prevents overlap */
+
 }
+
+.dropdown .dropdown:hover > .dropdown-content {
+    display: block;
+}
+
 
 /* ========================= */
 /* MOBILE NAVIGATION */
