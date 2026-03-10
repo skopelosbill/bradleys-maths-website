@@ -529,7 +529,7 @@ const problemBank = [
 "img": "",  
 "steps": [ 
 "$= \\frac{(x-3)(x+3)}{x(x-3)}$",
-"$= \\frac{x+3}{x}" 
+"$= \\frac{x+3}{x}$" 
 ] 
 }, 
 { 
