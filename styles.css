@@ -131,6 +131,14 @@ body{
     display: block;
 }
 
+.dropdown .dropdown {
+    position: relative;
+}
+
+.dropdown .dropdown .dropdown-content {
+    left: 100%;
+    top: 0;
+}
 
 /* ========================= */
 /* MOBILE NAVIGATION */
