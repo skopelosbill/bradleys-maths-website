@@ -127,7 +127,7 @@ body{
     color: #3b82f6;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover > .dropdown-content {
     display: block;
 }
 
