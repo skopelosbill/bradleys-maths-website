@@ -539,7 +539,10 @@ const problemBank = [
 "q": "In a class of 30 students,<br>18 study French,<br>12 study Spanish,<br>5 study both.<br>Find the probability that a student studies French given that they study Spanish.", 
 "img": "",  
 "steps": [ 
-"P(F|S) = 5/12" 
+"We are given that the student studies Spanish.",
+"We are given that there are 12 students who study Spanish.",
+"There are 5 students who study both Spanish and French.",
+"Final answer: $$P(F|S)=\\frac{5}{12}$$" 
 ] 
 }, 
 { 
