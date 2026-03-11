@@ -554,7 +554,8 @@ const problemBank = [
 "steps": [ 
 "(a) \\(18000(1.03)^n\\)", 
 "(b) \\(18000(1.03)^5\\)", "= 20866.9...", 
-"Population ≈ 20 867" 
+"You shouldn't round up part of a person.",
+"Final answer: $$Population ≈ 20,866$$" 
 ] 
 }, 
 { 
