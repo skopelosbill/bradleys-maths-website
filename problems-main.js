@@ -333,13 +333,14 @@ const problemBank = [
     "date": "12 March",
     "topic": "Ratio",
     "notice": "This is a non-calculator question.",
-    "q": "Share £84 in the ratio $3 : 4$.",
+    "q": "Alan and Barbara share £84 in the ratio $3 : 4$.<br>How much does each of them receive?",
     "img": "",
     "steps": [
         "$\\text{Total parts} = 7$",
         "$\\text{One part} = \\dfrac{84}{7} = 12$",
         "$3 \\text{ parts} = 36$",
-        "$4 \\text{ parts} = 48$"
+        "$4 \\text{ parts} = 48$",
+        "Final answer: $$Alan gets £36 and Barbara gets £48."    
       ]
   },
   {
