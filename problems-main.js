@@ -340,7 +340,7 @@ const problemBank = [
         "$\\text{One part} = \\dfrac{84}{7} = 12$",
         "$3 \\text{ parts} = 36$",
         "$4 \\text{ parts} = 48$",
-        "Final answer: $$\\text{Alan gets }£36\\text{ and Barbara gets }£48.$$"    
+        "Final answer: $$ \\text{Alan gets }£36 \\text{ and Barbara gets }£48.$$"    
       ]
   },
   {
