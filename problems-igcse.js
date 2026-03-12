@@ -565,9 +565,11 @@ const problemBank = [
 "q": "The graph of $y = x^2$ is drawn.<br>Find the gradient at $x=3$.", 
 "img": "", 
 "steps": [ 
-"Gradient = 2x", 
-"At x=3", 
-"= 6" 
+"The gradient function is the derivative of the original function.",
+"$\\frac{dy}{dx}(x^2)=2x$", 
+"The gradient at a specific point is the value of the gradient function at that point.", 
+"$\\text{When }x=3,\\frac{dy}{dx}=2(3)$",
+"Final answer: $$\\text{The gradient of }y=x^2\\text{ when }x=3\\text{ is }6$$"	
 ] 
 }, 
 { 
