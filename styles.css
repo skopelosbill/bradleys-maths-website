@@ -467,6 +467,15 @@ h3 {
 .btn-purple:hover{
     background:#6d28d9;
 }
+
+@media (max-width: 768px) {
+
+    .resource-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+}
 /* ========================= */
 /* FOOTER */
 /* ========================= */
