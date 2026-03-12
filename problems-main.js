@@ -607,8 +607,8 @@ const problemBank = [
                         "q": "Jack drives a distance of 145 km at an average speed of 60 kph.<br><br>Giving your answer in hours and minutes calculate the time take for the journey.",
                         "img": "",
                         "steps": [
-                                    "$\\text{time}=\\dfrac{\\text{distance}}{\\text{speed}}=,
-                                    "$\text{time}=\\dfrac{145}{60},
+                                    "$\\text{time}=\\dfrac{\\text{distance}}{\\text{speed}}$",
+                                    "$\text{time}=\\dfrac{145}{60}$",
                                     "$=2.41\\dot{6}$",
                                     "$(2.41\\dot{6}-2)\\times 60=25$",
                                     "Final answer: $$2\\text{ hours }25\\text{ minutes}$$"
