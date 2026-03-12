@@ -592,12 +592,26 @@ const problemBank = [
                         "q": "Points $A(-7,-23)$, $B(-1,-5)$ and $C(4,10)$ lie on the coordinate plane.<br><br>Prove that the three points are collinear.",
                         "img": "",
                         "steps": [
-                                    "$\text{Gradient }AB=\\dfrac{-5-(-23)}{-1-(-7)}=\\dfrac{18}{6}=3$",
-                                    "$\text{Gradient }BC=\\dfrac{10-(-5)}{4-(-1)}=\\dfrac{15}{5}=3$",
+                                    "$\\text{Gradient }AB=\\dfrac{-5-(-23)}{-1-(-7)}=\\dfrac{18}{6}=3$",
+                                    "$\\text{Gradient }BC=\\dfrac{10-(-5)}{4-(-1)}=\\dfrac{15}{5}=3$",
                                     "$m_{AB}=m_{BC}\\Rightarrow AB \\parallel BC$",
                                     "$B$ is a common point.",
                                     "Hence, $AB$ and $BC$ are a single line",
-                                    "Final answer: $$Therefore, the points are collinear.$$"
+                                    "Final answer: $$\\text{Therefore, the points are collinear}.$$"
+                                    ]
+                        },
+                        {
+                        "Date": "3 April",
+                        "topic": "Speed, Distance, Time ",
+                        "notice": "",
+                        "q": "Jack drives a distance of 145 km at an average speed of 60 kph.<br><br>Giving your answer in hours and minutes calculate the time take for the journey.",
+                        "img": "",
+                        "steps": [
+                                    "$\\text{time}=\\dfrac{\\text{distance}}{\\text{speed}}=,
+                                    "$\text{time}=\\dfrac{145}{60},
+                                    "$=2.41\\dot{6}$",
+                                    "$(2.41\\dot{6}-2)\\times 60=25$",
+                                    "Final answer: $$2\\text{ hours }25\\text{ minutes}$$"
                                     ]
                         },
                         
