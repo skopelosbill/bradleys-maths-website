@@ -580,7 +580,8 @@ const problemBank = [
 "img": "",
 "steps": [ 
 "Total studying at least one = 25 + 18 - 10 = 33", 
-"Neither = 40 - 33", "= 7" 
+"Neither = 40 - 33", 
+"Final answer: $$7\\text{ students study neither subject.}$$" 
 ] 
 }, 
 { 
