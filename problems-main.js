@@ -358,11 +358,11 @@ const problemBank = [
     "date": "14 March",
     "topic": "Inequalities",
     "notice": "This is a non-calculator question.",
-    "q": "Solve the inequality.<br>$3x - 4 > 11$.",
+    "q": "Solve the inequality.<br><br>$$3x - 4 > 11$$",
     "img": "",
     "steps": [
         "$3x > 15$",
-        "$x > 5$"
+        "Final answer: $$x > 5$$"
       ]
   },
   {
