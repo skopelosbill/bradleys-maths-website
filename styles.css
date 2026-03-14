@@ -318,6 +318,10 @@ h3 {
     color: #4c1d95;
 }
 
+h1, h2, h3 {
+    text-align: center;
+}
+
 .gold-heading {
     color: #ffd700;
     border-bottom: 1px solid #ffd700;
@@ -526,6 +530,26 @@ h3 {
     .btn-group {
         flex-direction: column;
         gap: 10px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .blog-container {
+        padding: 0 12px;
+        gap: 20px;
+    }
+
+    .question,
+    .solution {
+        padding: 16px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
     }
 
 }
