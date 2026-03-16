@@ -618,17 +618,19 @@ const problemBank = [
                         "Date": "4 April",
                         "topic": "Algebraic Manipulation",
                         "notice": "",
-                        "q": "A cone and a hemisphere have the same base radius and the same volume.<br>Find the height of the cone in terms of r.<br>The volume of a sphere is give by $V=\\frac{4}{3}\\pir^3$",
+                        "q": "A cone and a hemisphere have the same base radius and the same volume.<br>Find the height of the cone in terms of r.<br>The volume of a sphere is given by $V=\\frac{4}{3}\\pi r^3$",
                         "img": "",
                         "steps": [
-                                    "$\\text{Volume of a hemisphere is }V=\\dfrac{1}{2}\\dfrac{4}{3}\\pir^3=\\dfrac{2}{3}\\pir^3$",
-                                    "$\text{Volume of a cone}=\\dfrac{1}{3}\\pir^2h$",
-                                    "Equating volumes gives:",
-                                    "$\\dfrac{1}{3}\\pir^2h=\\dfrac{2}{3}\\pir^3$",
-                                    
-                                    "Final answer: $$2\\text{ hours }25\\text{ minutes}$$"
-                                    ]
-                        },
+                                "$\\text{Volume of a hemisphere is }V=\\dfrac{1}{2}\\dfrac{4}{3}\\pi r^3=\\dfrac{2}{3}\\pi r^3$",
+                                "$\\text{Volume of a cone}=\\dfrac{1}{3}\\pi r^2 h$",
+                                "Equating volumes gives:",
+                                "$\\dfrac{1}{3}\\pi r^2 h = \\dfrac{2}{3}\\pi r^3$",
+                                "$\\pi r^2 h = 2\\pi r^3$",
+                                "$h = 2\\dfrac{r^3}{r^2}$",
+                                "Final answer: $$h = 2r$$"
+                                ]
+                        }
+
                         
                                     
                                     
