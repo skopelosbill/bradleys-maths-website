@@ -582,7 +582,7 @@ const problemBank = [
                                     "$\\equiv-6x^2+9x+10x-15$",
                                     "$\\equiv-3x(2x-3)+5(2x-3)$",
                                     "$\\equiv(5-3x)(2x-3)$",
-                                    "Final answer: $$(%-3x)(2x-3)$$"
+                                    "Final answer: $$(5-3x)(2x-3)$$"
                                     ]
                         },
                         {
