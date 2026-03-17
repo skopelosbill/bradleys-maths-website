@@ -626,14 +626,14 @@ const problemBank = [
 "date": "18 March", 
 "topic": "Exact Trigonometric Values", 
 "notice": "This is a non-calculator question.", 
-"q": "Find the exact value of<br>\\(2\\sin 30^\\circ + \\cos 60^\\circ\\).", 
+"q": "Find the exact value of:$$2\\sin 30^\\circ + \\cos 60^\\circ$$", 
 "img": "", 
 "steps": [
-"\\(\\sin 30^\\circ = \\frac{1}{2}\\)", 
-"\\(\\cos 60^\\circ = \\frac{1}{2}\\)", 
-"2(\\frac{1}{2}) + \\frac{1}{2}", 
-"= 1 + \\frac{1}{2}", 
-"= \\frac{3}{2}" 
+"$\\sin 30^\\circ = \\frac{1}{2}$", 
+"$\\cos 60^\\circ = \\frac{1}{2}$", 
+"$2(\\frac{1}{2}) + \\frac{1}{2}$", 
+"$= 1 + \\frac{1}{2}$", 
+"final answer:$$\\frac{3}{2}$$" 
 ] 
 }, 
 { "date": "19 March", 
