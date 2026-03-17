@@ -618,7 +618,8 @@ const problemBank = [
         "$\\text{Position vector of }N = \\frac{\\mathbf{a} + \\mathbf{c}}{2}$",
         "$\\overrightarrow{MN} = N - M$",
         "$= \\frac{\\mathbf{a} + \\mathbf{c}}{2} - \\frac{\\mathbf{a} + \\mathbf{b}}{2}$",
-        "$= \\frac{\\mathbf{c} - \\mathbf{b}}{2}$"
+        "$= \\frac{\\mathbf{c} - \\mathbf{b}}{2}$",
+		"Final answer: $$\\overrightarrow{MN} = \\frac{1}{2}(\\mathbf{c} - \\mathbf{b})$$"
     ]
 },
 { 
