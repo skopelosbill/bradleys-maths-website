@@ -865,5 +865,26 @@ const problemBank = [
 		"$(2x-3)(1-x)\\text{ and }-(2x-3)(x-1)$",
 		"Final answer: $$(3-2x)(x-1)\\textbf{ or }(2x-3)(1-x)\\textbf{ or }-(2x-3)(x-1)$$"
 		]
+	},
+	{
+	"date": "4 April",
+	"topic": "Simplification of Algebraic Fractions",
+	"notice": "This is a non-calculator question.",
+	"q" : "Simplify: $$\\dfrac{x^2-x-12}{x^2-2x-15}\\div\\dfrac{x^2-6x+8}{x^2-3x-10}$$",
+	"img": "",
+	"Steps": [
+		"Factorise each of the four expressions",
+		"$x^2-x-12\\equiv(x+3)(x-4)$",
+		"$x^2-2x-15\\equiv(x+3)(x-5)$",
+		"$x^2-6x+8\\equiv(x-4)(x-2)$",
+		"$x^2-3x-10\\equiv(x-5)(x+2)$",
+		"Now we rewrite our original expression using the factorisations:",
+		"$\\dfrac{(x+3)(x-4)}{(x+3)(x-5)}\\div\\dfrac{(x-4)(x-2)}{(x-5)(x+2)}$",
+		"Change the sign to multiply and invert the second fraction:",
+		"$\\dfrac{(x+3)(x-4)}{(x+3)(x-5)}\\times\\dfrac{(x-5)(x+2)}{(x-4)(x-2)}$",
+		"Cancel wherever possible:",
+		"$\\dfrac{\\cancel{(x+3)}\\cancel{(x-4)}}{\\cancel{(x+3)}\\cancel{(x-5)}}\\times\\dfrac{\\cancel{(x-5)}(x+2)}{\\cancel{(x-4)}(x-2)}$",
+		"Final answer: $$\\dfrac{x+2}{x-2}$$"
+		]
 	},	
 ]
