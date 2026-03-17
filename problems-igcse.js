@@ -616,9 +616,9 @@ const problemBank = [
 "steps": [ 
 "$\\text{Position vector of }M = \\frac{(\\mathbf{a} + \\mathbf{b})}{2}$", 
 "$\\text{Position vector of }N = \\frac{(\\mathbf{a} + \\mathbf{c})}{2}$", 
-"$MN = N - M$", 
+"$\\overrightarrow{MN} = \\mathbf{n} - \\mathbf{m}$"
 "$= \\frac{(\\mathbf{a} + \\mathbf{c})}{2} - \\frac{(\\mathbf{a} + \\mathbf{b})}{2}$",  
-"$=\\frac{(\\mathbf{c} - \\mathbf{b})}{2}$" 
+"Final answer $$=\\frac{(\\mathbf{c} - \\mathbf{b})}{2}$$" 
 ] 
 }, 
 { 
