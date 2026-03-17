@@ -620,8 +620,7 @@ const problemBank = [
         "$= \\frac{\\mathbf{a} + \\mathbf{c}}{2} - \\frac{\\mathbf{a} + \\mathbf{b}}{2}$",
         "$= \\frac{\\mathbf{c} - \\mathbf{b}}{2}$"
     ]
-}
-
+},
 { 
 "date": "18 March", 
 "topic": "Exact Trigonometric Values", 
