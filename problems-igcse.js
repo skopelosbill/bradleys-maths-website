@@ -612,13 +612,13 @@ const problemBank = [
 "topic": "Vectors - Proof", 
 "notice": "This is a non-calculator question.", 
 "q": "Points A, B and C have position vectors $\\mathbf{a}$, $\\mathbf{b}$ and $\\mathbf{c}$ respectively.<br>M is the midpoint of AB.<br>N is the midpoint of AC.<br>Show that $\\overrightarrow{MN} = \\frac{1}{2}(\\mathbf{c} - \\mathbf{b})$.", 
-"img": "images/17_mar.png", 
+"img": "", 
 "steps": [ 
-"Position vector of M = \\frac{(\\mathbf{a} + \\mathbf{b})}{2}", 
-"Position vector of N = \\frac{(\\mathbf{a} + \\mathbf{c})}{2}", 
-"MN = N - M", 
-"= \\frac{(\\mathbf{a} + \\mathbf{c})}{2} - \\frac{(\\mathbf{a} + \\mathbf{b})}{2}",  
-"= \\frac{(\\mathbf{c} - \\mathbf{b})}{2}" 
+"$\\text{Position vector of }M = \\frac{(\\mathbf{a} + \\mathbf{b})}{2}$", 
+"$\\text{Position vector of }N = \\frac{(\\mathbf{a} + \\mathbf{c})}{2}$", 
+"$MN = N - M$", 
+"$= \\frac{(\\mathbf{a} + \\mathbf{c})}{2} - \\frac{(\\mathbf{a} + \\mathbf{b})}{2}$",  
+"= $\\frac{(\\mathbf{c} - \\mathbf{b})}{2}}$" 
 ] 
 }, 
 { 
