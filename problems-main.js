@@ -403,11 +403,11 @@ const problemBank = [
     "date": "18 March",
     "topic": "Quadratics - Completing the Square",
     "notice": "This is a non-calculator question.",
-    "q": "Complete the square:$$x^2 + 6x + 5$$",
+    "q": "Complete the square:<br><br>$x^2 + 6x + 5$<br><br>Hence, write down the coordinates of the turning point on the graph of $y=x^2 + 6x + 5$",
     "img": "",
     "steps": [
         "$x^2 + 6x + 9 - 9 + 5$",
-        "Final answer: $$(x+3)^2 - 4$$"
+        "Final answer: $$(x+3)^2 - 4\\text{ with the turning point at }(-3,-4)$$"
       ]
   },
   {
