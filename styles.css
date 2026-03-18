@@ -288,6 +288,12 @@ body{
     margin: 20px auto;
 }
 
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 /* ========================= */
 /* HEADINGS */
 /* ========================= */
