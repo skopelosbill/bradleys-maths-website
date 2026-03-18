@@ -292,6 +292,23 @@ body{
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
+  text-align: left;
+}
+
+.content h1,
+.content h2,
+.content h3 {
+  text-align: center;
+}
+
+.content a {
+  color: #6a0dad; /* your purple theme */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.content a:hover {
+  text-decoration: underline;
 }
 
 /* ========================= */
