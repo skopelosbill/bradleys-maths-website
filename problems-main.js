@@ -410,8 +410,21 @@ const problemBank = [
         "Final answer: $$(x+3)^2 - 4\\text{ with the turning point at }(-3,-4)$$"
       ]
   },
+  
   {
     "date": "19 March",
+    "topic": "Algebraic Fractions",
+    "notice": "This is a non-calculator question.",
+    "q": "Simplify: $$\\dfrac{2x^2 - 8}{4x}$$",
+    "img": "",
+     "steps": [
+        "$= \\dfrac{2(x^2 - 4)}{4x}$",
+        "$= \\dfrac{2(x-2)(x+2)}{4x}$",
+        "Final answer: $$= \\dfrac{(x-2)(x+2)}{2x}$$"
+      ]
+  },
+   {
+    "date": "20 March",
     "topic": "Trigonometry - Cosine Rule",
     "notice": "",
     "q": "In triangle $ABC$,<br>$AB = 7$cm,<br>$AC = 9$cm,<br>$\\angle BAC = 120^\\circ$.<br>Find $BC$.<br>Give your answer to 1 decimal place.",
@@ -422,18 +435,6 @@ const problemBank = [
         "$= 130 + 63$",
         "$= 193$",
         "$BC \\approx 13.9\\text{ cm}$"
-      ]
-  },
-  {
-    "date": "20 March",
-    "topic": "Algebraic Fractions",
-    "notice": "This is a non-calculator question.",
-    "q": "Simplify.<br>$\\dfrac{2x^2 - 8}{4x}$.",
-    "img": "",
-     "steps": [
-        "$= \\dfrac{2(x^2 - 4)}{4x}$",
-        "$= \\dfrac{2(x-2)(x+2)}{4x}$",
-        "$= \\dfrac{(x-2)(x+2)}{2x}$"
       ]
   },
   {
