@@ -636,17 +636,18 @@ const problemBank = [
 "final answer:$$\\frac{3}{2}$$" 
 ] 
 }, 
-{ "date": "19 March", 
+{ 
+"date": "19 March", 
 "topic": "Surds", 
 "notice": "This is a non-calculator question.", 
-"q": "Simplify fully:<br>\\(\\sqrt{50} + 3\\sqrt{8}\\).",
+"q": "Simplify fully: $$\\sqrt{50} + 3\\sqrt{8}$$",
 "img": "", 
 "steps": [ 
-"\\(\\sqrt{50} = 5\\sqrt{2}\\)", 
-"\\(\\sqrt{8} = 2\\sqrt{2}\\)", 
-"\\(3(2\\sqrt{2}) = 6\\sqrt{2}\\)", 
-"\\(5\\sqrt{2} + 6\\sqrt{2}\\)", 
-"\\(=11\\sqrt{2}\\)" 
+"$\\sqrt{50} = 5\\sqrt{2}$", 
+"$\\sqrt{8} = 2\\sqrt{2}$", 
+"$3(2\\sqrt{2}) = 6\\sqrt{2}$", 
+"$5\\sqrt{2} + 6\\sqrt{2}$", 
+"Final answer: $$=11\\sqrt{2}$$" 
 ] 
 }, 
 { "date": "20 March", 
