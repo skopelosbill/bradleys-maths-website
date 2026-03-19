@@ -650,23 +650,6 @@ const problemBank = [
 "Final answer: $$=11\\sqrt{2}$$" 
 ] 
 }, 
-{ "date": "20 March", 
-"topic": "Coordinate Geometry",
-"notice": "", 
-"q": "Points A(1,2), B(4,6) and C(7,2).<br>(a) Show that triangle ABC is isosceles.<br>(b) Find the equation of the perpendicular bisector of AB.<br>(c) Find the area of triangle ABC.", 
-"img": "images/20_mar.png", 
-"steps": [ 
-"$AB^2 = (3)^2 + (4)^2 = 25$", 
-"$BC^2 = (3)^2 + (-4)^2 = 25$", 
-"$AC^2 = (6)^2 + 0^2 = 36$", 
-"AB = BC", 
-"Midpoint of AB = (3,4)", 
-"Gradient AB = 1", 
-"Perpendicular gradient = -1", 
-"Equation: $y - 4 = -1(x - 3)$", 
-"Area $= \\frac{1}{2} \\times \\text{base} \\times \\text{height} = 12$" 
-] 
-}, 
 { 
 "date": "21 March", 
 "topic": "Functions", 
@@ -681,6 +664,24 @@ const problemBank = [
 "$2x^2 - 3x = 0$", 
 "$x(2x - 3) = 0$", 
 "$x = 0\\text{ or }x = \\frac{3}{2}$" 
+] 
+}, 
+{ 
+"date": "20 March", 
+"topic": "Coordinate Geometry",
+"notice": "", 
+"q": "Points A(1,2), B(4,6) and C(7,2).<br>(a) Show that triangle ABC is isosceles.<br>(b) Find the equation of the perpendicular bisector of AB.<br>(c) Find the area of triangle ABC.", 
+"img": "images/20_mar.png", 
+"steps": [ 
+"$AB^2 = (3)^2 + (4)^2 = 25$", 
+"$BC^2 = (3)^2 + (-4)^2 = 25$", 
+"$AC^2 = (6)^2 + 0^2 = 36$", 
+"AB = BC", 
+"Midpoint of AB = (3,4)", 
+"Gradient AB = 1", 
+"Perpendicular gradient = -1", 
+"Equation: $y - 4 = -1(x - 3)$", 
+"Area $= \\frac{1}{2} \\times \\text{base} \\times \\text{height} = 12$" 
 ] 
 }, 
 { 
