@@ -651,7 +651,7 @@ const problemBank = [
 ] 
 }, 
 { 
-"date": "21 March", 
+"date": "20 March", 
 "topic": "Functions", 
 "notice": "This is a non-calculator question.", 
 "q": "The function \\(f(x) = 2x^2 - 3x + 1\\).<br>(a) Find \\(f(4)\\).<br>(b) Find the value of \\(x\\) such that \\(f(x) = 1\\).", 
@@ -670,8 +670,8 @@ const problemBank = [
 "date": "20 March", 
 "topic": "Coordinate Geometry",
 "notice": "", 
-"q": "Points A(1,2), B(4,6) and C(7,2).<br>(a) Show that triangle ABC is isosceles.<br>(b) Find the equation of the perpendicular bisector of AB.<br>(c) Find the area of triangle ABC.", 
-"img": "images/20_mar.png", 
+"q": "Consider the points A(1,2), B(4,6) and C(7,2).<br>(a) Show that triangle ABC is isosceles.<br>(b) Find the equation of the perpendicular bisector of AB.<br>(c) Find the area of triangle ABC.", 
+"img": "", 
 "steps": [ 
 "$AB^2 = (3)^2 + (4)^2 = 25$", 
 "$BC^2 = (3)^2 + (-4)^2 = 25$", 
