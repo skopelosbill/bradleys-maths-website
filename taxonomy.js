@@ -4,7 +4,7 @@ const taxonomy = {
       difficulty: ["8/9", "6/7", "4/5"]
     },
     IGCSE: {
-      difficulty: ["A/A*", "B/C", "D/E"]
+      difficulty: ["A*", "B/A", "B/C", "C/D", "D/E"]
     }
   },
 
