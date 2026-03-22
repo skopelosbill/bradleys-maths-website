@@ -63,223 +63,344 @@ const problemBank = [
 
 			//2 Feb
   			{
-				"Date": "2 Feb 2026",
-				"Topic": "Geometry - angles in parallel lines",
-    			"q": "The diagram shows two parallel lines intersecting two straight lines.<br>Find the values of a, b and c",
-    			"img": "images/feb_2.png",
-    			"steps": [
-      			"a = 143° (corresponding angles are equal).",
-      			"b = 40° (alternate angles are equal).",
-      			"c = 103° (exterior angle equals the sum of the two opposite interior angles).",
-      			"Final answer: a = 143°, b = 40°, c = 103°"
-    			]
-  			},
+  "id": "001540",
+  "date": "2 Feb 2026",
+  "major_area": "Geometry & Measures",
+  "topic": "Angles",
+  "subtopic": "Angles in Parallel Lines",
+  "difficulty": "C/D",
+  "notice": "",
+  "q": "The diagram shows two parallel lines intersecting two straight lines.<br>Find the values of $a$, $b$ and $c$.",
+  "img": "images/feb_2.png",
+  "steps": [
+    "Angle $a$ is $143^\\circ$ because corresponding angles are equal.",
+    "Angle $b$ is $40^\\circ$ because alternate angles are equal.",
+    "Angle $c$ is $103^\\circ$ because an exterior angle equals the sum of the two opposite interior angles.",
+    "Final answer: $$a = 143^\\circ,\\ b = 40^\\circ,\\ c = 103^\\circ$$"
+  ]
+},
+
 			//3 Feb
   			{
-				"Date": "3 Feb 2026",
-				"Topic": "Compound interest",
-    			"q": "Jade invests €18000 at 5.25% per year compound interest.<br>Find the value of her investment at the end of 10 years.<br>Give your answer to the nearest ten thousand Euros.",
-    			"img": "",
-    			"steps": [
-      			"$18000(1 + \\frac{5.25}{100})^{10}$",
-      			"$= 18000(1.0525)^{10}$",
-      			"$= 30025.73$",
-      			"Final answer: €30000"
-    			]
-  			},
+  "id": "001541",
+  "date": "3 Feb 2026",
+  "major_area": "Number",
+  "topic": "Compound Interest",
+  "subtopic": "Percentage Change",
+  "difficulty": "C/D",
+  "notice": "",
+  "q": "Jade invests €18000 at 5.25% per year compound interest.<br>Find the value of her investment at the end of 10 years.<br>Give your answer to the nearest ten thousand Euros.",
+  "img": "",
+  "steps": [
+    "Use the compound interest formula: $A = P(1 + \\frac{r}{100})^n$.",
+    "Substitute the values: $18000(1 + \\frac{5.25}{100})^{10}$.",
+    "Simplify inside the brackets: $= 18000(1.0525)^{10}$.",
+    "Calculate the value: $= 30025.73$.",
+    "Round to the nearest ten thousand Euros.",
+    "Final answer: $$€30000$$"
+  ]
+},
+
 			//4 Feb
   			{
-				"Date": "4 Feb 2026",
-				"Topic": "Geometry - Polygons",
-    			"q": "A regular polygon has an interior angle of 165°.<br>How many sides does it have?",
-    			"img": "",
-    			"steps": [
-      			"$180° - 165° = 15°$", 
-      			"$\\frac{360°}{15°} = 24$",
-      			"Final answer: 24 sides"
-    			]
-  			},
+  "id": "001542",
+  "date": "4 Feb 2026",
+  "major_area": "Geometry & Measures",
+  "topic": "Polygons",
+  "subtopic": "Interior and Exterior Angles",
+  "difficulty": "C/D",
+  "notice": "",
+  "q": "Answer the following questions about regular polygons.\n\n(a) A regular polygon has an interior angle of $165^\\circ$. How many sides does it have?\n(b) A regular polygon has $12$ sides. Find the size of each interior angle.",
+  "img": "",
+  "steps": [
+    "(a) Subtract the interior angle from $180^\\circ$ to find the exterior angle: $180^\\circ - 165^\\circ = 15^\\circ$.",
+    "(a) Divide $360^\\circ$ by the exterior angle: $\\frac{360^\\circ}{15^\\circ} = 24$.",
+    "(a) Final answer: $$24\\text{ sides}$$",
+    "(b) Use the formula for the interior angle of a regular polygon: $\\text{Interior angle} = \\frac{(n-2)\\times 180^\\circ}{n}$.",
+    "(b) Substitute $n = 12$: $\\frac{(12-2)\\times 180^\\circ}{12}$.",
+    "(b) Simplify: $\\frac{10\\times 180^\\circ}{12} = 150^\\circ$.",
+    "(b) Final answer: $$150^\\circ$$"
+  ]
+},
+
 			//5 Feb
   			{
-				"Date": "5 Feb 2026",
-				"Topic": "Recurring decimals",
-    			"q": "Write the recurring decimal $ 0.6\\dot{4}$ as a fraction, giving your answer in its simplest form.",
-    			"img": "",
-    			"steps": [
-      			"$ x = 0.6\\dot{4}$ (1)",
-      			"$10x = 6.\\dot{4}$ (2)",
-      			"$100x = 64.\\dot{4}$ (3)",
-      			" (3) - (2): $90x = 58$",
-      			"$x = \\frac{58}{90} = \\frac{29}{45}$",
-      			"Final answer: $$\\frac{29}{45}$$"
-    			]
-  			},
+  "id": "001543",
+  "date": "5 Feb 2026",
+  "major_area": "Number",
+  "topic": "Recurring Decimals",
+  "subtopic": "Converting Recurring Decimals to Fractions",
+  "difficulty": "C/D",
+  "notice": "This is a non-calculator question.",
+  "q": "Write the recurring decimal $0.6\\dot{4}$ as a fraction, giving your answer in its simplest form.",
+  "img": "",
+  "steps": [
+    "Let $x = 0.6\\dot{4}$.",
+    "Multiply by 10: $10x = 6.\\dot{4}$.",
+    "Multiply by 100: $100x = 64.\\dot{4}$.",
+    "Subtract: $100x - 10x = 64.\\dot{4} - 6.\\dot{4}$.",
+    "So $90x = 58$.",
+    "Solve for $x$: $x = \\frac{58}{90}$.",
+    "Simplify the fraction: $\\frac{58}{90} = \\frac{29}{45}$.",
+    "Final answer: $$\\frac{29}{45}$$"
+  ]
+},
+
 			//6 Feb
   			{
-				"Date": "6 Feb 2026",
-				"Topic": "Pythagoras/sohcahtoa",
-			    "q": "Consider the right angled triangle below:<br>a) Calculate the length of AB<br>b) Calculate the size of angle BAC",
-    			"img": "images/feb_6.png",
-    			"steps": [
-      			"a) AB $= \\sqrt{20^2 + 7^2}$",
-      			" $= \\sqrt{449} = 21.2$cm (3sf)",
-      			"b) Angle BAC$ = \\tan^{-1} \\frac{20}{7}",
-      			"$= 70.7° (1dp)"
-    			]
-  			},
+  "id": "001544",
+  "date": "6 Feb 2026",
+  "major_area": "Geometry & Measures",
+  "topic": "Right‑angled Triangles",
+  "subtopic": "Pythagoras and Trigonometry",
+  "difficulty": "C/D",
+  "notice": "",
+  "q": "Consider the right‑angled triangle below:<br>(a) Calculate the length of $AB$<br>(b) Calculate the size of angle $BAC$",
+  "img": "images/feb_6.png",
+  "steps": [
+    "(a) Use Pythagoras' theorem: $AB = \\sqrt{20^2 + 7^2}$.",
+    "(a) Calculate inside the root: $20^2 + 7^2 = 400 + 49 = 449$.",
+    "(a) So $AB = \\sqrt{449} = 21.2\\text{ cm}$ (3 s.f.).",
+    "(b) Use tangent: $\\tan(BAC) = \\frac{20}{7}$.",
+    "(b) Calculate the angle: $BAC = \\tan^{-1}\\left(\\frac{20}{7}\\right)$.",
+    "(b) Final answer: $$70.7^\\circ\\text{ (1 d.p.)}$$"
+  ]
+},
+
 			//7 Feb
-  			{
-				"Date": "7 Feb 2026",
-				"Topic": "Venn diagrams",
-    			"q": "Consider the Venn diagram below.<br>The number in the universal set is 50.<br>$n(A)=32, n(B)=28, n(A \\cup B)' = 8$.<br>Find:<br>a) $n(A \\cap B)$<br>b) $n(A' \\cap B)$",
-    			"img": "images/feb_7.png",            
-    			"steps": [
-      			"a) $A \\cup B = 50 - 8 = 42$",
-      			"$A \\cup B = A + B - A \\cap B$",
-      			"$ 42 = 32 + 28 - A \\cap B$",
-      			"$ n(A \\cap B) = 60-42 = 18$",
-      			"b) $ n(A' \\cap B) = 28 - 18 = 10$"
-    			]
-  			},
+	{
+  "id": "001545",
+  "date": "7 Feb 2026",
+  "major_area": "Statistics & Probability",
+  "topic": "Venn Diagrams",
+  "subtopic": "Set Notation and Regions",
+  "difficulty": "C/D",
+  "notice": "",
+  "q": "Consider the Venn diagram below.<br>The number in the universal set is 50.<br>$n(A)=32$, $n(B)=28$, $n((A \\cup B)') = 8$.<br>Find:<br>(a) $n(A \\cap B)$<br>(b) $n(A' \\cap B)$",
+  "img": "images/feb_7.png",
+  "steps": [
+    "(a) Calculate $n(A \\cup B)$: $50 - 8 = 42$.",
+    "(a) Use the formula: $n(A \\cup B) = n(A) + n(B) - n(A \\cap B)$.",
+    "(a) Substitute values: $42 = 32 + 28 - n(A \\cap B)$.",
+    "(a) Rearrange: $n(A \\cap B) = 60 - 42 = 18$.",
+    "(b) Use $n(A' \\cap B) = n(B) - n(A \\cap B)$.",
+    "(b) Substitute values: $28 - 18 = 10$.",
+    "(b) Final answer: $$10$$"
+  ]
+},
+
 			//8 Feb
 			{
-				"Date": "8 Feb 2026",
-				"Topic": "Compound interest - rate",
-    			"q": "Peter invests £20000 for 10 years.<br>At the end of the period his investment is worth £35817 (nearest pound).<br>Calculate the interest rate.",
-    			"img": "",
-    			"steps": [
-      			"$20000\\left(1+\\frac{r}{100}\\right)^{10} = 35817$",
-      			"$\\left(1+\\frac{r}{100}\\right)^{10} = \\frac{35817}{20000}$",
-      			"$1+\\frac{r}{100} = \\left(\\frac{35817}{20000}\\right)^\\frac{1}{10}$",
-      			"$\\frac{r}{100} = \\left(\\frac{35817}{20000}\\right)^\\frac{1}{10}-1$ ",
-      			"$r = 100[\\left(\\frac{35817}{20000}\\right)^\\frac{1}{10}-1]$",
-      			"Final answer: $$6\\%$$"
-    			]
-  			},
+  "id": "001546",
+  "date": "8 Feb 2026",
+  "major_area": "Number",
+  "topic": "Compound Interest",
+  "subtopic": "Finding the Interest Rate",
+  "difficulty": "C/D",
+  "notice": "",
+  "q": "Peter invests £20000 for 10 years.<br>At the end of the period his investment is worth £35817 (nearest pound).<br>Calculate the interest rate.",
+  "img": "",
+  "steps": [
+    "Start with the compound interest formula: $20000\\left(1 + \\frac{r}{100}\\right)^{10} = 35817$.",
+    "Divide both sides by 20000: $\\left(1 + \\frac{r}{100}\\right)^{10} = \\frac{35817}{20000}$.",
+    "Take the 10th root: $1 + \\frac{r}{100} = \\left(\\frac{35817}{20000}\\right)^{\\frac{1}{10}}$.",
+    "Subtract 1: $\\frac{r}{100} = \\left(\\frac{35817}{20000}\\right)^{\\frac{1}{10}} - 1$.",
+    "Multiply by 100: $r = 100\\left[\\left(\\frac{35817}{20000}\\right)^{\\frac{1}{10}} - 1\\right]$.",
+    "Final answer: $$6\\%$$"
+  ]
+},
+
 			//9 Feb
 			{
-				"Date": "9 Feb 2026",
-				"Topic": "Algebra - Rearrange formula",
-    			"q": "$y=\\sqrt[3]{\\left(\\frac{p^7}{q^2}\\right)}$<br>a) Find $y$ when $p = 9$ and $q=3$.<br>b) Rearrange the formula to make $p$ the subject.",
-    			"img": "",
-    			"steps": [
-			    "a) $ y = \\sqrt[3]{\\left(\\frac{9^7}{3^2}\\right)}$",
-      			"$ y = \\sqrt[3]{\\left(\\frac{9^7}{9}\\right)}$",
-      			"$ y = \\sqrt[3]{9^6}$",
-      			"$ y = 9^2 = 81$",
-      			"b) $y^3 = \\left(\\frac{p^7}{q^2}\\right)$",
-      			"$ p^7 = q^2y^3$",
-      			"$p = \\sqrt[7]{q^2y^3}$"
-    			]
-  			},
+  "id": "001547",
+  "date": "9 Feb 2026",
+  "major_area": "Algebra",
+  "topic": "Rearranging Formulae",
+  "subtopic": "Changing the Subject",
+  "difficulty": "C/D",
+  "notice": "",
+  "q": "$y = \\sqrt[3]{\\frac{p^7}{q^2}}$<br>(a) Find $y$ when $p = 9$ and $q = 3$.<br>(b) Rearrange the formula to make $p$ the subject.",
+  "img": "",
+  "steps": [
+    "(a) Substitute values: $y = \\sqrt[3]{\\frac{9^7}{3^2}}$.",
+    "(a) Simplify the denominator: $3^2 = 9$, so $y = \\sqrt[3]{\\frac{9^7}{9}}$.",
+    "(a) Simplify the fraction: $\\frac{9^7}{9} = 9^6$.",
+    "(a) Cube root: $y = \\sqrt[3]{9^6} = 9^2 = 81$.",
+    "(b) Start with the original formula: $y = \\sqrt[3]{\\frac{p^7}{q^2}}$.",
+    "(b) Cube both sides: $y^3 = \\frac{p^7}{q^2}$.",
+    "(b) Multiply both sides by $q^2$: $p^7 = q^2 y^3$.",
+    "(b) Take the 7th root: $p = \\sqrt[7]{q^2 y^3}$.",
+    "Final answer: $$p = \\sqrt[7]{q^2 y^3}$$"
+  ]
+},
+
 			//10 Feb
 			{
-				"Date": "10 Feb 2026",
-				"Topic": "Algebra - Simultaneous Equations, linear and curve",
-    			"q": "The straight line $y=3x-1$ intersects the curve $y=2x^2-3x+2$ in two points.<br>Find the coordinates of the points of intersection giving your answer correct to 2dp.",
-   				"img": "",
-    			"steps": [
-      			"$2x^2-3x+2=3x-1$",
-      			"$2x^2-6x+3=0$",
-      			"$x=\\frac{6\\pm \\sqrt{36-(4)(2)(3)}}{4}$",
-      			"$x=\\frac{6+\\sqrt{12}}{4}$ or $x=\\frac{6-\\sqrt{12}}{4}$",
-      			"$x=2.37$ or $x=0.63$",
-      			"If $x=2.37, y=6.10$, if $x=0.63, y=0.90$",
-      			"Final answer: $$(2.37,6.10), (0.63,0.90)$$"
-     			]
-  			},
+  "id": "001548",
+  "date": "10 Feb 2026",
+  "major_area": "Algebra",
+  "topic": "Simultaneous Equations",
+  "subtopic": "Line–Curve Intersections",
+  "difficulty": "C/D",
+  "notice": "",
+  "q": "The straight line $y = 3x - 1$ intersects the curve $y = 2x^2 - 3x + 2$ in two points.<br>Find the coordinates of the points of intersection giving your answer correct to 2 d.p.",
+  "img": "",
+  "steps": [
+    "Set the equations equal: $2x^2 - 3x + 2 = 3x - 1$.",
+    "Rearrange: $2x^2 - 6x + 3 = 0$.",
+    "Use the quadratic formula: $x = \\frac{6 \\pm \\sqrt{36 - (4)(2)(3)}}{4}$.",
+    "Simplify inside the root: $x = \\frac{6 \\pm \\sqrt{12}}{4}$.",
+    "Calculate the values: $x = 2.37$ or $x = 0.63$.",
+    "Substitute into $y = 3x - 1$: if $x = 2.37$, then $y = 6.10$.",
+    "Substitute into $y = 3x - 1$: if $x = 0.63$, then $y = 0.90$.",
+    "Final answer: $$(2.37, 6.10),\\ (0.63, 0.90)$$"
+  ]
+},
+
 			//11 Feb
 			{
-				"Date": "11 Feb 2026",
-				"Topic": "Vectors",
-    			"q": "$ \\mathbf{a} = \\begin{pmatrix} 5 \\\\ -2 \\end{pmatrix}  $ and $ \\mathbf{b} = \\begin{pmatrix} -7 \\\\ 9 \\end{pmatrix}$<br>a) Find $\\mathbf{a}-3\\mathbf{b}$.<br>b) Find the exact value of $|\\mathbf{b}|$",
-    			"img": "",
-    			"steps": [
-      			"a) $ \\begin{pmatrix} 5 \\\\ -2 \\end{pmatrix}  - \\begin{pmatrix} -21 \\\\ 27 \\end{pmatrix} $",
-      			"$ = \\begin{pmatrix} 26 \\\\ - 29 \\end{pmatrix} $",
-      			"b) $\\sqrt{(-7)^2+9^2} = \\sqrt{49+81}$",
-      			"$ = \\sqrt{130}$"
-    			]
-  			},
+  "id": "001549",
+  "date": "11 Feb 2026",
+  "major_area": "Algebra",
+  "topic": "Vectors",
+  "subtopic": "Vector Arithmetic and Magnitude",
+  "difficulty": "C/D",
+  "notice": "",
+  "q": "$\\mathbf{a} = \\begin{pmatrix} 5 \\\\ -2 \\end{pmatrix}$ and $\\mathbf{b} = \\begin{pmatrix} -7 \\\\ 9 \\end{pmatrix}$<br>(a) Find $\\mathbf{a} - 3\\mathbf{b}$.<br>(b) Find the exact value of $|\\mathbf{b}|$.",
+  "img": "",
+  "steps": [
+    "(a) Calculate $3\\mathbf{b}$: $3\\begin{pmatrix} -7 \\\\ 9 \\end{pmatrix} = \\begin{pmatrix} -21 \\\\ 27 \\end{pmatrix}$.",
+    "(a) Subtract: $\\begin{pmatrix} 5 \\\\ -2 \\end{pmatrix} - \\begin{pmatrix} -21 \\\\ 27 \\end{pmatrix}$.",
+    "(a) Result: $\\begin{pmatrix} 26 \\\\ -29 \\end{pmatrix}$.",
+    "(b) Use magnitude formula: $|\\mathbf{b}| = \\sqrt{(-7)^2 + 9^2}$.",
+    "(b) Simplify: $\\sqrt{49 + 81} = \\sqrt{130}$.",
+    "Final answer: $$\\begin{pmatrix} 26 \\\\ -29 \\end{pmatrix},\\ \\sqrt{130}$$"
+  ]
+},
+
 			//12 Feb
 			{
-				"Date": "12 Feb 2026",
-				"Topic": "Arithmetic sequence",
-    			"q": "The first four terms of a sequence are:<br>$ T_1=19,T_2=13, T_3=7, T_4=1 $<br>a) Find $T_5$<br>b) Find $T_n$.",
-    			"img": "",
-    			"steps": [
-      			"a) Common difference: $-6$",
-     			 "$T_5 = 1 - 6 = -5$",
-      			"b) $T_0 = 25$",
-      			"$\\Rightarrow T_n = 25 - 6n$"
-    			]
-  			},
+  "id": "001550",
+  "date": "12 Feb 2026",
+  "major_area": "Algebra",
+  "topic": "Sequences",
+  "subtopic": "Arithmetic Sequences",
+  "difficulty": "C/D",
+  "notice": "",
+  "q": "The first four terms of a sequence are:<br>$T_1 = 19,\\ T_2 = 13,\\ T_3 = 7,\\ T_4 = 1$<br>(a) Find $T_5$<br>(b) Find $T_n$.",
+  "img": "",
+  "steps": [
+    "(a) Find the common difference: $-6$.",
+    "(a) Calculate $T_5$: $1 - 6 = -5$.",
+    "(b) Use $T_n = T_1 + (n-1)d$.",
+    "(b) Substitute $T_1 = 19$ and $d = -6$: $T_n = 19 + (n-1)(-6)$.",
+    "(b) Expand: $T_n = 19 - 6n + 6$.",
+    "(b) Simplify: $T_n = 25 - 6n$.",
+    "Final answer: $$T_5 = -5,\\quad T_n = 25 - 6n$$"
+  ]
+},
+
 			//13 Feb
 			{
-				"Date": "13 Feb 2026",
-				"Topic": "Standard Form",
-    			"q": "Find the value of $\\Large\\frac{3.6\\times10^4}{1.8\\times10^{-3}}\\normalsize$ giving your answer in standard form without using a calculator.",
-    			"img": "",
-    			"steps": [
-      			"$3.6 \\div 1.8 =2$",
-      			"$10^4 \\div 10^{-3} = 10^{4-(-3)}$",
-      			"$ = 10^7$",
-      			"Final answer:$$2\\times10^7$$"
-    			]
-  			},
+  "id": "001551",
+  "date": "13 Feb 2026",
+  "major_area": "Number",
+  "topic": "Standard Form",
+  "subtopic": "Multiplying and Dividing Powers of 10",
+  "difficulty": "C/D",
+  "notice": "This is a non-calculator question.",
+  "q": "Find the value of $\\Large\\frac{3.6\\times10^4}{1.8\\times10^{-3}}\\normalsize$ giving your answer in standard form without using a calculator.",
+  "img": "",
+  "steps": [
+    "Calculate the number part: $3.6 \\div 1.8 = 2$.",
+    "Divide the powers of ten: $10^4 \\div 10^{-3} = 10^{4 - (-3)}$.",
+    "Simplify the index: $10^{7}$.",
+    "Final answer: $$2 \\times 10^7$$"
+  ]
+},
+
 			//14 Feb
-			{
-				"Date": "14 Feb 2026",
-				"Topic": "Arithmetic Mean",
-    			"q": "The arithmetic mean of five numbers is $12$.<br>When a sixth number, $x$ is added the mean drops to $9$.<br>Find $x$.",
-    			"img": "",
-    			"steps": [
-      			"$\\frac{60+x}{6}=9$",
-      			"$60+x=54$",
-      			"Final answer: $$x=-6$$"
-    			]
-  			},
+{
+  "id": "001552",
+  "date": "14 Feb 2026",
+  "major_area": "Statistics",
+  "topic": "Averages",
+  "subtopic": "Arithmetic Mean",
+  "difficulty": "D/E",
+  "notice": "",
+  "q": "The arithmetic mean of five numbers is $12$.<br>When a sixth number, $x$, is added the mean drops to $9$.<br>Find $x$.",
+  "img": "",
+  "steps": [
+    "Use the mean formula: the total of the first five numbers is $5 \\times 12 = 60$.",
+    "Form the equation: $\\frac{60 + x}{6} = 9$.",
+    "Multiply both sides by 6: $60 + x = 54$.",
+    "Solve for $x$: $x = -6$.",
+    "Final answer: $$x = -6$$"
+  ]
+},
+
 			//15 Feb
-			{
-				"Date": "1 Feb 2026",
-				"Topic": "Circle Theorems",
-    			"q": "In the diagram, below, points A, B, C and D all lie on the circumference of a circle.<br>Giving reasons, write down the size of $\\angle BDA, \\angle BCD \\text{ and } \\angle ABD$.",
-    			"img": "images/feb_15.png",
-    			"steps": [
-      			"$\\angle BDA = 26^\\circ$ (angle in the same segment as $\\angle BCA$)",
-      			"$\\angle BCD = 180-62=118^\\circ$ (opposite angles in a cyclic quadrilateral are supplementary)",
-      			"$\\angle ABD = 180 - (62+26)=92^\\circ$ (angle sum of $\\triangle ABD$)"
-    			]
-  			},
+		{
+  "id": "001553",
+  "date": "15 Feb 2026",
+  "major_area": "Geometry & Measures",
+  "topic": "Circle Theorems",
+  "subtopic": "Angles in Circles",
+  "difficulty": "B/C",
+  "notice": "",
+  "q": "In the diagram below, points $A$, $B$, $C$ and $D$ all lie on the circumference of a circle.<br>Giving reasons, write down the size of $\\angle BDA$, $\\angle BCD$ and $\\angle ABD$.",
+  "img": "images/feb_15.png",
+  "steps": [
+    "$\\angle BDA = 26^\\circ$ (angle in the same segment as $\\angle BCA$).",
+    "$\\angle BCD = 180 - 62 = 118^\\circ$ (opposite angles in a cyclic quadrilateral are supplementary).",
+    "$\\angle ABD = 180 - (62 + 26) = 92^\\circ$ (angle sum of $\\triangle ABD$).",
+    "Final answer: $$\\angle BDA = 26^\\circ,\\ \\angle BCD = 118^\\circ,\\ \\angle ABD = 92^\\circ$$"
+  ]
+},
+
 			//16 Feb
 			{
-				"Date": "16 Feb 2026",
-				"Topic": "Inverse Functions",
-    			"q": "$f(x)=3^x$<br>Find $x$ when $f^{-1}(x)=4$",
-    			"img": "",
-    			"steps": [
-      			"$f^{-1}(x)=4\\Rightarrow f(4)=x$",
-      			"$\\Rightarrow x=3^4$",
-      			"Final answer: $$x=81$$"
-    			]
-  			},
+  "id": "001554",
+  "date": "16 Feb 2026",
+  "major_area": "Algebra",
+  "topic": "Functions",
+  "subtopic": "Inverse Functions",
+  "difficulty": "B/A",
+  "notice": "",
+  "q": "$f(x) = 3^x$<br>Find $x$ when $f^{-1}(x) = 4$.",
+  "img": "",
+  "steps": [
+    "Use the definition of an inverse function: $f^{-1}(x) = 4$ means the value of $x$ for which $f(x) = 4$.",
+    "So $f(4) = x$.",
+    "Evaluate: $x = 3^4$.",
+    "Final answer: $$x = 81$$"
+  ]
+},
+
 			// 17 Feb
 			{
-				"Date": "17 Feb 2026",
-				"Topic": "Mensuration",
-    			"q": "The diagram shows the end view of a storage unit in the shape of two congruent trapeziums.<br>a) Calculate the area of the end wall.<br>b) The length of the sloping roof (marked $x$).<br>c) The angle of the pitch of the roof (marked $y^\\circ$).",
-    			"img": "images/feb_17.png",
-    			"steps": [
-      			"a) Area$=2\\times\\frac{1}{2}(a+b)\\times h$",
-      			"$=2\\times\\frac{1}{2}(2.5 + 3)\\times 2.5$",
-      			"$=5.5\\times2.5 = 13.75\\text{m}^2$",
-      			"b) $x=\\sqrt{0.5^2+2.5^2}$",
-      			"$=2.55\\text{m}$",
-      			"c) $\\tan=\\frac{opp}{adj}$",
-      			"$y=\\tan^{-1}\\left(\\frac{0.5}{2.5}\\right)$",
-      			"$=11.3^\\circ$ (1dp)."
-    			]
-  			},
+  "id": "001555",
+  "date": "17 Feb 2026",
+  "major_area": "Geometry & Measures",
+  "topic": "Mensuration",
+  "subtopic": "Area, Pythagoras, Trigonometry",
+  "difficulty": "B",
+  "notice": "",
+  "q": "The diagram shows the end view of a storage unit in the shape of two congruent trapeziums.<br>(a) Calculate the area of the end wall.<br>(b) The length of the sloping roof (marked $x$).<br>(c) The angle of the pitch of the roof (marked $y^\\circ$).",
+  "img": "images/feb_17.png",
+  "steps": [
+    "(a) Area of one trapezium: $\\tfrac12(a+b)h$.",
+    "(a) Total area: $2 \\times \\tfrac12(2.5 + 3) \\times 2.5$.",
+    "(a) Simplify: $5.5 \\times 2.5 = 13.75\\text{ m}^2$.",
+    "(b) Use Pythagoras: $x = \\sqrt{0.5^2 + 2.5^2}$.",
+    "(b) Calculate: $x = 2.55\\text{ m}$.",
+    "(c) Use tangent: $\\tan y = \\tfrac{0.5}{2.5}$.",
+    "(c) So $y = \\tan^{-1}\\left(\\tfrac{0.5}{2.5}\\right)$.",
+    "(c) Final value: $11.3^\\circ$ (1 d.p.).",
+    "Final answer: $$13.75\\text{ m}^2,\\ 2.55\\text{ m},\\ 11.3^\\circ$$"
+  ]
+},
+
 			// 18 Feb
 			{
 				"Date": "18 Feb 2026",
