@@ -2,31 +2,65 @@ const anchorDate = new Date("2026-01-30");
 const problemBank = [
 
 		    // JAN 30
-            {
-                "Date": "30 Jan 2026",
-				"Topic": "Volume",
-				q: "Find the volume of a sphere with radius 3cm.",
-                steps: ["Formula: $\\frac{4}{3}\\pi r^3$.", "$\\frac{4}{3}\\pi (27)$.", "$4 \\times 9\\pi$.", "Final Answer: $$36\\pi$$"]
-            },
+{
+  "id": "001537",
+  "date": "30 Jan 2026",
+  "major_area": "Geometry & Measures",
+  "topic": "3D Shapes",
+  "subtopic": "Volume of Sphere",
+  "difficulty": "B/C",
+  "notice": "",
+  "q": "Find the volume of a sphere with radius $3$ cm.",
+  "img": "",
+  "steps": [
+    "Use the formula for the volume of a sphere: $V = \\frac{4}{3}\\pi r^3$.",
+    "Substitute $r = 3$: $V = \\frac{4}{3}\\pi (27)$.",
+    "Simplify: $4 \\times 9\\pi = 36\\pi$.",
+    "Final answer: $$36\\pi\\text{ cm}^3$$"
+  ]
+},
+
+
            
             // JAN 31
             {
-				"Date": "31 Jan 2026",
-				"Topic": "Algebraic Proof",
-                q: "Show that the sum of 3 consecutive integers is a multiple of 3.",
-                steps: ["Terms: $n, n+1, n+2$.", "Sum: $3n + 3$.", "Factorise: $3(n+1)$.", "Conclusion: Multiple of 3."]
-            },
+  "id": "001538",
+  "date": "31 Jan 2026",
+  "major_area": "Algebra",
+  "topic": "Algebraic Proof",
+  "subtopic": "General Proof",
+  "difficulty": "B/C",
+  "notice": "",
+  "q": "Show that the sum of 3 consecutive integers is a multiple of 3.",
+  "img": "",
+  "steps": [
+    "Let the three consecutive integers be $n$, $n+1$, and $n+2$.",
+    "Their sum is $n + (n+1) + (n+2) = 3n + 3$.",
+    "Factorise: $3n + 3 = 3(n+1)$.",
+    "Since the expression is $3$ multiplied by an integer, the sum is a multiple of $3$."
+  ]
+},
+
            //1 Feb
   			{
-				"Date": "1 Feb 2026",
-				"Topic": "Algebra - Simplifying Expressions",
-    			"q": "Simplify $12a+4b-7a-5b$",
-   			 	"img": "",
-    			"steps": [
-      			"Rewrite the expression to gather like terms: $12a - 7a + 4b - 5b$",
-      			"Final answer: $$5a - b$$"
-    			]
-  			},
+  "id": "001539",
+  "date": "1 Feb 2026",
+  "major_area": "Algebra",
+  "topic": "Simplifying Expressions",
+  "subtopic": "Collecting Like Terms",
+  "difficulty": "D/E",
+  "notice": "",
+  "q": "Simplify each of the following expressions.\n\n(a) $12a + 4b - 7a - 5b$\n(b) $3x^2 + 5x - 2x^2 + 7 - 4x$\n(c) $4s^2t - 3rt + 2ts^2 + 5tr - st^2$",
+  "img": "",
+  "steps": [
+    "(a) Group like terms: $12a - 7a + 4b - 5b$. Final answer: $$5a - b$$",
+    "(b) Group like terms: $3x^2 - 2x^2 + 5x - 4x + 7$. Final answer: $$x^2 + x + 7$$",
+    "(c) Identify like terms: $4s^2t$ and $2ts^2$ are like terms; $-3rt$ and $5tr$ are like terms; $-st^2$ stands alone.",
+	"Combine: $4s^2t + 2s^2t = 6s^2t$ and $-3rt + 5rt = 2rt.$" 
+	"Final answer: $$6s^2t + 2rt - st^2$$"
+  ]
+},
+
 			//2 Feb
   			{
 				"Date": "2 Feb 2026",
