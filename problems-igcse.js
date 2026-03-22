@@ -636,161 +636,225 @@ const problemBank = [
   ]
 },
 
-		   { 
-				"date": "1 Mar 2026", 
-				"topic": "Vectors", 
-				"notice": "This is a non-calculator question.", 
-				"q": "Points A and B have position vectors $\\mathbf{a}$ and $\\mathbf{b}$ respectively.<br>Point C is such that $\\overrightarrow{AC} = 2\\overrightarrow{AB}$.<br>Find the position vector of C in terms of $\\mathbf{a}$ and $\\mathbf{b}$.",
-				"img": "", 
-				"steps": [ 
-					"$\\overrightarrow{AB} = \\mathbf{b} - \\mathbf{a}$", 
-					"$\\overrightarrow{AC} = 2(\\mathbf{b} - \\mathbf{a})$",
-					"Position vector of C = $\\mathbf{a} + 2(\\mathbf{b} - \\mathbf{a})$",
-					"Final Answer: $$= 2\\mathbf{b} - \\mathbf{a}$$" 
-					]  
-				}, 
-				{ 
-				"date": "2 Mar 2026",
-				"topic": "Quadratic Formula", 
-				"notice": "", 
-				"q": "Solve.<br>$2x^2 - 3x - 5 = 0$.<br>Give your answers correct to 2 decimal places.", 
-				"img": "",
-				"steps": [
-					"$x = \\frac{3 \\pm \\sqrt{(-3)^2 - 4(2)(-5)}}{2(2)}$", 
-					"$= \\frac{3 \\pm \\sqrt{9 + 40}}{4}$", 
-					"$= \\frac{3 \\pm 7}{4}$", 
-					"Final Answer: $$x = 2.50$ or $x = -1.00$$" 
-					]
-				}, 
-				{ 
-				"date": "3 Mar 2026", 
-				"topic": "Functions", 
-				"notice": "This is a non-calculator question.", 
-				"q": "$f(x) = 2x + 1$.<br>$g(x) = x^2 - 3$.<br>(a) Find $f(g(x))$.<br>(b) Find $g(f(x))$.", 
-				"img": "",
-				"steps": [ 
-					"$f(g(x)) = 2(x^2 - 3) + 1$", 
-					"$= 2x^2 - 6 + 1$", 
-					"$= 2x^2 - 5$", 
-					"$g(f(x)) = (2x+1)^2 - 3$", 
-					"$= 4x^2 + 4x + 1 - 3$", 
-					"Final answer: $$= 4x^2 + 4x - 2$$" 
-					] 
-				}, 
-				{ 
-				"date": "4 Mar 2026", 
-				"topic": "Trigonometry - Sine Rule", 
-				"notice": "", 
-				"q": "In triangle ABC,<br>$AB=8$cm,<br>$\\angle A = 40^\\circ$,<br>$\\angle B = 65^\\circ$.<br>Find $AC$.<br>Give your answer to 1 decimal place.", 
-				"img": "images/4_mar_igcse.png",
-				"steps": [ 
-					"$\\angle C = 180 - 40 - 65 = 75^\\circ$", 
-					"$\\frac{AC}{\\sin75} = \\frac{8}{\\sin65}$", 
-					"$AC = \\frac{8\\sin75}{\\sin65}$", 
-					"Final answer: $$AC = 8.53$$cm" 
-					] 
-				}, 
-				{ 
-				"date": "5 Mar 2026", 
-				"topic": "Indices", 
-				"notice": "This is a non-calculator question.", 
-				"q": "Simplify:<br><br>$$\\frac{5x^3 y^{-2}}{10x^{-1} y}$$", 
-				"img": "", 
-				"steps": [ 
-					"$= \\frac{5}{10} x^{3-(-1)} y^{-2-1}$", 
-					"$= \\frac{1}{2} x^4 y^{-3}$", 
-					"Final answer: $$= \\frac{x^4}{2y^3}$$" 
-					] 
-				}, 
-				{ 
-     			"date": "6 Mar 2026", 
-				"topic": "Simultaneous Equations (Quadratic & Linear)", 
-				"notice": "This is a non-calculator question.", 
-				"q": "Solve simultaneously.<br>$y = x + 1$<br>$x^2 + y^2 = 25$.", 
-				"img": "", 
-				"steps": [ 
-					"Substitute $y = x+1$", 
-					"$x^2 + (x+1)^2 = 25$", 
-					"$x^2 + x^2 + 2x + 1 = 25$", 
-					"$2x^2 + 2x - 24 = 0$", 
-					"$x^2 + x - 12 = 0$", 
-					"$(x+4)(x-3)=0$", 
-					"$x = -4$ or $x = 3$", 
-					"$\\Rightarrow y = -3$ or $y = 4$",
-					"Final answer: $$(-4,-3)\\text{ or} (3,4)$$"
-					] 
-				}, 
-				{ 
-				"date": "7 Mar 2026", 
-				"topic": "Vectors", 
-				"notice": "", 
-				"q": "Points A, B and C have position vectors<br>\\(\\vec{OA} = \\begin{pmatrix} 2 \\\\ -1 \\end{pmatrix}\\),<br>\\(\\vec{OB} = \\begin{pmatrix} 6 \\\\ 3 \\end{pmatrix}\\).<br>Point C lies on AB such that<br>\\(AC : CB = 1 : 2\\).<br><br>Find the position vector of C.",
-				"img": "",
-				"steps": [ 
-					"\\(\\vec{AB} = \\begin{pmatrix} 4 \\\\ 4 \\end{pmatrix}\\)", 
-					"C divides AB in ratio 1:2 → AC = 1/3 AB", 
-					"\\(\\vec{AC} = \\begin{pmatrix} 4/3 \\\\ 4/3 \\end{pmatrix}\\)", 
-					"\\(\\vec{OC} = \\begin{pmatrix} 2 \\\\ -1 \\end{pmatrix} + \\begin{pmatrix} 4/3 \\\\ 4/3 \\end{pmatrix}\\)",
- 					"Final answer: $$\\vec{OC} = \\begin{pmatrix} 10/3 \\\\ 1/3 \\end{pmatrix}$$"
-] 
-}, 
-{ 
-"date": "8 March", 
-"topic": "Exponential Growth", 
-"notice": "", 
-"q": "The population of a town is 12000.<br>It grows by 3% per year.<br>Find the population after 5 years.<br>Give your answer to the nearest whole number.", 
-"img": "", 
-"steps": [ 
-"Multiplier = 1.03", 
-"Population = 12000(1.03)^5", "= 13911"
-] 
-}, 
-{ "date": "9 March", 
-"topic": "Transformations - Combined", 
-"notice": "This is a non-calculator question.", 
-"q": "Describe fully the single transformation equivalent to:<br>a reflection in the y-axis followed by<br>a translation by vector (4,0).", 
-"img": "", 
-"steps": [ 
-"Equivalent to reflection in line x = 2" 
-]  
-}, 
-{ 
-"date": "10 March", 
-"topic": "Algebraic Fractions", 
-"notice": "This is a non-calculator question.", 
-"q": "Simplify:<br><br>$$\\frac{x^2 - 9}{x^2 - 3x}$$", 
-"img": "",  
-"steps": [ 
-"$= \\frac{(x-3)(x+3)}{x(x-3)}$",
-"$= \\frac{x+3}{x}$" 
-] 
-}, 
-{ 
-"date": "11 March", 
-"topic": "Probability - Conditional", 
-"notice": "", 
-"q": "In a class of 30 students,<br>18 study French,<br>12 study Spanish,<br>5 study both.<br>Find the probability that a student studies French given that they study Spanish.", 
-"img": "",  
-"steps": [ 
-"We are given that the student studies Spanish.",
-"We are given that there are 12 students who study Spanish.",
-"There are 5 students who study both Spanish and French.",
-"Final answer: $$P(F|S)=\\frac{5}{12}$$" 
-] 
-}, 
-{ 
-"date": "12 March", 
-"topic": "Exponential Growth", 
-"notice": "", 
-"q": "The population of a town is 18 000.<br>It increases by 3% each year.<br><br>(a) Write down an expression for the population after \\(n\\) years.<br>(b) Calculate the population after 5 years.<br>Give your answer correct to the nearest whole number.", 
-"img": "",
-"steps": [ 
-"(a) \\(18000(1.03)^n\\)", 
-"(b) \\(18000(1.03)^5\\)", "= 20866.9...", 
-"You shouldn't round up part of a person.",
-"Final answer: $$Population ≈ 20,866$$" 
-] 
-}, 
+		   {
+  "date": "1 Mar 2026",
+  "topic": "Vectors",
+  "subtopic": "Position Vectors",
+  "difficulty": "C/D",
+  "notice": "This is a non-calculator question.",
+  "q": "Points A and B have position vectors $\\mathbf{a}$ and $\\mathbf{b}$ respectively.<br>Point C is such that $\\overrightarrow{AC} = 2\\overrightarrow{AB}$.<br>Find the position vector of C in terms of $\\mathbf{a}$ and $\\mathbf{b}$.",
+  "img": "",
+  "steps": [
+    "$\\overrightarrow{AB} = \\mathbf{b} - \\mathbf{a}$.",
+    "$\\overrightarrow{AC} = 2(\\mathbf{b} - \\mathbf{a})$.",
+    "Position vector of C $= \\mathbf{a} + 2(\\mathbf{b} - \\mathbf{a})$.",
+    "Final answer: $$2\\mathbf{b} - \\mathbf{a}$$"
+  ]
+},
+
+				{
+  "date": "2 Mar 2026",
+  "topic": "Completing the Square",
+  "subtopic": "Solving Quadratics",
+  "difficulty": "B/A",
+  "notice": "This is a non-calculator question.",
+  "q": "Solve the equation $2x^2 - 3x - 5 = 0$ by completing the square.<br>(b) Hence write down the coordinates of the turning point of the graph of $y = 2x^2 - 3x - 5$.",
+  "img": "",
+  "steps": [
+    "Start with $2x^2 - 3x - 5 = 0$.",
+    "Factor out the 2 from the quadratic terms: $2\\left(x^2 - \\frac{3}{2}x\\right) - 5 = 0$.",
+    "Complete the square inside the bracket: $x^2 - \\frac{3}{2}x = \\left(x - \\frac{3}{4}\\right)^2 - \\left(\\frac{3}{4}\\right)^2$.",
+    "So the equation becomes $2\\left[\\left(x - \\frac{3}{4}\\right)^2 - \\frac{9}{16}\\right] - 5 = 0$.",
+    "Expand: $2\\left(x - \\frac{3}{4}\\right)^2 - \\frac{9}{8} - 5 = 0$.",
+    "Combine constants: $2\\left(x - \\frac{3}{4}\\right)^2 - \\frac{49}{8} = 0$.",
+    "Rearrange: $2\\left(x - \\frac{3}{4}\\right)^2 = \\frac{49}{8}$.",
+    "Divide by 2: $\\left(x - \\frac{3}{4}\\right)^2 = \\frac{49}{16}$.",
+    "Take square roots: $x - \\frac{3}{4} = \\pm \\frac{7}{4}$.",
+    "So $x = \\frac{3}{4} + \\frac{7}{4} = 2$ or $x = \\frac{3}{4} - \\frac{7}{4} = -1$.",
+    "Final answers: $$x = 2 \\quad \\text{or} \\quad x = -1$$",
+    "(b) From the completed square form: $y = 2\\left(x - \\frac{3}{4}\\right)^2 - \\frac{49}{8}$.",
+    "Turning point is at $\\left(\\frac{3}{4},\\; -\\frac{49}{8}\\right)$."
+  ]
+},
+
+				{
+  "date": "3 Mar 2026",
+  "topic": "Functions",
+  "subtopic": "Composite Functions",
+  "difficulty": "B/A",
+  "notice": "This is a non-calculator question.",
+  "q": "$f(x) = 2x + 1$.<br>$g(x) = x^2 - 3$.<br>(a) Find $f(g(x))$.<br>(b) Find $g(f(x))$.",
+  "img": "",
+  "steps": [
+    "$f(g(x)) = 2(x^2 - 3) + 1$.",
+    "$= 2x^2 - 6 + 1$.",
+    "$= 2x^2 - 5$.",
+    "$g(f(x)) = (2x + 1)^2 - 3$.",
+    "$= 4x^2 + 4x + 1 - 3$.",
+    "Final answer: $$4x^2 + 4x - 2$$"
+  ]
+},
+	{
+  "date": "4 Mar 2026",
+  "topic": "Trigonometry - Sine Rule",
+  "subtopic": "Solving for a Side",
+  "difficulty": "C/D",
+  "notice": "",
+  "q": "In triangle ABC,<br>$AB = 8$cm,<br>$\\angle A = 40^\\circ$,<br>$\\angle B = 65^\\circ$.<br>Find $AC$.<br>Give your answer to 3 significant figures.",
+  "img": "images/4_mar_igcse.png",
+  "steps": [
+    "$\\angle C = 180 - 40 - 65 = 75^\\circ$.",
+    "$\\frac{AC}{\\sin 75} = \\frac{8}{\\sin 65}$.",
+    "$AC = \\frac{8\\sin 75}{\\sin 65}$.",
+    "Final answer: $$AC = 8.53\\text{ cm (3sf)}$$"
+  ]
+},
+				
+{
+  "date": "5 Mar 2026",
+  "topic": "Indices",
+  "subtopic": "Algebraic Fractions",
+  "difficulty": "C/D",
+  "notice": "This is a non-calculator question.",
+  "q": "Simplify:<br><br>$$\\frac{5x^3 y^{-2}}{10x^{-1} y}$$",
+  "img": "",
+  "steps": [
+    "$= \\frac{5}{10} x^{3 - (-1)} y^{-2 - 1}$.",
+    "$= \\frac{1}{2} x^4 y^{-3}$.",
+    "Final answer: $$\\frac{x^4}{2y^3}$$"
+  ]
+},
+
+{
+  "date": "6 Mar 2026",
+  "topic": "Simultaneous Equations (Quadratic & Linear)",
+  "subtopic": "Substitution",
+  "difficulty": "B/A",
+  "notice": "This is a non-calculator question.",
+  "q": "Solve simultaneously.<br>$y = x + 1$<br>$x^2 + y^2 = 25$.",
+  "img": "",
+  "steps": [
+    "Substitute $y = x + 1$ into $x^2 + y^2 = 25$.",
+    "$x^2 + (x + 1)^2 = 25$.",
+    "$x^2 + x^2 + 2x + 1 = 25$.",
+    "$2x^2 + 2x + 1 - 25 = 0$.",
+    "$2x^2 + 2x - 24 = 0$.",
+    "$x^2 + x - 12 = 0$.",
+    "$(x + 4)(x - 3) = 0$.",
+    "$x = -4$ or $x = 3$.",
+    "If $x = -4$, then $y = -3$; if $x = 3$, then $y = 4$.",
+    "Final answer: $$(-4,-3) \\text{ or } (3,4)$$"
+  ]
+},
+
+{
+  "date": "7 Mar 2026",
+  "topic": "Vectors",
+  "subtopic": "Position Vectors and Ratios",
+  "difficulty": "B/C",
+  "notice": "",
+  "q": "Points A, B and C have position vectors<br>$\\vec{OA} = \\begin{pmatrix} 2 \\\\ -1 \\end{pmatrix}$,<br>$\\vec{OB} = \\begin{pmatrix} 6 \\\\ 3 \\end{pmatrix}$.<br>Point C lies on AB such that<br>$AC : CB = 1 : 2$.<br><br>Find the position vector of C.",
+  "img": "",
+  "steps": [
+    "$\\vec{AB} = \\begin{pmatrix} 6 \\\\ 3 \\end{pmatrix} - \\begin{pmatrix} 2 \\\\ -1 \\end{pmatrix} = \\begin{pmatrix} 4 \\\\ 4 \\end{pmatrix}$.",
+    "C divides AB in the ratio $1:2$, so $AC = \\frac{1}{3}AB$.",
+    "$\\vec{AC} = \\frac{1}{3} \\begin{pmatrix} 4 \\\\ 4 \\end{pmatrix} = \\begin{pmatrix} \\frac{4}{3} \\\\ \\frac{4}{3} \\end{pmatrix}$.",
+    "$\\vec{OC} = \\vec{OA} + \\vec{AC} = \\begin{pmatrix} 2 \\\\ -1 \\end{pmatrix} + \\begin{pmatrix} \\frac{4}{3} \\\\ \\frac{4}{3} \\end{pmatrix}$.",
+    "Final answer: $$\\vec{OC} = \\begin{pmatrix} \\frac{10}{3} \\\\ \\frac{1}{3} \\end{pmatrix}$$"
+  ]
+},
+
+{
+  "date": "8 Mar 2026",
+  "topic": "Exponential Growth and Decay",
+  "subtopic": "Compound Change",
+  "difficulty": "C/B",
+  "notice": "",
+  "q": "The population of a town is 12000.<br>It increases by 3% per year for 5 years.<br>It then decreases by 2% the following year.<br><br>Find the population after these 6 years.<br>Give your answer to the nearest whole number.",
+  "img": "",
+  "steps": [
+    "Growth multiplier = 1.03.",
+    "Population after 5 years = $12000(1.03)^5$.",
+    "Decay multiplier = 0.98.",
+    "Final population = $12000(1.03)^5 \\times 0.98$.",
+    "Final answer: $$13911 \\times 0.98 = 13633$$"
+  ]
+},
+
+{
+  "date": "9 Mar 2026",
+  "topic": "Transformations - Combined",
+  "subtopic": "Reflection and Translation",
+  "difficulty": "B/A",
+  "notice": "This is a non-calculator question.",
+  "q": "(a) Point $P(1,3)$ is reflected in the y-axis and then translated by the vector $\\begin{pmatrix} 4 \\\\ 0 \\end{pmatrix}$. Find the coordinates of the image of $P$.<br><br>(b) Describe fully the single transformation equivalent to these two transformations.<br><br>(c) Point $Q(1,4)$ is translated by $\\begin{pmatrix} 4 \\\\ 0 \\end{pmatrix}$ and then reflected in the y-axis. Find the coordinates of the image of $Q$. Hence describe the single transformation equivalent to these two transformations, and state whether it is the same as in part (b).",
+  "img": "",
+  "steps": [
+    "(a) Reflection in the y-axis sends $(1,3)$ to $(-1,3)$.",
+    "Translation by $\\begin{pmatrix} 4 \\\\ 0 \\end{pmatrix}$ sends $(-1,3)$ to $(3,3)$.",
+    "(b) The combined effect is reflection in the line $x = 2$.",
+    "(c) $Q(1,4)$ translates to $(5,4)$, then reflects in the y-axis to $(-5,4)$.",
+    "This is equivalent to reflection in the line $x = -2$.",
+    "The single transformation in part (c) is different from the one in part (b)."
+  ]
+},
+
+
+{
+  "date": "10 Mar 2026",
+  "topic": "Algebraic Fractions",
+  "subtopic": "Division of Algebraic Fractions",
+  "difficulty": "A/A*",
+  "notice": "This is a non-calculator question.",
+  "q": "Simplify:<br><br>$$\\frac{x^2 - 9}{x^2 + x - 12} \\div \\frac{x^2 + x - 6}{x^2 + 4x}$$",
+  "img": "",
+  "steps": [
+    "$= \\frac{x^2 - 9}{x^2 + x - 12} \\times \\frac{x^2 + 4x}{x^2 + x - 6}$.",
+    "$= \\frac{(x-3)(x+3)}{(x+4)(x-3)} \\times \\frac{x(x+4)}{(x+3)(x-2)}$.",
+    "Cancel common factors $(x-3)$, $(x+3)$ and $(x+4)$.",
+    "$= \\frac{x}{x-2}$.",
+    "Final answer: $$\\frac{x}{x-2}$$"
+  ]
+},
+
+{
+  "date": "11 Mar 2026",
+  "topic": "Probability – Conditional",
+  "subtopic": "P(A|B)",
+  "difficulty": "C",
+  "notice": "",
+  "q": "In a class of 30 students,<br>18 study French,<br>12 study Spanish,<br>5 study both.<br><br>Find the probability that a student studies French given that they study Spanish.",
+  "img": "",
+  "steps": [
+    "We are given that the student studies Spanish.",
+    "There are 12 students who study Spanish.",
+    "Of these, 5 also study French.",
+    "Final answer: $$P(F\\mid S) = \\frac{5}{12}$$"
+  ]
+},
+
+{
+  "date": "11 Mar 2026",
+  "topic": "Exponential Decay",
+  "subtopic": "Half-life",
+  "difficulty": "A/A*",
+  "notice": "This is a non-calculator question.",
+  "q": "A radioactive substance has a mass of 160 g.<br>After 12 hours, its mass has decreased to 20 g.<br><br>Find the half-life of the substance.",
+  "img": "",
+  "steps": [
+    "Use the decay model: $M = 160k^t$.",
+    "After 12 hours: $20 = 160k^{12}$.",
+    "$k^{12} = \\frac{1}{8}$.",
+    "$k = \\left(\\frac{1}{8}\\right)^{\\frac{1}{12}}$.",
+    "Half-life $T$ satisfies $k^T = \\frac{1}{2}$.",
+    "Write $\\frac{1}{8} = \\left(\\frac{1}{2}\\right)^3$.",
+    "$\\left(\\frac{1}{2}\\right)^{\\frac{3T}{12}} = \\frac{1}{2}$.",
+    "So $\\frac{3T}{12} = 1$.",
+    "Therefore $T = 4$.",
+    "Final answer: $$\\text{Half-life} = 4\\text{ hours}$$"
+  ]
+},
+
 { 
 "date": "13 March", 
 "topic": "Graphs - Gradient of Curve", 
