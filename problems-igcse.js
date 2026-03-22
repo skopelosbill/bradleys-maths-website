@@ -869,9 +869,7 @@ const problemBank = [
     "$\\frac{dy}{dx} = 2(3)$.",
     "Final answer: $$\\text{The gradient of }y = x^2\\text{ at }x = 3\\text{ is }6$$"
   ]
-}
-
-	
+},
 { 
 "date": "14 March", 
 "topic": "Sets", 
