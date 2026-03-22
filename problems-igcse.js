@@ -56,7 +56,7 @@ const problemBank = [
     "(a) Group like terms: $12a - 7a + 4b - 5b$. Final answer: $$5a - b$$",
     "(b) Group like terms: $3x^2 - 2x^2 + 5x - 4x + 7$. Final answer: $$x^2 + x + 7$$",
     "(c) Identify like terms: $4s^2t$ and $2ts^2$ are like terms; $-3rt$ and $5tr$ are like terms; $-st^2$ stands alone.",
-	"Combine: $4s^2t + 2s^2t = 6s^2t$ and $-3rt + 5rt = 2rt.$" 
+	"Combine: $4s^2t + 2s^2t = 6s^2t$ and $-3rt + 5rt = 2rt.$",
 	"Final answer: $$6s^2t + 2rt - st^2$$"
   ]
 },
