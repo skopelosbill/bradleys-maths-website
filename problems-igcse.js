@@ -384,7 +384,7 @@ const problemBank = [
   "major_area": "Geometry & Measures",
   "topic": "Mensuration",
   "subtopic": "Area, Pythagoras, Trigonometry",
-  "difficulty": "B",
+  "difficulty": "B/A",
   "notice": "",
   "q": "The diagram shows the end view of a storage unit in the shape of two congruent trapeziums.<br>(a) Calculate the area of the end wall.<br>(b) The length of the sloping roof (marked $x$).<br>(c) The angle of the pitch of the roof (marked $y^\\circ$).",
   "img": "images/feb_17.png",
@@ -403,161 +403,239 @@ const problemBank = [
 
 			// 18 Feb
 			{
-				"Date": "18 Feb 2026",
-				"Topic": "Algebra - Factorise quadratic",
-    			"q": "Factorise $30x^2+9x-3$",
-    			"img": "",
-    			"steps": [
-      			"$30x^2+9x-3\\equiv 3(10x^2+3x-1)$",
-      			"$10\\times-1=-10$",
-      			"Factors of $-10$ that sum to $3$ are $5$ and $-2$",
-      			"Express $3x$ as $5x-2x$ so $3(10x^2+5x-2x-1$)",
-      			"Factorise in pairs: $3(5x(2x+1)-1(2x+1))$",
-      			"Final answer: $$3(5x-1)(2x+1)$$"
-    			]
-  			},
+  "id": "001556",
+  "date": "18 Feb 2026",
+  "major_area": "Algebra",
+  "topic": "Factorisation",
+  "subtopic": "Factorising Quadratics (AC Method)",
+  "difficulty": "B/A",
+  "notice": "",
+  "q": "Factorise $30x^2 + 9x - 3$.",
+  "img": "",
+  "steps": [
+    "First factor out the common factor: $30x^2 + 9x - 3 \\equiv 3(10x^2 + 3x - 1)$.",
+    "Use the AC method: $10 \\times (-1) = -10$.",
+    "Find factors of $-10$ that sum to $3$: these are $5$ and $-2$.",
+    "Rewrite the middle term: $3(10x^2 + 5x - 2x - 1)$.",
+    "Factorise in pairs: $3(5x(2x+1) - 1(2x+1))$.",
+    "Final answer: $$3(5x - 1)(2x + 1)$$"
+  ]
+},
+
 			// 19 Feb
 			{
-				"Date": "19 Feb 2026",
-				"Topic": "Algebra - 3 bracket expansion",
-    			"q": "Expand and simplify $(x+3)(x-5)(x-2)$",
-    			"img": "",
-    			"steps": [
-      			"Humans are linear processors, don't try to expand the three brackets in one go!",
-      			"$(x+3)(x-5)\\equiv x^2-2x-15$",
-      			"$(x^2-2x-15)(x-2)\\equiv x(x^2-2x-15)-2(x^2-2x-15)$",
-      			"$\\equiv x^3-2x^2-15x-2x^2+4x+30$",
-      			"Final answer: $$x^3-4x^2-11x+30$$"
-    			]
-  			},
+  "id": "001557",
+  "date": "19 Feb 2026",
+  "major_area": "Algebra",
+  "topic": "Expanding Brackets",
+  "subtopic": "Triple Bracket Expansion",
+  "difficulty": "B/A",
+  "notice": "",
+  "q": "Expand and simplify $(x+3)(x-5)(x-2)$.",
+  "img": "",
+  "steps": [
+    "Humans are linear processors — don't try to expand all three brackets in one go.",
+    "First expand two brackets: $(x+3)(x-5) \\equiv x^2 - 2x - 15$.",
+    "Now expand $(x^2 - 2x - 15)(x - 2)$ using distribution:",
+    "$x(x^2 - 2x - 15) - 2(x^2 - 2x - 15)$.",
+    "This gives $x^3 - 2x^2 - 15x - 2x^2 + 4x + 30$.",
+    "Final answer: $$x^3 - 4x^2 - 11x + 30$$"
+  ]
+},
+
 			//20 Feb
 			{
-				"Date": "20 Feb 2026",
-				"Topic": "3D Pythagoras",
-  				"q": "A cuboid is constructed to hold a single metal rod.<br>Its dimensions are length 6cm, width 4cm and height 2.5cm.<br>The rod fits exactly in the box without bending between the bottom left front corner and the top right back corner.<br>a) Calculate the length of the rod correct to 3 sf.<br>b) Calculate the angle the rod makes with the horizontal base of the cuboid correct to 1dp",
-  				"img": "",
-  				"steps": [
-    			"a) Length of rod $= \\sqrt{6^2+4^2+2.5^2}$",
-    			"$= 7.63$cm (3sf)",
-    			"b) $\\sin\\theta=\\frac{\\text{opp}}{\\text{hyp}}$",
-    			"$\\theta=\\sin^{-1}\\left(\\frac{2.5}{\\sqrt{6^2+4^2+2.5^2}}\\right)$",
-    			"$=19.1^\\circ$ (1dp)"
-  				]
-			},
+  "id": "001558",
+  "date": "20 Feb 2026",
+  "major_area": "Geometry & Measures",
+  "topic": "3D Pythagoras",
+  "subtopic": "Space Diagonals & 3D Trigonometry",
+  "difficulty": "B/A",
+  "notice": "",
+  "q": "A cuboid is constructed to hold a single metal rod.<br>Its dimensions are length 6cm, width 4cm and height 2.5cm.<br>The rod fits exactly in the box without bending between the bottom left front corner and the top right back corner.<br>(a) Calculate the length of the rod correct to 3 sf.<br>(b) Calculate the angle the rod makes with the horizontal base of the cuboid correct to 1 d.p.",
+  "img": "",
+  "steps": [
+    "(a) Length of rod $= \\sqrt{6^2 + 4^2 + 2.5^2}$.",
+    "(a) Calculate: $= 7.63\\text{ cm}$ (3 s.f.).",
+    "(b) Use sine: $\\sin\\theta = \\tfrac{\\text{opp}}{\\text{hyp}} = \\tfrac{2.5}{\\sqrt{6^2 + 4^2 + 2.5^2}}$.",
+    "(b) So $\\theta = \\sin^{-1}\\left(\\tfrac{2.5}{\\sqrt{6^2 + 4^2 + 2.5^2}}\\right)$.",
+    "(b) Final value: $19.1^\\circ$ (1 d.p.).",
+    "Final answer: $$7.63\\text{ cm},\\ 19.1^\\circ$$"
+  ]
+},
+
 			//21 Feb
 			{
-				"Date": "21 Feb 2026",
-				"Topic": "Inverse proportion",
-  				"q": "$y$ is inversely proportional to $\\sqrt{x+6}$.<br>When $y=100$, $x=10$.<br>Find $x$ when $y=40$",
-  				"img": "",
-  				"steps": [
-    			"$y \\propto \\frac{1}{\\sqrt{x+6}} \\Rightarrow y=\\frac{k}{\\sqrt{x+6}}$",
-    			"$100 = \\frac{k}{\\sqrt{10+6}}$",
-    			"$100 = \\frac{k}{4} \\Rightarrow k=400$",
-    			"$40 = \\frac{400}{\\sqrt{x+6}}$",
-			    "$\\sqrt{x+6} = 10 \\Rightarrow x+6 = 100$",
-    			"$x=94$",
-    			"Final answer: $$x=94$$"
-  				]
-			},
+  "id": "001559",
+  "date": "21 Feb 2026",
+  "major_area": "Algebra",
+  "topic": "Proportion",
+  "subtopic": "Inverse Proportion with Roots",
+  "difficulty": "B/C",
+  "notice": "",
+  "q": "$y$ is inversely proportional to $\\sqrt{x+6}$.<br>When $y = 100$, $x = 10$.<br>Find $x$ when $y = 40$.",
+  "img": "",
+  "steps": [
+    "$y \\propto \\tfrac{1}{\\sqrt{x+6}} \\Rightarrow y = \\tfrac{k}{\\sqrt{x+6}}$.",
+    "Substitute known values: $100 = \\tfrac{k}{\\sqrt{10+6}}$.",
+    "$100 = \\tfrac{k}{4} \\Rightarrow k = 400$.",
+    "Now use $y = 40$: $40 = \\tfrac{400}{\\sqrt{x+6}}$.",
+    "Rearrange: $\\sqrt{x+6} = 10 \\Rightarrow x + 6 = 100$.",
+    "Solve: $x = 94$.",
+    "Final answer: $$x = 94$$"
+  ]
+},
+
 
 			//22 Feb
 			{
-				"Date": "22 Feb 2026",
-				"Topic": "Non-calculator Trigonometry",
-    			"q": "Without using a calculator solve the equation $3+2\\sin x =4$ for $0^\\circ \\le x \\le 360^\\circ$",
-    			"img": "",
-    			"steps": [
-      			"$3+2\\sin x =4$",
-      			"$\\Rightarrow 2\\sin x =1$",
-      			"$\\Rightarrow \\sin x =\\frac{1}{2}$",
-      			"$\\Rightarrow x =\\sin^{-1}\\left(\\frac{1}{2}\\right)$",
-     			"Final answer: $$x=30^\\circ \\text{ or } x=180-30=150^\\circ$$."
-    			]
-  			},
+  "id": "001560",
+  "date": "22 Feb 2026",
+  "major_area": "Algebra & Trigonometry",
+  "topic": "Trigonometric Equations",
+  "subtopic": "Exact Values (Non‑Calculator)",
+  "difficulty": "B/A",
+  "notice": "This is a non-calculator question.",
+  "q": "Without using a calculator solve the equation $3 + 2\\sin x = 4$ for $0^\\circ \\le x \\le 360^\\circ$.",
+  "img": "",
+  "steps": [
+    "$3 + 2\\sin x = 4$.",
+    "Rearrange: $2\\sin x = 1$.",
+    "So $\\sin x = \\tfrac12$.",
+    "Use exact values: $x = \\sin^{-1}(\\tfrac12) = 30^\\circ$.",
+    "Sine is positive in Quadrants I and II, so the second solution is $180^\\circ - 30^\\circ = 150^\\circ$.",
+    "Final answer: $$x = 30^\\circ \\text{ or } 150^\\circ$$"
+  ]
+},
+
 			//23 Feb
 			{
-				"Date": "23 Feb 2026",
-				"Topic": "4 Operations with mixed number",
-    			"q": "Without using a calculator and giving your answer as a mixed number in it's simplest form, evaluate $1\\frac{3}{8}\\times2\\frac{2}{5}$",
-    			"img": "",
-    			"steps": [
-      			"$1\\frac{3}{8}\\times2\\frac{2}{5}$",
-      			"$=\\frac{11}{8}\\times\\frac{12}{5}$",
-      			"$=\\frac{11\\times3}{2\\times5}$",
-      			"$=\\frac{33}{10}$",
-      			"Final answer: $$3\\frac{3}{10}$$"
-    			]
-  			},
+  "id": "001561",
+  "date": "23 Feb 2026",
+  "major_area": "Number",
+  "topic": "Fractions",
+  "subtopic": "Mixed Numbers & Multiplication",
+  "difficulty": "B/C",
+  "notice": "This is a non-calculator question.",
+  "q": "Without using a calculator and giving your answer as a mixed number in its simplest form, evaluate $1\\tfrac{3}{8} \\times 2\\tfrac{2}{5}$.",
+  "img": "",
+  "steps": [
+    "$1\\tfrac{3}{8} \\times 2\\tfrac{2}{5}$.",
+    "Convert to improper fractions: $= \\tfrac{11}{8} \\times \\tfrac{12}{5}$.",
+    "Simplify before multiplying: $= \\tfrac{11 \\times 3}{2 \\times 5}$.",
+    "Multiply: $= \\tfrac{33}{10}$.",
+    "Convert back to a mixed number: $$3\\tfrac{3}{10}$$"
+  ]
+},
+
 			//24 Feb
 			{
-				"Date": "24 Feb 2026",
-				"Topic": "Lowest Common Multiple",
-    			"q": "Find the LCM of 24 and 84",
-    			"img": "",
-    			"steps": [
-      			"$24=2^3\\times3$",
-      			"$84=2^2\\times3\\times7$",
-      			"LCM $=2^3\\times3\\times7$",
-      			"Final answer: $$168$$"
-    			]
-  			},
+  "id": "001562",
+  "date": "24 Feb 2026",
+  "major_area": "Number",
+  "topic": "HCF & LCM",
+  "subtopic": "Prime Factorisation",
+  "difficulty": "D/E",
+  "notice": "This is a non-calculator question.",
+  "q": "(a) Find the HCF of 24 and 84.<br>(b) Find the LCM of 24 and 84.",
+  "img": "",
+  "steps": [
+    "Prime factorise both numbers:",
+    "$24 = 2^3 \\times 3$.",
+    "$84 = 2^2 \\times 3 \\times 7$.",
+    "(a) HCF uses the lowest powers: $2^2 \\times 3 = 12$.",
+    "(b) LCM uses the highest powers: $2^3 \\times 3 \\times 7 = 168$.",
+    "Final answers: $$\\text{HCF} = 12,\\quad \\text{LCM} = 168$$"
+  ]
+},
+
 			//25 Feb
 			{
-				"Date": "25 Feb 2026",
-				"Topic": "linear simultaneous equations",
-  				"q": "Solve the simultaneous equations:<br>$3x+7y=22$<br>$5x-3y=22$",
-  				"img": "",
-  				"steps": [
-    			"Eq1: $3x+7y=22$, Eq2: $5x-3y=22$",
-    			"Multiply Eq1 by 3: $9x+21y=66$ (Eq3), multiply Eq2 by 7: $35x-21y=154$ (Eq4)",
-    			"Add Eq3 and Eq4: $44x=220$",
-    			"$\\Rightarrow x=5$",
-    			"Substitute $x=5$ into Eq1: $3(5)+7y=22$",
-    			"$\\Rightarrow 15+7y=22 \\Rightarrow y=1$",
-    			"Final answer: $$x=5, y=1$$"
-  				]
-			},
+  "id": "001563",
+  "date": "25 Feb 2026",
+  "major_area": "Algebra",
+  "topic": "Simultaneous Equations",
+  "subtopic": "Linear (Elimination Method)",
+  "difficulty": "B/C",
+  "notice": "",
+  "q": "Solve the simultaneous equations:<br>$3x + 7y = 22$<br>$5x - 3y = 22$",
+  "img": "",
+  "steps": [
+    "Eq1: $3x + 7y = 22$, Eq2: $5x - 3y = 22$.",
+    "Multiply Eq1 by 3: $9x + 21y = 66$ (Eq3), multiply Eq2 by 7: $35x - 21y = 154$ (Eq4).",
+    "Add Eq3 and Eq4: $44x = 220$.",
+    "$\\Rightarrow x = 5$.",
+    "Substitute $x = 5$ into Eq1: $3(5) + 7y = 22$.",
+    "$\\Rightarrow 15 + 7y = 22 \\Rightarrow y = 1$.",
+    "Final answer: $$x = 5,\\ y = 1$$"
+  ]
+},
+
 
 			//26 Feb
 			{
-				"Date": "26 Feb 2026",
-				"Topic": "HCF and LCM",
-    			"q": "Consider the expressions:<br><br>$$9a^2bc^2, 6a^4b^2c^4 \\text{and} 15a^6b^3c$$<br>Write down:<br>a) the HCF<br>b) the LCM",
-			    "img": "",
-    			"steps": [
-      			"a) HCF $= 3a^2bc$",
-      			"b) LCM $= 90a^6b^3c^4$"
-    			]
- 			},
+  "id": "001564",
+  "date": "26 Feb 2026",
+  "major_area": "Probability",
+  "topic": "Combined Probability",
+  "subtopic": "Without Replacement",
+  "difficulty": "B/A",
+  "notice": "",
+  "q": "A bag contains 5 red counters and 3 blue counters.<br>A counter is chosen at random, not replaced, and then a second counter is chosen.<br><br>(a) Find the probability that the first counter is red and the second counter is blue.<br>(b) Find the probability that the two counters are the same colour.<br>(c) Find the probability that at least one of the counters is blue.",
+  "img": "",
+  "steps": [
+    "(a) First pick: $P(R)=\\frac{5}{8}$. After removing a red, second pick: $P(B)=\\frac{3}{7}$. So $P(RB)=\\frac{5}{8}\\times\\frac{3}{7}=\\frac{15}{56}$.",
+    "(b) Same colour means RR or BB.",
+    "$P(RR)=\\frac{5}{8}\\times\\frac{4}{7}=\\frac{20}{56}$.",
+    "$P(BB)=\\frac{3}{8}\\times\\frac{2}{7}=\\frac{6}{56}$.",
+    "So $P(\\text{same colour})=\\frac{26}{56}=\\frac{13}{28}$.",
+    "(c) At least one blue is the complement of RR.",
+    "$P(\\text{at least one blue}) = 1 - P(RR) = 1 - \\frac{20}{56} = \\frac{36}{56} = \\frac{9}{14}$.",
+    "Final answers: $$\\frac{15}{56},\\quad \\frac{13}{28},\\quad \\frac{9}{14}$$"
+  ]
+},
+
 			//27 Feb
 			{
-				"Date": "27 Feb 2026",
-				"Topic": "Surds",
-  				"q": "Rationalise the denominator of $\\frac{1}{3-\\sqrt{2}}$",
-  				"img": "",
-  				"steps": [
-    			"$\\frac{1}{3-\\sqrt{2}} = \\frac{1 \\cdot (3+\\sqrt{2})}{(3-\\sqrt{2})(3+\\sqrt{2})}$",
-    			"$= \\frac{3+\\sqrt{2}}{9-2}$",
-    			"Final answer: $$\\frac{3+\\sqrt{2}}{7}$$"
-  				]
-			},
+  "id": "001565",
+  "date": "27 Feb 2026",
+  "major_area": "Algebra",
+  "topic": "Surds",
+  "subtopic": "Rationalising the Denominator",
+  "difficulty": "C/D",
+  "notice": "This is a non-calculator question.",
+  "q": "Rationalise the denominator of $\\frac{1}{3 - \\sqrt{2}}$.",
+  "img": "",
+  "steps": [
+    "$\\frac{1}{3 - \\sqrt{2}} = \\frac{1 \\cdot (3 + \\sqrt{2})}{(3 - \\sqrt{2})(3 + \\sqrt{2})}$.",
+    "Multiply out the denominator: $= \\frac{3 + \\sqrt{2}}{9 - 2}$.",
+    "Final answer: $$\\frac{3 + \\sqrt{2}}{7}$$"
+  ]
+},
+
 
 			//28 Feb
-			{
-				"Date": "28 Feb 2026",
-				"Topic": "Algebra - Simplifying Expressions",
-  				"q": "Simplify<br>$\\frac{6x^2-7x-3}{9x^2-1}$",
-  				"img": "",
-  				"steps": [
-    			"$6x^2-7x-3 = 6x^2-9x+2x-3$",
-    			"$= 3x(2x-3)+1(2x-3)$",
-    			"$= (3x+1)(2x-3)$",
-    			"$9x^2-1 = (3x-1)(3x+1)$",
-    			"Hence $\\frac{6x^2-7x-3}{9x^2-1} = \\frac{(3x+1)(2x-3)}{(3x-1)(3x+1)}$",
-    			"Final answer: $$\\frac{2x-3}{3x-1}$$"
-  				]
-			},
+		{
+  "id": "001566",
+  "date": "28 Feb 2026",
+  "major_area": "Algebra",
+  "topic": "Simplifying Expressions",
+  "subtopic": "Factorisation and Cancelling",
+  "difficulty": "B/A",
+  "notice": "This is a non-calculator question.",
+  "q": "Simplify<br>$\\frac{6x^2 - 7x - 3}{9x^2 - 1}$",
+  "img": "",
+  "steps": [
+    "$6x^2 - 7x - 3 = 6x^2 - 9x + 2x - 3$.",
+    "$= 3x(2x - 3) + 1(2x - 3)$.",
+    "$= (3x + 1)(2x - 3)$.",
+    "$9x^2 - 1 = (3x - 1)(3x + 1)$.",
+    "Hence $\\frac{6x^2 - 7x - 3}{9x^2 - 1} = \\frac{(3x + 1)(2x - 3)}{(3x - 1)(3x + 1)}$.",
+    "Cancel the common factor: $= \\frac{\\cancel{(3x + 1)}(2x - 3)}{(3x - 1)\\cancel{(3x + 1)}}$.",
+    "Final answer: $$\\frac{2x - 3}{3x - 1}$$"
+  ]
+},
+
 		   { 
 				"date": "1 Mar 2026", 
 				"topic": "Vectors", 
