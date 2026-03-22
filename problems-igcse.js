@@ -834,7 +834,7 @@ const problemBank = [
 },
 
 {
-  "date": "11 Mar 2026",
+  "date": "12 Mar 2026",
   "topic": "Exponential Decay",
   "subtopic": "Half-life",
   "difficulty": "A/A*",
@@ -855,49 +855,23 @@ const problemBank = [
   ]
 },
 	{
-  "date": "12 Mar 2026",
-  "topic": "Statistics",
-  "subtopic": "Grouped Data – Estimate of the Mean",
-  "difficulty": "B/A",
-  "notice": "This is a non-calculator question.",
-  "q": "The table shows the times, in minutes, taken by 40 students to complete a puzzle.<br><br>\
-<table>\
-<tr><th>Time (minutes)</th><th>Frequency</th></tr>\
-<tr><td>0 < t ≤ 5</td><td>6</td></tr>\
-<tr><td>5 < t ≤ 10</td><td>12</td></tr>\
-<tr><td>10 < t ≤ 15</td><td>14</td></tr>\
-<tr><td>15 < t ≤ 20</td><td>8</td></tr>\
-</table><br>\
-Estimate the mean time taken.",
+  "date": "13 Mar 2026",
+  "topic": "Calculus",
+  "subtopic": "Differentiation – Gradient of a Curve",
+  "difficulty": "A",
+  "notice": "",
+  "q": "The graph of $y = x^2$ is drawn.<br>Find the gradient at $x = 3$.",
   "img": "",
   "steps": [
-    "Find midpoints: $2.5, 7.5, 12.5, 17.5$.",
-    "Multiply by frequencies:",
-    "$2.5 \\times 6 = 15$,",
-    "$7.5 \\times 12 = 90$,",
-    "$12.5 \\times 14 = 175$,",
-    "$17.5 \\times 8 = 140$.",
-    "Total of midpoint × frequency values: $15 + 90 + 175 + 140 = 420$.",
-    "Total frequency = 40.",
-    "Estimate of mean = $\\frac{420}{40} = 10.5$.",
-    "Final answer: $$\\text{Estimated mean} = 10.5\\text{ minutes}$$"
+    "Differentiate the function to find the gradient function.",
+    "$\\frac{dy}{dx}(x^2) = 2x$.",
+    "Substitute $x = 3$ into the gradient function.",
+    "$\\frac{dy}{dx} = 2(3)$.",
+    "Final answer: $$\\text{The gradient of }y = x^2\\text{ at }x = 3\\text{ is }6$$"
   ]
-},
+}
 
-{ 
-"date": "13 March", 
-"topic": "Graphs - Gradient of Curve", 
-"notice": "", 
-"q": "The graph of $y = x^2$ is drawn.<br>Find the gradient at $x=3$.", 
-"img": "", 
-"steps": [ 
-"The gradient function is the derivative of the original function.",
-"$\\frac{dy}{dx}(x^2)=2x$", 
-"The gradient at a specific point is the value of the gradient function at that point.", 
-"$\\text{When }x=3,\\frac{dy}{dx}=2(3)$",
-"Final answer: $$\\text{The gradient of }y=x^2\\text{ when }x=3\\text{ is }6$$"	
-] 
-}, 
+	
 { 
 "date": "14 March", 
 "topic": "Sets", 
@@ -1215,4 +1189,34 @@ Estimate the mean time taken.",
 		"Final answer: $$\\dfrac{x+2}{x-2}$$"
 		]
 	},	
+	{
+  "date": "5 April 2026",
+  "topic": "Statistics",
+  "subtopic": "Grouped Data – Estimate of the Mean",
+  "difficulty": "B/A",
+  "notice": "This is a non-calculator question.",
+  "q": "The table shows the times, in minutes, taken by 40 students to complete a puzzle.<br><br>\
+<table>\
+<tr><th>Time (minutes)</th><th>Frequency</th></tr>\
+<tr><td>0 < t ≤ 5</td><td>6</td></tr>\
+<tr><td>5 < t ≤ 10</td><td>12</td></tr>\
+<tr><td>10 < t ≤ 15</td><td>14</td></tr>\
+<tr><td>15 < t ≤ 20</td><td>8</td></tr>\
+</table><br>\
+Estimate the mean time taken.",
+  "img": "",
+  "steps": [
+    "Find midpoints: $2.5, 7.5, 12.5, 17.5$.",
+    "Multiply by frequencies:",
+    "$2.5 \\times 6 = 15$,",
+    "$7.5 \\times 12 = 90$,",
+    "$12.5 \\times 14 = 175$,",
+    "$17.5 \\times 8 = 140$.",
+    "Total of midpoint × frequency values: $15 + 90 + 175 + 140 = 420$.",
+    "Total frequency = 40.",
+    "Estimate of mean = $\\frac{420}{40} = 10.5$.",
+    "Final answer: $$\\text{Estimated mean} = 10.5\\text{ minutes}$$"
+  ]
+}
+
 ]
