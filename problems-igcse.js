@@ -854,366 +854,494 @@ const problemBank = [
     "Final answer: $$\\text{Half-life} = 4\\text{ hours}$$"
   ]
 },
-	{
+// 13 Mar
+{
+  "id": "001567",
   "date": "13 Mar 2026",
-  "topic": "Calculus",
-  "subtopic": "Differentiation – Gradient of a Curve",
-  "difficulty": "A",
-  "notice": "",
-  "q": "The graph of $y = x^2$ is drawn.<br>Find the gradient at $x = 3$.",
+  "major_area": "Algebra",
+  "topic": "Differentiation",
+  "subtopic": "Gradient from tangents",
+  "difficulty": "B/A",
+  "notice": "IGCSE Specialist Topic",
+  "q": "A curve has the equation $y = 2x^2 - 5x + 3$.<br>(a) Find $\\frac{dy}{dx}$.<br>(b) Find the gradient of the curve at the point where $x = 3$.<br>(c) Find the coordinates of the point on the curve where the gradient is $7$.",
   "img": "",
   "steps": [
-    "Differentiate the function to find the gradient function.",
-    "$\\frac{dy}{dx}(x^2) = 2x$.",
-    "Substitute $x = 3$ into the gradient function.",
-    "$\\frac{dy}{dx} = 2(3)$.",
-    "Final answer: $$\\text{The gradient of }y = x^2\\text{ at }x = 3\\text{ is }6$$"
+    "(a) Differentiate the expression: $\\frac{dy}{dx} = 4x - 5$.",
+    "(b) Substitute $x = 3$ into the gradient function: $4(3) - 5 = 7$.",
+    "(c) Set the gradient function equal to 7: $4x - 5 = 7$.",
+    "(c) Solve for $x$: $4x = 12 \\implies x = 3$.",
+    "(c) Find $y$ by substituting $x = 3$ into the original equation: $y = 2(3)^2 - 5(3) + 3 = 18 - 15 + 3 = 6$.",
+    "Final answers: $$\\frac{dy}{dx} = 4x - 5,\\quad \\text{Gradient} = 7,\\quad (3, 6)$$"
   ]
 },
-{ 
-"date": "14 March", 
-"topic": "Sets", 
-"notice": "This is a non-calculator question.", 
-"q": "In a group of 40 students,<br>25 study Maths,<br>18 study Physics,<br>10 study both.<br>Find the number who study neither subject.",  
-"img": "",
-"steps": [ 
-"Total studying at least one = 25 + 18 - 10 = 33", 
-"Neither = 40 - 33", 
-"Final answer: $$7\\text{ students study neither subject.}$$" 
-] 
-}, 
-{ 
-"date": "15 March", 
-"topic": "Surds - Rationalising", 
-"notice": "This is a non-calculator question.", 
-"q": "Rationalise the denominator.<br>$\\frac{3}{2 - \\sqrt{5}}$.", 
-"img": "", 
-"steps": [ 
-"Multiply by conjugate", 
-"$= \\frac{3(2+\\sqrt5)}{4-5}$", 
-"$= -3(2+\\sqrt5)$", 
-"$= -6 - 3\\sqrt5$" 
-] 
-}, 
-{ 
-"date": "16 March", 
-"topic": "Differentiation", 
-"notice": "", 
-"q": "Differentiate.<br>$y = 4x^3 - 2x^2 + 5x$.", 
-"img": "", 
-"steps": [ 
-"$\\frac{dy}{dx} = 12x^2 - 4x + 5$" 
-] 
-}, 
+
+			// 14 Mar
 {
-    "date": "17 March",
-    "topic": "Vectors - Proof",
-    "notice": "This is a non-calculator question.",
-    "q": "Points A, B and C have position vectors $\\mathbf{a}$, $\\mathbf{b}$ and $\\mathbf{c}$ respectively.<br>M is the midpoint of AB.<br>N is the midpoint of AC.<br>Show that $\\overrightarrow{MN} = \\frac{1}{2}(\\mathbf{c} - \\mathbf{b})$.",
-    "img": "",
-    "steps": [
-        "$\\text{Position vector of }M = \\frac{\\mathbf{a} + \\mathbf{b}}{2}$",
-        "$\\text{Position vector of }N = \\frac{\\mathbf{a} + \\mathbf{c}}{2}$",
-        "$\\overrightarrow{MN} = N - M$",
-        "$= \\frac{\\mathbf{a} + \\mathbf{c}}{2} - \\frac{\\mathbf{a} + \\mathbf{b}}{2}$",
-        "$= \\frac{\\mathbf{c} - \\mathbf{b}}{2}$",
-		"Final answer: $$\\overrightarrow{MN} = \\frac{1}{2}(\\mathbf{c} - \\mathbf{b})$$"
-    ]
+  "id": "001568",
+  "date": "14 Mar 2026",
+  "major_area": "Probability",
+  "topic": "Basic Probability",
+  "subtopic": "Mutually exclusive events",
+  "difficulty": "B/C",
+  "notice": "This is a non-calculator question.",
+  "q": "In a group of 40 students, 25 study Maths, 18 study Physics and 10 study both.<br>(a) Complete a Venn diagram to represent this information.<br>(b) A student is chosen at random. Find the probability they study neither subject.",
+  "img": "",
+  "steps": [
+    "(a) Start with the intersection: $10$ in the center.",
+    "(a) Maths only: $25 - 10 = 15$. Physics only: $18 - 10 = 8$.",
+    "(a) Total studying at least one: $15 + 10 + 8 = 33$.",
+    "(b) Students studying neither: $40 - 33 = 7$.",
+    "(b) Probability: $\\frac{7}{40}$.",
+    "Final answer: $$\\frac{7}{40}$$"
+  ]
 },
-{ 
-"date": "18 March", 
-"topic": "Exact Trigonometric Values", 
-"notice": "This is a non-calculator question.", 
-"q": "Find the exact value of:$$2\\sin 30^\\circ + \\cos 60^\\circ$$", 
-"img": "", 
-"steps": [
-"$\\sin 30^\\circ = \\frac{1}{2}$", 
-"$\\cos 60^\\circ = \\frac{1}{2}$", 
-"$2(\\frac{1}{2}) + \\frac{1}{2}$", 
-"$= 1 + \\frac{1}{2}$", 
-"final answer:$$\\frac{3}{2}$$" 
-] 
-}, 
-{ 
-"date": "19 March", 
-"topic": "Surds", 
-"notice": "This is a non-calculator question.", 
-"q": "Simplify fully: $$\\sqrt{50} + 3\\sqrt{8}$$",
-"img": "", 
-"steps": [ 
-"$\\sqrt{50} = 5\\sqrt{2}$", 
-"$\\sqrt{8} = 2\\sqrt{2}$", 
-"$3(2\\sqrt{2}) = 6\\sqrt{2}$", 
-"$5\\sqrt{2} + 6\\sqrt{2}$", 
-"Final answer: $$=11\\sqrt{2}$$" 
-] 
-}, 
-{ 
-"date": "20 March", 
-"topic": "Functions", 
-"notice": "This is a non-calculator question.", 
-"q": "The function \\(f(x) = 2x^2 - 3x + 1\\).<br>(a) Find \\(f(4)\\).<br>(b) Find the value of \\(x\\) such that \\(f(x) = 1\\).", 
-"img" : "",
-"steps": [ 
-"(a) 2(16) - 12 + 1",
-"= 32 - 12 + 1", 
-"= 21", 
-"(b) $2x^2 - 3x + 1 = 1$", 
-"$2x^2 - 3x = 0$", 
-"$x(2x - 3) = 0$", 
-"$x = 0\\text{ or }x = \\frac{3}{2}$" 
-] 
-}, 
-{ 
-"date": "21 March", 
-"topic": "Coordinate Geometry",
-"notice": "", 
-"q": "Consider the points A(1,2), B(4,6) and C(7,2).<br>(a) Show that triangle ABC is isosceles.<br>(b) Find the equation of the perpendicular bisector of AB.<br>(c) Find the area of triangle ABC.", 
-"img": "", 
-"steps": [ 
-"$AB^2 = (3)^2 + (4)^2 = 25$", 
-"$BC^2 = (3)^2 + (-4)^2 = 25$", 
-"$AC^2 = (6)^2 + 0^2 = 36$", 
-"AB = BC", 
-"Midpoint of AB = (3,4)", 
-"Gradient AB = 1", 
-"Perpendicular gradient = -1", 
-"Equation: $y - 4 = -1(x - 3)$", 
-"Area $= \\frac{1}{2} \\times \\text{base} \\times \\text{height} = 12$" 
-] 
-}, 
-{ 
-"date": "22 March", 
-"topic": "Inequalities", 
-"notice": "This is a non-calculator question.", 
-"q": "Solve the inequality:<br>\\(3(2x - 1) \\le 4x + 5\\).", 
-"img" : "",
-"steps": [ 
-"$6x - 3 \\le 4x + 5$", 
-"$2x - 3 \\le 5$", 
-"$2x \\le 8$", 
-"$x \\le 4$" 
-] 
-}, 
-{ 
-"date": "23 March", 
-"topic": "Probability", 
-"notice": "", 
-"q": "A bag contains 3 red and 2 blue counters.<br>Two counters are taken at random without replacement.<br><br>Find the probability that both counters are red.", 
-"img": "", 
-"steps": [ 
-"$P(\\text{first red}) =\\frac{3}{5}$", 
-"$P(\\{second red}) = \\frac{2}{4}$", 
-"Multiply probabilities", 
-"$\\frac{3}{5}\\times\\frac{2}{4}$", 
-"$=\\frac{6}{20}$", 
-"$=\\frac{3}{10}$" 
-] 
-}, 
-{ 
-"date": "24 March", 
-"topic": "Differentiation - Stationary Points", 
-"notice": "", 
-"q": "Given $y = x^3 - 6x^2 + 9x$,<br>(a) Find $\\frac{dy}{dx}$.<br>(b) Find the stationary points.<br>(c) Determine their nature.", 
-"img": "", 
-"steps": [ 
-"$\\frac{dy}{dx} = 3x^2 - 12x + 9$", 
-"$= 3(x^2 - 4x + 3)$", 
-"$= 3(x-1)(x-3)$",
-"Stationary at $x=1$ and $x=3$", 
-"Second derivative: $\\frac{d^2y}{dx^2} = 6x - 12$", 
-"At $x=1$,  $\\frac{d^2y}{dx^2}$ is negative \\Rightarrow maximum", 
-"At $x=3$,  $\\frac{d^2y}{dx^2}$ is positive \\Rightarrow minimum"
-] 
-}, 
-{ 
-"date": "25 March", 
-"topic": "Coordinate Geometry", 
-"notice": "This is a non-calculator question", 
-"q": "Points A and B have coordinates A(2, 5) and B(8, 1).<br>(a) Find the gradient of AB.<br>(b) Show that the midpoint of AB is (5, 3).<br>(c) Find the equation of the line perpendicular to AB that passes through the midpoint.", 
-"img" : "",
-"steps": [ 
-"(a) $\\text{m}=\\frac{(1 - 5)}{(8 - 2)}$", 
-"$= \\frac{-4}{6}$", 
-"$= \\frac{-2}{3}$", 
-"(b) $\\text{Midpoint}= \\left(\\frac{(2 + 8)}{2} \\text{,} \\frac{(5 + 1)}{2}\\right)$", 
-"$= \\left(\\frac{10}{2} \\text{,} \\frac{6}{2}\\right)$", 
-"$= (5 , 3)$", 
-"(c) $\\text{Perpendicular gradient is the negative reciprocal} = \\frac{3}{2}$", 
-"$y - 3 = \\frac{3}{2}(x - 5)$",
-"$y=\\frac{3}{2}(x-3)$"
-] 
-}, 
-{ 
-"date": "26 March", 
-"topic": "Trigonometry - 3D", 
-"notice": "", 
-"q": "A vertical tower is 20m high.<br>A point on the ground is 15m from its base.<br>(a) Find the angle of elevation.<br>(b) A cable joins the top to the point.<br>Find its length.", 
-"img": "images/26_mar.png", 
-"steps": [ 
-"$\\tanθ = \\frac{20}{15}$", 
-"$θ = 53.1^\\circ$", 
-"$\\text{Length} = \\sqrt{20^2 + 15^2}$", "$= 25$m"
- ] 
-}, 
-{ 
-"date": "27 March", 
-"topic": "Algebraic Manipulation", 
-"notice": "This is a non-calculator question.",  
-"q": "Expand and simplify:<br>\\((x - 4)(x + 7) - (x - 2)^2\\).",
-"img": "", 
-"steps": [ 
-"$(x - 4)(x + 7) = x^2 + 3x - 28$", 
-"$(x - 2)^2 = x^2 - 4x + 4$", 
-"Subtract second expression", 
-"$x^2 + 3x - 28 - x^2 + 4x - 4$", 
-"$= 7x - 32$" 
-] 
-}, 
-{ 
-"date": "28 March", 
-"topic": "Inequalities - Quadratic", 
-"notice": "This is a non-calculator question.", 
-"q": "Solve.<br>$x^2 - 5x + 6 \\le 0$.", 
-"img": "", 
-"steps": [ 
-"$(x-2)(x-3) \\le 0$", 
-"$2 \\le x \\le 3$" 
-] 
-}, 
-{ 
-"date": "29 March", 
-"topic": "Circle Geometry", 
-"notice": "This is a non-calculator question.", 
-"q": "The equation of a circle is<br>$x^2 + y^2 - 4x + 6y - 12 = 0$.<br>(a) Find the centre.<br>(b) Find the radius.", 
-"img": "", 
-"steps": [ 
-"Complete the square:", 
-"$(x-2)^2 - 4 + (y+3)^2 - 9 - 12 = 0$", 
-"$(x-2)^2 + (y+3)^2 = 25$", 
-"Centre (2,-3)", 
-"Radius 5" 
-] 
-}, 
-{ 
-"date": "30 March", 
-"topic": "Bounds", 
-"q": "A length is measured as 8.4 cm correct to 1 decimal place.<br>(a) Write down the upper bound.<br>(b) Write down the lower bound.<br>(c) Find the maximum possible area of a square with this side length.", 
-"img" : "",
-"steps": [ 
-"(a) $\\text{Upper bound} = 8.45$", 
-"(b) $\\text{Lower bound} = 8.35$", 
-"(c) $\\text{Maximum area} = 8.45^2$", 
-"$= 71.4025$", 
-"$\\approx 71.4 cm^2$" 
-]
-}, 
-{ 
-"date": "31 March", 
-"topic": "Algebra - Proof", 
-"notice": "This is a non-calculator question.", 
-"q": "Prove that if $n$ is divisible by 3,<br>then $n^3$ is divisible by 27.", 
-"img": "", 
-"steps": [ 
-"$\\text{Let} n = 3k$", 
-"$n^3 = 27k^3$", 
-"$27k^3$ is divisible by 27, QED" 
-]
-},
-	{
-	"date": "1 April",
-	"topic": "Coordinate Geometry",
-	"notice": "This is a non-calculator question.",
-	"q": "Find the equation of the line passing through $(3,-4)$ and $(5,6)$",
-	"img": "",
-	"steps": [
-		"$m=\\text{gradient}=\\frac{\\text{rise}}{\\text{run}}=\\frac{6-(-4)}{5-3}=\\frac{10}{2}=5$",
-		"$y-6=5(x-5)$",
-		"$y=5x-25+6$",
-		"Final answer: $$y=5x-19$$"
-		]
-	},	
-	{
-	"date": "2 April",
-	"topic": "Lowest Common Multiple",
-	"notice": "",
-	"q" : "Buses on three routes, A, B and C leave the bus station at 8am.<br>Route A buses leave every 20 minutes.<br>Route B buses leave every 30 minutes.<br>Route C buses leave every 45 minutes.<br><br>What time will it be when all three next leave the bus station together?",
-	"img": "",
-	"Steps": [
-		"$20=2^2\\times5$",
-		"$30=2\\times3\\times5$",
-		"$45=3^2\\times5$",
-		"$\\text{LCM }(20,30,45)=2^2\\times3^2\\times5=180$",
-		"$180\\text{ minutes}=3\\text{ hours}$",
-		"$8\\text{am)+3\\text{ hours}=11{am}$",
-		"Final answer: $$11\\text{am}$$"
-		]
-	},
-	{
-	"date": "3 April",
-	"topic": "Quadratic Factorisation - negative coefficient of $x^2$",
-	"notice": "This is a non-calculator question.",
-	"q" : "Factorise: $$-2x^2+5x-3$$",
-	"img": "",
-	"Steps": [
-		"$-2\\times-3=6$",
-		"Factors of 6 that sum to 5 are 2 and 3",
-		"$-2x^2+5x-3\\equiv-2x^2+2x+3x-3$",
-		"$\\equiv-2x(x-1)+3(x-1)$",
-		"$\\equiv(3-2x)(x-1)$",
-		"\\textbf{Note: }\\text{there are two more equivalent alternative answers.}",
-		"$(2x-3)(1-x)\\text{ and }-(2x-3)(x-1)$",
-		"Final answer: $$(3-2x)(x-1)\\textbf{ or }(2x-3)(1-x)\\textbf{ or }-(2x-3)(x-1)$$"
-		]
-	},
-	{
-	"date": "4 April",
-	"topic": "Simplification of Algebraic Fractions",
-	"notice": "This is a non-calculator question.",
-	"q" : "Simplify: $$\\dfrac{x^2-x-12}{x^2-2x-15}\\div\\dfrac{x^2-6x+8}{x^2-3x-10}$$",
-	"img": "",
-	"Steps": [
-		"Factorise each of the four expressions",
-		"$x^2-x-12\\equiv(x+3)(x-4)$",
-		"$x^2-2x-15\\equiv(x+3)(x-5)$",
-		"$x^2-6x+8\\equiv(x-4)(x-2)$",
-		"$x^2-3x-10\\equiv(x-5)(x+2)$",
-		"Now we rewrite our original expression using the factorisations:",
-		"$\\dfrac{(x+3)(x-4)}{(x+3)(x-5)}\\div\\dfrac{(x-4)(x-2)}{(x-5)(x+2)}$",
-		"Change the sign to multiply and invert the second fraction:",
-		"$\\dfrac{(x+3)(x-4)}{(x+3)(x-5)}\\times\\dfrac{(x-5)(x+2)}{(x-4)(x-2)}$",
-		"Cancel wherever possible:",
-		"$\\dfrac{\\cancel{(x+3)}\\cancel{(x-4)}}{\\cancel{(x+3)}\\cancel{(x-5)}}\\times\\dfrac{\\cancel{(x-5)}(x+2)}{\\cancel{(x-4)}(x-2)}$",
-		"Final answer: $$\\dfrac{x+2}{x-2}$$"
-		]
-	},	
-	{
-  "date": "5 April 2026",
-  "topic": "Statistics",
-  "subtopic": "Grouped Data – Estimate of the Mean",
+
+			// 15 Mar
+{
+  "id": "001569",
+  "date": "15 Mar 2026",
+  "major_area": "Number",
+  "topic": "Surds",
+  "subtopic": "Rationalising denominators",
   "difficulty": "B/A",
   "notice": "This is a non-calculator question.",
-  "q": "The table shows the times, in minutes, taken by 40 students to complete a puzzle.<br><br>\
-<table>\
-<tr><th>Time (minutes)</th><th>Frequency</th></tr>\
-<tr><td>0 < t ≤ 5</td><td>6</td></tr>\
-<tr><td>5 < t ≤ 10</td><td>12</td></tr>\
-<tr><td>10 < t ≤ 15</td><td>14</td></tr>\
-<tr><td>15 < t ≤ 20</td><td>8</td></tr>\
-</table><br>\
-Estimate the mean time taken.",
+  "q": "Rationalise the denominator and simplify fully:<br>$$\\frac{3}{2 - \\sqrt{5}}$$",
+  "img": "",
+  "steps": [
+    "Multiply numerator and denominator by the conjugate $(2 + \\sqrt{5})$.",
+    "Numerator: $3(2 + \\sqrt{5}) = 6 + 3\\sqrt{5}$.",
+    "Denominator: $(2 - \\sqrt{5})(2 + \\sqrt{5}) = 4 - 5 = -1$.",
+    "Divide each term by $-1$: $\\frac{6}{-1} + \\frac{3\\sqrt{5}}{-1}$.",
+    "Final answer: $$-6 - 3\\sqrt{5}$$"
+  ]
+},
+
+			// 16 Mar
+{
+  "id": "001570",
+  "date": "16 Mar 2026",
+  "major_area": "Algebra",
+  "topic": "Differentiation",
+  "subtopic": "Differentiate sums of terms",
+  "difficulty": "C/B",
+  "notice": "IGCSE Specialist Topic",
+  "q": "Differentiate $y = 4x^3 - 2x^2 + 5x - 7$ with respect to $x$.",
+  "img": "",
+  "steps": [
+    "Differentiate $4x^3 \\rightarrow 12x^2$.",
+    "Differentiate $-2x^2 \\rightarrow -4x$.",
+    "Differentiate $5x \\rightarrow 5$.",
+    "Differentiate the constant $-7 \\rightarrow 0$.",
+    "Final answer: $$\\frac{dy}{dx} = 12x^2 - 4x + 5$$"
+  ]
+},
+
+			// 17 Mar
+{
+  "id": "001571",
+  "date": "17 Mar 2026",
+  "major_area": "Geometry & Measures",
+  "topic": "Vectors",
+  "subtopic": "Vector addition",
+  "difficulty": "A/A*",
+  "notice": "Vector Geometry Proof",
+  "q": "Points $A$, $B$ and $C$ have position vectors $\\mathbf{a}$, $\\mathbf{b}$ and $\\mathbf{c}$ respectively.<br>$M$ is the midpoint of $AB$ and $N$ is the midpoint of $AC$.<br>Show that $\\overrightarrow{MN} = \\frac{1}{2}(\\mathbf{c} - \\mathbf{b})$.",
+  "img": "",
+  "steps": [
+    "Position vector of $M = \\frac{1}{2}(\\mathbf{a} + \\mathbf{b})$.",
+    "Position vector of $N = \\frac{1}{2}(\\mathbf{a} + \\mathbf{c})$.",
+    "Calculate vector $\\overrightarrow{MN} = \\overrightarrow{ON} - \\overrightarrow{OM}$.",
+    "Substitute: $\\overrightarrow{MN} = \\frac{1}{2}(\\mathbf{a} + \\mathbf{c}) - \\frac{1}{2}(\\mathbf{a} + \\mathbf{b})$.",
+    "Simplify: $\\frac{1}{2}\\mathbf{a} + \\frac{1}{2}\\mathbf{c} - \\frac{1}{2}\\mathbf{a} - \\frac{1}{2}\\mathbf{b}$.",
+    "Final result: $$\\frac{1}{2}(\\mathbf{c} - \\mathbf{b})$$"
+  ]
+},
+
+			// 18 Mar
+{
+  "id": "001572",
+  "date": "18 Mar 2026",
+  "major_area": "Geometry & Measures",
+  "topic": "Trigonometry",
+  "subtopic": "SOHCAHTOA",
+  "difficulty": "C/D",
+  "notice": "This is a non-calculator question.",
+  "q": "Find the exact value of $2\\sin(30^\\circ) + \\cos(60^\\circ)$.",
+  "img": "",
+  "steps": [
+    "Recall exact values: $\\sin(30^\\circ) = \\frac{1}{2}$.",
+    "Recall exact values: $\\cos(60^\\circ) = \\frac{1}{2}$.",
+    "Substitute into the expression: $2(\\frac{1}{2}) + \\frac{1}{2}$.",
+    "Calculate: $1 + \\frac{1}{2} = \\frac{3}{2}$.",
+    "Final answer: $$\\frac{3}{2}$$"
+  ]
+},
+
+			// 19 Mar
+{
+  "id": "001573",
+  "date": "19 Mar 2026",
+  "major_area": "Algebra",
+  "topic": "Surds",
+  "subtopic": "Simplifying surds",
+  "difficulty": "C/D",
+  "notice": "This is a non-calculator question.",
+  "q": "Simplify fully: $\\sqrt{50} + 3\\sqrt{8}$.",
+  "img": "",
+  "steps": [
+    "Simplify $\\sqrt{50}$: $\\sqrt{25 \\times 2} = 5\\sqrt{2}$.",
+    "Simplify $\\sqrt{8}$: $\\sqrt{4 \\times 2} = 2\\sqrt{2}$.",
+    "Multiply $3\\sqrt{8}$: $3 \\times 2\\sqrt{2} = 6\\sqrt{2}$.",
+    "Add the terms: $5\\sqrt{2} + 6\\sqrt{2} = 11\\sqrt{2}$.",
+    "Final answer: $$11\\sqrt{2}$$"
+  ]
+},
+
+			// 20 Mar
+{
+  "id": "001574",
+  "date": "20 Mar 2026",
+  "major_area": "Algebra",
+  "topic": "Algebraic Notation",
+  "subtopic": "Substitution",
+  "difficulty": "C/D",
+  "notice": "Non-calculator question.",
+  "q": "The function $f(x) = 2x^2 - 3x + 1$.<br>(a) Find $f(4)$.<br>(b) Find the values of $x$ such that $f(x) = 1$.",
+  "img": "",
+  "steps": [
+    "(a) Substitute $x=4$: $2(4^2) - 3(4) + 1$.",
+    "(a) Calculate: $2(16) - 12 + 1 = 32 - 12 + 1 = 21$.",
+    "(b) Set function to 1: $2x^2 - 3x + 1 = 1$.",
+    "(b) Subtract 1: $2x^2 - 3x = 0$.",
+    "(b) Factorise: $x(2x - 3) = 0$.",
+    "Final answers: $$(a)\\ 21,\\ (b)\\ x = 0,\\ x = 1.5$$"
+  ]
+},
+
+			// 21 Mar
+{
+  "id": "001575",
+  "date": "21 Mar 2026",
+  "major_area": "Geometry & Measures",
+  "topic": "Coordinates",
+  "subtopic": "Midpoints",
+  "difficulty": "B/A",
+  "notice": "Multi-part Coordinate Geometry",
+  "q": "Points $A(1,2)$, $B(4,6)$ and $C(7,2)$ form a triangle.<br>(a) Show that triangle $ABC$ is isosceles.<br>(b) Find the equation of the perpendicular bisector of $AB$.",
+  "img": "",
+  "steps": [
+    "(a) Calculate length $AB = \\sqrt{(4-1)^2 + (6-2)^2} = \\sqrt{3^2 + 4^2} = 5$.",
+    "(a) Calculate length $BC = \\sqrt{(7-4)^2 + (2-6)^2} = \\sqrt{3^2 + (-4)^2} = 5$.",
+    "(a) Since $AB=BC$, the triangle is isosceles.",
+    "(b) Midpoint of $AB = (\\frac{1+4}{2}, \\frac{2+6}{2}) = (2.5, 4)$.",
+    "(b) Gradient of $AB = \\frac{6-2}{4-1} = \\frac{4}{3}$.",
+    "(b) Perpendicular gradient $= -\\frac{3}{4}$.",
+    "(b) Use $y - y_1 = m(x - x_1)$: $y - 4 = -\\frac{3}{4}(x - 2.5)$.",
+    "Final answer: $$y = -0.75x + 5.875$$"
+  ]
+},
+
+			// 22 Mar
+{
+  "id": "001576",
+  "date": "22 Mar 2026",
+  "major_area": "Algebra",
+  "topic": "Inequalities",
+  "subtopic": "Solving inequalities",
+  "difficulty": "D/E",
+  "notice": "Non-calculator question.",
+  "q": "Solve the inequality: $3(2x - 1) \\le 4x + 5$.",
+  "img": "",
+  "steps": [
+    "Expand brackets: $6x - 3 \\le 4x + 5$.",
+    "Subtract $4x$ from both sides: $2x - 3 \\le 5$.",
+    "Add 3 to both sides: $2x \\le 8$.",
+    "Divide by 2: $x \\le 4$.",
+    "Final answer: $$x \\le 4$$"
+  ]
+},
+
+			// 23 Mar
+{
+  "id": "001577",
+  "date": "23 Mar 2026",
+  "major_area": "Probability",
+  "topic": "Probability",
+  "subtopic": "Conditional Probability",
+  "difficulty": "C/B",
+  "notice": "Without replacement.",
+  "q": "A bag contains 3 red and 2 blue counters. Two counters are taken at random without replacement.<br>Find the probability that both counters are the same colour.",
+  "img": "",
+  "steps": [
+    "Probability of Red then Red: $\\frac{3}{5} \\times \\frac{2}{4} = \\frac{6}{20}$.",
+    "Probability of Blue then Blue: $\\frac{2}{5} \\times \\frac{1}{4} = \\frac{2}{20}$.",
+    "Add the probabilities: $\\frac{6}{20} + \\frac{2}{20} = \\frac{8}{20}$.",
+    "Simplify: $\\frac{2}{5}$.",
+    "Final answer: $$\\frac{2}{5}$$"
+  ]
+},
+
+			// 24 Mar
+{
+  "id": "001578",
+  "date": "24 Mar 2026",
+  "major_area": "Algebra",
+  "topic": "Quadratic Equations",
+  "subtopic": "Roots from graphs",
+  "difficulty": "A/A*",
+  "notice": "IGCSE Specialist Topic",
+  "q": "Given $y = x^3 - 6x^2 + 9x$:<br>(a) Find $\\frac{dy}{dx}$.<br>(b) Find the coordinates of the stationary points.<br>(c) Determine the nature of these points using the second derivative.",
+  "img": "",
+  "steps": [
+    "(a) $\\frac{dy}{dx} = 3x^2 - 12x + 9$.",
+    "(b) Set to 0 and factorise: $3(x-1)(x-3) = 0 \\implies x=1, x=3$.",
+    "(b) $y$-values: $f(1) = 4$ and $f(3) = 0$. Points are $(1, 4)$ and $(3, 0)$.",
+    "(c) Find $\\frac{d^2y}{dx^2} = 6x - 12$.",
+    "(c) At $x=1$, $6(1)-12 = -6$ (Maximum).",
+    "(c) At $x=3$, $6(3)-12 = 6$ (Minimum).",
+    "Final answer: $$\\text{Max at }(1,4),\\ \\text{Min at }(3,0)$$"
+  ]
+},
+
+			// 25 Mar
+{
+  "id": "001579",
+  "date": "25 Mar 2026",
+  "major_area": "Geometry & Measures",
+  "topic": "Coordinates",
+  "subtopic": "Gradients",
+  "difficulty": "C/D",
+  "notice": "Perpendicular Lines",
+  "q": "Points $A$ and $B$ have coordinates $A(2, 5)$ and $B(8, 1)$.<br>(a) Find the equation of the line $AB$.<br>(b) Find the equation of the line perpendicular to $AB$ passing through the midpoint of $AB$.",
+  "img": "",
+  "steps": [
+    "(a) Gradient $m = \\frac{1-5}{8-2} = -\\frac{2}{3}$.",
+    "(a) Equation: $y - 5 = -\\frac{2}{3}(x - 2) \\implies y = -\\frac{2}{3}x + \\frac{19}{3}$.",
+    "(b) Midpoint $= (\\frac{2+8}{2}, \\frac{5+1}{2}) = (5, 3)$.",
+    "(b) Perpendicular gradient $= \\frac{3}{2}$.",
+    "(b) Equation: $y - 3 = \\frac{3}{2}(x - 5)$.",
+    "Final answer: $$y = \\frac{3}{2}x - 4.5$$"
+  ]
+},
+
+			// 26 Mar
+{
+  "id": "001580",
+  "date": "26 Mar 2026",
+  "major_area": "Geometry & Measures",
+  "topic": "Trigonometry",
+  "subtopic": "3D Pythagoras",
+  "difficulty": "B/A",
+  "notice": "3D Trigonometry",
+  "q": "A vertical mast $20$m high is supported by a cable fixed to the ground $15$m from its base.<br>(a) Find the angle of elevation of the top of the mast from the fixed point.<br>(b) Find the length of the cable.",
+  "img": "",
+  "steps": [
+    "(a) Use $\\tan(\\theta) = \\frac{20}{15}$.",
+    "(a) $\\theta = \\tan^{-1}(1.333...) = 53.1^\\circ$.",
+    "(b) Use Pythagoras: $\\text{Length} = \\sqrt{20^2 + 15^2}$.",
+    "(b) $\\text{Length} = \\sqrt{400 + 225} = 25\\text{m}$.",
+    "Final answer: $$53.1^\\circ,\\ 25\\text{m}$$"
+  ]
+},
+
+			// 27 Mar
+{
+  "id": "001581",
+  "date": "27 Mar 2026",
+  "major_area": "Algebra",
+  "topic": "Expanding Brackets",
+  "subtopic": "Double brackets",
+  "difficulty": "B/C",
+  "notice": "Non-calculator question.",
+  "q": "Expand and simplify fully: $(x - 4)(x + 7) - (x - 2)^2$.",
+  "img": "",
+  "steps": [
+    "Expand first part: $(x - 4)(x + 7) = x^2 + 3x - 28$.",
+    "Expand second part: $(x - 2)^2 = x^2 - 4x + 4$.",
+    "Subtract: $(x^2 + 3x - 28) - (x^2 - 4x + 4)$.",
+    "Group terms: $x^2 - x^2 + 3x + 4x - 28 - 4$.",
+    "Final answer: $$7x - 32$$"
+  ]
+},
+
+			// 28 Mar
+{
+  "id": "001582",
+  "date": "28 Mar 2026",
+  "major_area": "Algebra",
+  "topic": "Inequalities",
+  "subtopic": "Graphical inequalities",
+  "difficulty": "B/A",
+  "notice": "Quadratic Inequality",
+  "q": "Solve the quadratic inequality $x^2 - 5x + 6 \\le 0$.",
+  "img": "",
+  "steps": [
+    "Factorise the quadratic: $(x - 2)(x - 3) \\le 0$.",
+    "Identify the critical values: $x = 2$ and $x = 3$.",
+    "Consider the parabola shape (u-shape). It is $\\le 0$ between the roots.",
+    "Final answer: $$2 \\le x \\le 3$$"
+  ]
+},
+
+			// 29 Mar
+{
+  "id": "001583",
+  "date": "29 Mar 2026",
+  "major_area": "Geometry & Measures",
+  "topic": "Circle Theorems",
+  "subtopic": "Angles in Circles",
+  "difficulty": "A/A*",
+  "notice": "Equation of a Circle",
+  "q": "The equation of a circle is $x^2 + y^2 - 4x + 6y - 12 = 0$.<br>Find (a) the coordinates of the centre and (b) the radius.",
+  "img": "",
+  "steps": [
+    "Complete the square for $x$: $(x - 2)^2 - 4$.",
+    "Complete the square for $y$: $(y + 3)^2 - 9$.",
+    "Rewrite equation: $(x - 2)^2 - 4 + (y + 3)^2 - 9 - 12 = 0$.",
+    "Rearrange: $(x - 2)^2 + (y + 3)^2 = 25$.",
+    "Identify centre $(h, k)$ and $r^2$.",
+    "Final answer: $$\\text{Centre: }(2, -3),\\ \\text{Radius: } 5$$"
+  ]
+},
+
+			// 30 Mar
+{
+  "id": "001584",
+  "date": "30 Mar 2026",
+  "major_area": "Number",
+  "topic": "Estimation & Bounds",
+  "subtopic": "Upper and lower bounds",
+  "difficulty": "B/C",
+  "q": "A side of a square is measured as $8.4\\text{ cm}$ correct to $1$ decimal place.<br>(a) Write down the lower and upper bounds of the side length.<br>(b) Calculate the maximum possible area of the square.",
+  "img": "",
+  "steps": [
+    "(a) The precision is $0.1$, so the error interval is $\\pm 0.05$.",
+    "(a) Lower Bound $= 8.35\\text{ cm}$. Upper Bound $= 8.45\\text{ cm}$.",
+    "(b) Max Area $= (8.45)^2$.",
+    "(b) Calculate: $71.4025\\text{ cm}^2$.",
+    "Final answer: $$71.4\\text{ cm}^2\\text{ (3 s.f.)}$$"
+  ]
+},
+
+			// 31 Mar
+{
+  "id": "001585",
+  "date": "31 Mar 2026",
+  "major_area": "Algebra",
+  "topic": "Algebraic Proof",
+  "subtopic": "General Proof",
+  "difficulty": "A/A*",
+  "notice": "Non-calculator question.",
+  "q": "Prove algebraically that if $n$ is a multiple of $3$, then $n^3$ is a multiple of $27$.",
+  "img": "",
+  "steps": [
+    "Let $n = 3k$ where $k$ is an integer.",
+    "Then $n^3 = (3k)^3$.",
+    "Expand the power: $n^3 = 27k^3$.",
+    "Since $k^3$ is an integer, $27k^3$ must be a multiple of $27$.",
+    "Final answer: $$\\text{QED}$$"
+  ]
+},
+
+			// 1 Apr
+{
+  "id": "001586",
+  "date": "1 Apr 2026",
+  "major_area": "Geometry & Measures",
+  "topic": "Coordinates",
+  "subtopic": "Gradients",
+  "difficulty": "C/D",
+  "notice": "Non-calculator question.",
+  "q": "Find the equation of the line passing through $(3, -4)$ and $(5, 6)$.",
+  "img": "",
+  "steps": [
+    "Find gradient $m = \\frac{6 - (-4)}{5 - 3} = \\frac{10}{2} = 5$.",
+    "Use $y - y_1 = m(x - x_1)$ with $(5, 6)$.",
+    "$y - 6 = 5(x - 5)$.",
+    "Expand and simplify: $y = 5x - 25 + 6$.",
+    "Final answer: $$y = 5x - 19$$"
+  ]
+},
+
+			// 2 Apr
+{
+  "id": "001587",
+  "date": "2 Apr 2026",
+  "major_area": "Number",
+  "topic": "Factors, Multiples & Primes",
+  "subtopic": "LCM",
+  "difficulty": "C/D",
+  "notice": "Contextual LCM problem.",
+  "q": "Buses leave a station at 8:00 AM. Route A leaves every 20 mins, Route B every 30 mins, and Route C every 45 mins. When do they next leave together?",
+  "img": "",
+  "steps": [
+    "Find prime factors: $20 = 2^2 \\times 5$, $30 = 2 \\times 3 \\times 5$, $45 = 3^2 \\times 5$.",
+    "LCM $= 2^2 \\times 3^2 \\times 5 = 4 \\times 9 \\times 5 = 180$.",
+    "$180$ minutes $= 3$ hours.",
+    "Add 3 hours to 8:00 AM.",
+    "Final answer: $$11:00\\text{ AM}$$"
+  ]
+},
+
+			// 3 Apr
+{
+  "id": "001588",
+  "date": "3 Apr 2026",
+  "major_area": "Algebra",
+  "topic": "Factorising",
+  "subtopic": "Quadratic factorising",
+  "difficulty": "B/A",
+  "notice": "Negative coefficient of $x^2$.",
+  "q": "Factorise fully: $-2x^2 + 5x - 3$.",
+  "img": "",
+  "steps": [
+    "Factor out $-1$: $-(2x^2 - 5x + 3)$.",
+    "Find factors of $2 \\times 3 = 6$ that sum to $-5$. These are $-2$ and $-3$.",
+    "Split the middle term: $2x^2 - 2x - 3x + 3$.",
+    "Factorise in pairs: $2x(x - 1) - 3(x - 1)$.",
+    "Result: $-(2x - 3)(x - 1)$.",
+    "Final answer: $$(3 - 2x)(x - 1)$$"
+  ]
+},
+
+			// 4 Apr
+{
+  "id": "001589",
+  "date": "4 Apr 2026",
+  "major_area": "Algebra",
+  "topic": "Algebraic Fractions",
+  "subtopic": "Simplifying",
+  "difficulty": "A/A*",
+  "notice": "Multi-step simplification.",
+  "q": "Simplify: $$\\frac{x^2 - x - 12}{x^2 - 2x - 15} \\div \\frac{x^2 - 6x + 8}{x^2 - 3x - 10}$$",
+  "img": "",
+  "steps": [
+    "Factorise all four quadratics.",
+    "Num 1: $(x-4)(x+3)$. Den 1: $(x-5)(x+3)$.",
+    "Num 2: $(x-4)(x-2)$. Den 2: $(x-5)(x+2)$.",
+    "Invert second fraction and multiply: $\\frac{(x-4)(x+3)}{(x-5)(x+3)} \\times \\frac{(x-5)(x+2)}{(x-4)(x-2)}$.",
+    "Cancel $(x-4)$, $(x+3)$, and $(x-5)$.",
+    "Final answer: $$\\frac{x + 2}{x - 2}$$"
+  ]
+},
+
+			// 5 Apr
+{
+  "id": "001590",
+  "date": "5 Apr 2026",
+  "major_area": "Statistics",
+  "topic": "Frequency Tables",
+  "subtopic": "Grouped data",
+  "difficulty": "B/A",
+  "notice": "Estimate of the Mean.",
+  "q": "A grouped frequency table shows times for 40 students to finish a puzzle.<br>0-5 mins (6 students), 5-10 mins (12), 10-15 mins (14), 15-20 mins (8).<br>Estimate the mean time.",
   "img": "",
   "steps": [
     "Find midpoints: $2.5, 7.5, 12.5, 17.5$.",
-    "Multiply by frequencies:",
-    "$2.5 \\times 6 = 15$,",
-    "$7.5 \\times 12 = 90$,",
-    "$12.5 \\times 14 = 175$,",
-    "$17.5 \\times 8 = 140$.",
-    "Total of midpoint × frequency values: $15 + 90 + 175 + 140 = 420$.",
-    "Total frequency = 40.",
-    "Estimate of mean = $\\frac{420}{40} = 10.5$.",
-    "Final answer: $$\\text{Estimated mean} = 10.5\\text{ minutes}$$"
+    "Multiply by frequencies: $15, 90, 175, 140$.",
+    "Sum of $fx = 420$.",
+    "Divide by total frequency: $420 \\div 40$.",
+    "Final answer: $$10.5\\text{ minutes}$$"
   ]
 }
 
