@@ -319,8 +319,8 @@ const problemBank = [
             "Original price $= 40 \\div 0.8$.",
             "Final Answer: $$£50$$"
         ]
-    }
-];
+    },
+
 // 11 Feb
     {
         "id": "002019",
