@@ -965,7 +965,7 @@ const problemBank = [
 ] 
 }, 
 { 
-"date": "20 March", 
+"date": "21 March", 
 "topic": "Coordinate Geometry",
 "notice": "", 
 "q": "Consider the points A(1,2), B(4,6) and C(7,2).<br>(a) Show that triangle ABC is isosceles.<br>(b) Find the equation of the perpendicular bisector of AB.<br>(c) Find the area of triangle ABC.", 
@@ -1003,7 +1003,7 @@ const problemBank = [
 "img": "", 
 "steps": [ 
 "$P(\\text{first red}) =\\frac{3}{5}$", 
-"P(\\{second red}) = \\frac{2}{4}$", 
+"$P(\\{second red}) = \\frac{2}{4}$", 
 "Multiply probabilities", 
 "$\\frac{3}{5}\\times\\frac{2}{4}$", 
 "$=\\frac{6}{20}$", 
