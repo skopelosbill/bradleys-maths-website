@@ -1049,7 +1049,7 @@ const problemBank = [
         "img": "",
         "steps": [
             "If the area scale factor is $k^2$, the linear scale factor is $k$.",
-            "Given $k^2 = \\frac{16}{9}$ (or vice versa).",
+            "Given $k^2 = \\frac{9}{16}$.",
             "Take the square root: $k = \\sqrt{\\frac{9}{16}} = \\frac{3}{4}$.",
             "Final Answer: $$3:4$$"
         ]
