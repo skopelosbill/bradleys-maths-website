@@ -1,6 +1,6 @@
 const anchorDate = new Date("2026-01-24");
 const problemBank = [
-    const problemBank = [
+ 
     // 24 Jan
     {
         "id": "002001",
