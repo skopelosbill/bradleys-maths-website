@@ -1443,6 +1443,124 @@ const problemBank = [
             "Simplify the fraction: $\\frac{25}{28}$.",
             "Final Answer: $$\\frac{25}{28}$$"
         ]
+    },
+	// 16 Apr
+    {
+        "id": "001601",
+        "date": "16 Apr 2026",
+        "major_area": "Algebra",
+        "topic": "Differentiation",
+        "subtopic": "Maxima and minima",
+        "difficulty": "A*",
+        "notice": "IGCSE Specialist Topic.",
+        "q": "The volume of a box is given by $V = 48x - x^3$.<br>Find the value of $x$ for which the volume is a maximum.",
+        "img": "",
+        "steps": [
+            "Differentiate $V$ with respect to $x$: $\\frac{dV}{dx} = 48 - 3x^2$.",
+            "Set the derivative to zero for a stationary point: $48 - 3x^2 = 0$.",
+            "Rearrange: $3x^2 = 48$.",
+            "Solve for $x$: $x^2 = 16 \\implies x = 4$ (ignoring $-4$ as length must be positive).",
+            "Verify with second derivative: $\\frac{d^2V}{dx^2} = -6x$.",
+            "At $x=4$, $\\frac{d^2V}{dx^2} = -24$ (negative, so it is a maximum).",
+            "Final Answer: $$x = 4$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "Calculus in Context",
+            "content": "In optimization problems like this, always remember to check if your answer makes physical sense. We ignore $x = -4$ because you cannot have a negative dimension for a box!"
+        }
+    },
+    // 17 Apr
+    {
+        "id": "001602",
+        "date": "17 Apr 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Circle Theorems",
+        "subtopic": "Cyclic quadrilaterals",
+        "difficulty": "B/C",
+        "q": "In a cyclic quadrilateral $ABCD$, $\\angle DAB = (2x + 10)^\\circ$ and $\\angle BCD = (3x - 20)^\\circ$.<br>Calculate the value of $x$.",
+        "steps": [
+            "Opposite angles in a cyclic quadrilateral sum to $180^\\circ$.",
+            "Set up equation: $(2x + 10) + (3x - 20) = 180$.",
+            "Simplify: $5x - 10 = 180$.",
+            "Add 10: $5x = 190$.",
+            "Final Answer: $$x = 38$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "Opposite vs. Adjacent",
+            "content": "Students often confuse cyclic quadrilateral rules with parallel line rules. Remember: it is the **opposite** angles that add to $180$, not the ones next to each other!"
+        }
+    },
+    // 18 Apr
+    {
+        "id": "001603",
+        "date": "18 Apr 2026",
+        "major_area": "Algebra",
+        "topic": "Sequences",
+        "subtopic": "nth term",
+        "difficulty": "A/A*",
+        "q": "Find the $n^{th}$ term of the quadratic sequence: $5, 12, 23, 38, 57...$",
+        "img": "",
+        "steps": [
+            "First differences: $7, 11, 15, 19$.",
+            "Second differences: $4, 4, 4$.",
+            "The coefficient of $n^2$ is half the second difference: $4 \\div 2 = 2$. So, starts with $2n^2$.",
+            "Subtract $2n^2$ from original sequence: $(5-2), (12-8), (23-18) \\rightarrow 3, 4, 5$.",
+            "Find the $n^{th}$ term of $3, 4, 5$: $n + 2$.",
+            "Combine the parts.",
+            "Final Answer: $$2n^2 + n + 2$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Quadratic Sequence Shortcut",
+            "content": "Always remember that the second difference is equal to $2a$. If the second difference is 4, then $a$ is 2. This is the quickest way to start a quadratic $n^{th}$ term problem."
+        }
+    },
+    // 19 Apr
+    {
+        "id": "001604",
+        "date": "19 Apr 2026",
+        "major_area": "Number",
+        "topic": "Estimation & Bounds",
+        "subtopic": "Error intervals",
+        "difficulty": "B/A",
+        "q": "The mass of a bag of sugar is $500\\text{ g}$ correct to the nearest $10\\text{ g}$.<br>Write down the error interval for the mass $m$.",
+        "steps": [
+            "The degree of accuracy is $10\\text{ g}$.",
+            "The error is half of this: $\\pm 5\\text{ g}$.",
+            "Lower Bound: $500 - 5 = 495\\text{ g}$.",
+            "Upper Bound: $500 + 5 = 505\\text{ g}$.",
+            "Final Answer: $$495 \\le m < 505$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Inequality Signs",
+            "content": "Notice the difference in the signs! $m$ can be exactly $495$ (so we use $\\le$), but it must be strictly less than $505$ (so we use $<$)."
+        }
+    },
+    // 20 Apr
+    {
+        "id": "001605",
+        "date": "20 Apr 2026",
+        "major_area": "Algebra",
+        "topic": "Inequalities",
+        "subtopic": "Solving inequalities",
+        "difficulty": "A",
+        "q": "Solve the inequality: $x^2 - x - 12 > 0$.",
+        "img": "",
+        "steps": [
+            "Factorise the quadratic: $(x - 4)(x + 3) > 0$.",
+            "Critical values are $x = 4$ and $x = -3$.",
+            "Sketch the parabola (it is a U-shape).",
+            "Identify where the graph is above the x-axis: to the left of $-3$ and to the right of $4$.",
+            "Final Answer: $$x < -3\\text{ or } x > 4$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "Sketching is Key",
+            "content": "Never try to solve a quadratic inequality without a quick sketch! It’s the only way to be $100\\%$ sure whether your answer is one range (e.g., $-3 < x < 4$) or two separate ranges."
+        }
     }
 
 ]
