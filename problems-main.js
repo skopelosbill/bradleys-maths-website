@@ -1587,7 +1587,264 @@ const problemBank = [
             "title": "Frustum Shortcut",
             "content": "You don't always need a complex formula for a frustum. Just remember: it's simply the **Big Shape** minus the **Little Shape**. Finding the height of the missing cone using similar triangles is usually the 'hidden' step."
         }
+    },
+ // 19 Apr
+    {
+        "id": "002087",
+        "date": "19 Apr 2026",
+        "major_area": "Statistics",
+        "topic": "Cumulative Frequency",
+        "subtopic": "Median",
+        "difficulty": "6/7",
+        "q": "A cumulative frequency graph represents the heights of 100 plants.<br>The heights range from $0$ to $50\text{ cm}$.<br>Explain how to estimate the number of plants taller than $45\text{ cm}$.",
+        "steps": [
+            "Find $45\text{ cm}$ on the horizontal (x) axis.",
+            "Move vertically up to the curve, then horizontally to the vertical (y) axis.",
+            "Read the cumulative frequency value (e.g., 85).",
+            "Subtract this value from the total: $100 - 85 = 15$.",
+            "Final Answer: $$15\text{ plants}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "Taller vs Shorter",
+            "content": "The graph always shows how many are **below** a value. If the question asks for 'taller than' or 'more than', you must subtract your reading from the total frequency!"
+        }
+    },
+    // 20 Apr
+    {
+        "id": "002088",
+        "date": "20 Apr 2026",
+        "major_area": "Algebra",
+        "topic": "Rearranging Formulae",
+        "subtopic": "Changing the subject",
+        "difficulty": "6/7",
+        "q": "Make $t$ the subject of the formula: $v = u + at$.",
+        "img": "",
+        "steps": [
+            "Subtract $u$ from both sides: $v - u = at$.",
+            "Divide both sides by $a$.",
+            "Final Answer: $$t = \\frac{v - u}{a}$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "Reverse BIDMAS",
+            "content": "When rearranging, think of it as 'undoing' the operations in reverse order. We deal with the addition ($+u$) before we deal with the multiplication ($at$)."
+        }
+    },
+	// 21 Apr
+ {
+        "id": "002089",
+        "date": "21 Apr 2026",
+        "major_area": "Statistics",
+        "topic": "Averages & Range",
+        "subtopic": "Discrete data",
+        "difficulty": "4/5",
+        "q": "The mean of four numbers is 10. Three of the numbers are 8, 12, and 15.<br>Find the fourth number.",
+        "steps": [
+            "Total of the four numbers: $4 \times 10 = 40$.",
+            "Total of the known three: $8 + 12 + 15 = 35$.",
+            "Subtract: $40 - 35$.",
+            "Final Answer: $$5$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "Think of the Total",
+            "content": "In 'reverse mean' questions, always find the **total** first. Mean $\times$ Count $=$ Total. This is much easier than trying to solve an algebraic equation."
+        }
+    },
+    // 22 Apr
+    {
+        "id": "002090",
+        "date": "22 Apr 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Polygons",
+        "subtopic": "Interior angles",
+        "difficulty": "4/5",
+        "q": "The sum of the interior angles of a regular polygon is $1440^\circ$.<br>Calculate the number of sides the polygon has.",
+        "steps": [
+            "Use the formula: $(n - 2) \\times 180 = 1440$.",
+            "Divide by 180: $n - 2 = 8$.",
+            "Add 2: $n = 10$.",
+            "Final Answer: $$10\text{ sides}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Exterior Shortcut",
+            "content": "You can also find the number of sides by finding the exterior angle first. But for 'sum of interior' questions, memorizing $(n-2) \\times 180$ is the most direct path to the marks."
+        }
+    },
+    // 23 Apr
+    {
+        "id": "002091",
+        "date": "23 Apr 2026",
+        "major_area": "Number",
+        "topic": "Percentages",
+        "subtopic": "Reverse percentages",
+        "difficulty": "6/7",
+        "q": "A TV is sold for £352 in a '20% off' sale.<br>Calculate the original price of the TV.",
+        "steps": [
+            "Identify that £352 represents 80% of the original price.",
+            "Find 1%: $352 \\div 80 = 4.4$.",
+            "Multiply by 100: $4.4 \\times 100$.",
+            "Final Answer: $$£440$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "Don't just add 20%!",
+            "content": "A common mistake is to calculate 20% of the sale price and add it back. This is wrong! You must always divide by the multiplier (in this case, $0.8$) to get back to the original value."
+        }
+    },
+    // 24 Apr
+    {
+        "id": "002092",
+        "date": "24 Apr 2026",
+        "major_area": "Probability",
+        "topic": "Basic Probability",
+        "subtopic": "Venn Diagrams",
+        "difficulty": "6/7",
+        "q": "In a class of 30 students, 20 like Football and 15 like Cricket. 10 like both.<br>Find the probability that a student chosen at random likes **only** Football.",
+        "steps": [
+            "Number who like Football only: $20 - 10 = 10$.",
+            "Total number of students: $30$.",
+            "Probability: $\\frac{10}{30}$.",
+            "Final Answer: $$\\frac{1}{3}$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "Venn Diagram Logic",
+            "content": "Always fill in the intersection (the 'both' section) first! It prevents you from double-counting the students who appear in both categories."
+        }
+    },
+// 25 Apr (Example of a 'Big Challenge' for end of month)
+    {
+        "id": "002093",
+        "date": "25 Apr 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "3D Shapes",
+        "subtopic": "Volume",
+        "difficulty": "8/9",
+        "q": "A frustum is made by removing a small cone from a large cone. The large cone has radius $10\\text{cm}$ and height $20\\text{cm}$. The small cone has radius $5\\text{cm}$. Calculate the volume of the frustum.",
+        "steps": [
+            "Volume of large cone: $\\frac{1}{3}\\pi(10^2)(20) = \\frac{2000}{3}\\pi$.",
+            "Using similar triangles, the height of the small cone is $10\\text{cm}$ (since radius halved, height halves).",
+            "Volume of small cone: $\\frac{1}{3}\\pi(5^2)(10) = \\frac{250}{3}\\pi$.",
+            "Subtract: $\\frac{2000}{3}\\pi - \\frac{250}{3}\\pi = \\frac{1750}{3}\\pi$.",
+            "Final Answer: $$583.3\\pi\\text{ cm}^3$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "Frustum Shortcut",
+            "content": "You don't always need a complex formula for a frustum. Just remember: it's simply the **Big Shape** minus the **Little Shape**. Finding the height of the missing cone using similar triangles is usually the 'hidden' step."
+        }
+    },
+    // 26 Apr
+    {
+        "id": "002094",
+        "date": "26 Apr 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Similarity & Congruence",
+        "subtopic": "Scale factors",
+        "difficulty": "8/9",
+        "q": "The ratio of the heights of two similar cylinders is $2:5$.<br>The volume of the smaller cylinder is $80\text{ cm}^3$.<br>Calculate the volume of the larger cylinder.",
+        "steps": [
+            "Linear scale factor $k = \\frac{5}{2} = 2.5$.",
+            "Volume scale factor $k^3 = 2.5^3 = 15.625$.",
+            "Multiply volume: $80 \\times 15.625$.",
+            "Final Answer: $$1250\text{ cm}^3$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "Fraction vs Decimals",
+            "content": "If you don't have a calculator, it's often easier to use fractions: $(\\frac{5}{2})^3 = \\frac{125}{8}$. Then $80 \\times \\frac{125}{8} = 10 \\times 125 = 1250$. It's much cleaner!"
+        }
+    },
+    // 27 Apr
+    {
+        "id": "002095",
+        "date": "27 Apr 2026",
+        "major_area": "Algebra",
+        "topic": "Expanding Brackets",
+        "subtopic": "Double brackets",
+        "difficulty": "6/7",
+        "q": "Expand and simplify fully: $(x + 2)(x - 3)(x + 4)$.",
+        "steps": [
+            "Expand first two: $(x+2)(x-3) = x^2 - x - 6$.",
+            "Multiply result by $(x+4)$: $(x^2 - x - 6)(x + 4)$.",
+            "Distribute: $x(x^2 - x - 6) + 4(x^2 - x - 6)$.",
+            "Simplify: $x^3 - x^2 - 6x + 4x^2 - 4x - 24$.",
+            "Final Answer: $$x^3 + 3x^2 - 10x - 24$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "One Step at a Time",
+            "content": "Never try to expand all three brackets at once. Expand two, simplify the result, and then multiply by the third. It’s the only way to avoid losing terms."
+        }
+    },
+    // 28 Apr
+    {
+        "id": "002096",
+        "date": "28 Apr 2026",
+        "major_area": "Algebra",
+        "topic": "Graphs",
+        "subtopic": "Reciprocal graphs",
+        "difficulty": "6/7",
+        "q": "State the equation of the vertical asymptote for the graph $y = \frac{1}{x - 4}$.",
+        "steps": [
+            "An asymptote occurs where the function is undefined.",
+            "A fraction is undefined when the denominator is zero.",
+            "Set $x - 4 = 0$.",
+            "Final Answer: $$x = 4$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Impossible Division",
+            "content": "You cannot divide by zero! That's why the graph never touches the line $x=4$; it gets infinitely close but can never actually exist there."
+        }
+    },
+
+    // 29 Apr
+    {
+        "id": "002097",
+        "date": "29 Apr 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Circle Theorems",
+        "subtopic": "Angles in Circles",
+        "difficulty": "8/9",
+        "q": "Identify the theorem: 'The angle between a tangent and a chord is equal to the angle in the alternate segment.'",
+        "steps": [
+            "This is the **Alternate Segment Theorem**.",
+            "It relates the angle between a tangent and a triangle's side to the opposite angle inside the triangle.",
+            "Final Answer: $$\\text{Alternate Segment Theorem}$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "Hard to Spot",
+            "content": "This is often the hardest circle theorem to spot in a complex diagram. Look for a triangle 'touching' a tangent at one of its vertices."
+        }
     }
+ // 30 Apr
+    {
+        "id": "002089",
+        "date": "30 Apr 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Circle Theorems",
+        "subtopic": "Angle at the centre",
+        "difficulty": "6/7",
+        "q": "In a circle, the angle subtended by an arc at the centre is $(4x + 20)^\circ$.<br>The angle subtended by the same arc at the circumference is $(x + 40)^\circ$.<br>Calculate the value of $x$.",
+        "steps": [
+            "Theorem: Angle at centre is twice the angle at circumference.",
+            "Equation: $4x + 20 = 2(x + 40)$.",
+            "Expand: $4x + 20 = 2x + 80$.",
+            "Rearrange: $2x = 60$.",
+            "Final Answer: $$x = 30$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "Brackets are Vital",
+            "content": "When doubling the angle at the circumference, make sure you put the whole expression in brackets! $2(x+40)$ is $2x+80$, not $2x+40$. This is where most students lose their marks."
+        }
+    }
+]
  
 ];
 
