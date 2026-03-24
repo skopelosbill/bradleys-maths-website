@@ -1275,7 +1275,98 @@ const problemBank = [
             "Divide both sides by $\\frac{1}{3}\\pi r^2$.",
             "Final Answer: $$h = 2r$$"
         ]
+    },
+ // 5 Apr
+    {
+        "id": "002072",
+        "date": "5 Apr 2026",
+        "major_area": "Ratio, Proportion & Rates of Change",
+        "topic": "Direct & Inverse Proportion",
+        "subtopic": "Proportion equations",
+        "difficulty": "6/7",
+        "q": "$y$ is inversely proportional to the square of $x$.<br>When $x = 3, y = 8$.<br>Find the value of $y$ when $x = 2$.",
+        "img": "",
+        "steps": [
+            "Set up the equation: $y = \\frac{k}{x^2}$.",
+            "Substitute known values: $8 = \\frac{k}{3^2} \\implies 8 = \\frac{k}{9}$.",
+            "Find the constant $k$: $k = 8 \\times 9 = 72$.",
+            "Use the equation $y = \\frac{72}{x^2}$ with $x = 2$.",
+            "Calculate: $y = \\frac{72}{4} = 18$.",
+            "Final Answer: $$y = 18$$"
+        ]
+    },
+    // 6 Apr
+    {
+        "id": "002073",
+        "date": "6 Apr 2026",
+        "major_area": "Algebra",
+        "topic": "Quadratic Equations",
+        "subtopic": "Quadratic formula",
+        "difficulty": "6/7",
+        "q": "Solve $2x^2 + 7x - 4 = 0$ using the quadratic formula.<br>Give your answers to 2 decimal places.",
+        "img": "",
+        "steps": [
+            "Identify $a=2, b=7, c=-4$.",
+            "Formula: $x = \\frac{-7 \\pm \\sqrt{7^2 - 4(2)(-4)}}{2(2)}$.",
+            "Simplify the discriminant: $\\sqrt{49 - (-32)} = \\sqrt{81} = 9$.",
+            "Calculate solutions: $x = \\frac{-7 + 9}{4}$ or $x = \\frac{-7 - 9}{4}$.",
+            "Final Answer: $$x = 0.5\\text{ and } x = -4$$"
+        ]
+    },
+    // 7 Apr
+    {
+        "id": "002074",
+        "date": "7 Apr 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Similarity & Congruence",
+        "subtopic": "Scale factors",
+        "difficulty": "8/9",
+        "q": "Two similar cylinders have surface areas of $40\\pi\\text{ cm}^2$ and $90\\pi\\text{ cm}^2$.<br>The smaller cylinder has a height of $6\\text{ cm}$. Calculate the height of the larger cylinder.",
+        "img": "",
+        "steps": [
+            "Find the Area Scale Factor ($k^2$): $\\frac{90\\pi}{40\\pi} = 2.25$.",
+            "Find the Linear Scale Factor ($k$): $\\sqrt{2.25} = 1.5$.",
+            "Multiply the smaller height by $k$: $6 \\times 1.5$.",
+            "Final Answer: $$9\\text{ cm}$$"
+        ]
+    },
+    // 8 Apr
+    {
+        "id": "002075",
+        "date": "8 Apr 2026",
+        "major_area": "Number",
+        "topic": "Factors, Multiples & Primes",
+        "subtopic": "Prime factorisation",
+        "difficulty": "4/5",
+        "notice": "HCF and LCM.",
+        "q": "Write $108$ as a product of its prime factors in index form.",
+        "img": "",
+        "steps": [
+            "Divide by 2: $108 = 2 \\times 54$.",
+            "Divide by 2: $54 = 2 \\times 27$.",
+            "Divide by 3: $27 = 3 \\times 9$.",
+            "Divide by 3: $9 = 3 \\times 3$.",
+            "Final Answer: $$2^2 \\times 3^3$$"
+        ]
+    },
+    // 9 Apr
+    {
+        "id": "002076",
+        "date": "9 Apr 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Angles",
+        "subtopic": "Polygons",
+        "difficulty": "6/7",
+        "q": "Find the size of an interior angle of a regular decagon (10-sided polygon).",
+        "img": "",
+        "steps": [
+            "Method 1: Sum of exterior angles is $360^\\circ$.",
+            "One exterior angle $= 360 \\div 10 = 36^\\circ$.",
+            "Interior angle $= 180 - 36$.",
+            "Final Answer: $$144^\\circ$$"
+        ]
     }
+ 
 ];
 
                        
