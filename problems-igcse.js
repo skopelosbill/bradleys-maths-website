@@ -1343,6 +1343,101 @@ const problemBank = [
     "Divide by total frequency: $420 \\div 40$.",
     "Final answer: $$10.5\\text{ minutes}$$"
   ]
-}
+},
+// 6 Apr
+    {
+        "id": "001591",
+        "date": "6 Apr 2026",
+        "major_area": "Algebra",
+        "topic": "Differentiation",
+        "subtopic": "Stationary points",
+        "difficulty": "A*",
+        "notice": "IGCSE Specialist Topic.",
+        "q": "A curve has the equation $y = x^3 - 3x^2 - 9x + 5$.<br>(a) Find $\\frac{dy}{dx}$.<br>(b) Find the coordinates of the two stationary points.",
+        "img": "",
+        "steps": [
+            "(a) Differentiate: $\\frac{dy}{dx} = 3x^2 - 6x - 9$.",
+            "(b) Set $\\frac{dy}{dx} = 0$: $3x^2 - 6x - 9 = 0$.",
+            "(b) Divide by 3 and factorise: $x^2 - 2x - 3 = 0 \\implies (x-3)(x+1) = 0$.",
+            "(b) $x$-coordinates are $3$ and $-1$.",
+            "(b) Substitute $x=3$ into original: $y = (3)^3 - 3(3)^2 - 9(3) + 5 = -22$.",
+            "(b) Substitute $x=-1$ into original: $y = (-1)^3 - 3(-1)^2 - 9(-1) + 5 = 10$.",
+            "Final Answer: $$(3, -22)\\text{ and } (-1, 10)$$"
+        ]
+    },
+    // 7 Apr
+    {
+        "id": "001592",
+        "date": "7 Apr 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Circle Theorems",
+        "subtopic": "Tangents",
+        "difficulty": "B/A",
+        "notice": "Alternate Segment Theorem.",
+        "q": "In the diagram, $AT$ is a tangent to the circle at $A$. $ABC$ is a triangle inside the circle.<br>Given $\\angle BAT = 62^\\circ$ and $\\angle ABC = 54^\\circ$, calculate $\\angle BAC$.",
+        "img": "",
+        "steps": [
+            "By the Alternate Segment Theorem, $\\angle BCA = \\angle BAT = 62^\\circ$.",
+            "The sum of angles in triangle $ABC$ is $180^\\circ$.",
+            "Calculate: $\\angle BAC = 180^\\circ - (54^\\circ + 62^\\circ)$.",
+            "Final Answer: $$64^\\circ$$"
+        ]
+    },
+    // 8 Apr
+    {
+        "id": "001593",
+        "date": "8 Apr 2026",
+        "major_area": "Algebra",
+        "topic": "Rearranging Formulae",
+        "subtopic": "Rearranging with fractions",
+        "difficulty": "B/A",
+        "q": "Make $x$ the subject of the formula: $y = \\frac{2x + 3}{x - 5}$.",
+        "img": "",
+        "steps": [
+            "Multiply by $(x-5)$: $y(x - 5) = 2x + 3$.",
+            "Expand the bracket: $xy - 5y = 2x + 3$.",
+            "Move all terms with $x$ to one side: $xy - 2x = 5y + 3$.",
+            "Factorise $x$: $x(y - 2) = 5y + 3$.",
+            "Divide by $(y-2)$.",
+            "Final Answer: $$x = \\frac{5y + 3}{y - 2}$$"
+        ]
+    },
+    // 9 Apr
+    {
+        "id": "001594",
+        "date": "9 Apr 2026",
+        "major_area": "Number",
+        "topic": "Powers & Roots",
+        "subtopic": "Index notation",
+        "difficulty": "B/A",
+        "notice": "Non-calculator question.",
+        "q": "Evaluate: $(a)\\ 27^{\\frac{2}{3}}$ and $(b)\\ 16^{-\\frac{3}{4}}$.",
+        "img": "",
+        "steps": [
+            "(a) Cube root of 27 is 3. Square the result: $3^2 = 9$.",
+            "(b) The negative index means the reciprocal: $\\frac{1}{16^{3/4}}$.",
+            "(b) Fourth root of 16 is 2. Cube the result: $2^3 = 8$.",
+            "Final Answer: $$(a)\\ 9,\\ (b)\\ \\frac{1}{8}$$"
+        ]
+    },
+    // 10 Apr
+    {
+        "id": "001595",
+        "date": "10 Apr 2026",
+        "major_area": "Probability",
+        "topic": "Conditional Probability",
+        "subtopic": "Tree diagrams",
+        "difficulty": "A*",
+        "notice": "Without replacement.",
+        "q": "A box contains 5 green pens and 3 blue pens. Two pens are taken at random without replacement.<br>Calculate the probability that at least one green pen is taken.",
+        "img": "",
+        "steps": [
+            "Method: Use $1 - P(\\text{No Green pens})$.",
+            "Probability both are Blue: $P(BB) = \\frac{3}{8} \\times \\frac{2}{7} = \\frac{6}{56}$.",
+            "Subtract from 1: $1 - \\frac{6}{56} = \\frac{50}{56}$.",
+            "Simplify the fraction: $\\frac{25}{28}$.",
+            "Final Answer: $$\\frac{25}{28}$$"
+        ]
+    }
 
 ]
