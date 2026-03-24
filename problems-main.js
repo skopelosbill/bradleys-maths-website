@@ -1365,6 +1365,140 @@ const problemBank = [
             "Interior angle $= 180 - 36$.",
             "Final Answer: $$144^\\circ$$"
         ]
+    },
+ // 10 Apr
+    {
+        "id": "002077",
+        "date": "10 Apr 2026",
+        "major_area": "Algebra",
+        "topic": "Graphs",
+        "subtopic": "Linear graphs",
+        "difficulty": "4/5",
+        "q": "Find the equation of the line that is parallel to $y = 3x - 5$ and passes through the point $(2, 10)$.",
+        "steps": [
+            "Parallel lines have the same gradient, so $m = 3$.",
+            "Use the formula $y - y_1 = m(x - x_1)$.",
+            "Substitute values: $y - 10 = 3(x - 2)$.",
+            "Expand: $y - 10 = 3x - 6$.",
+            "Add 10 to both sides.",
+            "Final Answer: $$y = 3x + 4$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "Parallel = Same Gradient",
+            "content": "In GCSE exams, 'parallel' is a code word for 'use the same $m$'. If the question asked for 'perpendicular', you would use the negative reciprocal ($-\\frac{1}{3}$). Always underline these keywords!"
+        }
+    },
+    // 11 Apr
+    {
+        "id": "002078",
+        "date": "11 Apr 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Pythagoras",
+        "subtopic": "3D Pythagoras",
+        "difficulty": "8/9",
+        "q": "A cuboid has dimensions $3\\text{cm}$ by $4\\text{cm}$ by $12\\text{cm}$.<br>Calculate the length of the internal diagonal (the longest distance between two corners).",
+        "img": "",
+        "steps": [
+            "Use the 3D Pythagoras formula: $d^2 = a^2 + b^2 + c^2$.",
+            "Substitute: $d^2 = 3^2 + 4^2 + 12^2$.",
+            "Calculate: $d^2 = 9 + 16 + 144 = 169$.",
+            "Square root: $d = \\sqrt{169}$.",
+            "Final Answer: $$13\\text{ cm}$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "Pythagoras in 3D",
+            "content": "You can solve this in two steps using 2D Pythagoras twice, but the 3D formula ($a^2+b^2+c^2=d^2$) is much faster and less prone to rounding errors. It’s a must-know for Grade 8/9 questions."
+        }
+    },
+    // 12 Apr
+    {
+        "id": "002079",
+        "date": "12 Apr 2026",
+        "major_area": "Number",
+        "topic": "Percentages",
+        "subtopic": "Compound interest",
+        "difficulty": "6/7",
+        "q": "Alice invests £4000 in a savings account with 3% compound interest per year.<br>Calculate the total interest earned after 5 years. Give your answer to the nearest penny.",
+        "img": "",
+        "steps": [
+            "Multiplier = $1.03$.",
+            "Total Amount = $4000 \\times 1.03^5 = 4637.096...$.",
+            "To find interest only, subtract the original investment: $4637.10 - 4000$.",
+            "Final Answer: $$£637.10$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "Total vs. Interest",
+            "content": "Read the question carefully! Does it ask for the **total value** or just the **interest**? Many students lose a mark at the very end by forgetting to subtract the original principal."
+        }
+    },
+    // 13 Apr
+    {
+        "id": "002080",
+        "date": "13 Apr 2026",
+        "major_area": "Statistics",
+        "topic": "Charts",
+        "subtopic": "Pie charts",
+        "difficulty": "4/5",
+        "q": "In a survey of 60 people, 15 said their favorite color was Blue.<br>Calculate the angle for 'Blue' on a pie chart.",
+        "steps": [
+            "Total degrees in a circle $= 360^\\circ$.",
+            "Find degrees per person: $360 \\div 60 = 6^\\circ$.",
+            "Multiply by the frequency of Blue: $15 \\times 6$.",
+            "Final Answer: $$90^\\circ$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The 'Scale Factor' Method",
+            "content": "Always find what $1$ person is worth in degrees first ($360 \\div \\text{Total}$). It makes calculating the rest of the pie chart much easier and more consistent."
+        }
+    },
+    // 14 Apr
+    {
+        "id": "002081",
+        "date": "14 Apr 2026",
+        "major_area": "Algebra",
+        "topic": "Factorising",
+        "subtopic": "Quadratic factorising",
+        "difficulty": "6/7",
+        "q": "Solve $x^2 - 10x + 21 = 0$ by factorising.",
+        "steps": [
+            "Find two numbers that multiply to $+21$ and add to $-10$.",
+            "The numbers are $-3$ and $-7$.",
+            "Write as brackets: $(x - 3)(x - 7) = 0$.",
+            "Set each bracket to zero.",
+            "Final Answer: $$x = 3,\\ x = 7$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Double Negative",
+            "content": "When the constant is positive ($+21$) but the middle term is negative ($-10$), **both** numbers in your brackets must be negative. It's a very common place for signs to go wrong!"
+        }
+    },
+    // 15 Apr
+    {
+        "id": "002082",
+        "date": "15 Apr 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Trigonometry",
+        "subtopic": "SOHCAHTOA",
+        "difficulty": "4/5",
+        "q": "A ladder $5\\text{m}$ long leans against a wall. The base of the ladder is $3\\text{m}$ from the wall.<br>Calculate the angle the ladder makes with the ground.",
+        "img": "",
+        "steps": [
+            "Identify the sides: Adjacent $= 3$, Hypotenuse $= 5$.",
+            "Use Cosine: $\\cos(\\theta) = \\frac{3}{5} = 0.6$.",
+            "Inverse Cosine: $\\theta = \\cos^{-1}(0.6)$.",
+            "Calculate: $53.13...$.",
+            "Final Answer: $$53.1^\\circ$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "Which Ratio?",
+            "content": "Write 'SOH CAH TOA' at the top of your paper. Here, we had the **A**djacent and the **H**ypotenuse, so **CAH** tells us we must use Cosine."
+        }
     }
  
 ];
