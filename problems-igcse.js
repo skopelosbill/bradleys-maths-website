@@ -1561,6 +1561,241 @@ const problemBank = [
             "title": "Sketching is Key",
             "content": "Never try to solve a quadratic inequality without a quick sketch! It’s the only way to be $100\\%$ sure whether your answer is one range (e.g., $-3 < x < 4$) or two separate ranges."
         }
+    },
+	// 19 Apr
+    {
+        "id": "002087",
+        "date": "19 Apr 2026",
+        "major_area": "Statistics",
+        "topic": "Cumulative Frequency",
+        "subtopic": "Median",
+        "difficulty": "6/7",
+        "q": "A cumulative frequency graph represents the heights of 100 plants.<br>The heights range from $0$ to $50\text{ cm}$.<br>Explain how to estimate the number of plants taller than $45\text{ cm}$.",
+        "steps": [
+            "Find $45\text{ cm}$ on the horizontal (x) axis.",
+            "Move vertically up to the curve, then horizontally to the vertical (y) axis.",
+            "Read the cumulative frequency value (e.g., 85).",
+            "Subtract this value from the total: $100 - 85 = 15$.",
+            "Final Answer: $$15\text{ plants}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "Taller vs Shorter",
+            "content": "The graph always shows how many are **below** a value. If the question asks for 'taller than' or 'more than', you must subtract your reading from the total frequency!"
+        }
+    },
+    // 20 Apr
+    {
+        "id": "002088",
+        "date": "20 Apr 2026",
+        "major_area": "Algebra",
+        "topic": "Rearranging Formulae",
+        "subtopic": "Changing the subject",
+        "difficulty": "6/7",
+        "q": "Make $t$ the subject of the formula: $v = u + at$.",
+        "img": "",
+        "steps": [
+            "Subtract $u$ from both sides: $v - u = at$.",
+            "Divide both sides by $a$.",
+            "Final Answer: $$t = \\frac{v - u}{a}$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "Reverse BIDMAS",
+            "content": "When rearranging, think of it as 'undoing' the operations in reverse order. We deal with the addition ($+u$) before we deal with the multiplication ($at$)."
+        }
+    },
+	//21 April
+{
+        "id": "001606",
+        "date": "21 Apr 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "3D Shapes",
+        "subtopic": "Surface area",
+        "difficulty": "B/A",
+        "q": "A solid sphere has a radius of $6\text{ cm}$. A solid cylinder has a radius of $3\text{ cm}$ and a height of $h\text{ cm}$.<br>The surface area of the sphere is equal to the total surface area of the cylinder. Find $h$.",
+        "steps": [
+            "Sphere Surface Area: $4\pi r^2 = 4\pi(6^2) = 144\pi$.",
+            "Cylinder Surface Area: $2\pi r^2 + 2\pi rh = 2\pi(3^2) + 2\pi(3)h$.",
+            "Simplify Cylinder: $18\pi + 6\pi h$.",
+            "Equate: $18\pi + 6\pi h = 144\pi$.",
+            "Subtract $18\pi$: $6\pi h = 126\pi$.",
+            "Final Answer: $$h = 21$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "Total Surface Area",
+            "content": "In cylinder problems, 'total surface area' includes the two circular ends ($2\pi r^2$) plus the curved surface ($2\pi rh$). Many students forget to include the ends!"
+        }
+    },
+    // 22 Apr
+    {
+        "id": "002089",
+        "date": "22 Apr 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Polygons",
+        "subtopic": "Interior angles",
+        "difficulty": "4/5",
+        "q": "The sum of the interior angles of a regular polygon is $1440^\circ$.<br>Calculate the number of sides the polygon has.",
+        "steps": [
+            "Use the formula: $(n - 2) \\times 180 = 1440$.",
+            "Divide by 180: $n - 2 = 8$.",
+            "Add 2: $n = 10$.",
+            "Final Answer: $$10\text{ sides}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Exterior Shortcut",
+            "content": "You can also find the number of sides by finding the exterior angle first. But for 'sum of interior' questions, memorizing $(n-2) \\times 180$ is the most direct path to the marks."
+        }
+    },
+    // 23 Apr
+    {
+        "id": "002090",
+        "date": "23 Apr 2026",
+        "major_area": "Number",
+        "topic": "Percentages",
+        "subtopic": "Reverse percentages",
+        "difficulty": "6/7",
+        "q": "A TV is sold for £352 in a '20% off' sale.<br>Calculate the original price of the TV.",
+        "steps": [
+            "Identify that £352 represents 80% of the original price.",
+            "Find 1%: $352 \\div 80 = 4.4$.",
+            "Multiply by 100: $4.4 \\times 100$.",
+            "Final Answer: $$£440$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "Don't just add 20%!",
+            "content": "A common mistake is to calculate 20% of the sale price and add it back. This is wrong! You must always divide by the multiplier (in this case, $0.8$) to get back to the original value."
+        }
+    },
+    // 24 Apr
+    {
+        "id": "002091",
+        "date": "24 Apr 2026",
+        "major_area": "Probability",
+        "topic": "Basic Probability",
+        "subtopic": "Venn Diagrams",
+        "difficulty": "6/7",
+        "q": "In a class of 30 students, 20 like Football and 15 like Cricket. 10 like both.<br>Find the probability that a student chosen at random likes **only** Football.",
+        "steps": [
+            "Number who like Football only: $20 - 10 = 10$.",
+            "Total number of students: $30$.",
+            "Probability: $\\frac{10}{30}$.",
+            "Final Answer: $$\\frac{1}{3}$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "Venn Diagram Logic",
+            "content": "Always fill in the intersection (the 'both' section) first! It prevents you from double-counting the students who appear in both categories."
+        }
+    },
+ // 25 Apr
+    {
+        "id": "001608",
+        "date": "25 Apr 2026",
+        "major_area": "Number",
+        "topic": "Standard Form",
+        "subtopic": "Calculations in standard form",
+        "difficulty": "B/C",
+        "q": "Work out $(4.2 \times 10^5) + (3.8 \times 10^4)$. Give your answer in standard form.",
+        "steps": [
+            "Make the powers of 10 the same: $3.8 \times 10^4 = 0.38 \times 10^5$.",
+            "Add the numbers: $4.2 + 0.38 = 4.58$.",
+            "Combine with the power: $4.58 \times 10^5$.",
+            "Final Answer: $$4.58 \times 10^5$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "Adding in Standard Form",
+            "content": "You cannot simply add the numbers if the powers of 10 are different! Always convert them to the same power first (usually the larger one) before adding."
+        }
+    },
+    // 26 Apr
+    {
+        "id": "002092",
+        "date": "26 Apr 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Similarity & Congruence",
+        "subtopic": "Scale factors",
+        "difficulty": "8/9",
+        "q": "The ratio of the heights of two similar cylinders is $2:5$.<br>The volume of the smaller cylinder is $80\text{ cm}^3$.<br>Calculate the volume of the larger cylinder.",
+        "steps": [
+            "Linear scale factor $k = \\frac{5}{2} = 2.5$.",
+            "Volume scale factor $k^3 = 2.5^3 = 15.625$.",
+            "Multiply volume: $80 \\times 15.625$.",
+            "Final Answer: $$1250\text{ cm}^3$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "Fraction vs Decimals",
+            "content": "If you don't have a calculator, it's often easier to use fractions: $(\\frac{5}{2})^3 = \\frac{125}{8}$. Then $80 \\times \\frac{125}{8} = 10 \\times 125 = 1250$. It's much cleaner!"
+        }
+    },
+    // 27 Apr
+    {
+        "id": "002093",
+        "date": "27 Apr 2026",
+        "major_area": "Algebra",
+        "topic": "Expanding Brackets",
+        "subtopic": "Double brackets",
+        "difficulty": "6/7",
+        "q": "Expand and simplify fully: $(x + 2)(x - 3)(x + 4)$.",
+        "steps": [
+            "Expand first two: $(x+2)(x-3) = x^2 - x - 6$.",
+            "Multiply result by $(x+4)$: $(x^2 - x - 6)(x + 4)$.",
+            "Distribute: $x(x^2 - x - 6) + 4(x^2 - x - 6)$.",
+            "Simplify: $x^3 - x^2 - 6x + 4x^2 - 4x - 24$.",
+            "Final Answer: $$x^3 + 3x^2 - 10x - 24$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "One Step at a Time",
+            "content": "Never try to expand all three brackets at once. Expand two, simplify the result, and then multiply by the third. It’s the only way to avoid losing terms."
+        }
+    },
+    // 29 Apr
+    {
+        "id": "002094",
+        "date": "29 Apr 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Circle Theorems",
+        "subtopic": "Angles in Circles",
+        "difficulty": "8/9",
+        "q": "Identify the theorem: 'The angle between a tangent and a chord is equal to the angle in the alternate segment.'",
+        "steps": [
+            "This is the **Alternate Segment Theorem**.",
+            "It relates the angle between a tangent and a triangle's side to the opposite angle inside the triangle.",
+            "Final Answer: $$\\text{Alternate Segment Theorem}$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "Hard to Spot",
+            "content": "This is often the hardest circle theorem to spot in a complex diagram. Look for a triangle 'touching' a tangent at one of its vertices."
+        }
+    },
+ // 30 Apr
+    {
+        "id": "001609",
+        "date": "30 Apr 2026",
+        "major_area": "Algebra",
+        "topic": "Simultaneous Equations",
+        "subtopic": "Substitution",
+        "difficulty": "A/A*",
+        "q": "Solve simultaneously: $y = x^2 - 4x + 4$ and $y = 2x - 1$.",
+        "steps": [
+            "Equate the $y$ values: $x^2 - 4x + 4 = 2x - 1$.",
+            "Rearrange to quadratic form: $x^2 - 6x + 5 = 0$.",
+            "Factorise: $(x-5)(x-1) = 0$.",
+            "Find $y$ values: When $x=5, y=9$. When $x=1, y=1$.",
+            "Final Answer: $$(5, 9) \text{ and } (1, 1)$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "Intersection of Curves",
+            "content": "This algebraic method finds the exact points where a parabola and a straight line cross. If the quadratic had only one solution, it would mean the line is a tangent to the curve."
+        }
     }
 
 ]
