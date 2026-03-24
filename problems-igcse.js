@@ -1106,7 +1106,7 @@ const problemBank = [
     "title": "The Second Derivative Rule",
     "content": "A common point of confusion is remembering which result means which! Just remember: a **negative** second derivative indicates a **Maximum** point (the gradient is decreasing), while a **positive** result indicates a **Minimum** point (the gradient is increasing). Using the second derivative is the most rigorous way to prove the nature of a point in IGCSE Paper 4."
   }
-}
+},
 
 			// 25 Mar
 {
