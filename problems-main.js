@@ -1566,28 +1566,6 @@ const problemBank = [
             "content": "In algebraic proof, always start by defining $n$ as an integer. $2n$ is the standard way to show a number is even, and $2n+1$ is the standard for odd. Examiners look for these definitions first!"
         }
     },
-    // 25 Apr (Example of a 'Big Challenge' for end of month)
-    {
-        "id": "002086",
-        "date": "25 Apr 2026",
-        "major_area": "Geometry & Measures",
-        "topic": "3D Shapes",
-        "subtopic": "Volume",
-        "difficulty": "8/9",
-        "q": "A frustum is made by removing a small cone from a large cone. The large cone has radius $10\\text{cm}$ and height $20\\text{cm}$. The small cone has radius $5\\text{cm}$. Calculate the volume of the frustum.",
-        "steps": [
-            "Volume of large cone: $\\frac{1}{3}\\pi(10^2)(20) = \\frac{2000}{3}\\pi$.",
-            "Using similar triangles, the height of the small cone is $10\\text{cm}$ (since radius halved, height halves).",
-            "Volume of small cone: $\\frac{1}{3}\\pi(5^2)(10) = \\frac{250}{3}\\pi$.",
-            "Subtract: $\\frac{2000}{3}\\pi - \\frac{250}{3}\\pi = \\frac{1750}{3}\\pi$.",
-            "Final Answer: $$583.3\\pi\\text{ cm}^3$$"
-        ],
-        "bradley_insight": {
-            "type": "pro-tip",
-            "title": "Frustum Shortcut",
-            "content": "You don't always need a complex formula for a frustum. Just remember: it's simply the **Big Shape** minus the **Little Shape**. Finding the height of the missing cone using similar triangles is usually the 'hidden' step."
-        }
-    },
  // 19 Apr
     {
         "id": "002087",
@@ -1821,7 +1799,7 @@ const problemBank = [
             "title": "Hard to Spot",
             "content": "This is often the hardest circle theorem to spot in a complex diagram. Look for a triangle 'touching' a tangent at one of its vertices."
         }
-    }
+    },
  // 30 Apr
     {
         "id": "002089",
@@ -1844,7 +1822,7 @@ const problemBank = [
             "content": "When doubling the angle at the circumference, make sure you put the whole expression in brackets! $2(x+40)$ is $2x+80$, not $2x+40$. This is where most students lose their marks."
         }
     }
-]
+
  
 ];
 
