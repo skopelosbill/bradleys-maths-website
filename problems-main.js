@@ -1499,6 +1499,94 @@ const problemBank = [
             "title": "Which Ratio?",
             "content": "Write 'SOH CAH TOA' at the top of your paper. Here, we had the **A**djacent and the **H**ypotenuse, so **CAH** tells us we must use Cosine."
         }
+    },
+ // 16 Apr
+    {
+        "id": "002083",
+        "date": "16 Apr 2026",
+        "major_area": "Algebra",
+        "topic": "Sequences",
+        "subtopic": "nth term",
+        "difficulty": "6/7",
+        "q": "Find the $n^{th}$ term of the linear sequence: $7, 11, 15, 19, 23...$",
+        "steps": [
+            "Find the common difference: $11 - 7 = 4$.",
+            "This means the sequence is related to $4n$.",
+            "When $n=1$, $4(1) = 4$. Our first term is $7$.",
+            "Adjust by adding $3$ ($7 - 4 = 3$).",
+            "Final Answer: $$4n + 3$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Zero Term",
+            "content": "A quick way to find the constant (+3) is to work backwards from the first term to find 'Term 0'. $7 - 4 = 3$. This gives you your $4n + 3$ instantly!"
+        }
+    },
+    // 17 Apr
+    {
+        "id": "002084",
+        "date": "17 Apr 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Circle Theorems",
+        "subtopic": "Angles in the same segment",
+        "difficulty": "6/7",
+        "q": "In the diagram, points $A, B, C, D$ lie on a circle. $\\angle ABD = 42^\\circ$. Find $\\angle ACD$.",
+        "img": "",
+        "steps": [
+            "Identify the theorem: Angles subtended by the same arc at the circumference are equal.",
+            "Both $\\angle ABD$ and $\\angle ACD$ are subtended by the arc $AD$.",
+            "Final Answer: $$42^\\circ$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The 'Bow-Tie' Shape",
+            "content": "Always look for the 'bow-tie' or 'butterfly' shape in circle problems. If the two top angles are on the same segment, they are always equal. It’s one of the most common 1-mark 'reasons' required in GCSE Higher."
+        }
+    },
+    // 18 Apr
+    {
+        "id": "002085",
+        "date": "18 Apr 2026",
+        "major_area": "Algebra",
+        "topic": "Algebraic Proof",
+        "subtopic": "General Proof",
+        "difficulty": "8/9",
+        "q": "Prove that the sum of any two consecutive even numbers is always a multiple of 2 but never a multiple of 4.",
+        "steps": [
+            "Let the first even number be $2n$.",
+            "The next consecutive even number is $2n + 2$.",
+            "Sum them: $2n + (2n + 2) = 4n + 2$.",
+            "Factor out a 2: $2(2n + 1)$. This proves it is a multiple of 2.",
+            "Since $(2n+1)$ is always odd, $2 \\times \\text{odd}$ cannot be a multiple of 4.",
+            "Final Answer: $$\\text{QED}$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "Defining Integers",
+            "content": "In algebraic proof, always start by defining $n$ as an integer. $2n$ is the standard way to show a number is even, and $2n+1$ is the standard for odd. Examiners look for these definitions first!"
+        }
+    },
+    // 25 Apr (Example of a 'Big Challenge' for end of month)
+    {
+        "id": "002086",
+        "date": "25 Apr 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "3D Shapes",
+        "subtopic": "Volume",
+        "difficulty": "8/9",
+        "q": "A frustum is made by removing a small cone from a large cone. The large cone has radius $10\\text{cm}$ and height $20\\text{cm}$. The small cone has radius $5\\text{cm}$. Calculate the volume of the frustum.",
+        "steps": [
+            "Volume of large cone: $\\frac{1}{3}\\pi(10^2)(20) = \\frac{2000}{3}\\pi$.",
+            "Using similar triangles, the height of the small cone is $10\\text{cm}$ (since radius halved, height halves).",
+            "Volume of small cone: $\\frac{1}{3}\\pi(5^2)(10) = \\frac{250}{3}\\pi$.",
+            "Subtract: $\\frac{2000}{3}\\pi - \\frac{250}{3}\\pi = \\frac{1750}{3}\\pi$.",
+            "Final Answer: $$583.3\\pi\\text{ cm}^3$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "Frustum Shortcut",
+            "content": "You don't always need a complex formula for a frustum. Just remember: it's simply the **Big Shape** minus the **Little Shape**. Finding the height of the missing cone using similar triangles is usually the 'hidden' step."
+        }
     }
  
 ];
