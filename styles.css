@@ -234,6 +234,31 @@ body{
     font-size: 1rem;
 }
 
+/* Bradley's Maths - Professional Credential Bar */
+.credential-bar {
+    background-color: #f1f5f9; /* Soft professional grey-blue */
+    border-bottom: 1px solid #cbd5e1;
+    padding: 8px 0;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.85rem;
+    color: #334155;
+    letter-spacing: 0.5px;
+}
+
+.credential-bar span {
+    display: inline-block;
+    margin: 0 20px;
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    .credential-bar span {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
 .section-intro {
     margin-bottom: 40px;
 }
