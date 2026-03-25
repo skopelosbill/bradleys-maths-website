@@ -1789,7 +1789,7 @@ const problemBank = [
         "subtopic": "Tangents",
         "difficulty": "8/9",
         "q": "Points $A, B$ and $C$ lie on a circle. $XY$ is a tangent to the circle at point $A$.<br>Given that $\\angle CAY = 65^\\circ$ and $\\angle ABC = (2x + 5)^\\circ$, find the value of $x$.",
-        "img": "images/apr_29.png",
+        "img": "images/apr_29_g.png",
         "steps": [
             "By the \\textbf{Alternate Segment Theorem}, the angle between the tangent and the chord ($\ \angle CAY$) is equal to the angle in the alternate segment ($\ \angle ABC$).",
             "Set up the equation: $2x + 5 = 65$.",
