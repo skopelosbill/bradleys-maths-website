@@ -1567,6 +1567,7 @@ const problemBank = [
         }
     },
  // 19 Apr
+   // 19 Apr
     {
         "id": "002087",
         "date": "19 Apr 2026",
@@ -1574,18 +1575,19 @@ const problemBank = [
         "topic": "Cumulative Frequency",
         "subtopic": "Median",
         "difficulty": "6/7",
-        "q": "A cumulative frequency graph represents the heights of 100 plants.<br>The heights range from $0$ to $50\text{ cm}$.<br>Explain how to estimate the number of plants taller than $45\text{ cm}$.",
+        "q": "The cumulative frequency graph shows the heights of 100 plants.<br>Use the graph to find an estimate for the number of plants with a height greater than $45\\text{ cm}$.",
+        "img": "images/apr_19_g.png",
         "steps": [
-            "Find $45\text{ cm}$ on the horizontal (x) axis.",
-            "Move vertically up to the curve, then horizontally to the vertical (y) axis.",
-            "Read the cumulative frequency value (e.g., 85).",
-            "Subtract this value from the total: $100 - 85 = 15$.",
-            "Final Answer: $$15\text{ plants}$$"
+            "Find $45\\text{ cm}$ on the horizontal axis ($x$-axis).",
+            "Move vertically up to the curve and then horizontally to the $y$-axis.",
+            "The cumulative frequency at $45\\text{ cm}$ is $85$. This means 85 plants are $45\\text{ cm}$ or shorter.",
+            "To find those \\textbf{greater than} $45\\text{ cm}$, subtract from the total: $100 - 85$.",
+            "Final Answer: $$15$$"
         ],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "Taller vs Shorter",
-            "content": "The graph always shows how many are **below** a value. If the question asks for 'taller than' or 'more than', you must subtract your reading from the total frequency!"
+            "content": "A cumulative frequency graph always tracks values from the bottom up. If the question asks for 'taller than', 'more than', or 'exceeds', always subtract your reading from the total frequency."
         }
     },
     // 20 Apr
