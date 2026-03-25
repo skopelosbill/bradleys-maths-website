@@ -1566,28 +1566,29 @@ const problemBank = [
             "content": "In algebraic proof, always start by defining $n$ as an integer. $2n$ is the standard way to show a number is even, and $2n+1$ is the standard for odd. Examiners look for these definitions first!"
         }
     },
- // 19 Apr
-   // 19 Apr
+// 19 Apr
     {
         "id": "002087",
         "date": "19 Apr 2026",
         "major_area": "Statistics",
         "topic": "Cumulative Frequency",
-        "subtopic": "Median",
+        "subtopic": "Median & IQR",
         "difficulty": "6/7",
-        "q": "The cumulative frequency graph shows the heights of 100 plants.<br>Use the graph to find an estimate for the number of plants with a height greater than $45\\text{ cm}$.",
+        "q": "The cumulative frequency graph shows the heights of 100 plants.<br>(a) Find an estimate for the median height.<br>(b) Calculate an estimate for the interquartile range (IQR).<br>(c) Find the number of plants with a height greater than $45\\text{ cm}$.",
         "img": "images/apr_19_g.png",
         "steps": [
-            "Find $45\\text{ cm}$ on the horizontal axis ($x$-axis).",
-            "Move vertically up to the curve and then horizontally to the $y$-axis.",
-            "The cumulative frequency at $45\\text{ cm}$ is $85$. This means 85 plants are $45\\text{ cm}$ or shorter.",
-            "To find those \\textbf{greater than} $45\\text{ cm}$, subtract from the total: $100 - 85$.",
-            "Final Answer: $$15$$"
+            "(a) The median is the $50^{th}$ value. From $y=50$, the graph gives a height of approx $29\\text{ cm}$.",
+            "(b) Lower Quartile ($Q_1$) is the $25^{th}$ value, approx $22\\text{ cm}$.",
+            "(b) Upper Quartile ($Q_3$) is the $75^{th}$ value, approx $37\\text{ cm}$.",
+            "(b) $IQR = Q_3 - Q_1 = 37 - 22 = 15\\text{ cm}$.",
+            "(c) The cumulative frequency at $45\\text{ cm}$ is $95$.",
+            "(c) Number of plants taller than $45\\text{ cm} = 100 - 95 = 5$.",
+            "Final Answer: $$(a)\\ 29\\text{ cm},\\ (b)\\ 15\\text{ cm},\\ (c)\\ 5$$"
         ],
         "bradley_insight": {
             "type": "pro-tip",
-            "title": "Taller vs Shorter",
-            "content": "A cumulative frequency graph always tracks values from the bottom up. If the question asks for 'taller than', 'more than', or 'exceeds', always subtract your reading from the total frequency."
+            "title": "Median and Quartiles",
+            "content": "For a total frequency of $n$, always remember: Median $= n/2$, $Q_1 = n/4$, and $Q_3 = 3n/4$. Draw dotted lines on your graph to show exactly where you are reading these values to secure your method marks!"
         }
     },
     // 20 Apr
