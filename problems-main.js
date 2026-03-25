@@ -1485,20 +1485,21 @@ const problemBank = [
         "topic": "Trigonometry",
         "subtopic": "SOHCAHTOA",
         "difficulty": "4/5",
-        "q": "A ladder $5\\text{m}$ long leans against a wall. The base of the ladder is $3\\text{m}$ from the wall.<br>Calculate the angle the ladder makes with the ground.",
-        "img": "",
+        "q": "A ladder $5\\text{m}$ long leans against a vertical wall.<br>The base of the ladder is $3\\text{m}$ from the wall on horizontal ground.<br>Calculate the angle the ladder makes with the ground.",
+        "img": "images/apr_15_g.png",
         "steps": [
-            "Identify the sides: Adjacent $= 3$, Hypotenuse $= 5$.",
-            "Use Cosine: $\\cos(\\theta) = \\frac{3}{5} = 0.6$.",
-            "Inverse Cosine: $\\theta = \\cos^{-1}(0.6)$.",
-            "Calculate: $53.13...$.",
+            "Identify the sides relative to the angle $\\theta$: The ladder is the \\textbf{Hypotenuse} ($5\\text{m}$) and the distance from the wall is the \\textbf{Adjacent} side ($3\\text{m}$).",
+            "Select the correct ratio: $\\cos(\\theta) = \\dfrac{\\text{adj}}{\\text{hyp}}$.",
+            "Substitute the values: $\\cos(\\theta) = \\dfrac{3}{5}$.",
+            "Calculate the angle: $\\theta = \\cos^{-1}(0.6)$.",
             "Final Answer: $$53.1^\\circ$$"
         ],
         "bradley_insight": {
             "type": "pro-tip",
-            "title": "Which Ratio?",
-            "content": "Write 'SOH CAH TOA' at the top of your paper. Here, we had the **A**djacent and the **H**ypotenuse, so **CAH** tells us we must use Cosine."
+            "title": "Sketching the Scenario",
+            "content": "Even when a diagram isn't provided, always draw a quick right-angled triangle. Label the 'Opposite', 'Adjacent', and 'Hypotenuse' immediately; it makes choosing between Sine, Cosine, and Tangent much harder to get wrong."
         }
+    },
     },
  // 16 Apr
     {
