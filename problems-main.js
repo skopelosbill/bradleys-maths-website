@@ -1522,7 +1522,7 @@ const problemBank = [
             "content": "A quick way to find the constant (+3) is to work backwards from the first term to find 'Term 0'. $7 - 4 = 3$. This gives you your $4n + 3$ instantly!"
         }
     },
-    // 17 Apr
+   // 17 Apr
     {
         "id": "002084",
         "date": "17 Apr 2026",
@@ -1530,17 +1530,17 @@ const problemBank = [
         "topic": "Circle Theorems",
         "subtopic": "Angles in the same segment",
         "difficulty": "6/7",
-        "q": "In the diagram, points $A, B, C, D$ lie on a circle. $\\angle ABD = 42^\\circ$. Find $\\angle ACD$.",
-        "img": "",
+        "q": "Points $A, B, C$ and $D$ lie on the circumference of a circle.<br>$\\angle ABD = 42^\\circ$.<br>Calculate the size of $\\angle ACD$ and give a reason for your answer.",
+        "img": "images/apr_17_g.png",
         "steps": [
-            "Identify the theorem: Angles subtended by the same arc at the circumference are equal.",
-            "Both $\\angle ABD$ and $\\angle ACD$ are subtended by the arc $AD$.",
+            "Identify the arc or segment: Both $\\angle ABD$ and $\\angle ACD$ are subtended by the same arc, $AD$.",
+            "Apply the theorem: \\textbf{Angles subtended by the same arc at the circumference are equal}.",
             "Final Answer: $$42^\\circ$$"
         ],
         "bradley_insight": {
-            "type": "deeper",
+            "type": "pro-tip",
             "title": "The 'Bow-Tie' Shape",
-            "content": "Always look for the 'bow-tie' or 'butterfly' shape in circle problems. If the two top angles are on the same segment, they are always equal. It’s one of the most common 1-mark 'reasons' required in GCSE Higher."
+            "content": "In the exam, look for the 'bow-tie' or 'butterfly' shape. If the two top vertices of the bow-tie touch the circumference and share the same base arc, those angles are identical. Always remember to state the full theorem to secure your 'reason' mark!"
         }
     },
     // 18 Apr
