@@ -1782,22 +1782,25 @@ const problemBank = [
 
     // 29 Apr
     {
-        "id": "002097",
+        "id": "002094",
         "date": "29 Apr 2026",
         "major_area": "Geometry & Measures",
         "topic": "Circle Theorems",
-        "subtopic": "Angles in Circles",
+        "subtopic": "Tangents",
         "difficulty": "8/9",
-        "q": "Identify the theorem: 'The angle between a tangent and a chord is equal to the angle in the alternate segment.'",
+        "q": "Points $A, B$ and $C$ lie on a circle. $XY$ is a tangent to the circle at point $A$.<br>Given that $\\angle CAY = 65^\\circ$ and $\\angle ABC = (2x + 5)^\\circ$, find the value of $x$.",
+        "img": "images/apr_29.png",
         "steps": [
-            "This is the **Alternate Segment Theorem**.",
-            "It relates the angle between a tangent and a triangle's side to the opposite angle inside the triangle.",
-            "Final Answer: $$\\text{Alternate Segment Theorem}$$"
+            "By the \\textbf{Alternate Segment Theorem}, the angle between the tangent and the chord ($\ \angle CAY$) is equal to the angle in the alternate segment ($\ \angle ABC$).",
+            "Set up the equation: $2x + 5 = 65$.",
+            "Subtract 5 from both sides: $2x = 60$.",
+            "Divide by 2 to find $x$.",
+            "Final Answer: $$x = 30$$"
         ],
         "bradley_insight": {
             "type": "deeper",
-            "title": "Hard to Spot",
-            "content": "This is often the hardest circle theorem to spot in a complex diagram. Look for a triangle 'touching' a tangent at one of its vertices."
+            "title": "Identifying the Pattern",
+            "content": "This theorem is a frequent 'Grade 8/9' differentiator. Look for a triangle where one vertex touches a tangent. The angle outside the triangle at that point of contact is always equal to the interior angle at the opposite vertex."
         }
     },
  // 30 Apr
