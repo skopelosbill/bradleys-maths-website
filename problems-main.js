@@ -1522,25 +1522,27 @@ const problemBank = [
             "content": "A quick way to find the constant (+3) is to work backwards from the first term to find 'Term 0'. $7 - 4 = 3$. This gives you your $4n + 3$ instantly!"
         }
     },
-   // 17 Apr
+  // 17 Apr
     {
         "id": "002084",
         "date": "17 Apr 2026",
         "major_area": "Geometry & Measures",
         "topic": "Circle Theorems",
-        "subtopic": "Angles in the same segment",
-        "difficulty": "6/7",
-        "q": "Points $A, B, C$ and $D$ lie on the circumference of a circle.<br>$\\angle ABD = 42^\\circ$.<br>Calculate the size of $\\angle ACD$ and give a reason for your answer.",
+        "subtopic": "Combined Theorems",
+        "difficulty": "7/8",
+        "q": "In the diagram, $AC$ is a diameter of the circle. $B$ and $D$ are points on the circumference.<br>Given $\\angle ABD = 42^circ$:<br>(a) Write down the size of $\\angle ACD$.<br>(b) Calculate the size of $\\angle CAD$.",
         "img": "images/apr_17_g.png",
         "steps": [
-            "Identify the arc or segment: Both $\\angle ABD$ and $\\angle ACD$ are subtended by the same arc, $AD$.",
-            "Apply the theorem: \\textbf{Angles subtended by the same arc at the circumference are equal}.",
-            "Final Answer: $$42^\\circ$$"
+            "(a) $\\angle ACD = 42^\\circ$ because angles subtended by the same arc ($AD$) at the circumference are equal.",
+            "(b) $\\angle ADC = 90^\\circ$ because the angle in a semicircle is a right angle.",
+            "(b) In $\\triangle ADC$, the angles must sum to $180^\\circ$.",
+            "(b) $\\angle CAD = 180^\\circ - (90^\\circ + 42^\\circ) = 48^\\circ$.",
+            "Final Answer: $$(a)\\ 42^\\circ,\\ (b)\\ 48^\\circ$$"
         ],
         "bradley_insight": {
-            "type": "pro-tip",
-            "title": "The 'Bow-Tie' Shape",
-            "content": "In the exam, look for the 'bow-tie' or 'butterfly' shape. If the two top vertices of the bow-tie touch the circumference and share the same base arc, those angles are identical. Always remember to state the full theorem to secure your 'reason' mark!"
+            "type": "deeper",
+            "title": "Spotting the Diameter",
+            "content": "Whenever you are told a line is a \\textbf{diameter}, immediately look for a triangle attached to it. The angle at the circumference will always be $90^\\circ$. This is a very common 'hidden step' in Higher Tier circle problems."
         }
     },
     // 18 Apr
