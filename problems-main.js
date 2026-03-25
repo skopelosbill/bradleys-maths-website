@@ -1500,7 +1500,7 @@ const problemBank = [
             "content": "Even when a diagram isn't provided, always draw a quick right-angled triangle. Label the 'Opposite', 'Adjacent', and 'Hypotenuse' immediately; it makes choosing between Sine, Cosine, and Tangent much harder to get wrong."
         }
     },
-    },
+    
  // 16 Apr
     {
         "id": "002083",
