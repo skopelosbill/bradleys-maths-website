@@ -53,14 +53,15 @@ document.addEventListener('DOMContentLoaded', function() {
         insightDiv.className = `bradley-insight-box insight-${todaysProblem.bradley_insight.type}`;
         insightDiv.style.display = 'none';
         insightDiv.innerHTML = `
-            <span class="insight-title">${todaysProblem.bradley_insight.title}</span>
-            <p>${todaysProblem.bradley_insight.content}</p>
-            <div style="margin-top:15px; text-align:center;">
-                <a href="https://payhip.com/BradleysMaths" class="buy-button" target="_blank" style="text-decoration:none; color:white; background:#1e40af; padding:10px 20px; border-radius:5px; font-weight:bold; display:inline-block;">
-                    Master this topic: Download the Full Pack
-                </a>
-            </div>
-        `;
+        <span class="insight-title">${todaysProblem.bradley_insight.title}</span>
+        <p>${todaysProblem.bradley_insight.content}</p>
+        <div class="nudge-container">
+        <a href="${shopLink}" class="btn-buy" target="_blank">
+            Master this topic: Download the Full Pack
+        </a>
+    </div>
+`;
+
         solutionArea.appendChild(insightDiv);
     }
 
