@@ -1462,7 +1462,7 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/L6skH", // Your Geometry Pack Link
         "button_text": "Master Geometry: Download the Full Coordinate Geometry & Geometry Pack"
     },
-    // 8 Apr
+   // 8 Apr
     {
         "id": "001593",
         "date": "8 Apr 2026",
@@ -1470,18 +1470,26 @@ const problemBank = [
         "topic": "Rearranging Formulae",
         "subtopic": "Rearranging with fractions",
         "difficulty": "B/A",
-        "q": "Make $x$ the subject of the formula: $y = \\frac{2x + 3}{x - 5}$.",
+        "q": "Make $x$ the subject of the formula: $$y = \\frac{2x + 3}{x - 5}$$",
         "img": "",
         "steps": [
-            "Multiply by $(x-5)$: $y(x - 5) = 2x + 3$.",
-            "Expand the bracket: $xy - 5y = 2x + 3$.",
-            "Move all terms with $x$ to one side: $xy - 2x = 5y + 3$.",
-            "Factorise $x$: $x(y - 2) = 5y + 3$.",
-            "Divide by $(y-2)$.",
+            "Multiply both sides by the denominator $(x - 5)$: $$y(x - 5) = 2x + 3$$",
+            "Expand the bracket: $$xy - 5y = 2x + 3$$",
+            "Collect all terms containing $x$ on one side and all other terms on the other side: $$xy - 2x = 5y + 3$$",
+            "Factorise $x$ out of the left-hand side: $$x(y - 2) = 5y + 3$$",
+            "Divide both sides by $(y - 2)$ to isolate $x$.",
             "Final Answer: $$x = \\frac{5y + 3}{y - 2}$$"
-        ]
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: The Factorising Step",
+            "content": "The most common mistake students make is getting stuck once they have $x$ on both sides of the equation. Whenever the subject you are looking for appears more than once, you \\textbf{must} collect those terms together and factorise. It's the only way to get the subject on its own!"
+        },
+        "payhip_link": "https://payhip.com/b/mg5YS", // Algebra Pack
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
     },
     // 9 Apr
+  // 9 Apr
     {
         "id": "001594",
         "date": "9 Apr 2026",
@@ -1490,33 +1498,54 @@ const problemBank = [
         "subtopic": "Index notation",
         "difficulty": "B/A",
         "notice": "Non-calculator question.",
-        "q": "Evaluate: $(a)\\ 27^{\\frac{2}{3}}$ and $(b)\\ 16^{-\\frac{3}{4}}$.",
+        "q": "Without using a calculator, evaluate the following:<br>(a) $27^{\\frac{2}{3}}$<br>(b) $16^{-\\frac{3}{4}}$",
         "img": "",
         "steps": [
-            "(a) Cube root of 27 is 3. Square the result: $3^2 = 9$.",
-            "(b) The negative index means the reciprocal: $\\frac{1}{16^{3/4}}$.",
-            "(b) Fourth root of 16 is 2. Cube the result: $2^3 = 8$.",
-            "Final Answer: $$(a)\\ 9,\\ (b)\\ \\frac{1}{8}$$"
-        ]
+            "(a) For $27^{\\frac{2}{3}}$, first take the cube root of 27: $\\sqrt[3]{27} = 3$.",
+            "(a) Now square the result: $3^2 = 9$.",
+            "(b) For $16^{-\\frac{3}{4}}$, first handle the negative sign by taking the reciprocal: $\\dfrac{1}{16^{\\frac{3}{4}}}$.",
+            "(b) Now find the fourth root of 16: $\\sqrt[4]{16} = 2$.",
+            "(b) Cube the result: $2^3 = 8$.",
+            "Final Answer: $$(a)\\ 9,\\ (b)\\ \\dfrac{1}{8}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Root then Power",
+            "content": "When dealing with fractional indices, always find the \\textbf{root first} and then apply the \\textbf{power}. For example, in part (a), it is much easier to find the cube root of 27 (which is 3) and then square it, rather than trying to square 27 first and then finding the cube root of 729!"
+        },
+        "payhip_link": "https://payhip.com/b/XEV2Z", // Number Pack
+        "button_text": "Master Number: Download the Full Number Pack"
     },
     // 10 Apr
+   // 10 Apr
     {
         "id": "001595",
         "date": "10 Apr 2026",
         "major_area": "Probability",
-        "topic": "Conditional Probability",
-        "subtopic": "Tree diagrams",
+        "topic": "Basic Probability",
+        "subtopic": "Conditional Probability",
         "difficulty": "A*",
         "notice": "Without replacement.",
         "q": "A box contains 5 green pens and 3 blue pens. Two pens are taken at random without replacement.<br>Calculate the probability that at least one green pen is taken.",
         "img": "",
         "steps": [
-            "Method: Use $1 - P(\\text{No Green pens})$.",
-            "Probability both are Blue: $P(BB) = \\frac{3}{8} \\times \\frac{2}{7} = \\frac{6}{56}$.",
-            "Subtract from 1: $1 - \\frac{6}{56} = \\frac{50}{56}$.",
-            "Simplify the fraction: $\\frac{25}{28}$.",
-            "Final Answer: $$\\frac{25}{28}$$"
-        ]
+            "Total number of pens = $5 + 3 = 8$.",
+            "The quickest way to find 'at least one' is to use the formula: $1 - P(\\text{none})$.",
+            "The probability that 'none' are green means both pens are blue.",
+            "Probability the first is blue: $P(B_1) = \\dfrac{3}{8}$.",
+            "Since we do not replace the pen, probability the second is blue: $P(B_2) = \\dfrac{2}{7}$.",
+            "Probability both are blue: $\\dfrac{3}{8} \\times \\dfrac{2}{7} = \\dfrac{6}{56}$.",
+            "Subtract from 1: $1 - \\dfrac{6}{56} = \\dfrac{50}{56}$.",
+            "Simplify the fraction: $\\dfrac{25}{28}$.",
+            "Final Answer: $$\\dfrac{25}{28}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: The 'At Least' Shortcut",
+            "content": "Whenever you see 'at least one' in a probability question, don't waste time calculating every successful outcome. It is almost always faster to calculate the probability of the one outcome you \\textbf{don't} want (in this case, zero green pens) and subtract it from 1!"
+        },
+        "payhip_link": "https://payhip.com/b/rsVCz", // Vectors, Probability & Stats Pack
+        "button_text": "Master Probability: Download the Full Vectors & Stats Pack"
     },
 	// 11 Apr
     {
@@ -1669,15 +1698,17 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "deeper",
-            "title": "Calculus in Context",
+            "title": "The Head Teacher's Eye: Calculus in Context",
             "content": "In optimization problems like this, always remember to check if your answer makes physical sense. We ignore $x = -4$ because you cannot have a negative dimension for a box!"
         }
+		 "payhip_link": "https://payhip.com/b/mg5ys", // Replace with your Mensuration/Trig link
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
     },
     // 17 Apr
     {
         "id": "001602",
         "date": "17 Apr 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Coordinate Geometry & Geometry",
         "topic": "Circle Theorems",
         "subtopic": "Cyclic quadrilaterals",
         "difficulty": "B/C",
@@ -1691,9 +1722,11 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "caution",
-            "title": "Opposite vs. Adjacent",
+            "title": "The Head Teacher's Eye: Opposite vs. Adjacent",
             "content": "Students often confuse cyclic quadrilateral rules with parallel line rules. Remember: it is the **opposite** angles that add to $180$, not the ones next to each other!"
-        }
+        },
+		 "payhip_link": "https://payhip.com/b/L6skH", // Replace with your Mensuration/Trig link
+        "button_text": "Master Coordinate Geometry & Geometry: Download the Full Coordinate Geometry & Geometry Pack"
     },
     // 18 Apr
     {
@@ -1716,9 +1749,11 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "pro-tip",
-            "title": "The Quadratic Sequence Shortcut",
+            "title": "The Head Teacher's Eye: The Quadratic Sequence Shortcut",
             "content": "Always remember that the second difference is equal to $2a$. If the second difference is 4, then $a$ is 2. This is the quickest way to start a quadratic $n^{th}$ term problem."
-        }
+        },
+		"payhip_link": "https://payhip.com/b/mg5YS", // Replace with your Mensuration/Trig link
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
     },
     // 19 Apr
     {
@@ -1738,9 +1773,11 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "caution",
-            "title": "The Inequality Signs",
+            "title": "The Head Teacher's Eye: The Inequality Signs",
             "content": "Notice the difference in the signs! $m$ can be exactly $495$ (so we use $\\le$), but it must be strictly less than $505$ (so we use $<$)."
-        }
+        },
+		"payhip_link": "https://payhip.com/b/XEV2Z", 
+        "button_text": "Master Number: Download the Full Number Pack"
     },
     // 20 Apr
     {
@@ -1761,9 +1798,11 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "deeper",
-            "title": "Sketching is Key",
+            "title": "The Head Teacher's Eye: Sketching is Key",
             "content": "Never try to solve a quadratic inequality without a quick sketch! It’s the only way to be $100\\%$ sure whether your answer is one range (e.g., $-3 < x < 4$) or two separate ranges."
-        }
+        },
+		 "payhip_link": "https://payhip.com/b/mg5YS", // Replace with your Mensuration/Trig link
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
     },
 	// 19 Apr
     {
@@ -1783,9 +1822,11 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "pro-tip",
-            "title": "Taller vs Shorter",
+            "title": "The Head Teacher's Eye: Taller vs Shorter",
             "content": "The graph always shows how many are **below** a value. If the question asks for 'taller than' or 'more than', you must subtract your reading from the total frequency!"
-        }
+        },
+		 "payhip_link": "https://payhip.com/b/rsVCz", // Replace with your Mensuration/Trig link
+        "button_text": "Master Statistics: Download the Full Vectors, Probabilitu & Statistics Pack"
     },
     // 20 Apr
     {
@@ -1804,15 +1845,17 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "caution",
-            "title": "Reverse BIDMAS",
+            "title": "The Head Teacher's Eye: Reverse BIDMAS",
             "content": "When rearranging, think of it as 'undoing' the operations in reverse order. We deal with the addition ($+u$) before we deal with the multiplication ($at$)."
-        }
+        },
+		 "payhip_link": "https://payhip.com/b/mg5YS", // Replace with your Mensuration/Trig link
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
     },
 	//21 April
 {
         "id": "001606",
         "date": "21 Apr 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Mensuration and Trigonometry",
         "topic": "3D Shapes",
         "subtopic": "Surface area",
         "difficulty": "B/A",
@@ -1827,15 +1870,17 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "caution",
-            "title": "Total Surface Area",
+            "title": "The Head teacher's Eye: Total Surface Area",
             "content": "In cylinder problems, 'total surface area' includes the two circular ends ($2\pi r^2$) plus the curved surface ($2\pi rh$). Many students forget to include the ends!"
-        }
+        },
+	 "payhip_link": "https://payhip.com/b/KjXoP", // Replace with your Mensuration/Trig link
+        "button_text": "Master Mensuration & Trigonometry: Download the Full Mensuration & Trigonometry Pack"
     },
     // 22 Apr
     {
         "id": "002089",
         "date": "22 Apr 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Coordinate Geometry & Geometry",
         "topic": "Polygons",
         "subtopic": "Interior angles",
         "difficulty": "4/5",
@@ -1848,9 +1893,11 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "pro-tip",
-            "title": "The Exterior Shortcut",
+            "title": "The head Teacher's Eye: The Exterior Shortcut",
             "content": "You can also find the number of sides by finding the exterior angle first. But for 'sum of interior' questions, memorizing $(n-2) \\times 180$ is the most direct path to the marks."
         }
+		 "payhip_link": "https://payhip.com/b/L6skH", // Replace with your Mensuration/Trig link
+        "button_text": "Master Coordinate Geometry & Geometry: Download the Full Coordinate Geometry & Geometry Pack"
     },
     // 23 Apr
     {
@@ -1869,9 +1916,11 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "caution",
-            "title": "Don't just add 20%!",
+            "title": "The Head Teacher's Eye: Don't just add 20%!",
             "content": "A common mistake is to calculate 20% of the sale price and add it back. This is wrong! You must always divide by the multiplier (in this case, $0.8$) to get back to the original value."
-        }
+        },
+		 "payhip_link": "https://payhip.com/b/XEV2Z", // Replace with your Mensuration/Trig link
+        "button_text": "Master Number: Download the Full Coordinate Number Pack"
     },
     // 24 Apr
     {
@@ -1890,9 +1939,12 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "deeper",
-            "title": "Venn Diagram Logic",
+            "title": "The Head Teacher's Eye: Venn Diagram Logic",
             "content": "Always fill in the intersection (the 'both' section) first! It prevents you from double-counting the students who appear in both categories."
-        }
+        },
+		 "payhip_link": "https://payhip.com/b/rsVCz", // Replace with your Mensuration/Trig link
+        "button_text": "Master Vectors, Probability & Statistics: Download the Full Vectors, Probability & Statistics Pack"
+		 
     },
  // 25 Apr
     {
@@ -1911,15 +1963,17 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "caution",
-            "title": "Adding in Standard Form",
+            "title": "The Head Teacher's Eye: Adding in Standard Form",
             "content": "You cannot simply add the numbers if the powers of 10 are different! Always convert them to the same power first (usually the larger one) before adding."
-        }
+        },
+		 "payhip_link": "https://payhip.com/b/XEV2Z", // Replace with your Mensuration/Trig link
+        "button_text": "Master Number: Download the Full Number Pack"
     },
     // 26 Apr
     {
         "id": "002092",
         "date": "26 Apr 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Coordinate Geometry & Geometry",
         "topic": "Similarity & Congruence",
         "subtopic": "Scale factors",
         "difficulty": "8/9",
@@ -1932,9 +1986,11 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "pro-tip",
-            "title": "Fraction vs Decimals",
-            "content": "If you don't have a calculator, it's often easier to use fractions: $(\\frac{5}{2})^3 = \\frac{125}{8}$. Then $80 \\times \\frac{125}{8} = 10 \\times 125 = 1250$. It's much cleaner!"
-        }
+            "title": "The Head teacher's Eye: Don't Forget The Rule",
+            "content": "If the Linear scale factor is $k$ then the Area scale factor is $k^2$ and the Volume scale factor is $k^3$ and you cannot go directly between Area and Volume in either direction."
+        },
+		"payhip_link": "https://payhip.com/b/L6skH", // Replace with your Mensuration/Trig link
+        "button_text": "Master Coordinate Geometry & Geometry: Download the Full Coordinate Geometry & Geometry Pack"
     },
     // 27 Apr
     {
@@ -1942,7 +1998,7 @@ const problemBank = [
         "date": "27 Apr 2026",
         "major_area": "Algebra",
         "topic": "Expanding Brackets",
-        "subtopic": "Double brackets",
+        "subtopic": "Triple brackets",
         "difficulty": "6/7",
         "q": "Expand and simplify fully: $(x + 2)(x - 3)(x + 4)$.",
         "steps": [
@@ -1954,51 +2010,69 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "caution",
-            "title": "One Step at a Time",
+            "title": "The Head Teacher's Eye: One Step at a Time",
             "content": "Never try to expand all three brackets at once. Expand two, simplify the result, and then multiply by the third. It’s the only way to avoid losing terms."
-        }
+        },
+		 "payhip_link": "https://payhip.com/b/mg5YS", // Replace with your Mensuration/Trig link
+        "button_text": "Master Alkgebra: Download the Full Algebra Pack"
     },
+    // 29 Apr
     // 29 Apr
     {
         "id": "002094",
         "date": "29 Apr 2026",
-        "major_area": "Geometry & Measures",
-        "topic": "Circle Theorems",
-        "subtopic": "Angles in Circles",
-        "difficulty": "8/9",
-        "q": "Identify the theorem: 'The angle between a tangent and a chord is equal to the angle in the alternate segment.'",
+        "major_area": "Algebra",
+        "topic": "Simultaneous Equations",
+        "subtopic": "Line–Curve Intersections",
+        "difficulty": "A/A*",
+        "q": "Find the coordinates of the two points where the line $y = 2x + 1$ intersects the circle $x^2 + y^2 = 13$.",
+        "img": "",
         "steps": [
-            "This is the **Alternate Segment Theorem**.",
-            "It relates the angle between a tangent and a triangle's side to the opposite angle inside the triangle.",
-            "Final Answer: $$\\text{Alternate Segment Theorem}$$"
+            "Substitute the linear equation $y = 2x + 1$ into the circle equation: $$x^2 + (2x + 1)^2 = 13$$",
+            "Expand the bracket: $$x^2 + (4x^2 + 4x + 1) = 13$$",
+            "Simplify and rearrange into a standard quadratic form: $$5x^2 + 4x - 12 = 0$$",
+            "Factorise the quadratic: $$(5x - 6)(x + 2) = 0$$",
+            "Find the $x$-values: $$x = 1.2 \\quad \\text{and} \\quad x = -2$$",
+            "Substitute $x$ back into the linear equation to find $y$:",
+            "If $x = 1.2, \\ y = 2(1.2) + 1 = 3.4$",
+            "If $x = -2, \\ y = 2(-2) + 1 = -3$",
+            "Final Answer: $$(1.2, 3.4) \\text{ and } (-2, -3)$$"
         ],
         "bradley_insight": {
-            "type": "deeper",
-            "title": "Hard to Spot",
-            "content": "This is often the hardest circle theorem to spot in a complex diagram. Look for a triangle 'touching' a tangent at one of its vertices."
-        }
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Substitution is Key",
+            "content": "In these 'A*' simultaneous equations, you must always substitute the linear expression into the quadratic one. Once you have your $x$ values, \\textbf{always} plug them back into the linear equation to find $y$—it is much faster and you are less likely to make an error than if you used the circle equation!"
+        },
+        "payhip_link": "https://payhip.com/bradleysmaths", // Your GCSE Algebra link
+        "button_text": "Master Algebra: Download the GCSE Algebra Pack" 
     },
  // 30 Apr
+    // 30 Apr
     {
         "id": "001609",
         "date": "30 Apr 2026",
-        "major_area": "Algebra",
-        "topic": "Simultaneous Equations",
-        "subtopic": "Substitution",
-        "difficulty": "A/A*",
-        "q": "Solve simultaneously: $y = x^2 - 4x + 4$ and $y = 2x - 1$.",
+        "major_area": "Number",
+        "topic": "Standard Form",
+        "subtopic": "Calculations in standard form",
+        "difficulty": "B/A",
+        "q": "The distance between Earth and a distant planet is $1.65 \times 10^8 \text{ km}$.<br>A spacecraft travels at an average speed of $5.5 \times 10^4 \text{ km/h}$.<br>(a) Calculate the time taken for the journey in hours. Give your answer in standard form.<br>(b) Calculate the time taken for the journey in days.",
+        "img": "",
         "steps": [
-            "Equate the $y$ values: $x^2 - 4x + 4 = 2x - 1$.",
-            "Rearrange to quadratic form: $x^2 - 6x + 5 = 0$.",
-            "Factorise: $(x-5)(x-1) = 0$.",
-            "Find $y$ values: When $x=5, y=9$. When $x=1, y=1$.",
-            "Final Answer: $$(5, 9) \text{ and } (1, 1)$$"
+            "(a) Use the formula: $\\text{Time} = \\dfrac{\\text{Distance}}{\\text{Speed}}$.",
+            "Substitute the values: $\\text{Time} = \\dfrac{1.65 \\times 10^8}{5.5 \\times 10^4}$.",
+            "Divide the numbers: $1.65 \\div 5.5 = 0.3$.",
+            "Divide the powers of ten: $10^8 \\div 10^4 = 10^4$.",
+            "Combine and adjust to correct standard form: $0.3 \\times 10^4 = 3 \\times 10^3$ hours.",
+            "(b) Convert hours to days: $3000 \\div 24$.",
+            "Final Answer: $$(a)\\ 3 \\times 10^3\\text{ hours},\\ (b)\\ 125\\text{ days}$$"
         ],
         "bradley_insight": {
-            "type": "deeper",
-            "title": "Intersection of Curves",
-            "content": "This algebraic method finds the exact points where a parabola and a straight line cross. If the quadratic had only one solution, it would mean the line is a tangent to the curve."
-        }
-    }
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Standard Form Protocol",
+            "content": "When dividing in standard form, always deal with the numbers first and the powers of 10 second. A common pitfall is leaving your part (a) answer as $0.3 \\times 10^4$. Remember, for true standard form, the first number \\textbf{must} be between 1 and 10!"
+        },
+        "payhip_link": "https://payhip.com/b/XEV2Z", // Your IGCSE Number Pack link
+        "button_text": "Master Number: Download the Full Number Pack" 
+    },
 
 ]
