@@ -1444,6 +1444,31 @@ const problemBank = [
             "Final Answer: $$\\frac{25}{28}$$"
         ]
     },
+	// 11 Apr
+    {
+        "id": "001596",
+        "date": "11 Apr 2026",
+        "major_area": "Algebra",
+        "topic": "Quadratic Equations",
+        "subtopic": "Quadratic formula",
+        "difficulty": "B/A",
+        "q": "Solve the equation $3x^2 - 10x + 2 = 0$.<br>Give your answers correct to 2 decimal places.",
+        "img": "",
+        "steps": [
+            "Identify the coefficients: $a = 3, b = -10, c = 2$.",
+            "Substitute into the formula: $x = \\dfrac{-(-10) \\pm \\sqrt{(-10)^2 - 4(3)(2)}}{2(3)}$.",
+            "Simplify the discriminant: $\\sqrt{100 - 24} = \\sqrt{76}$.",
+            "Calculate the two possible values for $x$: $x = \\dfrac{10 + 8.7177...}{6}$ or $x = \\dfrac{10 - 8.7177...}{6}$.",
+            "Final Answer: $$x = 3.12\\text{ and } x = 0.21$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Watch the Signs!",
+            "content": "A very common error in IGCSE Paper 4 is forgetting that $-b$ becomes $+10$ because $b$ was already negative. Also, always put negative numbers in brackets when squaring on a calculator to avoid a syntax error!"
+        },
+        "payhip_link": "https://payhip.com/mg5YS" 
+		"button_text": "Master Algebra: Download the Full Algebra Pack" 
+    },
 	// 16 Apr
     {
         "id": "001601",
