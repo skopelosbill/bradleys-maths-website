@@ -1895,7 +1895,7 @@ const problemBank = [
             "type": "pro-tip",
             "title": "The head Teacher's Eye: The Exterior Shortcut",
             "content": "You can also find the number of sides by finding the exterior angle first. But for 'sum of interior' questions, memorizing $(n-2) \\times 180$ is the most direct path to the marks."
-        }
+        },
 		 "payhip_link": "https://payhip.com/b/L6skH", // Replace with your Mensuration/Trig link
         "button_text": "Master Coordinate Geometry & Geometry: Download the Full Coordinate Geometry & Geometry Pack"
     },
