@@ -1569,7 +1569,7 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Watch the Signs!",
             "content": "A very common error in IGCSE Paper 4 is forgetting that $-b$ becomes $+10$ because $b$ was already negative. Also, always put negative numbers in brackets when squaring on a calculator to avoid a syntax error!"
         },
-        "payhip_link": "https://payhip.com/mg5YS" 
+        "payhip_link": "https://payhip.com/mg5YS",
 		"button_text": "Master Algebra: Download the Full Algebra Pack" 
     },
 // 12 Apr
