@@ -1,6 +1,8 @@
 function toggleMenu() {
     const nav = document.getElementById('navLinks');
-    nav.classList.toggle('active');
+    if (nav) {
+        nav.classList.toggle('active');
+    }
 }
 
 document.addEventListener('DOMContentLoaded', function() {      
@@ -24,53 +26,51 @@ document.addEventListener('DOMContentLoaded', function() {
     const todaysProblem = problemBank[dayIndex];
     
     // --- 2. DISPLAY QUESTION ---
-    let questionHTML = todaysProblem.q;
-    if (todaysProblem.img) {
-        questionHTML += `<br><img src="${todaysProblem.img}" class="question-img" alt="Question Diagram">`;
+    const questionContainer = document.getElementById('math-question');
+    if (questionContainer) {
+        let questionHTML = todaysProblem.q;
+        if (todaysProblem.img) {
+            questionHTML += `<br><img src="${todaysProblem.img}" class="question-img" alt="Question Diagram">`;
+        }
+        questionContainer.innerHTML = questionHTML;
     }
-    document.getElementById('math-question').innerHTML = questionHTML;
 
     // --- 3. PREPARE SOLUTION AREA ---
     const solutionArea = document.getElementById('solution-area');
-    solutionArea.innerHTML = ''; // Clear any existing content
+    if (solutionArea) {
+        solutionArea.innerHTML = ''; // Clear any existing content
 
-    // Create the Steps (Hidden by default)
-    todaysProblem.steps.forEach((stepContent, index) => {
-        let stepDiv = document.createElement('div');
-        stepDiv.className = 'step';
-        stepDiv.id = 'step-' + index;
-        stepDiv.style.display = 'none'; 
-        stepDiv.innerHTML = `<span class="step-text">Step ${index + 1}:</span> ${stepContent}`;
-        solutionArea.appendChild(stepDiv);
-    });
+        // Create the Steps (Hidden by default)
+        todaysProblem.steps.forEach((stepContent, index) => {
+            let stepDiv = document.createElement('div');
+            stepDiv.className = 'step';
+            stepDiv.id = 'step-' + index;
+            stepDiv.style.display = 'none'; 
+            stepDiv.innerHTML = `<span class="step-text">Step ${index + 1}:</span> ${stepContent}`;
+            solutionArea.appendChild(stepDiv);
+        });
 
-    // Create the Bradley Insight Box (Hidden initially)
-    // Only creates it if 'bradley_insight' exists in the problem object
-   if (todaysProblem.bradley_insight) {
-        let insightDiv = document.createElement('div');
-        insightDiv.id = 'bradley-insight';
-        // This picks the color based on the type (pro-tip, caution, deeper)
-        insightDiv.className = `bradley-insight-box insight-${todaysProblem.bradley_insight.type}`;
-        insightDiv.style.display = 'none';
+        // Create the Bradley Insight Box (Hidden initially)
+        if (todaysProblem.bradley_insight) {
+            let insightDiv = document.createElement('div');
+            insightDiv.id = 'bradley-insight';
+            insightDiv.className = `bradley-insight-box insight-${todaysProblem.bradley_insight.type}`;
+            insightDiv.style.display = 'none';
 
-        // These two lines define the specific link and the text for the button
-        // If they are missing in the problem file, it defaults to your main shop
-        const shopLink = todaysProblem.payhip_link || "https://payhip.com/bradleysmaths";
-        const btnText = todaysProblem.button_text || "Master this topic: Download the Full Pack";
+            const shopLink = todaysProblem.payhip_link || "https://payhip.com/bradleysmaths";
+            const btnText = todaysProblem.button_text || "Master this topic: Download the Full Pack";
 
-        insightDiv.innerHTML = `
-            <span class="insight-title">${todaysProblem.bradley_insight.title}</span>
-            <p>${todaysProblem.bradley_insight.content}</p>
-            <div class="nudge-container">
-                <a href="${shopLink}" class="btn-buy" target="_blank">
-                    ${btnText}
-                </a>
-            </div>
-        `;
-        solutionArea.appendChild(insightDiv);
-    }
-
-        solutionArea.appendChild(insightDiv);
+            insightDiv.innerHTML = `
+                <span class="insight-title">${todaysProblem.bradley_insight.title}</span>
+                <p>${todaysProblem.bradley_insight.content}</p>
+                <div class="nudge-container">
+                    <a href="${shopLink}" class="btn-buy" target="_blank">
+                        ${btnText}
+                    </a>
+                </div>
+            `;
+            solutionArea.appendChild(insightDiv);
+        }
     }
 
     // --- 4. STEP BUTTON LOGIC ---
@@ -80,21 +80,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.showNextStep = function() {
         if (currentStep < totalSteps) {
-            // Show the next step
-            document.getElementById('step-' + currentStep).style.display = 'block';
-            currentStep++;
-
-            // If we are at the end, show the Insight Box and update the button
-            if (currentStep === totalSteps) {
-                if (document.getElementById('bradley-insight')) {
-                    document.getElementById('bradley-insight').style.display = 'block';
-                }
-                btn.textContent = "Finished";
-                btn.style.backgroundColor = "#10b981"; 
-                btn.style.cursor = "default";
-            } else {
-                btn.textContent = "Show Next Step";
-            }
-        }
-    }
-});
+            const stepToShow =
