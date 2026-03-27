@@ -695,15 +695,17 @@ h1, h2, h3 {
 
 /* Pro-Tip (Blue) */
 .insight-pro-tip {
-    background-color: #e3f2fd;
-    border-color: #1976d2;
+    background-color: #d5ffff;
+    border-color: #4169e1;
     color: #0d47a1;
 }
 
 /* Caution/Warning (Yellow) */
 .insight-caution {
     background-color: #fffde7;
-    border-color: #fbc02d;
+    border-color: #Media.io
+
+;
     color: #f57f17;
 }
 
