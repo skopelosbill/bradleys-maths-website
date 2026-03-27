@@ -80,4 +80,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.showNextStep = function() {
         if (currentStep < totalSteps) {
-            const stepToShow =
+            const stepToShow = document.getElementById('step-' + currentStep);
+            if (stepToShow) {
+                stepToShow.style.display = 'block';
+            }
+            currentStep++;
+
+            if (currentStep === totalSteps) {
+                const insightBox = document.getElementById('bradley-insight');
+                if (insightBox) {
+                    insightBox.style.display = 'block';
+                }
+                if (btn) {
+                    btn.textContent = "Finished";
+                    btn.style.backgroundColor = "#10b981"; 
+                    btn.style.cursor = "default";
+                }
+            } else {
+                if (btn) {
+                    btn.textContent = "Show Next Step";
+                }
+            }
+        }
+    };
+});
