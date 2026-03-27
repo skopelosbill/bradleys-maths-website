@@ -1469,6 +1469,110 @@ const problemBank = [
         "payhip_link": "https://payhip.com/mg5YS" 
 		"button_text": "Master Algebra: Download the Full Algebra Pack" 
     },
+// 12 Apr
+    {
+        "id": "001597",
+        "date": "12 Apr 2026",
+        "major_area": "Vectors, Probability and Statistics",
+        "topic": "Vectors",
+        "subtopic": "Parallel vectors",
+        "difficulty": "A*",
+        "q": "$\\overrightarrow{OP} = \\mathbf{a}$ and $\\overrightarrow{OQ} = \\mathbf{b}$. $R$ is a point on $PQ$ such that $PR:RQ = 1:2$.<br>Find $\\overrightarrow{OR}$ in terms of $\\mathbf{a}$ and $\\mathbf{b}$.",
+        "steps": [
+            "Find the vector $\\overrightarrow{PQ} = \\overrightarrow{OQ} - \\overrightarrow{OP} = \\mathbf{b} - \\mathbf{a}$.",
+            "Since $PR:RQ = 1:2$, the point $R$ is $\\frac{1}{3}$ of the way along $PQ$.",
+            "So, $\\overrightarrow{PR} = \\frac{1}{3}\\overrightarrow{PQ} = \\frac{1}{3}(\\mathbf{b} - \\mathbf{a})$.",
+            "Use the path $\\overrightarrow{OR} = \\overrightarrow{OP} + \\overrightarrow{PR}$.",
+            "Substitute: $\\mathbf{a} + \\frac{1}{3}\\mathbf{b} - \\frac{1}{3}\\mathbf{a}$.",
+            "Final Answer: $$\\frac{2}{3}\\mathbf{a} + \\frac{1}{3}\\mathbf{b}$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: The Section Formula",
+            "content": "This is a classic 'vector path' question. Notice how the result is a weighted average of the two position vectors. If the ratio were $1:1$ (the midpoint), the answer would simply be $\\frac{1}{2}(\\mathbf{a} + \\mathbf{b})$."
+        },
+        "payhip_link": "https://payhip.com/b/rsVCz", // Swap for your Vectors link if different
+        "button_text": "Master Vectors: Download the Full Vectors, Probability, & Stats Pack" 
+    },
+// 13 Apr
+    {
+        "id": "001598",
+        "date": "13 Apr 2026",
+        "major_area": "Algebra",
+        "topic": "Differentiation",
+        "subtopic": "Gradient from tangents",
+        "difficulty": "A",
+        "notice": "IGCSE Specialist Topic.",
+        "q": "A curve has the equation $y = kx^2 + 5x$, where $k$ is a constant.<br>The gradient of the curve at the point where $x = 2$ is $13$.<br>Find the value of $k$.",
+        "img": "",
+        "steps": [
+            "Find the gradient function by differentiating $y$ with respect to $x$: $\\dfrac{dy}{dx} = 2kx + 5$.",
+            "We are given that the gradient is $13$ when $x = 2$.",
+            "Substitute these values into the gradient function: $13 = 2k(2) + 5$.",
+            "Simplify the equation: $13 = 4k + 5$.",
+            "Subtract 5 from both sides: $8 = 4k$.",
+            "Divide by 4 to find $k$.",
+            "Final Answer: $$k = 2$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Working Backwards",
+            "content": "Examiners love to 'flip' the standard question! Instead of asking you to find the gradient, they provide it and ask you to find a missing constant. Always find the general expression for $\\frac{dy}{dx}$ first before you substitute any numbers."
+        },
+        "payhip_link": "https://payhip.com/b/mg5YS", // Your IGCSE Algebra link
+        "button_text": "Master Algebra: Download the Full Algebra Pack" 
+    },
+// 14 Apr
+    {
+        "id": "001599",
+        "date": "14 Apr 2026",
+        "major_area": "Number",
+        "topic": "Financial Maths",
+        "subtopic": "Currency conversion",
+        "difficulty": "C/D",
+        "q": "Bill changes £500 into Euros (€) when the exchange rate is £1 = €1.15.<br>While on holiday, he spends €400.<br>He then changes the remaining Euros back into Pounds (£) when the exchange rate is £1 = €1.12.<br>Calculate how much Bill receives in Pounds.",
+        "img": "",
+        "steps": [
+            "Convert the original Pounds to Euros: $500 \\times 1.15 = €575$.",
+            "Subtract the amount spent: $575 - 400 = €175$.",
+            "Convert the remaining Euros back to Pounds using the new rate.",
+            "Since we are going from the foreign currency back to the 'home' currency, we divide: $175 \\div 1.12$.",
+            "Final Answer: $$£156.25$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Divide or Multiply?",
+            "content": "A simple way to check your logic: if you are changing money back into a 'stronger' currency (like Pounds from Euros), the number should get smaller. If your answer is larger than the number of Euros you started with, you multiplied when you should have divided!"
+        },
+        "payhip_link": "https://payhip.com/b/XEV2Z", // Replace with your Number pack link
+        "button_text": "Master Number: Download the Full Number Pack" 
+    },
+// 15 Apr
+    {
+        "id": "001600",
+        "date": "15 Apr 2026",
+        "major_area": "Mensuration and Trigonometry",
+        "topic": "3D Shapes",
+        "subtopic": "Volume of Cylinder",
+        "difficulty": "B/C",
+        "q": "A cylinder has a volume of $500\\pi\\text{ cm}^3$ and a height of $20\\text{ cm}$.<br>Calculate the radius of the cylinder.",
+        "img": "",
+        "steps": [
+            "Start with the formula for the volume of a cylinder: $V = \\pi r^2 h$.",
+            "Substitute the known values into the formula: $500\\pi = \\pi \\times r^2 \\times 20$.",
+            "Divide both sides by $\\pi$ to simplify: $500 = 20r^2$.",
+            "Divide by 20 to isolate $r^2$: $r^2 = 25$.",
+            "Take the square root of both sides to find $r$.",
+            "Final Answer: $$5\\text{ cm}$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Keep the Pi!",
+            "content": "When a volume is given 'in terms of $\\pi$', do not convert it to 3.14. Leave it as the symbol $\\pi$ because it will almost always cancel out on both sides of your equation, making the calculation much simpler and more accurate."
+        },
+        "payhip_link": "https://payhip.com/b/KjXoP", // Replace with your Mensuration/Trig link
+        "button_text": "Master Mensuration: Download the Full Mensuration and Trigonometry Pack" 
+    },
 	// 16 Apr
     {
         "id": "001601",
