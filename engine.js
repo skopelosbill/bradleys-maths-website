@@ -46,21 +46,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Create the Bradley Insight Box (Hidden initially)
     // Only creates it if 'bradley_insight' exists in the problem object
-    if (todaysProblem.bradley_insight) {
+   if (todaysProblem.bradley_insight) {
         let insightDiv = document.createElement('div');
         insightDiv.id = 'bradley-insight';
         // This picks the color based on the type (pro-tip, caution, deeper)
         insightDiv.className = `bradley-insight-box insight-${todaysProblem.bradley_insight.type}`;
         insightDiv.style.display = 'none';
+
+        // These two lines define the specific link and the text for the button
+        // If they are missing in the problem file, it defaults to your main shop
+        const shopLink = todaysProblem.payhip_link || "https://payhip.com/bradleysmaths";
+        const btnText = todaysProblem.button_text || "Master this topic: Download the Full Pack";
+
         insightDiv.innerHTML = `
-        <span class="insight-title">${todaysProblem.bradley_insight.title}</span>
-        <p>${todaysProblem.bradley_insight.content}</p>
-        <div class="nudge-container">
-        <a href="${shopLink}" class="btn-buy" target="_blank">
-            Master this topic: Download the Full Pack
-        </a>
-    </div>
-`;
+            <span class="insight-title">${todaysProblem.bradley_insight.title}</span>
+            <p>${todaysProblem.bradley_insight.content}</p>
+            <div class="nudge-container">
+                <a href="${shopLink}" class="btn-buy" target="_blank">
+                    ${btnText}
+                </a>
+            </div>
+        `;
+        solutionArea.appendChild(insightDiv);
+    }
 
         solutionArea.appendChild(insightDiv);
     }
