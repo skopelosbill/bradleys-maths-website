@@ -1249,107 +1249,163 @@ const problemBank = [
 },
 
 			// 1 Apr
-{
-  "id": "001586",
-  "date": "1 Apr 2026",
-  "major_area": "Geometry & Measures",
-  "topic": "Coordinates",
-  "subtopic": "Gradients",
-  "difficulty": "C/D",
-  "notice": "Non-calculator question.",
-  "q": "Find the equation of the line passing through $(3, -4)$ and $(5, 6)$.",
-  "img": "",
-  "steps": [
-    "Find gradient $m = \\frac{6 - (-4)}{5 - 3} = \\frac{10}{2} = 5$.",
-    "Use $y - y_1 = m(x - x_1)$ with $(5, 6)$.",
-    "$y - 6 = 5(x - 5)$.",
-    "Expand and simplify: $y = 5x - 25 + 6$.",
-    "Final answer: $$y = 5x - 19$$"
-  ]
-},
+// 1 Apr
+    {
+        "id": "001586",
+        "date": "1 Apr 2026",
+        "major_area": "Coordinate Geometry and Geometry",
+        "topic": "Coordinates",
+        "subtopic": "Gradients",
+        "difficulty": "C/D",
+        "notice": "Non-calculator question.",
+        "q": "Find the equation of the straight line passing through the points $(3, -4)$ and $(5, 6)$.",
+        "img": "",
+        "steps": [
+            "Calculate the gradient ($m$) using $\\dfrac{y_2 - y_1}{x_2 - x_1}$.",
+            "$m = \\dfrac{6 - (-4)}{5 - 3} = \\dfrac{10}{2} = 5$.",
+            "Use the formula $y - y_1 = m(x - x_1)$ with the point $(5, 6)$.",
+            "$y - 6 = 5(x - 5)$.",
+            "Expand the brackets: $y - 6 = 5x - 25$.",
+            "Add 6 to both sides to get the final form.",
+            "Final Answer: $$y = 5x - 19$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Choose the 'Easy' Point",
+            "content": "When substituting a point back into the formula to find the equation, you can use either point. I always recommend choosing the one with the fewest negative signs (in this case, $(5,6)$) to reduce the chance of a simple arithmetic error!"
+        },
+        "payhip_link": "https://payhip.com/b/L6skh", // Geometry & Coordinate Geometry pack
+        "button_text": "Master Coordinates: Download the Coordinate Geometry and Geometry Pack" 
+    },
 
 			// 2 Apr
-{
-  "id": "001587",
-  "date": "2 Apr 2026",
-  "major_area": "Number",
-  "topic": "Factors, Multiples & Primes",
-  "subtopic": "LCM",
-  "difficulty": "C/D",
-  "notice": "Contextual LCM problem.",
-  "q": "Buses leave a station at 8:00 AM. Route A leaves every 20 mins, Route B every 30 mins, and Route C every 45 mins. When do they next leave together?",
-  "img": "",
-  "steps": [
-    "Find prime factors: $20 = 2^2 \\times 5$, $30 = 2 \\times 3 \\times 5$, $45 = 3^2 \\times 5$.",
-    "LCM $= 2^2 \\times 3^2 \\times 5 = 4 \\times 9 \\times 5 = 180$.",
-    "$180$ minutes $= 3$ hours.",
-    "Add 3 hours to 8:00 AM.",
-    "Final answer: $$11:00\\text{ AM}$$"
-  ]
-},
+// 2 Apr
+    {
+        "id": "001587",
+        "date": "2 Apr 2026",
+        "major_area": "Number",
+        "topic": "Factors, Multiples & Primes",
+        "subtopic": "LCM",
+        "difficulty": "C/D",
+        "notice": "Contextual LCM problem.",
+        "q": "Buses on three routes, A, B and C leave the bus station at 8am.<br>Route A buses leave every 20 minutes.<br>Route B buses leave every 30 minutes.<br>Route C buses leave every 45 minutes.<br><br>What time will it be when all three next leave the bus station together?",
+        "img": "",
+        "steps": [
+            "Find the prime factors of each interval:",
+            "$20 = 2^2 \\times 5$",
+            "$30 = 2 \\times 3 \\times 5$",
+            "$45 = 3^2 \\times 5$",
+            "The LCM uses the highest power of every prime factor present: $2^2 \\times 3^2 \\times 5$.",
+            "Calculate the LCM: $4 \\times 9 \\times 5 = 180$ minutes.",
+            "Convert minutes to hours: $180 \\div 60 = 3$ hours.",
+            "Add 3 hours to the start time of 8:00 AM.",
+            "Final Answer: $$11:00\\text{ AM}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Identifying LCM",
+            "content": "In 'real-world' problems, whenever you see questions about things happening 'at the same time again' or 'meeting at the start,' you are looking for the Lowest Common Multiple (LCM). Prime factorisation is the most reliable way to find it without missing any factors!"
+        },
+        "payhip_link": "https://payhip.com/b/XEV2Z", // Your Number Pack Link
+        "button_text": "Master Number: Download the Full Number Pack"
+    },
 
 			// 3 Apr
-{
-  "id": "001588",
-  "date": "3 Apr 2026",
-  "major_area": "Algebra",
-  "topic": "Factorising",
-  "subtopic": "Quadratic factorising",
-  "difficulty": "B/A",
-  "notice": "Negative coefficient of $x^2$.",
-  "q": "Factorise fully: $-2x^2 + 5x - 3$.",
-  "img": "",
-  "steps": [
-    "Factor out $-1$: $-(2x^2 - 5x + 3)$.",
-    "Find factors of $2 \\times 3 = 6$ that sum to $-5$. These are $-2$ and $-3$.",
-    "Split the middle term: $2x^2 - 2x - 3x + 3$.",
-    "Factorise in pairs: $2x(x - 1) - 3(x - 1)$.",
-    "Result: $-(2x - 3)(x - 1)$.",
-    "Final answer: $$(3 - 2x)(x - 1)$$"
-  ]
-},
+// 3 Apr
+    {
+        "id": "001588",
+        "date": "3 Apr 2026",
+        "major_area": "Algebra",
+        "topic": "Factorising",
+        "subtopic": "Quadratic factorising",
+        "difficulty": "B/A",
+        "notice": "This is a non-calculator question.",
+        "q": "Factorise the quadratic expression: $$-2x^2 + 5x - 3$$",
+        "img": "",
+        "steps": [
+            "Multiply the coefficient of $x^2$ by the constant: $-2 \\times -3 = 6$.",
+            "Find factors of 6 that sum to 5: these are 2 and 3.",
+            "Split the middle term: $-2x^2 + 2x + 3x - 3$.",
+            "Factorise in pairs: $-2x(x - 1) + 3(x - 1)$.",
+            "Combine the factors: $(3 - 2x)(x - 1)$.",
+            "\\textbf{Note:} there are two more equivalent alternative answers: $(2x - 3)(1 - x)$ and $-(2x - 3)(x - 1)$.",
+            "Final Answer: $$(3 - 2x)(x - 1)$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: The Negative $x^2$ Trap",
+            "content": "Expressions with a negative $x^2$ term are a frequent 'Grade A' differentiator. If you find them tricky, you can factor out $-1$ from the entire expression first to make the quadratic term positive. Just remember to put the negative sign back in front of your final brackets!"
+        },
+        "payhip_link": "https://payhip.com/b/mg5YS", // Algebra Pack
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    },
 
 			// 4 Apr
-{
-  "id": "001589",
-  "date": "4 Apr 2026",
-  "major_area": "Algebra",
-  "topic": "Algebraic Fractions",
-  "subtopic": "Simplifying",
-  "difficulty": "A/A*",
-  "notice": "Multi-step simplification.",
-  "q": "Simplify: $$\\frac{x^2 - x - 12}{x^2 - 2x - 15} \\div \\frac{x^2 - 6x + 8}{x^2 - 3x - 10}$$",
-  "img": "",
-  "steps": [
-    "Factorise all four quadratics.",
-    "Num 1: $(x-4)(x+3)$. Den 1: $(x-5)(x+3)$.",
-    "Num 2: $(x-4)(x-2)$. Den 2: $(x-5)(x+2)$.",
-    "Invert second fraction and multiply: $\\frac{(x-4)(x+3)}{(x-5)(x+3)} \\times \\frac{(x-5)(x+2)}{(x-4)(x-2)}$.",
-    "Cancel $(x-4)$, $(x+3)$, and $(x-5)$.",
-    "Final answer: $$\\frac{x + 2}{x - 2}$$"
-  ]
-},
+// 4 Apr
+    {
+        "id": "001589",
+        "date": "4 Apr 2026",
+        "major_area": "Algebra",
+        "topic": "Algebraic Fractions",
+        "subtopic": "Division of Algebraic Fractions",
+        "difficulty": "A/A*",
+        "notice": "This is a non-calculator question.",
+        "q": "Simplify: $$\\dfrac{x^2-x-12}{x^2-2x-15}\\div\\dfrac{x^2-6x+8}{x^2-3x-10}$$",
+        "img": "",
+        "steps": [
+            "Factorise each of the four quadratic expressions:",
+            "$x^2-x-12 \\equiv (x+3)(x-4)$",
+            "$x^2-2x-15 \\equiv (x+3)(x-5)$",
+            "$x^2-6x+8 \\equiv (x-4)(x-2)$",
+            "$x^2-3x-10 \\equiv (x-5)(x+2)$",
+            "Rewrite the original expression using these factorisations: $$\\dfrac{(x+3)(x-4)}{(x+3)(x-5)}\\div\\dfrac{(x-4)(x-2)}{(x-5)(x+2)}$$",
+            "Change the sign to multiply and invert the second fraction: $$\\dfrac{(x+3)(x-4)}{(x+3)(x-5)}\\times\\dfrac{(x-5)(x+2)}{(x-4)(x-2)}$$",
+            "Cancel common factors wherever possible: $$\\dfrac{\\cancel{(x+3)}\\cancel{(x-4)}}{\\cancel{(x+3)}\\cancel{(x-5)}}\\times\\dfrac{\\cancel{(x-5)}(x+2)}{\\cancel{(x-4)}(x-2)}$$",
+            "Final Answer: $$\\dfrac{x+2}{x-2}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: The Factor-First Rule",
+            "content": "A fatal error in these questions is trying to cancel individual terms like $x^2$ or $12$ before factorising. Remember: you can only cancel **factors** (the whole bracket), never individual terms within an expression. Always factorise everything first!"
+        },
+        "payhip_link": "https://payhip.com/b/mg5YS", // Algebra Pack
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    },
 
 			// 5 Apr
-{
-  "id": "001590",
-  "date": "5 Apr 2026",
-  "major_area": "Statistics",
-  "topic": "Frequency Tables",
-  "subtopic": "Grouped data",
-  "difficulty": "B/A",
-  "notice": "Estimate of the Mean.",
-  "q": "A grouped frequency table shows times for 40 students to finish a puzzle.<br>0-5 mins (6 students), 5-10 mins (12), 10-15 mins (14), 15-20 mins (8).<br>Estimate the mean time.",
-  "img": "",
-  "steps": [
-    "Find midpoints: $2.5, 7.5, 12.5, 17.5$.",
-    "Multiply by frequencies: $15, 90, 175, 140$.",
-    "Sum of $fx = 420$.",
-    "Divide by total frequency: $420 \\div 40$.",
-    "Final answer: $$10.5\\text{ minutes}$$"
-  ]
-},
+// 5 Apr
+    {
+        "id": "001590",
+        "date": "5 Apr 2026",
+        "major_area": "Statistics",
+        "topic": "Frequency Tables",
+        "subtopic": "Grouped Data – Estimate of the Mean",
+        "difficulty": "B/A",
+        "notice": "This is a non-calculator question.",
+        "q": "The table shows the times, in minutes, taken by 40 students to complete a puzzle.<br><br><table><tr><th>Time (minutes)</th><th>Frequency</th></tr><tr><td>0 < t ≤ 5</td><td>6</td></tr><tr><td>5 < t ≤ 10</td><td>12</td></tr><tr><td>10 < t ≤ 15</td><td>14</td></tr><tr><td>15 < t ≤ 20</td><td>8</td></tr></table><br>Estimate the mean time taken.",
+        "img": "",
+        "steps": [
+            "Find the midpoint ($x$) of each class interval: $2.5,\\ 7.5,\\ 12.5,\\ 17.5$.",
+            "Multiply each midpoint by its frequency ($f \\times x$):",
+            "$2.5 \\times 6 = 15$",
+            "$7.5 \\times 12 = 90$",
+            "$12.5 \\times 14 = 175$",
+            "$17.5 \\times 8 = 140$",
+            "Calculate the total of the $fx$ values: $15 + 90 + 175 + 140 = 420$.",
+            "Identify the total frequency ($n$): $6 + 12 + 14 + 8 = 40$.",
+            "Estimate the mean using $\\dfrac{\\sum fx}{\\sum f} = \\dfrac{420}{40} = 10.5$.",
+            "Final Answer: $$\\text{Estimated mean} = 10.5\\text{ minutes}$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Why is it an 'Estimate'?",
+            "content": "Students are often confused why we call this an 'estimate' when the math seems exact. It is because we don't know the actual times for each student—only the interval they fall into. We assume everyone scores exactly at the **midpoint**. Forgetting to use the midpoint is the most common way to lose all marks on this question!"
+        },
+        "payhip_link": "https://payhip.com/b/rsVCz", // Vectors, Probability & Stats pack
+        "button_text": "Master Statistics: Download the Full Vectors, Probability, & Stats Pack"
+    },
 // 6 Apr
+    // 6 Apr
     {
         "id": "001591",
         "date": "6 Apr 2026",
@@ -1358,35 +1414,53 @@ const problemBank = [
         "subtopic": "Stationary points",
         "difficulty": "A*",
         "notice": "IGCSE Specialist Topic.",
-        "q": "A curve has the equation $y = x^3 - 3x^2 - 9x + 5$.<br>(a) Find $\\frac{dy}{dx}$.<br>(b) Find the coordinates of the two stationary points.",
+        "q": "A curve has the equation $y = x^3 - 3x^2 - 9x + 5$.<br>(a) Find $\\dfrac{dy}{dx}$.<br>(b) Find the coordinates of the two stationary points.",
         "img": "",
         "steps": [
-            "(a) Differentiate: $\\frac{dy}{dx} = 3x^2 - 6x - 9$.",
-            "(b) Set $\\frac{dy}{dx} = 0$: $3x^2 - 6x - 9 = 0$.",
-            "(b) Divide by 3 and factorise: $x^2 - 2x - 3 = 0 \\implies (x-3)(x+1) = 0$.",
-            "(b) $x$-coordinates are $3$ and $-1$.",
-            "(b) Substitute $x=3$ into original: $y = (3)^3 - 3(3)^2 - 9(3) + 5 = -22$.",
-            "(b) Substitute $x=-1$ into original: $y = (-1)^3 - 3(-1)^2 - 9(-1) + 5 = 10$.",
+            "(a) Differentiate the expression with respect to $x$: $$\\dfrac{dy}{dx} = 3x^2 - 6x - 9$$",
+            "(b) Stationary points occur when the gradient is zero. Set $\\dfrac{dy}{dx} = 0$: $$3x^2 - 6x - 9 = 0$$",
+            "Divide the equation by 3 to simplify: $x^2 - 2x - 3 = 0$.",
+            "Factorise the quadratic: $(x - 3)(x + 1) = 0$.",
+            "Identify the $x$-coordinates: $x = 3$ and $x = -1$.",
+            "Substitute $x = 3$ into the original equation: $y = (3)^3 - 3(3)^2 - 9(3) + 5 = -22$.",
+            "Substitute $x = -1$ into the original equation: $y = (-1)^3 - 3(-1)^2 - 9(-1) + 5 = 10$.",
             "Final Answer: $$(3, -22)\\text{ and } (-1, 10)$$"
-        ]
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Horizontal Tangents",
+            "content": "A 'stationary point' is simply a point where the tangent to the curve is perfectly horizontal. That is why we set the gradient function to zero. Remember, the question asks for \\textbf{coordinates}, so you haven't finished until you've plugged your $x$ values back into the \\textbf{original} equation to find $y$!"
+        },
+        "payhip_link": "https://payhip.com/b/mg5YS", // Algebra Pack
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
     },
+    // 7 Apr
     // 7 Apr
     {
         "id": "001592",
         "date": "7 Apr 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Coordinate Geometry & Geometry",
         "topic": "Circle Theorems",
         "subtopic": "Tangents",
         "difficulty": "B/A",
         "notice": "Alternate Segment Theorem.",
-        "q": "In the diagram, $AT$ is a tangent to the circle at $A$. $ABC$ is a triangle inside the circle.<br>Given $\\angle BAT = 62^\\circ$ and $\\angle ABC = 54^\\circ$, calculate $\\angle BAC$.",
-        "img": "",
+        "q": "In the diagram, $AT$ is a tangent to the circle at point $A$. $B$ and $C$ are points on the circumference.<br>Given that $\\angle BAT = 62^\\circ$ and $\\angle ABC = 54^\\circ$, calculate the size of $\\angle BAC$.",
+        "img": "images/apr_07_i.png",
         "steps": [
-            "By the Alternate Segment Theorem, $\\angle BCA = \\angle BAT = 62^\\circ$.",
-            "The sum of angles in triangle $ABC$ is $180^\\circ$.",
+            "By the \\textbf{Alternate Segment Theorem}, the angle between the tangent ($AT$) and the chord ($AC$) is equal to the angle in the alternate segment ($\\angle ABC$).",
+            "However, here $\\angle BAT$ is given as $62^\\circ$. By the theorem, $\\angle BCA = \\angle BAT = 62^\\circ$.",
+            "Now consider $\\triangle ABC$. The sum of angles in a triangle is $180^\\circ$.",
             "Calculate: $\\angle BAC = 180^\\circ - (54^\\circ + 62^\\circ)$.",
+            "Simplify: $\\angle BAC = 180^\\circ - 116^\\circ$.",
             "Final Answer: $$64^\\circ$$"
-        ]
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Spotting the Theorem",
+            "content": "The Alternate Segment Theorem is often the 'grade-decider' in IGCSE Geometry. Look for a triangle 'balanced' on a tangent line. The angle outside the triangle at the point of contact is always equal to the interior angle at the opposite vertex. Always state the name of the theorem to secure your reason marks!"
+        },
+        "payhip_link": "https://payhip.com/b/L6skH", // Your Geometry Pack Link
+        "button_text": "Master Geometry: Download the Full Coordinate Geometry & Geometry Pack"
     },
     // 8 Apr
     {
