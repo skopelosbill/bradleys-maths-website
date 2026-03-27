@@ -1700,7 +1700,7 @@ const problemBank = [
             "type": "deeper",
             "title": "The Head Teacher's Eye: Calculus in Context",
             "content": "In optimization problems like this, always remember to check if your answer makes physical sense. We ignore $x = -4$ because you cannot have a negative dimension for a box!"
-        }
+        },
 		 "payhip_link": "https://payhip.com/b/mg5ys", // Replace with your Mensuration/Trig link
         "button_text": "Master Algebra: Download the Full Algebra Pack"
     },
