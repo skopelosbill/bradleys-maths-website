@@ -1201,100 +1201,124 @@ const problemBank = [
             "Final Answer: $$\\text{QED}$$"
         ]
     },
-// 1 Apr
-    {
-        "id": "002068",
-        "date": "1 Apr 2026",
-        "major_area": "Algebra",
-        "topic": "Factorising",
-        "subtopic": "Quadratic factorising",
-        "difficulty": "8/9",
-        "notice": "Negative coefficient of $x^2$.",
-        "q": "Factorise fully: $19x - 6x^2 - 15$.",
-        "img": "",
-        "steps": [
-            "Rearrange to standard form: $-6x^2 + 19x - 15$.",
-            "Factor out $-1$: $-(6x^2 - 19x + 15)$.",
-            "Find factors of $6 \\times 15 = 90$ that sum to $-19$: $-9$ and $-10$.",
-            "Split the middle term: $6x^2 - 9x - 10x + 15$.",
-            "Factorise in pairs: $3x(2x - 3) - 5(2x - 3) = (3x - 5)(2x - 3)$.",
-            "Final Answer: $$(5 - 3x)(2x - 3)$$"
-        ]
+{
+    "id": "2068",
+    "date": "1 Apr 2026",
+    "major_area": "Algebra",
+    "topic": "Factorising",
+    "subtopic": "Quadratic factorising",
+    "difficulty": "8/9",
+    "q": "(a) Factorise fully: $6x^2 - 19x + 15$.<br>(b) Hence, factorise: $19x - 6x^2 - 15$.",
+    "steps": [
+        "(a) Find factors of $6 \\times 15 = 90$ that sum to $-19$: $-9$ and $-10$.",
+        "Split and factorise: $6x^2 - 9x - 10x + 15 = 3x(2x - 3) - 5(2x - 3)$.",
+        "Part (a) Answer: $(3x - 5)(2x - 3)$.",
+        "(b) Recognise that $19x - 6x^2 - 15$ is $-1(6x^2 - 19x + 15)$.",
+        "Multiply one bracket by $-1$: $(5 - 3x)(2x - 3)$.",
+        "Final Answer: $$(5 - 3x)(2x - 3)$$"
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: The Negative $x^2$",
+        "content": "When a quadratic starts with a negative $x^2$, always factorise the 'positive' version first, then adjust the signs. It prevents the common error of misplacing the negative inside the brackets."
     },
-    // 2 Apr
-    {
-        "id": "002069",
-        "date": "2 Apr 2026",
-        "major_area": "Geometry & Measures",
-        "topic": "Coordinates",
-        "subtopic": "Gradients",
-        "difficulty": "6/7",
-        "notice": "Collinearity Proof.",
-        "q": "Points $A(-7, -23)$, $B(-1, -5)$ and $C(4, 10)$ lie on the coordinate plane.<br>Prove that the three points are collinear.",
-        "img": "",
-        "steps": [
-            "Calculate gradient $AB$: $\\frac{-5 - (-23)}{-1 - (-7)} = \\frac{18}{6} = 3$.",
-            "Calculate gradient $BC$: $\\frac{10 - (-5)}{4 - (-1)} = \\frac{15}{5} = 3$.",
-            "Since the gradients $m_{AB}$ and $m_{BC}$ are equal, the segments are parallel.",
-            "Since they share a common point ($B$), they must form a single straight line.",
-            "Final Answer: $$\\text{Parallel with a common point, therefore collinear.}$$"
-        ]
+    "payhip_link": "https://payhip.com/b/wRN86",
+    "button_text": "Master Algebra: Download the Full Algebra Pack"
+},
+	{
+    "id": "2069",
+    "date": "2 Apr 2026",
+    "major_area": "Geometry & Measures",
+    "topic": "Coordinates",
+    "subtopic": "Gradients",
+    "difficulty": "6/7",
+    "img": "",
+    "q": "Points $A(-7, -23)$, $B(-1, -5)$ and $C(4, 10)$ are shown on the coordinate plane.<br>(a) Show that the gradient of the line segment $AB$ is 3.<br>(b) Prove that $A, B$ and $C$ are collinear.",
+    "steps": [
+        "(a) Gradient $AB = \\frac{-5 - (-23)}{-1 - (-7)} = \\frac{18}{6} = 3$.",
+        "(b) Calculate gradient $BC = \\frac{10 - (-5)}{4 - (-1)} = \\frac{15}{5} = 3$.",
+        "State: Since $m_{AB} = m_{BC}$, the line segments are parallel.",
+        "State: Since they both pass through point $B$, they must lie on the same straight line.",
+        "Final Answer: $$\\text{Gradients equal and share common point } B$$"
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Collinearity Proof",
+        "content": "To prove collinearity, simply showing the gradients are equal is only half the job. You **must** explicitly state that they share a common point to earn the final communication mark."
     },
-    // 3 Apr
-    {
-        "id": "002070",
-        "date": "3 Apr 2026",
-        "major_area": "Ratio, Proportion & Rates of Change",
-        "topic": "Compound Measures",
-        "subtopic": "Speed",
-        "difficulty": "4/5",
-        "q": "Jack drives $145\\text{ km}$ at an average speed of $60\\text{ km/h}$.<br>Calculate the time taken for the journey, giving your answer in hours and minutes.",
-        "img": "",
-        "steps": [
-            "Use the formula: $\\text{Time} = \\frac{\\text{Distance}}{\\text{Speed}}$.",
-            "Substitute: $\\frac{145}{60}$ hours.",
-            "Convert to a mixed number: $2$ hours and $\\frac{25}{60}$ of an hour.",
-            "Convert the fractional part to minutes: $\\frac{25}{60} \\times 60 = 25\\text{ minutes}$.",
-            "Final Answer: $$2\\text{ hours } 25\\text{ minutes}$$"
-        ]
+    "payhip_link": "https://payhip.com/b/XAGch",
+    "button_text": "Master Geometry: Download the Full Geometry Pack"
+},
+	{
+    "id": "002070",
+    "date": "3 Apr 2026",
+    "major_area": "Ratio, Proportion & Rates of Change",
+    "topic": "Compound Measures",
+    "subtopic": "Speed",
+    "difficulty": "4/5",
+    "q": "Jack drives $145\\text{ km}$ at an average speed of $60\\text{ km/h}$.<br>(a) Calculate the time taken in hours, as a decimal.<br>(b) Convert this time into hours and minutes.",
+    "steps": [
+        "(a) $\\text{Time} = \\frac{145}{60} = 2.4166... \\text{ hours}$.",
+        "(b) The whole number is 2 hours.",
+        "Convert $0.4166...$ to minutes: $0.4166... \\times 60 = 25\\text{ minutes}$.",
+        "Final Answer: $$2\\text{ hours } 25\\text{ minutes}$$"
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: The Decimal Trap",
+        "content": "A common 'lazy' mistake is to say $2.41$ hours is 2 hours and 41 minutes. Time is base-60, not base-10! Always multiply the decimal remainder by 60 or, on a calculator paper, use your time key."
     },
-    // 4 Apr
-    {
-        "id": "002071",
-        "date": "4 Apr 2026",
-        "major_area": "Geometry & Measures",
-        "topic": "3D Shapes",
-        "subtopic": "Volume",
-        "difficulty": "8/9",
-        "q": "A cone and a hemisphere have the same base radius $r$ and the same volume.<br>Find the height of the cone in terms of $r$.",
-        "img": "",
-        "steps": [
-            "Volume of hemisphere: $\\frac{2}{3}\\pi r^3$.",
-            "Volume of cone: $\\frac{1}{3}\\pi r^2 h$.",
-            "Equate the two volumes: $\\frac{1}{3}\\pi r^2 h = \\frac{2}{3}\\pi r^3$.",
-            "Divide both sides by $\\frac{1}{3}\\pi r^2$.",
-            "Final Answer: $$h = 2r$$"
-        ]
+    "payhip_link": "https://payhip.com/b/IVWzJ",
+    "button_text": "Master Number & Ratio: Download the Full Number Pack"
+},
+	{
+    "id": "2071",
+    "date": "4 Apr 2026",
+    "major_area": "Geometry & Measures",
+    "topic": "3D Shapes",
+    "subtopic": "Volume",
+    "difficulty": "8/9",
+    "img": "images/04_may_i.png",
+    "q": "A cone and a hemisphere have the same base radius $r$.<br>The volume of the cone is equal to the volume of the hemisphere.<br>Show that the height of the cone, $h$, is equal to $2r$.",
+    "steps": [
+        "Recall $V_{\\text{hemisphere}} = \\frac{2}{3}\\pi r^3$.",
+        "Recall $V_{\\text{cone}} = \\frac{1}{3}\\pi r^2 h$.",
+        "Equate: $\\frac{1}{3}\\pi r^2 h = \\frac{2}{3}\\pi r^3$.",
+        "Cancel $\\pi$ and multiply by 3: $r^2 h = 2r^3$.",
+        "Divide by $r^2$: $h = 2r$.",
+        "Final Answer: $$h = 2r$$"
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Formula Accuracy",
+        "content": "In the exam, the formula for a sphere is given, but you must remember to halve it for the hemisphere. Forgetting the $\\frac{2}{3}$ multiplier is the most frequent error here."
     },
- // 5 Apr
-    {
-        "id": "002072",
-        "date": "5 Apr 2026",
-        "major_area": "Ratio, Proportion & Rates of Change",
-        "topic": "Direct & Inverse Proportion",
-        "subtopic": "Proportion equations",
-        "difficulty": "6/7",
-        "q": "$y$ is inversely proportional to the square of $x$.<br>When $x = 3, y = 8$.<br>Find the value of $y$ when $x = 2$.",
-        "img": "",
-        "steps": [
-            "Set up the equation: $y = \\frac{k}{x^2}$.",
-            "Substitute known values: $8 = \\frac{k}{3^2} \\implies 8 = \\frac{k}{9}$.",
-            "Find the constant $k$: $k = 8 \\times 9 = 72$.",
-            "Use the equation $y = \\frac{72}{x^2}$ with $x = 2$.",
-            "Calculate: $y = \\frac{72}{4} = 18$.",
-            "Final Answer: $$y = 18$$"
-        ]
+    "payhip_link": "https://payhip.com/b/XAGch",
+    "button_text": "Master Geometry: Download the Full Geometry Pack"
+},
+	{
+    "id": "2072",
+    "date": "5 Apr 2026",
+    "major_area": "Ratio, Proportion & Rates of Change",
+    "topic": "Direct & Inverse Proportion",
+    "subtopic": "Proportion equations",
+    "difficulty": "6/7",
+    "img": "",
+    "q": "$y$ is inversely proportional to $x^2$. When $x = 3, y = 8$.<br>(a) Find an equation for $y$ in terms of $x$.<br>(b) Calculate the value of $y$ when $x = 2$.<br>(c) Calculate the value of $x$ when $y = 2$.",
+    "steps": [
+        "(a) $y = \\frac{k}{x^2} \\implies 8 = \\frac{k}{3^2} \\implies k = 72$. Equation: $y = \\frac{72}{x^2}$.",
+        "(b) When $x = 2$: $y = \\frac{72}{2^2} = \\frac{72}{4} = 18$.",
+        "(c) When $y = 2$: $2 = \\frac{72}{x^2} \\implies 2x^2 = 72 \\implies x^2 = 36$.",
+        "Final Answer: $$(a)\\ y = \\frac{72}{x^2},\\ (b)\\ 18,\\ (c)\\ 6$$"
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Square vs Square Root",
+        "content": "Read the wording twice. Don't make the mistake of confusing 'the square of $x$' ($x^2$) and 'the square root of $x$' ($\\sqrt{x}$). They are not the same thing! Using the wrong power loses all subsequent marks."
     },
+    "payhip_link": "https://payhip.com/b/IVWzJ",
+    "button_text": "Master Number & Ratio: Download the Full Number Pack"
+},
     // 6 Apr
     {
         "id": "002073",
