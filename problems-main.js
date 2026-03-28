@@ -1319,7 +1319,7 @@ const problemBank = [
     "payhip_link": "https://payhip.com/b/IVWzJ",
     "button_text": "Master Number & Ratio: Download the Full Number Pack"
 },
-    // 6 Apr
+	// 6 Apr
     {
         "id": "002073",
         "date": "6 Apr 2026",
@@ -1327,15 +1327,21 @@ const problemBank = [
         "topic": "Quadratic Equations",
         "subtopic": "Quadratic formula",
         "difficulty": "6/7",
-        "q": "Solve $2x^2 + 7x - 4 = 0$ using the quadratic formula.<br>Give your answers to 2 decimal places.",
-        "img": "",
+        "q": "Consider the quadratic equation $2x^2 + 7x - 4 = 0$.<br>(a) Calculate the value of the discriminant ($b^2 - 4ac$).<br>(b) Use the quadratic formula to find the two solutions for $x$.",
         "steps": [
-            "Identify $a=2, b=7, c=-4$.",
-            "Formula: $x = \\frac{-7 \\pm \\sqrt{7^2 - 4(2)(-4)}}{2(2)}$.",
-            "Simplify the discriminant: $\\sqrt{49 - (-32)} = \\sqrt{81} = 9$.",
-            "Calculate solutions: $x = \\frac{-7 + 9}{4}$ or $x = \\frac{-7 - 9}{4}$.",
-            "Final Answer: $$x = 0.5\\text{ and } x = -4$$"
-        ]
+            "(a) Identify $a=2, b=7, c=-4$.",
+            "Discriminant: $7^2 - 4(2)(-4) = 49 + 32 = 81$.",
+            "(b) Substitute into formula: $x = \\frac{-7 \\pm \\sqrt{81}}{2(2)}$.",
+            "Calculate: $x = \\frac{-7 + 9}{4} = 0.5$ and $x = \\frac{-7 - 9}{4} = -4$.",
+            "Final Answer: $$x = 0.5, x = -4$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: The value of the discriminant",
+            "content": "($b^2 - 4ac$) is known as the discriminant.  If the discriminant is positive the quadratic equation has two real roots because its graph crosses the $x$-axis.  If it is zero the quadratic has 'repeated roots', it's graph is tangent to the $x$-axis and so there is only one solution. If it is negative the quadratic has no real roots because its graph does not cross the $x$-axis."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
     },
     // 7 Apr
     {
@@ -1345,14 +1351,20 @@ const problemBank = [
         "topic": "Similarity & Congruence",
         "subtopic": "Scale factors",
         "difficulty": "8/9",
-        "q": "Two similar cylinders have surface areas of $40\\pi\\text{ cm}^2$ and $90\\pi\\text{ cm}^2$.<br>The smaller cylinder has a height of $6\\text{ cm}$. Calculate the height of the larger cylinder.",
-        "img": "",
+        "q": "Two similar cylinders have surface areas of $40\\pi\\text{ cm}^2$ and $90\\pi\\text{ cm}^2$.<br>(a) Find the linear scale factor between the smaller and larger cylinder.<br>(b) The smaller cylinder has a height of $6\\text{ cm}$. Calculate the height of the larger cylinder.",
         "steps": [
-            "Find the Area Scale Factor ($k^2$): $\\frac{90\\pi}{40\\pi} = 2.25$.",
-            "Find the Linear Scale Factor ($k$): $\\sqrt{2.25} = 1.5$.",
-            "Multiply the smaller height by $k$: $6 \\times 1.5$.",
+            "(a) Area Scale Factor ($k^2$) = $\\frac{90\\pi}{40\\pi} = 2.25$.",
+            "Linear Scale Factor ($k$) = $\\sqrt{2.25} = 1.5$.",
+            "(b) Multiply height: $6 \\times 1.5 = 9$.",
             "Final Answer: $$9\\text{ cm}$$"
-        ]
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Bridging the Gap",
+            "content": "You cannot use an Area Scale Factor to find a length directly. You must always 'bridge' the calculation by finding the linear scale factor ($k$) first. This is a classic Grade 8/9 stumbling block."
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master Geometry: Download the Full Geometry Pack"
     },
     // 8 Apr
     {
@@ -1362,35 +1374,45 @@ const problemBank = [
         "topic": "Factors, Multiples & Primes",
         "subtopic": "Prime factorisation",
         "difficulty": "4/5",
-        "notice": "HCF and LCM.",
-        "q": "Write $108$ as a product of its prime factors in index form.",
-        "img": "",
+        "q": "(a) Use a factor tree to express 108 as a product of its prime factors.<br>(b) Write your final answer in index form.",
         "steps": [
-            "Divide by 2: $108 = 2 \\times 54$.",
-            "Divide by 2: $54 = 2 \\times 27$.",
-            "Divide by 3: $27 = 3 \\times 9$.",
-            "Divide by 3: $9 = 3 \\times 3$.",
+            "(a) Factor tree branches: $108 = 2 \\times 54$; $54 = 2 \\times 27$; $27 = 3 \\times 9$; $9 = 3 \\times 3$.",
+            "List primes: $2, 2, 3, 3, 3$.",
+            "(b) Collect into index form: $2^2 \\times 3^3$.",
             "Final Answer: $$2^2 \\times 3^3$$"
-        ]
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Systemic Division",
+            "content": "Always start with the smallest prime (2). Keep dividing by 2 until you can't anymore, then move to 3, then 5. This 'ladder' approach ensures you never miss a factor."
+        },
+        "payhip_link": "https://payhip.com/b/IVWzJ",
+        "button_text": "Master Number: Download the Full Number Pack"
     },
     // 9 Apr
     {
         "id": "002076",
         "date": "9 Apr 2026",
         "major_area": "Geometry & Measures",
-        "topic": "Angles",
-        "subtopic": "Polygons",
+        "topic": "Polygons",
+        "subtopic": "Interior angles",
         "difficulty": "6/7",
-        "q": "Find the size of an interior angle of a regular decagon (10-sided polygon).",
-        "img": "",
+        "q": "A regular polygon has 10 sides (a decagon).<br>(a) Calculate the size of each exterior angle.<br>(b) Hence, find the size of each interior angle.",
         "steps": [
-            "Method 1: Sum of exterior angles is $360^\\circ$.",
-            "One exterior angle $= 360 \\div 10 = 36^\\circ$.",
-            "Interior angle $= 180 - 36$.",
+            "(a) Exterior angles of any polygon sum to $360^\\circ$.",
+            "One exterior angle = $360 \\div 10 = 36^\\circ$.",
+            "(b) Interior and exterior angles lie on a straight line: $180 - 36 = 144$.",
             "Final Answer: $$144^\\circ$$"
-        ]
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: The Exterior Shortcut",
+            "content": "While you can use $(n-2) \\times 180 \\div n$, the exterior angle method ($360 \\div n$) is much faster and less prone to calculation errors. Use it whenever possible!"
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master Geometry: Download the Full Geometry Pack"
     },
- // 10 Apr
+    // 10 Apr
     {
         "id": "002077",
         "date": "10 Apr 2026",
@@ -1398,21 +1420,23 @@ const problemBank = [
         "topic": "Graphs",
         "subtopic": "Linear graphs",
         "difficulty": "4/5",
-        "q": "Find the equation of the line that is parallel to $y = 3x - 5$ and passes through the point $(2, 10)$.",
+        "q": "Line $L_1$ has the equation $y = 3x - 5$.<br>(a) State the gradient of a line parallel to $L_1$.<br>(b) Find the equation of the line $L_2$ which is parallel to $L_1$ and passes through $(2, 10)$.",
         "steps": [
-            "Parallel lines have the same gradient, so $m = 3$.",
-            "Use the formula $y - y_1 = m(x - x_1)$.",
-            "Substitute values: $y - 10 = 3(x - 2)$.",
-            "Expand: $y - 10 = 3x - 6$.",
-            "Add 10 to both sides.",
+            "(a) Parallel lines have the same gradient, so $m = 3$.",
+            "(b) Use $y-y_1 = m(x-x_1)$ with $(2, 10)$: $y-10=3(x-2)$.",
+            "Solve this equation $y=3x-6+10$.",
+            "State the final equation: $y = 3x + 4$.",
             "Final Answer: $$y = 3x + 4$$"
         ],
         "bradley_insight": {
             "type": "pro-tip",
-            "title": "Parallel = Same Gradient",
-            "content": "In GCSE exams, 'parallel' is a code word for 'use the same $m$'. If the question asked for 'perpendicular', you would use the negative reciprocal ($-\\frac{1}{3}$). Always underline these keywords!"
-        }
+            "title": "The Head Teacher's Eye: Parallel Protocol",
+            "content": "In coordinate geometry, the word 'parallel' is a mathematical instruction to use the exact same gradient. Once you have the gradient and a point, finding the equation is a simple matter of substituting the known coordinate point values into $y-y_1 = m(x-x_1)$."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
     },
+    
     // 11 Apr
     {
         "id": "002078",
@@ -1432,7 +1456,7 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "deeper",
-            "title": "Pythagoras in 3D",
+            "title": "The Head Teacher's Eye: Pythagoras in 3D",
             "content": "You can solve this in two steps using 2D Pythagoras twice, but the 3D formula ($a^2+b^2+c^2=d^2$) is much faster and less prone to rounding errors. It’s a must-know for Grade 8/9 questions."
         }
     },
@@ -1454,7 +1478,7 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "caution",
-            "title": "Total vs. Interest",
+            "title": "TThe Head Teacher's Eye: Total vs. Interest",
             "content": "Read the question carefully! Does it ask for the **total value** or just the **interest**? Many students lose a mark at the very end by forgetting to subtract the original principal."
         }
     },
@@ -1475,7 +1499,7 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "pro-tip",
-            "title": "The 'Scale Factor' Method",
+            "title": "The Head Teacher's Eye: The 'Scale Factor' Method",
             "content": "Always find what $1$ person is worth in degrees first ($360 \\div \\text{Total}$). It makes calculating the rest of the pie chart much easier and more consistent."
         }
     },
@@ -1497,7 +1521,7 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "caution",
-            "title": "The Double Negative",
+            "title": "The Head Teacher's Eye: The Double Negative",
             "content": "When the constant is positive ($+21$) but the middle term is negative ($-10$), **both** numbers in your brackets must be negative. It's a very common place for signs to go wrong!"
         }
     },
@@ -1520,7 +1544,7 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "pro-tip",
-            "title": "Sketching the Scenario",
+            "title": "The Head Teacher's Eye: Sketching the Scenario",
             "content": "Even when a diagram isn't provided, always draw a quick right-angled triangle. Label the 'Opposite', 'Adjacent', and 'Hypotenuse' immediately; it makes choosing between Sine, Cosine, and Tangent much harder to get wrong."
         }
     },
@@ -1543,7 +1567,7 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "pro-tip",
-            "title": "The Zero Term",
+            "title": "The Head Teacher's Eye: The Zero Term",
             "content": "A quick way to find the constant (+3) is to work backwards from the first term to find 'Term 0'. $7 - 4 = 3$. This gives you your $4n + 3$ instantly!"
         }
     },
@@ -1566,7 +1590,7 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "deeper",
-            "title": "Spotting the Diameter",
+            "title": "The Head Teacher's Eye: Spotting the Diameter",
             "content": "Whenever you are told a line is a \\textbf{diameter}, immediately look for a triangle attached to it. The angle at the circumference will always be $90^\\circ$. This is a very common 'hidden step' in Higher Tier circle problems."
         }
     },
@@ -1580,16 +1604,17 @@ const problemBank = [
         "difficulty": "8/9",
         "q": "Prove that the sum of any two consecutive even numbers is always a multiple of 2 but never a multiple of 4.",
         "steps": [
-            "Let the first even number be $2n$.",
-            "The next consecutive even number is $2n + 2$.",
-            "Sum them: $2n + (2n + 2) = 4n + 2$.",
-            "Factor out a 2: $2(2n + 1)$. This proves it is a multiple of 2.",
-            "Since $(2n+1)$ is always odd, $2 \\times \\text{odd}$ cannot be a multiple of 4.",
-            "Final Answer: $$\\text{QED}$$"
+            "Let the two consecutive even numbers be $2n$ and $2n + 2$, where $n$ is an integer.",
+            "Sum the two numbers: $2n + (2n + 2) = 4n + 2$.",
+            "To prove it is a multiple of 2, factor out 2: $2(2n + 1)$. Since $2n+1$ is an integer, the sum is a multiple of 2.",
+            "To prove it is not a multiple of 4, consider the expression $4n + 2$.",
+            "A multiple of 4 is defined as $4k$ for some integer $k$.",
+            "The expression $4n + 2$ is 2 more than a multiple of 4 ($4n$), meaning it always leaves a remainder of 2 when divided by 4.",
+			"Final Answer: $$\\text{Proven: Remainder is 2, therefore not a multiple of 4.}$$"
         ],
         "bradley_insight": {
             "type": "caution",
-            "title": "Defining Integers",
+            "title": "The Head Teacher's Eye: Defining Integers",
             "content": "In algebraic proof, always start by defining $n$ as an integer. $2n$ is the standard way to show a number is even, and $2n+1$ is the standard for odd. Examiners look for these definitions first!"
         }
     },
@@ -1614,7 +1639,7 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "pro-tip",
-            "title": "Median and Quartiles",
+            "title": "The Head Teacher's Eye: Median and Quartiles",
             "content": "For a total frequency of $n$, always remember: Median $= n/2$, $Q_1 = n/4$, and $Q_3 = 3n/4$. Draw dotted lines on your graph to show exactly where you are reading these values to secure your method marks!"
         }
     },
@@ -1635,7 +1660,7 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "caution",
-            "title": "Reverse BIDMAS",
+            "title": "The Head Teacher's Eye: Reverse BIDMAS",
             "content": "When rearranging, think of it as 'undoing' the operations in reverse order. We deal with the addition ($+u$) before we deal with the multiplication ($at$)."
         }
     },
@@ -1656,7 +1681,7 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "pro-tip",
-            "title": "Think of the Total",
+            "title": "The Head Teacher's Eye: Think of the Total",
             "content": "In 'reverse mean' questions, always find the **total** first. Mean $\times$ Count $=$ Total. This is much easier than trying to solve an algebraic equation."
         }
     },
@@ -1677,7 +1702,7 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "pro-tip",
-            "title": "The Exterior Shortcut",
+            "title": "The Head Teacher's Eye: The Exterior Shortcut",
             "content": "You can also find the number of sides by finding the exterior angle first. But for 'sum of interior' questions, memorizing $(n-2) \\times 180$ is the most direct path to the marks."
         }
     },
@@ -1698,7 +1723,7 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "caution",
-            "title": "Don't just add 20%!",
+            "title": "The Head Teacher's Eye: Don't just add 20%!",
             "content": "A common mistake is to calculate 20% of the sale price and add it back. This is wrong! You must always divide by the multiplier (in this case, $0.8$) to get back to the original value."
         }
     },
@@ -1719,7 +1744,7 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "deeper",
-            "title": "Venn Diagram Logic",
+            "title": "The Head Teacher's Eye: Venn Diagram Logic",
             "content": "Always fill in the intersection (the 'both' section) first! It prevents you from double-counting the students who appear in both categories."
         }
     },
@@ -1741,7 +1766,7 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "pro-tip",
-            "title": "Frustum Shortcut",
+            "title": "The Head Teacher's Eye: Frustum Shortcut",
             "content": "You don't always need a complex formula for a frustum. Just remember: it's simply the **Big Shape** minus the **Little Shape**. Finding the height of the missing cone using similar triangles is usually the 'hidden' step."
         }
     },
