@@ -1771,25 +1771,32 @@ const problemBank = [
         }
     },
     // 26 Apr
+   // 26 Apr
     {
         "id": "002094",
         "date": "26 Apr 2026",
         "major_area": "Geometry & Measures",
-        "topic": "Similarity & Congruence",
-        "subtopic": "Scale factors",
+        "topic": "Vectors",
+        "subtopic": "Parallel vectors",
         "difficulty": "8/9",
-        "q": "The ratio of the heights of two similar cylinders is $2:5$.<br>The volume of the smaller cylinder is $80\text{ cm}^3$.<br>Calculate the volume of the larger cylinder.",
+        "img": "images/26_apr_i.png",
+        "q": "$OABC$ is a parallelogram where $\\vec{OA} = \\mathbf{a}$ and $\\vec{OC} = \\mathbf{c}$. $M$ is the midpoint of $BC$. $P$ is a point on $AC$ such that $AP:PC = 2:1$.<br>(a) Find the vector $\\vec{OM}$ in terms of $\\mathbf{a}$ and $\\mathbf{c}$.<br>(b) Prove that $O, P$ and $M$ are collinear.",
         "steps": [
-            "Linear scale factor $k = \\frac{5}{2} = 2.5$.",
-            "Volume scale factor $k^3 = 2.5^3 = 15.625$.",
-            "Multiply volume: $80 \\times 15.625$.",
-            "Final Answer: $$1250\text{ cm}^3$$"
+            "(a) $\\vec{OM} = \\vec{OC} + \\vec{CM}$. Since $BC$ is parallel and equal to $OA$, $\\vec{CM} = \\frac{1}{2}\\mathbf{a}$. So, $\\vec{OM} = \\mathbf{c} + \\frac{1}{2}\\mathbf{a}$.",
+            "(b) First, find $\\vec{AC} = \\mathbf{c} - \\mathbf{a}$.",
+            "Next, find $\\vec{AP} = \\frac{2}{3}\\vec{AC} = \\frac{2}{3}(\\mathbf{c} - \\mathbf{a})$.",
+            "Find $\\vec{OP} = \\vec{OA} + \\vec{AP} = \\mathbf{a} + \\frac{2}{3}\\mathbf{c} - \\frac{2}{3}\\mathbf{a} = \\frac{1}{3}\\mathbf{a} + \\frac{2}{3}\\mathbf{c}$.",
+            "Factorise $\\vec{OP}$: $\\vec{OP} = \\frac{2}{3}(\\frac{1}{2}\\mathbf{a} + \\mathbf{c})$.",
+            "Compare: $\\vec{OP} = \\frac{2}{3}\\vec{OM}$.",
+            "Final Answer: $$\\vec{OP} \\text{ is a scalar multiple of } \\vec{OM} \\text{ and they share point } O, \\text{ so they are collinear.}$$"
         ],
         "bradley_insight": {
             "type": "pro-tip",
-            "title": "Fraction vs Decimals",
-            "content": "If you don't have a calculator, it's often easier to use fractions: $(\\frac{5}{2})^3 = \\frac{125}{8}$. Then $80 \\times \\frac{125}{8} = 10 \\times 125 = 1250$. It's much cleaner!"
-        }
+            "title": "The Head Teacher's Eye: The Collinearity Conclusion",
+            "content": "To prove points are on a straight line, finding the scalar multiple (e.g., $\\vec{OP} = \\frac{2}{3}\\vec{OM}$) is only 3 out of 4 marks. You **must** write the sentence: 'They are parallel and share a common point' to secure the final mark. Don't fall at the last hurdle!"
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master Geometry: Download the Full Geometry Pack"
     },
     // 27 Apr
     {
