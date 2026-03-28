@@ -2016,7 +2016,32 @@ const problemBank = [
 		 "payhip_link": "https://payhip.com/b/mg5YS", // Replace with your Mensuration/Trig link
         "button_text": "Master Alkgebra: Download the Full Algebra Pack"
     },
-    // 29 Apr
+    // 28 Apr
+    {
+        "id": "002095",
+        "date": "28 Apr 2026",
+        "major_area": "Mensuration and Trigonometry",
+        "topic": "Trigonometry",
+        "subtopic": "Sine Rule",
+        "difficulty": "7/8",
+        "q": "In triangle $ABC$, $AB = 8\text{ cm}$, $BC = 11\text{ cm}$ and angle $BAC = 75^\circ$.<br>Calculate the size of angle $ACB$. Give your answer to 1 decimal place.",
+		"img": "images/28_apr_i.png"
+        "steps": [
+            "Use the Sine Rule: $\\dfrac{\\sin C}{c} = \\dfrac{\\sin A}{a}$.",
+            "Substitute values: $\\dfrac{\\sin C}{8} = \\dfrac{\\sin 75}{11}$.",
+            "Rearrange: $\\sin C = \\dfrac{8 \\times \\sin 75}{11}$.",
+            "Calculate $\\sin C \\approx 0.7025...$",
+            "Inverse sine: $C = \sin^{-1}(0.7025...)$",
+            "Final Answer: $$44.6^\circ$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Side-Angle Pairs",
+            "content": "To use the Sine Rule, you must have a 'known pair' (a side and its opposite angle). Here, we have $11\text{ cm}$ and $75^\circ$. Always check for this pair before deciding between Sine and Cosine rules."
+        },
+        "payhip_link": "https://payhip.com/b/KjXoP",
+        "button_text": "Master Mensuration & Trigonometry: Download the Full Pack"
+    },
     // 29 Apr
     {
         "id": "002094",
