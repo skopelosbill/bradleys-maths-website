@@ -1771,7 +1771,7 @@ const problemBank = [
         }
     },
     // 26 Apr
-   // 26 Apr
+   
     {
         "id": "002094",
         "date": "26 Apr 2026",
@@ -1803,92 +1803,106 @@ const problemBank = [
         "id": "002095",
         "date": "27 Apr 2026",
         "major_area": "Algebra",
-        "topic": "Expanding Brackets",
-        "subtopic": "Double brackets",
-        "difficulty": "6/7",
-        "q": "Expand and simplify fully: $(x + 2)(x - 3)(x + 4)$.",
+        "topic": "Algebraic Fractions",
+        "subtopic": "Adding/subtracting",
+        "difficulty": "8/9",
+        "q": "Solve the equation: $\\dfrac{5}{x+2} + \\dfrac{3}{x-1} = 2$.",
         "steps": [
-            "Expand first two: $(x+2)(x-3) = x^2 - x - 6$.",
-            "Multiply result by $(x+4)$: $(x^2 - x - 6)(x + 4)$.",
-            "Distribute: $x(x^2 - x - 6) + 4(x^2 - x - 6)$.",
-            "Simplify: $x^3 - x^2 - 6x + 4x^2 - 4x - 24$.",
-            "Final Answer: $$x^3 + 3x^2 - 10x - 24$$"
+            "Find a common denominator: $\\dfrac{5(x-1) + 3(x+2)}{(x+2)(x-1)} = 2$.",
+            "Expand and simplify the numerator: $5x - 5 + 3x + 6 = 8x + 1$.",
+            "Multiply through by the denominator: $8x + 1 = 2(x+2)(x-1)$.",
+            "Expand the quadratic: $8x + 1 = 2(x^2 + x - 2) \\implies 8x + 1 = 2x^2 + 2x - 4$.",
+            "Rearrange to equal zero: $2x^2 - 6x - 5 = 0$.",
+            "Solve using the quadratic formula: $x = \\dfrac{6 \\pm \\sqrt{(-6)^2 - 4(2)(-5)}}{2(2)} = \\dfrac{6 \\pm \\sqrt{76}}{4}$.",
+            "Final Answer: $$x = 3.68, x = -0.68$$"
         ],
         "bradley_insight": {
             "type": "caution",
-            "title": "One Step at a Time",
-            "content": "Never try to expand all three brackets at once. Expand two, simplify the result, and then multiply by the third. It’s the only way to avoid losing terms."
-        }
+            "title": "The Head Teacher's Eye: The Common Denominator",
+            "content": "When solving algebraic fraction equations, your first priority is to eliminate the denominators. Multiply every single term by the common denominator $(x+2)(x-1)$. Don't forget that the '2' on the right-hand side must also be multiplied!"
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
     },
     // 28 Apr
     {
         "id": "002096",
         "date": "28 Apr 2026",
         "major_area": "Algebra",
-        "topic": "Graphs",
-        "subtopic": "Reciprocal graphs",
-        "difficulty": "6/7",
-        "q": "State the equation of the vertical asymptote for the graph $y = \frac{1}{x - 4}$.",
+        "topic": "Algebraic Notation",
+        "subtopic": "Substitution",
+        "difficulty": "7/8",
+        "q": "Functions $f$ and $g$ are defined as: $f(x) = 3x - 1$ and $g(x) = x^2 + 4$.<br>(a) Calculate $fg(2)$.<br>(b) Find the inverse function $f^{-1}(x)$.",
         "steps": [
-            "An asymptote occurs where the function is undefined.",
-            "A fraction is undefined when the denominator is zero.",
-            "Set $x - 4 = 0$.",
-            "Final Answer: $$x = 4$$"
+            "(a) Find $g(2)$ first: $2^2 + 4 = 8$.",
+            "Substitute 8 into $f(x)$: $f(8) = 3(8) - 1 = 23$.",
+            "(b) Write the function in $y=$ notation: $y = 3x - 1$.",
+            "Interchange $x$ and $y$: $x = 3y - 1$.",
+            "Solve for $y$: $x + 1 = 3y \\implies y = \\dfrac{x + 1}{3}$.",
+            "Write in inverse function notation: $f^{-1}(x) = \\dfrac{x + 1}{3}$.",
+            "Final Answer: $$(a)\\ 23,\\ (b)\\ f^{-1}(x) = \\dfrac{x+1}{3}$$"
         ],
         "bradley_insight": {
-            "type": "deeper",
-            "title": "The Impossible Division",
-            "content": "You cannot divide by zero! That's why the graph never touches the line $x=4$; it gets infinitely close but can never actually exist there."
-        }
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Why we swap X and Y",
+            "content": "Interchanging $x$ and $y$ is the most important step in finding an inverse. Geometrically, this represents a reflection in the line $y=x$. By solving for the 'new' $y$, you are finding the algebraic rule for that reflected image."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
     },
-
     // 29 Apr
     {
         "id": "002094",
         "date": "29 Apr 2026",
         "major_area": "Geometry & Measures",
-        "topic": "Circle Theorems",
-        "subtopic": "Tangents",
+        "topic": "Trigonometry",
+        "subtopic": "Area of triangle 1/2 ab sin C",
         "difficulty": "8/9",
-        "q": "Points $A, B$ and $C$ lie on a circle. $XY$ is a tangent to the circle at point $A$.<br>Given that $\\angle CAY = 65^\\circ$ and $\\angle ABC = (2x + 5)^\\circ$, find the value of $x$.",
-        "img": "images/apr_29_g.png",
+        "img": "images/29_apr_i.png",
+        "q": "A sector of a circle has a radius of $r\\text{ cm}$ and a sector angle of $60^\\circ$.<br>The area of the sector is $24\\pi\\text{ cm}^2$.<br>(a) Show that the radius $r = 12\\text{ cm}$.<br>(b) Calculate the arc length of the sector, giving your answer in terms of $\\pi$.",
         "steps": [
-            "By the \\textbf{Alternate Segment Theorem}, the angle between the tangent and the chord ($\ \angle CAY$) is equal to the angle in the alternate segment ($\ \angle ABC$).",
-            "Set up the equation: $2x + 5 = 65$.",
-            "Subtract 5 from both sides: $2x = 60$.",
-            "Divide by 2 to find $x$.",
-            "Final Answer: $$x = 30$$"
+            "(a) Area formula: $\\frac{\\theta}{360} \\times \\pi r^2 = 24\\pi$.",
+            "Substitute $\\theta = 60$: $\\frac{60}{360} \\times \\pi r^2 = 24\\pi$.",
+            "Simplify: $\\frac{1}{6}r^2 = 24 \\implies r^2 = 144$.",
+            "Square root: $r = 12$.",
+            "(b) Arc length formula: $\\frac{\\theta}{360} \\times 2\\pi r$.",
+            "Calculate: $\\frac{60}{360} \\times 2 \\times \\pi \\times 12 = \\frac{1}{6} \\times 24\\pi$.",
+            "Final Answer: $$(a)\\ r=12,\\ (b)\\ 4\\pi\\text{ cm}$$"
         ],
         "bradley_insight": {
-            "type": "deeper",
-            "title": "Identifying the Pattern",
-            "content": "This theorem is a frequent 'Grade 8/9' differentiator. Look for a triangle where one vertex touches a tangent. The angle outside the triangle at that point of contact is always equal to the interior angle at the opposite vertex."
-        }
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Arc vs Perimeter",
+            "content": "Read the question carefully. If it asks for 'arc length', you only need the curved part. If it asks for 'perimeter', you must add the two radii ($12 + 12$) to your arc length result!"
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master Geometry: Download the Full Geometry Pack"
     },
- // 30 Apr
+    // 30 Apr
     {
         "id": "002089",
         "date": "30 Apr 2026",
         "major_area": "Geometry & Measures",
-        "topic": "Circle Theorems",
-        "subtopic": "Angle at the centre",
-        "difficulty": "6/7",
-        "q": "In a circle, the angle subtended by an arc at the centre is $(4x + 20)^\circ$.<br>The angle subtended by the same arc at the circumference is $(x + 40)^\circ$.<br>Calculate the value of $x$.",
+        "topic": "Pythagoras",
+        "subtopic": "3D Pythagoras",
+        "difficulty": "8/9",
+        "img": "images/30_apr_i.png",
+        "q": "A cuboid has dimensions $8\\text{ cm}$ by $6\\text{ cm}$ by $5\\text{ cm}$.<br>(a) Calculate the length of the diagonal across the base.<br>(b) Calculate the length of the internal diagonal of the cuboid.",
         "steps": [
-            "Theorem: Angle at centre is twice the angle at circumference.",
-            "Equation: $4x + 20 = 2(x + 40)$.",
-            "Expand: $4x + 20 = 2x + 80$.",
-            "Rearrange: $2x = 60$.",
-            "Final Answer: $$x = 30$$"
+            "(a) Use Pythagoras on the base ($8$ and $6$): $d^2 = 8^2 + 6^2$.",
+            "$d^2 = 64 + 36 = 100 \\implies d = 10\\text{ cm}$.",
+            "(b) Use Pythagoras with the base diagonal and the height ($10$ and $5$): $D^2 = 10^2 + 5^2$.",
+            "$D^2 = 100 + 25 = 125$.",
+            "Simplify the surd: $D = \\sqrt{125} = \\sqrt{25 \\times 5}$.",
+            "Final Answer: $$(a)\\ 10\\text{ cm},\\ (b)\\ 5\\sqrt{5}\\text{ cm}$$"
         ],
         "bradley_insight": {
-            "type": "caution",
-            "title": "Brackets are Vital",
-            "content": "When doubling the angle at the circumference, make sure you put the whole expression in brackets! $2(x+40)$ is $2x+80$, not $2x+40$. This is where most students lose their marks."
-        }
-    }
-
- 
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: The 3D Shortcut",
+            "content": "For any cuboid, the internal diagonal $D$ can be found in one step using the 3D version of Pythagoras: $D^2 = a^2 + b^2 + c^2$. It saves time and reduces the chance of rounding errors midway through the problem."
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master Geometry: Download the Full Geometry Pack"
+    },
 ];
 
                        
