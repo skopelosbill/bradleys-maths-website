@@ -1806,7 +1806,7 @@ const problemBank = [
     },
 	// 19 Apr
     {
-        "id": "002087",
+        "id": "001606",
         "date": "19 Apr 2026",
         "major_area": "Statistics",
         "topic": "Cumulative Frequency",
@@ -1830,7 +1830,7 @@ const problemBank = [
     },
     // 20 Apr
     {
-        "id": "002088",
+        "id": "001607",
         "date": "20 Apr 2026",
         "major_area": "Algebra",
         "topic": "Rearranging Formulae",
@@ -1853,7 +1853,7 @@ const problemBank = [
     },
 	//21 April
 {
-        "id": "001606",
+        "id": "001608",
         "date": "21 Apr 2026",
         "major_area": "Mensuration and Trigonometry",
         "topic": "3D Shapes",
@@ -1878,7 +1878,7 @@ const problemBank = [
     },
     // 22 Apr
     {
-        "id": "002089",
+        "id": "001609",
         "date": "22 Apr 2026",
         "major_area": "Coordinate Geometry & Geometry",
         "topic": "Polygons",
@@ -1901,7 +1901,7 @@ const problemBank = [
     },
     // 23 Apr
     {
-        "id": "002090",
+        "id": "001610",
         "date": "23 Apr 2026",
         "major_area": "Number",
         "topic": "Percentages",
@@ -1924,7 +1924,7 @@ const problemBank = [
     },
     // 24 Apr
     {
-        "id": "002091",
+        "id": "001611",
         "date": "24 Apr 2026",
         "major_area": "Probability",
         "topic": "Basic Probability",
@@ -1948,7 +1948,7 @@ const problemBank = [
     },
  // 25 Apr
     {
-        "id": "001608",
+        "id": "001612",
         "date": "25 Apr 2026",
         "major_area": "Number",
         "topic": "Standard Form",
@@ -1971,7 +1971,7 @@ const problemBank = [
     },
     // 26 Apr
     {
-        "id": "002092",
+        "id": "001613",
         "date": "26 Apr 2026",
         "major_area": "Coordinate Geometry & Geometry",
         "topic": "Similarity & Congruence",
@@ -1994,7 +1994,7 @@ const problemBank = [
     },
     // 27 Apr
     {
-        "id": "002093",
+        "id": "001614",
         "date": "27 Apr 2026",
         "major_area": "Algebra",
         "topic": "Expanding Brackets",
@@ -2018,7 +2018,7 @@ const problemBank = [
     },
     // 28 Apr
     {
-        "id": "002095",
+        "id": "001615",
         "date": "28 Apr 2026",
         "major_area": "Mensuration and Trigonometry",
         "topic": "Trigonometry",
@@ -2044,7 +2044,7 @@ const problemBank = [
     },
     // 29 Apr
     {
-        "id": "002094",
+        "id": "001616",
         "date": "29 Apr 2026",
         "major_area": "Algebra",
         "topic": "Simultaneous Equations",
@@ -2074,7 +2074,7 @@ const problemBank = [
  // 30 Apr
     // 30 Apr
     {
-        "id": "001609",
+        "id": "001617",
         "date": "30 Apr 2026",
         "major_area": "Number",
         "topic": "Standard Form",
