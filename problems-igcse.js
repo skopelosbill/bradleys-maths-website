@@ -2025,7 +2025,7 @@ const problemBank = [
         "subtopic": "Sine Rule",
         "difficulty": "7/8",
         "q": "In triangle $ABC$, $AB = 8\text{ cm}$, $BC = 11\text{ cm}$ and angle $BAC = 75^\circ$.<br>Calculate the size of angle $ACB$. Give your answer to 1 decimal place.",
-		"img": "images/28_apr_i.png"
+		"img": "images/28_apr_i.png",
         "steps": [
             "Use the Sine Rule: $\\dfrac{\\sin C}{c} = \\dfrac{\\sin A}{a}$.",
             "Substitute values: $\\dfrac{\\sin C}{8} = \\dfrac{\\sin 75}{11}$.",
