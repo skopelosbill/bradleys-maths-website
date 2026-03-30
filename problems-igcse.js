@@ -1245,7 +1245,14 @@ const problemBank = [
     "Expand the power: $n^3 = 27k^3$.",
     "Since $k^3$ is an integer, $27k^3$ must be a multiple of $27$.",
     "Final answer: $$\\text{QED}$$"
-  ]
+  ],
+	"bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Read the question carefully!",
+            "content": "The question tells us explicitly that $n$ is a multiple of 3 so this must mean that $n=3\\times\\text{ some unknown value }k$.  This is the clue to solving the problem!"
+        },
+        "payhip_link": "https://payhip.com/b/mg5YS", // Algebra Pack
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
 },
 
 			// 1 Apr
