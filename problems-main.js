@@ -1233,7 +1233,7 @@ const problemBank = [
     "subtopic": "Gradients",
     "difficulty": "6/7",
     "img": "",
-    "q": "Points $A(-7, -23)$, $B(-1, -5)$ and $C(4, 10)$ are shown on the coordinate plane.<br>(a) Show that the gradient of the line segment $AB$ is 3.<br>(b) Prove that $A, B$ and $C$ are collinear.",
+    "q": "Points $A(-7, -23)$, $B(-1, -5)$ and $C(4, 10)$ lie on the coordinate plane.<br>(a) Show that the gradient of the line segment $AB$ is 3.<br>(b) Prove that $A, B$ and $C$ are collinear.",
     "steps": [
         "(a) Gradient $AB = \\frac{-5 - (-23)}{-1 - (-7)} = \\frac{18}{6} = 3$.",
         "(b) Calculate gradient $BC = \\frac{10 - (-5)}{4 - (-1)} = \\frac{15}{5} = 3$.",
