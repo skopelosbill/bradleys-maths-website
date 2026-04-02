@@ -1373,7 +1373,7 @@ const problemBank = [
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Factor-First Rule",
-            "content": "A fatal error in these questions is trying to cancel individual terms like $x^2$ or $12$ before factorising. Remember: you can only cancel **factors** (the whole bracket), never individual terms within an expression. Always factorise everything first!"
+            "content": "A fatal error in these questions is trying to cancel individual terms like $x^2$ or $12$ before factorising. Remember: you can only cancel <strong>factors</strong> (the whole bracket), never individual terms within an expression. Always factorise everything first!"
         },
         "payhip_link": "https://payhip.com/b/mg5YS", // Algebra Pack
         "button_text": "Master Algebra: Download the Full Algebra Pack"
