@@ -1237,14 +1237,14 @@ const problemBank = [
     "steps": [
         "(a) Gradient $AB = \\frac{-5 - (-23)}{-1 - (-7)} = \\frac{18}{6} = 3$.",
         "(b) Calculate gradient $BC = \\frac{10 - (-5)}{4 - (-1)} = \\frac{15}{5} = 3$.",
-        "State: Since $m_{AB} = m_{BC}$, the line segments are parallel.",
-        "State: Since they both pass through point $B$, they must lie on the same straight line.",
+        "Since $m_{AB} = m_{BC}$, the line segments are parallel.",
+        "Since they both pass through point $B$, they must lie on the same straight line.",
         "Final Answer: $$\\text{Gradients equal and share common point } B$$"
     ],
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Collinearity Proof",
-        "content": "To prove collinearity, simply showing the gradients are equal is only half the job. You **must** explicitly state that they share a common point to earn the final communication mark."
+        "content": "To prove collinearity, simply showing the gradients are equal is only half the job. You <strong>must</strong> explicitly state that they share a common point to earn the final communication mark."
     },
     "payhip_link": "https://payhip.com/b/XAGch",
     "button_text": "Master Geometry: Download the Full Geometry Pack"
