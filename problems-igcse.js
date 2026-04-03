@@ -1335,7 +1335,7 @@ const problemBank = [
             "Split the middle term: $-2x^2 + 2x + 3x - 3$.",
             "Factorise in pairs: $-2x(x - 1) + 3(x - 1)$.",
             "Combine the factors: $(3 - 2x)(x - 1)$.",
-            "\\textbf{Note:} there are two more equivalent alternative answers: $(2x - 3)(1 - x)$ and $-(2x - 3)(x - 1)$.",
+            "<strong>Note</strong>: there are two more equivalent alternative answers: $(2x - 3)(1 - x)$ and $-(2x - 3)(x - 1)$.",
             "Final Answer: $$(3 - 2x)(x - 1)$$"
         ],
         "bradley_insight": {
