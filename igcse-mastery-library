@@ -89,13 +89,22 @@
         </div>
     </nav>
 
+<div class="credential-bar">
+    <span>Retired British International Head Teacher</span>
+    <span>•</span>
+    <span>IGCSE (0580) Extended Specialist</span>
+    <span>•</span>
+    <span>LaTeX Meticulously Typeset</span>
+</div>
+
     <div class="container">
 		<h1>Bradley's Maths</h1>
         <h2 >IGCSE Higher Tier Mastery Library</h2>
-        <p style="text-align: center; font-style: italic; color: #7f8c8d; margin-bottom: 40px;">
+	<div class="trust-badge">
+        <p >
             "Expertly crafted individual topic worksheets for students who want to target specific areas of the 0580 syllabus."
         </p>
-
+	</div>
         <!-- BUNDLE UPSELL -->
         <div class="bundle-upsell">
             <div class="upsell-text">
