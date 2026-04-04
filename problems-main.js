@@ -1278,7 +1278,7 @@ const problemBank = [
     "topic": "3D Shapes",
     "subtopic": "Volume",
     "difficulty": "8/9",
-    "img": "images/04_may_i.png",
+    //"img": "images/04_may_i.png",
     "q": "A cone and a hemisphere have the same base radius $r$.<br>The volume of the cone is equal to the volume of the hemisphere.<br>Show that the height of the cone, $h$, is equal to $2r$.",
     "steps": [
         "Recall $V_{\\text{hemisphere}} = \\frac{2}{3}\\pi r^3$.",
