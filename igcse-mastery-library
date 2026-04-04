@@ -9,27 +9,7 @@
     <!-- Link to Merriweather if not in your CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     
-    <style>
-        .library-container { max-width: 1100px; margin: 40px auto; padding: 0 20px; font-family: 'Merriweather', serif; }
-        .bundle-upsell { background: #fdf2e9; border: 2px solid #e67e22; padding: 25px; border-radius: 8px; margin-bottom: 50px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
-        .upsell-text h3 { margin: 0; color: #d35400; font-size: 1.4em; }
-        .mastery-table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 0.95em; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        .mastery-table thead tr { background: #2c3e50; color: #ffffff; text-align: left; }
-        .mastery-table th, .mastery-table td { padding: 12px 15px; border-bottom: 1px solid #eee; }
-        .mastery-table tbody tr:nth-of-type(even) { background-color: #f9f9f9; }
-        .mastery-table tbody tr:hover { background-color: #f1f1f1; transition: 0.2s; }
-        .dl-btn { background: #3498db; color: white; padding: 6px 12px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85em; display: inline-block; }
-        .dl-btn:hover { background: #2980b9; }
-        .free-tag { background: #27ae60; color: white; padding: 2px 8px; border-radius: 3px; font-size: 0.7em; vertical-align: middle; margin-left: 8px; text-transform: uppercase; }
-        
-        @media screen and (max-width: 600px) {
-            .mastery-table thead { display: none; }
-            .mastery-table, .mastery-table tbody, .mastery-table tr, .mastery-table td { display: block; width: 100%; }
-            .mastery-table tr { margin-bottom: 15px; border: 1px solid #ddd; }
-            .mastery-table td { text-align: right; padding-left: 50%; position: relative; }
-            .mastery-table td::before { content: attr(data-label); position: absolute; left: 15px; width: 45%; font-weight: bold; text-align: left; }
-        }
-    </style>
+  
 </head>
 <body>
 
