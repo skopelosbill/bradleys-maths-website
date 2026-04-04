@@ -23,10 +23,75 @@
 </head>
 <body>
 
-    <!-- [PASTE YOUR NAVIGATION/HEADER HERE] -->
+     <!-- NEW NAVIGATION BAR -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">Bradley's Maths - IGCSE</a>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
 
-    <div class="library-container">
-        <h1 style="color: #2c3e50; text-align: center;">IGCSE Higher Tier Mastery Library</h1>
+			<!--Link to the Blog-->
+			<a href="blog/index.html">Blog</a>
+
+			<a href="qa.html">Q&A / Request a Topic</a>
+            
+            <!-- Highlighted GCSE Link -->
+            <a href="gcse.html" class="highlight-link">GCSE</a>
+			<a href="igcse.html" class="highlight-link">IGCSE</a>
+
+		<!--Predicted Papers-->
+		<div class="dropdown">
+        <button class="dropbtn gold-link">Predicted Papers ▾</button>
+
+        <div class="dropdown-content">
+  
+            <div class="dropdown">
+                <button class="dropbtn gold-link">Cambridge ▾</button>
+                    <div class="dropdown-content">
+                        <a href="https://payhip.com/b/leUg5">Set A (£7.50)</a>
+                        <a href="https://payhip.com/b/QrM68">Set B (£7.50)</a>
+                        <a href="https://payhip.com/b/BwIEp">Set C (£7.50)</a>
+                        <a href="https://payhip.com/b/RcN0U" style="font-weight: bold; color: #d97706;">
+                            ★ Full 9-Paper Bundle - £15
+                        </a>
+                    </div>
+            </div>
+		</div>
+		</div>
+            <!-- Dropdown: Booklets -->
+            <div class="dropdown">
+                <button class="dropbtn">Course Booklets ▾</button>
+                <div class="dropdown-content">
+					<a href="https://payhip.com/b/XEV2Z">Number</a>
+           			<a href="https://payhip.com/b/mg5YS">Algebra</a>
+            		<a href="https://payhip.com/b/L6skH">Coordinate Geometry and Geometry</a>
+            		<a href="https://payhip.com/b/KjXoP">Mensuration and Trigonometry</a>
+					<a href="https://payhip.com/b/rsVCz">Vectors, Probability and Statistics</a>
+                    <a href="https://payhip.com/b/krOXi">IGCSE - The Complete Collection</a>
+                    <a href="https://payhip.com/bradleysmaths">Full Store</a>
+                </div>
+            </div>
+
+            <!-- Dropdown: Free Resources -->
+            <div class="dropdown">
+                <button class="dropbtn">Free Worksheets ▾</button>
+                <div class="dropdown-content">
+                    <a href="Sets_and_Venn_Diagrams.pdf">Number</a>
+                    <a href="Solving_Equations_Graphically.pdf">Algebra and Graphs</a>
+                    <a href="Angle_Properties.pdf">Geometry and Measures</a>
+                    <a href="Arcs_and_sectors.pdf">Mensuration and Trigonometry</a>
+                    <a href="Vector_Geometry.pdf">Vectors, Probability and Statistics</a>
+                </div>
+            </div>
+
+            <a href="https://www.youtube.com/@BradleysMaths" style="color:#ff9999;">YouTube</a>
+        </div>
+    </nav>
+
+    <div class="container">
+		<h1>Bradley's Maths</h1>
+        <h2 >IGCSE Higher Tier Mastery Library</h2>
         <p style="text-align: center; font-style: italic; color: #7f8c8d; margin-bottom: 40px;">
             "Expertly crafted individual topic worksheets for students who want to target specific areas of the 0580 syllabus."
         </p>
