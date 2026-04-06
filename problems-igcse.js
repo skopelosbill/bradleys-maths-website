@@ -1436,7 +1436,7 @@ const problemBank = [
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Horizontal Tangents",
-            "content": "A 'stationary point' is simply a point where the tangent to the curve is perfectly horizontal. That is why we set the gradient function to zero. Remember, the question asks for <strong>coordinates</strong>, so you haven't finished until you've plugged your $x$ values back into the <strong>original</strpng> equation to find $y$!"
+            "content": "A 'stationary point' is simply a point where the tangent to the curve is perfectly horizontal. That is why we set the gradient function to zero. Remember, the question asks for <strong>coordinates</strong>, so you haven't finished until you've plugged your $x$ values back into the <strong>original</strong> equation to find $y$!"
         },
         "payhip_link": "https://payhip.com/b/mg5YS", // Algebra Pack
         "button_text": "Master Algebra: Download the Full Algebra Pack"
