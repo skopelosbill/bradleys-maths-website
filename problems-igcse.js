@@ -1453,8 +1453,8 @@ const problemBank = [
         "q": "In the diagram, $ST$ is a tangent to the circle at point $A$. $B$ and $C$ are points on the circumference.<br>Given that $\\angle BAS = 62^\\circ$ and $\\angle ABC = 54^\\circ$, calculate the size of $\\angle BAC$.",
         "img": "images/apr_07_i.png",
         "steps": [
-            "By the <strong>Alternate Segment Theorem</strong>, the angle between the tangent ($AT$) and the chord ($AC$) is equal to the angle in the alternate segment ($\\angle ACB$).",
-            "However, here $\\angle BAS$ is given as $62^\\circ$. By the theorem, $\\angle BCA = \\angle BAT = 62^\\circ$.",
+            "By the <strong>Alternate Segment Theorem</strong>, the angle between the tangent ($ST$) and the chord ($AC$) is equal to the angle in the alternate segment ($\\angle ACB$).",
+            "However, here $\\angle BAS$ is given as $62^\\circ$. By the theorem, $\\angle BCA = \\angle BAS = 62^\\circ$.",
             "Now consider $\\triangle ABC$. The sum of angles in a triangle is $180^\\circ$.",
             "Calculate: $\\angle BAC = 180^\\circ - (54^\\circ + 62^\\circ)$.",
             "Simplify: $\\angle BAC = 180^\\circ - 116^\\circ$.",
