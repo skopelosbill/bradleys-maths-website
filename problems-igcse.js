@@ -1517,7 +1517,7 @@ const problemBank = [
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Root then Power",
-            "content": "When dealing with fractional indices, always find the \\textbf{root first} and then apply the \\textbf{power}. For example, in part (a), it is much easier to find the cube root of 27 (which is 3) and then square it, rather than trying to square 27 first and then finding the cube root of 729!"
+            "content": "When dealing with fractional indices, always find the <strong>root first</strong> and then apply the <stronh>power</strong>. For example, in part (a), it is much easier to find the cube root of 27 (which is 3) and then square it, rather than trying to square 27 first and then finding the cube root of 729!"
         },
         "payhip_link": "https://payhip.com/b/XEV2Z", // Number Pack
         "button_text": "Master Number: Download the Full Number Pack"
