@@ -1489,7 +1489,7 @@ const problemBank = [
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Factorising Step",
-            "content": "The most common mistake students make is getting stuck once they have $x$ on both sides of the equation. Whenever the subject you are looking for appears more than once, you \\textbf{must} collect those terms together and factorise. It's the only way to get the subject on its own!"
+            "content": "The most common mistake students make is getting stuck once they have $x$ on both sides of the equation. Whenever the subject you are looking for appears more than once, you <strong>must</strong> collect those terms together and factorise. It's the only way to get the subject on its own!"
         },
         "payhip_link": "https://payhip.com/b/mg5YS", // Algebra Pack
         "button_text": "Master Algebra: Download the Full Algebra Pack"
