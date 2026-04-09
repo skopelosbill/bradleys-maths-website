@@ -839,6 +839,51 @@ h1, h2, h3 {
         }
     }
 
+/* Smooth Scrolling for Anchor Links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Library Navigation Bar */
+.library-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    font-family: 'Merriweather', serif;
+}
+
+.library-nav-label {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-right: 10px;
+}
+
+.library-nav a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.library-nav a:hover {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+/* Offset for Anchor Links (prevents the header from covering the title) */
+h2[id] {
+    scroll-margin-top: 40px;
+}
+
 /* ========================= */
 /* FOOTER */
 /* ========================= */
