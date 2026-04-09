@@ -737,6 +737,10 @@ h1, h2, h3 {
          serif; 
  }
 
+section[id] {
+    scroll-margin-top: 100px; /* Adjust this value to match the height of your header */
+}
+
     .bundle-upsell { 
         background: #fdf2e9; 
         border: 2px solid #e67e22; 
