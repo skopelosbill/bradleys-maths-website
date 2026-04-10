@@ -1548,7 +1548,7 @@ const problemBank = [
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The 'At Least' Shortcut",
-            "content": "Whenever you see 'at least one' in a probability question, don't waste time calculating every successful outcome. It is almost always faster to calculate the probability of the one outcome you \\textbf{don't} want (in this case, zero green pens) and subtract it from 1!"
+            "content": "Whenever you see 'at least one' in a probability question, don't waste time calculating every successful outcome. It is almost always faster to calculate the probability of the one outcome you <strong>don't</strong> want (in this case, zero green pens) and subtract it from 1!"
         },
         "payhip_link": "https://payhip.com/b/rsVCz", // Vectors, Probability & Stats Pack
         "button_text": "Master Probability: Download the Full Vectors & Stats Pack"
