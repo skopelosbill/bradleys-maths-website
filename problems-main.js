@@ -1468,7 +1468,7 @@ const problemBank = [
         "topic": "Percentages",
         "subtopic": "Compound interest",
         "difficulty": "6/7",
-        "q": "Alice invests £4000 in a savings account with 3% compound interest per year.<br>Calculate the total interest earned after 5 years. Give your answer to the nearest penny.",
+        "q": "Alice invests £4000 in a savings account with $3%$ compound interest per year.<br>Calculate the total interest earned after 5 years. Give your answer to the nearest penny.",
         "img": "",
         "steps": [
             "Multiplier = $1.03$.",
@@ -1479,7 +1479,7 @@ const problemBank = [
         "bradley_insight": {
             "type": "caution",
             "title": "TThe Head Teacher's Eye: Total vs. Interest",
-            "content": "Read the question carefully! Does it ask for the **total value** or just the **interest**? Many students lose a mark at the very end by forgetting to subtract the original principal."
+            "content": "Read the question carefully! Does it ask for the <strong>total value</strong> or just the <strong>interest</strong>? Many students lose a mark at the very end by forgetting to subtract the original principal."
         }
     },
     // 13 Apr
