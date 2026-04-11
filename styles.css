@@ -26,7 +26,7 @@
     --card-bg: #1e1b29;          /* Slightly lighter black for cards */
     --brand-purple: #a78bfa;     /* Lighter purple for readability */
     --brand-purple-dark: #c4b5fd;
-    --brand-green-light: #1a2e2a; 
+    --brand-green-light: #064e3b; /* Deep forest green for dark mode free rows */
 }
 
 /* Invert all diagrams and thumbnails so they don't glow white */
@@ -101,7 +101,7 @@ main {
     font-weight: 600;
     font-family: 'Merriweather', serif;
     letter-spacing: 0.5px;
-    color: white;
+    color: var(--aubergine-white);
     text-decoration: none;
 }
 
@@ -112,7 +112,7 @@ main {
 }
 
 .nav-links a {
-    color: #e9d5ff;
+    color: var(--aubergine-white);
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
@@ -207,7 +207,7 @@ main {
     display: none;
     background: none;
     border: none;
-    color: white;
+    color: var(--aubergine-white);
     font-size: 1.8rem;
     cursor: pointer;
 }
@@ -283,7 +283,7 @@ main {
 
 /* Bradley's Maths - Professional Credential Bar */
 .credential-bar {
-    background-color: #f8fafc; /* Very light slate */
+    background-color: var(--aubergine-white);
     border-bottom: 2px solid #e2e8f0;
     padding: 10px 0;
     text-align: center;
@@ -393,7 +393,7 @@ h1 {
     margin: 40px 0 10px;
     font-weight: 600;
     font-family: 'Merriweather', serif;
-    color: #3b2f4a;
+    color: var(--brand-purple);
 }
 
 h2 {
