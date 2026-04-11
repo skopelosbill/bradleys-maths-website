@@ -40,264 +40,118 @@
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
-  "name": "Bradley's Maths",
-  "founder": "Bill Bradley",
-  "url": "https://bradleysmaths.co.uk",
-  "description": "Expert Higher Tier GCSE and IGCSE Mathematics resources. Featuring LaTeX-typeset worksheets and fully worked model answers by a retired International Head Teacher.",
-  "knowsAbout": [
-    "GCSE Mathematics", 
-    "IGCSE Mathematics 0580", 
-    "AQA Maths", 
-    "Edexcel Maths", 
-    "LaTeX Mathematical Typesetting",
-    "Predicted Mathematics Examination Papers"
-  ],
-  "offers": {
-    "@type": "Offer",
-    "category": "Educational Resources"
-  }
-}
-</script>
-
+        {
+          "@context": "https://schema.org",
+          "@type": "EducationalOrganization",
+          "name": "Bradley's Maths",
+          "founder": "William Bradley",
+          "url": "https://bradleysmaths.co.uk",
+          "description": "Expert Higher Tier GCSE and IGCSE Mathematics resources. Featuring LaTeX-typeset worksheets and fully worked model answers by a retired International Head Teacher.",
+          "knowsAbout": [
+                "GCSE Mathematics", 
+                "IGCSE Mathematics 0580", 
+                "AQA Maths", 
+                "Pearson Edexcel Maths", 
+                "LaTeX Mathematical Typesetting",
+                "Predicted Mathematics Examination Papers"
+                  ],
+          "offers": {
+                "@type": "Offer",
+                "category": "Educational Resources"
+                  }
+        }
+    </script>
 </head>
 <body>
-
-    
-
     <!-- NAVIGATION BAR -->
    <nav class="navbar">
-    <a href="index.html" class="nav-brand">Bradley's Maths</a>
-    <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <a href="index.html" class="nav-brand">Bradley's Maths</a>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
 
-    <div class="nav-links" id="navLinks">
-        <a href="index.html" class="highlight-link">Home</a>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html" class="highlight-link">Home</a>
 
-        <a href="blog/index.html">Blog</a>
+            <a href="blog/index.html">Blog</a>
 
-        <a href="gcse.html">GCSE</a>
+            <a href="gcse.html">GCSE</a>
 
-        <a href="igcse.html">IGCSE (0580)</a>
+            <a href="igcse.html">IGCSE (0580)</a>
 
-        <a href="qa.html">Q&A / Request a Topic</a>
+            <a href="qa.html">Q&A / Request a Topic</a>
 
-        <a href="https://payhip.com/bradleysmaths">Store</a>
+            <a href="https://payhip.com/bradleysmaths">Store</a>
 
-        <a href="https://www.youtube.com/@BradleysMaths" style="color:#ff9999;">YouTube</a>
+            <a href="https://www.youtube.com/@BradleysMaths" style="color:#ff9999;">YouTube</a>
 
-        <button id="theme-toggle" onclick="toggleTheme()" style="background: none; border: 1px solid var(--brand-purple-light); color: white; padding: 5px 10px; border-radius: 20px; cursor: pointer; margin-left: 15px; font-size: 0.8rem;">
-    🌙 Dark Mode
-</button>
+            <button id="theme-toggle" class="btn-theme" onclick="toggleTheme()">
+            🌙 Dark Mode
+            </button>
+        </div>
+    </nav>
+
+    <div class="credential-bar">
+        <span>Retired British International Head Teacher</span>
+        <span>•</span>
+        <span>UK GCSE & IGCSE Mathematics Specialist</span>
     </div>
-</nav>
-
-   <div class="credential-bar">
-    <span>Retired British International Head Teacher</span>
-    <span>•</span>
-    <span>UK GCSE & IGCSE Mathematics Specialist</span>
-</div>
 
 <!-- COURSE PATHWAYS -->
 
-<h1>Bradley's Maths</h1>
+    <h1>Bradley's Maths</h1>
 
-<h2>Structured, Exam-Focused Mathematics</h2>
+    <h2>Structured, Exam-Focused Mathematics</h2>
 
-<p class="section-intro">
-Choose the course you are studying to access structured worksheets,
-prediction papers and daily exam practice.
-</p>    
+    <p class="section-intro">
+        Choose the course you are studying to access structured worksheets,
+        prediction papers and daily exam practice.
+    </p>    
 
 
-<div class="btn-group">
+    <div class="btn-group">
+        <a href="gcse.html" class="btn btn-large btn-gcse">
+            GCSE Mathematics<br>
+        <span class="btn-sub">AQA • Edexcel • OCR • WJEC</span>
+        </a>
 
-<a href="gcse.html" class="btn btn-large btn-gcse">
-GCSE Mathematics<br>
-<span class="btn-sub">AQA • Edexcel • OCR • WJEC</span>
-</a>
-
-<a href="igcse.html" class="btn btn-large btn-igcse">
-Cambridge IGCSE Mathematics<br>
-<span class="btn-sub">Syllabus 0580</span>
-</a>
-</div>
-    
-<div class="container">
-    <div class="trust-badge">
-        <h2 style="text-align: center; color: #2c3e50;">Trusted by International Educators</h2>
+        <a href="igcse.html" class="btn btn-large btn-igcse">
+            Cambridge IGCSE Mathematics<br>
+            <span class="btn-sub">Syllabus 0580</span>
+        </a>
     </div>
+    
+    <div class="container">
+        <div class="trust-badge">
+            <h2 style="text-align: center; color: #2c3e50;">Trusted by International Educators</h2>
+        </div>
     <!-- Jeff's Quote -->
-    <div class="resource-card">
+        <div class="resource-card">
         
             <p style="font-style: italic;">"I gave your Paper 2 to my students... <strong>I did not find a single wrong answer!</strong> Your solution document is superb. I have described your website to all 40 of my Extended students."</p>
             <p style="font-weight: bold; margin-top: 10px; color: #34495e;">— J.H., Senior Maths Teacher</p>
         
-    </div>  
+        </div>  
 
         <!-- Seef's Quote -->
-    <div class="resource-card">
+        <div class="resource-card">
 
             <p style="font-style: italic;">"These are <strong>brilliant.</strong> Mr. Bradley was our Principal and has many years of experience as an excellent mathematics teacher. I've sent the link to all our Y10 and Y11 students."</p>
             <p style="font-weight: bold; margin-top: 10px; color: #34495e;">— S. M., IBDP Coordinator and Mathematics Teacher</p>
    
-    </div>
-</div>      
+        </div>
+    </div>      
 
 
 <!-- FOOTER -->
-<div class="footer">
+    <div class="footer">
 
-    <p>&copy; 2025 Bradley's Maths</p>
+        <p>&copy; 2025 Bradley's Maths</p>
 
-</div>
-            
-            <!-- NEW: AQA PREDICTION PAPERS DROPDOWN 
-            <div class="dropdown">
-                <button class="dropbtn gold-link">AQA Predicted 2026 Exams ▾</button>
-                <div class="dropdown-content">
-                    <a href="https://payhip.com/b/x0OrH">Set A (£7.50)</a>
-                    <a href="https://payhip.com/b/CdRz2">Set B (£7.50)</a>
-                    <a href="https://payhip.com/b/3ZTrU">Set C (£7.50)</a>
-                    <a href="https://payhip.com/b/9cP7i" style="font-weight: bold; color: #d97706;">★ Full 9-Paper Bundle - £15</a>
-                </div>
-            </div>
--->
-            <!-- NEW:Pearson PREDICTION PAPERS DROPDOWN --
-            <div class="dropdown">
-                <button class="dropbtn gold-link">Pearson Edexcel Predicted 2026 Exams ▾</button>
-                <div class="dropdown-content">
-                    <a href="https://payhip.com/b/70TWm">Set A (£7.50)</a>
-                    <a href="https://payhip.com/b/isqDW">Set B (£7.50)</a>
-                    <a href="https://payhip.com/b/AIyYk">Set C (£7.50)</a>
-                    <a href="https://payhip.com/b/pYOZr" style="font-weight: bold; color: #d97706;">★ Full 9-Paper Bundle - £15</a>
-                </div>
-            </div>
--->
-            <!-- IGCSE Link 
-            <a href="igcse.html" class="highlight-link">IGCSE (0580)</a>
--->
-            <!-- Booklets Dropdown 
-            <div class="dropdown">
-                <button class="dropbtn">Course Booklets ▾</button>
-                <div class="dropdown-content">
-                    <a href="https://payhip.com/b/IVWzJ">Number Booklet (£15)</a>
-                    <a href="https://payhip.com/b/wRN86">Algebra Booklet (£20)</a>
-                    <a href="https://payhip.com/b/XAGch">Geometry Booklet (£15)</a>
-                    <a href="https://payhip.com/b/RVbqM">Probability Booklet (£10)</a>
-                    <a href="https://payhip.com/b/l2JMG" style="font-weight: bold; color: #d97706;">★ The Complete Collection</a>
-                </div>
-            </div>
--->
-            <!-- Free Resources Dropdown 
-            <div class="dropdown">
-                <button class="dropbtn">Free Worksheets ▾</button>
-                <div class="dropdown-content">
-                    <a href="Number - direct proportion.pdf">Number (Proportion)</a>
-                    <a href="Algebra - rational expressions.pdf">Algebra (Rational Exp)</a>
-                    <a href="Geometry - circle theorem proofs.pdf">Geometry (Proofs)</a>
-                    <a href="Probability - frequency trees.pdf">Prob (Freq Trees)</a>
-                </div>
-            </div>
-        </div>
-    </nav>
--->
- <!--   <main class="container">
-        <h1>Bradley's Maths</h1>
-        <h2>Structured, Exam-Focused Higher Tier Mathematics</h2>
-        <div class="trust-badge">Comprehensive Higher Tier Content • Aligned to AQA, Edexcel, OCR & WJEC</div>
-       <div class="info-panel">
-        <h3>Why Bradley’s Maths?</h3>
-            <p>
-            Every worksheet is built around clearly defined syllabus topic areas.
-            Each begins with key concepts and worked examples, followed by carefully graduated exam-style questions.
-            Every worksheet is accompanied by a fully worked model answer sheet, including structured guidance, common misconceptions and examiner-style insights.
-            </p>
-
-            <p class="emphasis">
-            No filler. No random worksheets. Structured progression.
-            </p>
-        </div>
-    -->    
-
-        <!-- PROBLEM OF THE DAY WIDGET 
-        <div class="daily-widget">
-            <span class="widget-header">Problem of the Day | <span id="dateDisplay"></span></span>
-            <div id="math-question" class="question-box">Loading Question...</div>
-            <button id="stepBtn" class="reveal-btn" onclick="showNextStep()">Show First Step</button>
-            <div id="solution-area" class="step-container"></div>
-        </div>
--->
-        <!-- NEW SECTION: AQA PREDICTION PAPERS 
-        <h3 class="gold-heading">NEW: AQA 2026 Prediction Papers</h3>
-        <p class="section-intro">
-            9 Full Papers. 3 Balanced Sets. The "Gold Standard" in revision.
-        </p>
--->        
-       <!-- <div class="btn-group">
-            <a href="https://payhip.com/b/x0OrH" class="btn btn-exam-a">Set A (£7.50)</a>
-            <a href="https://payhip.com/b/CdRz2" class="btn btn-exam-b">Set B (£7.50)</a>
-            <a href="https://payhip.com/b/3ZTrU" class="btn btn-exam-c">Set C (£7.50)</a>
-        </div>
-        <div class="button-feature">
-            <a href="https://payhip.com/b/l2JMG"
-               class="btn btn-complete btn-large">
-               ★ THE COMPLETE EXAM COLLECTION (£15) ★
-            </a>
-        </div>
--->
-        <!-- NEW SECTION: Pearson Edexcel PREDICTION PAPERS 
-        <h3 class="gold-heading">NEW: Pearson Edexcel 2026 Prediction Papers</h3>
-        <p class="section-intro">
-            9 Full Papers. 3 Balanced Sets. The "Gold Standard" in revision.
-        </p>
-        
-        <div class="btn-group">
-            <a href="https://payhip.com/b/70TWm" class="btn btn-exam-a">Set A (£7.50)</a>
-            <a href="https://payhip.com/b/isqDW" class="btn btn-exam-b">Set B (£7.50)</a>
-            <a href="https://payhip.com/b/AIyYk" class="btn btn-exam-c">Set C (£7.50)</a>
-        </div>
-        <div class="button-feature">
-            <a href="https://payhip.com/b/pYOZr"
-               class="btn btn-complete btn-large">
-               ★ THE COMPLETE EXAM COLLECTION (£15) ★
-            </a>
-        </div>
--->
-        <!-- WORKSHEET BOOKLETS 
-        <h3>Complete Course Booklets</h3>
-        <div class="btn-group">
-            <a href="https://payhip.com/b/IVWzJ" class="btn btn-number">Number (£15)</a>
-            <a href="https://payhip.com/b/wRN86" class="btn btn-algebra">Algebra (£20)</a>
-            <a href="https://payhip.com/b/XAGch" class="btn btn-geometry">Geometry (£15)</a>
-            <a href="https://payhip.com/b/RVbqM" class="btn btn-prob-and-stats">Prob & Stats (£10)</a>
-        </div>
-        <div style="margin-top: 15px;">
-            <a href="https://payhip.com/b/l2JMG" class="btn btn-complete" style="width: 80%; max-width: 400px;">
-                ★ THE COMPLETE WORKSHEET COLLECTION (£45) ★
-            </a>
-        </div>
- -->       
-        <!-- FOOTER 
-        <div class="footer">
-
-    <p>&copy; 2025 Bradley's Maths</p>
-
-    <div class="btn-group">
-        <a href="https://payhip.com/bradleysmaths"
-           class="btn btn-shop">Visit Store</a>
-
-        <a href="https://www.youtube.com/@BradleysMaths"
-           class="btn btn-youtube">YouTube Channel</a>
     </div>
 
-</div>
-</main>
--->
     <!-- JAVASCRIPT (Keep your existing script here) -->
     <script src="problems-main.js"></script>
     <script src="engine.js"></script>
+    <script src="dark.js"></script>
 
     
 </body>
