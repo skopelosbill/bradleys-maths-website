@@ -25,12 +25,24 @@
     --text-main: #f9f8ff;        /* Text becomes Aubergine White */
     --card-bg: #1e1b29;          /* Slightly lighter black for cards */
     --brand-purple: #a78bfa;     /* Lighter purple for readability */
+    --brand-purple-dark: #c4b5fd;
     --brand-green-light: #1a2e2a; 
 }
 
 /* Invert all diagrams and thumbnails so they don't glow white */
 [data-theme="dark"] img {
     filter: invert(0.9) hue-rotate(180deg);
+}
+
+/* THE MAGIC INVERTER: This handles your maths diagrams and thumbnails */
+[data-theme="dark"] img:not(.nav-brand img) {
+    filter: invert(0.9) hue-rotate(180deg) brightness(1.1);
+}
+
+/* Ensure the navbar stays dark and distinct */
+[data-theme="dark"] .navbar {
+    background-color: #0a090f;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
 /* ========================= */
