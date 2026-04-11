@@ -393,7 +393,7 @@ h1 {
     margin: 40px 0 10px;
     font-weight: 600;
     font-family: 'Merriweather', serif;
-    color: var(--brand-purple);
+    color: var(--brand-purple-dark);
 }
 
 h2 {
