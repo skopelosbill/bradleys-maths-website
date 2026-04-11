@@ -431,7 +431,7 @@ h1, h2, h3 {
 /* BUTTONS */
 /* ========================= */
 
-<button id="theme-toggle" onclick="toggleTheme()" style="background: none; border: 1px solid var(--brand-purple-light); color: white; padding: 5px 10px; border-radius: 20px; cursor: pointer; margin-left: 15px; font-size: 0.8rem;">
+
 
 
 .btn-group {
@@ -502,6 +502,29 @@ h1, h2, h3 {
     background-color: #1e3a8a;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-theme {
+    background: none;
+    border: 1px solid var(--brand-purple-light);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-theme:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: white;
+}
+
+/* In Dark Mode, adjust the button border color */
+[data-theme="dark"] .btn-theme {
+    border-color: var(--brand-purple);
 }
 
 /* Container for centering the button */
