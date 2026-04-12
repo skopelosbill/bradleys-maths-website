@@ -1468,7 +1468,7 @@ const problemBank = [
         "topic": "Percentages",
         "subtopic": "Compound interest",
         "difficulty": "6/7",
-        "q": "Alice invests £4000 in a savings account with $3\\%$ compound interest per year.<br>Calculate the total interest earned after 5 years. Give your answer to the nearest penny.",
+        "q": "Alice invests £4000 in a savings account with 3% compound interest per year.<br>Calculate the total interest earned after 5 years. Give your answer to the nearest penny.",
         "img": "",
         "steps": [
             "Multiplier = $1.03$.",
