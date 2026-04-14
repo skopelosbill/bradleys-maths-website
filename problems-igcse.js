@@ -1642,10 +1642,10 @@ const problemBank = [
         "q": "Bill changes £500 into Euros (€) when the exchange rate is £1 = €1.15.<br>While on holiday, he spends €400.<br>He then changes the remaining Euros back into Pounds (£) when the exchange rate is £1 = €1.12.<br>Calculate how much Bill receives in Pounds.",
         "img": "",
         "steps": [
-            "Convert the original Pounds to Euros: $500 \\times 1.15 = €575$.",
-            "Subtract the amount spent: $575 - 400 = €175$.",
+            "Convert the original Pounds to Euros: $500 \\times 1.15 = €575$",
+            "Subtract the amount spent: $575 - 400 = €175$",
             "Convert the remaining Euros back to Pounds using the new rate.",
-            "Since we are going from the foreign currency back to the 'home' currency, we divide: $175 \\div 1.12$.",
+            "Since we are going from the 'foreign' currency back to the 'home' currency, we divide: $175 \\div 1.12$",
             "Final Answer: $$£156.25$$"
         ],
         "bradley_insight": {
