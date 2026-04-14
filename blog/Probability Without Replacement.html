@@ -132,49 +132,44 @@
        This is a fairly straightforward probability question that is likely to turn up in the middle of one of your exam papers and it can be either calculator or non-calculator. The only difficulty with this question is I haven't provided a diagram.  In the exam you will usually get one that you need to fill in some of the probabilities on, but if they don't give you a tree diagram, sketch one for yourself - that is exactly what I did in the video, its quick and its simple.
     </p>
 
+    <p><strong>The diagram is shown below:</strong></p>
+      
+    <div class="diagram">
+      <img src="../images/blogimages/probabilitytree.png" alt="Sketched probability tree diagram">
+    </div>
+
     <p>
-       YOU ARE HERE 
+       The diagram doesn't need to be fabulous just a rough sketch like this is perfectly acceptable.  There are no marks for it but it is enough to help you get full marks for the question. 
     </p>
     
     <p> 
-      We multiply the first ratio by 3 and the second ratio by 2 to get:
+      Part a) asks for the probability of two reds.  This is the top line in the tree and we multiply along the lines.  We should remember that this is without replacement and so the second fractions have all been altered - there is one less sweet of whatever colour was taken and there is one less sweet in the bag.
     </p>
       
-      $$\text{Rose }:\text{ Sarah}=3(3:2)=9:6$$
+      $$P(r,r)= \dfrac{3}{8}\times\dfrac{2}{7} = \dfrac{6}{56} = \dfrac{3}{28}$$
       
-      $$\text{Sarah }:\text{ Tabitha}=2(3:5)=6:10$$
-
     <p>
-      So the ratio of the three sisters is $9:6:10$
+      Part b) asks for the probability of one of each.  There are two ways to take one of each sweet, first red then green or first green then red. Once again we multiply along the lines but we add between the lines
     </p>
-
+        $$P(one of each) = \dfrac{3}{8}\times\dfrac{5}{7} + \dfrac{5}{8}\times\dfrac{3}{7} = \dfrac{30}{56} = \dfrac{15}{28}$$
+   
     <p>
-      And the answer to part a) is:
+      Finally in part c) we are looking for the probability of at least one of the sweets being green.  there are two ways to look at this problem, the hard way is to work out the probability of the first sweet being green, add the probability of the second being green and then add the probability of both sweets being green.  The easier way to look at it is if one has to be green they cannot both be red, so we take the probability of both red (which we wored out in part a) away from 1 (the sum of all probabilities).
     </p>
-    $$\text{Rose }:\text{ Tabitha}=9:10$$
+    
+          $$P(at least one green)= 1 - P(r,r) = 1 - \dfrac{3}{28} = \dfrac{25}{28}$$
 
     <p>
         Part b) is now just a straightforward ratio question:
     </p>
 
-    \begin{align*}
-      9+6+10 &= 25\\
-      \frac{100}{25} &= 4\\
-      4\times9 &= 36\\
-      4\times6 &= 24\\
-      4\times10 &= 40
-    \end{align*}
-    <p>Final answer:</p>
-
-    $$\textbf{Rose is 36, Sarah is 24, Tabitha is 40}$$
-
-    <p><strong>Check:</strong> Their combined ages $36+24+40=100$ — so our answer is sensible.</p>
+   
 
 
 <!-- THE BRADLEY INSIGHT / SALES BOX -->
     <div class="bradley-insight-box insight-deeper">
-        <span class="insight-title">The Head Teacher's Eye: Multiply to Combine!</span>
-        <p>If a ratio is given as $a:b_1$ and $b_2:c$ where $b_1$ and $b_2$ represent the same item then the way to combine them is to multiply the entire ratio $a:b_1$ by $b_2$ and the entire $b_2:c$ by $b_1$ so that we have $ab_2:b_1b_2:b_1c$</p>
+        <span class="insight-title">The Head Teacher's Eye: Spend Time and Save Time</span>
+        <p>If you haven't been given spend a few seconds making a rough probability tree diagram to read the probabilities from, it is easier to keep track of them that way.  Save time by remembering that P(at least one green) is the same as 1 - P(all red). </p>
     
         <div class="nudge-container">
             <a href="https://payhip.com/bradleysmaths" class="btn-buy">
@@ -192,8 +187,11 @@
     <h3>Topics covered in this question</h3>
 
     <ul>
-      <li>Combining ratios</li>
-      <li>Using ratios to find unknown values</li>
+        <li>Probability without replacement</li>
+        <li>Multiplying fractions along the path</li>
+        <li>Adding fractions between the paths</li>
+        <li>Probability of 'at least one#</li>
+        
     </ul>
 
   </div>
@@ -208,8 +206,10 @@
 
 <h3>Video Explanation</h3>
 
+    This is a silent video - this will be the style of most of my videos, short and silent, just me doing maths with label appearing at appropriate moments.  I hope you like this style - let me know either by commenting on YouTube or by dropping me a line on my Q and A page.
+
 <iframe
-    src="https://www.youtube.com/embed/PCWzKviIVwc?rel=0&modestbranding=1"
+    src="https://www.youtube.com/embed/JdmJLwmi11E?rel=0&modestbranding=1"
     title="Inverse Proportion - Non-Calculator | GCSE, IGCSE | All Boards"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
