@@ -1522,7 +1522,7 @@ const problemBank = [
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: The Double Negative",
-            "content": "When the constant is positive ($+21$) but the middle term is negative ($-10$), **both** numbers in your brackets must be negative. It's a very common place for signs to go wrong!"
+            "content": "When the constant is positive ($+21$) but the middle term is negative ($-10$), <strong>both</strong> numbers in your brackets must be negative. It's a very common place for signs to go wrong!"
         }
     },
     // 15 Apr
