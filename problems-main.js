@@ -1536,7 +1536,7 @@ const problemBank = [
         "q": "A ladder $5\\text{m}$ long leans against a vertical wall.<br>The base of the ladder is $3\\text{m}$ from the wall on horizontal ground.<br>Calculate the angle the ladder makes with the ground.",
         "img": "images/apr_15_g.png",
         "steps": [
-            "Identify the sides relative to the angle $\\theta$: The ladder is the \\textbf{Hypotenuse} ($5\\text{m}$) and the distance from the wall is the \\textbf{Adjacent} side ($3\\text{m}$).",
+            "Identify the sides relative to the angle $\\theta$: The ladder is the $\\textbf{Hypotenuse}$ ($5\\text{m}$) and the distance from the wall is the $\\textbf{Adjacent}$ side ($3\\text{m}$).",
             "Select the correct ratio: $\\cos(\\theta) = \\dfrac{\\text{adj}}{\\text{hyp}}$.",
             "Substitute the values: $\\cos(\\theta) = \\dfrac{3}{5}$.",
             "Calculate the angle: $\\theta = \\cos^{-1}(0.6)$.",
