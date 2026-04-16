@@ -1903,6 +1903,698 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/XAGch",
         "button_text": "Master Geometry: Download the Full Geometry Pack"
     },
+	
+    // 1 May
+    {
+        "id": "002101",
+        "date": "1 May 2026",
+        "major_area": "Number",
+        "topic": "Surds",
+        "subtopic": "Rationalising denominators",
+        "difficulty": "8/9",
+        "q": "Simplify fully $\\dfrac{12}{\\sqrt{3}} + \\sqrt{27}$.<br>Give your answer in the form $k\\sqrt{3}$ where $k$ is an integer.",
+        "steps": [
+            "Rationalise the first term: $\\dfrac{12 \\times \\sqrt{3}}{\\sqrt{3} \\times \\sqrt{3}} = \\dfrac{12\\sqrt{3}}{3} = 4\\sqrt{3}$.",
+            "Simplify the second term: $\\sqrt{27} = \\sqrt{9 \\times 3} = 3\\sqrt{3}$.",
+            "Add the terms together: $4\\sqrt{3} + 3\\sqrt{3} = 7\\sqrt{3}$.",
+            "Final Answer: $$7\\sqrt{3}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Common Radicals",
+            "content": "In non-calculator papers, if a question asks for an answer in the form $k\\sqrt{3}$, it is a massive hint that every term in the expression can be simplified to something involving $\\sqrt{3}$."
+        },
+        "payhip_link": "https://payhip.com/b/IVWzJ",
+        "button_text": "Master Number: Download the Full Number Pack"
+    },
+    // 2 May
+    {
+        "id": "002102",
+        "date": "2 May 2026",
+        "major_area": "Algebra",
+        "topic": "Linear Equations",
+        "subtopic": "Unknowns on both sides",
+        "difficulty": "4/5",
+        "q": "Solve the equation: $5(x - 3) = 2x + 9$.",
+        "steps": [
+            "Expand the bracket: $5x - 15 = 2x + 9$.",
+            "Subtract $2x$ from both sides: $3x - 15 = 9$.",
+            "Add 15 to both sides: $3x = 24$.",
+            "Divide by 3.",
+            "Final Answer: $$x = 8$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: The Expansion Trap",
+            "content": "When expanding $5(x - 3)$, the most common error is forgetting to multiply the $-3$ by 5. Always ensure you distribute the multiplier to every term inside."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    },
+    // 3 May
+    {
+        "id": "002103",
+        "date": "3 May 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Trigonometry",
+        "subtopic": "Cosine rule",
+        "difficulty": "8/9",
+        "img": "images/May_03_g.png",
+        "q": "In triangle $ABC$, $AB = 8\\text{ cm}$, $AC = 11\\text{ cm}$ and angle $BAC = 72^\\circ$.<br>(a) Calculate the length of $BC$. Give your answer to 3 significant figures.<br>(b) Calculate the area of the triangle.",
+        "steps": [
+            "(a) Use the Cosine Rule: $a^2 = b^2 + c^2 - 2bc \\cos(A)$.",
+            "$a^2 = 11^2 + 8^2 - 2(11)(8) \\cos(72^\\circ)$.",
+            "$a^2 = 121 + 64 - 176 \\cos(72^\\circ) = 130.61...$.",
+            "$a = \\sqrt{130.61...} = 11.4\\text{ cm}$.",
+            "(b) Area $= \\frac{1}{2}bc \\sin(A) = \\frac{1}{2}(11)(8) \\sin(72^\\circ)$.",
+            "Final Answer: $$(a)\\ 11.4\\text{ cm},\\ (b)\\ 41.8\\text{ cm}^2$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: SAS Recognition",
+            "content": "When you have Side-Angle-Side (two sides and the included angle), the Cosine Rule and the Sine Area formula are your best friends."
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master Geometry: Download the Full Geometry Pack"
+    },
+    // 4 May
+    {
+        "id": "002104",
+        "date": "4 May 2026",
+        "major_area": "Number",
+        "topic": "Standard Form",
+        "subtopic": "Calculations in standard form",
+        "difficulty": "6/7",
+        "q": "Work out the value of $(4 \\times 10^7) \\times (8 \\times 10^{-3})$.<br>Give your answer in standard form.",
+        "steps": [
+            "Multiply the numbers: $4 \\times 8 = 32$.",
+            "Multiply the powers (add indices): $10^7 \\times 10^{-3} = 10^4$.",
+            "Initial result: $32 \\times 10^4$.",
+            "Convert to standard form: $3.2 \\times 10^1 \\times 10^4$.",
+            "Final Answer: $$3.2 \\times 10^5$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: The Final Check",
+            "content": "Many students stop at $32 \\times 10^4$. Remember, for standard form, the first number must be between 1 and 10."
+        },
+        "payhip_link": "https://payhip.com/b/IVWzJ",
+        "button_text": "Master Number: Download the Full Number Pack"
+    },
+    // 5 May
+    {
+        "id": "002105",
+        "date": "5 May 2026",
+        "major_area": "Ratio, Proportion & Rates of Change",
+        "topic": "Percentage Change",
+        "subtopic": "Increase/decrease",
+        "difficulty": "4/5",
+        "q": "A car was bought for £18,000. Its value depreciated by 15% in the first year and then by 10% of its new value in the second year.<br>Calculate the value of the car after 2 years.",
+        "steps": [
+            "Year 1 multiplier: $1 - 0.15 = 0.85$.",
+            "Value after Year 1: $18000 \\times 0.85 = £15,300$.",
+            "Year 2 multiplier: $1 - 0.10 = 0.90$.",
+            "Value after Year 2: $15300 \\times 0.90$.",
+            "Final Answer: $$£13,770$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Avoid the Addition Error",
+            "content": "Depreciating by 15% then 10% is not the same as a single 25% drop. Always apply percentages to the current value."
+        },
+        "payhip_link": "https://payhip.com/b/IVWzJ",
+        "button_text": "Master Number & Ratio: Download the Full Number Pack"
+    },
+    // 6 May
+    {
+        "id": "002106",
+        "date": "6 May 2026",
+        "major_area": "Statistics",
+        "topic": "Histograms",
+        "subtopic": "Frequency density",
+        "difficulty": "7/8",
+        "img": "images/May_06_g.png",
+        "q": "The table shows information about the weights of 50 bags.<br><br><table style='border-collapse: collapse; width: 100%; text-align: center;' border='1'><tr><th style='padding: 8px;'>Weight ($w$ grams)</th><th style='padding: 8px;'>Frequency</th></tr><tr><td style='padding: 5px;'>$0 < w \\le 10$</td><td style='padding: 5px;'>8</td></tr><tr><td style='padding: 5px;'>$10 < w \\le 25$</td><td style='padding: 5px;'>15</td></tr><tr><td style='padding: 5px;'>$25 < w \\le 45$</td><td style='padding: 5px;'>14</td></tr><tr><td style='padding: 5px;'>$45 < w \\le 50$</td><td style='padding: 5px;'>13</td></tr></table><br>(a) Calculate the frequency density for each class.<br>(b) State which bar would be the tallest on a histogram.",
+        "steps": [
+            "FD ($0-10$): $8 \\div 10 = 0.8$.",
+            "FD ($10-25$): $15 \\div 15 = 1.0$.",
+            "FD ($25-45$): $14 \\div 20 = 0.7$.",
+            "FD ($45-50$): $13 \\div 5 = 2.6$.",
+            "The tallest bar corresponds to the highest FD ($45 < w \\le 50$).",
+            "Final Answer: $$45 < w \\le 50$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Area is Frequency",
+            "content": "In a histogram, the area of the bar represents the frequency, not the height."
+        }
+    },
+    // 7 May
+    {
+        "id": "002107",
+        "date": "7 May 2026",
+        "major_area": "Algebra",
+        "topic": "Algebraic Fractions",
+        "subtopic": "Simplifying",
+        "difficulty": "8/9",
+        "q": "Simplify fully: $\\dfrac{2x^2 + 5x - 3}{x^2 - 9}$.",
+        "steps": [
+            "Factorise the numerator: $(2x - 1)(x + 3)$.",
+            "Factorise the denominator: $(x - 3)(x + 3)$.",
+            "Cancel the common factor $(x + 3)$.",
+            "Final Answer: $$\\dfrac{2x - 1}{x - 3}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: The Hint in the Question",
+            "content": "These questions are built to simplify. Use the easier-to-factorise denominator to help you identify a factor of the harder numerator."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    },
+    // 8 May
+    {
+        "id": "002108",
+        "date": "8 May 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Circle Theorems",
+        "subtopic": "Tangents",
+        "difficulty": "7/8",
+        "img": "images/May_08_g.png",
+        "q": "$A$ and $B$ are points on a circle with centre $O$. $PA$ and $PB$ are tangents to the circle. Angle $APB = 50^\\circ$.<br>Calculate the size of angle $OAB$.",
+        "steps": [
+            "Angle $OAP$ and $OBP$ are $90^\\circ$ (Tangent-Radius).",
+            "Angle $AOB = 360 - 90 - 90 - 50 = 130^\\circ$.",
+            "Triangle $OAB$ is isosceles (radii are equal).",
+            "Angle $OAB = (180 - 130) \\div 2$.",
+            "Final Answer: $$25^\\circ$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: The Isosceles Radius",
+            "content": "Radii are your best friends in circle theorems. Whenever you see two radii forming a triangle, mark it as isosceles."
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master Geometry: Download the Full Geometry Pack"
+    },
+    // 9 May
+    {
+        "id": "002109",
+        "date": "9 May 2026",
+        "major_area": "Ratio, Proportion & Rates of Change",
+        "topic": "Direct & Inverse Proportion",
+        "subtopic": "Proportion equations",
+        "difficulty": "6/7",
+        "q": "$P$ is inversely proportional to the square root of $m$. When $m = 36, P = 4$.<br>(a) Find a formula for $P$ in terms of $m$.<br>(b) Work out the value of $P$ when $m = 64$.",
+        "steps": [
+            "(a) $P = k/\\sqrt{m} \\implies 4 = k/\\sqrt{36} \\implies k = 24$.",
+            "(b) $P = 24/\\sqrt{64} = 24/8 = 3$.",
+            "Final Answer: $$(a)\\ P = \\dfrac{24}{\\sqrt{m}},\\ (b)\\ 3$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Root vs Square",
+            "content": "Read carefully! Square root and Square are not the same. Misreading this loses all marks."
+        }
+    },
+    // 10 May
+    {
+        "id": "002110",
+        "date": "10 May 2026",
+        "major_area": "Probability",
+        "topic": "Basic Probability",
+        "subtopic": "Venn Diagrams",
+        "difficulty": "6/7",
+        "img": "images/May_10_g.png",
+        "q": "The universal set $\\xi = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\}$.<br>$A = \\{\\text{prime numbers}\\}$<br>$B = \\{\\text{factors of 12}\\}$<br><br>(a) Represent this in a Venn diagram.<br>(b) Find $P(A \\cap B')$.",
+        "steps": [
+            "Members: $A = \\{2, 3, 5, 7\\}$, $B = \\{1, 2, 3, 4, 6\\}$.",
+            "Intersection $A \\cap B = \\{2, 3\\}$.",
+            "Region $A$ only contains $\\{5, 7\\}$.",
+            "Region $B$ only contains $\\{1, 4, 6\\}$.",
+            "Outside: $\\{8, 9, 10\\}$.",
+            "Final Answer: $$\\frac{2}{10} \\text{ (or } 0.2) <br><img src='images/May_10_sol_g.png' alt='Venn Solution' style='max-width:300px;'>$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Order of Entry",
+            "content": "Always fill the intersection first, then subtract from the totals to fill the 'only' regions."
+        }
+    },
+    // 11 May
+    {
+        "id": "002111",
+        "date": "11 May 2026",
+        "major_area": "Algebra",
+        "topic": "Graphs",
+        "subtopic": "Transformations of graphs",
+        "difficulty": "8/9",
+        "img": "images/May_11_g.png",
+        "q": "The graph of $y = f(x)$ has a turning point at $(3, -2)$.<br>State the coordinates of the turning point for:<br><br>(a) $y = f(x + 2)$ <br><br>(b) $y = f(x) + 5$ <br><br>(c) $y = -f(x)$.",
+        "steps": [
+            "(a) This moves the graph two units to the <strong>LEFT</strong>: $(1, -2)$.",
+            "(b) This moves the graph five units <strong>UP</strong>: $(3, 3)$.",
+            "(c) This is a reflection in x-axis: $(3, 2)$.",
+            "Final Answer: $$(a)\\ (1, -2),\\ (b)\\ (3, 3),\\ (c)\\ (3, 2)$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Inside vs Outside",
+            "content": "A change inside the bracket affects the $x$-coordinate but a positive change moves the graph in the negative direction and vice-versa. A change outside the bracket affects the $y$-coordinate but as you might expect a positive moves the graph up and a negative moves the graph down. Multiplication by negative 1 outside of the brackets cause a reflection in the $x$-axis and by negative 1 inside the bracket causes a reflection in the $y$-axis."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    },
+    // 12 May
+    {
+        "id": "002112",
+        "date": "12 May 2026",
+        "major_area": "Number",
+        "topic": "Estimation & Bounds",
+        "subtopic": "Upper and lower bounds",
+        "difficulty": "6/7",
+        "q": "$A = b/c$. $b = 400$ (nearest 10). $c = 25$ (nearest 5).<br>Calculate the upper bound for $A$.",
+        "steps": [
+            "Bounds for $b$: $395, 405$.",
+            "Bounds for $c$: $22.5, 27.5$.",
+            "Upper bound $A = UB_b \\div LB_c = 405 \\div 22.5$.",
+            "Final Answer: $$18$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Dividing Bounds",
+            "content": "To maximize a division result, divide the largest numerator by the smallest denominator."
+        }
+    },
+    // 13 May
+    {
+        "id": "002113",
+        "date": "13 May 2026",
+        "major_area": "Algebra",
+        "topic": "Simultaneous Equations",
+        "subtopic": "Substitution",
+        "difficulty": "8/9",
+        "q": "Solve: $x^2 + y^2 = 25$ and $y = 2x + 5$.",
+        "steps": [
+            "Substitute: $x^2 + (2x+5)^2 = 25$.",
+            "Expand: $x^2 + 4x^2 + 20x + 25 = 25$.",
+            "Solve $5x^2 + 20x = 0 \\implies 5x(x+4) = 0$.",
+            "Values: $x=0, y=5$ and $x=-4, y=-3$.",
+            "Final Answer: $$(0, 5) \\text{ and } (-4, -3)$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Pairs of Solutions",
+            "content": "Always present coordinates as pairs. These represent the points where a line intersects a circle."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    },
+    // 14 May
+    {
+        "id": "002114",
+        "date": "14 May 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Polygons",
+        "subtopic": "Interior angles",
+        "difficulty": "5/6",
+        "q": "The interior angle of a regular polygon is $162^\\circ$.<br>Calculate the number of sides.",
+        "steps": [
+            "Exterior angle $= 180 - 162 = 18^\\circ$.",
+            "Number of sides $= 360 \\div 18 = 20$.",
+            "Final Answer: $$20$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Exterior over Interior",
+            "content": "The exterior angle method is faster and less error-prone than the interior formula."
+        }
+    },
+    // 15 May
+    {
+        "id": "002115",
+        "date": "15 May 2026",
+        "major_area": "Statistics",
+        "topic": "Cumulative Frequency",
+        "subtopic": "Median & IQR",
+        "difficulty": "6/7",
+        "img": "images/May_15_g.png",
+        "q": "The table shows the wait times for 80 people.<br><br><table style='border-collapse: collapse; width: 100%; text-align: center;' border='1'><tr><th style='padding: 8px;'>Time ($t$ min)</th><th style='padding: 8px;'>Frequency</th></tr><tr><td style='padding: 5px;'>$0 < t \\le 10$</td><td style='padding: 5px;'>5</td></tr><tr><td style='padding: 5px;'>$10 < t \\le 20$</td><td style='padding: 5px;'>12</td></tr><tr><td style='padding: 5px;'>$20 < t \\le 30$</td><td style='padding: 5px;'>25</td></tr><tr><td style='padding: 5px;'>$30 < t \\le 40$</td><td style='padding: 5px;'>28</td></tr><tr><td style='padding: 5px;'>$40 < t \\le 50$</td><td style='padding: 5px;'>10</td></tr></table><br>(a) Draw a CF graph.<br>(b) Estimate the IQR.",
+        "steps": [
+            "CF Values: 5, 17, 42, 70, 80.",
+            "Plot at upper bounds: (10,5), (20,17), (30,42), (40,70), (50,80).",
+            "Estimate $Q_1$ (20th) and $Q_3$ (60th) from graph.",
+            "$Q_3 - Q_1 \\approx 36.5 - 21.5 = 15$.",
+            "Final Answer: $$15\\text{ minutes}$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Plotting Endpoints",
+            "content": "Always plot CF at the end of the interval, not the midpoint."
+        }
+    },
+    // 16 May
+    {
+        "id": "002116",
+        "date": "16 May 2026",
+        "major_area": "Algebra",
+        "topic": "Rearranging Formulae",
+        "subtopic": "Rearranging with powers",
+        "difficulty": "7/8",
+        "q": "Make $x$ the subject: $y = \\dfrac{x^2 + a}{x^2 - b}$.",
+        "steps": [
+            "$y(x^2 - b) = x^2 + a$.",
+            "$yx^2 - yb = x^2 + a$.",
+            "$yx^2 - x^2 = a + yb$.",
+            "$x^2(y - 1) = a + yb$.",
+            "Final Answer: $$x = \\sqrt{\\dfrac{a + yb}{y - 1}}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: The Factorising Step",
+            "content": "If your subject appears twice, you must isolate those terms and factorise."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    },
+    // 17 May
+    {
+        "id": "002117",
+        "date": "17 May 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Vectors",
+        "subtopic": "Vector addition",
+        "difficulty": "8/9",
+        "img": "images/May_17_g.png",
+        "q": "$OABC$ is a quadrilateral. $\\vec{OA} = 3\\mathbf{a}$, $\\vec{OC} = 2\\mathbf{c}$. $\\vec{CB} = \\mathbf{a}$. $M$ is midpoint of $AB$. Find $\\vec{OM}$.",
+        "steps": [
+            "$\\vec{AB} = \\vec{AO} + \\vec{OC} + \\vec{CB} = -3\\mathbf{a} + 2\\mathbf{c} + \\mathbf{a} = 2\\mathbf{c} - 2\\mathbf{a}$.",
+            "$\\vec{AM} = \\mathbf{c} - \\mathbf{a}$.",
+            "$\\vec{OM} = \\vec{OA} + \\vec{AM} = 3\\mathbf{a} + \\mathbf{c} - \\mathbf{a} = 2\\mathbf{a} + \\mathbf{c}$.",
+            "Final Answer: $$2\\mathbf{a} + \\mathbf{c}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: The Vector Roadmap",
+            "content": "Vectors are just maps. Any path works as long as you follow the signs."
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master Geometry: Download the Full Geometry Pack"
+    },
+    // 18 May
+    {
+        "id": "002118",
+        "date": "18 May 2026",
+        "major_area": "Algebra",
+        "topic": "Exponential Growth & Decay",
+        "subtopic": [],
+        "difficulty": "7/8",
+        "q": "Bacteria doubles every 4 hours. 1000 bacteria at noon. How many after 24 hours?",
+        "steps": [
+            "24 hours = 6 doubling periods.",
+            "Calculation: $1000 \\times 2^6$.",
+            "$1000 \\times 64 = 64,000$.",
+            "Final Answer: $$64,000$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Powers of 2",
+            "content": "Memorising powers of 2 saves huge time in non-calculator papers."
+        }
+    },
+    // 19 May
+    {
+        "id": "002119",
+        "date": "19 May 2026",
+        "major_area": "Statistics",
+        "topic": "Box Plots",
+        "subtopic": [],
+        "difficulty": "5/6",
+        "img": "images/May_19_g.png",
+        "q": "Compare: Class A (Med 65, IQR 20) vs Class B (Med 72, IQR 12).",
+        "steps": [
+            "Class B has a higher median (72 vs 65), meaning better average performance.",
+            "Class B has a lower IQR (12 vs 20), meaning more consistent results.",
+            "Final Answer: $$\\text{Class B performed better and was more consistent}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Comparison Rule",
+            "content": "Always compare one average (median) and one spread (IQR)."
+        }
+    },
+    // 20 May
+    {
+        "id": "002120",
+        "date": "20 May 2026",
+        "major_area": "Algebra",
+        "topic": "Algebraic Proof",
+        "subtopic": "General Proof",
+        "difficulty": "8/9",
+        "q": "Prove the difference between squares of two consecutive odd numbers is a multiple of 8.",
+        "steps": [
+            "Consecutive odds: $(2n+1)$ and $(2n-1)$.",
+            "$(2n+1)^2 - (2n-1)^2 = (4n^2 + 4n + 1) - (4n^2 - 4n + 1)$.",
+            "Result: $8n$.",
+            "Final Answer: $$8n \\text{ is a multiple of 8}$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Careful Subtraction",
+            "content": "Distribute the minus sign across the whole second expansion to ensure the $n^2$ terms cancel."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    },
+    // 21 May
+    {
+        "id": "002121",
+        "date": "21 May 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Trigonometry",
+        "subtopic": "3D Pythagoras",
+        "difficulty": "8/9",
+        "img": "images/May_21_g.png",
+        "q": "Square-based pyramid: base side 10, vertical height 12. Find slant height.",
+        "steps": [
+            "Extract triangle: base 5 (half of 10), height 12.",
+            "Pythagoras: $s^2 = 12^2 + 5^2 = 169$.",
+            "Final Answer: $$13\\text{ cm}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Visualising 3D",
+            "content": "Look for the vertical height to create 2D right-angled triangles within the shape."
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master Geometry: Download the Full Geometry Pack"
+    },
+    // 22 May
+    {
+        "id": "002122",
+        "date": "22 May 2026",
+        "major_area": "Ratio, Proportion & Rates of Change",
+        "topic": "Ratio",
+        "subtopic": "Sharing in a ratio",
+        "difficulty": "6/7",
+        "q": "Red:Blue ratio is $2:3$. Add 10 red pens, ratio is $1:1$. Find original total.",
+        "steps": [
+            "$(2x+10)/3x = 1/1 \\implies 2x+10 = 3x \\implies x = 10$.",
+            "Originals: 20 and 30.",
+            "Final Answer: $$50$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Algebra in Ratio",
+            "content": "Use $x$ when ratios change to turn word problems into easy equations."
+        }
+    },
+    // 23 May
+    {
+        "id": "002123",
+        "date": "23 May 2026",
+        "major_area": "Number",
+        "topic": "Decimals",
+        "subtopic": "Converting between decimals and fractions",
+        "difficulty": "7/8",
+        "q": "Convert $0.4\\dot{7}$ into a fraction.",
+        "steps": [
+            "$100x = 47.77...$, $10x = 4.77...$.",
+            "$90x = 43$.",
+            "Final Answer: $$\\dfrac{43}{90}$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: The Dot Matters",
+            "content": "Only the 7 recurs. Align the recurring parts perfectly before subtracting."
+        }
+    },
+    // 24 May
+    {
+        "id": "002124",
+        "date": "24 May 2026",
+        "major_area": "Algebra",
+        "topic": "Graphs",
+        "subtopic": "Quadratic graphs",
+        "difficulty": "7/8",
+        "q": "Find turning point of $y = x^2 - 6x + 10$ by completing square.",
+        "steps": [
+            "$(x-3)^2 + 1$.",
+            "Turning point $(h, k)$ is $(3, 1)$.",
+            "Final Answer: $$(3, 1)$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Change the Sign",
+            "content": "Flip the sign inside the bracket, keep the sign outside."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    },
+    // 25 May
+    {
+        "id": "002125",
+        "date": "25 May 2026",
+        "major_area": "Probability",
+        "topic": "Tree Diagrams",
+        "subtopic": "Without replacement",
+        "difficulty": "8/9",
+        "q": "7 red, 3 blue. Two taken without replacement. Probability of at least one blue.",
+        "steps": [
+            "$1 - P(Red, Red) = 1 - (7/10 \\times 6/9) = 1 - 42/90$.",
+            "Final Answer: $$\\dfrac{48}{90} \\text{ (or } \\dfrac{8}{15})$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: At Least Shortcut",
+            "content": "Subtracting 'None' from 1 is always faster than calculating all blue combinations."
+        }
+    },
+    // 26 May
+    {
+        "id": "002126",
+        "date": "26 May 2026",
+        "major_area": "Ratio, Proportion & Rates of Change",
+        "topic": "Compound Measures",
+        "subtopic": "Speed",
+        "difficulty": "8/9",
+        "img": "images/May_26_g.png",
+        "q": "Speed-time graph: 0 to 20m/s in 5s. Find acceleration and distance.",
+        "steps": [
+            "Acc = Gradient = $20/5 = 4$.",
+            "Dist = Area = $0.5 \\times 5 \\times 20 = 50$.",
+            "Final Answer: $$(a)\\ 4\\text{ m/s}^2,\\ (b)\\ 50\\text{ m}$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Gradient vs Area",
+            "content": "Gradient is acceleration. Area is distance."
+        }
+    },
+    // 27 May
+    {
+        "id": "002127",
+        "date": "27 May 2026",
+        "major_area": "Algebra",
+        "topic": "Indices Laws",
+        "subtopic": "Fractional indices",
+        "difficulty": "6/7",
+        "q": "Work out $27^{-2/3}$.",
+        "steps": [
+            "$1 / (\\sqrt[3]{27})^2 = 1 / 3^2 = 1/9$.",
+            "Final Answer: $$\\dfrac{1}{9}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Root then Power",
+            "content": "Apply the root (bottom) before the power (top) to keep numbers manageable."
+        }
+    },
+    // 28 May
+    {
+        "id": "002128",
+        "date": "28 May 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Similarity & Congruence",
+        "subtopic": "Scale factors",
+        "difficulty": "8/9",
+        "q": "Similar heights 12 and 18. Small vol 400. Find large vol.",
+        "steps": [
+            "$k = 1.5 \\implies k^3 = 3.375$.",
+            "$400 \\times 3.375 = 1350$.",
+            "Final Answer: $$1350\\text{ cm}^3$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Length is not Volume",
+            "content": "Always cube the linear scale factor to move between volumes."
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master Geometry: Download the Full Geometry Pack"
+    },
+    // 29 May
+    {
+        "id": "002129",
+        "date": "29 May 2026",
+        "major_area": "Algebra",
+        "topic": "Factorising",
+        "subtopic": "Difference of squares",
+        "difficulty": "7/8",
+        "q": "Factorise fully: $50x^2 - 18$.",
+        "steps": [
+            "$2(25x^2 - 9) = 2(5x - 3)(5x + 3)$.",
+            "Final Answer: $$2(5x - 3)(5x + 3)$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Factorise Twice",
+            "content": "Look for numerical factors first to reveal square numbers."
+        }
+    },
+    // 30 May
+    {
+        "id": "002130",
+        "date": "30 May 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Circle Theorems",
+        "subtopic": "Tangents",
+        "difficulty": "8/9",
+        "q": "Circle $x^2+y^2=25$. Tangent at $(3,4)$.",
+        "steps": [
+            "Radius gradient $= 4/3$.",
+            "Tangent gradient $= -3/4$.",
+            "$y-4 = -0.75(x-3)$.",
+            "Final Answer: $$3x + 4y = 25$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Perpendicular Gradients",
+            "content": "Radius is always perpendicular to tangent. Use negative reciprocals."
+        }
+    },
+    // 31 May
+    {
+        "id": "002131",
+        "date": "31 May 2026",
+        "major_area": "Algebra",
+        "topic": "Quadratic Equations",
+        "subtopic": "Roots from graphs",
+        "difficulty": "8/9",
+        "q": "$x^3+7x-5=0$. (a) Show $x = 5/(x^2+7)$. (b) Iteration $x_0=1$.",
+        "steps": [
+            "(a) $x(x^2+7)=5 \\implies x = 5/(x^2+7)$.",
+            "(b) $x_1 = 0.625$, $x_2 = 0.6765$, $x_3 = 0.6704$.",
+            "Final Answer: $$0.670 (3dp)$$ "
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Using the ANS Key",
+            "content": "Type $x_0$, press '=', then use the ANS key in your formula to avoid errors."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    }
+];
 ];
 
                        
