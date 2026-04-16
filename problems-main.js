@@ -1563,7 +1563,7 @@ const problemBank = [
             "This means the sequence is related to $4n$.",
             "When $n=1$, $4(1) = 4$. Our first term is $7$.",
             "Adjust by adding $3$ ($7 - 4 = 3$).",
-            "Final Answer: $$4n + 3<br><br><img src='images/11_Mar_G.png' alt='Completed Venn Diagram' style='max-width:300px; margin-top:10px;'>$$"
+            "Final Answer: $$4n + 3$$"
         ],
         "bradley_insight": {
             "type": "pro-tip",
