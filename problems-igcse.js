@@ -1729,7 +1729,7 @@ const problemBank = [
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Opposite vs. Adjacent",
-            "content": "Students often confuse cyclic quadrilateral rules with parallel line rules. Remember: it is the **opposite** angles that add to $180$, not the ones next to each other!"
+            "content": "Students often confuse cyclic quadrilateral rules with parallel line rules. Remember: it is the <strong>opposite</strong> angles that add to $180$, not the ones next to each other!"
         },
 		 "payhip_link": "https://payhip.com/b/L6skH", // Replace with your Mensuration/Trig link
         "button_text": "Master Coordinate Geometry & Geometry: Download the Full Coordinate Geometry & Geometry Pack"
