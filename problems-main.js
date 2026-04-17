@@ -1579,7 +1579,7 @@ const problemBank = [
         "topic": "Circle Theorems",
         "subtopic": "Combined Theorems",
         "difficulty": "7/8",
-        "q": "In the diagram, $AC$ is a diameter of the circle. $B$ and $D$ are points on the circumference.<br>Given $\\angle ABD = 42^circ$:<br>(a) Write down the size of $\\angle ACD$.<br>(b) Calculate the size of $\\angle CAD$.",
+        "q": "In the diagram, $AC$ is a diameter of the circle. $B$ and $D$ are points on the circumference.<br>Given $\\angle ABD = 42^\\circ$:<br>(a) Write down the size of $\\angle ACD$.<br>(b) Calculate the size of $\\angle CAD$.",
         "img": "images/apr_17_g.png",
         "steps": [
             "(a) $\\angle ACD = 42^\\circ$ because angles subtended by the same arc ($AD$) at the circumference are equal.",
@@ -1591,7 +1591,7 @@ const problemBank = [
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Spotting the Diameter",
-            "content": "Whenever you are told a line is a \\textbf{diameter}, immediately look for a triangle attached to it. The angle at the circumference will always be $90^\\circ$. This is a very common 'hidden step' in Higher Tier circle problems."
+            "content": "Whenever you are told a line is a $\\textbf{diameter}$, immediately look for a triangle attached to it. The angle at the circumference will always be $90^\\circ$. This is a very common 'hidden step' in Higher Tier circle problems."
         }
     },
     // 18 Apr
