@@ -2594,6 +2594,6 @@ const problemBank = [
         "button_text": "Master Algebra: Download the Full Algebra Pack"
     }
 ];
-];
+
 
                        
