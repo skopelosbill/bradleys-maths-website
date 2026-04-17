@@ -1903,7 +1903,6 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/XAGch",
         "button_text": "Master Geometry: Download the Full Geometry Pack"
     },
-	
     // 1 May
     {
         "id": "002101",
