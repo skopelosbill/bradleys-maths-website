@@ -963,6 +963,51 @@ h2[id] {
 }
 
 /* ========================= */
+/* IPHONE & SMALL MOBILE OPTIMIZATION */
+/* ========================= */
+
+@media (max-width: 480px) {
+    /* Reduce the massive heading size for mobile */
+    h1 {
+        font-size: 2rem; 
+        margin: 30px 0 10px;
+    }
+
+    /* Ensure the brand name doesn't wrap or overlap the hamburger */
+    .nav-brand {
+        font-size: 1.2rem;
+        letter-spacing: 0;
+    }
+
+    /* Tighten padding slightly to give text more room to flow */
+    .content {
+        padding: 15px;
+    }
+
+    /* Adjust the spacing in lists for better readability */
+    .content ul {
+        padding-left: 20px;
+    }
+
+    .content li {
+        margin-bottom: 12px;
+    }
+
+    /* Ensure the Navbar height remains consistent */
+    .navbar {
+        height: 60px;
+        padding: 0 15px;
+    }
+
+    /* Align the mobile menu trigger with the new navbar height */
+    @media (max-width: 768px) {
+        .nav-links {
+            top: 60px;
+        }
+    }
+}
+
+/* ========================= */
 /* FOOTER */
 /* ========================= */
 
