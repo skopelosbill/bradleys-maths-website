@@ -1008,6 +1008,74 @@ h2[id] {
 }
 
 /* ========================= */
+/* IPHONE & MOBILE POST OPTIMIZATION */
+/* ========================= */
+
+/* Fix the typo from the previous block first */
+.headcenter {
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    /* 1. Scale headings for smaller screens */
+    h1 {
+        font-size: 1.8rem; /* Scaled down slightly more for long post titles */
+        margin: 20px 0 10px;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+        padding: 0 10px;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    /* 2. Fix MathJax Overflow - THE MOST IMPORTANT PART */
+    /* This prevents long equations from pushing the whole page sideways */
+    .question, 
+    .solution, 
+    .bradley-insight-box {
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 15px; /* Slightly tighter padding on mobile */
+        margin: 15px 0;
+    }
+
+    /* 3. Adjust Navigation for narrow phones */
+    .nav-brand {
+        font-size: 1.1rem;
+    }
+    
+    .navbar {
+        height: 60px;
+        padding: 0 10px;
+    }
+
+    .nav-links {
+        top: 60px;
+    }
+
+    /* 4. Blog Container Spacing */
+    .blog-container {
+        margin: 10px auto;
+        padding: 0 10px;
+    }
+
+    /* 5. Ensure images in posts don't overflow */
+    .diagram img {
+        padding: 5px;
+    }
+
+    /* 6. Nudge buttons for thumb-tapping */
+    .btn-buy {
+        width: 100%; /* Make button full width on small phones */
+        text-align: center;
+    }
+}
+
+/* ========================= */
 /* FOOTER */
 /* ========================= */
 
