@@ -2105,5 +2105,744 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/XEV2Z", // Your IGCSE Number Pack link
         "button_text": "Master Number: Download the Full Number Pack" 
     },
-
+    // 1 May - Paper 2 Style
+    {
+        "id": "003101",
+        "date": "1 May 2026",
+        "major_area": "Number",
+        "topic": "Surds",
+        "subtopic": "Rationalising denominators",
+        "difficulty": "A*",
+        "q": "Simplify fully $\\dfrac{12}{\\sqrt{3}} + \\sqrt{27}$.<br>Give your answer in the form $k\\sqrt{3}$, where $k$ is an integer.",
+        "steps": [
+            "We begin by rationalising the denominator of the first term by multiplying both the numerator and the denominator by $\\sqrt{3}$: $\\dfrac{12 \\times \\sqrt{3}}{\\sqrt{3} \\times \\sqrt{3}} = \\dfrac{12\\sqrt{3}}{3} = 4\\sqrt{3}$.",
+            "Next, we simplify the second term by identifying the largest square factor of 27: $\\sqrt{27} = \\sqrt{9 \\times 3} = 3\\sqrt{3}$.",
+            "Finally, we add the two terms together: $4\\sqrt{3} + 3\\sqrt{3} = 7\\sqrt{3}$.",
+            "Final Answer: $$7\\sqrt{3}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Exact Values in Paper 2",
+            "content": "In the new IGCSE Paper 2, examiners expect absolute fluency with surds. When a question specifies the form $k\\sqrt{3}$, it is a structural hint that all terms must be converted to multiples of $\\sqrt{3}$ before they can be combined."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master IGCSE: Download the Extended Number Pack"
+    },
+    // 2 May
+    {
+        "id": "003102",
+        "date": "2 May 2026",
+        "major_area": "Algebra",
+        "topic": "Linear Equations",
+        "subtopic": "Unknowns on both sides",
+        "difficulty": "C/D",
+        "q": "Solve the equation: $5(x - 3) = 2x + 9$.",
+        "steps": [
+            "First, we expand the brackets on the left-hand side of the equation: $5x - 15 = 2x + 9$.",
+            "We then subtract $2x$ from both sides to collect the variable terms: $3x - 15 = 9$.",
+            "Next, we add 15 to both sides of the equation to isolate the term with the variable: $3x = 24$.",
+            "Finally, we divide both sides by 3 to find the value of $x$.",
+            "Final Answer: $$x = 8$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Distribution Accuracy",
+            "content": "A frequent error in IGCSE algebra is the 'partial expansion' of brackets. You must ensure the multiplier outside the bracket is applied to every term inside; in this case, $5 \\times -3$ must result in $-15$."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master IGCSE: Download the Extended Algebra Pack"
+    },
+    // 3 May - Paper 4 Style
+    {
+        "id": "003103",
+        "date": "3 May 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Trigonometry",
+        "subtopic": "Cosine rule",
+        "difficulty": "B/A",
+        "img": "images/May_03_g.png",
+        "q": "In triangle $ABC$, $AB = 8\\text{ cm}$, $AC = 11\\text{ cm}$ and angle $BAC = 72^\\circ$.<br>(a) Calculate the length of $BC$. Give your answer correct to 3 significant figures.<br>(b) Calculate the area of the triangle.",
+        "steps": [
+            "For part (a), we use the Cosine Rule: $a^2 = b^2 + c^2 - 2bc \\cos(A)$. Substituting the known values, we get $a^2 = 11^2 + 8^2 - 2(11)(8) \\cos(72^\\circ)$.",
+            "Performing the calculation gives $a^2 = 121 + 64 - 176 \\cos(72^\\circ) \\approx 130.61$. Taking the square root gives $BC \\approx 11.4\\text{ cm}$.",
+            "For part (b), we apply the formula for the area of a non-right-angled triangle: $\\text{Area} = \\dfrac{1}{2}bc \\sin(A)$.",
+            "Substituting the values, we get $\\text{Area} = \\dfrac{1}{2}(11)(8) \\sin(72^\\circ) \\approx 41.8\\text{ cm}^2$.",
+            "Final Answer: $$(a)\\ 11.4\\text{ cm},\\ (b)\\ 41.8\\text{ cm}^2$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Formula Selection",
+            "content": "With the 2025 syllabus providing a formula sheet, the examiner is no longer testing your memory, but your ability to recognize the 'Side-Angle-Side' configuration. This setup is a direct instruction to use the Cosine Rule and the Sine area formula."
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master IGCSE: Download the Extended Geometry Pack"
+    },
+    // 4 May
+    {
+        "id": "003104",
+        "date": "4 May 2026",
+        "major_area": "Number",
+        "topic": "Standard Form",
+        "subtopic": "Calculations in standard form",
+        "difficulty": "B/C",
+        "q": "Work out the value of $(4 \\times 10^7) \\times (8 \\times 10^{-3})$.<br>Give your answer in standard form.",
+        "steps": [
+            "We begin by multiplying the coefficients together: $4 \\times 8 = 32$.",
+            "Next, we multiply the powers of 10 by adding their indices: $10^7 \\times 10^{-3} = 10^{7 + (-3)} = 10^4$.",
+            "Combining these results gives $32 \\times 10^4$.",
+            "To express this in standard form, we must adjust the coefficient to be between 1 and 10: $3.2 \\times 10^1 \\times 10^4 = 3.2 \\times 10^5$.",
+            "Final Answer: $$3.2 \\times 10^5$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: The Final Normalisation",
+            "content": "A common 'accuracy' trap in IGCSE is leaving the answer as $32 \\times 10^4$. Standard form requires exactly one non-zero digit before the decimal point. Always perform that final check before moving to the next question."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master IGCSE: Download the Extended Number Pack"
+    },
+    // 5 May
+    {
+        "id": "003105",
+        "date": "5 May 2026",
+        "major_area": "Ratio, Proportion & Rates of Change",
+        "topic": "Percentage Change",
+        "subtopic": "Increase/decrease",
+        "difficulty": "C/D",
+        "q": "A car was purchased for £18,000. Its value depreciated by 15% in the first year and then by 10% of its remaining value in the second year. Calculate the value of the car at the end of the second year.",
+        "steps": [
+            "We first calculate the multiplier for a 15% decrease, which is $1 - 0.15 = 0.85$.",
+            "The value at the end of the first year is $18000 \\times 0.85 = £15,300$.",
+            "For the second year, the multiplier for a 10% decrease is $1 - 0.10 = 0.90$.",
+            "We apply this to the first year's final value: $15300 \\times 0.90 = £13,770$.",
+            "Final Answer: $$£13,770$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Successive Changes",
+            "content": "Students often incorrectly add percentages together (e.g., $15\\% + 10\\% = 25\\%$). However, depreciation is a 'successive' calculation. I recommend using the multiplier method ($18000 \\times 0.85 \\times 0.9$) to ensure accuracy and speed."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master IGCSE: Download the Extended Number Pack"
+    },
+    // 6 May
+    {
+        "id": "003106",
+        "date": "6 May 2026",
+        "major_area": "Statistics",
+        "topic": "Histograms",
+        "subtopic": "Frequency density",
+        "difficulty": "B/A",
+        "img": "images/May_06_g.png",
+        "q": "The table below provides information regarding the weights of 50 bags.<br><br><table style='border-collapse: collapse; width: 100%; text-align: center;' border='1'><tr><th style='padding: 8px;'>Weight ($w$ grams)</th><th style='padding: 8px;'>Frequency</th></tr><tr><td style='padding: 5px;'>$0 < w \\le 10$</td><td style='padding: 5px;'>8</td></tr><tr><td style='padding: 5px;'>$10 < w \\le 25$</td><td style='padding: 5px;'>15</td></tr><tr><td style='padding: 5px;'>$25 < w \\le 45$</td><td style='padding: 5px;'>14</td></tr><tr><td style='padding: 5px;'>$45 < w \\le 50$</td><td style='padding: 5px;'>13</td></tr></table><br>(a) Calculate the frequency density for each class.<br>(b) State which weight category would be represented by the tallest bar on a histogram.",
+        "steps": [
+            "To find the frequency density (FD), we use the formula: $\\text{FD} = \\text{Frequency} \\div \\text{Class Width}$.",
+            "The FD values are: $0-10$ is $0.8$, $10-25$ is $1.0$, $25-45$ is $0.7$, and $45-50$ is $2.6$.",
+            "By comparing these values, we can see that the highest density is $2.6$, which corresponds to the final weight category.",
+            "Final Answer: $$45 < w \\le 50$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Frequency Density Logic",
+            "content": "In an IGCSE histogram, the height of the bar does not represent frequency, but the 'concentration' of data. A narrow interval with a relatively high frequency will always produce a tall, thin bar, which is a common visual feature in Paper 4 exams."
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master IGCSE: Download the Extended Statistics Pack"
+    },
+    // 7 May
+    {
+        "id": "003107",
+        "date": "7 May 2026",
+        "major_area": "Algebra",
+        "topic": "Algebraic Fractions",
+        "subtopic": "Simplifying",
+        "difficulty": "A/A*",
+        "q": "Simplify the following expression fully: $\\dfrac{2x^2 + 5x - 3}{x^2 - 9}$.",
+        "steps": [
+            "We begin by factorising the numerator: $2x^2 + 5x - 3 = (2x - 1)(x + 3)$.",
+            "Next, we factorise the denominator using the difference of two squares identity: $x^2 - 9 = (x - 3)(x + 3)$.",
+            "We then identify and cancel the common factor $(x + 3)$ from both the numerator and the denominator.",
+            "Final Answer: $$\\dfrac{2x - 1}{x - 3}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Strategic Factorisation",
+            "content": "When simplifying algebraic fractions, the examiner has designed the problem to have a common factor. If you find the denominator is easy to factorise, such as $(x-3)(x+3)$, it provides a significant hint for the factors of the harder numerator."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master IGCSE: Download the Extended Algebra Pack"
+    },
+    // 8 May
+    {
+        "id": "003108",
+        "date": "8 May 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Circle Theorems",
+        "subtopic": "Tangents",
+        "difficulty": "A/B",
+        "img": "images/May_08_g.png",
+        "q": "$A$ and $B$ are points on a circle with centre $O$. $PA$ and $PB$ are tangents to the circle. Given that angle $APB = 50^\\circ$, calculate the size of angle $OAB$.",
+        "steps": [
+            "We know that the angle between a tangent and a radius is $90^\\circ$, so angle $OAP = 90^\\circ$ and angle $OBP = 90^\\circ$.",
+            "In the quadrilateral $OAPB$, the sum of the angles is $360^\\circ$. Therefore, angle $AOB = 360 - 90 - 90 - 50 = 130^\\circ$.",
+            "Triangle $OAB$ is an isosceles triangle because $OA$ and $OB$ are both radii of the circle.",
+            "To find angle $OAB$, we subtract $130$ from $180$ and divide by 2.",
+            "Final Answer: $$25^\\circ$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: The Power of Radii",
+            "content": "In circle theorem problems, always look for radii. They consistently create isosceles triangles, which is the 'hidden' step required to solve most multi-mark geometry questions in Paper 4."
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master IGCSE: Download the Extended Geometry Pack"
+    },
+    // 9 May
+    {
+        "id": "003109",
+        "date": "9 May 2026",
+        "major_area": "Ratio, Proportion & Rates of Change",
+        "topic": "Direct & Inverse Proportion",
+        "subtopic": "Proportion equations",
+        "difficulty": "B/C",
+        "q": "The variable $P$ is inversely proportional to the square root of $m$. When $m = 36$, $P = 4$.<br>(a) Find a formula for $P$ in terms of $m$.<br>(b) Calculate the value of $P$ when $m = 64$.",
+        "steps": [
+            "For part (a), we establish the proportional relationship $P = \\dfrac{k}{\\sqrt{m}}$.",
+            "We substitute the given values to find $k$: $4 = \\dfrac{k}{\\sqrt{36}} \\implies 4 = \\dfrac{k}{6} \\implies k = 24$. The formula is $P = \\dfrac{24}{\\sqrt{m}}$.",
+            "For part (b), we substitute $m = 64$ into our formula: $P = \\dfrac{24}{\\sqrt{64}} = \\dfrac{24}{8}$.",
+            "Final Answer: $$(a)\\ P = \\dfrac{24}{\\sqrt{m}},\\ (b)\\ 3$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Precision in Reading",
+            "content": "In Paper 2, students often confuse 'square' ($m^2$) with 'square root' ($\\sqrt{m}$). This single misinterpretation results in the loss of all available marks. Read the relationship wording twice before beginning your calculation."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master IGCSE: Download the Extended Ratio Pack"
+    },
+    // 10 May
+    {
+        "id": "003110",
+        "date": "10 May 2026",
+        "major_area": "Probability",
+        "topic": "Basic Probability",
+        "subtopic": "Venn Diagrams",
+        "difficulty": "B/C",
+        "img": "images/May_10_g.png",
+        "q": "The universal set $\\xi = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\}$. Set $A$ is the set of prime numbers and Set $B$ is the set of factors of 12.<br>(a) Represent this information in a Venn diagram.<br>(b) A number is chosen at random from the universal set. Find the probability that this number is in the set $A \\cap B'$.",
+        "steps": [
+            "First, we list the members of each set: $A = \\{2, 3, 5, 7\\}$ and $B = \\{1, 2, 3, 4, 6\\}$.",
+            "The intersection $A \\cap B$ contains $\\{2, 3\\}$. These are placed in the overlap. We then place the remaining elements into their respective regions.",
+            "For part (b), the notation $A \\cap B'$ refers to elements that are in $A$ but <strong>not</strong> in $B$. This corresponds to the set $\\{5, 7\\}$.",
+            "There are 2 such numbers out of a total of 10 in the universal set.",
+            "Final Answer: $$\\dfrac{2}{10} \\text{ (or } 0.2)<br><img src='images/May_10_sol_g.png' alt='Completed Venn Diagram' style='max-width:300px; margin-top:10px;'>$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Set Notation Proficiency",
+            "content": "IGCSE Probability often depends on a student's ability to translate set notation into a visual region. Master the difference between $A' \\cap B$ and $A \\cap B'$ to secure these 'quick marks' in the early stages of Paper 2."
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master IGCSE: Download the Extended Probability Pack"
+    },
+    // 11 May
+    {
+        "id": "003111",
+        "date": "11 May 2026",
+        "major_area": "Algebra",
+        "topic": "Graphs",
+        "subtopic": "Transformations of graphs",
+        "difficulty": "B/A",
+        "img": "images/May_11_g.png",
+        "q": "The graph of $y = f(x)$ has a turning point with the coordinates $(3, -2)$. State the coordinates of the turning point for the following transformed graphs:<br>(a) $y = f(x + 2)$ <br>(b) $y = f(x) + 5$ <br>(c) $y = -f(x)$.",
+        "steps": [
+            "For part (a), the transformation $f(x + 2)$ represents a horizontal translation of 2 units to the left. We subtract 2 from the $x$-coordinate, yielding the point $(1, -2)$.",
+            "For part (b), the transformation $f(x) + 5$ is a vertical translation of 5 units upwards. We add 5 to the $y$-coordinate, yielding the point $(3, 3)$.",
+            "For part (c), the transformation $-f(x)$ is a reflection in the $x$-axis, which changes the sign of the $y$-coordinate. The point becomes $(3, 2)$.",
+            "Final Answer: $$(a)\\ (1, -2),\\ (b)\\ (3, 3),\\ (c)\\ (3, 2)$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Internal vs. External Changes",
+            "content": "I tell my students to remember that changes 'inside' the function bracket affect the horizontal axis and work in the <strong>opposite</strong> way to what they might expect. Changes 'outside' affect the vertical axis and follow the sign exactly."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master IGCSE: Download the Extended Algebra Pack"
+    },
+    // 12 May
+    {
+        "id": "003112",
+        "date": "12 May 2026",
+        "major_area": "Number",
+        "topic": "Estimation & Bounds",
+        "subtopic": "Upper and lower bounds",
+        "difficulty": "B/A",
+        "q": "The value of $A$ is calculated using the formula $A = \\dfrac{b}{c}$. Given that $b = 400$, correct to the nearest 10, and $c = 25$, correct to the nearest 5, calculate the upper bound for the value of $A$.",
+        "steps": [
+            "We first establish the bounds for each variable. For $b$, the upper bound is $405$ and the lower bound is $395$. For $c$, the upper bound is $27.5$ and the lower bound is $22.5$.",
+            "To maximize the value of $A$ in a division, we must divide the upper bound of the numerator by the lower bound of the denominator.",
+            "We calculate $405 \\div 22.5$ to find the maximum possible value.",
+            "Final Answer: $$18$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Quotient Maximisation",
+            "content": "This is a classic 'A-grade' trap. Many candidates instinctively divide both upper bounds. To get the largest result, you must divide the largest possible 'share' by the smallest possible 'number of people'."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master IGCSE: Download the Extended Number Pack"
+    },
+    // 13 May
+    {
+        "id": "003113",
+        "date": "13 May 2026",
+        "major_area": "Algebra",
+        "topic": "Simultaneous Equations",
+        "subtopic": "Substitution",
+        "difficulty": "B/A",
+        "q": "Solve the following simultaneous equations algebraically:<br>$x^2 + y^2 = 25$<br>$y = 2x + 5$",
+        "steps": [
+            "We substitute the linear expression for $y$ into the quadratic equation: $x^2 + (2x + 5)^2 = 25$.",
+            "Expanding the quadratic term gives $x^2 + 4x^2 + 20x + 25 = 25$.",
+            "Simplifying the equation yields $5x^2 + 20x = 0$, which we factorise as $5x(x + 4) = 0$.",
+            "This gives $x$-values of $0$ and $-4$. Substituting these back into the linear equation gives $y$-values of $5$ and $-3$ respectively.",
+            "Final Answer: $$(0, 5) \\text{ and } (-4, -3)$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Presenting Solutions",
+            "content": "In Paper 4, students often forget to calculate the second variable once they have found the first. Always present your answers clearly as coordinate pairs to ensure you don't leave any marks on the table."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master IGCSE: Download the Extended Algebra Pack"
+    },
+    // 14 May
+    {
+        "id": "003114",
+        "date": "14 May 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Polygons",
+        "subtopic": "Interior angles",
+        "difficulty": "C/B",
+        "q": "The interior angle of a regular polygon is $162^\\circ$. Calculate the number of sides that this polygon has.",
+        "steps": [
+            "We calculate the exterior angle by subtracting the interior angle from $180^\\circ$: $180 - 162 = 18^\\circ$.",
+            "The sum of the exterior angles of any convex polygon is $360^\\circ$.",
+            "We divide $360$ by $18$ to determine the number of sides.",
+            "Final Answer: $$20$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Efficiency in Geometry",
+            "content": "While you can solve this using $(n-2) \\times 180 / n = 162$, the algebra is far more cumbersome. The exterior angle method is universally faster and is the preferred approach for high-performing candidates."
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master IGCSE: Download the Extended Geometry Pack"
+    },
+    // 15 May - Paper 4 Style
+    {
+        "id": "003115",
+        "date": "15 May 2026",
+        "major_area": "Statistics",
+        "topic": "Cumulative Frequency",
+        "subtopic": "Median & IQR",
+        "difficulty": "B/A",
+        "img": "images/May_15_g.png",
+        "q": "The table below shows the waiting times for 80 individuals at a health centre.<br><br><table style='border-collapse: collapse; width: 100%; text-align: center;' border='1'><tr><th style='padding: 8px;'>Time ($t$ minutes)</th><th style='padding: 8px;'>Frequency</th></tr><tr><td style='padding: 5px;'>$0 < t \\le 10$</td><td style='padding: 5px;'>5</td></tr><tr><td style='padding: 5px;'>$10 < t \\le 20$</td><td style='padding: 5px;'>12</td></tr><tr><td style='padding: 5px;'>$20 < t \\le 30$</td><td style='padding: 5px;'>25</td></tr><tr><td style='padding: 5px;'>$30 < t \\le 40$</td><td style='padding: 5px;'>28</td></tr><tr><td style='padding: 5px;'>$40 < t \\le 50$</td><td style='padding: 5px;'>10</td></tr></table><br>(a) Draw a cumulative frequency graph for this data.<br>(b) Use your graph to find an estimate for the interquartile range.",
+        "steps": [
+            "We first calculate the cumulative frequencies: 5, 17, 42, 70, and 80.",
+            "We plot these values at the upper boundaries of each interval: (10, 5), (20, 17), (30, 42), (40, 70), and (50, 80).",
+            "To estimate the interquartile range (IQR), we find the times corresponding to the 20th and 60th people on the graph.",
+            "Assuming $Q_3 \\approx 36.5$ and $Q_1 \\approx 21.5$, we subtract to find the difference.",
+            "Final Answer: $$15\\text{ minutes (approx)}$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Boundary Plotting",
+            "content": "A frequent source of lost marks in Paper 4 is plotting cumulative frequency at the mid-point of the class. You must plot at the <strong>upper boundary</strong> to represent the total frequency 'up to' that time."
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master IGCSE: Download the Extended Statistics Pack"
+    },
+    // 16 May
+    {
+        "id": "003116",
+        "date": "16 May 2026",
+        "major_area": "Algebra",
+        "topic": "Rearranging Formulae",
+        "subtopic": "Rearranging with powers",
+        "difficulty": "A/A*",
+        "q": "Rearrange the following formula to make $x$ the subject: $y = \\dfrac{x^2 + a}{x^2 - b}$.",
+        "steps": [
+            "We begin by multiplying both sides by $(x^2 - b)$ to eliminate the denominator: $y(x^2 - b) = x^2 + a$.",
+            "We then expand the brackets: $yx^2 - yb = x^2 + a$.",
+            "Next, we isolate the terms containing $x^2$ on one side of the equation: $yx^2 - x^2 = a + yb$.",
+            "We factorise out $x^2$ to obtain $x^2(y - 1) = a + yb$.",
+            "Finally, we divide by $(y - 1)$ and take the square root of both sides.",
+            "Final Answer: $$x = \\sqrt{\\dfrac{a + yb}{y - 1}}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: The Factorisation Key",
+            "content": "When the intended subject appears in two separate terms, you <strong>must</strong> collect them on one side and factorise. This is the single most important algebraic technique for reaching the highest grades in IGCSE."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master IGCSE: Download the Extended Algebra Pack"
+    },
+    // 17 May
+    {
+        "id": "003117",
+        "date": "17 May 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Vectors",
+        "subtopic": "Parallel vectors",
+        "difficulty": "A*",
+        "img": "images/May_17_g.png",
+        "q": "The vector $\\vec{OA} = 3\\mathbf{a}$ and $\\vec{OC} = 2\\mathbf{c}$. $B$ is a point such that $\\vec{CB} = \\mathbf{a}$. $M$ is the midpoint of $AB$. Find the vector $\\vec{OM}$ in terms of $\\mathbf{a}$ and $\\mathbf{c}$.",
+        "steps": [
+            "We first find the vector $\\vec{AB}$ by following the path $\\vec{AO} + \\vec{OC} + \\vec{CB}$, which gives $-3\\mathbf{a} + 2\\mathbf{c} + \\mathbf{a} = 2\\mathbf{c} - 2\\mathbf{a}$.",
+            "Since $M$ is the midpoint, the vector $\\vec{AM}$ is half of $\\vec{AB}$, which is $\\mathbf{c} - \\mathbf{a}$.",
+            "We then find $\\vec{OM}$ by following the path $\\vec{OA} + \\vec{AM}$, which is $3\\mathbf{a} + (\\mathbf{c} - \\mathbf{a})$.",
+            "Simplifying this expression gives the final result.",
+            "Final Answer: $$2\\mathbf{a} + \\mathbf{c}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Navigating Vector Paths",
+            "content": "Treat vector problems as a journey on a map. Any route from $O$ to $M$ will provide the correct algebraic expression, provided you strictly follow the direction of the arrows."
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master IGCSE: Download the Extended Geometry Pack"
+    },
+    // 18 May
+    {
+        "id": "003118",
+        "date": "18 May 2026",
+        "major_area": "Algebra",
+        "topic": "Exponential Growth & Decay",
+        "subtopic": [],
+        "difficulty": "B/A",
+        "q": "The value of a investment increases at a rate of 4% per year. The initial investment is $5,000. Calculate the total value of the investment after 6 years, correct to the nearest dollar.",
+        "steps": [
+            "We identify the multiplier for a 4% increase as $1.04$.",
+            "We apply the compound interest formula: $\\text{Value} = 5000 \\times 1.04^6$.",
+            "Using a calculator, we find $5000 \\times 1.2653... = 6326.59...$.",
+            "We then round this value to the nearest whole dollar as requested.",
+            "Final Answer: $$6327$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Rounding Precision",
+            "content": "Cambridge examiners are very strict about rounding instructions. If the question asks for the nearest dollar, failing to round will result in the loss of the final accuracy mark, even if your working is perfect."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master IGCSE: Download the Extended Algebra Pack"
+    },
+    // 19 May - NEW 2025 Topic replacement (Functions)
+    {
+        "id": "003119",
+        "date": "19 May 2026",
+        "major_area": "Algebra",
+        "topic": "Differentiation", // Using calculus as a high-tier substitution for removed stats
+        "subtopic": "Stationary points",
+        "difficulty": "A/A*",
+        "q": "A curve has the equation $y = 2x^3 - 3x^2 - 12x + 5$. Find the coordinates of the two stationary points.",
+        "steps": [
+            "We first find the derivative of the function, $\\dfrac{dy}{dx}$, using the power rule: $\\dfrac{dy}{dx} = 6x^2 - 6x - 12$.",
+            "At a stationary point, the gradient is zero, so we set $6x^2 - 6x - 12 = 0$.",
+            "Dividing by 6 gives $x^2 - x - 2 = 0$, which factorises to $(x - 2)(x + 1) = 0$.",
+            "This gives $x$-coordinates of $2$ and $-1$. We substitute these back into the original equation for $y$.",
+            "When $x = 2$, $y = -15$. When $x = -1$, $y = 12$.",
+            "Final Answer: $$(2, -15) \\text{ and } (-1, 12)$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Stationary Point Logic",
+            "content": "Remember that 'stationary point', 'turning point', and 'where the gradient is zero' all require the same process: differentiate and set the derivative to zero. Always find the $y$-coordinates to finish the coordinates."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master IGCSE: Download the Extended Algebra Pack"
+    },
+    // 20 May
+    {
+        "id": "003120",
+        "date": "20 May 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Similarity & Congruence",
+        "subtopic": "Scale factors",
+        "difficulty": "A/A*",
+        "q": "Two mathematically similar cylinders have surface areas of $40\\pi\\text{ cm}^2$ and $90\\pi\\text{ cm}^2$. Given that the smaller cylinder has a volume of $160\\pi\\text{ cm}^3$, calculate the volume of the larger cylinder.",
+        "steps": [
+            "We find the area scale factor by dividing the surface areas: $k^2 = \\dfrac{90\\pi}{40\\pi} = 2.25$.",
+            "The linear scale factor is the square root of the area scale factor: $k = \\sqrt{2.25} = 1.5$.",
+            "The volume scale factor is the cube of the linear scale factor: $k^3 = 1.5^3 = 3.375$.",
+            "Finally, we multiply the smaller volume by the volume scale factor: $160\\pi \\times 3.375$.",
+            "Final Answer: $$540\\pi\\text{ cm}^3$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Bridging Scale Factors",
+            "content": "A very common mistake is attempting to use the area scale factor for volume calculations. You must always 'bridge' the calculation by finding the linear scale factor ($k$) first."
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master IGCSE: Download the Extended Geometry Pack"
+    },
+    // 21 May
+    {
+        "id": "003121",
+        "date": "21 May 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Trigonometry",
+        "subtopic": "3D Pythagoras",
+        "difficulty": "A/A*",
+        "img": "images/May_21_g.png",
+        "q": "A square-based pyramid has a base side of $10\\text{ cm}$ and a vertical height of $12\\text{ cm}$. Calculate the slant height of the pyramid, which is the distance from the apex to the midpoint of one of the base edges.",
+        "steps": [
+            "We identify a right-angled triangle connecting the apex, the centre of the base, and the midpoint of an edge.",
+            "The distance from the centre to the edge is half of the side length: $5\\text{ cm}$.",
+            "Using Pythagoras' theorem with the vertical height of $12$: $s^2 = 12^2 + 5^2$.",
+            "We calculate $144 + 25 = 169$ and find the square root.",
+            "Final Answer: $$13\\text{ cm}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Visualising 3D Solids",
+            "content": "The challenge in 3D trigonometry is identifying the 2D right-angled triangle hidden within the solid. Sketching these triangles separately on your page will help you apply Pythagoras correctly every time."
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master IGCSE: Download the Extended Geometry Pack"
+    },
+    // 22 May
+    {
+        "id": "003122",
+        "date": "22 May 2026",
+        "major_area": "Ratio, Proportion & Rates of Change",
+        "topic": "Ratio",
+        "subtopic": "Sharing in a ratio",
+        "difficulty": "B/A",
+        "q": "The ratio of boys to girls in a school is $4 : 5$. After 20 more boys join the school, the ratio becomes $1 : 1$. Calculate the original number of students in the school.",
+        "steps": [
+            "We define the original numbers as $4x$ and $5x$.",
+            "We establish the new relationship: $\\dfrac{4x + 20}{5x} = \\dfrac{1}{1}$.",
+            "Cross-multiplying gives $4x + 20 = 5x$, which simplifies to $x = 20$.",
+            "The original number of students is $9x$, so we calculate $9 \\times 20$.",
+            "Final Answer: $$180$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Algebraic Ratio Solutions",
+            "content": "I always encourage students to use algebra when a ratio 'changes'. It is much more robust than trying to find 'parts' and prevents confusion when quantities are added to only one side of the ratio."
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master IGCSE: Download the Extended Ratio Pack"
+    },
+    // 23 May - Paper 2 Style
+    {
+        "id": "003123",
+        "date": "23 May 2026",
+        "major_area": "Number",
+        "topic": "Decimals",
+        "subtopic": "Converting between decimals and fractions",
+        "difficulty": "B/A",
+        "q": "Show that the recurring decimal $0.4\\dot{7}$ can be written as the fraction $\\dfrac{43}{90}$ in its simplest form.",
+        "steps": [
+            "We set $x = 0.4777...$.",
+            "We multiply by $10$ to get $10x = 4.777...$ and by $100$ to get $100x = 47.777...$.",
+            "Subtracting the two equations gives $90x = 43$.",
+            "We divide by 90 to express $x$ as a fraction.",
+            "Final Answer: $$\\dfrac{43}{90}$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Recurring Alignment",
+            "content": "In Paper 2, you must show the algebraic steps clearly. If you do not show the $100x$ and $10x$ subtractions, you risk losing the method marks even if the final fraction is correct."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master IGCSE: Download the Extended Number Pack"
+    },
+    // 24 May
+    {
+        "id": "003124",
+        "date": "24 May 2026",
+        "major_area": "Algebra",
+        "topic": "Quadratic Equations",
+        "subtopic": "Completing the square",
+        "difficulty": "A/A*",
+        "q": "By completing the square, find the coordinates of the turning point for the curve $y = x^2 - 6x + 10$.",
+        "steps": [
+            "We halve the coefficient of $x$ to form the square: $(x - 3)^2$.",
+            "Expanding this gives $x^2 - 6x + 9$. To reach $+10$, we must add $1$.",
+            "The equation in completed square form is $y = (x - 3)^2 + 1$.",
+            "The turning point occurs at $(3, 1)$.",
+            "Final Answer: $$(3, 1)$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Turning Point Signs",
+            "content": "The $x$-coordinate of the turning point is always the 'opposite' sign to the value inside the bracket. This is a very frequent source of sign errors in Paper 4."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master IGCSE: Download the Extended Algebra Pack"
+    },
+    // 25 May
+    {
+        "id": "003125",
+        "date": "25 May 2026",
+        "major_area": "Probability",
+        "topic": "Tree Diagrams",
+        "subtopic": "Without replacement",
+        "difficulty": "B/A",
+        "q": "A bag contains 7 red balls and 3 blue balls. Two balls are taken at random without replacement. Calculate the probability that at least one of the balls is blue.",
+        "steps": [
+            "We calculate the probability of the complementary event: that both balls are red.",
+            "The probability is $\\dfrac{7}{10} \\times \\dfrac{6}{9} = \\dfrac{42}{90}$.",
+            "We subtract this from 1 to find the probability of selecting at least one blue ball.",
+            "Final Answer: $$\\dfrac{8}{15}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: The Complement Rule",
+            "content": "When a question uses the phrase 'at least one', it is almost always more efficient to calculate $1 - P(\\text{none})$. This saves significant time in a high-pressure exam."
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master IGCSE: Download the Extended Probability Pack"
+    },
+    // 26 May
+    {
+        "id": "003126",
+        "date": "26 May 2026",
+        "major_area": "Ratio, Proportion & Rates of Change",
+        "topic": "Compound Measures",
+        "subtopic": "Speed",
+        "difficulty": "B/A",
+        "img": "images/May_26_g.png",
+        "q": "A speed-time graph shows a car accelerating from $0$ to $20\\text{ m/s}$ in $5$ seconds.<br>(a) Calculate the acceleration.<br>(b) Calculate the total distance travelled.",
+        "steps": [
+            "The acceleration is the gradient of the graph: $20 \\div 5 = 4\\text{ m/s}^2$.",
+            "The distance travelled is the area under the graph: $\\dfrac{1}{2} \\times 5 \\times 20 = 50\\text{ metres}$.",
+            "Final Answer: $$(a)\\ 4\\text{ m/s}^2,\\ (b)\\ 50\\text{ m}$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Kinematics Visuals",
+            "content": "Ensure you understand that gradient represents rate of change (acceleration) while area represents accumulation (distance). This is a fundamental concept for Paper 4."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master IGCSE: Download the Extended Ratio Pack"
+    },
+    // 27 May - Paper 2 Style
+    {
+        "id": "003127",
+        "date": "27 May 2026",
+        "major_area": "Algebra",
+        "topic": "Indices Laws",
+        "subtopic": "Fractional indices",
+        "difficulty": "B/A",
+        "q": "Evaluate the exact value of $27^{-2/3}$.",
+        "steps": [
+            "First, we address the negative index by taking the reciprocal: $1 / 27^{2/3}$.",
+            "We then find the cube root of $27$, which is $3$.",
+            "Finally, we square the result: $3^2 = 9$.",
+            "Final Answer: $$\\dfrac{1}{9}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Root then Power",
+            "content": "I always instruct students to perform the root first. Calculating the cube root of 27 is trivial; trying to find the cube root of $27^2$ (729) is a much harder task in a non-calculator exam."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master IGCSE: Download the Extended Algebra Pack"
+    },
+    // 28 May
+    {
+        "id": "003128",
+        "date": "28 May 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Similarity & Congruence",
+        "subtopic": "Scale factors",
+        "difficulty": "A/A*",
+        "q": "Two similar containers have heights of $12\\text{ cm}$ and $18\\text{ cm}$. The smaller container has a volume of $400\\text{ cm}^3$. Calculate the volume of the larger container.",
+        "steps": [
+            "The linear scale factor $k = 18 \\div 12 = 1.5$.",
+            "The volume scale factor $k^3 = 1.5^3 = 3.375$.",
+            "We multiply the smaller volume by $3.375$.",
+            "Final Answer: $$1350\\text{ cm}^3$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Linear vs. Volume Scale",
+            "content": "A very common error is multiplying by the linear scale factor. Always explicitly state $k$, $k^2$, and $k^3$ to avoid this mistake."
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master IGCSE: Download the Extended Geometry Pack"
+    },
+    // 29 May - Paper 2 Style
+    {
+        "id": "003129",
+        "date": "29 May 2026",
+        "major_area": "Algebra",
+        "topic": "Factorising",
+        "subtopic": "Difference of squares",
+        "difficulty": "B/A",
+        "q": "Factorise the following expression fully: $50x^2 - 18$.",
+        "steps": [
+            "We first extract the common factor of $2$: $2(25x^2 - 9)$.",
+            "We identify the difference of two squares: $2(5x - 3)(5x + 3)$.",
+            "Final Answer: $$2(5x - 3)(5x + 3)$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Multi-Stage Factorising",
+            "content": "The phrase 'Factorise fully' is a hint that there is more than one step. Always look for a common numerical factor before attempting to identify a quadratic pattern."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master IGCSE: Download the Extended Algebra Pack"
+    },
+    // 30 May - Mensuration Focus
+    {
+        "id": "003130",
+        "date": "30 May 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Trigonometry",
+        "subtopic": "Sine rule",
+        "difficulty": "A/A*",
+        "q": "A sector of a circle has a radius of $12\\text{ cm}$ and a sector angle of $60^\\circ$. Calculate the perimeter of the sector, giving your answer in terms of $\\pi$.",
+        "steps": [
+            "The arc length is $\\dfrac{60}{360} \\times 2 \\times \\pi \\times 12 = 4\\pi$.",
+            "The perimeter is the arc length plus the two radii: $4\\pi + 12 + 12$.",
+            "Final Answer: $$4\\pi + 24\\text{ cm}$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Arc vs. Perimeter",
+            "content": "In Paper 2, candidates often forget to add the radii when asked for the perimeter. An arc is just the curved part; a perimeter is the boundary of the entire shape."
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master IGCSE: Download the Extended Geometry Pack"
+    },
+    // 31 May - Differentiation Focus (Extended)
+    {
+        "id": "003131",
+        "date": "31 May 2026",
+        "major_area": "Algebra",
+        "topic": "Differentiation",
+        "subtopic": "Stationary points",
+        "difficulty": "A*",
+        "q": "A curve has the equation $y = x^3 - 12x + 7$.<br>(a) Find $\\dfrac{dy}{dx}$.<br>(b) Find the coordinates of the two stationary points.",
+        "steps": [
+            "We differentiate the function to find $\\dfrac{dy}{dx} = 3x^2 - 12$.",
+            "Stationary points occur when the gradient is zero: $3x^2 - 12 = 0$.",
+            "This gives $x^2 = 4$, so $x = 2$ or $x = -2$.",
+            "We substitute these back into the original equation for $y$: when $x=2, y=-9$; when $x=-2, y=23$.",
+            "Final Answer: $$(2, -9) \\text{ and } (-2, 23)$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: The Calculus Finale",
+            "content": "Differentiation is a hallmark of the Extended tier. Ensure you are comfortable finding both the $x$ and $y$ coordinates of stationary points to secure the maximum possible marks in the final section of Paper 4."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master IGCSE: Download the Extended Algebra Pack"
+    }
+];
 ]
