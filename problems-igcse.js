@@ -2730,7 +2730,7 @@ const problemBank = [
         "topic": "Histograms",
         "subtopic": "Interpreting histograms",
         "difficulty": "B/A",
-        "img": "images/26_may_i.png",
+        "img": "",
         "q": "In a histogram, the bar for the interval $20 < x \\le 50$ has a width of $3\\text{ cm}$ and a height of $4\\text{ cm}$. If this bar represents a frequency of 60, calculate the frequency represented by a bar with a width of $2\\text{ cm}$ and a height of $5\\text{ cm}$.",
         "steps": [
             "In a histogram, the frequency is proportional to the area of the bar.",
@@ -2843,27 +2843,31 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/XAGch",
         "button_text": "Master IGCSE: Download the Extended Geometry Pack"
     },
-    // 31 May - Paper 4 (Calculator) Focus
+   // 31 May - Paper 4 (Calculator) Focus
     {
         "id": "003231",
         "date": "31 May 2026",
         "major_area": "Algebra",
         "topic": "Differentiation",
+        "igcse_only": true,
         "subtopic": "Stationary points",
         "difficulty": "A*",
-        "q": "The equation of a curve is $y = x^3 - 12x + 7$.<br>(a) Find the derivative $\\dfrac{dy}{dx}$.<br>(b) Calculate the coordinates of the two stationary points.",
+        "img": "images/31_may_i.png",
+        "q": "A closed rectangular box has a height of $x\\text{ cm}$. The length of the box is $(12 - x)\\text{ cm}$ and the width is $(9 - x)\\text{ cm}$.<br>(a) Show that the volume, $V\\text{ cm}^3$, of the box is given by $V = x^3 - 21x^2 + 108x$.<br>(b) Use differentiation to find the value of $x$ for which the volume is a maximum.<br>(c) Calculate the maximum volume of the box.",
         "steps": [
-            "For part (a), we apply the power rule to each term: $\\dfrac{dy}{dx} = 3x^2 - 12$.",
-            "For part (b), we set the derivative to zero to find the $x$-coordinates of the stationary points: $3x^2 - 12 = 0$.",
-            "Solving for $x$: $3x^2 = 12 \\implies x^2 = 4$, which gives $x = 2$ and $x = -2$.",
-            "We substitute $x = 2$ into the original equation: $y = (2)^3 - 12(2) + 7 = 8 - 24 + 7 = -9$.",
-            "We substitute $x = -2$ into the original equation: $y = (-2)^3 - 12(-2) + 7 = -8 + 24 + 7 = 23$.",
-            "Final Answer: $$(2, -9) \\text{ and } (-2, 23)$$"
+            "For part (a), we establish the volume formula: $V = \\text{length} \\times \\text{width} \\times \\text{height}$. Substituting the expressions gives $V = x(12 - x)(9 - x)$.",
+            "Expanding the brackets: $V = x(108 - 12x - 9x + x^2) = x(x^2 - 21x + 108)$, which simplifies to $V = x^3 - 21x^2 + 108x$.",
+            "For part (b), we find the derivative $\\dfrac{dV}{dx}$ to identify the stationary points: $\\dfrac{dV}{dx} = 3x^2 - 42x + 108$.",
+            "Setting the derivative to zero: $3x^2 - 42x + 108 = 0$. Dividing by 3 simplifies the equation to $x^2 - 14x + 36 = 0$.",
+            "Using the quadratic formula to solve for $x$: $x = \\dfrac{14 \\pm \\sqrt{(-14)^2 - 4(1)(36)}}{2} = \\dfrac{14 \\pm \\sqrt{196 - 144}}{2} = \\dfrac{14 \\pm \\sqrt{52}}{2}$.",
+            "The two values are $x \\approx 10.6$ and $x \\approx 3.39$. Since $x$ cannot be greater than 9 (the width), we must use $x = 3.39$ for the maximum volume.",
+            "For part (c), we substitute $x = 3.39$ back into the volume formula: $V = (3.39)^3 - 21(3.39)^2 + 108(3.39)$.",
+            "Final Answer: $$(b)\\ x = 3.39\\text{ cm},\\ (c)\\ V = 164\\text{ cm}^3$$"
         ],
         "bradley_insight": {
-            "type": "pro-tip",
-            "title": "The Head Teacher's Eye: Completing the Coordinate",
-            "content": "A frequent oversight in Paper 4 is finding the $x$-values but forgetting to calculate the $y$-coordinates. The term 'coordinates' is a plural instruction; you must provide the full $(x, y)$ pairs to secure the final marks."
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Modelling and Constraints",
+            "content": "This problem illustrates the power of calculus in real-world modelling. Students must be alert to 'physical constraints': although the quadratic equation yields two solutions, only one is valid. If $x$ were 10.6, the width $(9 - x)$ would be negative, which is physically impossible. Always check your answers against the context of the problem."
         },
         "payhip_link": "https://payhip.com/b/wRN86",
         "button_text": "Master IGCSE: Download the Extended Algebra Pack"
