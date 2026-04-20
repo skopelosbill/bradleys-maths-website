@@ -1865,19 +1865,19 @@ const problemBank = [
         "topic": "3D Shapes",
         "subtopic": "Surface area",
         "difficulty": "B/A",
-        "q": "A solid sphere has a radius of $6\text{ cm}$. A solid cylinder has a radius of $3\text{ cm}$ and a height of $h\text{ cm}$.<br>The surface area of the sphere is equal to the total surface area of the cylinder. Find $h$.",
+        "q": "A solid sphere has a radius of $6\\text{ cm}$. A solid cylinder has a radius of $3\\text{ cm}$ and a height of $h\\text{ cm}$.<br>The surface area of the sphere is equal to the total surface area of the cylinder. Find $h$.",
         "steps": [
-            "Sphere Surface Area: $4\pi r^2 = 4\pi(6^2) = 144\pi$.",
-            "Cylinder Surface Area: $2\pi r^2 + 2\pi rh = 2\pi(3^2) + 2\pi(3)h$.",
-            "Simplify Cylinder: $18\pi + 6\pi h$.",
-            "Equate: $18\pi + 6\pi h = 144\pi$.",
-            "Subtract $18\pi$: $6\pi h = 126\pi$.",
+            "Sphere Surface Area: $4\\pi r^2 = 4\\pi(6^2) = 144\\pi$.",
+            "Cylinder Surface Area: $2\\pi r^2 + 2\\pi rh = 2\\pi(3^2) + 2\\pi(3)h$.",
+            "Simplify Cylinder: $18\\pi + 6\\pi h$.",
+            "Equate: $18\\pi + 6\\pi h = 144\\pi$.",
+            "Subtract $18\\pi$: $6\pi h = 126\\pi$.",
             "Final Answer: $$h = 21$$"
         ],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head teacher's Eye: Total Surface Area",
-            "content": "In cylinder problems, 'total surface area' includes the two circular ends ($2\pi r^2$) plus the curved surface ($2\pi rh$). Many students forget to include the ends!"
+            "content": "In cylinder problems, 'total surface area' includes the two circular ends ($2\\pi r^2$) plus the curved surface ($2\\pi rh$). Many students forget to include the ends!"
         },
 	 "payhip_link": "https://payhip.com/b/KjXoP", // Replace with your Mensuration/Trig link
         "button_text": "Master Mensuration & Trigonometry: Download the Full Mensuration & Trigonometry Pack"
