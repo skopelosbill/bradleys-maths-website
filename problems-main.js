@@ -1674,7 +1674,7 @@ const problemBank = [
         "difficulty": "4/5",
         "q": "The mean of four numbers is 10. Three of the numbers are 8, 12, and 15.<br>Find the fourth number.",
         "steps": [
-            "Total of the four numbers: $4 \times 10 = 40$.",
+            "Total of the four numbers: $4 \\times 10 = 40$.",
             "Total of the known three: $8 + 12 + 15 = 35$.",
             "Subtract: $40 - 35$.",
             "Final Answer: $$5$$"
@@ -1682,7 +1682,7 @@ const problemBank = [
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Think of the Total",
-            "content": "In 'reverse mean' questions, always find the **total** first. Mean $\times$ Count $=$ Total. This is much easier than trying to solve an algebraic equation."
+            "content": "In 'reverse mean' questions, always find the <strong>tota</strong> first. Mean $\\times$ Count $=$ Total. This is much easier than trying to solve an algebraic equation."
         }
     },
     // 22 Apr
