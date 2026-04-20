@@ -2448,6 +2448,7 @@ const problemBank = [
         "button_text": "Master IGCSE: Download the Extended Geometry Pack"
     },
     // 15 May - Paper 4 (Calculator) Focus
+   // 15 May - Paper 4 (Calculator) Focus
     {
         "id": "003215",
         "date": "15 May 2026",
@@ -2456,19 +2457,19 @@ const problemBank = [
         "igcse_only": true,
         "subtopic": "Stationary points",
         "difficulty": "A/A*",
-        "q": "Find the coordinates of the stationary points on the curve $y = 2x^3 - 9x^2 + 12x + 5$.",
+        "q": "Find the coordinates of the two stationary points on the curve $y = 2x^3 - 9x^2 + 12x - 3$.",
         "steps": [
-            "We first find the derivative, $\\dfrac{dy}{dx} = 6x^2 - 18x + 12$.",
-            "Stationary points occur when the gradient is zero, so we set $6x^2 - 18x + 12 = 0$.",
-            "Dividing by 6 gives $x^2 - 3x + 2 = 0$, which factorises to $(x - 1)(x - 2) = 0$.",
-            "This yields $x$-coordinates of 1 and 2. We substitute these back into the original equation for $y$.",
-            "When $x = 1, y = 2(1) - 9(1) + 12(1) + 5 = 10$. When $x = 2, y = 2(8) - 9(4) + 12(2) + 5 = 9$.",
-            "Final Answer: $$(1, 10) \\text{ and } (2, 9)$$"
+            "We begin by finding the derivative of the function, $\\dfrac{dy}{dx}$, by applying the power rule to each term: $\\dfrac{dy}{dx} = 6x^2 - 18x + 12$.",
+            "Stationary points occur when the gradient of the curve is zero, so we set the derivative equal to zero: $6x^2 - 18x + 12 = 0$.",
+            "Dividing the entire equation by 6 simplifies it to $x^2 - 3x + 2 = 0$, which factorises to $(x - 1)(x - 2) = 0$.",
+            "This yields the $x$-coordinates of $1$ and $2$. We must now substitute these values back into the original cubic equation to find the corresponding $y$-coordinates.",
+            "When $x = 1$, $y = 2(1)^3 - 9(1)^2 + 12(1) - 3 = 2$. When $x = 2$, $y = 2(8) - 9(4) + 12(2) - 3 = 1$.",
+            "Final Answer: $$(1, 2) \\text{ and } (2, 1)$$ <img src='images/15_may_sol_i.png' style='max-width:300px; margin-top:10px;'>"
         ],
         "bradley_insight": {
             "type": "deeper",
-            "title": "The Head Teacher's Eye: Optimization and Gradients",
-            "content": "The term 'stationary point' is an IGCSE instruction to differentiate and set to zero. This is a top-tier skill in Paper 4 and often forms the first part of a larger question on curve sketching or optimization."
+            "title": "The Head Teacher's Eye: Identifying Stationary Points",
+            "content": "The term 'stationary point' is a specific command in the Extended syllabus to differentiate and solve for a gradient of zero. I always remind my students to perform a final check: have you found the $y$-coordinates? A 'point' in coordinate geometry must always be presented as an $(x, y)$ pair."
         },
         "payhip_link": "https://payhip.com/b/wRN86",
         "button_text": "Master IGCSE: Download the Extended Algebra Pack"
