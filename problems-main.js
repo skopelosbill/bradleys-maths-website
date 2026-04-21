@@ -1682,7 +1682,7 @@ const problemBank = [
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Think of the Total",
-            "content": "In 'reverse mean' questions, always find the <strong>tota</strong> first. Mean $\\times$ Count $=$ Total. This is much easier than trying to solve an algebraic equation."
+            "content": "In 'reverse mean' questions, always find the <strong>total</strong> first. Mean $\\times$ Count $=$ Total. This is much easier than trying to solve an algebraic equation."
         }
     },
     // 22 Apr
