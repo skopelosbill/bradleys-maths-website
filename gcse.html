@@ -247,7 +247,13 @@
 </main>
 
     <!-- JAVASCRIPT (Keep your existing script here) -->
-    <script src="problems-main.js"></script>
+    <script>
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = (now.getMonth() + 1).toString().padStart(2, '0');
+    // Loads the specific monthly file: problems/gcse/2026/04.js
+    document.write(`<script src="problems/gcse/${year}/${month}.js"><\/script>`);
+    </script>
     <script src="engine.js"></script>
 </body>
 </html>
