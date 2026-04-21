@@ -7,23 +7,18 @@ function toggleMenu() {
 
 document.addEventListener('DOMContentLoaded', function() {      
     // --- 1. DATE & SELECTION LOGIC ---
+    // --- 1. DATE & SELECTION LOGIC ---
     const dateDisplay = document.getElementById('dateDisplay');
-    if (dateDisplay) {
-        const date = new Date();
-        dateDisplay.textContent = date.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
-    }
-
     const today = new Date();
-    const oneDay = 1000 * 60 * 60 * 24;
-    const diffTime = today - anchorDate;
-    const daysSinceAnchor = Math.floor(diffTime / oneDay);
-
-    let dayIndex = daysSinceAnchor % problemBank.length;
-    if (dayIndex < 0) {
-        dayIndex = problemBank.length + dayIndex;
+    
+    if (dateDisplay) {
+        dateDisplay.textContent = today.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
     }
 
-    const todaysProblem = problemBank[dayIndex];
+    // New Logic: Just take today's day number (e.g., 21) 
+    // and subtract 1 to get the index (20) in the monthly file.
+    const dayOfMonth = today.getDate();
+    const todaysProblem = problemBank[dayOfMonth - 1];
     
     // --- 2. DISPLAY QUESTION ---
     const questionContainer = document.getElementById('math-question');
