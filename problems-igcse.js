@@ -1807,7 +1807,6 @@ const problemBank = [
 		 "payhip_link": "https://payhip.com/b/mg5YS", // Replace with your Mensuration/Trig link
         "button_text": "Master Algebra: Download the Full Algebra Pack"
     },
-	
 	//21 April
 	{
         "id": "001608",
