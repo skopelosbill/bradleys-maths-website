@@ -18,10 +18,7 @@ const problemBank = [
     "Simplify: $4 \\times 9\\pi = 36\\pi$.",
     "Final answer: $$36\\pi\\text{ cm}^3$$"
   ]
-},
-
-
-           
+},        
             // JAN 31
             {
   "id": "001538",
@@ -2825,7 +2822,7 @@ const problemBank = [
         },
         "payhip_link": "https://payhip.com/b/wRN86",
         "button_text": "Master IGCSE: Download the Extended Algebra Pack"
-    }
+    },
 	// 1 Jun
     {
         "id": "003232",
@@ -2872,7 +2869,7 @@ const problemBank = [
         },
 		 "payhip_link": "https://payhip.com/b/mg5YS", // Replace with your Mensuration/Trig link
         "button_text": "Master Algebra: Download the Full Algebra Pack"
-    },
+    }
 ];
 
 
