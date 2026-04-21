@@ -1821,7 +1821,7 @@ const problemBank = [
             "Cylinder Surface Area: $2\\pi r^2 + 2\\pi rh = 2\\pi(3^2) + 2\\pi(3)h$.",
             "Simplify Cylinder: $18\\pi + 6\\pi h$.",
             "Equate: $18\\pi + 6\\pi h = 144\\pi$.",
-            "Subtract $18\\pi$: $6\pi h = 126\\pi$.",
+            "Subtract $18\\pi$: $6\\pi h = 126\\pi$.",
             "Final Answer: $$h = 21$$"
         ],
         "bradley_insight": {
