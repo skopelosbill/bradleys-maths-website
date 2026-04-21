@@ -1810,53 +1810,7 @@ const problemBank = [
 		 "payhip_link": "https://payhip.com/b/mg5YS", // Replace with your Mensuration/Trig link
         "button_text": "Master Algebra: Download the Full Algebra Pack"
     },
-	// 19 Apr
-    {
-        "id": "001606",
-        "date": "19 Apr 2026",
-        "major_area": "Statistics",
-        "topic": "Cumulative Frequency",
-        "subtopic": "Median",
-        "difficulty": "6/7",
-        "q": "A cumulative frequency graph represents the heights of 100 plants.<br>The heights range from $0$ to $50\text{ cm}$.<br>Explain how to estimate the number of plants taller than $45\text{ cm}$.",
-        "steps": [
-            "Find $45\text{ cm}$ on the horizontal (x) axis.",
-            "Move vertically up to the curve, then horizontally to the vertical (y) axis.",
-            "Read the cumulative frequency value (e.g., 85).",
-            "Subtract this value from the total: $100 - 85 = 15$.",
-            "Final Answer: $$15\text{ plants}$$"
-        ],
-        "bradley_insight": {
-            "type": "pro-tip",
-            "title": "The Head Teacher's Eye: Taller vs Shorter",
-            "content": "The graph always shows how many are **below** a value. If the question asks for 'taller than' or 'more than', you must subtract your reading from the total frequency!"
-        },
-		 "payhip_link": "https://payhip.com/b/rsVCz", // Replace with your Mensuration/Trig link
-        "button_text": "Master Statistics: Download the Full Vectors, Probabilitu & Statistics Pack"
-    },
-    // 20 Apr
-    {
-        "id": "001607",
-        "date": "20 Apr 2026",
-        "major_area": "Algebra",
-        "topic": "Rearranging Formulae",
-        "subtopic": "Changing the subject",
-        "difficulty": "6/7",
-        "q": "Make $t$ the subject of the formula: $v = u + at$.",
-        "img": "",
-        "steps": [
-            "Subtract $u$ from both sides: $v - u = at$.",
-            "Divide both sides by $a$.",
-            "Final Answer: $$t = \\frac{v - u}{a}$$"
-        ],
-        "bradley_insight": {
-            "type": "caution",
-            "title": "The Head Teacher's Eye: Reverse BIDMAS",
-            "content": "When rearranging, think of it as 'undoing' the operations in reverse order. We deal with the addition ($+u$) before we deal with the multiplication ($at$)."
-        },
-		 "payhip_link": "https://payhip.com/b/mg5YS", // Replace with your Mensuration/Trig link
-        "button_text": "Master Algebra: Download the Full Algebra Pack"
-    },
+	
 	//21 April
 {
         "id": "001608",
@@ -2872,6 +2826,53 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/wRN86",
         "button_text": "Master IGCSE: Download the Extended Algebra Pack"
     }
+	// 1 Jun
+    {
+        "id": "003232",
+        "date": "1 June 2026",
+        "major_area": "Statistics",
+        "topic": "Cumulative Frequency",
+        "subtopic": "Median",
+        "difficulty": "6/7",
+        "q": "A cumulative frequency graph represents the heights of 100 plants.<br>The heights range from $0$ to $50\\text{ cm}$.<br>Explain how to estimate the number of plants taller than $45\\text{ cm}$.",
+        "steps": [
+            "Find $45\\text{ cm}$ on the horizontal (x) axis.",
+            "Move vertically up to the curve, then horizontally to the vertical (y) axis.",
+            "Read the cumulative frequency value (e.g., 85).",
+            "Subtract this value from the total: $100 - 85 = 15$.",
+            "Final Answer: $$15\\text{ plants}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Taller vs Shorter",
+            "content": "The graph always shows how many are <strong>below</strong> a value. If the question asks for 'taller than' or 'more than', you must subtract your reading from the total frequency!"
+        },
+		 "payhip_link": "https://payhip.com/b/rsVCz", // Replace with your Mensuration/Trig link
+        "button_text": "Master Statistics: Download the Full Vectors, Probabilitu & Statistics Pack"
+    },
+    // 2 June
+    {
+        "id": "003233",
+        "date": "2 June 2026",
+        "major_area": "Algebra",
+        "topic": "Rearranging Formulae",
+        "subtopic": "Changing the subject",
+        "difficulty": "6/7",
+        "q": "Make $t$ the subject of the formula: $v = u + at$.",
+        "img": "",
+        "steps": [
+            "Subtract $u$ from both sides: $v - u = at$.",
+            "Divide both sides by $a$.",
+            "Final Answer: $$t = \\frac{v - u}{a}$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Reverse BIDMAS",
+            "content": "When rearranging, think of it as 'undoing' the operations in reverse order. We deal with the addition ($+u$) before we deal with the multiplication ($at$)."
+        },
+		 "payhip_link": "https://payhip.com/b/mg5YS", // Replace with your Mensuration/Trig link
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    },
 ];
 
 
