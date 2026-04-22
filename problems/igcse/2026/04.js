@@ -579,26 +579,29 @@ const problemBank =[
         "button_text": "Master Mensuration & Trigonometry: Download the Full Mensuration & Trigonometry Pack"
     },
   // 22 April - IGCSE Extended (Functions)
+    // 22 April - IGCSE Extended (Functions)
     {
         "id": "003241",
         "date": "22 April 2026",
         "major_area": "Algebra",
-        "topic": "Algebraic Notation",
-        "subtopic": "Substitution",
+        "topic": "Functions",
+        "subtopic": "composite and inverse",
         "difficulty": "B/A",
         "q": "The functions $f$ and $g$ are defined by $f(x) = 3x - 5$ and $g(x) = \\dfrac{x + 1}{2}$.<br>(a) Find the composite function $gf(x)$, giving your answer in its simplest form.<br>(b) Find $f^{-1}(x)$.",
         "steps": [
-            "For part (a), to find the composite function $gf(x)$, we substitute the entire expression for $f(x)$ into the function $g$. This gives $g(3x - 5) = \\dfrac{(3x - 5) + 1}{2}$.",
-            "We then simplify the numerator: $\\dfrac{3x - 4}{2}$.",
-            "For part (b), we find the inverse function by setting $y = 3x - 5$ and rearranging the equation to make $x$ the subject.",
-            "Adding 5 to both sides gives $y + 5 = 3x$, and dividing by 3 yields $x = \\dfrac{y + 5}{3}$.",
-            "Finally, we express the result in inverse function notation.",
+            "For part (a), to find the composite function $gf(x)$, we substitute the entire expression for $f(x)$ into the function $g$: $g(3x - 5) = \\dfrac{(3x - 5) + 1}{2}$.",
+            "We then simplify the numerator to get the final expression: $\\dfrac{3x - 4}{2}$.",
+            "For part (b), we start by writing the function in the form $y = 3x - 5$.",
+            "We then interchange the variables $x$ and $y$ to represent a reflection in the line $y = x$: $x = 3y - 5$.",
+            "To solve for $y$, we first add 5 to both sides of the equation: $x + 5 = 3y$.",
+            "We then divide both sides by 3 to isolate $y$: $y = \\dfrac{x + 5}{3}$.",
+            "Finally, we rewrite the result using inverse function notation.",
             "Final Answer: $$(a)\\ \\dfrac{3x - 4}{2},\\ (b)\\ f^{-1}(x) = \\dfrac{x + 5}{3}$$"
         ],
         "bradley_insight": {
             "type": "pro-tip",
-            "title": "The Head Teacher's Eye: Order of Operations",
-            "content": "In composite functions, the order is critical. For $gf(x)$, you must work 'inside out' by applying $f$ first and then using that result as the input for $g$. Reversing this order is the most common reason for lost marks in Paper 4."
+            "title": "The Head Teacher's Eye: The Reflection Principle",
+            "content": "I always instruct my students to perform the 'interchange' step immediately. This is not just a trick; it is a mathematical instruction to reflect the graph in the line $y = x$. By swapping the variables first, you are ensuring that your algebraic working follows the geometric definition of an inverse."
         },
         "payhip_link": "https://payhip.com/b/wRN86",
         "button_text": "Master IGCSE: Download the Extended Algebra Pack"
