@@ -6,36 +6,49 @@ function toggleMenu() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {      
-    // --- 1. DATE & SELECTION LOGIC ---
-    // --- 1. DATE & SELECTION LOGIC ---
-    const dateDisplay = document.getElementById('dateDisplay');
+    // --- 1. DATE LOGIC ---
     const today = new Date();
+    const dayNumeric = today.getDate(); // e.g., 22
+    const dayPadded = dayNumeric.toString().padStart(2, '0'); // e.g., "22"
+    const monthPadded = (today.getMonth() + 1).toString().padStart(2, '0'); // e.g., "04"
     
+    const dateDisplay = document.getElementById('dateDisplay');
     if (dateDisplay) {
         dateDisplay.textContent = today.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
     }
 
-    // New Logic: Just take today's day number (e.g., 21) 
-    // and subtract 1 to get the index (20) in the monthly file.
-    const dayOfMonth = today.getDate();
-    const todaysProblem = problemBank[dayOfMonth - 1];
+    // --- 2. SELECTION LOGIC ---
+    // Pulls from the monthly file loaded via the HTML script tag
+    const todaysProblem = problemBank[dayNumeric - 1];
     
-    // --- 2. DISPLAY QUESTION ---
+    if (!todaysProblem) {
+        console.error("Problem not found for today's date in the bank.");
+        return;
+    }
+
+    // --- 3. AUTOMATIC IMAGE PATH ---
+    // Determines tier based on URL and builds path: images/04/g_26.png
+    const tierSuffix = window.location.pathname.includes('igcse') ? 'i' : 'g';
+    const autoImgPath = `images/${monthPadded}/${tierSuffix}_${dayPadded}.png`;
+
+    // --- 4. DISPLAY QUESTION ---
     const questionContainer = document.getElementById('math-question');
     if (questionContainer) {
         let questionHTML = todaysProblem.q;
-        if (todaysProblem.img) {
-            questionHTML += `<br><img src="${todaysProblem.img}" class="question-img" alt="Question Diagram">`;
+        
+        // If "img" in the JSON is not empty, display the automatically calculated path
+        if (todaysProblem.img && todaysProblem.img !== "") {
+            questionHTML += `<br><img src="${autoImgPath}" class="question-img" alt="Question Diagram">`;
         }
         questionContainer.innerHTML = questionHTML;
     }
 
-    // --- 3. PREPARE SOLUTION AREA ---
+    // --- 5. PREPARE SOLUTION AREA ---
     const solutionArea = document.getElementById('solution-area');
     if (solutionArea) {
-        solutionArea.innerHTML = ''; // Clear any existing content
+        solutionArea.innerHTML = ''; 
 
-        // Create the Steps (Hidden by default)
+        // Build Steps
         todaysProblem.steps.forEach((stepContent, index) => {
             let stepDiv = document.createElement('div');
             stepDiv.className = 'step';
@@ -45,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
             solutionArea.appendChild(stepDiv);
         });
 
-        // Create the Bradley Insight Box (Hidden initially)
+        // Build the Head Teacher's Eye Box
         if (todaysProblem.bradley_insight) {
             let insightDiv = document.createElement('div');
             insightDiv.id = 'bradley-insight';
@@ -68,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // --- 4. STEP BUTTON LOGIC ---
+    // --- 6. INTERACTION LOGIC ---
     let currentStep = 0;
     const totalSteps = todaysProblem.steps.length;
     const btn = document.getElementById('stepBtn');
