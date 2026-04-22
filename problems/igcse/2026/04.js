@@ -586,12 +586,12 @@ const problemBank =[
         "topic": "Polygons",
         "subtopic": "Interior angles",
         "difficulty": "4/5",
-        "q": "The sum of the interior angles of a regular polygon is $1440^\circ$.<br>Calculate the number of sides the polygon has.",
+        "q": "The sum of the interior angles of a regular polygon is $1440^\\circ$.<br>Calculate the number of sides the polygon has.",
         "steps": [
             "Use the formula: $(n - 2) \\times 180 = 1440$.",
             "Divide by 180: $n - 2 = 8$.",
             "Add 2: $n = 10$.",
-            "Final Answer: $$10\text{ sides}$$"
+            "Final Answer: $$10\\text{ sides}$$"
         ],
         "bradley_insight": {
             "type": "pro-tip",
