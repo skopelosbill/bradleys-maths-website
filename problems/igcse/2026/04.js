@@ -578,76 +578,83 @@ const problemBank =[
 	 "payhip_link": "https://payhip.com/b/KjXoP", // Replace with your Mensuration/Trig link
         "button_text": "Master Mensuration & Trigonometry: Download the Full Mensuration & Trigonometry Pack"
     },
-    // 22 Apr
+   // 22 April - IGCSE Extended (Functions)
     {
-        "id": "001609",
-        "date": "22 Apr 2026",
-        "major_area": "Coordinate Geometry & Geometry",
-        "topic": "Polygons",
-        "subtopic": "Interior angles",
-        "difficulty": "4/5",
-        "q": "The sum of the interior angles of a regular polygon is $1440^\circ$.<br>Calculate the number of sides the polygon has.",
+        "id": "003241",
+        "date": "22 April 2026",
+        "major_area": "Algebra",
+        "topic": "Algebraic Notation",
+        "subtopic": "Substitution",
+        "difficulty": "B/A",
+        "q": "The functions $f$ and $g$ are defined by $f(x) = 3x - 5$ and $g(x) = \\dfrac{x + 1}{2}$.<br>(a) Find the composite function $gf(x)$, giving your answer in its simplest form.<br>(b) Find $f^{-1}(x)$.",
         "steps": [
-            "Use the formula: $(n - 2) \\times 180 = 1440$.",
-            "Divide by 180: $n - 2 = 8$.",
-            "Add 2: $n = 10$.",
-            "Final Answer: $$10\text{ sides}$$"
+            "For part (a), to find the composite function $gf(x)$, we substitute the entire expression for $f(x)$ into the function $g$. This gives $g(3x - 5) = \\dfrac{(3x - 5) + 1}{2}$.",
+            "We then simplify the numerator: $\\dfrac{3x - 4}{2}$.",
+            "For part (b), we find the inverse function by setting $y = 3x - 5$ and rearranging the equation to make $x$ the subject.",
+            "Adding 5 to both sides gives $y + 5 = 3x$, and dividing by 3 yields $x = \\dfrac{y + 5}{3}$.",
+            "Finally, we express the result in inverse function notation.",
+            "Final Answer: $$(a)\\ \\dfrac{3x - 4}{2},\\ (b)\\ f^{-1}(x) = \\dfrac{x + 5}{3}$$"
         ],
         "bradley_insight": {
             "type": "pro-tip",
-            "title": "The head Teacher's Eye: The Exterior Shortcut",
-            "content": "You can also find the number of sides by finding the exterior angle first. But for 'sum of interior' questions, memorizing $(n-2) \\times 180$ is the most direct path to the marks."
+            "title": "The Head Teacher's Eye: Order of Operations",
+            "content": "In composite functions, the order is critical. For $gf(x)$, you must work 'inside out' by applying $f$ first and then using that result as the input for $g$. Reversing this order is the most common reason for lost marks in Paper 4."
         },
-		 "payhip_link": "https://payhip.com/b/L6skH", // Replace with your Mensuration/Trig link
-        "button_text": "Master Coordinate Geometry & Geometry: Download the Full Coordinate Geometry & Geometry Pack"
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master IGCSE: Download the Extended Algebra Pack"
     },
-    // 23 Apr
+    // 23 April - IGCSE Extended (Calculus/Gradients)
     {
-        "id": "001610",
-        "date": "23 Apr 2026",
-        "major_area": "Number",
-        "topic": "Percentages",
-        "subtopic": "Reverse percentages",
-        "difficulty": "6/7",
-        "q": "A TV is sold for £352 in a '20% off' sale.<br>Calculate the original price of the TV.",
+        "id": "003242",
+        "date": "23 April 2026",
+        "major_area": "Algebra",
+        "topic": "Differentiation",
+        "igcse_only": true,
+        "subtopic": "Gradient from tangents",
+        "difficulty": "A/A*",
+        "q": "A curve has the equation $y = x^2 - 6x + 8$.<br>(a) Find the derivative $\\dfrac{dy}{dx}$.<br>(b) Find the equation of the tangent to the curve at the point $(5, 3)$.",
         "steps": [
-            "Identify that £352 represents 80% of the original price.",
-            "Find 1%: $352 \\div 80 = 4.4$.",
-            "Multiply by 100: $4.4 \\times 100$.",
-            "Final Answer: $$£440$$"
-        ],
-        "bradley_insight": {
-            "type": "caution",
-            "title": "The Head Teacher's Eye: Don't just add 20%!",
-            "content": "A common mistake is to calculate 20% of the sale price and add it back. This is wrong! You must always divide by the multiplier (in this case, $0.8$) to get back to the original value."
-        },
-		 "payhip_link": "https://payhip.com/b/XEV2Z", // Replace with your Mensuration/Trig link
-        "button_text": "Master Number: Download the Full Coordinate Number Pack"
-    },
-    // 24 Apr
-    {
-        "id": "001611",
-        "date": "24 Apr 2026",
-        "major_area": "Probability",
-        "topic": "Basic Probability",
-        "subtopic": "Venn Diagrams",
-        "difficulty": "6/7",
-        "q": "In a class of 30 students, 20 like Football and 15 like Cricket. 10 like both.<br>Find the probability that a student chosen at random likes **only** Football.",
-        "steps": [
-            "Number who like Football only: $20 - 10 = 10$.",
-            "Total number of students: $30$.",
-            "Probability: $\\frac{10}{30}$.",
-            "Final Answer: $$\\frac{1}{3}$$"
+            "For part (a), we apply the power rule for differentiation to each term: $\\dfrac{dy}{dx} = 2x - 6$.",
+            "For part (b), we find the gradient of the tangent at the specific point by substituting $x = 5$ into the derivative: $m = 2(5) - 6 = 4$.",
+            "Now that we have the gradient ($m = 4$) and a point $(5, 3)$, we use the straight-line formula $y - y_1 = m(x - x_1)$.",
+            "Substituting the values: $y - 3 = 4(x - 5)$.",
+            "Expanding and simplifying gives $y - 3 = 4x - 20$, which rearranges to the final linear equation.",
+            "Final Answer: $$y = 4x - 17$$"
         ],
         "bradley_insight": {
             "type": "deeper",
-            "title": "The Head Teacher's Eye: Venn Diagram Logic",
-            "content": "Always fill in the intersection (the 'both' section) first! It prevents you from double-counting the students who appear in both categories."
+            "title": "The Head Teacher's Eye: Connecting Gradient and Tangent",
+            "content": "This question bridges the gap between pure calculus and coordinate geometry. Students must understand that the derivative $\\dfrac{dy}{dx}$ provides a general formula for the gradient, but to find a specific tangent, they must evaluate that formula at a single numerical point."
         },
-		 "payhip_link": "https://payhip.com/b/rsVCz", // Replace with your Mensuration/Trig link
-        "button_text": "Master Vectors, Probability & Statistics: Download the Full Vectors, Probability & Statistics Pack"
-		 
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master IGCSE: Download the Extended Algebra Pack"
     },
+    // 24 April - IGCSE Extended (Similar Solids)
+    {
+        "id": "003243",
+        "date": "24 April 2026",
+        "major_area": "Geometry & Measures",
+        "topic": "Similarity & Congruence",
+        "subtopic": "Similar shapes",
+        "difficulty": "A/A*",
+        "q": "Two mathematically similar solids have volumes of $54\\text{ cm}^3$ and $128\\text{ cm}^3$ respectively. The surface area of the larger solid is $160\\text{ cm}^2$. Calculate the surface area of the smaller solid.",
+        "steps": [
+            "We begin by finding the volume scale factor ($k^3$) by dividing the two volumes: $k^3 = \\dfrac{128}{54}$.",
+            "Simplifying the fraction gives $k^3 = \\dfrac{64}{27}$.",
+            "To find the linear scale factor ($k$), we take the cube root of the volume scale factor: $k = \\sqrt[3]{\\dfrac{64}{27}} = \\dfrac{4}{3}$.",
+            "The area scale factor ($k^2$) is the square of the linear scale factor: $k^2 = \\left(\\dfrac{4}{3}\\right)^2 = \\dfrac{16}{9}$.",
+            "Finally, to find the smaller surface area, we divide the larger area by the area scale factor: $160 \\div \\dfrac{16}{9} = 160 \\times \\dfrac{9}{16}$.",
+            "Final Answer: $$90\\text{ cm}^2$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: The Dimensional Bridge",
+            "content": "You cannot convert volume directly to area. You must always 'bridge' through the linear scale factor ($k$). I suggest my students explicitly write down $k, k^2$ and $k^3$ as a standard procedure to avoid the common mistake of using the wrong power."
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master IGCSE: Download the Extended Geometry Pack"
+    },
+ 
  // 25 Apr
     {
         "id": "001612",
