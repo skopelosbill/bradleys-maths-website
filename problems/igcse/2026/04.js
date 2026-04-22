@@ -580,13 +580,13 @@ const problemBank =[
     },
    // 22 April - IGCSE Extended (Functions)
     {
-        "id": "003241",
-        "date": "22 April 2026",
-        "major_area": "Algebra",
-        "topic": "Algebraic Notation",
-        "subtopic": "Substitution",
-        "difficulty": "B/A",
-        "q": "The functions $f$ and $g$ are defined by $f(x) = 3x - 5$ and $g(x) = \\dfrac{x + 1}{2}$.<br>(a) Find the composite function $gf(x)$, giving your answer in its simplest form.<br>(b) Find $f^{-1}(x)$.",
+        "id": "001609",
+        "date": "22 Apr 2026",
+        "major_area": "Coordinate Geometry & Geometry",
+        "topic": "Polygons",
+        "subtopic": "Interior angles",
+        "difficulty": "4/5",
+        "q": "The sum of the interior angles of a regular polygon is $1440^\circ$.<br>Calculate the number of sides the polygon has.",
         "steps": [
             "For part (a), to find the composite function $gf(x)$, we substitute the entire expression for $f(x)$ into the function $g$. This gives $g(3x - 5) = \\dfrac{(3x - 5) + 1}{2}$.",
             "We then simplify the numerator: $\\dfrac{3x - 4}{2}$.",
