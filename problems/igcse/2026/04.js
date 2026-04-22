@@ -654,7 +654,6 @@ const problemBank =[
         "payhip_link": "https://payhip.com/b/XAGch",
         "button_text": "Master IGCSE: Download the Extended Geometry Pack"
     }
-];
  // 25 Apr
     {
         "id": "001612",
