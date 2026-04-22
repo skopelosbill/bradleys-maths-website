@@ -298,7 +298,7 @@ const problemBank = [
         "topic": "Circle Theorems",
         "subtopic": "Angle at the centre",
         "difficulty": "5/6",
-        "img": "images/problems/2026/01/g_13.png",
+        "img": "images/01/g_13.png",
         "q": "Points $A, B$ and $C$ lie on the circumference of a circle. $AB$ is the diameter of the circle. Angle $BAC = 30^\\circ$.<br>(a) State the size of angle $ACB$.<br>(b) Calculate the size of angle $ABC$.",
         "steps": [
             "For part (a), we use the circle theorem which states that the angle subtended at the circumference by a semicircle is always a right angle. Therefore, angle $ACB = 90^\\circ$.",
@@ -448,13 +448,13 @@ const problemBank = [
         "topic": "Inequalities",
         "subtopic": "Solving inequalities",
         "difficulty": "8/9",
-        "q": "Solve the quadratic inequality: $x^2 > 25$.",
+        "q": "Solve the quadratic inequality: $x^2 > 9$.",
         "steps": [
-            "First, we find the critical values by solving the equation $x^2 = 25$. This gives $x = 5$ and $x = -5$.",
-            "We consider the graph of $y = x^2 - 25$, which is a U-shaped parabola crossing the $x$-axis at $-5$ and $5$.",
-            "The inequality $x^2 > 25$ asks for the regions where the graph is <strong>above</strong> the $x$-axis.",
-            "This occurs for values of $x$ that are less than $-5$ or greater than $5$.",
-            "Final Answer: $$x < -5 \\text{ or } x > 5$$ <br><img src='images/problems/2026/01/19_g.png' style='max-width:300px;'>"
+            "First, we find the critical values by solving the equation $x^2 = 9$. This gives $x = 3$ and $x = -3$.",
+            "We consider the graph of $y = x^2 - 9$, which is a U-shaped parabola crossing the $x$-axis at $-3$ and $3$.",
+            "The inequality $x^2 > 9$ asks for the regions where the graph is <strong>above</strong> the $x$-axis.",
+            "This occurs for values of $x$ that are less than $-3$ or greater than $3$.",
+            "Final Answer: $$x < -3 \\text{ or } x > 3$$ <br><img src='images/01/g_19.png' style='max-width:300px;'>"
         ],
         "bradley_insight": {
             "type": "caution",
@@ -597,7 +597,7 @@ const problemBank = [
         "topic": "Vectors",
         "subtopic": "Vector addition",
         "difficulty": "6/7",
-        "img": "images/problems/2026/01/25_g.png",
+        "img": "images/01/g_25.png",
         "q": "In the diagram, $M$ is the midpoint of the line segment $AB$. The vector $\\overrightarrow{OA} = \\mathbf{a}$ and the vector $\\overrightarrow{OB} = \\mathbf{b}$.<br>Find the vector $\\overrightarrow{OM}$ in terms of $\\mathbf{a}$ and $\\mathbf{b}$, giving your answer in its simplest form.",
         "steps": [
             "We first find the vector path for $\\overrightarrow{AB}$ by travelling from $A$ to $O$ and then from $O$ to $B$: $\\overrightarrow{AB} = -\\mathbf{a} + \\mathbf{b}$.",
@@ -649,7 +649,7 @@ const problemBank = [
         "topic": "Trigonometry",
         "subtopic": "Area of triangle 1/2 ab sin C",
         "difficulty": "6/7",
-        "img": "images/problems/2026/01/27_g.png",
+        "img": "images/01/g_27.png",
         "q": "A triangle has two sides of length $6\\text{ cm}$ and $8\\text{ cm}$. The angle between these two sides is $30^\\circ$.<br>(a) Calculate the area of the triangle.<br>(b) Use the Cosine Rule to calculate the length of the third side, giving your answer to 3 significant figures.",
         "steps": [
             "For part (a), we use the area formula for a non-right-angled triangle: $\\text{Area} = \\dfrac{1}{2}ab\\sin C$.",
@@ -741,7 +741,7 @@ const problemBank = [
         "subtopic": "Gradients",
         "difficulty": "8/9",
         "q": "Find the gradient of the tangent to the circle $x^2 + y^2 = 25$ at the point $(3, 4)$.",
-        "img": "",
+        "img": "images/01/g_31.png",
         "steps": [
             "Radius gradient from $(0,0)$ to $(3,4)$: $m = \\frac{4-0}{3-0} = \\frac{4}{3}$.",
             "The tangent is perpendicular to the radius at the point of contact.",
