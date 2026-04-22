@@ -298,7 +298,7 @@ const problemBank = [
         "topic": "Circle Theorems",
         "subtopic": "Angle at the centre",
         "difficulty": "5/6",
-        "img": "images/problems/2026/01/13_g.png",
+        "img": "images/problems/2026/01/g_13.png",
         "q": "Points $A, B$ and $C$ lie on the circumference of a circle. $AB$ is the diameter of the circle. Angle $BAC = 30^\\circ$.<br>(a) State the size of angle $ACB$.<br>(b) Calculate the size of angle $ABC$.",
         "steps": [
             "For part (a), we use the circle theorem which states that the angle subtended at the circumference by a semicircle is always a right angle. Therefore, angle $ACB = 90^\\circ$.",

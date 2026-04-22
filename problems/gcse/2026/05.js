@@ -54,7 +54,7 @@ const problemBank = [
         "topic": "Trigonometry",
         "subtopic": "Cosine rule",
         "difficulty": "8/9",
-        "img": "images/May_03_g.png",
+        "img": "images/05/g_03.png",
         "q": "In triangle $ABC$, $AB = 8\\text{ cm}$, $AC = 11\\text{ cm}$ and angle $BAC = 72^\\circ$.<br>(a) Calculate the length of $BC$. Give your answer to 3 significant figures.<br>(b) Calculate the area of the triangle.",
         "steps": [
             "(a) Use the Cosine Rule: $a^2 = b^2 + c^2 - 2bc \\cos(A)$.",
@@ -128,7 +128,7 @@ const problemBank = [
         "topic": "Histograms",
         "subtopic": "Frequency density",
         "difficulty": "7/8",
-        "img": "images/May_06_g.png",
+        "img": "images/05/g_06.png",
         "q": "The table shows information about the weights of 50 bags.<br><br><table style='border-collapse: collapse; width: 100%; text-align: center;' border='1'><tr><th style='padding: 8px;'>Weight ($w$ grams)</th><th style='padding: 8px;'>Frequency</th></tr><tr><td style='padding: 5px;'>$0 < w \\le 10$</td><td style='padding: 5px;'>8</td></tr><tr><td style='padding: 5px;'>$10 < w \\le 25$</td><td style='padding: 5px;'>15</td></tr><tr><td style='padding: 5px;'>$25 < w \\le 45$</td><td style='padding: 5px;'>14</td></tr><tr><td style='padding: 5px;'>$45 < w \\le 50$</td><td style='padding: 5px;'>13</td></tr></table><br>(a) Calculate the frequency density for each class.<br>(b) State which bar would be the tallest on a histogram.",
         "steps": [
             "FD ($0-10$): $8 \\div 10 = 0.8$.",
@@ -177,7 +177,7 @@ const problemBank = [
         "topic": "Circle Theorems",
         "subtopic": "Tangents",
         "difficulty": "7/8",
-        "img": "images/May_08_g.png",
+        "img": "images/05/g_08.png",
         "q": "$A$ and $B$ are points on a circle with centre $O$. $PA$ and $PB$ are tangents to the circle. Angle $APB = 50^\\circ$.<br>Calculate the size of angle $OAB$.",
         "steps": [
             "Angle $OAP$ and $OBP$ are $90^\\circ$ (Tangent-Radius).",
@@ -224,7 +224,7 @@ const problemBank = [
         "topic": "Basic Probability",
         "subtopic": "Venn Diagrams",
         "difficulty": "6/7",
-        "img": "images/May_10_g.png",
+        "img": "images/05/g_10.png",
         "q": "The universal set $\\xi = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\}$.<br>$A = \\{\\text{prime numbers}\\}$<br>$B = \\{\\text{factors of 12}\\}$<br><br>(a) Represent this in a Venn diagram.<br>(b) Find $P(A \\cap B')$.",
         "steps": [
             "Members: $A = \\{2, 3, 5, 7\\}$, $B = \\{1, 2, 3, 4, 6\\}$.",
@@ -232,7 +232,7 @@ const problemBank = [
             "Region $A$ only contains $\\{5, 7\\}$.",
             "Region $B$ only contains $\\{1, 4, 6\\}$.",
             "Outside: $\\{8, 9, 10\\}$.",
-            "Final Answer: $$\\frac{2}{10} \\text{ (or } 0.2) <br><img src='images/May_10_sol_g.png' alt='Venn Solution' style='max-width:300px;'>$$"
+            "Final Answer: $$\\frac{2}{10} \\text{ (or } 0.2) <br><img src='images/05/g_10_sol.png' alt='Venn Solution' style='max-width:300px;'>$$"
         ],
         "bradley_insight": {
             "type": "deeper",
@@ -250,7 +250,7 @@ const problemBank = [
         "topic": "Graphs",
         "subtopic": "Transformations of graphs",
         "difficulty": "8/9",
-        "img": "images/May_11_g.png",
+        "img": "images/05/g_11.png",
         "q": "The graph of $y = f(x)$ has a turning point with the coordinates $(3, -2)$. State the coordinates of the turning point for the following transformed graphs:<br>(a) $y = f(x + 2)$ <br>(b) $y = f(x) + 5$ <br>(c) $y = -f(x)$.",
         "steps": [
             "For part (a), the transformation $f(x + 2)$ represents a horizontal translation of 2 units to the left. Therefore, we subtract 2 from the $x$-coordinate, resulting in the point $(1, -2)$.",
@@ -344,7 +344,7 @@ const problemBank = [
         "topic": "Cumulative Frequency",
         "subtopic": "Median & IQR",
         "difficulty": "6/7",
-        "img": "images/May_15_g.png",
+        "img": "images/05/g_15.png",
         "q": "The table below provides information regarding the waiting times for 80 individuals at a hospital.<br><br><table style='border-collapse: collapse; width: 100%; text-align: center;' border='1'><tr><th style='padding: 8px;'>Time ($t$ minutes)</th><th style='padding: 8px;'>Frequency</th></tr><tr><td style='padding: 5px;'>$0 < t \le 10$</td><td style='padding: 5px;'>5</td></tr><tr><td style='padding: 5px;'>$10 < t \le 20$</td><td style='padding: 5px;'>12</td></tr><tr><td style='padding: 5px;'>$20 < t \le 30$</td><td style='padding: 5px;'>25</td></tr><tr><td style='padding: 5px;'>$30 < t \le 40$</td><td style='padding: 5px;'>28</td></tr><tr><td style='padding: 5px;'>$40 < t \le 50$</td><td style='padding: 5px;'>10</td></tr></table><br>(a) Draw a cumulative frequency graph for this data.<br>(b) Use your graph to find an estimate for the interquartile range (IQR).",
         "steps": [
             "We begin by calculating the cumulative frequencies for the intervals: 5, 17, 42, 70, and 80.",
@@ -394,7 +394,7 @@ const problemBank = [
         "topic": "Vectors",
         "subtopic": "Vector addition",
         "difficulty": "8/9",
-        "img": "images/May_17_g.png",
+        "img": "images/05/g_17.png",
         "q": "$OABC$ is a quadrilateral where the vector $\\vec{OA} = 3\\mathbf{a}$ and the vector $\\vec{OC} = 2\\mathbf{c}$. $B$ is a point such that the vector $\vec{CB} = \\mathbf{a}$. Given that $M$ is the midpoint of the line segment $AB$, find the vector $\\vec{OM}$ in terms of $\\mathbf{a}$ and $\\mathbf{c}$.",
         "steps": [
             "We first determine the vector $\\vec{AB}$ by following the path from $A$ to $O$, then $O$ to $C$, and finally $C$ to $B$: $\\vec{AB} = -3\\mathbf{a} + 2\\mathbf{c} + \\mathbf{a} = 2\\mathbf{c} - 2\\mathbf{a}$.",
@@ -443,7 +443,7 @@ const problemBank = [
         "topic": "Box Plots",
         "subtopic": [],
         "difficulty": "5/6",
-        "img": "images/May_19_g.png",
+        "img": "images/05/g_19.png",
         "q": "The test scores for two classes, A and B, are compared. Class A has a median score of 65 and an interquartile range (IQR) of 20. Class B has a median score of 72 and an interquartile range of 12. Provide two comparative statements regarding the distributions of the scores.",
         "steps": [
             "To compare the average performance, we observe that Class B had a higher median score than Class A (72 compared to 65).",
@@ -492,7 +492,7 @@ const problemBank = [
         "topic": "Trigonometry",
         "subtopic": "3D Pythagoras",
         "difficulty": "8/9",
-        "img": "images/May_21_g.png",
+        "img": "images/05/g_21.png",
         "q": "A square-based pyramid has a base with side lengths of 10 cm and a vertical height of 12 cm. Calculate the slant height of the pyramid, which is defined as the distance from the apex to the midpoint of one of the base edges.",
         "steps": [
             "We identify a right-angled triangle formed by the vertical height, the distance from the center of the base to the midpoint of an edge, and the slant height ($s$).",
@@ -613,7 +613,7 @@ const problemBank = [
         "topic": "Compound Measures",
         "subtopic": "Speed",
         "difficulty": "8/9",
-        "img": "images/May_26_g.png",
+        "img": "images/05/g_26.png",
         "q": "A speed-time graph shows a car accelerating from rest to a speed of 20 m/s over a period of 5 seconds. <br>(a) Calculate the acceleration of the car.<br>(b) Calculate the total distance travelled by the car during these 5 seconds.",
         "steps": [
             "For part (a), we calculate the acceleration by finding the gradient of the line: $20 / 5 = 4 \\text{ m/s}^2$.",
@@ -707,6 +707,7 @@ const problemBank = [
         "topic": "Circle Theorems",
         "subtopic": "Tangents",
         "difficulty": "8/9",
+        "img": "images/05/g_30.png",
         "q": "A circle is defined by the equation $x^2 + y^2 = 25$. Determine the equation of the tangent to the circle at the coordinate point $(3, 4)$.",
         "steps": [
             "First, we calculate the gradient of the radius connecting the origin $(0,0)$ to the point $(3, 4)$, which is $4 / 3$.",
