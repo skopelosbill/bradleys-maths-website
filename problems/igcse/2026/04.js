@@ -579,7 +579,6 @@ const problemBank =[
         "button_text": "Master Mensuration & Trigonometry: Download the Full Mensuration & Trigonometry Pack"
     },
   // 22 April - IGCSE Extended (Functions)
-    // 22 April - IGCSE Extended (Functions)
     {
         "id": "003241",
         "date": "22 April 2026",
