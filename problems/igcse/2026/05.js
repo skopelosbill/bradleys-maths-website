@@ -56,7 +56,7 @@ const problemBank = [
         "topic": "Trigonometry",
         "subtopic": "Sine rule",
         "difficulty": "B/A",
-        "img": "images/3_may_i.png",
+        "img": "images/05/i_03.png",
         "q": "In triangle $PQR$, $PQ = 12.6\\text{ cm}$, $\\angle PRQ = 41^\\circ$ and $\\angle QPR = 73^\\circ$. Calculate the length of $QR$.",
         "steps": [
             "We begin by identifying that we have a 'non-included' angle and its opposite side, which indicates the use of the Sine Rule.",
@@ -231,7 +231,7 @@ const problemBank = [
             "Probability of two red (RR): $\\dfrac{4}{10} \\times \\dfrac{3}{9} = \\dfrac{12}{90}$.",
             "We add these probabilities together: $\\dfrac{30}{90} + \\dfrac{12}{90} = \\dfrac{42}{90}$.",
             "We simplify the resulting fraction to its lowest terms.",
-            "Final Answer: $$\\dfrac{7}{15}$$"
+            "Final Answer: $$\\dfrac{7}{15}<br><img src='images/05/i_10_sol.png' alt='Probability tree solution' style='max-width:300px;'>$$"
         ],
         "bradley_insight": {
             "type": "caution",
@@ -274,7 +274,7 @@ const problemBank = [
         "topic": "Trigonometry",
         "subtopic": "Cosine rule",
         "difficulty": "B/A",
-        "img": "images/12_may_i.png",
+        "img": "images/05/i_12.png",
         "q": "In triangle $XYZ$, $XY = 7\\text{ cm}$, $YZ = 9\\text{ cm}$ and $XZ = 12\\text{ cm}$. Calculate the size of the largest angle in the triangle.",
         "steps": [
             "In any triangle, the largest angle is opposite the longest side. Here, we must find angle $Y$.",
@@ -342,8 +342,7 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/XAGch",
         "button_text": "Master IGCSE: Download the Extended Geometry Pack"
     },
-    // 15 May - Paper 4 (Calculator) Focus
-   // 15 May - Paper 4 (Calculator) Focus
+    // 15 May
     {
         "id": "003215",
         "date": "15 May 2026",
@@ -359,7 +358,7 @@ const problemBank = [
             "Dividing the entire equation by 6 simplifies it to $x^2 - 3x + 2 = 0$, which factorises to $(x - 1)(x - 2) = 0$.",
             "This yields the $x$-coordinates of $1$ and $2$. We must now substitute these values back into the original cubic equation to find the corresponding $y$-coordinates.",
             "When $x = 1$, $y = 2(1)^3 - 9(1)^2 + 12(1) - 3 = 2$. When $x = 2$, $y = 2(8) - 9(4) + 12(2) - 3 = 1$.",
-            "Final Answer: $$(1, 2) \\text{ and } (2, 1)$$ <img src='images/15_may_sol_i.png' style='max-width:300px; margin-top:10px;'>"
+            "Final Answer: $$(1, 2) \\text{ and } (2, 1)$$ <img src='images/05/i_15_sol.png' alt='Cubic graph showing turning points' style='max-width:300px; margin-top:10px;'>"
         ],
         "bradley_insight": {
             "type": "deeper",
@@ -401,7 +400,7 @@ const problemBank = [
         "topic": "Circle Theorems",
         "subtopic": "Cyclic quadrilaterals",
         "difficulty": "B/A",
-        "img": "images/17_may_i.png",
+        "img": "images/05/i_17.png",
         "q": "$A, B, C$ and $D$ are points on the circumference of a circle. $AB$ is parallel to $DC$. $\\angle ADC = 108^\\circ$.<br>(a) Calculate $\\angle ABC$.<br>(b) Calculate $\\angle BCD$.",
         "steps": [
             "For part (a), we identify $ABCD$ as a cyclic quadrilateral. The opposite angles in a cyclic quadrilateral sum to $180^\\circ$. Therefore, angle $ABC = 180^\\circ - 108^\\circ = 72^\\circ$.",
@@ -478,6 +477,7 @@ const problemBank = [
         "topic": "3D Shapes",
         "subtopic": "Surface area",
         "difficulty": "B/A",
+        "img": "images/05/i_20.png",
         "q": "A cone has a base radius of $5\\text{ cm}$ and a slant height of $13\\text{ cm}$. Calculate the total surface area of the cone. Give your answer correct to 1 decimal place.",
         "steps": [
             "The total surface area of a cone consists of the circular base and the curved surface area.",
@@ -528,7 +528,7 @@ const problemBank = [
         "topic": "Trigonometry",
         "subtopic": "Area of triangle 1/2 ab sin C",
         "difficulty": "B/A",
-        "img": "images/22_may_i.png",
+        "img": "images/05/i_22.png",
         "q": "The area of triangle $ABC$ is $40\\text{ cm}^2$. $AB = 10\\text{ cm}$ and $AC = 12\\text{ cm}$. Calculate the two possible sizes of the acute and obtuse angle $BAC$.",
         "steps": [
             "We use the area formula: $\\text{Area} = \\dfrac{1}{2}bc \\sin(A)$.",
@@ -610,7 +610,7 @@ const problemBank = [
             "Next, we divide both sides by $-2$.",
             "Crucially, when dividing or multiplying an inequality by a negative number, we must reverse the direction of the inequality sign.",
             "The sign changes from $<$ to $>$.",
-            "Final Answer: $$x > -3$$"
+            "Final Answer: $$x > -3<br><img src='images/05/i_25_sol.png' alt='inequality on number line' style='max-width:300px;'>$$"
         ],
         "bradley_insight": {
             "type": "caution",
@@ -654,6 +654,7 @@ const problemBank = [
         "topic": "Angles",
         "subtopic": "Regular polygons",
         "difficulty": "C/D",
+        "img": "images/05/i_27.png",
         "q": "Calculate the size of one exterior angle of a regular polygon with 15 sides.",
         "steps": [
             "We recall that the sum of the exterior angles for any convex polygon is exactly $360^\\circ$.",
@@ -750,7 +751,7 @@ const problemBank = [
         "igcse_only": true,
         "subtopic": "Stationary points",
         "difficulty": "A*",
-        "img": "images/31_may_i.png",
+        "img": "images/05/i_31.png",
         "q": "A closed rectangular box has a height of $x\\text{ cm}$. The length of the box is $(12 - x)\\text{ cm}$ and the width is $(9 - x)\\text{ cm}$.<br>(a) Show that the volume, $V\\text{ cm}^3$, of the box is given by $V = x^3 - 21x^2 + 108x$.<br>(b) Use differentiation to find the value of $x$ for which the volume is a maximum.<br>(c) Calculate the maximum volume of the box.",
         "steps": [
             "For part (a), we establish the volume formula: $V = \\text{length} \\times \\text{width} \\times \\text{height}$. Substituting the expressions gives $V = x(12 - x)(9 - x)$.",
