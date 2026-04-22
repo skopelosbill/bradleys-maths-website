@@ -442,27 +442,30 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/wRN86",
         "button_text": "Master IGCSE: Download the Extended Number Pack"
     },
-    // 19 May - NEW 2025 Syllabus Topic
+    // 19 May 
     {
         "id": "003219",
         "date": "19 May 2026",
         "major_area": "Algebra",
-        "topic": "Algebraic Notation",
-        "subtopic": "Substitution",
+        "topic": "Functions",
+        "subtopic": "Substitution into functions, inverse functions",
         "difficulty": "B/A",
         "q": "The function $f(x)$ is defined as $f(x) = \\dfrac{2x + 3}{x - 5}$ for $x \\neq 5$.<br>(a) Calculate $f(7)$.<br>(b) Find the inverse function $f^{-1}(x)$.",
         "steps": [
-            "For part (a), we substitute $x = 7$ into the function: $f(7) = \\dfrac{2(7) + 3}{7 - 5} = \\dfrac{17}{2}$.",
-            "For part (b), we let $y = \\dfrac{2x + 3}{x - 5}$ and rearrange to make $x$ the subject.",
-            "Multiplying by the denominator: $y(x - 5) = 2x + 3$.",
-            "Expanding and collecting $x$ terms: $yx - 5y = 2x + 3 \\implies yx - 2x = 5y + 3$.",
-            "Factoring $x$: $x(y - 2) = 5y + 3 \\implies x = \\dfrac{5y + 3}{y - 2}$.",
+            "For part (a), we substitute $x = 7$ into the function: $f(7) = \\dfrac{2(7) + 3}{7 - 5} = \\dfrac{17}{2} = 8.5$.",
+            "For part (b), we begin by writing the function as $y = \\dfrac{2x + 3}{x - 5}$.",
+            "We then interchange $x$ and $y$: $x = \\dfrac{2y + 3}{y - 5}$.",
+            "To solve for $y$, we multiply both sides by the denominator: $x(y - 5) = 2y + 3$.",
+            "Expanding the brackets gives $xy - 5x = 2y + 3$.",
+            "We collect all terms containing $y$ on one side and the remaining terms on the other: $xy - 2y = 5x + 3$.",
+            "By factorising out $y$, we obtain $y(x - 2) = 5x + 3$.",
+            "Finally, we divide by $(x - 2)$ and rewrite in inverse function notation.",
             "Final Answer: $$(a)\\ 8.5,\\ (b)\\ f^{-1}(x) = \\dfrac{5x + 3}{x - 2}$$"
         ],
         "bradley_insight": {
             "type": "pro-tip",
-            "title": "The Head Teacher's Eye: Domain Awareness",
-            "content": "In the 2025 syllabus, the restriction $x \\neq 5$ is explicitly stated. High-tier candidates should recognize that this represents a vertical asymptote. When finding an inverse, remember that the range of the original function becomes the domain of the inverse."
+            "title": "The Head Teacher's Eye: Handling Complex Inverses",
+            "content": "When $x$ appears in both the numerator and the denominator, the 'interchange' step is even more vital for clarity. Once you have swapped $x$ and $y$, your sole focus is to use factorisation to isolate $y$. This is a high-level skill that frequently appears in the final sections of Paper 4."
         },
         "payhip_link": "https://payhip.com/b/wRN86",
         "button_text": "Master IGCSE: Download the Extended Algebra Pack"
