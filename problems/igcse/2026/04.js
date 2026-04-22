@@ -194,7 +194,7 @@ const problemBank =[
         "difficulty": "B/A",
         "notice": "Alternate Segment Theorem.",
         "q": "In the diagram, $ST$ is a tangent to the circle at point $A$. $B$ and $C$ are points on the circumference.<br>Given that $\\angle BAS = 62^\\circ$ and $\\angle ABC = 54^\\circ$, calculate the size of $\\angle BAC$.",
-        "img": "images/apr_07_i.png",
+        "img": "images/04/i_07.png",
         "steps": [
             "By the <strong>Alternate Segment Theorem</strong>, the angle between the tangent ($ST$) and the chord ($AC$) is equal to the angle in the alternate segment ($\\angle ACB$).",
             "However, here $\\angle BAS$ is given as $62^\\circ$. By the theorem, $\\angle BCA = \\angle BAS = 62^\\circ$.",
@@ -735,7 +735,7 @@ const problemBank =[
         "subtopic": "Sine Rule",
         "difficulty": "7/8",
         "q": "In triangle $ABC$, $AB = 8\text{ cm}$, $BC = 11\text{ cm}$ and angle $BAC = 75^\circ$.<br>Calculate the size of angle $ACB$. Give your answer to 1 decimal place.",
-		"img": "images/28_apr_i.png",
+		"img": "images/04/i_28.png",
         "steps": [
             "Use the Sine Rule: $\\dfrac{\\sin C}{c} = \\dfrac{\\sin A}{a}$.",
             "Substitute values: $\\dfrac{\\sin C}{8} = \\dfrac{\\sin 75}{11}$.",
