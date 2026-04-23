@@ -76,7 +76,7 @@ const problemBank = [
     "topic": "3D Shapes",
     "subtopic": "Volume",
     "difficulty": "8/9",
-    //"img": "images/04_may_i.png",
+    //"img": "true",
     "q": "A cone and a hemisphere have the same base radius $r$.<br>The volume of the cone is equal to the volume of the hemisphere.<br>Show that the height of the cone, $h$, is equal to $2r$.",
     "steps": [
         "Recall $V_{\\text{hemisphere}} = \\frac{2}{3}\\pi r^3$.",
@@ -332,7 +332,7 @@ const problemBank = [
         "subtopic": "SOHCAHTOA",
         "difficulty": "4/5",
         "q": "A ladder $5\\text{m}$ long leans against a vertical wall.<br>The base of the ladder is $3\\text{m}$ from the wall on horizontal ground.<br>Calculate the angle the ladder makes with the ground.",
-        "img": "images/04/g_15.png",
+        "img": "true",
         "steps": [
             "Identify the sides relative to the angle $\\theta$: The ladder is the $\\textbf{Hypotenuse}$ ($5\\text{m}$) and the distance from the wall is the $\\textbf{Adjacent}$ side ($3\\text{m}$).",
             "Select the correct ratio: $\\cos(\\theta) = \\dfrac{\\text{adj}}{\\text{hyp}}$.",
@@ -378,7 +378,7 @@ const problemBank = [
         "subtopic": "Combined Theorems",
         "difficulty": "7/8",
         "q": "In the diagram, $AC$ is a diameter of the circle. $B$ and $D$ are points on the circumference.<br>Given $\\angle ABD = 42^\\circ$:<br>(a) Write down the size of $\\angle ACD$.<br>(b) Calculate the size of $\\angle CAD$.",
-        "img": "images/04/g_17.png",
+        "img": "true",
         "steps": [
             "(a) $\\angle ACD = 42^\\circ$ because angles subtended by the same arc ($AD$) at the circumference are equal.",
             "(b) $\\angle ADC = 90^\\circ$ because the angle in a semicircle is a right angle.",
@@ -425,7 +425,7 @@ const problemBank = [
         "subtopic": "Median & IQR",
         "difficulty": "6/7",
         "q": "The cumulative frequency graph shows the heights of 100 plants.<br>(a) Find an estimate for the median height.<br>(b) Calculate an estimate for the interquartile range (IQR).<br>(c) Find the number of plants with a height greater than $45\\text{ cm}$.",
-        "img": "images/04/g_19.png",
+        "img": "true",
         "steps": [
             "(a) The median is the $50^{th}$ value. From $y=50$, the graph gives a height of approx $29\\text{ cm}$.",
             "(b) Lower Quartile ($Q_1$) is the $25^{th}$ value, approx $22\\text{ cm}$.",
@@ -577,7 +577,7 @@ const problemBank = [
         "topic": "Vectors",
         "subtopic": "Parallel vectors",
         "difficulty": "8/9",
-        "img": "images/04/g_26.png",
+        "img": "true",
         "q": "$OABC$ is a parallelogram where $\\vec{OA} = \\mathbf{a}$ and $\\vec{OC} = \\mathbf{c}$. $M$ is the midpoint of $BC$. $P$ is a point on $AC$ such that $AP:PC = 2:1$.<br>(a) Find the vector $\\vec{OM}$ in terms of $\\mathbf{a}$ and $\\mathbf{c}$.<br>(b) Prove that $O, P$ and $M$ are collinear.",
         "steps": [
             "(a) $\\vec{OM} = \\vec{OC} + \\vec{CM}$. Since $BC$ is parallel and equal to $OA$, $\\vec{CM} = \\frac{1}{2}\\mathbf{a}$. So, $\\vec{OM} = \\mathbf{c} + \\frac{1}{2}\\mathbf{a}$.",
@@ -656,7 +656,7 @@ const problemBank = [
         "topic": "Trigonometry",
         "subtopic": "Area of triangle 1/2 ab sin C",
         "difficulty": "8/9",
-        "img": "images//04/g_29.png",
+        "img": "true",
         "q": "A sector of a circle has a radius of $r\\text{ cm}$ and a sector angle of $60^\\circ$.<br>The area of the sector is $24\\pi\\text{ cm}^2$.<br>(a) Show that the radius $r = 12\\text{ cm}$.<br>(b) Calculate the arc length of the sector, giving your answer in terms of $\\pi$.",
         "steps": [
             "(a) Area formula: $\\frac{\\theta}{360} \\times \\pi r^2 = 24\\pi$.",
@@ -683,7 +683,7 @@ const problemBank = [
         "topic": "Pythagoras",
         "subtopic": "3D Pythagoras",
         "difficulty": "8/9",
-        "img": "images/04/g_30.png",
+        "img": "true",
         "q": "A cuboid has dimensions $8\\text{ cm}$ by $6\\text{ cm}$ by $5\\text{ cm}$.<br>(a) Calculate the length of the diagonal across the base.<br>(b) Calculate the length of the internal diagonal of the cuboid.",
         "steps": [
             "(a) Use Pythagoras on the base ($8$ and $6$): $d^2 = 8^2 + 6^2$.",

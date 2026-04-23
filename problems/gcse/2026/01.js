@@ -298,7 +298,7 @@ const problemBank = [
         "topic": "Circle Theorems",
         "subtopic": "Angle at the centre",
         "difficulty": "5/6",
-        "img": "images/01/g_13.png",
+        "img": "true",
         "q": "Points $A, B$ and $C$ lie on the circumference of a circle. $AB$ is the diameter of the circle. Angle $BAC = 30^\\circ$.<br>(a) State the size of angle $ACB$.<br>(b) Calculate the size of angle $ABC$.",
         "steps": [
             "For part (a), we use the circle theorem which states that the angle subtended at the circumference by a semicircle is always a right angle. Therefore, angle $ACB = 90^\\circ$.",
@@ -597,7 +597,7 @@ const problemBank = [
         "topic": "Vectors",
         "subtopic": "Vector addition",
         "difficulty": "6/7",
-        "img": "images/01/g_25.png",
+        "img": "true",
         "q": "In the diagram, $M$ is the midpoint of the line segment $AB$. The vector $\\overrightarrow{OA} = \\mathbf{a}$ and the vector $\\overrightarrow{OB} = \\mathbf{b}$.<br>Find the vector $\\overrightarrow{OM}$ in terms of $\\mathbf{a}$ and $\\mathbf{b}$, giving your answer in its simplest form.",
         "steps": [
             "We first find the vector path for $\\overrightarrow{AB}$ by travelling from $A$ to $O$ and then from $O$ to $B$: $\\overrightarrow{AB} = -\\mathbf{a} + \\mathbf{b}$.",
@@ -649,7 +649,7 @@ const problemBank = [
         "topic": "Trigonometry",
         "subtopic": "Area of triangle 1/2 ab sin C",
         "difficulty": "6/7",
-        "img": "images/01/g_27.png",
+        "img": "true",
         "q": "A triangle has two sides of length $6\\text{ cm}$ and $8\\text{ cm}$. The angle between these two sides is $30^\\circ$.<br>(a) Calculate the area of the triangle.<br>(b) Use the Cosine Rule to calculate the length of the third side, giving your answer to 3 significant figures.",
         "steps": [
             "For part (a), we use the area formula for a non-right-angled triangle: $\\text{Area} = \\dfrac{1}{2}ab\\sin C$.",
@@ -741,7 +741,7 @@ const problemBank = [
         "subtopic": "Gradients",
         "difficulty": "8/9",
         "q": "Find the gradient of the tangent to the circle $x^2 + y^2 = 25$ at the point $(3, 4)$.",
-        "img": "images/01/g_31.png",
+        "img": "true",
         "steps": [
             "Radius gradient from $(0,0)$ to $(3,4)$: $m = \\frac{4-0}{3-0} = \\frac{4}{3}$.",
             "The tangent is perpendicular to the radius at the point of contact.",
