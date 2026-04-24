@@ -533,7 +533,7 @@ const problemBank = [
         "topic": "Basic Probability",
         "subtopic": "Venn Diagrams",
         "difficulty": "6/7",
-        "q": "In a class of 30 students, 20 like Football and 15 like Cricket. 10 like both.<br>Find the probability that a student chosen at random likes <strong>onlystrong Football.",
+        "q": "In a class of 30 students, 20 like Football and 15 like Cricket. 10 like both.<br>Find the probability that a student chosen at random likes <strong>only</strong> Football.",
         "steps": [
             "Number who like Football only: $20 - 10 = 10$",
             "Total number of students: $30$",
