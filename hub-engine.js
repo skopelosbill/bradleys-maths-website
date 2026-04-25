@@ -54,28 +54,41 @@ const BradleyHub = {
         // Sort newest first
         filtered.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-        filtered.forEach(prob => {
-            const card = document.createElement('div');
-            card.className = `problem-card ${this.state.isTeacherMode ? 'audit-border' : ''}`;
-            card.innerHTML = `
-                <div class="card-header">
-                    <span class="card-date">${prob.date}</span>
-                    <span class="card-tag">${prob.topic}</span>
-                    <span class="card-difficulty">Grade ${prob.difficulty}</span>
-                </div>
-                <div class="card-q">${prob.q}</div>
-                <button class="toggle-btn" onclick="BradleyHub.toggleSol('${prob.id}')">Show Head Teacher's Answer</button>
-                <div id="sol-${prob.id}" class="card-sol" style="display:none;">
-                    <hr>
-                    ${prob.steps.map(step => `<p class="step-text">${step}</p>`).join('')}
-                    <div class="insight-box">
-                        <strong>The Head Teacher's Eye:</strong> ${prob.bradley_insight.content}
-                    </div>
-                    <a href="${prob.payhip_link}" class="hub-buy-btn">${prob.button_text}</a>
-                </div>
-            `;
-            container.appendChild(card);
-        });
+        // Update this section inside BradleyHub.renderHub()
+filtered.forEach(prob => {
+    // Generate automated image path based on date and tier
+    let imgHTML = '';
+    if (prob.img === "true") {
+        const dateParts = new Date(prob.date);
+        const mm = String(dateParts.getMonth() + 1).padStart(2, '0');
+        const dd = String(dateParts.getDate());
+        const tierLetter = this.state.tier === 'gcse' ? 'g' : 'i';
+        const imgPath = `images/${mm}/${tierLetter}_${dd}.png`;
+        imgHTML = `<div class="card-img"><img src="${imgPath}" alt="Diagram for ${prob.date}" style="max-width:100%; height:auto; margin: 15px 0;"></div>`;
+    }
+
+    const card = document.createElement('div');
+    card.className = `problem-card ${this.state.isTeacherMode ? 'audit-border' : ''}`;
+    card.innerHTML = `
+        <div class="card-header">
+            <span class="card-date">${prob.date}</span>
+            <span class="card-tag">${prob.topic}</span>
+            <span class="card-difficulty">${this.state.tier.toUpperCase()} Grade ${prob.difficulty}</span>
+        </div>
+        <div class="card-q">${prob.q}</div>
+        ${imgHTML} <!-- Automated Image Injected Here -->
+        <button class="toggle-btn" onclick="BradleyHub.toggleSol('${prob.id}')">Show Head Teacher's Answer</button>
+        <div id="sol-${prob.id}" class="card-sol" style="display:none;">
+            <hr>
+            ${prob.steps.map(step => `<p class="step-text">${step}</p>`).join('')}
+            <div class="insight-box">
+                <strong>The Head Teacher's Eye:</strong> ${prob.bradley_insight.content}
+            </div>
+            <a href="${prob.payhip_link}" class="hub-buy-btn">${prob.button_text}</a>
+        </div>
+    `;
+    container.appendChild(card);
+});
 
         if (window.MathJax) {
             MathJax.typeset();
