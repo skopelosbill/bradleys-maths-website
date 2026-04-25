@@ -100,13 +100,19 @@ const BradleyHub = {
             container.appendChild(card);
         });
 
-        if (window.MathJax) MathJax.typeset();
+       // Change window.MathJax.typeset() to this:
+if (window.MathJax && window.MathJax.typesetPromise) {
+    window.MathJax.typesetPromise();
+}
     },
 
     toggleSol(id) {
         const sol = document.getElementById(`sol-${id}`);
         sol.style.display = sol.style.display === 'none' ? 'block' : 'none';
-        if (window.MathJax) MathJax.typeset();
+       // Change window.MathJax.typeset() to this:
+if (window.MathJax && window.MathJax.typesetPromise) {
+    window.MathJax.typesetPromise();
+}
     },
 
     switchTier(newTier) {
