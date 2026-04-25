@@ -418,7 +418,7 @@ h3 {
 h1, h2, h3 {
     text-align: center;
 }
-,headcenter {
+.headcenter {
     text-align:center;
 }
 
@@ -776,9 +776,6 @@ h1, h2, h3 {
 /* Caution/Warning (Yellow) */
 .insight-caution {
     background-color: #fffde7;
-    border-color: #Media.io
-
-;
     color: #f57f17;
 }
 
