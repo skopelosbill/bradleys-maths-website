@@ -760,7 +760,7 @@ const problemBank = [
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Standard Form Protocol",
-            "content": "When performing division in standard form, ensure your final result has a leading coefficient in the range $1\\le n < 10. Leaving an answer as $0.3 \\times 10^4$ will cost you the final accuracy mark in IGCSE Paper 2."
+            "content": "When performing division in standard form, ensure your final result has a leading coefficient in the range $1\\le n < 10$. Leaving an answer as $0.3 \\times 10^4$ will cost you the final accuracy mark in IGCSE Paper 2."
         },
         "payhip_link": "https://payhip.com/b/XEV2Z",
         "button_text": "Master Number: Download the Full Number Pack"
