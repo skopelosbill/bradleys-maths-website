@@ -67,12 +67,26 @@ const BradleyHub = {
         filtered.forEach(prob => {
             let imgHTML = '';
             if (prob.img === "true") {
+                // Ensure we parse the date correctly regardless of format
                 const d = new Date(prob.date);
+                
+                // Format Month (01-12)
                 const mm = String(d.getMonth() + 1).padStart(2, '0');
-                const dd = String(d.getDate());
+                
+                // Format Day (01-31) - This fixes your i_02 and i_07
+                const dd = String(d.getDate()).padStart(2, '0');
+                
+                // Identify Tier
                 const t = this.state.tier === 'gcse' ? 'g' : 'i';
+                
+                // Construct Path: images/01/g_01.png
                 const imgPath = `images/${mm}/${t}_${dd}.png`;
-                imgHTML = `<div class="card-img"><img src="${imgPath}" style="max-width:100%; height:auto; margin: 15px 0; border: 1px solid #eee;"></div>`;
+                
+                imgHTML = `<div class="card-img" style="text-align:center; margin: 20px 0;">
+                    <img src="${imgPath}" alt="Diagram for ${prob.date}" 
+                         style="max-width:100%; height:auto; border: 1px solid #eee; border-radius: 4px;"
+                         onerror="this.parentElement.innerHTML='<p style=color:red;font-size:0.8rem;>Image Missing: ${imgPath}</p>'">
+                </div>`;
             }
 
             const card = document.createElement('div');
