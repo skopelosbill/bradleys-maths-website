@@ -1076,6 +1076,76 @@ h2[id] {
 }
 
 /* ========================= */
+/* Hub */
+/* ========================= */
+
+.problem-card {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 5px;
+}
+
+.card-q {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.toggle-btn {
+    background: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.card-sol {
+    margin-top: 20px;
+    background: #fdfdfd;
+    padding: 15px;
+}
+
+.step-text {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.insight-box {
+    background: #fff9c4; /* Soft teacher-yellow */
+    border-left: 4px solid #fbc02d;
+    padding: 15px;
+    margin: 20px 0;
+    font-size: 0.95rem;
+}
+
+.hub-buy-btn {
+    display: block;
+    text-align: center;
+    background: #27ae60;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+
+/* ========================= */
 /* FOOTER */
 /* ========================= */
 
