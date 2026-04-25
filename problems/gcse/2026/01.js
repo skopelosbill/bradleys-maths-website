@@ -695,7 +695,7 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/wRN86",
         "button_text": "Master Algebra: Download the Full Algebra Pack"
     },
-    // 29 Jan
+  // 29 Jan
     {
         "id": "002006",
         "date": "29 Jan 2026",
@@ -703,15 +703,22 @@ const problemBank = [
         "topic": "Tree Diagrams",
         "subtopic": "Without replacement",
         "difficulty": "6/7",
-        "q": "A bag contains 3 Red and 7 Blue counters. Two are picked at random without replacement. Find the probability they are the same colour.",
+        "q": "A bag contains 3 Red and 7 Blue counters. Two counters are picked at random without replacement. Find the probability that both counters are the same colour.",
         "img": "",
         "steps": [
-            "$P(RR) = \\frac{3}{10} \\times \\frac{2}{9} = \\frac{6}{90}$.",
-            "$P(BB) = \\frac{7}{10} \\times \\frac{6}{9} = \\frac{42}{90}$.",
-            "Add: $\\frac{6}{90} + \\frac{42}{90} = \\frac{48}{90}$.",
-            "Simplify: $\\frac{8}{15}$.",
-            "Final Answer: $$\\frac{8}{15}$$"
-        ]
+            "We first calculate the probability of picking two Red counters: $P(RR) = \\dfrac{3}{10} \\times \\dfrac{2}{9} = \\dfrac{6}{90}$.",
+            "Next, we calculate the probability of picking two Blue counters: $P(BB) = \\dfrac{7}{10} \\times \\dfrac{6}{9} = \\dfrac{42}{90}$.",
+            "To find the total probability of 'same colour', we sum these two mutually exclusive outcomes: $\\dfrac{6}{90} + \\dfrac{42}{90} = \\dfrac{48}{90}$.",
+            "Finally, we simplify the fraction by dividing both the numerator and denominator by 6.",
+            "Final Answer: $$\\dfrac{8}{15}$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Reducing the Total",
+            "content": "In 'without replacement' problems, the most common error is forgetting to reduce the denominator for the second pick. Once one counter is removed, there are only 9 left in the bag. Always double-check your second fraction before multiplying."
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master Probability: Download the Full Pack"
     },
     // 30 Jan
     {
@@ -721,16 +728,22 @@ const problemBank = [
         "topic": "Estimation & Bounds",
         "subtopic": "Upper and lower bounds",
         "difficulty": "6/7",
-        "notice": "Non-calculator question.",
-        "q": "$x = 10$ and $y = 5$, both rounded to 1 significant figure. Calculate the Upper Bound of $x - y$.",
+        "q": "The values $x = 10$ and $y = 5$ are both rounded to 1 significant figure. Calculate the maximum possible value (Upper Bound) of $x - y$.",
         "img": "",
         "steps": [
-            "1sf bounds for $x=10$: $LB=5, UB=15$.",
-            "1sf bounds for $y=5$: $LB=4.5, UB=5.5$.",
-            "To maximize $x-y$, use $UB_x - LB_y$.",
-            "Calculate: $15 - 4.5 = 10.5$.",
+            "For $x=10$ rounded to 1 s.f., the range is between 5 and 15. Therefore, the Upper Bound ($UB_x$) is 15.",
+            "For $y=5$ rounded to 1 s.f., the range is between 4.5 and 5.5. Therefore, the Lower Bound ($LB_y$) is 4.5.",
+            "To maximise the result of a subtraction, we must use the largest possible value for the first number and the smallest possible value for the second: $UB_x - LB_y$.",
+            "Calculation: $15 - 4.5 = 10.5$.",
             "Final Answer: $$10.5$$"
-        ]
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Subtraction Bounds",
+            "content": "Maximising a subtraction is counter-intuitive for many students. To get the largest possible 'gap', you must start as high as you can ($UB$) and take away as little as you can ($LB$). Many candidates incorrectly use the Upper Bound for both, which results in a smaller difference."
+        },
+        "payhip_link": "https://payhip.com/b/IVWzJ",
+        "button_text": "Master Number: Download the Full Number Pack"
     },
     // 31 Jan
     {
@@ -740,13 +753,22 @@ const problemBank = [
         "topic": "Coordinates",
         "subtopic": "Gradients",
         "difficulty": "8/9",
-        "q": "Find the gradient of the tangent to the circle $x^2 + y^2 = 25$ at the point $(3, 4)$.",
         "img": "true",
+        "q": "Find the gradient of the tangent to the circle $x^2 + y^2 = 25$ at the coordinate point $(3, 4)$.",
         "steps": [
-            "Radius gradient from $(0,0)$ to $(3,4)$: $m = \\frac{4-0}{3-0} = \\frac{4}{3}$.",
-            "The tangent is perpendicular to the radius at the point of contact.",
-            "Perpendicular gradient is the negative reciprocal: $-\\frac{3}{4}$.",
-            "Final Answer: $$-\\frac{3}{4}$$"
-        ]
+            "We first identify the gradient of the radius from the origin $(0, 0)$ to the point $(3, 4)$.",
+            "Using the gradient formula: $m = \\dfrac{y_2 - y_1}{x_2 - x_1} = \\dfrac{4 - 0}{3 - 0} = \\dfrac{4}{3}$.",
+            "A geometric property of circles is that the tangent is always perpendicular to the radius at the point of contact.",
+            "The gradient of the tangent is the negative reciprocal of the radius gradient.",
+            "Calculation: $-\\dfrac{1}{4/3} = -\\dfrac{3}{4}$.",
+            "Final Answer: $$-\\dfrac{3}{4}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Tangent Perpendicularity",
+            "content": "This is a classic high-tier coordinate geometry question. You aren't given the line for the tangent, so you must use the radius as your 'anchor'. Just remember: Radius $\\perp$ Tangent. Once you have the radius gradient, the negative reciprocal gives you the tangent gradient immediately."
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master Geometry: Download the Full Geometry Pack"
     }
 ];
