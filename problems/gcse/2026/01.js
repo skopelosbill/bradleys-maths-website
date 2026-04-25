@@ -66,7 +66,7 @@ const problemBank = [
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Systematic Expansion",
-            "content": "When expanding triple brackets, students often lose track of terms. I always recommend expanding two brackets first and then drawing a grid (the box method) for the final multiplication to ensure every combination is captured without error."
+            "content": "When expanding triple brackets, students often lose track of terms. I always recommend expanding two brackets first and using distributed multiplication(as above) for the final multiplication to ensure every combination is captured without error."
         },
         "payhip_link": "https://payhip.com/b/wRN86",
         "button_text": "Master Algebra: Download the Full Algebra Pack"
@@ -82,7 +82,7 @@ const problemBank = [
         "q": "The formula for the final velocity of an object is given by $v^2 = u^2 + 2as$.<br>(a) Rearrange the formula to make $u$ the subject.<br>(b) Calculate the value of $u$ when $v = 20, a = 2$ and $s = 36$.",
         "steps": [
             "For part (a), we subtract $2as$ from both sides of the equation: $v^2 - 2as = u^2$.",
-            "We then take the square root of both sides to isolate $u$.",
+            "We then take the square root of both sides to isolate $u$. We take the positive square root because the given values describe motion in the positive direction, so the initial velocity must also be positive.",
             "For part (b), we substitute the given values into our new formula: $u = \\sqrt{20^2 - 2(2)(36)}$.",
             "Calculating the values gives $u = \\sqrt{400 - 144} = \\sqrt{256}$.",
             "Final Answer: $$(a)\\ u = \\sqrt{v^2 - 2as},\\ (b)\\ 16$$"
@@ -108,7 +108,7 @@ const problemBank = [
             "For part (a), we round each number to one significant figure: $403 \\approx 400$, $1.98 \\approx 2$, and $0.49 \\approx 0.5$.",
             "We perform the calculation: $\\dfrac{400 \\times 2}{0.5} = \\dfrac{800}{0.5}$.",
             "Dividing by $0.5$ is equivalent to multiplying by $2$, so the estimate is $1600$.",
-            "For part (b), we compare the rounded values to the originals. We rounded the numerator terms down slightly, but we rounded the denominator down more significantly ($0.49$ to $0.5$ is actually an increase).",
+            "For part (b), we compare the rounded values to the originals. We rounded the numerator terms down slightly, but we rounded the denominator up more significantly ($0.49$ to $0.5$ is actually an increase).",
             "Since the numerator stayed roughly the same but we divided by a larger number than the original, the result is an underestimate.",
             "Final Answer: $$(a)\\ 1600,\\ (b)\\ \\text{Underestimate (denominator increased)}$$"
         ],
@@ -299,9 +299,9 @@ const problemBank = [
         "subtopic": "Angle at the centre",
         "difficulty": "5/6",
         "img": "true",
-        "q": "Points $A, B$ and $C$ lie on the circumference of a circle. $AB$ is the diameter of the circle. Angle $BAC = 30^\\circ$.<br>(a) State the size of angle $ACB$.<br>(b) Calculate the size of angle $ABC$.",
+        "q": "Points $A, B$ and $C$ lie on the circumference of a circle. $AB$ is the diameter of the circle. $\\angle BAC = 30^\\circ$.<br>(a) State the size of $\\angle ACB$.<br>(b) Calculate the size of $\\angle ABC$.",
         "steps": [
-            "For part (a), we use the circle theorem which states that the angle subtended at the circumference by a semicircle is always a right angle. Therefore, angle $ACB = 90^\\circ$.",
+            "For part (a), we use the circle theorem which states that the angle subtended at the circumference by a semicircle is always a right angle. Therefore, $\\angle ACB = 90^\\circ$.",
             "For part (b), we use the fact that the angles in a triangle sum to $180^\\circ$.",
             "We calculate: $180^\\circ - 90^\\circ - 30^\\circ = 60^\\circ$.",
             "Final Answer: $$(a)\\ 90^\\circ,\\ (b)\\ 60^\\circ$$"
@@ -459,7 +459,7 @@ const problemBank = [
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: The Graph Method",
-            "content": "Never try to solve a quadratic inequality by just 'square-rooting' both sides. You will almost certainly miss the negative region ($x < -5$). Always find your critical values and sketch the parabola to visualize the correct intervals."
+            "content": "Never try to solve a quadratic inequality by just 'square-rooting' both sides. You will almost certainly miss the negative region ($x < -3$). Always find your critical values and sketch the parabola to visualize the correct intervals."
         },
         "payhip_link": "https://payhip.com/b/wRN86",
         "button_text": "Master Algebra: Download the Full Algebra Pack"
@@ -535,7 +535,7 @@ const problemBank = [
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Turning Point Signs",
-            "content": "Completing the square is the most efficient way to find a turning point without calculus. I always remind students of the 'Sign Rule': the $x$-coordinate is the negative of the number inside the bracket, but the $y$-coordinate remains exactly the same as the number outside."
+            "content": "Completing the square is the most efficient way to find a turning point without calculus. I always remind students that the $x$-coordinate is the number which makes the squared bracket equal to zero so in this case, $-3$, but the $y$-coordinate remains exactly the same as the number outside."
         },
         "payhip_link": "https://payhip.com/b/wRN86",
         "button_text": "Master Algebra: Download the Full Algebra Pack"
