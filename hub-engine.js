@@ -1,52 +1,61 @@
-// hub-engine.js - The Brain of the Revision Hub
+// hub-engine.js
 const BradleyHub = {
     state: {
         tier: localStorage.getItem('bradley_tier') || 'gcse',
-        allProblems: [],
-        activeMonths: ['01', '02', '03', '04', '05'], // Update this list as you add months
+        masterVault: [],
+        activeMonths: ['01', '02', '03', '04', '05'],
         isTeacherMode: false
     },
 
     async init(mode) {
         this.state.isTeacherMode = (mode === 'audit');
-        await this.loadAllData();
+        this.state.masterVault = []; // Reset vault
+        await this.sequentialLoad();
+    },
+
+    // Load months one by one so they don't overwrite each other
+    async sequentialLoad() {
+        for (const mm of this.state.activeMonths) {
+            await this.loadMonthScript(mm);
+        }
         this.renderHub();
     },
 
-    async loadAllData() {
-        // Clear bank to prevent duplicates on re-init
-        this.state.allProblems = [];
-        
-        for (const mm of this.state.activeMonths) {
-            try {
-                // Fetch the script file manually to bypass global variable conflicts
-                const response = await fetch(`problems/${this.state.tier}/2026/${mm}.js`);
-                const text = await response.text();
-                
-                // This is a "clean" way to extract the problemBank array from your existing files
-                // without actually injecting <script> tags that might mess up the global scope
-                const bankMatch = text.match(/const problemBank\s*=\s*(\[[\s\S]*?\]);/);
-                if (bankMatch) {
-                    const monthData = JSON.parse(bankMatch[1].replace(/\\/g, '\\\\'));
-                    this.state.allProblems = [...this.state.allProblems, ...monthData];
+    loadMonthScript(mm) {
+        return new Promise((resolve) => {
+            const path = `problems/${this.state.tier}/2026/${mm}.js`;
+            const script = document.createElement('script');
+            script.src = path;
+            
+            script.onload = () => {
+                // Once script is loaded, 'problemBank' global variable exists
+                // We copy it into our vault before it gets overwritten by the next month
+                if (typeof problemBank !== 'undefined') {
+                    this.state.masterVault = [...this.state.masterVault, ...problemBank];
                 }
-            } catch (e) {
-                console.error(`Error loading month ${mm}:`, e);
-            }
-        }
+                document.head.removeChild(script); // Clean up
+                resolve();
+            };
+
+            script.onerror = () => {
+                console.warn(`Month ${mm} file not found.`);
+                resolve();
+            };
+
+            document.head.appendChild(script);
+        });
     },
 
     renderHub() {
         const container = document.getElementById('hub-container');
+        if (!container) return;
         container.innerHTML = '';
 
         const today = new Date();
         today.setHours(0, 0, 0, 0);
 
-        // Filter: If student mode, only show dates < today. If teacher mode, show all.
-        let filtered = this.state.allProblems.filter(p => {
+        let filtered = this.state.masterVault.filter(p => {
             if (this.state.isTeacherMode) return true;
-            
             const probDate = new Date(p.date);
             return probDate < today;
         });
@@ -54,45 +63,44 @@ const BradleyHub = {
         // Sort newest first
         filtered.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-        // Update this section inside BradleyHub.renderHub()
-filtered.forEach(prob => {
-    // Generate automated image path based on date and tier
-    let imgHTML = '';
-    if (prob.img === "true") {
-        const dateParts = new Date(prob.date);
-        const mm = String(dateParts.getMonth() + 1).padStart(2, '0');
-        const dd = String(dateParts.getDate());
-        const tierLetter = this.state.tier === 'gcse' ? 'g' : 'i';
-        const imgPath = `images/${mm}/${tierLetter}_${dd}.png`;
-        imgHTML = `<div class="card-img"><img src="${imgPath}" alt="Diagram for ${prob.date}" style="max-width:100%; height:auto; margin: 15px 0;"></div>`;
-    }
+        filtered.forEach(prob => {
+            // Automated Image Path Logic
+            let imgHTML = '';
+            if (prob.img === "true") {
+                const d = new Date(prob.date);
+                const mm = String(d.getMonth() + 1).padStart(2, '0');
+                const dd = String(d.getDate());
+                const t = this.state.tier === 'gcse' ? 'g' : 'i';
+                const imgPath = `images/${mm}/${t}_${dd}.png`;
+                imgHTML = `<div class="card-img"><img src="${imgPath}" style="max-width:100%; height:auto; margin: 15px 0; border: 1px solid #eee;"></div>`;
+            }
 
-    const card = document.createElement('div');
-    card.className = `problem-card ${this.state.isTeacherMode ? 'audit-border' : ''}`;
-    card.innerHTML = `
-        <div class="card-header">
-            <span class="card-date">${prob.date}</span>
-            <span class="card-tag">${prob.topic}</span>
-            <span class="card-difficulty">${this.state.tier.toUpperCase()} Grade ${prob.difficulty}</span>
-        </div>
-        <div class="card-q">${prob.q}</div>
-        ${imgHTML} <!-- Automated Image Injected Here -->
-        <button class="toggle-btn" onclick="BradleyHub.toggleSol('${prob.id}')">Show Head Teacher's Answer</button>
-        <div id="sol-${prob.id}" class="card-sol" style="display:none;">
-            <hr>
-            ${prob.steps.map(step => `<p class="step-text">${step}</p>`).join('')}
-            <div class="insight-box">
-                <strong>The Head Teacher's Eye:</strong> ${prob.bradley_insight.content}
-            </div>
-            <a href="${prob.payhip_link}" class="hub-buy-btn">${prob.button_text}</a>
-        </div>
-    `;
-    container.appendChild(card);
-});
+            const card = document.createElement('div');
+            card.className = 'problem-card';
+            if (this.state.isTeacherMode) card.style.borderLeft = "5px solid #d9534f";
 
-        if (window.MathJax) {
-            MathJax.typeset();
-        }
+            card.innerHTML = `
+                <div class="card-header">
+                    <span class="card-date">${prob.date}</span>
+                    <span class="card-tag">${prob.topic}</span>
+                    <span class="card-difficulty">Grade ${prob.difficulty}</span>
+                </div>
+                <div class="card-q">${prob.q}</div>
+                ${imgHTML}
+                <button class="toggle-btn" onclick="BradleyHub.toggleSol('${prob.id}')">Show Head Teacher's Answer</button>
+                <div id="sol-${prob.id}" class="card-sol" style="display:none;">
+                    <hr>
+                    ${prob.steps.map(s => `<p class="step-text">${s}</p>`).join('')}
+                    <div class="insight-box">
+                        <strong>The Head Teacher's Eye:</strong> ${prob.bradley_insight.content}
+                    </div>
+                    <a href="${prob.payhip_link}" class="hub-buy-btn">${prob.button_text}</a>
+                </div>
+            `;
+            container.appendChild(card);
+        });
+
+        if (window.MathJax) MathJax.typeset();
     },
 
     toggleSol(id) {
