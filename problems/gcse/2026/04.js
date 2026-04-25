@@ -533,12 +533,12 @@ const problemBank = [
         "topic": "Basic Probability",
         "subtopic": "Venn Diagrams",
         "difficulty": "6/7",
-        "q": "In a class of 30 students, 20 like Football and 15 like Cricket. 10 like both.<br>Find the probability that a student chosen at random likes **only** Football.",
+        "q": "In a class of 30 students, 20 like Football and 15 like Cricket. 10 like both.<br>Find the probability that a student chosen at random likes <strong>only</strong> Football.",
         "steps": [
-            "Number who like Football only: $20 - 10 = 10$.",
-            "Total number of students: $30$.",
-            "Probability: $\\frac{10}{30}$.",
-            "Final Answer: $$\\frac{1}{3}$$"
+            "Number who like Football only: $20 - 10 = 10$",
+            "Total number of students: $30$",
+            "Probability: $\\dfrac{10}{30}$",
+            "Final Answer: $$\\dfrac{1}{3}$$"
         ],
         "bradley_insight": {
             "type": "deeper",
@@ -565,7 +565,7 @@ const problemBank = [
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Frustum Shortcut",
-            "content": "You don't always need a complex formula for a frustum. Just remember: it's simply the **Big Shape** minus the **Little Shape**. Finding the height of the missing cone using similar triangles is usually the 'hidden' step."
+            "content": "You don't always need a complex formula for a frustum. Just remember: it's simply the <strong>Big Shape</strong> minus the <strong>Little Shape</strong>. Finding the height of the missing cone using similar triangles is usually the 'hidden' step."
         }
     },
     // 26 Apr
