@@ -9,13 +9,23 @@
 </head>
 <body>
     <div class="audit-header" style="background: #f8d7da; padding: 20px; border-bottom: 3px solid #d9534f; text-align: center;">
-        <h1 style="margin:0; color: #721c24;">Teacher Preview & Quality Control</h1>
-        <p><em>Suspending the "Follow the Sun" rule. All prepared problems are visible.</em></p>
-        <div class="tier-switcher" style="margin-top: 15px;">
-            <button class="toggle-btn" onclick="BradleyHub.switchTier('gcse')">Preview GCSE</button>
-            <button class="toggle-btn" onclick="BradleyHub.switchTier('igcse')">Preview IGCSE</button>
-        </div>
+    <h1 style="margin:0; color: #721c24;">Teacher Audit Mode</h1>
+    
+    <div class="controls" style="margin-top: 15px;">
+        <!-- Tier Switcher -->
+        <button class="toggle-btn" onclick="BradleyHub.switchTier('gcse')">GCSE</button>
+        <button class="toggle-btn" onclick="BradleyHub.switchTier('igcse')">IGCSE</button>
+        
+        <!-- NEW: Month Selector -->
+        <select id="month-picker" onchange="BradleyHub.loadSpecificMonth(this.value)" style="padding: 8px; border-radius: 4px; border: 1px solid #d9534f; margin-left: 10px;">
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+        </select>
     </div>
+</div>
 
     <main id="hub-container" class="container" style="margin-top: 30px;">
         <!-- Problems will appear here -->

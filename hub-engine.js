@@ -1,48 +1,49 @@
-// hub-engine.js - The Bulletproof Version
+// hub-engine.js - Focus Version
 const BradleyHub = {
     state: {
         tier: localStorage.getItem('bradley_tier') || 'gcse',
         masterVault: [],
-        activeMonths: ['01', '02', '03', '04', '05'],
+        currentMonth: '04', // Default to current month
         isTeacherMode: false
     },
 
     async init(mode) {
-        console.log("Hub Initialising in " + mode + " mode for " + this.state.tier);
         this.state.isTeacherMode = (mode === 'audit');
-        
-        // CRITICAL FIX: Reset the vault to empty every time we load
-        this.state.masterVault = [];
-        
-        await this.sequentialLoad();
-    },
-
-    async sequentialLoad() {
-        for (const mm of this.state.activeMonths) {
-            await this.fetchMonthData(mm);
+        // If in audit mode, check if the picker exists and use its value
+        const picker = document.getElementById('month-picker');
+        if (picker) {
+            this.state.currentMonth = picker.value;
         }
-        this.renderHub();
+        await this.loadSpecificMonth(this.state.currentMonth);
     },
 
-    // Using FETCH is safer than SCRIPT tags for the Hub 
-    // because it allows us to handle the data without global variable collisions
-    async fetchMonthData(mm) {
+    async loadSpecificMonth(mm) {
+        this.state.currentMonth = mm;
+        this.state.masterVault = []; // Clear previous month
+        
         const path = `problems/${this.state.tier}/2026/${mm}.js`;
+        console.log("Auditing: " + path);
+
         try {
             const response = await fetch(path);
+            if (!response.ok) throw new Error("File not found");
             const text = await response.text();
             
-            // This regex finds everything between the first [ and the last ];
+            // Surgical extraction of the problemBank array
             const arrayMatch = text.match(/\[[\s\S]*\]/);
             if (arrayMatch) {
-                // We convert the string array into a real Javascript object
-                // We use eval because your files are .js with comments, not pure .json
+                // Safely evaluate the array string into an object
                 const monthData = eval(arrayMatch[0]);
-                this.state.masterVault = [...this.state.masterVault, ...monthData];
-                console.log(`Loaded ${monthData.length} problems from month ${mm}`);
+                this.state.masterVault = monthData;
+                this.renderHub();
             }
         } catch (e) {
-            console.error(`Could not load ${path}. Check if file exists.`);
+            const container = document.getElementById('hub-container');
+            container.innerHTML = `<div style="color:red; text-align:center; padding:50px;">
+                <h3>Audit Error</h3>
+                <p>Could not load the file: <strong>${path}</strong></p>
+                <p>Ensure the file exists in GitHub and has no syntax errors.</p>
+            </div>`;
         }
     },
 
@@ -54,22 +55,16 @@ const BradleyHub = {
         const today = new Date();
         today.setHours(0, 0, 0, 0);
 
-        // Filter out future problems for students
+        // Filter for students, show all for teacher
         let filtered = this.state.masterVault.filter(p => {
             if (this.state.isTeacherMode) return true;
-            // Ensure date format is consistent for the browser
-            const probDate = new Date(p.date);
-            return probDate < today;
+            return new Date(p.date) < today;
         });
 
-        // Sort: Newest problems at the top
+        // Sort: Newest at top
         filtered.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-        // REMOVE DUPLICATES (Insurance policy)
-        const uniqueFiltered = Array.from(new Set(filtered.map(a => a.id)))
-            .map(id => filtered.find(a => a.id === id));
-
-        uniqueFiltered.forEach(prob => {
+        filtered.forEach(prob => {
             let imgHTML = '';
             if (prob.img === "true") {
                 const d = new Date(prob.date);
@@ -77,7 +72,7 @@ const BradleyHub = {
                 const dd = String(d.getDate());
                 const t = this.state.tier === 'gcse' ? 'g' : 'i';
                 const imgPath = `images/${mm}/${t}_${dd}.png`;
-                imgHTML = `<div class="card-img"><img src="${imgPath}" style="max-width:100%; height:auto; margin: 15px 0; border: 1px solid #eee; border-radius: 4px;"></div>`;
+                imgHTML = `<div class="card-img"><img src="${imgPath}" style="max-width:100%; height:auto; margin: 15px 0; border: 1px solid #eee;"></div>`;
             }
 
             const card = document.createElement('div');
@@ -85,27 +80,24 @@ const BradleyHub = {
             if (this.state.isTeacherMode) card.style.borderLeft = "5px solid #d9534f";
 
             card.innerHTML = `
-                <div class="card-header">
-                    <span class="card-date" style="font-weight:bold; color:#2c3e50;">${prob.date.toUpperCase()}</span>
-                    <span class="card-tag" style="background:#eee; padding:2px 8px; border-radius:10px;">${prob.topic}</span>
-                    <span class="card-difficulty">Grade ${prob.difficulty}</span>
+                <div class="card-header" style="display:flex; justify-content:space-between; font-size:0.9rem; color:#666;">
+                    <span><strong>${prob.date.toUpperCase()}</strong></span>
+                    <span>${prob.topic} | Grade ${prob.difficulty}</span>
                 </div>
-                <div class="card-q" style="margin: 15px 0; font-size: 1.1rem;">${prob.q}</div>
+                <div class="card-q" style="margin:20px 0; font-size:1.1rem;">${prob.q}</div>
                 ${imgHTML}
-                <button class="toggle-btn" onclick="BradleyHub.toggleSol('${prob.id}')">Show Head Teacher's Answer</button>
-                <div id="sol-${prob.id}" class="card-sol" style="display:none; background: #fafafa; padding: 15px; border-radius: 4px; margin-top: 15px;">
-                    <h4 style="margin-top:0;">Model Solution:</h4>
-                    ${prob.steps.map(s => `<p style="margin-bottom:8px; font-style: italic;">${s}</p>`).join('')}
-                    <div class="insight-box" style="background: #fff9c4; border-left: 4px solid #fbc02d; padding: 10px; margin: 15px 0;">
+                <button class="toggle-btn" onclick="BradleyHub.toggleSol('${prob.id}')">Show Model Answer</button>
+                <div id="sol-${prob.id}" class="card-sol" style="display:none; background:#f9f9f9; padding:15px; border-radius:5px; margin-top:15px;">
+                    ${prob.steps.map(s => `<p style="font-style:italic; margin-bottom:10px;">${s}</p>`).join('')}
+                    <div style="background:#fff9c4; border-left:4px solid #fbc02d; padding:15px; margin:15px 0;">
                         <strong>The Head Teacher's Eye:</strong> ${prob.bradley_insight.content}
                     </div>
-                    <a href="${prob.payhip_link}" target="_blank" class="hub-buy-btn">${prob.button_text}</a>
+                    <a href="${prob.payhip_link}" target="_blank" style="display:block; text-align:center; background:#27ae60; color:white; text-decoration:none; padding:10px; border-radius:4px;">${prob.button_text}</a>
                 </div>
             `;
             container.appendChild(card);
         });
 
-        // Trigger MathJax
         if (window.MathJax && window.MathJax.typesetPromise) {
             window.MathJax.typesetPromise();
         }
@@ -123,7 +115,6 @@ const BradleyHub = {
     switchTier(newTier) {
         this.state.tier = newTier;
         localStorage.setItem('bradley_tier', newTier);
-        // Fully restart the hub for the new tier
-        this.init(this.state.isTeacherMode ? 'audit' : 'student');
+        this.loadSpecificMonth(this.state.currentMonth);
     }
 };
