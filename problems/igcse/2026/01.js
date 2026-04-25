@@ -553,7 +553,6 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/example",
         "button_text": "Master IGCSE Trigonometry: Download the Extended Pack"
     },
-const problemBank = [
     // 22 January
     {
         "id": "003022",
