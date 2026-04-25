@@ -1,170 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PY6CVXTWP4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-PY6CVXTWP4');
-    </script>
-	 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;600&display=swap" rel="stylesheet">
-    <!-- 1. SEO & BRANDING -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cambridge IGCSE (0580) Extended Level Resources | Professional Worksheets and Predicted Exams | Bradley's Maths</title>
-    <meta name="description" content="Complete Cambridge IGCSE Mathematics (0580) home study course. Structured workbooks with detailed solutions designed to help students achieve top grades.">
-    <!-- stylesheet -->
-	<link rel="stylesheet" href="styles.css">
-    <!-- 2. MATHJAX CONFIGURATION -->
-
-<script>
-    window.MathJax = {
-        tex: {
-            inlineMath: [['$', '$'], ['\\(', '\\)']],
-            displayMath: [['$$', '$$'], ['\\[', '\\]']],
-            processEscapes: true
-        },
-        options: {
-            ignoreHtmlClass: 'tex2jax_ignore',
-            processHtmlClass: 'tex2jax_process'
-        }
-    };
-</script>
-
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-   
-</head>
-<body>
-
-    <!-- NEW NAVIGATION BAR -->
-    <nav class="navbar">
-        <a href="index.html" class="nav-brand">Bradley's Maths - IGCSE</a>
-        <button class="hamburger" onclick="toggleMenu()">☰</button>
-        
-        <div class="nav-links" id="navLinks">
-            <a href="index.html">Home</a>
-
-			<!--Link to the Blog-->
-			<a href="blog/index.html">Blog</a>
-
-			<a href="qa.html">Q&A / Request a Topic</a>
-            
-            <!-- Highlighted GCSE Link -->
-            <a href="gcse.html" class="highlight-link">GCSE</a>
-
-			<!--Libraries link -->
-			<a href="igcse-mastery-library.html">IGCSE Library</a>
-
-		<!--Predicted Papers-->
-		<div class="dropdown">
-        <button class="dropbtn gold-link">Predicted Papers ▾</button>
-
-        <div class="dropdown-content">
-  
-            <div class="dropdown">
-                <button class="dropbtn gold-link">Cambridge ▾</button>
-                    <div class="dropdown-content">
-                        <a href="https://payhip.com/b/leUg5">Set A (£7.50)</a>
-                        <a href="https://payhip.com/b/QrM68">Set B (£7.50)</a>
-                        <a href="https://payhip.com/b/BwIEp">Set C (£7.50)</a>
-                        <a href="https://payhip.com/b/RcN0U" style="font-weight: bold; color: #d97706;">
-                            ★ Full 9-Paper Bundle - £15
-                        </a>
-                    </div>
-            </div>
-		</div>
-		</div>
-            <!-- Dropdown: Booklets -->
-            <div class="dropdown">
-                <button class="dropbtn">Course Booklets ▾</button>
-                <div class="dropdown-content">
-					<a href="https://payhip.com/b/XEV2Z">Number</a>
-           			<a href="https://payhip.com/b/mg5YS">Algebra</a>
-            		<a href="https://payhip.com/b/L6skH">Coordinate Geometry and Geometry</a>
-            		<a href="https://payhip.com/b/KjXoP">Mensuration and Trigonometry</a>
-					<a href="https://payhip.com/b/rsVCz">Vectors, Probability and Statistics</a>
-                    <a href="https://payhip.com/b/krOXi">IGCSE - The Complete Collection</a>
-                    <a href="https://payhip.com/bradleysmaths">Full Store</a>
-                </div>
-            </div>
-
-            <!-- Dropdown: Free Resources -->
-            <div class="dropdown">
-                <button class="dropbtn">Free Worksheets ▾</button>
-                <div class="dropdown-content">
-                    <a href="Sets_and_Venn_Diagrams.pdf">Number</a>
-                    <a href="Solving_Equations_Graphically.pdf">Algebra and Graphs</a>
-                    <a href="Angle_Properties.pdf">Geometry and Measures</a>
-                    <a href="Arcs_and_sectors.pdf">Mensuration and Trigonometry</a>
-                    <a href="Vector_Geometry.pdf">Vectors, Probability and Statistics</a>
-                </div>
-            </div>
-
-            <a href="https://www.youtube.com/@BradleysMaths" style="color:#ff9999;">YouTube</a>
-        </div>
-    </nav>
-
-	<div class="credential-bar">
-    <span>Retired British International Head Teacher</span>
-    <span>•</span>
-    <span>IGCSE (0580) Extended Specialist</span>
-    <span>•</span>
-    <span>LaTeX Meticulously Typeset</span>
-</div>
-
-   <!-- Inside revision-hub.html -->
-<div class="hub-controls">
-    <div class="tier-switcher">
-        <button onclick="BradleyHub.switchTier('gcse')">GCSE Higher</button>
-        <button onclick="BradleyHub.switchTier('igcse')">IGCSE Extended</button>
-    </div>
-    <p class="hub-intro">Explore our complete archive of "Gold Standard" problems. Use these to master specific topics at your own pace.</p>
-</div>
-
-<div id="hub-container">
-    <!-- Cards injected here -->
-</div>
-
-<script src="hub-engine.js"></script>
-<script>BradleyHub.init('student');</script>
-Phase 3: The Teacher’s Lounge (bradley-audit-2026.html)
-This is your private page. It is intentionally simple and clear.
-code
-Html
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="robots" content="noindex, nofollow">
-    <title>Teacher Audit Mode</title>
+    <title>The Revision Hub | Bradley’s Maths</title>
+    <!-- Use your existing stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <style>
-        .audit-border { border-left: 5px solid #d9534f !important; }
-        .card-date { color: #d9534f; font-weight: bold; }
-    </style>
+
+    <!-- MathJax Config: Crucial for rendering Paper 2 style questions -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-    <h1>Teacher Preview & Quality Control</h1>
-    <div class="tier-switcher">
-        <button onclick="BradleyHub.switchTier('gcse')">Preview GCSE</button>
-        <button onclick="BradleyHub.switchTier('igcse')">Preview IGCSE</button>
-    </div>
-    <hr>
-    <div id="hub-container"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- Stage where the Gate, Menu, and Arena are swapped -->
+    <main id="hub-stage" class="container" style="min-height: 60vh; padding-top: 40px;">
+        <div style="text-align:center; padding: 50px;">
+            <p>Initialising your Revision Coach...</p>
+        </div>
+    </main>
+
+    <!-- The Engine -->
     <script src="hub-engine.js"></script>
-    <script>BradleyHub.init('audit');</script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialise in 'student' mode
+            BradleyHub.init('student');
+        });
+    </script>
 
-
-
-	        <!-- FOOTER -->
-    <div class="footer">
-    	<p>&copy; 2025 Bradley's Maths</p>
-	</div>
-    </body>
+</body>
 </html>
-   

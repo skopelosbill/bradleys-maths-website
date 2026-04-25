@@ -1075,7 +1075,68 @@ h2[id] {
 /* ========================= */
 /* Hub */
 /* ========================= */
+/* Revision Hub Specific Styling */
+.hub-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
 
+.hub-stats {
+    background: #e8f4fd;
+    color: #2c3e50;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.menu-btn {
+    background: #f8f9fa;
+    border: 2px solid #2c3e50;
+    color: #2c3e50;
+    padding: 20px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.menu-btn:hover {
+    background: #2c3e50;
+    color: white;
+}
+
+.menu-btn.random {
+    background: #2c3e50;
+    color: white;
+    grid-column: 1 / -1; /* Makes the random button full width */
+}
+
+.arena-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 4px;
+}
+
+.secondary {
+    background: #95a5a6 !important;
+    border-color: #7f8c8d !important;
+}
 .problem-card {
     background: #fff;
     border: 1px solid #e1e1e1;
