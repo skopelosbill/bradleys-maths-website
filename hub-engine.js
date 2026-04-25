@@ -1,7 +1,7 @@
-// hub-engine.js - Bradley Gold Standard
+// hub-engine.js - The Complete Bradley Engine (Audit + Arena)
 const BradleyHub = {
     state: {
-        tier: localStorage.getItem('bradley_tier'),
+        tier: localStorage.getItem('bradley_tier') || 'gcse',
         seenIds: JSON.parse(localStorage.getItem('bradley_seen_ids') || '[]'),
         masterVault: [],
         activeMonths: ['01', '02', '03', '04', '05'],
@@ -11,12 +11,16 @@ const BradleyHub = {
 
     async init(mode) {
         this.state.isTeacherMode = (mode === 'audit');
+        
         if (this.state.isTeacherMode) {
+            // --- TEACHER AUDIT PATHWAY ---
             const picker = document.getElementById('month-picker');
-            await this.loadMonthData(picker ? picker.value : '04');
+            const selectedMonth = picker ? picker.value : '04';
+            await this.loadMonthData(selectedMonth);
             this.renderAuditList(); 
         } else {
-            if (!this.state.tier) {
+            // --- STUDENT HUB PATHWAY ---
+            if (!this.state.tier || this.state.tier === 'null') {
                 this.renderGate();
             } else {
                 await this.loadAllActiveMonths();
@@ -47,21 +51,38 @@ const BradleyHub = {
             const text = await response.text();
             const arrayMatch = text.match(/\[[\s\S]*\]/);
             if (arrayMatch) {
+                // Safely evaluate the array from the .js file
                 const monthData = eval(arrayMatch[0]);
                 this.state.masterVault = [...this.state.masterVault, ...monthData];
             }
-        } catch (e) { console.error("Load error:", path); }
+        } catch (e) { console.error("Filing error in month:", path); }
     },
 
-    // --- VIEW 1: THE SYLLABUS GATE ---
+    // --- VIEW A: THE TEACHER AUDIT (Linear List) ---
+    renderAuditList() {
+        const container = document.getElementById('hub-container');
+        if (!container) return;
+        container.innerHTML = '';
+        
+        // Sort by date (newest first) for easier proofing
+        this.state.masterVault.sort((a, b) => new Date(b.date) - new Date(a.date));
+        
+        this.state.masterVault.forEach(prob => {
+            container.appendChild(this.createProblemCard(prob, true));
+        });
+        
+        if (window.MathJax) MathJax.typesetPromise();
+    },
+
+    // --- VIEW B: THE STUDENT HUB (Coach Flow) ---
     renderGate() {
         document.getElementById('hub-stage').innerHTML = `
             <div class="info-panel" style="background: white; border: 1px solid #ddd;">
-                <h1 style="font-size: 2.2rem;">The Revision Hub</h1>
-                <p>Welcome. Please select your examination path to begin your personalized study session.</p>
+                <h1>The Revision Hub</h1>
+                <p>Welcome. Select your examination path to begin your session.</p>
                 <div class="btn-group" style="margin-top: 30px;">
-                    <button class="btn btn-large" onclick="BradleyHub.setTier('gcse')">GCSE Higher Tier</button>
-                    <button class="btn btn-large btn-igcse" onclick="BradleyHub.setTier('igcse')">IGCSE Extended (0580)</button>
+                    <button class="btn btn-large" onclick="BradleyHub.setTier('gcse')">GCSE Higher</button>
+                    <button class="btn btn-large btn-igcse" onclick="BradleyHub.setTier('igcse')">IGCSE Extended</button>
                 </div>
             </div>`;
     },
@@ -72,13 +93,12 @@ const BradleyHub = {
         this.init('student');
     },
 
-    // --- VIEW 2: THE REVISION MENU ---
     renderMenu() {
         const solvedCount = this.state.seenIds.length;
         document.getElementById('hub-stage').innerHTML = `
             <div class="info-panel" style="background: white; border: 1px solid #ddd;">
                 <div class="hub-stats" style="background: var(--brand-green-light); padding: 15px; border-radius: 8px; margin-bottom: 20px; font-weight: bold; color: var(--brand-purple-dark);">
-                    You have mastered ${solvedCount} problems so far.
+                    You have tackled ${solvedCount} archive problems so far.
                 </div>
                 <h2>Select a Revision Area</h2>
                 <div class="menu-grid">
@@ -86,27 +106,28 @@ const BradleyHub = {
                         .map(t => `<button class="menu-btn" onclick="BradleyHub.serveArena('${t}')">${t === 'Ratio, Proportion & Rates of Change' ? 'Ratio & Proportion' : t}</button>`).join('')}
                     <button class="menu-btn random" onclick="BradleyHub.serveArena('all')">★ Random Mix ★</button>
                 </div>
-                <p style="margin-top:30px;"><a href="#" onclick="localStorage.clear(); location.reload();" style="color: var(--text-muted); font-size: 0.85rem;">Change Syllabus Preference</a></p>
+                <p style="margin-top:30px;"><a href="#" onclick="localStorage.removeItem('bradley_tier'); location.reload();" style="color: var(--text-muted); font-size: 0.85rem;">Change Syllabus Preference</a></p>
             </div>`;
     },
 
-    // --- VIEW 3: THE ARENA (ONE QUESTION) ---
     serveArena(topic) {
         this.state.currentTopic = topic;
         const today = new Date();
         today.setHours(0,0,0,0);
 
+        // Logic: Match topic, not yet seen, and date is in the past
         let pool = this.state.masterVault.filter(p => {
             const topicMatch = (topic === 'all' || p.major_area === topic);
             const unseen = !this.state.seenIds.includes(p.id);
-            return topicMatch && unseen && (new Date(p.date) < today);
+            const isPast = new Date(p.date) < today;
+            return topicMatch && unseen && isPast;
         });
 
         if (pool.length === 0) {
             document.getElementById('hub-stage').innerHTML = `
                 <div class="info-panel">
                     <h2>Area Mastered!</h2>
-                    <p>You have successfully viewed every archived problem in the <strong>${topic}</strong> section.</p>
+                    <p>Excellent work. You have viewed every archived problem currently available in <strong>${topic}</strong>.</p>
                     <button class="btn btn-purple" onclick="BradleyHub.renderMenu()">Return to Menu</button>
                 </div>`;
             return;
@@ -119,10 +140,10 @@ const BradleyHub = {
         if (window.MathJax) MathJax.typesetPromise();
     },
 
-    // --- THE GOLD STANDARD CARD GENERATOR ---
+    // --- THE UNIVERSAL CARD GENERATOR ---
     createProblemCard(prob, isAudit) {
         const card = document.createElement('div');
-        card.className = 'daily-widget'; // Inheriting your main CSS style
+        card.className = 'daily-widget';
         if (isAudit) card.style.borderLeft = "8px solid #d9534f";
 
         let imgHTML = '';
@@ -131,7 +152,7 @@ const BradleyHub = {
             const mm = String(d.getMonth() + 1).padStart(2, '0');
             const dd = String(d.getDate()).padStart(2, '0');
             const t = this.state.tier === 'gcse' ? 'g' : 'i';
-            imgHTML = `<img src="images/${mm}/${t}_${dd}.png" class="question-img" style="margin: 20px auto;">`;
+            imgHTML = `<img src="images/${mm}/${t}_${dd}.png" class="question-img" style="margin: 20px auto; display: block;">`;
         }
 
         card.innerHTML = `
@@ -141,12 +162,12 @@ const BradleyHub = {
             
             <div id="action-area-${prob.id}">
                 <button class="reveal-btn" onclick="BradleyHub.revealSolution('${prob.id}', ${isAudit})">
-                    ${isAudit ? 'Show Answer' : 'I have solved it. Show Model Answer.'}
+                    ${isAudit ? 'Show Model Answer' : 'I have solved it. Show Model Answer.'}
                 </button>
             </div>
 
             <div id="sol-${prob.id}" class="step-container" style="display:none;">
-                <h3 style="text-align:left; color: var(--brand-purple);">Model Solution</h3>
+                <h3 style="text-align:left; color: var(--brand-purple);">Head Teacher's Model Solution</h3>
                 ${prob.steps.map(s => `<div class="step" style="display:block;"><span class="step-text">Step</span>${s}</div>`).join('')}
                 
                 <div class="bradley-insight-box insight-caution">
@@ -157,11 +178,11 @@ const BradleyHub = {
                 ${!isAudit ? `
                     <div style="display:flex; gap:10px; margin-top:20px;">
                         <button class="btn btn-purple" style="flex:1;" onclick="BradleyHub.serveArena('${this.state.currentTopic}')">Next Question</button>
-                        <button class="btn" style="flex:1; background: var(--text-muted);" onclick="BradleyHub.renderMenu()">Change Area</button>
+                        <button class="btn" style="flex:1; background: var(--text-muted); color: white;" onclick="BradleyHub.renderMenu()">Change Area</button>
                     </div>
                 ` : ''}
                 
-                <a href="${prob.payhip_link}" target="_blank" class="btn-buy" style="display:block; text-align:center; margin-top:20px; background: var(--brand-green);">
+                <a href="${prob.payhip_link}" target="_blank" class="btn-buy" style="display:block; text-align:center; margin-top:20px; background: var(--brand-green); color: white !important;">
                     ${prob.button_text}
                 </a>
             </div>`;
@@ -169,9 +190,12 @@ const BradleyHub = {
     },
 
     revealSolution(id, isAudit) {
-        document.getElementById(`sol-${id}`).style.display = 'block';
-        document.getElementById(`action-area-${id}`).style.display = 'none';
+        const sol = document.getElementById(`sol-${id}`);
+        const act = document.getElementById(`action-area-${id}`);
+        if (sol) sol.style.display = 'block';
+        if (act) act.style.display = 'none';
         
+        // Track progress if student mode
         if (!isAudit && !this.state.seenIds.includes(id)) {
             this.state.seenIds.push(id);
             localStorage.setItem('bradley_seen_ids', JSON.stringify(this.state.seenIds));
@@ -179,7 +203,7 @@ const BradleyHub = {
         if (window.MathJax) MathJax.typesetPromise();
     },
 
-    // --- SHARED UTILITIES ---
+    // --- REFRESH UTILITIES ---
     loadSpecificMonth(mm) { this.init('audit'); },
     switchTier(t) { 
         this.state.tier = t; 
