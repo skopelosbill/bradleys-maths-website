@@ -565,7 +565,7 @@ const problemBank = [
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Frustum Shortcut",
-            "content": "You don't always need a complex formula for a frustum. Just remember: it's simply the **Big Shape** minus the **Little Shape**. Finding the height of the missing cone using similar triangles is usually the 'hidden' step."
+            "content": "You don't always need a complex formula for a frustum. Just remember: it's simply the <strong>Big Shape</strong> minus the <strong>Little Shape</strong>. Finding the height of the missing cone using similar triangles is usually the 'hidden' step."
         }
     },
     // 26 Apr
