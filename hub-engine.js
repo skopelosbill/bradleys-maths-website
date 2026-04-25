@@ -1,4 +1,4 @@
-// hub-engine.js
+// hub-engine.js - The Bulletproof Version
 const BradleyHub = {
     state: {
         tier: localStorage.getItem('bradley_tier') || 'gcse',
@@ -8,42 +8,42 @@ const BradleyHub = {
     },
 
     async init(mode) {
+        console.log("Hub Initialising in " + mode + " mode for " + this.state.tier);
         this.state.isTeacherMode = (mode === 'audit');
-        this.state.masterVault = []; // Reset vault
+        
+        // CRITICAL FIX: Reset the vault to empty every time we load
+        this.state.masterVault = [];
+        
         await this.sequentialLoad();
     },
 
-    // Load months one by one so they don't overwrite each other
     async sequentialLoad() {
         for (const mm of this.state.activeMonths) {
-            await this.loadMonthScript(mm);
+            await this.fetchMonthData(mm);
         }
         this.renderHub();
     },
 
-    loadMonthScript(mm) {
-        return new Promise((resolve) => {
-            const path = `problems/${this.state.tier}/2026/${mm}.js`;
-            const script = document.createElement('script');
-            script.src = path;
+    // Using FETCH is safer than SCRIPT tags for the Hub 
+    // because it allows us to handle the data without global variable collisions
+    async fetchMonthData(mm) {
+        const path = `problems/${this.state.tier}/2026/${mm}.js`;
+        try {
+            const response = await fetch(path);
+            const text = await response.text();
             
-            script.onload = () => {
-                // Once script is loaded, 'problemBank' global variable exists
-                // We copy it into our vault before it gets overwritten by the next month
-                if (typeof problemBank !== 'undefined') {
-                    this.state.masterVault = [...this.state.masterVault, ...problemBank];
-                }
-                document.head.removeChild(script); // Clean up
-                resolve();
-            };
-
-            script.onerror = () => {
-                console.warn(`Month ${mm} file not found.`);
-                resolve();
-            };
-
-            document.head.appendChild(script);
-        });
+            // This regex finds everything between the first [ and the last ];
+            const arrayMatch = text.match(/\[[\s\S]*\]/);
+            if (arrayMatch) {
+                // We convert the string array into a real Javascript object
+                // We use eval because your files are .js with comments, not pure .json
+                const monthData = eval(arrayMatch[0]);
+                this.state.masterVault = [...this.state.masterVault, ...monthData];
+                console.log(`Loaded ${monthData.length} problems from month ${mm}`);
+            }
+        } catch (e) {
+            console.error(`Could not load ${path}. Check if file exists.`);
+        }
     },
 
     renderHub() {
@@ -54,17 +54,22 @@ const BradleyHub = {
         const today = new Date();
         today.setHours(0, 0, 0, 0);
 
+        // Filter out future problems for students
         let filtered = this.state.masterVault.filter(p => {
             if (this.state.isTeacherMode) return true;
+            // Ensure date format is consistent for the browser
             const probDate = new Date(p.date);
             return probDate < today;
         });
 
-        // Sort newest first
+        // Sort: Newest problems at the top
         filtered.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-        filtered.forEach(prob => {
-            // Automated Image Path Logic
+        // REMOVE DUPLICATES (Insurance policy)
+        const uniqueFiltered = Array.from(new Set(filtered.map(a => a.id)))
+            .map(id => filtered.find(a => a.id === id));
+
+        uniqueFiltered.forEach(prob => {
             let imgHTML = '';
             if (prob.img === "true") {
                 const d = new Date(prob.date);
@@ -72,7 +77,7 @@ const BradleyHub = {
                 const dd = String(d.getDate());
                 const t = this.state.tier === 'gcse' ? 'g' : 'i';
                 const imgPath = `images/${mm}/${t}_${dd}.png`;
-                imgHTML = `<div class="card-img"><img src="${imgPath}" style="max-width:100%; height:auto; margin: 15px 0; border: 1px solid #eee;"></div>`;
+                imgHTML = `<div class="card-img"><img src="${imgPath}" style="max-width:100%; height:auto; margin: 15px 0; border: 1px solid #eee; border-radius: 4px;"></div>`;
             }
 
             const card = document.createElement('div');
@@ -81,43 +86,44 @@ const BradleyHub = {
 
             card.innerHTML = `
                 <div class="card-header">
-                    <span class="card-date">${prob.date}</span>
-                    <span class="card-tag">${prob.topic}</span>
+                    <span class="card-date" style="font-weight:bold; color:#2c3e50;">${prob.date.toUpperCase()}</span>
+                    <span class="card-tag" style="background:#eee; padding:2px 8px; border-radius:10px;">${prob.topic}</span>
                     <span class="card-difficulty">Grade ${prob.difficulty}</span>
                 </div>
-                <div class="card-q">${prob.q}</div>
+                <div class="card-q" style="margin: 15px 0; font-size: 1.1rem;">${prob.q}</div>
                 ${imgHTML}
                 <button class="toggle-btn" onclick="BradleyHub.toggleSol('${prob.id}')">Show Head Teacher's Answer</button>
-                <div id="sol-${prob.id}" class="card-sol" style="display:none;">
-                    <hr>
-                    ${prob.steps.map(s => `<p class="step-text">${s}</p>`).join('')}
-                    <div class="insight-box">
+                <div id="sol-${prob.id}" class="card-sol" style="display:none; background: #fafafa; padding: 15px; border-radius: 4px; margin-top: 15px;">
+                    <h4 style="margin-top:0;">Model Solution:</h4>
+                    ${prob.steps.map(s => `<p style="margin-bottom:8px; font-style: italic;">${s}</p>`).join('')}
+                    <div class="insight-box" style="background: #fff9c4; border-left: 4px solid #fbc02d; padding: 10px; margin: 15px 0;">
                         <strong>The Head Teacher's Eye:</strong> ${prob.bradley_insight.content}
                     </div>
-                    <a href="${prob.payhip_link}" class="hub-buy-btn">${prob.button_text}</a>
+                    <a href="${prob.payhip_link}" target="_blank" class="hub-buy-btn">${prob.button_text}</a>
                 </div>
             `;
             container.appendChild(card);
         });
 
-       // Change window.MathJax.typeset() to this:
-if (window.MathJax && window.MathJax.typesetPromise) {
-    window.MathJax.typesetPromise();
-}
+        // Trigger MathJax
+        if (window.MathJax && window.MathJax.typesetPromise) {
+            window.MathJax.typesetPromise();
+        }
     },
 
     toggleSol(id) {
         const sol = document.getElementById(`sol-${id}`);
+        if (!sol) return;
         sol.style.display = sol.style.display === 'none' ? 'block' : 'none';
-       // Change window.MathJax.typeset() to this:
-if (window.MathJax && window.MathJax.typesetPromise) {
-    window.MathJax.typesetPromise();
-}
+        if (window.MathJax && window.MathJax.typesetPromise) {
+            window.MathJax.typesetPromise();
+        }
     },
 
     switchTier(newTier) {
         this.state.tier = newTier;
         localStorage.setItem('bradley_tier', newTier);
+        // Fully restart the hub for the new tier
         this.init(this.state.isTeacherMode ? 'audit' : 'student');
     }
 };
