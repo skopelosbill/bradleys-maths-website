@@ -129,12 +129,14 @@
         <span>Retired Head Teacher</span><span>•</span><span>Thirty Years of Experience</span><span>•</span><span>GCSE & IGCSE</span>
     </div>
 
-    <main id="hub-stage" class="container"> 
+    <!-- STATIC BRANDING: This will always stay at the top -->
+    <div class="container" style="padding-bottom: 0; margin-bottom: 0;"> 
         <h1>Bradley's Maths</h1>
         <h2>GCSE Higher Tier Mathematics</h2>
         <h3>The Revision Hub</h3>
         <div class="trust-badge">Comprehensive Higher Tier Content • Aligned to AQA, Edexcel, OCR & WJEC</div>
-       <div class="info-panel">
+    </div>
+    <div class="info-panel">
         <h3>Choose a Topic to Access the Questions</h3>
             <p>
             Every question is in the style expected in your final examinations for GCSE Mathematics
@@ -145,8 +147,14 @@
             <p class="emphasis">
             Don't leave it to chance.  Be Exam Ready!
             </p>
-        </div>
-    </main>
+            </div>
+
+<!-- DYNAMIC STAGE: The engine will only wipe and fill THIS div -->
+<main id="hub-stage" class="container" style="margin-top: 20px;">
+    <!-- The Menu or the Question Arena will appear here -->
+</main>
+
+    
 
     <script src="hub-engine.js"></script>
     <script>

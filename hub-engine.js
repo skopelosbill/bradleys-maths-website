@@ -1,7 +1,7 @@
-// hub-engine.js - Two-Page Multi-Mode Version
+// hub-engine.js - The "Bradley Gold" Multi-Page Engine
 const BradleyHub = {
     state: {
-        tier: null, // Set during init
+        tier: null,
         seenIds: JSON.parse(localStorage.getItem('bradley_seen_ids') || '[]'),
         masterVault: [],
         activeMonths: ['01', '02', '03', '04', '05'],
@@ -11,9 +11,9 @@ const BradleyHub = {
 
     async init(mode, tier) {
         this.state.isTeacherMode = (mode === 'audit');
-        this.state.tier = tier || localStorage.getItem('bradley_tier') || 'gcse';
+        this.state.tier = tier || 'gcse';
         
-        // Save preference for the daily problem page to use
+        // Ensure the website remembers this tier for the daily problem
         localStorage.setItem('bradley_tier', this.state.tier);
 
         if (this.state.isTeacherMode) {
@@ -21,6 +21,7 @@ const BradleyHub = {
             await this.loadMonthData(picker ? picker.value : '04');
             this.renderAuditList(); 
         } else {
+            // Student Mode: Load data and go straight to Menu
             await this.loadAllActiveMonths();
             this.renderMenu();
         }
@@ -51,24 +52,24 @@ const BradleyHub = {
                 const monthData = eval(arrayMatch[0]);
                 this.state.masterVault = [...this.state.masterVault, ...monthData];
             }
-        } catch (e) { console.error("Data error:", path); }
+        } catch (e) { console.error("Filing error:", path); }
     },
 
     // --- STUDENT VIEW: REVISION MENU ---
     renderMenu() {
         const solvedCount = this.state.seenIds.filter(id => {
-            // Only count problems belonging to the current tier
-            // GCSE IDs start with 002, IGCSE with 003
             return (this.state.tier === 'gcse' && id.startsWith('002')) || 
                    (this.state.tier === 'igcse' && id.startsWith('003'));
         }).length;
 
         document.getElementById('hub-stage').innerHTML = `
-            <div class="info-panel" style="background: white; border: 1px solid #ddd;">
+            <div class="info-panel" style="background: white; border: 1px solid #ddd; text-align: center;">
                 <div class="hub-stats" style="background: var(--brand-green-light); padding: 15px; border-radius: 8px; margin-bottom: 20px; font-weight: bold; color: var(--brand-purple-dark);">
-                    You have mastered ${solvedCount} ${this.state.tier.toUpperCase()} problems so far.
+                    Head Teacher's Record: You have mastered ${solvedCount} ${this.state.tier.toUpperCase()} problems.
                 </div>
-                <h2>Select a Revision Area</h2>
+                <h3>Choose a Topic to Access the Questions</h3>
+                <p>Every question is in the style expected in your final examinations. Solve the problem, then reveal the model answer to check your logic.</p>
+                
                 <div class="menu-grid">
                     ${['Algebra','Number','Geometry & Measures','Ratio, Proportion & Rates of Change','Statistics','Probability']
                         .map(t => `<button class="menu-btn" onclick="BradleyHub.serveArena('${t}')">${t === 'Ratio, Proportion & Rates of Change' ? 'Ratio & Proportion' : t}</button>`).join('')}
@@ -91,8 +92,8 @@ const BradleyHub = {
         if (pool.length === 0) {
             document.getElementById('hub-stage').innerHTML = `
                 <div class="info-panel">
-                    <h2>Topic Mastered!</h2>
-                    <p>You have viewed every archived problem in the <strong>${topic}</strong> section for this tier.</p>
+                    <h2>Area Mastered!</h2>
+                    <p>Excellent work. You have viewed every archived problem in the <strong>${topic}</strong> section for this tier.</p>
                     <button class="btn btn-purple" onclick="BradleyHub.renderMenu()">Return to Menu</button>
                 </div>`;
             return;
@@ -149,9 +150,9 @@ const BradleyHub = {
                     ${prob.bradley_insight.content}
                 </div>
                 ${!isAudit ? `
-                    <div style="display:flex; gap:10px; margin-top:20px;">
-                        <button class="btn btn-purple" style="flex:1;" onclick="BradleyHub.serveArena('${this.state.currentTopic}')">Next Question</button>
-                        <button class="btn" style="flex:1; background: var(--text-muted); color: white;" onclick="BradleyHub.renderMenu()">Change Area</button>
+                    <div style="display:flex; gap:10px; margin-top:20px; justify-content: center;">
+                        <button class="btn btn-purple" onclick="BradleyHub.serveArena('${this.state.currentTopic}')">Next Question</button>
+                        <button class="btn" style="background: var(--text-muted); color: white;" onclick="BradleyHub.renderMenu()">Change Area</button>
                     </div>
                 ` : ''}
                 <a href="${prob.payhip_link}" target="_blank" class="btn-buy" style="display:block; text-align:center; margin-top:20px; background: var(--brand-green); color: white !important;">
@@ -172,8 +173,5 @@ const BradleyHub = {
             localStorage.setItem('bradley_seen_ids', JSON.stringify(this.state.seenIds));
         }
         if (window.MathJax) MathJax.typesetPromise();
-    },
-
-    loadSpecificMonth(mm) { this.init('audit', this.state.tier); },
-    setTier(t) { this.init(this.state.isTeacherMode ? 'audit' : 'student', t); }
+    }
 };
