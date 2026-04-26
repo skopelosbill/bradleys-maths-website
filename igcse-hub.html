@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGCSE Revision Hub | Bradley’s Maths</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+      window.MathJax = {
+        tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$']], processEscapes: true }
+      };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="igcse.html" class="nav-brand">Bradley's Maths - IGCSE</a>
+        <div class="nav-links">
+            <a href="igcse.html">Home</a>
+            <a href="gcse-hub.html" style="color: var(--brand-purple-light);">Switch to GCSE Hub</a>
+        </div>
+    </nav>
+
+    <div class="credential-bar">
+        <span>Retired Head Teacher</span><span>•</span><span>IGCSE Extended Revision Arena</span>
+    </div>
+
+    <main id="hub-stage" class="container">
+        <!-- Content injected by BradleyHub.init('student', 'igcse') -->
+    </main>
+
+    <script src="hub-engine.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            BradleyHub.init('student', 'igcse');
+        });
+    </script>
+</body>
+</html>

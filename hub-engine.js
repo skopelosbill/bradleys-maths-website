@@ -1,7 +1,7 @@
-// hub-engine.js - The Complete Bradley Engine (Audit + Arena)
+// hub-engine.js - Two-Page Multi-Mode Version
 const BradleyHub = {
     state: {
-        tier: localStorage.getItem('bradley_tier') || 'gcse',
+        tier: null, // Set during init
         seenIds: JSON.parse(localStorage.getItem('bradley_seen_ids') || '[]'),
         masterVault: [],
         activeMonths: ['01', '02', '03', '04', '05'],
@@ -9,27 +9,24 @@ const BradleyHub = {
         isTeacherMode: false
     },
 
-    async init(mode) {
+    async init(mode, tier) {
         this.state.isTeacherMode = (mode === 'audit');
+        this.state.tier = tier || localStorage.getItem('bradley_tier') || 'gcse';
         
+        // Save preference for the daily problem page to use
+        localStorage.setItem('bradley_tier', this.state.tier);
+
         if (this.state.isTeacherMode) {
-            // --- TEACHER AUDIT PATHWAY ---
             const picker = document.getElementById('month-picker');
-            const selectedMonth = picker ? picker.value : '04';
-            await this.loadMonthData(selectedMonth);
+            await this.loadMonthData(picker ? picker.value : '04');
             this.renderAuditList(); 
         } else {
-            // --- STUDENT HUB PATHWAY ---
-            if (!this.state.tier || this.state.tier === 'null') {
-                this.renderGate();
-            } else {
-                await this.loadAllActiveMonths();
-                this.renderMenu();
-            }
+            await this.loadAllActiveMonths();
+            this.renderMenu();
         }
     },
 
-    // --- DATA HANDLING ---
+    // --- DATA LOADING ---
     async loadAllActiveMonths() {
         this.state.masterVault = [];
         for (const mm of this.state.activeMonths) {
@@ -51,54 +48,25 @@ const BradleyHub = {
             const text = await response.text();
             const arrayMatch = text.match(/\[[\s\S]*\]/);
             if (arrayMatch) {
-                // Safely evaluate the array from the .js file
                 const monthData = eval(arrayMatch[0]);
                 this.state.masterVault = [...this.state.masterVault, ...monthData];
             }
-        } catch (e) { console.error("Filing error in month:", path); }
+        } catch (e) { console.error("Data error:", path); }
     },
 
-    // --- VIEW A: THE TEACHER AUDIT (Linear List) ---
-    renderAuditList() {
-        const container = document.getElementById('hub-container');
-        if (!container) return;
-        container.innerHTML = '';
-        
-        // Sort by date (newest first) for easier proofing
-        this.state.masterVault.sort((a, b) => new Date(b.date) - new Date(a.date));
-        
-        this.state.masterVault.forEach(prob => {
-            container.appendChild(this.createProblemCard(prob, true));
-        });
-        
-        if (window.MathJax) MathJax.typesetPromise();
-    },
-
-    // --- VIEW B: THE STUDENT HUB (Coach Flow) ---
-    renderGate() {
-        document.getElementById('hub-stage').innerHTML = `
-            <div class="info-panel" style="background: white; border: 1px solid #ddd;">
-                <h1>The Revision Hub</h1>
-                <p>Welcome. Select your examination path to begin your session.</p>
-                <div class="btn-group" style="margin-top: 30px;">
-                    <button class="btn btn-large" onclick="BradleyHub.setTier('gcse')">GCSE Higher</button>
-                    <button class="btn btn-large btn-igcse" onclick="BradleyHub.setTier('igcse')">IGCSE Extended</button>
-                </div>
-            </div>`;
-    },
-
-    setTier(t) {
-        this.state.tier = t;
-        localStorage.setItem('bradley_tier', t);
-        this.init('student');
-    },
-
+    // --- STUDENT VIEW: REVISION MENU ---
     renderMenu() {
-        const solvedCount = this.state.seenIds.length;
+        const solvedCount = this.state.seenIds.filter(id => {
+            // Only count problems belonging to the current tier
+            // GCSE IDs start with 002, IGCSE with 003
+            return (this.state.tier === 'gcse' && id.startsWith('002')) || 
+                   (this.state.tier === 'igcse' && id.startsWith('003'));
+        }).length;
+
         document.getElementById('hub-stage').innerHTML = `
             <div class="info-panel" style="background: white; border: 1px solid #ddd;">
                 <div class="hub-stats" style="background: var(--brand-green-light); padding: 15px; border-radius: 8px; margin-bottom: 20px; font-weight: bold; color: var(--brand-purple-dark);">
-                    You have tackled ${solvedCount} archive problems so far.
+                    You have mastered ${solvedCount} ${this.state.tier.toUpperCase()} problems so far.
                 </div>
                 <h2>Select a Revision Area</h2>
                 <div class="menu-grid">
@@ -106,7 +74,6 @@ const BradleyHub = {
                         .map(t => `<button class="menu-btn" onclick="BradleyHub.serveArena('${t}')">${t === 'Ratio, Proportion & Rates of Change' ? 'Ratio & Proportion' : t}</button>`).join('')}
                     <button class="menu-btn random" onclick="BradleyHub.serveArena('all')">★ Random Mix ★</button>
                 </div>
-                <p style="margin-top:30px;"><a href="#" onclick="localStorage.removeItem('bradley_tier'); location.reload();" style="color: var(--text-muted); font-size: 0.85rem;">Change Syllabus Preference</a></p>
             </div>`;
     },
 
@@ -115,19 +82,17 @@ const BradleyHub = {
         const today = new Date();
         today.setHours(0,0,0,0);
 
-        // Logic: Match topic, not yet seen, and date is in the past
         let pool = this.state.masterVault.filter(p => {
             const topicMatch = (topic === 'all' || p.major_area === topic);
             const unseen = !this.state.seenIds.includes(p.id);
-            const isPast = new Date(p.date) < today;
-            return topicMatch && unseen && isPast;
+            return topicMatch && unseen && (new Date(p.date) < today);
         });
 
         if (pool.length === 0) {
             document.getElementById('hub-stage').innerHTML = `
                 <div class="info-panel">
-                    <h2>Area Mastered!</h2>
-                    <p>Excellent work. You have viewed every archived problem currently available in <strong>${topic}</strong>.</p>
+                    <h2>Topic Mastered!</h2>
+                    <p>You have viewed every archived problem in the <strong>${topic}</strong> section for this tier.</p>
                     <button class="btn btn-purple" onclick="BradleyHub.renderMenu()">Return to Menu</button>
                 </div>`;
             return;
@@ -140,7 +105,19 @@ const BradleyHub = {
         if (window.MathJax) MathJax.typesetPromise();
     },
 
-    // --- THE UNIVERSAL CARD GENERATOR ---
+    // --- TEACHER VIEW: AUDIT LIST ---
+    renderAuditList() {
+        const container = document.getElementById('hub-container');
+        if (!container) return;
+        container.innerHTML = '';
+        this.state.masterVault.sort((a, b) => new Date(b.date) - new Date(a.date));
+        this.state.masterVault.forEach(prob => {
+            container.appendChild(this.createProblemCard(prob, true));
+        });
+        if (window.MathJax) MathJax.typesetPromise();
+    },
+
+    // --- SHARED CARD COMPONENT ---
     createProblemCard(prob, isAudit) {
         const card = document.createElement('div');
         card.className = 'daily-widget';
@@ -159,29 +136,24 @@ const BradleyHub = {
             <span class="widget-header">${prob.date.toUpperCase()} | ${prob.topic} | Grade ${prob.difficulty}</span>
             <div class="question-box">${prob.q}</div>
             ${imgHTML}
-            
             <div id="action-area-${prob.id}">
                 <button class="reveal-btn" onclick="BradleyHub.revealSolution('${prob.id}', ${isAudit})">
                     ${isAudit ? 'Show Model Answer' : 'I have solved it. Show Model Answer.'}
                 </button>
             </div>
-
             <div id="sol-${prob.id}" class="step-container" style="display:none;">
                 <h3 style="text-align:left; color: var(--brand-purple);">Head Teacher's Model Solution</h3>
                 ${prob.steps.map(s => `<div class="step" style="display:block;"><span class="step-text">Step</span>${s}</div>`).join('')}
-                
                 <div class="bradley-insight-box insight-caution">
                     <span class="insight-title">The Head Teacher's Eye</span>
                     ${prob.bradley_insight.content}
                 </div>
-
                 ${!isAudit ? `
                     <div style="display:flex; gap:10px; margin-top:20px;">
                         <button class="btn btn-purple" style="flex:1;" onclick="BradleyHub.serveArena('${this.state.currentTopic}')">Next Question</button>
                         <button class="btn" style="flex:1; background: var(--text-muted); color: white;" onclick="BradleyHub.renderMenu()">Change Area</button>
                     </div>
                 ` : ''}
-                
                 <a href="${prob.payhip_link}" target="_blank" class="btn-buy" style="display:block; text-align:center; margin-top:20px; background: var(--brand-green); color: white !important;">
                     ${prob.button_text}
                 </a>
@@ -195,7 +167,6 @@ const BradleyHub = {
         if (sol) sol.style.display = 'block';
         if (act) act.style.display = 'none';
         
-        // Track progress if student mode
         if (!isAudit && !this.state.seenIds.includes(id)) {
             this.state.seenIds.push(id);
             localStorage.setItem('bradley_seen_ids', JSON.stringify(this.state.seenIds));
@@ -203,11 +174,6 @@ const BradleyHub = {
         if (window.MathJax) MathJax.typesetPromise();
     },
 
-    // --- REFRESH UTILITIES ---
-    loadSpecificMonth(mm) { this.init('audit'); },
-    switchTier(t) { 
-        this.state.tier = t; 
-        localStorage.setItem('bradley_tier', t); 
-        this.init(this.state.isTeacherMode ? 'audit' : 'student'); 
-    }
+    loadSpecificMonth(mm) { this.init('audit', this.state.tier); },
+    setTier(t) { this.init(this.state.isTeacherMode ? 'audit' : 'student', t); }
 };
