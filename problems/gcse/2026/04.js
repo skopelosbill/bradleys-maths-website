@@ -591,7 +591,7 @@ const problemBank = [
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Collinearity Conclusion",
-            "content": "To prove points are on a straight line, finding the scalar multiple (e.g., $\\vec{OP} = \\frac{2}{3}\\vec{OM}$) is only 3 out of 4 marks. You **must** write the sentence: 'They are parallel and share a common point' to secure the final mark. Don't fall at the last hurdle!"
+            "content": "To prove points are on a straight line, finding the scalar multiple (e.g., $\\vec{OP} = \\frac{2}{3}\\vec{OM}$) is only 3 out of 4 marks. You <strong>must</strong> write the sentence: 'They are parallel and share a common point' to secure the final mark. Don't fall at the last hurdle!"
         },
         "payhip_link": "https://payhip.com/b/XAGch",
         "button_text": "Master Geometry: Download the Full Geometry Pack"
