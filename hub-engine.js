@@ -1,7 +1,7 @@
-// hub-engine.js - The "Bradley Gold" Multi-Page Engine
+// hub-engine.js - The Bradley "Gold Standard" Unified Engine
 const BradleyHub = {
     state: {
-        tier: null,
+        tier: localStorage.getItem('bradley_tier') || 'gcse',
         seenIds: JSON.parse(localStorage.getItem('bradley_seen_ids') || '[]'),
         masterVault: [],
         activeMonths: ['01', '02', '03', '04', '05'],
@@ -11,17 +11,18 @@ const BradleyHub = {
 
     async init(mode, tier) {
         this.state.isTeacherMode = (mode === 'audit');
-        this.state.tier = tier || 'gcse';
-        
-        // Ensure the website remembers this tier for the daily problem
+        // If a tier is passed (from the Hub pages), use it. Otherwise, use stored preference.
+        this.state.tier = tier || this.state.tier;
         localStorage.setItem('bradley_tier', this.state.tier);
 
         if (this.state.isTeacherMode) {
+            // TEACHER AUDIT: Load only the month selected in the dropdown
             const picker = document.getElementById('month-picker');
-            await this.loadMonthData(picker ? picker.value : '04');
+            const selectedMonth = picker ? picker.value : '04';
+            await this.loadMonthData(selectedMonth);
             this.renderAuditList(); 
         } else {
-            // Student Mode: Load data and go straight to Menu
+            // STUDENT HUB: Load all months and show the Menu
             await this.loadAllActiveMonths();
             this.renderMenu();
         }
@@ -49,35 +50,41 @@ const BradleyHub = {
             const text = await response.text();
             const arrayMatch = text.match(/\[[\s\S]*\]/);
             if (arrayMatch) {
+                // Evaluates the string array into a real JS object
                 let monthData = eval(arrayMatch[0]);
 
-                // --- THE LIVE PATCH ---
+                // --- LIVE PATCH: CORRECTING GCSE STATS/PROB LINKS ---
                 monthData.forEach(prob => {
-                    // Check if it's a GCSE Stats/Prob question with the wrong link
-                    if (this.state.tier === 'gcse' && 
-                       (prob.major_area === "Statistics" || prob.major_area === "Probability") && 
-                        prob.payhip_link === "https://payhip.com/b/XAGch") {
-                        
-                        // Apply the correction
-                        prob.payhip_link = "https://payhip.com/b/RVbqM";
-                        prob.button_text = "Master Probability and Statistics: Download the Full Probability and Statistics Pack";
+                    const isStatsOrProb = (prob.major_area === "Statistics" || prob.major_area === "Probability");
+                    if (this.state.tier === 'gcse' && isStatsOrProb) {
+                        // If it points to Geometry pack (XAGch), swap to Stats pack (RVbqM)
+                        if (prob.payhip_link === "https://payhip.com/b/XAGch") {
+                            prob.payhip_link = "https://payhip.com/b/RVbqM";
+                            prob.button_text = "Master Stats & Probability: Download the Full Pack";
+                        }
                     }
                 });
-                // ----------------------
+                // ----------------------------------------------------
 
                 this.state.masterVault = [...this.state.masterVault, ...monthData];
             }
-        } catch (e) { console.error("Data error:", path); }
+        } catch (e) { 
+            console.error("Filing error in month:", path, e); 
+        }
     },
 
     // --- STUDENT VIEW: REVISION MENU ---
     renderMenu() {
         const solvedCount = this.state.seenIds.filter(id => {
+            // Logic: Only count problems belonging to the current tier
             return (this.state.tier === 'gcse' && id.startsWith('002')) || 
                    (this.state.tier === 'igcse' && id.startsWith('003'));
         }).length;
 
-        document.getElementById('hub-stage').innerHTML = `
+        const stage = document.getElementById('hub-stage');
+        if (!stage) return;
+
+        stage.innerHTML = `
             <div class="info-panel" style="background: white; border: 1px solid #ddd; text-align: center;">
                 <div class="hub-stats" style="background: var(--brand-green-light); padding: 15px; border-radius: 8px; margin-bottom: 20px; font-weight: bold; color: var(--brand-purple-dark);">
                     Head Teacher's Record: You have mastered ${solvedCount} ${this.state.tier.toUpperCase()} problems.
@@ -101,13 +108,17 @@ const BradleyHub = {
         let pool = this.state.masterVault.filter(p => {
             const topicMatch = (topic === 'all' || p.major_area === topic);
             const unseen = !this.state.seenIds.includes(p.id);
-            return topicMatch && unseen && (new Date(p.date) < today);
+            const isPast = new Date(p.date) < today;
+            return topicMatch && unseen && isPast;
         });
 
+        const stage = document.getElementById('hub-stage');
+        if (!stage) return;
+
         if (pool.length === 0) {
-            document.getElementById('hub-stage').innerHTML = `
+            stage.innerHTML = `
                 <div class="info-panel">
-                    <h2>Area Mastered!</h2>
+                    <h2>Topic Mastered!</h2>
                     <p>Excellent work. You have viewed every archived problem in the <strong>${topic}</strong> section for this tier.</p>
                     <button class="btn btn-purple" onclick="BradleyHub.renderMenu()">Return to Menu</button>
                 </div>`;
@@ -115,7 +126,6 @@ const BradleyHub = {
         }
 
         const prob = pool[Math.floor(Math.random() * pool.length)];
-        const stage = document.getElementById('hub-stage');
         stage.innerHTML = '';
         stage.appendChild(this.createProblemCard(prob, false));
         if (window.MathJax) MathJax.typesetPromise();
@@ -133,7 +143,7 @@ const BradleyHub = {
         if (window.MathJax) MathJax.typesetPromise();
     },
 
-    // --- SHARED CARD COMPONENT ---
+    // --- THE UNIVERSAL CARD GENERATOR ---
     createProblemCard(prob, isAudit) {
         const card = document.createElement('div');
         card.className = 'daily-widget';
@@ -167,7 +177,7 @@ const BradleyHub = {
                 ${!isAudit ? `
                     <div style="display:flex; gap:10px; margin-top:20px; justify-content: center;">
                         <button class="btn btn-purple" onclick="BradleyHub.serveArena('${this.state.currentTopic}')">Next Question</button>
-                        <button class="btn" style="background: var(--text-muted); color: white;" onclick="BradleyHub.renderMenu()">Change Area</button>
+                        <button class="btn" style="background: var(--text-muted); color: white !important;" onclick="BradleyHub.renderMenu()">Change Area</button>
                     </div>
                 ` : ''}
                 <a href="${prob.payhip_link}" target="_blank" class="btn-buy" style="display:block; text-align:center; margin-top:20px; background: var(--brand-green); color: white !important;">
@@ -188,5 +198,13 @@ const BradleyHub = {
             localStorage.setItem('bradley_seen_ids', JSON.stringify(this.state.seenIds));
         }
         if (window.MathJax) MathJax.typesetPromise();
+    },
+
+    // UTILITIES
+    loadSpecificMonth(mm) { this.init('audit', this.state.tier); },
+    switchTier(t) { 
+        this.state.tier = t; 
+        localStorage.setItem('bradley_tier', t); 
+        this.init(this.state.isTeacherMode ? 'audit' : 'student', t); 
     }
 };
