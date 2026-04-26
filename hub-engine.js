@@ -45,26 +45,49 @@ const BradleyHub = {
 
     async fetchFile(path) {
         try {
-            const response = await fetch(path);
+            // Cache-buster ensures the browser always gets your latest GitHub edits
+            const response = await fetch(path + '?v=' + new Date().getTime());
             if (!response.ok) return;
             const text = await response.text();
             const arrayMatch = text.match(/\[[\s\S]*\]/);
+            
             if (arrayMatch) {
-                // Evaluates the string array into a real JS object
                 let monthData = eval(arrayMatch[0]);
 
-                // --- LIVE PATCH: CORRECTING GCSE STATS/PROB LINKS ---
                 monthData.forEach(prob => {
-                    const isStatsOrProb = (prob.major_area === "Statistics" || prob.major_area === "Probability");
-                    if (this.state.tier === 'gcse' && isStatsOrProb) {
-                        // If it points to Geometry pack (XAGch), swap to Stats pack (RVbqM)
-                        if (prob.payhip_link === "https://payhip.com/b/XAGch") {
+                    // --- IGCSE LINK MAPPING (The 'example' Fix) ---
+                    if (this.state.tier === 'igcse') {
+                        if (prob.major_area === "Number" || prob.major_area === "Ratio, Proportion & Rates of Change") {
+                            prob.payhip_link = "https://payhip.com/b/XEV2Z";
+                            prob.button_text = "Master IGCSE Number: Download the Full Pack";
+                        } 
+                        else if (prob.major_area === "Algebra") {
+                            prob.payhip_link = "https://payhip.com/b/mg5YS";
+                            prob.button_text = "Master IGCSE Algebra: Download the Full Pack";
+                        }
+                        else if (prob.major_area === "Geometry & Measures" || prob.major_area === "Coordinate Geometry & Geometry") {
+                            prob.payhip_link = "https://payhip.com/b/L6skH";
+                            prob.button_text = "Master IGCSE Geometry: Download the Full Pack";
+                        }
+                        else if (prob.topic === "Trigonometry" || prob.topic === "3D Shapes" || prob.major_area === "Mensuration and Trigonometry") {
+                            prob.payhip_link = "https://payhip.com/b/KjXoP";
+                            prob.button_text = "Master IGCSE Mensuration & Trig: Download the Full Pack";
+                        }
+                        else if (prob.major_area === "Statistics" || prob.major_area === "Probability" || prob.major_area === "Vectors, Probability and Statistics") {
+                            prob.payhip_link = "https://payhip.com/b/rsVCz";
+                            prob.button_text = "Master IGCSE Vectors & Stats: Download the Full Pack";
+                        }
+                    }
+
+                    // --- GCSE LINK MAPPING (The 'XAGch' Fix) ---
+                    if (this.state.tier === 'gcse') {
+                        if ((prob.major_area === "Statistics" || prob.major_area === "Probability") && 
+                             prob.payhip_link === "https://payhip.com/b/XAGch") {
                             prob.payhip_link = "https://payhip.com/b/RVbqM";
-                            prob.button_text = "Master Stats & Probability: Download the Full Pack";
+                            prob.button_text = "Master GCSE Stats & Probability: Download the Full Pack";
                         }
                     }
                 });
-                // ----------------------------------------------------
 
                 this.state.masterVault = [...this.state.masterVault, ...monthData];
             }
