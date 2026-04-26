@@ -49,10 +49,25 @@ const BradleyHub = {
             const text = await response.text();
             const arrayMatch = text.match(/\[[\s\S]*\]/);
             if (arrayMatch) {
-                const monthData = eval(arrayMatch[0]);
+                let monthData = eval(arrayMatch[0]);
+
+                // --- THE LIVE PATCH ---
+                monthData.forEach(prob => {
+                    // Check if it's a GCSE Stats/Prob question with the wrong link
+                    if (this.state.tier === 'gcse' && 
+                       (prob.major_area === "Statistics" || prob.major_area === "Probability") && 
+                        prob.payhip_link === "https://payhip.com/b/XAGch") {
+                        
+                        // Apply the correction
+                        prob.payhip_link = "https://payhip.com/b/RVbqM";
+                        prob.button_text = "Master Probability and Statistics: Download the Full Probability and Statistics Pack";
+                    }
+                });
+                // ----------------------
+
                 this.state.masterVault = [...this.state.masterVault, ...monthData];
             }
-        } catch (e) { console.error("Filing error:", path); }
+        } catch (e) { console.error("Data error:", path); }
     },
 
     // --- STUDENT VIEW: REVISION MENU ---
