@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PY6CVXTWP4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-PY6CVXTWP4');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GCSE Revision Hub | Bradley’s Maths</title>
+    <title>GCSE Revision Hub | Free access to hundreds of GCSE Examination level questions for revision | Bradley’s Maths</title>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;600&display=swap" rel="stylesheet">
+    <!-- 1. SEO & BRANDING -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert GCSE Higher Tier Mathematics resources. Download predicted papers and worksheets for AQA and Pearson Edexcel by a retired International Head Teacher.">
+    <!-- Open Graph Preview (Social Sharing) -->
+    <meta property="og:title" content="Bradley's Maths | GCSE Higher Tier Mathematics Resources">
+    <meta property="og:description" content="Free access to hundreds of Pearson and AQA style GCSE Maths exam level questions for revision.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bradleysmaths.co.uk/">
+    <meta property="og:site_name" content="Bradley's Maths">
+    <meta property="og:image" content="https://bradleysmaths.co.uk/images/social-preview.png">
     <link rel="stylesheet" href="styles.css">
 
     <script>
@@ -15,12 +35,94 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
+
+    <!-- resource hub nav bar
     <nav class="navbar">
         <a href="index.html" class="nav-brand">Bradley's Maths - GCSE</a>
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="igcse-hub.html" style="color: var(--brand-purple-light);">Switch to IGCSE Hub</a>
         </div>
+    </nav>
+    -->
+         <!-- NEW NAVIGATION BAR -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">Bradley's Maths - GCSE Revision-Hub</a>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="igcse-hub.html" style="color: var(--brand-purple-light);">Switch to IGCSE Hub</a>
+            <!--Link to the Blog-->
+            <a href="blog/index.html">Blog</a>
+
+            <a href="qa.html">Q&A / Request a Topic</a>
+            
+    <!-- Highlighted IGCSE Link -->
+    <a href="igcse.html" class="highlight-link">IGCSE (0580)</a>
+
+    <!--Predicted Papers Drop-downs -->
+
+    <div class="dropdown">
+        <button class="dropbtn gold-link">Predicted Papers ▾</button>
+
+        <div class="dropdown-content">
+
+        <!-- AQA -->
+            <div class="dropdown">
+                <button class="dropbtn gold-link">AQA ▾</button>
+                    <div class="dropdown-content">
+                        <a href="https://payhip.com/b/x0OrH">Set A (£7.50)</a>
+                        <a href="https://payhip.com/b/CdRz2">Set B (£7.50)</a>
+                        <a href="https://payhip.com/b/3ZTrU">Set C (£7.50)</a>
+                        <a href="https://payhip.com/b/9cP7i" style="font-weight: bold; color: #d97706;">
+                            ★ Full 9-Paper Bundle - £15
+                        </a>
+                    </div>
+            </div>
+
+        <!-- Pearson Edexcel -->
+            <div class="dropdown">
+                <button class="dropbtn gold-link">Pearson Edexcel ▾</button>
+                <div class="dropdown-content">
+                    <a href="https://payhip.com/b/70TWm">Set A (£7.50)</a>
+                    <a href="https://payhip.com/b/isqDW">Set B (£7.50)</a>
+                    <a href="https://payhip.com/b/AIyYk">Set C (£7.50)</a>
+                    <a href="https://payhip.com/b/pYOZr" style="font-weight: bold; color: #d97706;">
+                        ★ Full 9-Paper Bundle - £15
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>       
+            <!-- Dropdown: Free Resources -->
+    <div class="dropdown">
+        <button class="dropbtn">Free Worksheets ▾</button>
+        <div class="dropdown-content">
+            <a href="Algebra - rational expressions.pdf">Algebra</a>
+            <a href="Geometry - circle theorem proofs.pdf">Geometry</a>
+            <a href="Number - direct proportion.pdf">Number</a>
+            <a href="Probability - frequency trees.pdf">Probability</a>
+        </div>
+    </div>
+
+      <!-- Booklets Dropdown -->
+            <div class="dropdown">
+                <button class="dropbtn">Course Booklets ▾</button>
+                <div class="dropdown-content">
+                    <a href="https://payhip.com/b/IVWzJ">Number Booklet (£15)</a>
+                    <a href="https://payhip.com/b/wRN86">Algebra Booklet (£20)</a>
+                    <a href="https://payhip.com/b/XAGch">Geometry Booklet (£15)</a>
+                    <a href="https://payhip.com/b/RVbqM">Probability Booklet (£10)</a>
+                    <a href="https://payhip.com/b/l2JMG" style="font-weight: bold; color: #d97706;">★ The Complete Collection</a>
+                </div>
+            </div>
+                  
+
+            <a href="https://www.youtube.com/@BradleysMaths" style="color:#ff9999;">YouTube</a>
+        </div>
+  
+       
     </nav>
 
     <div class="credential-bar">
