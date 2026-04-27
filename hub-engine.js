@@ -1,28 +1,45 @@
-// hub-engine.js - The Bradley "Gold Standard" Unified Engine
+// hub-engine.js - Bradley Gold Standard Unified Engine (Monday Realignment)
 const BradleyHub = {
     state: {
         tier: localStorage.getItem('bradley_tier') || 'gcse',
         seenIds: JSON.parse(localStorage.getItem('bradley_seen_ids') || '[]'),
         masterVault: [],
         activeMonths: ['01', '02', '03', '04', '05'],
-        currentTopic: null,
+        currentGroup: null, // We now track the "Group" (Booklet) instead of just topic
         isTeacherMode: false
+    },
+
+    // DEFINING THE REVISION GROUPS (Funnel Logic)
+    getMenuMapping() {
+        if (this.state.tier === 'gcse') {
+            return [
+                { id: "number", label: "Number", areas: ["Number", "Ratio, Proportion & Rates of Change"], link: "https://payhip.com/b/IVWzJ", btnText: "Master GCSE Number: Download the Pack" },
+                { id: "algebra", label: "Algebra", areas: ["Algebra"], link: "https://payhip.com/b/wRN86", btnText: "Master GCSE Algebra: Download the Pack" },
+                { id: "geometry", label: "Geometry", areas: ["Geometry & Measures", "Coordinate Geometry & Geometry"], link: "https://payhip.com/b/XAGch", btnText: "Master GCSE Geometry: Download the Pack" },
+                { id: "stats", label: "Stats & Prob", areas: ["Statistics", "Probability"], link: "https://payhip.com/b/RVbqM", btnText: "Master GCSE Stats & Prob: Download the Pack" }
+            ];
+        } else {
+            // IGCSE Extended 0580 Mapping
+            return [
+                { id: "num", label: "Number & Ratio", areas: ["Number", "Ratio, Proportion & Rates of Change"], link: "https://payhip.com/b/XEV2Z", btnText: "Master IGCSE Number: Download the Pack" },
+                { id: "alg", label: "Algebra", areas: ["Algebra", "Differentiation"], link: "https://payhip.com/b/mg5YS", btnText: "Master IGCSE Algebra: Download the Pack" },
+                { id: "geom", label: "Coordinate Geometry & Geometry", areas: ["Geometry & Measures", "Coordinate Geometry & Geometry", "Angles", "Circle Theorems", "Transformations"], link: "https://payhip.com/b/L6skH", btnText: "Master IGCSE Geometry: Download the Pack" },
+                { id: "trig", label: "Mensuration & Trigonometry", areas: ["Mensuration", "Trigonometry", "3D Shapes", "SOHCAHTOA", "Sine rule", "Cosine rule"], link: "https://payhip.com/b/KjXoP", btnText: "Master IGCSE Mensuration & Trig: Download the Pack" },
+                { id: "vec", label: "Vectors, Stats & Probability", areas: ["Vectors", "Statistics", "Probability"], link: "https://payhip.com/b/rsVCz", btnText: "Master IGCSE Vectors & Stats: Download the Pack" }
+            ];
+        }
     },
 
     async init(mode, tier) {
         this.state.isTeacherMode = (mode === 'audit');
-        // If a tier is passed (from the Hub pages), use it. Otherwise, use stored preference.
         this.state.tier = tier || this.state.tier;
         localStorage.setItem('bradley_tier', this.state.tier);
 
         if (this.state.isTeacherMode) {
-            // TEACHER AUDIT: Load only the month selected in the dropdown
             const picker = document.getElementById('month-picker');
-            const selectedMonth = picker ? picker.value : '04';
-            await this.loadMonthData(selectedMonth);
+            await this.loadMonthData(picker ? picker.value : '04');
             this.renderAuditList(); 
         } else {
-            // STUDENT HUB: Load all months and show the Menu
             await this.loadAllActiveMonths();
             this.renderMenu();
         }
@@ -32,142 +49,83 @@ const BradleyHub = {
     async loadAllActiveMonths() {
         this.state.masterVault = [];
         for (const mm of this.state.activeMonths) {
-            const path = `problems/${this.state.tier}/2026/${mm}.js`;
-            await this.fetchFile(path);
+            await this.fetchFile(`problems/${this.state.tier}/2026/${mm}.js`);
         }
     },
 
     async loadMonthData(mm) {
         this.state.masterVault = [];
-        const path = `problems/${this.state.tier}/2026/${mm}.js`;
-        await this.fetchFile(path);
+        await this.fetchFile(`problems/${this.state.tier}/2026/${mm}.js`);
     },
 
     async fetchFile(path) {
         try {
-            // Cache-buster ensures the browser always gets your latest GitHub edits
             const response = await fetch(path + '?v=' + new Date().getTime());
             if (!response.ok) return;
             const text = await response.text();
             const arrayMatch = text.match(/\[[\s\S]*\]/);
-            
             if (arrayMatch) {
-                let monthData = eval(arrayMatch[0]);
-
-                monthData.forEach(prob => {
-                    // --- IGCSE LINK MAPPING (The 'example' Fix) ---
-                    if (this.state.tier === 'igcse') {
-                        if (prob.major_area === "Number" || prob.major_area === "Ratio, Proportion & Rates of Change") {
-                            prob.payhip_link = "https://payhip.com/b/XEV2Z";
-                            prob.button_text = "Master IGCSE Number: Download the Full Pack";
-                        } 
-                        else if (prob.major_area === "Algebra") {
-                            prob.payhip_link = "https://payhip.com/b/mg5YS";
-                            prob.button_text = "Master IGCSE Algebra: Download the Full Pack";
-                        }
-                        else if (prob.major_area === "Geometry & Measures" || prob.major_area === "Coordinate Geometry & Geometry") {
-                            prob.payhip_link = "https://payhip.com/b/L6skH";
-                            prob.button_text = "Master IGCSE Geometry: Download the Full Pack";
-                        }
-                        else if (prob.topic === "Trigonometry" || prob.topic === "3D Shapes" || prob.major_area === "Mensuration and Trigonometry") {
-                            prob.payhip_link = "https://payhip.com/b/KjXoP";
-                            prob.button_text = "Master IGCSE Mensuration & Trig: Download the Full Pack";
-                        }
-                        else if (prob.major_area === "Statistics" || prob.major_area === "Probability" || prob.major_area === "Vectors, Probability and Statistics") {
-                            prob.payhip_link = "https://payhip.com/b/rsVCz";
-                            prob.button_text = "Master IGCSE Vectors & Stats: Download the Full Pack";
-                        }
-                    }
-
-                    // --- GCSE LINK MAPPING (The 'XAGch' Fix) ---
-                    if (this.state.tier === 'gcse') {
-                        if ((prob.major_area === "Statistics" || prob.major_area === "Probability") && 
-                             prob.payhip_link === "https://payhip.com/b/XAGch") {
-                            prob.payhip_link = "https://payhip.com/b/RVbqM";
-                            prob.button_text = "Master GCSE Stats & Probability: Download the Full Pack";
-                        }
-                    }
-                });
-
+                const monthData = eval(arrayMatch[0]);
                 this.state.masterVault = [...this.state.masterVault, ...monthData];
             }
-        } catch (e) { 
-            console.error("Filing error in month:", path, e); 
-        }
+        } catch (e) { console.error("Filing error:", path); }
     },
 
-    // --- STUDENT VIEW: REVISION MENU ---
+    // --- VIEW B: THE STUDENT HUB (Coach Flow) ---
     renderMenu() {
-        const solvedCount = this.state.seenIds.filter(id => {
-            // Logic: Only count problems belonging to the current tier
-            return (this.state.tier === 'gcse' && id.startsWith('002')) || 
-                   (this.state.tier === 'igcse' && id.startsWith('003'));
-        }).length;
+        const mapping = this.getMenuMapping();
+        const solvedCount = this.state.seenIds.filter(id => (this.state.tier === 'gcse' ? id.startsWith('002') : id.startsWith('003'))).length;
 
-        const stage = document.getElementById('hub-stage');
-        if (!stage) return;
-
-        stage.innerHTML = `
+        document.getElementById('hub-stage').innerHTML = `
             <div class="info-panel" style="background: white; border: 1px solid #ddd; text-align: center;">
                 <div class="hub-stats" style="background: var(--brand-green-light); padding: 15px; border-radius: 8px; margin-bottom: 20px; font-weight: bold; color: var(--brand-purple-dark);">
                     Head Teacher's Record: You have mastered ${solvedCount} ${this.state.tier.toUpperCase()} problems.
                 </div>
-                <h3>Choose a Topic to Access the Questions</h3>
-                <p>Every question is in the style expected in your final examinations. Solve the problem, then reveal the model answer to check your logic.</p>
-                
+                <h3>Choose a Revision Area</h3>
                 <div class="menu-grid">
-                    ${['Algebra','Number','Geometry & Measures','Ratio, Proportion & Rates of Change','Statistics','Probability']
-                        .map(t => `<button class="menu-btn" onclick="BradleyHub.serveArena('${t}')">${t === 'Ratio, Proportion & Rates of Change' ? 'Ratio & Proportion' : t}</button>`).join('')}
+                    ${mapping.map(m => `<button class="menu-btn" onclick="BradleyHub.serveArena('${m.id}')">${m.label}</button>`).join('')}
                     <button class="menu-btn random" onclick="BradleyHub.serveArena('all')">★ Random Mix ★</button>
                 </div>
+                <p style="margin-top:30px;"><a href="index.html" style="color: var(--text-muted); font-size: 0.85rem;">Return to Homepage</a></p>
             </div>`;
     },
 
-    serveArena(topic) {
-        this.state.currentTopic = topic;
+    serveArena(groupId) {
+        this.state.currentGroup = groupId;
         const today = new Date();
         today.setHours(0,0,0,0);
+        
+        const mapping = this.getMenuMapping();
+        const group = mapping.find(m => m.id === groupId);
 
         let pool = this.state.masterVault.filter(p => {
-            const topicMatch = (topic === 'all' || p.major_area === topic);
             const unseen = !this.state.seenIds.includes(p.id);
             const isPast = new Date(p.date) < today;
-            return topicMatch && unseen && isPast;
+            if (groupId === 'all') return unseen && isPast;
+            
+            // Check if the problem's major_area OR topic is in the booklet group's areas
+            const areaMatch = group.areas.includes(p.major_area) || group.areas.includes(p.topic);
+            return areaMatch && unseen && isPast;
         });
 
-        const stage = document.getElementById('hub-stage');
-        if (!stage) return;
-
         if (pool.length === 0) {
-            stage.innerHTML = `
-                <div class="info-panel">
-                    <h2>Topic Mastered!</h2>
-                    <p>Excellent work. You have viewed every archived problem in the <strong>${topic}</strong> section for this tier.</p>
-                    <button class="btn btn-purple" onclick="BradleyHub.renderMenu()">Return to Menu</button>
-                </div>`;
+            document.getElementById('hub-stage').innerHTML = `<div class="info-panel"><h2>Area Mastered!</h2><button class="btn btn-purple" onclick="BradleyHub.renderMenu()">Return to Menu</button></div>`;
             return;
         }
 
         const prob = pool[Math.floor(Math.random() * pool.length)];
-        stage.innerHTML = '';
-        stage.appendChild(this.createProblemCard(prob, false));
-        if (window.MathJax) MathJax.typesetPromise();
-    },
+        // FORCE THE CORRECT LINK BASED ON THE CURRENT GROUP
+        const finalLink = groupId === 'all' ? prob.payhip_link : group.link;
+        const finalText = groupId === 'all' ? prob.button_text : group.btnText;
 
-    // --- TEACHER VIEW: AUDIT LIST ---
-    renderAuditList() {
-        const container = document.getElementById('hub-container');
-        if (!container) return;
-        container.innerHTML = '';
-        this.state.masterVault.sort((a, b) => new Date(b.date) - new Date(a.date));
-        this.state.masterVault.forEach(prob => {
-            container.appendChild(this.createProblemCard(prob, true));
-        });
+        const stage = document.getElementById('hub-stage');
+        stage.innerHTML = '';
+        stage.appendChild(this.createProblemCard(prob, false, finalLink, finalText));
         if (window.MathJax) MathJax.typesetPromise();
     },
 
     // --- THE UNIVERSAL CARD GENERATOR ---
-    createProblemCard(prob, isAudit) {
+    createProblemCard(prob, isAudit, forcedLink, forcedText) {
         const card = document.createElement('div');
         card.className = 'daily-widget';
         if (isAudit) card.style.borderLeft = "8px solid #d9534f";
@@ -181,31 +139,23 @@ const BradleyHub = {
             imgHTML = `<img src="images/${mm}/${t}_${dd}.png" class="question-img" style="margin: 20px auto; display: block;">`;
         }
 
+        const link = forcedLink || prob.payhip_link;
+        const bText = forcedText || prob.button_text;
+
         card.innerHTML = `
             <span class="widget-header">${prob.date.toUpperCase()} | ${prob.topic} | Grade ${prob.difficulty}</span>
             <div class="question-box">${prob.q}</div>
             ${imgHTML}
-            <div id="action-area-${prob.id}">
-                <button class="reveal-btn" onclick="BradleyHub.revealSolution('${prob.id}', ${isAudit})">
-                    ${isAudit ? 'Show Model Answer' : 'I have solved it. Show Model Answer.'}
-                </button>
-            </div>
+            <div id="action-area-${prob.id}"><button class="reveal-btn" onclick="BradleyHub.revealSolution('${prob.id}', ${isAudit})">Show Model Answer</button></div>
             <div id="sol-${prob.id}" class="step-container" style="display:none;">
-                <h3 style="text-align:left; color: var(--brand-purple);">Head Teacher's Model Solution</h3>
+                <h3 style="text-align:left; color: var(--brand-purple);">Model Solution</h3>
                 ${prob.steps.map(s => `<div class="step" style="display:block;"><span class="step-text">Step</span>${s}</div>`).join('')}
                 <div class="bradley-insight-box insight-caution">
                     <span class="insight-title">The Head Teacher's Eye</span>
                     ${prob.bradley_insight.content}
                 </div>
-                ${!isAudit ? `
-                    <div style="display:flex; gap:10px; margin-top:20px; justify-content: center;">
-                        <button class="btn btn-purple" onclick="BradleyHub.serveArena('${this.state.currentTopic}')">Next Question</button>
-                        <button class="btn" style="background: var(--text-muted); color: white !important;" onclick="BradleyHub.renderMenu()">Change Area</button>
-                    </div>
-                ` : ''}
-                <a href="${prob.payhip_link}" target="_blank" class="btn-buy" style="display:block; text-align:center; margin-top:20px; background: var(--brand-green); color: white !important;">
-                    ${prob.button_text}
-                </a>
+                ${!isAudit ? `<div style="display:flex; gap:10px; margin-top:20px;"><button class="btn btn-purple" style="flex:1;" onclick="BradleyHub.serveArena('${this.state.currentGroup}')">Next Question</button><button class="btn" style="flex:1; background: var(--text-muted); color: white !important;" onclick="BradleyHub.renderMenu()">Change Area</button></div>` : ''}
+                <a href="${link}" target="_blank" class="btn-buy" style="display:block; text-align:center; margin-top:20px; background: var(--brand-green); color: white !important;">${bText}</a>
             </div>`;
         return card;
     },
@@ -215,7 +165,6 @@ const BradleyHub = {
         const act = document.getElementById(`action-area-${id}`);
         if (sol) sol.style.display = 'block';
         if (act) act.style.display = 'none';
-        
         if (!isAudit && !this.state.seenIds.includes(id)) {
             this.state.seenIds.push(id);
             localStorage.setItem('bradley_seen_ids', JSON.stringify(this.state.seenIds));
@@ -223,11 +172,14 @@ const BradleyHub = {
         if (window.MathJax) MathJax.typesetPromise();
     },
 
-    // UTILITIES
-    loadSpecificMonth(mm) { this.init('audit', this.state.tier); },
-    switchTier(t) { 
-        this.state.tier = t; 
-        localStorage.setItem('bradley_tier', t); 
-        this.init(this.state.isTeacherMode ? 'audit' : 'student', t); 
-    }
+    renderAuditList() {
+        const container = document.getElementById('hub-container');
+        if (!container) return;
+        container.innerHTML = '';
+        this.state.masterVault.sort((a, b) => new Date(b.date) - new Date(a.date));
+        this.state.masterVault.forEach(prob => container.appendChild(this.createProblemCard(prob, true)));
+        if (window.MathJax) MathJax.typesetPromise();
+    },
+
+    loadSpecificMonth(mm) { this.init('audit', this.state.tier); }
 };
