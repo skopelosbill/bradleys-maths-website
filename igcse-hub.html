@@ -1,39 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- OVERRIDES (must stay ABOVE <head>) -->
+<meta name="page-title" content="IGCSE Maths Hub">
+<meta name="page-description" content="All IGCSE Higher Tier topics organised for quick access.">
+<meta name="page-url" content="https://bradleysmaths.co.uk/igcse-hub.html">
+<meta name="page-og-image" content="/images/03/i_04.png">
+<meta name="page-type" content="webpage">
+
 <head>
-     <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PY6CVXTWP4"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-PY6CVXTWP4');
     </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IGCSE Revision Hub | Free access to hundreds of IGCSE Examination level questions for revision | Bradley’s Maths</title>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;600&display=swap" rel="stylesheet">
-    <!-- 1. SEO & BRANDING -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Expert IGCSE Extended Level Mathematics resources. Download predicted papers and worksheets for Cambridge (0580) Extended level by a retired International Head Teacher.">
-    <!-- Open Graph Preview (Social Sharing) -->
-    <meta property="og:title" content="Bradley's Maths | IGCSE Higher Tier Mathematics Resources">
-    <meta property="og:description" content="Free access to hundreds of Cambridge (0580) style IGCSE Maths exam level questions for revision.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://bradleysmaths.co.uk/">
-    <meta property="og:site_name" content="Bradley's Maths">
-    <meta property="og:image" content="https://bradleysmaths.co.uk/images/social-preview.png">
-    <link rel="stylesheet" href="styles.css">
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Basic SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- DEFAULTS (will be replaced by overrides if present) -->
+    <title>Bradley's Maths</title>
+    <meta name="description" content="Higher Tier GCSE & IGCSE Maths resources. Worksheets, model answers, and predicted papers.">
+
+    <!-- Canonical (dynamic) -->
+    <link id="canonical-link" rel="canonical" href="">
+
+    <!-- Open Graph (dynamic) -->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="Bradley's Maths">
+    <meta property="og:image" content="">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- MathJax -->
     <script>
-      window.MathJax = {
-        tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$']], processEscapes: true }
-      };
+      window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!-- JSON-LD container -->
+    <script id="jsonld-block" type="application/ld+json"></script>
+
+    <!-- DYNAMIC META SCRIPT -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+
+        // Read overrides
+        const title = document.querySelector('meta[name="page-title"]')?.content || "Bradley's Maths";
+        const desc = document.querySelector('meta[name="page-description"]')?.content || "Higher Tier GCSE & IGCSE Maths resources.";
+        const url = document.querySelector('meta[name="page-url"]')?.content || window.location.href;
+        const img = document.querySelector('meta[name="page-og-image"]')?.content || "/images/social-preview.png";
+        const type = document.querySelector('meta[name="page-type"]')?.content || "webpage";
+
+        // Apply title + description
+        document.title = title;
+        document.querySelector('meta[name="description"]').setAttribute("content", desc);
+
+        // Canonical
+        document.getElementById("canonical-link").setAttribute("href", url);
+
+        // Open Graph
+        document.querySelector('meta[property="og:title"]').setAttribute("content", title);
+        document.querySelector('meta[property="og:description"]').setAttribute("content", desc);
+        document.querySelector('meta[property="og:url"]').setAttribute("content", url);
+        document.querySelector('meta[property="og:image"]').setAttribute("content", img);
+
+        // OG type
+        const ogType = (type === "article") ? "article" :
+                       (type === "homepage") ? "website" :
+                       "website";
+        document.querySelector('meta[property="og:type"]').setAttribute("content", ogType);
+
+        // JSON-LD generation
+        let jsonld = {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": title,
+          "url": url
+        };
+
+        document.getElementById("jsonld-block").textContent = JSON.stringify(jsonld, null, 2);
+      });
+    </script>
+
 </head>
+
 <body>
 
     <!-- resource hub nav bar
