@@ -1,0 +1,188 @@
+<!-- OVERRIDES (must stay ABOVE <head>) -->
+<meta name="page-title" content="Bradley's Maths – The Revision Hub">
+<meta name="page-description" content="Choose GCSE or IGCSE and begin personalised Higher Tier revision with daily problems and model answers.">
+<meta name="page-url" content="https://bradleysmaths.co.uk/unified-revision-hub.html">
+<meta name="page-og-image" content="/images/01/g_13.png">
+<meta name="page-type" content="webpage">
+
+<head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PY6CVXTWP4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-PY6CVXTWP4');
+    </script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Basic SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- DEFAULTS (will be replaced by overrides if present) -->
+    <title>Bradley's Maths</title>
+    <meta name="description" content="Higher Tier GCSE & IGCSE Maths resources. Worksheets, model answers, and predicted papers.">
+
+    <!-- Canonical (dynamic) -->
+    <link id="canonical-link" rel="canonical" href="">
+
+    <!-- Open Graph (dynamic) -->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="Bradley's Maths">
+    <meta property="og:image" content="">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- MathJax -->
+    <script>
+      window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!-- JSON-LD container -->
+    <script id="jsonld-block" type="application/ld+json"></script>
+
+    <!-- DYNAMIC META SCRIPT -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+
+        const title = document.querySelector('meta[name="page-title"]')?.content || "Bradley's Maths";
+        const desc = document.querySelector('meta[name="page-description"]')?.content || "Higher Tier GCSE & IGCSE Maths resources.";
+        const url = document.querySelector('meta[name="page-url"]')?.content || window.location.href;
+        const img = document.querySelector('meta[name="page-og-image"]')?.content || "/images/social-preview.png";
+        const type = document.querySelector('meta[name="page-type"]')?.content || "webpage";
+
+        document.title = title;
+        document.querySelector('meta[name="description"]').setAttribute("content", desc);
+
+        document.getElementById("canonical-link").setAttribute("href", url);
+
+        document.querySelector('meta[property="og:title"]').setAttribute("content", title);
+        document.querySelector('meta[property="og:description"]').setAttribute("content", desc);
+        document.querySelector('meta[property="og:url"]').setAttribute("content", url);
+        document.querySelector('meta[property="og:image"]').setAttribute("content", img);
+
+        const ogType = (type === "article") ? "article" :
+                       (type === "homepage") ? "website" :
+                       "website";
+        document.querySelector('meta[property="og:type"]').setAttribute("content", ogType);
+
+        let jsonld = {};
+
+        if (type === "homepage") {
+          jsonld = {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Bradley's Maths",
+            "url": url,
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": url + "?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          };
+        }
+
+        if (type === "webpage") {
+          jsonld = {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": title,
+            "url": url
+          };
+        }
+
+        if (type === "article") {
+          jsonld = {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": title,
+            "description": desc,
+            "url": url,
+            "image": img,
+            "author": { "@type": "Person", "name": "William Bradley" }
+          };
+        }
+
+        document.getElementById("jsonld-block").textContent = JSON.stringify(jsonld, null, 2);
+      });
+    </script>
+</head>
+
+<body>
+
+    <main class="container hub-container">
+
+        <h1>Bradley’s Maths</h1>
+        <h2>The Revision Hub</h2>
+
+        <!-- Tier selector -->
+        <section id="tier-selector" class="info-panel" style="text-align:center; margin-bottom: 30px;">
+            <p>Select GCSE or IGCSE to begin your personalised revision journey.</p>
+            <div class="menu-grid" style="margin-top:20px;">
+                <button class="menu-btn" id="btn-gcse">GCSE Higher Tier</button>
+                <button class="menu-btn" id="btn-igcse">IGCSE Extended</button>
+            </div>
+        </section>
+
+        <!-- Active hub stage (engine writes here) -->
+        <section id="hub-stage-wrapper">
+            <div id="hub-stage" class="info-panel" style="text-align:center;">
+                <p>Please choose GCSE or IGCSE above to load your revision hub.</p>
+            </div>
+        </section>
+
+        <!-- Tier switcher -->
+        <section id="tier-switcher" style="margin-top:30px; text-align:center; display:none;">
+            <p style="font-size:0.9rem; color:var(--text-muted);">Not the right course?</p>
+            <button class="btn" id="switch-tier-btn" style="background:var(--brand-purple); color:white !important;">
+                Switch GCSE / IGCSE
+            </button>
+        </section>
+
+    </main>
+
+    <!-- Hub engine -->
+    <script src="/hub-engine.js"></script>
+
+    <!-- Hub wiring -->
+    <script>
+      (function () {
+        const selector = document.getElementById('tier-selector');
+        const switcher = document.getElementById('tier-switcher');
+        const switchBtn = document.getElementById('switch-tier-btn');
+        const btnGCSE = document.getElementById('btn-gcse');
+        const btnIGCSE = document.getElementById('btn-igcse');
+
+        function startHub(tier) {
+          selector.style.display = 'none';
+          switcher.style.display = 'block';
+          BradleyHub.init('student', tier);
+        }
+
+        btnGCSE.addEventListener('click', function () {
+          startHub('gcse');
+        });
+
+        btnIGCSE.addEventListener('click', function () {
+          startHub('igcse');
+        });
+
+        switchBtn.addEventListener('click', function () {
+          selector.style.display = 'block';
+          switcher.style.display = 'none';
+          document.getElementById('hub-stage').innerHTML =
+            '<p>Please choose GCSE or IGCSE above to load your revision hub.</p>';
+        });
+      })();
+    </script>
+
+</body>
+</html>
