@@ -732,6 +732,61 @@ h1, h2, h3 {
 
 }
 
+/* Pink-purple small titles */
+.topic-toggle {
+    background: none;
+    border: none;
+    color: #5b3a8e;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 6px 0;
+    text-align: left;
+    width: 100%;
+}
+
+/* Dropdown panel styled like a mini-card */
+.dropdown-panel {
+    display: none;
+    background: #faf7ff;
+    padding: 14px 16px;
+    margin-top: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+}
+
+/* Slide-down animation */
+.topic-section.open .dropdown-panel {
+    display: block;
+    animation: slideDown 0.25s ease-out;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Dropdown list */
+.dropdown-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-list li {
+    margin: 6px 0;
+}
+
+.dropdown-list a {
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-list a:hover {
+    text-decoration: underline;
+}
+
+
 @media (max-width: 768px) {
 
     .blog-container {
