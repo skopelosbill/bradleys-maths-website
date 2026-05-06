@@ -158,23 +158,14 @@ const BradleyHub = {
             </div>`;
         return card;
     },
-        // --- THE UNIVERSAL ANSWER EXTRACTOR ---
+       // --- THE UNIVERSAL ANSWER EXTRACTOR ---
     extractFinalAnswer(finalStep) {
         if (!finalStep) return "";
 
         let answerPart = finalStep.split("Final Answer:")[1];
         if (!answerPart) return "";
 
-        // Remove LaTeX markers
-        answerPart = answerPart.replace(/\$\$/g, "");
-        
-        // CLEANUP: Remove LaTeX slashes used for spacing or escaping
-        answerPart = answerPart.replace(/\\\s/g, " "); // changes "\ " to a normal space
-        answerPart = answerPart.replace(/\\%/g, "%");  // changes "\%" to "%"
-        answerPart = answerPart.replace(/\\£/g, "£");  // changes "\£" to "£"
-        answerPart = answerPart.replace(/\\/g, "");    // strip any remaining stray backslashes
-
-        // Remove HTML tags and normalise spaces
+        // Remove HTML tags but KEEP all the LaTeX formatting and $$ markers
         answerPart = answerPart.replace(/<[^>]*>/g, "");
         answerPart = answerPart.replace(/\s+/g, " ").trim();
 
@@ -313,8 +304,9 @@ const BradleyHub = {
                 <p style="margin-bottom: 15px; font-weight: bold; color: var(--brand-purple); text-align: center;">Select your answer:</p>
                 <div style="display: flex; flex-direction: column; gap: 8px; align-items: center;">
                     ${shuffled.map(opt => {
-                        const safeOpt = opt.replace(/'/g, "\\'");
-                        const safeCorrect = correct.replace(/'/g, "\\'");
+                        // CRITICAL FIX: Escape backslashes so HTML doesn't eat the LaTeX!
+                        const safeOpt = opt.replace(/\\/g, "\\\\").replace(/'/g, "\\'");
+                        const safeCorrect = correct.replace(/\\/g, "\\\\").replace(/'/g, "\\'");
                         return `
                         <button class="mcq-btn" style="width: 100%; max-width: 400px; padding: 12px; font-size: 1rem; border: 1px solid var(--brand-purple); border-radius: 6px; background: white; cursor: pointer;" 
                                 onclick="BradleyHub.checkAnswer('${prob.id}', '${safeOpt}', '${safeCorrect}')">
@@ -328,8 +320,6 @@ const BradleyHub = {
 
             <div id="sol-${prob.id}" class="step-container" style="display:none;">
                 <h3 style="text-align:left; color: var(--brand-purple);">Model Solution</h3>
-                
-                <!-- BRUTE FORCE CSS OVERRIDE TO ENSURE STEPS SHOW -->
                 ${prob.steps.map(s => `<div class="step" style="display:block !important; visibility:visible !important; opacity:1 !important; height:auto !important; margin-bottom:12px;"><span class="step-text" style="font-weight:bold; color:var(--brand-purple); margin-right:8px;">Step</span>${s}</div>`).join('')}
 
                 <div class="bradley-insight-box insight-caution" style="margin-top: 20px;">
