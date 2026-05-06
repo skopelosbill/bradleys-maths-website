@@ -162,88 +162,76 @@ const BradleyHub = {
     extractFinalAnswer(finalStep) {
         if (!finalStep) return "";
 
-        // 1. Find the "Final Answer:" part
         let answerPart = finalStep.split("Final Answer:")[1];
         if (!answerPart) return "";
 
-        // 2. Remove LaTeX block markers $$...$$
+        // Remove LaTeX markers
         answerPart = answerPart.replace(/\$\$/g, "");
+        
+        // CLEANUP: Remove LaTeX slashes used for spacing or escaping
+        answerPart = answerPart.replace(/\\\s/g, " "); // changes "\ " to a normal space
+        answerPart = answerPart.replace(/\\%/g, "%");  // changes "\%" to "%"
+        answerPart = answerPart.replace(/\\£/g, "£");  // changes "\£" to "£"
+        answerPart = answerPart.replace(/\\/g, "");    // strip any remaining stray backslashes
 
-        // 3. Remove surrounding whitespace and HTML tags
-        answerPart = answerPart.trim();
+        // Remove HTML tags and normalise spaces
         answerPart = answerPart.replace(/<[^>]*>/g, "");
-
-        // 4. Normalise spaces
         answerPart = answerPart.replace(/\s+/g, " ").trim();
 
-    return answerPart;
+        return answerPart;
     },
-    // --- THE DISTRACTOR GENERATOR ---
+   // --- THE DISTRACTOR GENERATOR ---
     generateDistractors(correct, prob) {
-    const distractors = [];
+        const distractors =[];
+        
+        // Regex to find all numbers (decimals and negatives included) in the string
+        const numRegex = /-?\d+(\.\d+)?/g;
+        const matches = correct.match(numRegex);
 
-    // --- 1. Try to extract a numeric value ---
-    const numMatch = correct.match(/-?\d+(\.\d+)?/);
-    let baseNumber = numMatch ? parseFloat(numMatch[0]) : null;
+        // If there are no numbers at all, fallback to text distractors
+        if (!matches) {
+            return[
+                "Not enough information",
+                "The opposite of the correct answer",
+                "None of the parts are correct"
+            ];
+        }
 
-    // --- 2. Topic-aware distractors ---
-    const topic = prob.topic.toLowerCase();
-    const area = prob.major_area.toLowerCase();
+        // Helper function to plausibly tweak numbers found in the string
+        const tweakNumber = (valStr, strategy) => {
+            let num = parseFloat(valStr);
+            let isDecimal = valStr.includes('.');
+            let decPlaces = isDecimal ? valStr.split('.')[1].length : 0;
+            
+            let newVal;
+            if (strategy === 'high') {
+                newVal = num > 20 ? num * 1.1 : num + (isDecimal ? 0.5 : 2);
+            } else if (strategy === 'low') {
+                newVal = num > 20 ? num * 0.9 : num - (isDecimal ? 0.5 : 2);
+                if (newVal < 0 && num > 0) newVal = num / 2; // Prevent turning a positive answer negative
+            } else if (strategy === 'slip') {
+                newVal = num + (isDecimal ? 1.5 : 10);
+            }
 
-    // PERCENTAGE QUESTIONS
-    if (topic.includes("percent") || correct.includes("%")) {
-        distractors.push((baseNumber * 0.9).toFixed(1) + "%");  // 10% too low
-        distractors.push((baseNumber * 1.1).toFixed(1) + "%");  // 10% too high
-        distractors.push((baseNumber + 5).toFixed(1) + "%");    // arithmetic slip
-        return distractors;
-    }
+            // Return with the original formatting (keep decimals intact)
+            return isDecimal ? newVal.toFixed(decPlaces) : Math.round(newVal).toString();
+        };
 
-    // ANGLES / POLYGONS
-    if (topic.includes("angle") || topic.includes("polygon")) {
-        distractors.push(baseNumber + 180);   // wrong formula
-        distractors.push(baseNumber - 180);   // exterior instead of interior
-        distractors.push(baseNumber + 20);    // arithmetic slip
-        return distractors;
-    }
+        // Create 3 distractors by applying the tweaks to every number in the string
+        let d1 = correct.replace(numRegex, m => tweakNumber(m, 'high'));
+        let d2 = correct.replace(numRegex, m => tweakNumber(m, 'low'));
+        let d3 = correct.replace(numRegex, m => tweakNumber(m, 'slip'));
 
-    // ALGEBRA
-    if (area.includes("algebra")) {
-        distractors.push(baseNumber + 2);     // sign error
-        distractors.push(baseNumber - 2);     // rearrangement slip
-        distractors.push(baseNumber * -1);    // wrong root
-        return distractors;
-    }
+        // Failsafe: if the tweaks somehow match the correct answer exactly, force a change
+        if (d1 === correct) d1 += " (approx)";
+        if (d2 === correct || d2 === d1) d2 = "None of the parts match";
+        if (d3 === correct || d3 === d2) d3 = "Cannot be determined";
 
-    // TRIGONOMETRY
-    if (area.includes("trig")) {
-        distractors.push((baseNumber * 0.5).toFixed(2));  // wrong ratio
-        distractors.push((baseNumber * 2).toFixed(2));    // inverted ratio
-        distractors.push((baseNumber + 10).toFixed(2));   // arithmetic slip
-        return distractors;
-    }
-
-    // DIFFERENTIATION (IGCSE only)
-    if (topic.includes("differentiat") || area.includes("differentiation")) {
-        distractors.push(baseNumber + 1);     // power rule wrong
-        distractors.push(baseNumber - 1);     // coefficient ignored
-        distractors.push(baseNumber * 2);     // exponent doubled
-        return distractors;
-    }
-
-    // --- 3. Universal fallback distractors ---
-    if (baseNumber !== null) {
-        distractors.push(baseNumber + 1);
-        distractors.push(baseNumber - 1);
-        distractors.push(baseNumber * 2);
-    } else {
-        // Non-numeric answers → generic plausible distractors
-        distractors.push("Not enough information");
-        distractors.push("The opposite of the correct answer");
-        distractors.push("A common misconception");
-    }
-
-    return distractors;
-},
+        distractors.push(d1, d2, d3);
+        
+        // Remove duplicates just in case
+        return[...new Set(distractors)];
+    },
     // --- THE ANSWER CHECKER ---
     checkAnswer(probId, chosen, correct) {
         const feedbackBox = document.getElementById(`feedback-${probId}`);
@@ -282,7 +270,7 @@ const BradleyHub = {
         this.revealSolution(probId, false);
     },
 
-    // --- INTERACTIVE CARD GENERATOR  ---
+   // --- INTERACTIVE CARD GENERATOR  ---
     createInteractiveCard(prob, link, btnText) {
         const card = document.createElement('div');
         card.className = 'daily-widget';
@@ -295,7 +283,7 @@ const BradleyHub = {
         const distractors = this.generateDistractors(correct, prob);
 
         // --- Build options array ---
-        const options = [correct, ...distractors, "None of the above"];
+        const options =[correct, ...distractors, "None of the above"];
         const shuffled = options.sort(() => Math.random() - 0.5);
 
         // --- Image logic ---
@@ -321,14 +309,21 @@ const BradleyHub = {
                 </button>
             </div>
 
-            <!-- 2. Hidden MCQ Options -->
+            <!-- 2. Hidden MCQ Options (NOW STACKED VERTICALLY) -->
             <div id="options-${prob.id}" class="mcq-options" style="display:none; margin-top: 20px;">
-                <p style="margin-bottom: 10px; font-weight: bold; color: var(--brand-purple); text-align: center;">Select your answer:</p>
-                ${shuffled.map(opt => `
-                    <button class="mcq-btn" onclick="BradleyHub.checkAnswer('${prob.id}', '${opt}', '${correct}')">
-                        ${opt}
-                    </button>
-                `).join('')}
+                <p style="margin-bottom: 15px; font-weight: bold; color: var(--brand-purple); text-align: center;">Select your answer:</p>
+                <div style="display: flex; flex-direction: column; gap: 8px; align-items: center;">
+                    ${shuffled.map(opt => {
+                        // Safely escape quotes to prevent breaking the onclick handler
+                        const safeOpt = opt.replace(/'/g, "\\'");
+                        const safeCorrect = correct.replace(/'/g, "\\'");
+                        return `
+                        <button class="mcq-btn" style="width: 100%; max-width: 400px; padding: 12px; font-size: 1rem; border: 1px solid var(--brand-purple); border-radius: 6px; background: white; cursor: pointer;" 
+                                onclick="BradleyHub.checkAnswer('${prob.id}', '${safeOpt}', '${safeCorrect}')">
+                            ${opt}
+                        </button>`
+                    }).join('')}
+                </div>
             </div>
 
             <!-- 3. Feedback Box -->
