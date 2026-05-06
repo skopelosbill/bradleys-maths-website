@@ -285,8 +285,6 @@ const BradleyHub = {
         // --- Build options array ---
         const optionsToShuffle =[correct, ...distractors];
         const shuffled = optionsToShuffle.sort(() => Math.random() - 0.5);
-        
-        // Always place "None of the above" at the very end
         shuffled.push("None of the above");
 
         // --- Image logic ---
@@ -305,19 +303,16 @@ const BradleyHub = {
             <div class="question-box">${prob.q}</div>
             ${imgHTML}
 
-            <!-- 1. Initial "Reveal" Button -->
             <div id="action-area-${prob.id}" style="text-align: center; margin-top: 20px;">
                 <button class="reveal-btn" onclick="BradleyHub.revealOptions('${prob.id}')">
                     I'm Ready: Reveal Answer Options
                 </button>
             </div>
 
-            <!-- 2. Hidden MCQ Options (NOW STACKED VERTICALLY) -->
             <div id="options-${prob.id}" class="mcq-options" style="display:none; margin-top: 20px;">
                 <p style="margin-bottom: 15px; font-weight: bold; color: var(--brand-purple); text-align: center;">Select your answer:</p>
                 <div style="display: flex; flex-direction: column; gap: 8px; align-items: center;">
                     ${shuffled.map(opt => {
-                        // Safely escape quotes to prevent breaking the onclick handler
                         const safeOpt = opt.replace(/'/g, "\\'");
                         const safeCorrect = correct.replace(/'/g, "\\'");
                         return `
@@ -329,18 +324,15 @@ const BradleyHub = {
                 </div>
             </div>
 
-            <!-- 3. Feedback Box -->
             <div id="feedback-${prob.id}" class="feedback-box" style="display:none; margin-top: 15px; text-align: center; padding: 10px; border-radius: 5px;"></div>
 
-            <!-- 4. Hidden Worked Solution -->
             <div id="sol-${prob.id}" class="step-container" style="display:none;">
                 <h3 style="text-align:left; color: var(--brand-purple);">Model Solution</h3>
                 
-                <!-- FIX: Added display:block and the step-text span back in! -->
-                ${prob.steps.map(s => `<div class="step" style="display:block;"><span class="step-text">Step</span>${s}</div>`).join('')}
+                <!-- BRUTE FORCE CSS OVERRIDE TO ENSURE STEPS SHOW -->
+                ${prob.steps.map(s => `<div class="step" style="display:block !important; visibility:visible !important; opacity:1 !important; height:auto !important; margin-bottom:12px;"><span class="step-text" style="font-weight:bold; color:var(--brand-purple); margin-right:8px;">Step</span>${s}</div>`).join('')}
 
-                <!-- FIX: Restored original Head Teacher's Eye formatting -->
-                <div class="bradley-insight-box insight-caution">
+                <div class="bradley-insight-box insight-caution" style="margin-top: 20px;">
                     <span class="insight-title">The Head Teacher's Eye</span>
                     ${prob.bradley_insight.content}
                 </div>
