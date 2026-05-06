@@ -283,8 +283,11 @@ const BradleyHub = {
         const distractors = this.generateDistractors(correct, prob);
 
         // --- Build options array ---
-        const options =[correct, ...distractors, "None of the above"];
-        const shuffled = options.sort(() => Math.random() - 0.5);
+        const optionsToShuffle =[correct, ...distractors];
+        const shuffled = optionsToShuffle.sort(() => Math.random() - 0.5);
+        
+        // Always place "None of the above" at the very end
+        shuffled.push("None of the above");
 
         // --- Image logic ---
         let imgHTML = '';
