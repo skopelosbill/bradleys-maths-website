@@ -335,10 +335,13 @@ const BradleyHub = {
             <!-- 4. Hidden Worked Solution -->
             <div id="sol-${prob.id}" class="step-container" style="display:none;">
                 <h3 style="text-align:left; color: var(--brand-purple);">Model Solution</h3>
-                ${prob.steps.map(s => `<div class="step">${s}</div>`).join('')}
+                
+                <!-- FIX: Added display:block and the step-text span back in! -->
+                ${prob.steps.map(s => `<div class="step" style="display:block;"><span class="step-text">Step</span>${s}</div>`).join('')}
 
-                <div class="bradley-insight-box insight-${prob.bradley_insight.type}">
-                    <span class="insight-title">${prob.bradley_insight.title}</span>
+                <!-- FIX: Restored original Head Teacher's Eye formatting -->
+                <div class="bradley-insight-box insight-caution">
+                    <span class="insight-title">The Head Teacher's Eye</span>
                     ${prob.bradley_insight.content}
                 </div>
 
