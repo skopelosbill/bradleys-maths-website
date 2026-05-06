@@ -1318,6 +1318,58 @@ h2[id] {
     to { opacity: 1; transform: translateY(0); }
 }
 
+/* ========================= */
+/* MCQ BUTTONS */
+/* ========================= */
+
+/* --- MCQ BUTTONS --- */
+.mcq-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.mcq-btn {
+    padding: 12px 16px;
+    background: #f3f4f6;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.mcq-btn:hover {
+    background: #e5e7eb;
+}
+
+/* --- FEEDBACK BOX --- */
+.feedback-box {
+    margin-top: 20px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* --- REVEAL BUTTON --- */
+.reveal-btn {
+    margin-top: 20px;
+    padding: 12px 16px;
+    background: var(--brand-purple);
+    color: white !important;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.reveal-btn:hover {
+    opacity: 0.9;
+}
 
 
 /* ========================= */

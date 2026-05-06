@@ -120,7 +120,7 @@ const BradleyHub = {
 
         const stage = document.getElementById('hub-stage');
         stage.innerHTML = '';
-        stage.appendChild(this.createProblemCard(prob, false, finalLink, finalText));
+        stage.appendChild(this.createInteractiveCard(prob, finalLink, finalText));
         if (window.MathJax) MathJax.typesetPromise();
     },
 
@@ -138,8 +138,7 @@ const BradleyHub = {
             const t = this.state.tier === 'gcse' ? 'g' : 'i';
             imgHTML = `<img src="images/${mm}/${t}_${dd}.png" class="question-img" style="margin: 20px auto; display: block;">`;
         }
-
-        const link = forcedLink || prob.payhip_link;
+    const link = forcedLink || prob.payhip_link;
         const bText = forcedText || prob.button_text;
 
         card.innerHTML = `
@@ -159,6 +158,211 @@ const BradleyHub = {
             </div>`;
         return card;
     },
+        // --- THE UNIVERSAL ANSWER EXTRACTOR ---
+    extractFinalAnswer(finalStep) {
+        if (!finalStep) return "";
+
+        // 1. Find the "Final Answer:" part
+        let answerPart = finalStep.split("Final Answer:")[1];
+        if (!answerPart) return "";
+
+        // 2. Remove LaTeX block markers $$...$$
+        answerPart = answerPart.replace(/\$\$/g, "");
+
+        // 3. Remove surrounding whitespace and HTML tags
+        answerPart = answerPart.trim();
+        answerPart = answerPart.replace(/<[^>]*>/g, "");
+
+        // 4. Normalise spaces
+        answerPart = answerPart.replace(/\s+/g, " ").trim();
+
+    return answerPart;
+    },
+    // --- THE DISTRACTOR GENERATOR ---
+    generateDistractors(correct, prob) {
+    const distractors = [];
+
+    // --- 1. Try to extract a numeric value ---
+    const numMatch = correct.match(/-?\d+(\.\d+)?/);
+    let baseNumber = numMatch ? parseFloat(numMatch[0]) : null;
+
+    // --- 2. Topic-aware distractors ---
+    const topic = prob.topic.toLowerCase();
+    const area = prob.major_area.toLowerCase();
+
+    // PERCENTAGE QUESTIONS
+    if (topic.includes("percent") || correct.includes("%")) {
+        distractors.push((baseNumber * 0.9).toFixed(1) + "%");  // 10% too low
+        distractors.push((baseNumber * 1.1).toFixed(1) + "%");  // 10% too high
+        distractors.push((baseNumber + 5).toFixed(1) + "%");    // arithmetic slip
+        return distractors;
+    }
+
+    // ANGLES / POLYGONS
+    if (topic.includes("angle") || topic.includes("polygon")) {
+        distractors.push(baseNumber + 180);   // wrong formula
+        distractors.push(baseNumber - 180);   // exterior instead of interior
+        distractors.push(baseNumber + 20);    // arithmetic slip
+        return distractors;
+    }
+
+    // ALGEBRA
+    if (area.includes("algebra")) {
+        distractors.push(baseNumber + 2);     // sign error
+        distractors.push(baseNumber - 2);     // rearrangement slip
+        distractors.push(baseNumber * -1);    // wrong root
+        return distractors;
+    }
+
+    // TRIGONOMETRY
+    if (area.includes("trig")) {
+        distractors.push((baseNumber * 0.5).toFixed(2));  // wrong ratio
+        distractors.push((baseNumber * 2).toFixed(2));    // inverted ratio
+        distractors.push((baseNumber + 10).toFixed(2));   // arithmetic slip
+        return distractors;
+    }
+
+    // DIFFERENTIATION (IGCSE only)
+    if (topic.includes("differentiat") || area.includes("differentiation")) {
+        distractors.push(baseNumber + 1);     // power rule wrong
+        distractors.push(baseNumber - 1);     // coefficient ignored
+        distractors.push(baseNumber * 2);     // exponent doubled
+        return distractors;
+    }
+
+    // --- 3. Universal fallback distractors ---
+    if (baseNumber !== null) {
+        distractors.push(baseNumber + 1);
+        distractors.push(baseNumber - 1);
+        distractors.push(baseNumber * 2);
+    } else {
+        // Non-numeric answers → generic plausible distractors
+        distractors.push("Not enough information");
+        distractors.push("The opposite of the correct answer");
+        distractors.push("A common misconception");
+    }
+
+    return distractors;
+},
+    // --- THE ANSWER CHECKER ---
+    checkAnswer(probId, chosen, correct) {
+    const feedbackBox = document.getElementById(`feedback-${probId}`);
+    const revealBtn = document.getElementById(`reveal-${probId}`);
+
+    if (!feedbackBox) return;
+
+    // Normalise both answers for comparison
+    const cleanChosen = chosen.toString().trim().toLowerCase();
+    const cleanCorrect = correct.toString().trim().toLowerCase();
+
+    let isCorrect = (cleanChosen === cleanCorrect);
+
+    // --- FEEDBACK ---
+    if (isCorrect) {
+        feedbackBox.style.display = "block";
+        feedbackBox.style.background = "#d1fae5"; // green tint
+        feedbackBox.style.color = "#065f46";
+        feedbackBox.innerHTML = `<strong>Correct!</strong> Well done.`;
+    } else {
+        feedbackBox.style.display = "block";
+        feedbackBox.style.background = "#fee2e2"; // red tint
+        feedbackBox.style.color = "#991b1b";
+        feedbackBox.innerHTML = `
+            <strong>Incorrect.</strong>  
+            This is a common misconception — check the model answer.
+        `;
+    }
+
+    // --- REVEAL BUTTON ---
+    if (revealBtn) revealBtn.style.display = "block";
+
+    // --- Mark as seen (same logic as revealSolution) ---
+    if (!this.state.seenIds.includes(probId)) {
+        this.state.seenIds.push(probId);
+        localStorage.setItem('bradley_seen_ids', JSON.stringify(this.state.seenIds));
+    }
+
+    if (window.MathJax) MathJax.typesetPromise();
+},
+
+    // --- INTERACTIVE CARD GENERATOR  ---
+    createInteractiveCard(prob, link, btnText) {
+    const card = document.createElement('div');
+    card.className = 'daily-widget';
+
+    // --- Extract correct answer ---
+    const finalStep = prob.steps[prob.steps.length - 1];
+    const correct = this.extractFinalAnswer(finalStep);
+
+    // --- Generate distractors ---
+    const distractors = this.generateDistractors(correct, prob);
+
+    // --- Build options array ---
+    const options = [correct, ...distractors, "None of the above"];
+    const shuffled = options.sort(() => Math.random() - 0.5);
+
+    // --- Image logic (same as your existing system) ---
+    let imgHTML = '';
+    if (prob.img === "true") {
+        const d = new Date(prob.date);
+        const mm = String(d.getMonth() + 1).padStart(2, '0');
+        const dd = String(d.getDate()).padStart(2, '0');
+        const t = this.state.tier === 'gcse' ? 'g' : 'i';
+        imgHTML = `<img src="images/${mm}/${t}_${dd}.png" class="question-img" style="margin: 20px auto; display: block;">`;
+    }
+
+    // --- Build the card HTML ---
+    card.innerHTML = `
+        <span class="widget-header">${prob.date.toUpperCase()} | ${prob.topic} | Grade ${prob.difficulty}</span>
+        <div class="question-box">${prob.q}</div>
+        ${imgHTML}
+
+        <div class="mcq-options">
+            ${shuffled.map(opt => `
+                <button class="mcq-btn" onclick="BradleyHub.checkAnswer('${prob.id}', '${opt}', '${correct}')">
+                    ${opt}
+                </button>
+            `).join('')}
+        </div>
+
+        <div id="feedback-${prob.id}" class="feedback-box" style="display:none;"></div>
+
+        <button id="reveal-${prob.id}" class="reveal-btn" style="display:none;"
+            onclick="BradleyHub.revealSolution('${prob.id}', false)">
+            Show Model Answer
+        </button>
+
+        <div id="sol-${prob.id}" class="step-container" style="display:none;">
+            <h3 style="text-align:left; color: var(--brand-purple);">Model Solution</h3>
+            ${prob.steps.map(s => `<div class="step">${s}</div>`).join('')}
+
+            <div class="bradley-insight-box insight-${prob.bradley_insight.type}">
+                <span class="insight-title">${prob.bradley_insight.title}</span>
+                ${prob.bradley_insight.content}
+            </div>
+
+            <div style="display:flex; gap:10px; margin-top:20px;">
+                <button class="btn btn-purple" style="flex:1;"
+                    onclick="BradleyHub.serveArena('${this.state.currentGroup}')">
+                    Next Question
+                </button>
+                <button class="btn" style="flex:1; background: var(--text-muted); color: white !important;"
+                    onclick="BradleyHub.renderMenu()">
+                    Change Area
+                </button>
+            </div>
+
+            <a href="${link}" target="_blank" class="btn-buy"
+                style="display:block; text-align:center; margin-top:20px; background: var(--brand-green); color: white !important;">
+                ${btnText}
+            </a>
+        </div>
+    `;
+
+    return card;
+},
+
+        
 
     revealSolution(id, isAudit) {
         const sol = document.getElementById(`sol-${id}`);
