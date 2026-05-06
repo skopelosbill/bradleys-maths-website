@@ -410,7 +410,7 @@
         "topic": "Decimals",
         "subtopic": "Converting between decimals and fractions",
         "difficulty": "6/7",
-        "q": "Show that the recurring decimal $0.4\\dot{5}$ can be written as the fraction $\\dfrac{41}{90}$ in its simplest form.",
+        "q": "Express the recurring decimal $0.4\\dot{5}$ as a fraction in its simplest form showing all your working.",
         "steps": [
             "We begin by setting $x = 0.4555...$.",
             "We multiply by 10 to move the non-recurring digit: $10x = 4.5555...$.",
