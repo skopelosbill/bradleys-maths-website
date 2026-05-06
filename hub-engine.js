@@ -246,124 +246,132 @@ const BradleyHub = {
 },
     // --- THE ANSWER CHECKER ---
     checkAnswer(probId, chosen, correct) {
-    const feedbackBox = document.getElementById(`feedback-${probId}`);
-    const revealBtn = document.getElementById(`reveal-${probId}`);
+        const feedbackBox = document.getElementById(`feedback-${probId}`);
+        const optionsBox = document.getElementById(`options-${probId}`);
 
-    if (!feedbackBox) return;
+        if (!feedbackBox) return;
 
-    // Normalise both answers for comparison
-    const cleanChosen = chosen.toString().trim().toLowerCase();
-    const cleanCorrect = correct.toString().trim().toLowerCase();
+        // Normalise both answers for comparison
+        const cleanChosen = chosen.toString().trim().toLowerCase();
+        const cleanCorrect = correct.toString().trim().toLowerCase();
 
-    let isCorrect = (cleanChosen === cleanCorrect);
+        let isCorrect = (cleanChosen === cleanCorrect);
 
-    // --- FEEDBACK ---
-    if (isCorrect) {
-        feedbackBox.style.display = "block";
-        feedbackBox.style.background = "#d1fae5"; // green tint
-        feedbackBox.style.color = "#065f46";
-        feedbackBox.innerHTML = `<strong>Correct!</strong> Well done.`;
-    } else {
-        feedbackBox.style.display = "block";
-        feedbackBox.style.background = "#fee2e2"; // red tint
-        feedbackBox.style.color = "#991b1b";
-        feedbackBox.innerHTML = `
-            <strong>Incorrect.</strong>  
-            This is a common misconception — check the model answer.
-        `;
-    }
+        // --- FEEDBACK ---
+        if (isCorrect) {
+            feedbackBox.style.display = "block";
+            feedbackBox.style.background = "#d1fae5"; // green tint
+            feedbackBox.style.color = "#065f46";
+            feedbackBox.border = "1px solid #34d399";
+            feedbackBox.innerHTML = `<strong>Correct!</strong> Outstanding work. Here is the fully worked solution:`;
+        } else {
+            feedbackBox.style.display = "block";
+            feedbackBox.style.background = "#fee2e2"; // red tint
+            feedbackBox.style.color = "#991b1b";
+            feedbackBox.border = "1px solid #f87171";
+            feedbackBox.innerHTML = `
+                <strong>Not quite.</strong>  
+                Don't worry, this is a common misconception — review the model answer below to see where you went wrong.
+            `;
+        }
 
-    // --- REVEAL BUTTON ---
-    if (revealBtn) revealBtn.style.display = "block";
+        // --- HIDE THE MCQ BUTTONS SO THEY CAN'T KEEP GUESSING ---
+        if (optionsBox) optionsBox.style.display = "none";
 
-    // --- Mark as seen (same logic as revealSolution) ---
-    if (!this.state.seenIds.includes(probId)) {
-        this.state.seenIds.push(probId);
-        localStorage.setItem('bradley_seen_ids', JSON.stringify(this.state.seenIds));
-    }
-
-    if (window.MathJax) MathJax.typesetPromise();
-},
+        // --- AUTOMATICALLY REVEAL THE WORKED SOLUTION ---
+        this.revealSolution(probId, false);
+    },
 
     // --- INTERACTIVE CARD GENERATOR  ---
     createInteractiveCard(prob, link, btnText) {
-    const card = document.createElement('div');
-    card.className = 'daily-widget';
+        const card = document.createElement('div');
+        card.className = 'daily-widget';
 
-    // --- Extract correct answer ---
-    const finalStep = prob.steps[prob.steps.length - 1];
-    const correct = this.extractFinalAnswer(finalStep);
+        // --- Extract correct answer ---
+        const finalStep = prob.steps[prob.steps.length - 1];
+        const correct = this.extractFinalAnswer(finalStep);
 
-    // --- Generate distractors ---
-    const distractors = this.generateDistractors(correct, prob);
+        // --- Generate distractors ---
+        const distractors = this.generateDistractors(correct, prob);
 
-    // --- Build options array ---
-    const options = [correct, ...distractors, "None of the above"];
-    const shuffled = options.sort(() => Math.random() - 0.5);
+        // --- Build options array ---
+        const options = [correct, ...distractors, "None of the above"];
+        const shuffled = options.sort(() => Math.random() - 0.5);
 
-    // --- Image logic (same as your existing system) ---
-    let imgHTML = '';
-    if (prob.img === "true") {
-        const d = new Date(prob.date);
-        const mm = String(d.getMonth() + 1).padStart(2, '0');
-        const dd = String(d.getDate()).padStart(2, '0');
-        const t = this.state.tier === 'gcse' ? 'g' : 'i';
-        imgHTML = `<img src="images/${mm}/${t}_${dd}.png" class="question-img" style="margin: 20px auto; display: block;">`;
-    }
+        // --- Image logic ---
+        let imgHTML = '';
+        if (prob.img === "true") {
+            const d = new Date(prob.date);
+            const mm = String(d.getMonth() + 1).padStart(2, '0');
+            const dd = String(d.getDate()).padStart(2, '0');
+            const t = this.state.tier === 'gcse' ? 'g' : 'i';
+            imgHTML = `<img src="images/${mm}/${t}_${dd}.png" class="question-img" style="margin: 20px auto; display: block;">`;
+        }
 
-    // --- Build the card HTML ---
-    card.innerHTML = `
-        <span class="widget-header">${prob.date.toUpperCase()} | ${prob.topic} | Grade ${prob.difficulty}</span>
-        <div class="question-box">${prob.q}</div>
-        ${imgHTML}
+        // --- Build the card HTML ---
+        card.innerHTML = `
+            <span class="widget-header">${prob.date.toUpperCase()} | ${prob.topic} | Grade ${prob.difficulty}</span>
+            <div class="question-box">${prob.q}</div>
+            ${imgHTML}
 
-        <div class="mcq-options">
-            ${shuffled.map(opt => `
-                <button class="mcq-btn" onclick="BradleyHub.checkAnswer('${prob.id}', '${opt}', '${correct}')">
-                    ${opt}
-                </button>
-            `).join('')}
-        </div>
-
-        <div id="feedback-${prob.id}" class="feedback-box" style="display:none;"></div>
-
-        <button id="reveal-${prob.id}" class="reveal-btn" style="display:none;"
-            onclick="BradleyHub.revealSolution('${prob.id}', false)">
-            Show Model Answer
-        </button>
-
-        <div id="sol-${prob.id}" class="step-container" style="display:none;">
-            <h3 style="text-align:left; color: var(--brand-purple);">Model Solution</h3>
-            ${prob.steps.map(s => `<div class="step">${s}</div>`).join('')}
-
-            <div class="bradley-insight-box insight-${prob.bradley_insight.type}">
-                <span class="insight-title">${prob.bradley_insight.title}</span>
-                ${prob.bradley_insight.content}
-            </div>
-
-            <div style="display:flex; gap:10px; margin-top:20px;">
-                <button class="btn btn-purple" style="flex:1;"
-                    onclick="BradleyHub.serveArena('${this.state.currentGroup}')">
-                    Next Question
-                </button>
-                <button class="btn" style="flex:1; background: var(--text-muted); color: white !important;"
-                    onclick="BradleyHub.renderMenu()">
-                    Change Area
+            <!-- 1. Initial "Reveal" Button -->
+            <div id="action-area-${prob.id}" style="text-align: center; margin-top: 20px;">
+                <button class="reveal-btn" onclick="BradleyHub.revealOptions('${prob.id}')">
+                    I'm Ready: Reveal Answer Options
                 </button>
             </div>
 
-            <a href="${link}" target="_blank" class="btn-buy"
-                style="display:block; text-align:center; margin-top:20px; background: var(--brand-green); color: white !important;">
-                ${btnText}
-            </a>
-        </div>
-    `;
+            <!-- 2. Hidden MCQ Options -->
+            <div id="options-${prob.id}" class="mcq-options" style="display:none; margin-top: 20px;">
+                <p style="margin-bottom: 10px; font-weight: bold; color: var(--brand-purple); text-align: center;">Select your answer:</p>
+                ${shuffled.map(opt => `
+                    <button class="mcq-btn" onclick="BradleyHub.checkAnswer('${prob.id}', '${opt}', '${correct}')">
+                        ${opt}
+                    </button>
+                `).join('')}
+            </div>
 
-    return card;
-},
+            <!-- 3. Feedback Box -->
+            <div id="feedback-${prob.id}" class="feedback-box" style="display:none; margin-top: 15px; text-align: center; padding: 10px; border-radius: 5px;"></div>
 
-        
+            <!-- 4. Hidden Worked Solution -->
+            <div id="sol-${prob.id}" class="step-container" style="display:none;">
+                <h3 style="text-align:left; color: var(--brand-purple);">Model Solution</h3>
+                ${prob.steps.map(s => `<div class="step">${s}</div>`).join('')}
 
+                <div class="bradley-insight-box insight-${prob.bradley_insight.type}">
+                    <span class="insight-title">${prob.bradley_insight.title}</span>
+                    ${prob.bradley_insight.content}
+                </div>
+
+                <div style="display:flex; gap:10px; margin-top:20px;">
+                    <button class="btn btn-purple" style="flex:1;"
+                        onclick="BradleyHub.serveArena('${this.state.currentGroup}')">
+                        Next Question
+                    </button>
+                    <button class="btn" style="flex:1; background: var(--text-muted); color: white !important;"
+                        onclick="BradleyHub.renderMenu()">
+                        Change Area
+                    </button>
+                </div>
+
+                <a href="${link}" target="_blank" class="btn-buy"
+                    style="display:block; text-align:center; margin-top:20px; background: var(--brand-green); color: white !important;">
+                    ${btnText}
+                </a>
+            </div>
+        `;
+
+        return card;
+    },
+    // --- REVEAL OPTIONS ---
+    revealOptions(id) {
+        const opts = document.getElementById(`options-${id}`);
+        const act = document.getElementById(`action-area-${id}`);
+        if (opts) opts.style.display = 'block';
+        if (act) act.style.display = 'none';
+    },
+    // --- REVEAL SOLUTION
     revealSolution(id, isAudit) {
         const sol = document.getElementById(`sol-${id}`);
         const act = document.getElementById(`action-area-${id}`);
