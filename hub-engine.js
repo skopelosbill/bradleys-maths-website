@@ -370,115 +370,111 @@ const BradleyHub = {
     generateDistractors(correct, prob) {
         const distractors =[];
         
-        // Regex to find all numbers (decimals and negatives included) in the string
+        // INEQUALITY HANDLER (Flips signs for plausible mistakes)
+        if (correct.includes("<") || correct.includes(">") || correct.includes("\\le") || correct.includes("\\ge")) {
+            let d1 = correct.replace(/(<|>|\\le|\\ge)/g, match => {
+                if (match === '<') return '>';
+                if (match === '>') return '<';
+                if (match === '\\le') return '\\ge';
+                if (match === '\\ge') return '\\le';
+                return match;
+            });
+            let d2 = correct.replace(/<|\\le/g, "="); // Changes range to an exact value
+            let d3 = correct.replace(/-?\d+/g, m => (parseInt(m) + 1).toString()); // Tweaks numbers slightly
+            return [...new Set([d1, d2, d3])];
+        }
+
+        // STANDARD NUMBER HANDLER
         const numRegex = /-?\d+(\.\d+)?/g;
         const matches = correct.match(numRegex);
 
-        // If there are no numbers at all, fallback to text distractors
         if (!matches) {
-            return[
-                "Not enough information",
-                "The opposite of the correct answer",
-                "None of the parts are correct"
-            ];
+            return["Not enough information", "The opposite of the correct answer", "None of the parts are correct"];
         }
 
-        // Helper function to plausibly tweak numbers found in the string
         const tweakNumber = (valStr, strategy) => {
             let num = parseFloat(valStr);
             let isDecimal = valStr.includes('.');
             let decPlaces = isDecimal ? valStr.split('.')[1].length : 0;
             
             let newVal;
-            if (strategy === 'high') {
-                newVal = num > 20 ? num * 1.1 : num + (isDecimal ? 0.5 : 2);
-            } else if (strategy === 'low') {
+            if (strategy === 'high') newVal = num > 20 ? num * 1.1 : num + (isDecimal ? 0.5 : 2);
+            else if (strategy === 'low') {
                 newVal = num > 20 ? num * 0.9 : num - (isDecimal ? 0.5 : 2);
-                if (newVal < 0 && num > 0) newVal = num / 2; // Prevent turning a positive answer negative
-            } else if (strategy === 'slip') {
-                newVal = num + (isDecimal ? 1.5 : 10);
-            }
+                if (newVal < 0 && num > 0) newVal = num / 2;
+            } 
+            else if (strategy === 'slip') newVal = num + (isDecimal ? 1.5 : 10);
 
-            // Return with the original formatting (keep decimals intact)
             return isDecimal ? newVal.toFixed(decPlaces) : Math.round(newVal).toString();
         };
 
-        // Create 3 distractors by applying the tweaks to every number in the string
         let d1 = correct.replace(numRegex, m => tweakNumber(m, 'high'));
         let d2 = correct.replace(numRegex, m => tweakNumber(m, 'low'));
         let d3 = correct.replace(numRegex, m => tweakNumber(m, 'slip'));
 
-        // Failsafe: if the tweaks somehow match the correct answer exactly, force a change
         if (d1 === correct) d1 += " (approx)";
         if (d2 === correct || d2 === d1) d2 = "None of the parts match";
         if (d3 === correct || d3 === d2) d3 = "Cannot be determined";
 
         distractors.push(d1, d2, d3);
-        
-        // Remove duplicates just in case
-        return[...new Set(distractors)];
+        return [...new Set(distractors)];
     },
-    // --- THE ANSWER CHECKER ---
-    checkAnswer(probId, chosen, correct) {
+   // --- THE ANSWER CHECKER ---
+    checkAnswer(probId, isCorrect, isNoneOfAbove) {
         const feedbackBox = document.getElementById(`feedback-${probId}`);
         const optionsBox = document.getElementById(`options-${probId}`);
-
         if (!feedbackBox) return;
 
-        // Normalise both answers for comparison
-        const cleanChosen = chosen.toString().trim().toLowerCase();
-        const cleanCorrect = correct.toString().trim().toLowerCase();
+        feedbackBox.style.display = "block";
 
-        let isCorrect = (cleanChosen === cleanCorrect);
-
-        // --- FEEDBACK ---
         if (isCorrect) {
-            // --- NEW: SAVE TO CORRECT SCORE ---
+            // Add to Score
             if (!this.state.correctIds.includes(probId)) {
                 this.state.correctIds.push(probId);
                 localStorage.setItem('bradley_correct_ids', JSON.stringify(this.state.correctIds));
             }
 
-            feedbackBox.style.background = "#d1fae5"; // green tint
+            feedbackBox.style.background = "#d1fae5";
             feedbackBox.style.color = "#065f46";
             feedbackBox.style.border = "1px solid #34d399";
             feedbackBox.innerHTML = `<strong>Correct!</strong> Outstanding work. Here is the fully worked solution:`;
-        } else {
-            feedbackBox.style.display = "block";
-            feedbackBox.style.background = "#fee2e2"; // red tint
+        
+        } else if (isNoneOfAbove) {
+            feedbackBox.style.background = "#fee2e2";
             feedbackBox.style.color = "#991b1b";
-            feedbackBox.border = "1px solid #f87171";
-            feedbackBox.innerHTML = `
-                <strong>Not quite.</strong>  
-                Don't worry, this isn't a disaster — review the model answer below to see where you went wrong.
-            `;
+            feedbackBox.style.border = "1px solid #f87171";
+            feedbackBox.innerHTML = `<strong>Not quite!</strong> The correct answer was actually staring you in the face! Check the model answer below.`;
+        
+        } else {
+            feedbackBox.style.background = "#fee2e2";
+            feedbackBox.style.color = "#991b1b";
+            feedbackBox.style.border = "1px solid #f87171";
+            feedbackBox.innerHTML = `<strong>Not quite.</strong> Don't worry, review the model answer below to see where you went wrong!`;
         }
 
-        // --- HIDE THE MCQ BUTTONS SO THEY CAN'T KEEP GUESSING ---
         if (optionsBox) optionsBox.style.display = "none";
-
-        // --- AUTOMATICALLY REVEAL THE WORKED SOLUTION ---
         this.revealSolution(probId, false);
     },
 
-   // --- INTERACTIVE CARD GENERATOR  ---
+  // --- INTERACTIVE CARD GENERATOR  ---
     createInteractiveCard(prob, link, btnText) {
         const card = document.createElement('div');
         card.className = 'daily-widget';
 
-        // --- Extract correct answer ---
         const finalStep = prob.steps[prob.steps.length - 1];
         const correct = this.extractFinalAnswer(finalStep);
-
-        // --- Generate distractors ---
         const distractors = this.generateDistractors(correct, prob);
 
-        // --- Build options array ---
-        const optionsToShuffle =[correct, ...distractors];
-        const shuffled = optionsToShuffle.sort(() => Math.random() - 0.5);
+        const optionsToShuffle = [correct, ...distractors];
+        
+        // TRUE RANDOM SHUFFLE ALGORITHM (Fisher-Yates)
+        for (let i = optionsToShuffle.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));[optionsToShuffle[i], optionsToShuffle[j]] = [optionsToShuffle[j], optionsToShuffle[i]];
+        }
+        
+        const shuffled = optionsToShuffle;
         shuffled.push("None of the above");
 
-        // --- Image logic ---
         let imgHTML = '';
         if (prob.img === "true") {
             const d = new Date(prob.date);
@@ -488,28 +484,36 @@ const BradleyHub = {
             imgHTML = `<img src="images/${mm}/${t}_${dd}.png" class="question-img" style="margin: 20px auto; display: block;">`;
         }
 
-        // --- Build the card HTML ---
+        // BUTTON FALLBACK LOGIC
+        const tierDirectory = this.worksheetDirectory[this.state.tier] || {};
+        const specificLink = tierDirectory[prob.subtopic];
+        
+        let finalLink = specificLink ? specificLink : (this.state.currentGroup === 'all' ? prob.payhip_link : link);
+        let finalText = specificLink ? `Need practice? Get the ${prob.subtopic} Worksheet` : (this.state.currentGroup === 'all' ? prob.button_text : btnText);
+
+        // Ultimate Failsafe if Data is Missing
+        if (!finalLink || finalLink === "undefined") finalLink = "https://bradleysmaths.co.uk";
+        if (!finalText || finalText === "undefined") finalText = "Get the Complete Revision Pack";
+
         card.innerHTML = `
             <span class="widget-header">${prob.date.toUpperCase()} | ${prob.topic} | Grade ${prob.difficulty}</span>
             <div class="question-box">${prob.q}</div>
             ${imgHTML}
 
             <div id="action-area-${prob.id}" style="text-align: center; margin-top: 20px;">
-                <button class="reveal-btn" onclick="BradleyHub.revealOptions('${prob.id}')">
-                    I'm Ready: Reveal Answer Options
-                </button>
+                <button class="reveal-btn" onclick="BradleyHub.revealOptions('${prob.id}')">I'm Ready: Reveal Answer Options</button>
             </div>
 
             <div id="options-${prob.id}" class="mcq-options" style="display:none; margin-top: 20px;">
                 <p style="margin-bottom: 15px; font-weight: bold; color: var(--brand-purple); text-align: center;">Select your answer:</p>
                 <div style="display: flex; flex-direction: column; gap: 8px; align-items: center;">
                     ${shuffled.map(opt => {
-                        // CRITICAL FIX: Escape backslashes so HTML doesn't eat the LaTeX!
-                        const safeOpt = opt.replace(/\\/g, "\\\\").replace(/'/g, "\\'");
-                        const safeCorrect = correct.replace(/\\/g, "\\\\").replace(/'/g, "\\'");
+                        // Determine if it's correct BEFORE creating the button logic!
+                        const isOptCorrect = (opt === correct);
+                        const isNone = (opt === "None of the above");
                         return `
                         <button class="mcq-btn" style="width: 100%; max-width: 400px; padding: 12px; font-size: 1rem; border: 1px solid var(--brand-purple); border-radius: 6px; background: white; cursor: pointer;" 
-                                onclick="BradleyHub.checkAnswer('${prob.id}', '${safeOpt}', '${safeCorrect}')">
+                                onclick="BradleyHub.checkAnswer('${prob.id}', ${isOptCorrect}, ${isNone})">
                             ${opt}
                         </button>`
                     }).join('')}
@@ -528,20 +532,11 @@ const BradleyHub = {
                 </div>
 
                 <div style="display:flex; gap:10px; margin-top:20px;">
-                    <button class="btn btn-purple" style="flex:1;"
-                        onclick="BradleyHub.serveArena('${this.state.currentGroup}')">
-                        Next Question
-                    </button>
-                    <button class="btn" style="flex:1; background: var(--text-muted); color: white !important;"
-                        onclick="BradleyHub.renderMenu()">
-                        Change Area
-                    </button>
+                    <button class="btn btn-purple" style="flex:1;" onclick="BradleyHub.serveArena('${this.state.currentGroup}')">Next Question</button>
+                    <button class="btn" style="flex:1; background: var(--text-muted); color: white !important;" onclick="BradleyHub.renderMenu()">Change Area</button>
                 </div>
 
-                <a href="${link}" target="_blank" class="btn-buy"
-                    style="display:block; text-align:center; margin-top:20px; background: var(--brand-green); color: white !important;">
-                    ${btnText}
-                </a>
+                <a href="${finalLink}" target="_blank" class="btn-buy" style="display:block; text-align:center; margin-top:20px; background: var(--brand-green); color: white !important;">${finalText}</a>
             </div>
         `;
 
