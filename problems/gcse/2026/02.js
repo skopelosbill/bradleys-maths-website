@@ -4,9 +4,9 @@
     {
         "id": "002009",
         "date": "1 February 2026",
-        "major_area": "Algebra",
+        "major_area": "Number",
         "topic": "Surds",
-        "subtopic": "Simplifying surds",
+        "subtopic": "Surds",
         "difficulty": "6/7",
         "q": "(a) Expand and simplify $(3 + \\sqrt{5})^2$.<br>(b) Hence, show that $\\dfrac{(3 + \\sqrt{5})^2}{2}$ can be written in the form $a + b\\sqrt{5}$, where $a$ and $b$ are integers.",
         "steps": [
@@ -31,7 +31,7 @@
         "date": "2 February 2026",
         "major_area": "Algebra",
         "topic": "Quadratic Equations",
-        "subtopic": "Completing the square",
+        "subtopic": "Completing the Square",
         "difficulty": "8/9",
         "q": "(a) Write $3x^2 - 6x + 1$ in the form $a(x + b)^2 + c$.<br>(b) State the coordinates of the minimum point of the curve $y = 3x^2 - 6x + 1$.",
         "steps": [
@@ -57,7 +57,7 @@
         "date": "3 February 2026",
         "major_area": "Ratio, Proportion & Rates of Change",
         "topic": "Ratio",
-        "subtopic": "Simplifying ratios",
+        "subtopic": "Ratio and Sharing",
         "difficulty": "5/6",
         "q": "Given that $x : y = 1 : 2$ and $y : z = 3 : 5$.<br>(a) Find the ratio $x : y : z$ in its simplest form.<br>(b) Find the ratio $x : z$.",
         "steps": [
@@ -80,9 +80,9 @@
     {
         "id": "002012",
         "date": "4 February 2026",
-        "major_area": "Algebra",
-        "topic": "Quadratic Equations",
-        "subtopic": "Roots from graphs",
+        "major_area": "Number",
+        "topic": "Iteration",
+        "subtopic": "General Iterative Processes",
         "difficulty": "6/7",
         "q": "An iterative formula is given as $x_{n+1} = \\sqrt[3]{x_n + 7}$.<br>(a) Starting with $x_0 = 2$, calculate the value of $x_1$.<br>(b) Use your answer to part (a) to find the value of $x_2$, giving your answer to 3 significant figures.",
         "steps": [
@@ -107,7 +107,7 @@
         "date": "5 February 2026",
         "major_area": "Statistics",
         "topic": "Histograms",
-        "subtopic": "Frequency density",
+        "subtopic": "Histograms",
         "difficulty": "6/7",
         "q": "The information below describes two bars in a histogram.<br>Bar A: Class $0 < w \\le 10$, Frequency $5$.<br>Bar B: Class $10 < w \\le 30$, Frequency $20$.<br>(a) Calculate the frequency density for each bar.<br>(b) State which bar would be taller on the histogram.",
         "steps": [
@@ -131,7 +131,7 @@
         "date": "6 February 2026",
         "major_area": "Algebra",
         "topic": "Simultaneous Equations",
-        "subtopic": "Elimination",
+        "subtopic": "Simultaneous Equations Non-Linear",
         "difficulty": "7/8",
         "q": "Solve the following equations simultaneously to find the coordinates of the points of intersection:<br>$y = x^2$<br>$y = 2x + 3$",
         "steps": [
@@ -156,7 +156,7 @@
         "date": "7 February 2026",
         "major_area": "Number",
         "topic": "Financial Maths",
-        "subtopic": "Compound interest",
+        "subtopic": "Percentage Change and Interest",
         "difficulty": "5/6",
         "q": "An amount of $£5000$ is invested at $2\\%$ compound interest per year for 3 years.<br>(a) Calculate the total value of the investment after 3 years.<br>(b) Calculate the total interest earned over the 3-year period.",
         "steps": [
@@ -181,7 +181,7 @@
         "date": "8 February 2026",
         "major_area": "Geometry & Measures",
         "topic": "Polygons",
-        "subtopic": "Exterior angles",
+        "subtopic": "Polygons",
         "difficulty": "4/5",
         "img": "true",
         "q": "The exterior angle of a regular polygon is $18^\\circ$.<br>(a) Calculate the number of sides that the polygon has.<br>(b) Calculate the sum of the interior angles of this polygon.",
@@ -206,8 +206,8 @@
         "id": "002017",
         "date": "9 February 2026",
         "major_area": "Algebra",
-        "topic": "Graphs",
-        "subtopic": "Trigonometric graphs",
+        "topic": "Trigonometric Graphs",
+        "subtopic": "Solving Trig Equations Graphically",
         "difficulty": "6/7",
         "q": "(a) State the maximum value of the function $y = 3\\sin(x)$.<br>(b) State the coordinates of the first maximum point of the graph for $x \\ge 0^\\circ$.",
         "steps": [
@@ -231,7 +231,7 @@
         "date": "10 February 2026",
         "major_area": "Number",
         "topic": "Percentages",
-        "subtopic": "Reverse percentages",
+        "subtopic": "Reverse Percentages",
         "difficulty": "5/6",
         "q": "An item is reduced by $20\\%$ in a sale. The sale price of the item is $£40$.<br>(a) Calculate the original price of the item.<br>(b) After the sale, the price is increased back to its original value. Calculate the percentage increase from the sale price.",
         "steps": [
@@ -256,7 +256,7 @@
         "date": "11 February 2026",
         "major_area": "Algebra",
         "topic": "Graphs",
-        "subtopic": "Transformations of graphs",
+        "subtopic": "Solving Equations Graphically",
         "difficulty": "6/7",
         "q": "(a) Describe fully the single transformation that maps the graph of $y = f(x)$ onto the graph of $y = f(x - 2)$.<br>(b) State the transformation that maps $y = f(x)$ onto $y = -f(x)$.",
         "steps": [
@@ -281,7 +281,7 @@
         "date": "12 February 2026",
         "major_area": "Algebra",
         "topic": "Sequences",
-        "subtopic": "nth term",
+        "subtopic": "Sequencies",
         "difficulty": "5/6",
         "q": "The $n^{th}$ term of a sequence is given by the expression $2n^2 + 1$.<br>(a) Find the $3^{rd}$ term of this sequence.<br>(b) Show that $51$ is a term in this sequence.",
         "steps": [
@@ -306,7 +306,7 @@
         "date": "13 February 2026",
         "major_area": "Ratio, Proportion & Rates of Change",
         "topic": "Compound Measures",
-        "subtopic": "Density",
+        "subtopic": "Compound Units: Speed, Density, Pressure",
         "difficulty": "4/5",
         "q": "An object has a mass of $2\\text{ kg}$ and a volume of $400\\text{ cm}^3$.<br>(a) Calculate the density of the object. Give your answer in $\\text{g/cm}^3$.<br>(b) Calculate the mass of $150\\text{ cm}^3$ of the same material.",
         "steps": [
@@ -329,9 +329,9 @@
     {
         "id": "002022",
         "date": "14 February 2026",
-        "major_area": "Geometry & Measures",
-        "topic": "Coordinates",
-        "subtopic": "Distance",
+        "major_area": "Algebra",
+        "topic": "Graphs",
+        "subtopic": "Equation of a Circle",
         "difficulty": "6/7",
         "q": "(a) Write down the equation of a circle with centre $(0, 0)$ and a radius of $5$.<br>(b) Show by calculation that the point $(3, 4)$ lies on the circumference of this circle.",
         "steps": [
@@ -356,7 +356,7 @@
         "date": "15 February 2026",
         "major_area": "Number",
         "topic": "Standard Form",
-        "subtopic": "Calculations in standard form",
+        "subtopic": "Standard Form",
         "difficulty": "5/6",
         "q": "Work out the value of $\\dfrac{8 \\times 10^5}{2 \\times 10^{-2}}$.<br>(a) Give your answer in standard form.<br>(b) Give your answer as an ordinary number.",
         "steps": [
@@ -380,8 +380,8 @@
         "id": "002024",
         "date": "16 February 2026",
         "major_area": "Geometry & Measures",
-        "topic": "3D Shapes",
-        "subtopic": "Surface area",
+        "topic": "Circles",
+        "subtopic": "Arcs and Sectors",
         "difficulty": "5/6",
         "img": "true",
         "q": "A sector of a circle has a radius of $6\\text{ cm}$ and a sector angle of $60^\\circ$.<br>(a) Calculate the length of the arc. Give your answer in terms of $\\pi$.<br>(b) Calculate the area of the sector. Give your answer in terms of $\\pi$.",
@@ -408,7 +408,7 @@
         "date": "17 February 2026",
         "major_area": "Number",
         "topic": "Decimals",
-        "subtopic": "Converting between decimals and fractions",
+        "subtopic": "Recurring Decimals to Fractions",
         "difficulty": "6/7",
         "q": "Express the recurring decimal $0.4\\dot{5}$ as a fraction in its simplest form showing all your working.",
         "steps": [
@@ -434,7 +434,7 @@
         "date": "18 February 2026",
         "major_area": "Geometry & Measures",
         "topic": "Similarity & Congruence",
-        "subtopic": "Scale factors",
+        "subtopic": "Similarity in 3D",
         "difficulty": "7/8",
         "q": "Two mathematically similar solid spheres, A and B, have a radius ratio of $1 : 3$.<br>(a) Find the ratio of their surface areas.<br>(b) The volume of Sphere A is $10\\text{ cm}^3$. Calculate the volume of Sphere B.",
         "steps": [
@@ -459,7 +459,7 @@
         "date": "19 February 2026",
         "major_area": "Algebra",
         "topic": "Algebraic Fractions",
-        "subtopic": "Simplifying",
+        "subtopic": "Algebraic Fractions 2",
         "difficulty": "7/8",
         "q": "Simplify fully: $$\\dfrac{x^2 - 9}{x^2 + 5x + 6}$$",
         "steps": [
@@ -483,7 +483,7 @@
         "date": "20 February 2026",
         "major_area": "Probability",
         "topic": "Basic Probability",
-        "subtopic": "Sample Space Diagrams",
+        "subtopic": "Systematic listing Strategies",
         "difficulty": "4/5",
         "q": "A school canteen offers a choice of 3 starters, 4 main courses, and 2 desserts.<br>(a) Calculate the total number of different 3-course meals that can be chosen.<br>(b) If one of the main courses is unavailable, how many 3-course meal combinations remain?",
         "steps": [
@@ -507,7 +507,7 @@
         "date": "21 February 2026",
         "major_area": "Geometry & Measures",
         "topic": "Coordinates",
-        "subtopic": "Gradients",
+        "subtopic": "Parallel and Perpendicular Lines 2",
         "difficulty": "6/7",
         "q": "Line A has a gradient of $3$.<br>(a) State the gradient of a line that is perpendicular to Line A.<br>(b) Find the equation of Line B, which is perpendicular to Line A and passes through the point $(6, 5)$.",
         "steps": [
@@ -534,7 +534,7 @@
         "date": "22 February 2026",
         "major_area": "Algebra",
         "topic": "Indices Laws",
-        "subtopic": "Fractional indices",
+        "subtopic": "Indices",
         "difficulty": "6/7",
         "q": "(a) Evaluate $16^{\\frac{3}{2}}$.<br>(b) Evaluate $16^{-\\frac{3}{2}}$.",
         "steps": [
@@ -558,7 +558,7 @@
         "date": "23 February 2026",
         "major_area": "Number",
         "topic": "Estimation & Bounds",
-        "subtopic": "Upper and lower bounds",
+        "subtopic": "Limits of Accuracy and Bounds",
         "difficulty": "8/9",
         "q": "A variable $V$ is defined by the formula $V = \\dfrac{10}{x}$. Given that $x = 2$ correct to the nearest integer, calculate the maximum possible value of $V$.",
         "steps": [
@@ -582,7 +582,7 @@
         "date": "24 February 2026",
         "major_area": "Geometry & Measures",
         "topic": "Vectors",
-        "subtopic": "Parallel vectors",
+        "subtopic": "Vector Problem Solving",
         "difficulty": "6/7",
         "q": "The vector $\\overrightarrow{AB} = 2\\mathbf{a}$ and the vector $\\overrightarrow{BC} = 3\\mathbf{a}$.<br>(a) Find the vector $\\overrightarrow{AC}$ in terms of $\\mathbf{a}$.<br>(b) Explain why the points $A$, $B$ and $C$ must lie on a straight line.",
         "steps": [
@@ -607,7 +607,7 @@
         "date": "25 February 2026",
         "major_area": "Geometry & Measures",
         "topic": "Trigonometry",
-        "subtopic": "Exact values",
+        "subtopic": "Exact Trigonometric Values",
         "difficulty": "5/6",
         "q": "(a) State the exact value of $\\tan(45^\\circ)$.<br>(b) Calculate the value of $\\tan(45^\\circ) + \\sin(90^\\circ)$.",
         "steps": [
@@ -630,7 +630,7 @@
         "date": "26 February 2026",
         "major_area": "Geometry & Measures",
         "topic": "Circle Theorems",
-        "subtopic": "Cyclic quadrilaterals",
+        "subtopic": "Exact Trigonometric Values",
         "difficulty": "5/6",
         "img": "true",
         "q": "In the diagram, $ABCD$ is a cyclic quadrilateral. Angle $A = 80^\\circ$.<br>(a) Find the size of angle $C$.<br>(b) Given that angle $B$ is twice the size of angle $D$, calculate the size of angle $D$.",
@@ -656,7 +656,7 @@
         "date": "27 February 2026",
         "major_area": "Algebra",
         "topic": "Inequalities",
-        "subtopic": "Graphical inequalities",
+        "subtopic": "Linear Inequalities in two Variables",
         "difficulty": "7/8",
         "img": "true",
         "q": "A region $R$ is defined by the inequalities $y > x$ and $x + y < 4$.<br>(a) Determine if the coordinate point $(1, 1)$ lies within the region $R$.<br>(b) State a coordinate point with integer values that lies strictly inside region $R$.",
@@ -681,7 +681,7 @@
         "date": "28 February 2026",
         "major_area": "Algebra",
         "topic": "Indices Laws",
-        "subtopic": "Positive indices",
+        "subtopic": "Indices",
         "difficulty": "6/7",
         "q": "(a) Solve the equation $3^{2x} = 27$.<br>(b) Find the value of $y$ for which $3^{y} = \\dfrac{1}{27}$.",
         "steps": [
