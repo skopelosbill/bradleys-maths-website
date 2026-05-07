@@ -8,6 +8,154 @@ const BradleyHub = {
         currentGroup: null, // We now track the "Group" (Booklet) instead of just topic
         isTeacherMode: false
     },
+    // AUTOMATIC WORKSHEET LOOKUP DIRECTORY (Separated by Tier)
+    worksheetDirectory: {
+        gcse: {
+            // --- NUMBER ---
+            "Natural Numbers and Integers": "https://payhip.com/b/NF60m",
+            "Squares and Cubes": "https://payhip.com/b/qOE5o",
+            "Prime Numbers HCF LCM": "https://payhip.com/b/ul4LH",
+            "Rational and Irrational Numbers and Reciprocals": "https://payhip.com/b/ND45g",
+            "Priority of Operations": "https://payhip.com/b/85Ieb",
+            "Using a Calculator": "https://payhip.com/b/KTXaO",
+            "Integer Indices and Roots": "https://payhip.com/b/fBMNb",
+            "Fractional Indices and Roots": "https://payhip.com/b/iU6Nj",
+            "Standard Form": "https://payhip.com/b/ZAkTu",
+            "Surds": "https://payhip.com/b/BaZjD",
+            "Ordering": "https://payhip.com/b/peXuz",
+            "Operations with Integers and Decimals": "https://payhip.com/b/NKrd4",
+            "Multiplication and Division of Fractions": "https://payhip.com/b/Qd4GN",
+            "Addition and Subtraction of Fractions": "https://payhip.com/b/Da8mk",
+            "Operations with Mixed Numbers": "https://payhip.com/b/c0tPv",
+            "Rounding, Estimation and Error Intervals": "https://payhip.com/b/eg8sA",
+            "Limits of Accuracy and Bounds": "https://payhip.com/b/qYp8g",
+            "Fraction Decimal Conversion": "https://payhip.com/b/XoqhS",
+            "Fraction, Decimal, Percentage Conversions": "https://payhip.com/b/K7zsa",
+            "Recurring Decimals to Fractions": "https://payhip.com/b/dAvne",
+            "Basic Percentages": "https://payhip.com/b/U3CGa",
+            "Percentage Change and Interest": "https://payhip.com/b/X8Yo2",
+            "Reverse Percentages": "https://payhip.com/b/UYy0Q",
+            "Ratio and Sharing": "https://payhip.com/b/o7A2P",
+            "Direct and Inverse Proportion": "https://payhip.com/b/JYBkq",
+            "Compound Units: Speed, Density, Pressure": "https://payhip.com/b/DK7b1",
+            "Rates of Pay, Unit pricing, and Currency": "https://payhip.com/b/WeoVy",
+            "Time": "https://payhip.com/b/flD19",
+            "Growth and Decay": "https://payhip.com/b/eRHBx",
+            "General Iterative Processes": "https://payhip.com/b/rAIp4",
+            "Systematic Listing and the Product Rule": "https://payhip.com/b/o3aVn",
+            "Scale Factors, Diagrams, and Maps": "https://payhip.com/b/SIUqC",
+            "Comparing Lengths, Areas, and Volumes": "https://payhip.com/b/bgm5B",
+
+            // --- ALGEBRA ---
+            "Introduction to Algebra": "https://payhip.com/b/KaG8c",
+            "Simplifying Expressions": "https://payhip.com/b/yAeG9",
+            "Expanding Brackets": "https://payhip.com/b/yac9b",
+            "Factorising Expressions 1": "https://payhip.com/b/SHDG1",
+            "Factorising Expressions 2": "https://payhip.com/b/xqVUj",
+            "Completing the Square": "https://payhip.com/b/miLap",
+            "Algebraic Proof": "https://payhip.com/b/EKtuw",
+            "Algebraic Fractions 1": "https://payhip.com/b/KPeax",
+            "Algebraic Fractions 2": "https://payhip.com/b/jJHdP",
+            "Rational Expressions": "https://payhip.com/b/Natzp",
+            "Indices": "https://payhip.com/b/hGzMV",
+            "Constructing Expressions": "https://payhip.com/b/ZFqwQ",
+            "Solving Linear Equations": "https://payhip.com/b/v65fA",
+            "Solving Fractional Equations": "https://payhip.com/b/wdgX1",
+            "Simultaneous Linear Equations": "https://payhip.com/b/Cq1JG",
+            "Simultaneous Equations Non-Linear": "https://payhip.com/b/BqWhb",
+            "Quadratics Equations Factorising": "https://payhip.com/b/lGQis",
+            "Quadratic Equations - Formula and Completing the Square": "https://payhip.com/b/7CT3V",
+            "Iteration": "https://payhip.com/b/IoYTp",
+            "Changing the Subject of a Formula": "https://payhip.com/b/9r34U",
+            "GCSE Higher Tier Maths - Linear inequalities": "https://payhip.com/b/d84xC",
+            "Linear inequalities in One Variable": "https://payhip.com/b/d84xC",
+            "Linear Inequalities in two Variables": "https://payhip.com/b/r7o0O",
+            "Sequences": "https://payhip.com/b/GWKby",
+            "Functions: Domain and Range": "https://payhip.com/b/F9KRd",
+            "Inverse Functions": "https://payhip.com/b/SIpux",
+            "Composite Functions": "https://payhip.com/b/A7Wup",
+            "Cartesian Coordinates": "https://payhip.com/b/qkrPY",
+            "Plotting Linear Graphs": "https://payhip.com/b/lHJUa",
+            "Gradient": "https://payhip.com/b/uEo2p",
+            "Length and Midpoint of a Line Segment": "https://payhip.com/b/zijkw",
+            "Equations of Linear Graphs": "https://payhip.com/b/U8umo",
+            "Parallel and Perpendicular Lines 1": "https://payhip.com/b/y07Oc",
+            "Parallel and Perpendicular Lines 2": "https://payhip.com/b/NZ7ha",
+            "Graphs in Practical Situations": "https://payhip.com/b/7keWD",
+            "Rates of Change from Graphs": "https://payhip.com/b/cpuDV",
+            "Plotting Curved Graphs": "https://payhip.com/b/5b3Av",
+            "Solving Equations Graphically": "https://payhip.com/b/uF4cK",
+            "Sketching Graphs": "https://payhip.com/b/t8xQq",
+            "Graphical Representation of Inverse Proportion": "https://payhip.com/b/uEa8o",
+            "Quadratic Inequalities": "https://payhip.com/b/3oWKQ",
+            "Gradients and Area under Graphs": "https://payhip.com/b/9wXvI",
+            "Equation of a Circle": "https://payhip.com/b/OnqfT",
+            "Trigonometric Graphs": "https://payhip.com/b/uyDvx",
+            "Solving Trig Equations Graphically": "https://payhip.com/b/AtoLW",
+            "Transformations": "https://payhip.com/b/FDaTw",
+
+            // --- GEOMETRY ---
+            "Angle Properties": "https://payhip.com/b/lxSzN",
+            "Triangles": "https://payhip.com/b/BHgYW",
+            "Quadrilaterals": "https://payhip.com/b/eXEl8",
+            "Polygons": "https://payhip.com/b/4zntl",
+            "Circle Properties": "https://payhip.com/b/mCeEQ",
+            "Symmetry in 2D": "https://payhip.com/b/8nGQw",
+            "Geometrical Constructions": "https://payhip.com/b/ErOuY",
+            "Loci": "https://payhip.com/b/Ql5p0",
+            "Scale Drawings and Bearings": "https://payhip.com/b/iW9eY",
+            "Similarity in 2D": "https://payhip.com/b/L2dNU",
+            "Triangle Congruence": "https://payhip.com/b/FS9zC",
+            "Geometrical Proof": "https://payhip.com/b/R1v2e",
+            "Introduction to 3D Solids and Nets": "https://payhip.com/b/PjiBG",
+            "Plans and Elevations": "https://payhip.com/b/9KeKR",
+            "Symmetry in 3D": "https://payhip.com/b/AfsYi",
+            "Similarity in 3D": "https://payhip.com/b/iBzE5",
+            "Circle Theorems 1": "https://payhip.com/b/RLgSJ",
+            "Circle Theorems 2": "https://payhip.com/b/wm0xL",
+            "Circle Theorem Proofs": "https://payhip.com/b/1rJUj",
+            "Units of Measure": "https://payhip.com/b/OItpm",
+            "Perimeter and Area in 2D": "https://payhip.com/b/zukBR",
+            "Circumference and Area of Circles": "https://payhip.com/b/K8QAT",
+            "Arcs and Sectors": "https://payhip.com/b/fiURV",
+            "Surface Area and Volume in 3D": "https://payhip.com/b/aJhQL",
+            "Compound Shapes in 2D": "https://payhip.com/b/z2KF1",
+            "Compound Shapes in 3D": "https://payhip.com/b/m8Stz",
+            "Pythagoras Theorem": "https://payhip.com/b/9dSh3",
+            "Right Angled Trigonometry": "https://payhip.com/b/h3BS6",
+            "Exact Trigonometric values": "https://payhip.com/b/GToVZ",
+            "Sine Rule": "https://payhip.com/b/EaYM1",
+            "Cosine Rule": "https://payhip.com/b/RHeNL",
+            "Trigonometry in 3D": "https://payhip.com/b/QsiXK",
+            "Vectors in 2D": "https://payhip.com/b/lemlz",
+            "Vector Geometry": "https://payhip.com/b/CZOJ4",
+            "Vector Problem Solving": "https://payhip.com/b/LTjeD",
+
+            // --- PROBABILITY & STATISTICS ---
+            "Introduction to Probability": "https://payhip.com/b/Z7KYo",
+            "Relative and Expected Frequencies": "https://payhip.com/b/csAoM",
+            "Systematic listing Strategies": "https://payhip.com/b/1nLdO",
+            "Frequency Trees": "https://payhip.com/b/3Qiey",
+            "Sets and Venn Diagrams": "https://payhip.com/b/oW2c1",
+            "The Addition Rule": "https://payhip.com/b/Jr67s",
+            "Probability Tree diagrams": "https://payhip.com/b/8EhLZ",
+            "Probability of Combined Events": "https://payhip.com/b/FGC0u",
+            "Conditional Probability": "https://payhip.com/b/MoE4j",
+            "Sampling": "https://payhip.com/b/rCsYM",
+            "Data Handling and Interpretation": "https://payhip.com/b/YC2BF",
+            "Averages and Spread – Ungrouped Data": "https://payhip.com/b/vRHXh",
+            "Averages and Spread – Grouped Data": "https://payhip.com/b/vZuiV",
+            "Statistical Charts and Diagrams": "https://payhip.com/b/59j80",
+            "Time Series": "https://payhip.com/b/19T3Q",
+            "Scatter Diagrams": "https://payhip.com/b/JLTGt",
+            "Cumulative Frequency Diagrams": "https://payhip.com/b/fmvej",
+            "Box and Whisker Plots": "https://payhip.com/b/L5f6Y",
+            "Histograms": "https://payhip.com/b/ND5E9"
+        },
+        igcse: {
+            // Future IGCSE links will go here!
+        }
+    },
 
     // DEFINING THE REVISION GROUPS (Funnel Logic)
     getMenuMapping() {
@@ -114,9 +262,13 @@ const BradleyHub = {
         }
 
         const prob = pool[Math.floor(Math.random() * pool.length)];
-        // FORCE THE CORRECT LINK BASED ON THE CURRENT GROUP
-        const finalLink = groupId === 'all' ? prob.payhip_link : group.link;
-        const finalText = groupId === 'all' ? prob.button_text : group.btnText;
+        // Look up the correct directory for the current tier (GCSE or IGCSE)
+        const tierDirectory = this.worksheetDirectory[this.state.tier] || {};
+        const specificLink = tierDirectory[prob.subtopic];
+
+        // Fallback gracefully: If there is no specific link (like for IGCSE right now), use the big booklet!
+        const finalLink = specificLink ? specificLink : (groupId === 'all' ? prob.payhip_link : group.link);
+        const finalText = specificLink ? `Need practice? Get the ${prob.subtopic} Worksheet` : (groupId === 'all' ? prob.button_text : group.btnText);
 
         const stage = document.getElementById('hub-stage');
         stage.innerHTML = '';
