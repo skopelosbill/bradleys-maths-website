@@ -427,29 +427,53 @@ const BradleyHub = {
 
         feedbackBox.style.display = "block";
 
+        let justLeveledUp = false;
+        let rankName = "";
+        
+        // Helper to calculate the score for their current tier
+        const getScore = () => this.state.correctIds.filter(id => (this.state.tier === 'gcse' ? id.startsWith('002') : id.startsWith('003'))).length;
+
         if (isCorrect) {
-            // Add to Score
+            // Add to Score if they haven't already solved this exact question
             if (!this.state.correctIds.includes(probId)) {
                 this.state.correctIds.push(probId);
                 localStorage.setItem('bradley_correct_ids', JSON.stringify(this.state.correctIds));
+                
+                // Check if this exact answer triggered a Level Up
+                let newScore = getScore();
+                if (newScore === 5) { justLeveledUp = true; rankName = "Grade 5 Challenger"; }
+                else if (newScore === 15) { justLeveledUp = true; rankName = "Grade 6 Scholar"; }
+                else if (newScore === 30) { justLeveledUp = true; rankName = "Grade 7-8 Master"; }
+                else if (newScore === 50) { justLeveledUp = true; rankName = "Grade 9 Elite"; }
+            }
+
+            let currentScore = getScore();
+
+            // Build the dynamic success message
+            let extraMessage = `<br><div style="margin-top: 10px; font-size: 0.95rem; color: #047857;">⭐ <strong>Current Score:</strong> ${currentScore} correct answers!</div>`;
+            if (justLeveledUp) {
+                extraMessage += `<div style="margin-top: 5px; font-size: 1.15rem; color: #059669; font-weight: bold; text-transform: uppercase;">🎉 LEVEL UP! You are now a ${rankName}! 🎉</div>`;
             }
 
             feedbackBox.style.background = "#d1fae5";
             feedbackBox.style.color = "#065f46";
             feedbackBox.style.border = "1px solid #34d399";
-            feedbackBox.innerHTML = `<strong>Correct!</strong> Outstanding work. Here is the fully worked solution:`;
-        
-        } else if (isNoneOfAbove) {
-            feedbackBox.style.background = "#fee2e2";
-            feedbackBox.style.color = "#991b1b";
-            feedbackBox.style.border = "1px solid #f87171";
-            feedbackBox.innerHTML = `<strong>Not quite!</strong> The correct answer was actually staring you in the face! Check the model answer below.`;
+            feedbackBox.innerHTML = `<strong>Correct!</strong> Outstanding work. Here is the fully worked solution:${extraMessage}`;
         
         } else {
+            // Even if they get it wrong, remind them of their score to keep them motivated
+            let currentScore = getScore();
+            let extraMessage = `<br><div style="margin-top: 10px; font-size: 0.95rem; color: #991b1b;">⭐ <strong>Current Score:</strong> ${currentScore} correct answers. Keep going!</div>`;
+
             feedbackBox.style.background = "#fee2e2";
             feedbackBox.style.color = "#991b1b";
             feedbackBox.style.border = "1px solid #f87171";
-            feedbackBox.innerHTML = `<strong>Not quite.</strong> Don't worry, review the model answer below to see where you went wrong!`;
+            
+            if (isNoneOfAbove) {
+                feedbackBox.innerHTML = `<strong>Not quite!</strong> The correct answer was actually staring you in the face! Check the model answer below.${extraMessage}`;
+            } else {
+                feedbackBox.innerHTML = `<strong>Not quite.</strong> Don't worry, review the model answer below to see where you went wrong!${extraMessage}`;
+            }
         }
 
         if (optionsBox) optionsBox.style.display = "none";
