@@ -3,9 +3,9 @@ const problemBank = [
     {
         "id": "001001",
         "date": "1 January 2026",
-        "major_area": "Number",
+        "major_area": "Geometry",
         "topic": "Trigonometry",
-        "subtopic": "Exact values",
+        "subtopic": "Exact Trigonometric Values",
         "difficulty": "6/7",
         "q": "(a) Write down the exact value of $\\sin(30^\\circ)$.<br>(b) Calculate the value of $\\sin(30^\\circ) + \\cos(60^\\circ)$.",
         "steps": [
@@ -26,9 +26,9 @@ const problemBank = [
     {
         "id": "001002",
         "date": "2 January 2026",
-        "major_area": "Ratio, Proportion & Rates of Change",
+        "major_area": "Number",
         "topic": "Ratio",
-        "subtopic": "Sharing in a ratio",
+        "subtopic": "Ratio and Sharing",
         "difficulty": "4/5",
         "q": "Ali and Beth share an amount of money in the ratio $3 : 5$. Beth receives $£40$ more than Ali.<br>(a) Calculate the total amount of money shared.<br>(b) If the ratio were changed to $3 : 7$ for the same total amount, how much would Beth receive?",
         "steps": [
@@ -53,7 +53,7 @@ const problemBank = [
         "date": "3 January 2026",
         "major_area": "Algebra",
         "topic": "Expanding Brackets",
-        "subtopic": "Triple brackets",
+        "subtopic": "Expanding Brackets",
         "difficulty": "6/7",
         "q": "Expand and simplify fully: $(x + 3)(x - 2)(x + 4)$.",
         "steps": [
@@ -77,7 +77,7 @@ const problemBank = [
         "date": "4 January 2026",
         "major_area": "Algebra",
         "topic": "Rearranging Formulae",
-        "subtopic": "Changing the subject",
+        "subtopic": "Changing the Subject of a Formula",
         "difficulty": "5/6",
         "q": "The formula for the final velocity of an object is given by $v^2 = u^2 + 2as$.<br>(a) Rearrange the formula to make $u$ the subject.<br>(b) Calculate the value of $u$ when $v = 20, a = 2$ and $s = 36$.",
         "steps": [
@@ -101,7 +101,7 @@ const problemBank = [
         "date": "5 January 2026",
         "major_area": "Number",
         "topic": "Estimation & Bounds",
-        "subtopic": "Estimating calculations",
+        "subtopic": "Rounding, Estimation and Error Intervals",
         "difficulty": "4/5",
         "q": "(a) Estimate the value of $\\dfrac{403 \\times 1.98}{0.49}$.<br>(b) State, with a reason, whether your estimate is an overestimate or an underestimate.",
         "steps": [
@@ -126,7 +126,7 @@ const problemBank = [
         "date": "6 January 2026",
         "major_area": "Algebra",
         "topic": "Factorising",
-        "subtopic": "Difference of squares",
+        "subtopic": "Factorising Expressions 1",
         "difficulty": "7/8",
         "q": "(a) Factorise fully: $18x^2 - 50y^2$.<br>(b) Use your answer to part (a) to calculate the value of $18(10)^2 - 50(2)^2$.",
         "steps": [
@@ -151,7 +151,7 @@ const problemBank = [
         "date": "7 January 2026",
         "major_area": "Algebra",
         "topic": "Quadratic Equations",
-        "subtopic": "Factorising method",
+        "subtopic": "Factorising Expressions 2",
         "difficulty": "5/6",
         "q": "(a) Factorise $x^2 - 5x - 24$.<br>(b) Solve the equation $x^2 - 5x - 24 = 0$.",
         "steps": [
@@ -175,7 +175,7 @@ const problemBank = [
         "date": "8 January 2026",
         "major_area": "Number",
         "topic": "Surds",
-        "subtopic": "Rationalising denominators",
+        "subtopic": "Surds",
         "difficulty": "8/9",
         "q": "Rationalise the denominator and simplify fully:<br>$$\\dfrac{10}{3 + \\sqrt{2}}$$",
         "steps": [
@@ -200,7 +200,7 @@ const problemBank = [
         "date": "9 January 2026",
         "major_area": "Algebra",
         "topic": "Indices Laws",
-        "subtopic": "Fractional indices",
+        "subtopic": "Indices",
         "difficulty": "7/8",
         "q": "Simplify fully: $$(27x^6)^{\\frac{2}{3}}$$",
         "steps": [
@@ -224,7 +224,7 @@ const problemBank = [
         "date": "10 January 2026",
         "major_area": "Algebra",
         "topic": "Graphs",
-        "subtopic": "Linear graphs",
+        "subtopic": "Equations of Linear Graphs",
         "difficulty": "5/6",
         "q": "A straight line passes through the points $(0, 4)$ and $(3, 10)$.<br>(a) Find the gradient of the line.<br>(b) Find the equation of the line in the form $y = mx + c$.",
         "steps": [
@@ -248,7 +248,7 @@ const problemBank = [
         "date": "11 January 2026",
         "major_area": "Number",
         "topic": "Estimation & Bounds",
-        "subtopic": "Error intervals",
+        "subtopic": "Limits of Accuracy and Bounds",
         "difficulty": "5/6",
         "q": "A number, $x$, is $8.4$ when truncated to one decimal place.<br>(a) State the lower bound for the value of $x$.<br>(b) Write down the error interval for $x$.",
         "steps": [
@@ -271,7 +271,7 @@ const problemBank = [
         "date": "12 January 2026",
         "major_area": "Algebra",
         "topic": "Linear Equations",
-        "subtopic": "Equations with brackets",
+        "subtopic": "Solving Fractional Equations",
         "difficulty": "4/5",
         "q": "Solve the equation: $$\\dfrac{4x - 1}{3} = 2x + 5$$",
         "steps": [
@@ -296,7 +296,7 @@ const problemBank = [
         "date": "13 January 2026",
         "major_area": "Geometry & Measures",
         "topic": "Circle Theorems",
-        "subtopic": "Angle at the centre",
+        "subtopic": "Circle Theorems 1",
         "difficulty": "5/6",
         "img": "true",
         "q": "Points $A, B$ and $C$ lie on the circumference of a circle. $AB$ is the diameter of the circle. $\\angle BAC = 30^\\circ$.<br>(a) State the size of $\\angle ACB$.<br>(b) Calculate the size of $\\angle ABC$.",
@@ -320,7 +320,7 @@ const problemBank = [
         "date": "14 January 2026",
         "major_area": "Probability",
         "topic": "Tree Diagrams",
-        "subtopic": "Without replacement",
+        "subtopic": "Probability Tree Diagrams",
         "difficulty": "6/7",
         "q": "A box contains 4 red sweets and 6 blue sweets. Two sweets are selected at random without replacement.<br>(a) Find the probability that the first sweet is red and the second sweet is blue.<br>(b) Find the probability that both sweets are of the same colour.",
         "steps": [
@@ -347,7 +347,7 @@ const problemBank = [
         "date": "15 January 2026",
         "major_area": "Algebra",
         "topic": "Functions",
-        "subtopic": "Composite functions",
+        "subtopic": "Composite Functions",
         "difficulty": "7/8",
         "q": "The functions $f$ and $g$ are defined as $f(x) = x^2 - 4$ and $g(x) = 2x$.<br>(a) Calculate the value of the composite function $fg(3)$.<br>(b) Solve the equation $gf(x) = 10$.",
         "steps": [
@@ -372,7 +372,7 @@ const problemBank = [
         "date": "16 January 2026",
         "major_area": "Geometry & Measures",
         "topic": "3D Shapes",
-        "subtopic": "Volume",
+        "subtopic": "Surface Area and Volume in 3D",
         "difficulty": "5/6",
         "q": "A solid cylinder has a radius of $4\\text{ cm}$ and a height of $10\\text{ cm}$.<br>(a) Calculate the volume of the cylinder. Give your answer in terms of $\\pi$.<br>(b) Calculate the total surface area of the cylinder. Give your answer in terms of $\\pi$.",
         "steps": [
@@ -397,7 +397,7 @@ const problemBank = [
         "date": "17 January 2026",
         "major_area": "Ratio, Proportion & Rates of Change",
         "topic": "Percentage Change",
-        "subtopic": "Increase/decrease",
+        "subtopic": "Percentage Change and Interest",
         "difficulty": "4/5",
         "q": "A car is purchased for $£8000$. One year later, its value has dropped to $£6000$.<br>(a) Calculate the percentage decrease in the value of the car.<br>(b) If the value decreases by a further $10\\%$ in the second year, calculate its value at the end of year 2.",
         "steps": [
@@ -421,7 +421,7 @@ const problemBank = [
         "date": "18 January 2026",
         "major_area": "Geometry & Measures",
         "topic": "Vectors",
-        "subtopic": "Column vectors",
+        "subtopic": "Vectors in 2D",
         "difficulty": "6/7",
         "q": "The vector $\\vec{AB} = \\begin{pmatrix} 3 \\\\ -4 \\end{pmatrix}$ and the vector $\\vec{AC} = \\begin{pmatrix} 7 \\\\ 2 \\end{pmatrix}$.<br>(a) Calculate the magnitude of the vector $\\vec{AB}$, denoted by $|\\vec{AB}|$.<br>(b) Find the column vector $\\vec{BC}$.",
         "steps": [
@@ -446,7 +446,7 @@ const problemBank = [
         "date": "19 January 2026",
         "major_area": "Algebra",
         "topic": "Inequalities",
-        "subtopic": "Solving inequalities",
+        "subtopic": "Quadratic Inequalities",
         "difficulty": "8/9",
         "q": "Solve the quadratic inequality: $x^2 > 9$.",
         "steps": [
@@ -470,7 +470,7 @@ const problemBank = [
         "date": "20 January 2026",
         "major_area": "Ratio, Proportion & Rates of Change",
         "topic": "Direct & Inverse Proportion",
-        "subtopic": "Proportion equations",
+        "subtopic": "Direct and Inverse Proportion",
         "difficulty": "6/7",
         "q": "$y$ is directly proportional to $x^2$. When $x = 2, y = 20$.<br>(a) Find an equation for $y$ in terms of $x$.<br>(b) Calculate the value of $y$ when $x = 3$.<br>(c) Find the positive value of $x$ when $y = 80$.",
         "steps": [
@@ -495,7 +495,7 @@ const problemBank = [
         "date": "21 January 2026",
         "major_area": "Number",
         "topic": "Surds",
-        "subtopic": "Simplifying surds",
+        "subtopic": "Surds",
         "difficulty": "7/8",
         "q": "(a) Simplify fully: $\\sqrt{75} + \\sqrt{12}$.<br>(b) Show that $\\dfrac{1}{\\sqrt{75} + \\sqrt{12}}$ can be written as $\\dfrac{\\sqrt{3}}{21}$.",
         "steps": [
@@ -521,7 +521,7 @@ const problemBank = [
         "date": "22 January 2026",
         "major_area": "Algebra",
         "topic": "Quadratic Equations",
-        "subtopic": "Completing the square",
+        "subtopic": "Completing the Square",
         "difficulty": "7/8",
         "q": "(a) Write $x^2 + 6x - 2$ in the form $(x + a)^2 + b$, where $a$ and $b$ are integers.<br>(b) Hence, state the coordinates of the turning point of the curve $y = x^2 + 6x - 2$.",
         "steps": [
@@ -546,7 +546,7 @@ const problemBank = [
         "date": "23 January 2026",
         "major_area": "Ratio, Proportion & Rates of Change",
         "topic": "Compound Measures",
-        "subtopic": "Pressure",
+        "subtopic": "Compound Units: Speed, Density, Pressure",
         "difficulty": "5/6",
         "q": "A force of $100\\text{ N}$ acts on a surface with an area of $20\\text{ cm}^2$.<br>(a) Calculate the pressure exerted on the surface.<br>(b) If the same force is applied to a larger surface area, describe what happens to the pressure.",
         "steps": [
@@ -570,7 +570,7 @@ const problemBank = [
         "date": "24 January 2026",
         "major_area": "Algebra",
         "topic": "Algebraic Proof",
-        "subtopic": "General Proof",
+        "subtopic": "Algebraic Proof",
         "difficulty": "8/9",
         "q": "Prove algebraically that $(n + 1)^2 - (n - 1)^2$ is always a multiple of $4$ for all positive integer values of $n$.",
         "steps": [
@@ -595,7 +595,7 @@ const problemBank = [
         "date": "25 January 2026",
         "major_area": "Geometry & Measures",
         "topic": "Vectors",
-        "subtopic": "Vector addition",
+        "subtopic": "Vector Geometry",
         "difficulty": "6/7",
         "img": "true",
         "q": "In the diagram, $M$ is the midpoint of the line segment $AB$. The vector $\\overrightarrow{OA} = \\mathbf{a}$ and the vector $\\overrightarrow{OB} = \\mathbf{b}$.<br>Find the vector $\\overrightarrow{OM}$ in terms of $\\mathbf{a}$ and $\\mathbf{b}$, giving your answer in its simplest form.",
@@ -619,8 +619,8 @@ const problemBank = [
         "id": "001026",
         "date": "26 January 2026",
         "major_area": "Algebra",
-        "topic": "Graphs",
-        "subtopic": "Reciprocal graphs",
+        "topic": "Functions",
+        "subtopic": "Inverse Functions",
         "difficulty": "7/8",
         "q": "The function $f(x)$ is defined as $f(x) = \\dfrac{1}{x + 2}$ for $x \\neq -2$.<br>(a) Calculate the value of $f(0.5)$.<br>(b) Find the inverse function $f^{-1}(x)$.",
         "steps": [
@@ -647,7 +647,7 @@ const problemBank = [
         "date": "27 January 2026",
         "major_area": "Geometry & Measures",
         "topic": "Trigonometry",
-        "subtopic": "Area of triangle 1/2 ab sin C",
+        "subtopic": "Sine Rule",
         "difficulty": "6/7",
         "img": "true",
         "q": "A triangle has two sides of length $6\\text{ cm}$ and $8\\text{ cm}$. The angle between these two sides is $30^\\circ$.<br>(a) Calculate the area of the triangle.<br>(b) Use the Cosine Rule to calculate the length of the third side, giving your answer to 3 significant figures.",
@@ -674,8 +674,8 @@ const problemBank = [
         "id": "001028",
         "date": "28 January 2026",
         "major_area": "Algebra",
-        "topic": "Indices Laws",
-        "subtopic": "Positive indices",
+        "topic": "Indices",
+        "subtopic": "Indices",
         "difficulty": "8/9",
         "q": "Given that $2^x \\times 4^y = 8$, express $x$ in terms of $y$.",
         "steps": [
@@ -701,7 +701,7 @@ const problemBank = [
         "date": "29 Jan 2026",
         "major_area": "Probability",
         "topic": "Tree Diagrams",
-        "subtopic": "Without replacement",
+        "subtopic": "Probability Tree Diagrams",
         "difficulty": "6/7",
         "q": "A bag contains 3 Red and 7 Blue counters. Two counters are picked at random without replacement. Find the probability that both counters are the same colour.",
         "img": "",
@@ -726,7 +726,7 @@ const problemBank = [
         "date": "30 Jan 2026",
         "major_area": "Number",
         "topic": "Estimation & Bounds",
-        "subtopic": "Upper and lower bounds",
+        "subtopic": "Limits of Accuracy and Bounds",
         "difficulty": "6/7",
         "q": "The values $x = 10$ and $y = 5$ are both rounded to 1 significant figure. Calculate the maximum possible value (Upper Bound) of $x - y$.",
         "img": "",
@@ -751,7 +751,7 @@ const problemBank = [
         "date": "31 Jan 2026",
         "major_area": "Geometry & Measures",
         "topic": "Coordinates",
-        "subtopic": "Gradients",
+        "subtopic": "Equation of a Circle",
         "difficulty": "8/9",
         "img": "true",
         "q": "Find the gradient of the tangent to the circle $x^2 + y^2 = 25$ at the coordinate point $(3, 4)$.",
