@@ -3,6 +3,7 @@ const BradleyHub = {
     state: {
         tier: localStorage.getItem('bradley_tier') || 'gcse',
         seenIds: JSON.parse(localStorage.getItem('bradley_seen_ids') || '[]'),
+        correctIds: JSON.parse(localStorage.getItem('bradley_correct_ids') || '[]'),
         masterVault: [],
         activeMonths: ['01', '02', '03', '04', '05'],
         currentGroup: null, // We now track the "Group" (Booklet) instead of just topic
@@ -219,22 +220,64 @@ const BradleyHub = {
         } catch (e) { console.error("Filing error:", path); }
     },
 
-    // --- VIEW B: THE STUDENT HUB (Coach Flow) ---
+    // --- VIEW B: THE STUDENT HUB (GAMIFIED) ---
     renderMenu() {
         const mapping = this.getMenuMapping();
-        const solvedCount = this.state.seenIds.filter(id => (this.state.tier === 'gcse' ? id.startsWith('002') : id.startsWith('003'))).length;
+        
+        // Count only the correct answers for their tier
+        const score = this.state.correctIds.filter(id => (this.state.tier === 'gcse' ? id.startsWith('002') : id.startsWith('003'))).length;
+
+        // Rank System Logic
+        let rank = "Novice";
+        let nextTarget = 5;
+        if (score >= 50) { rank = "Grade 9 Elite"; nextTarget = "MAX"; }
+        else if (score >= 30) { rank = "Grade 7-8 Master"; nextTarget = 50; }
+        else if (score >= 15) { rank = "Grade 6 Scholar"; nextTarget = 30; }
+        else if (score >= 5) { rank = "Grade 5 Challenger"; nextTarget = 15; }
+
+        let progressHTML = nextTarget === "MAX" 
+            ? `<div style="font-size: 0.9rem; color: #065f46;">Highest Rank Achieved!</div>`
+            : `<div style="font-size: 0.85rem; color: #555;">Next rank at ${nextTarget} correct (Currently ${score})</div>
+               <div style="width: 100%; background: #ddd; height: 10px; border-radius: 5px; margin-top: 5px;">
+                   <div style="width: ${(score/nextTarget)*100}%; background: var(--brand-purple); height: 100%; border-radius: 5px; transition: width 0.5s;"></div>
+               </div>`;
+
+        // Exam Countdown Logic
+        const today = new Date();
+        const p1 = new Date("2026-05-14");
+        const p2 = new Date("2026-06-03");
+        const p3 = new Date("2026-06-10");
+        
+        let countdownText = "";
+        let daysToP1 = Math.ceil((p1 - today) / (1000 * 60 * 60 * 24));
+        let daysToP2 = Math.ceil((p2 - today) / (1000 * 60 * 60 * 24));
+        let daysToP3 = Math.ceil((p3 - today) / (1000 * 60 * 60 * 24));
+
+        if (daysToP1 >= 0) countdownText = `🚨 <strong>${daysToP1} Days</strong> until Paper 1!`;
+        else if (daysToP2 >= 0) countdownText = `🚨 <strong>${daysToP2} Days</strong> until Paper 2!`;
+        else if (daysToP3 >= 0) countdownText = `🚨 <strong>${daysToP3} Days</strong> until Paper 3!`;
+        else countdownText = `GCSE Exams are finished! Great work!`;
 
         document.getElementById('hub-stage').innerHTML = `
-            <div class="info-panel" style="background: white; border: 1px solid #ddd; text-align: center;">
-                <div class="hub-stats" style="background: var(--brand-green-light); padding: 15px; border-radius: 8px; margin-bottom: 20px; font-weight: bold; color: var(--brand-purple-dark);">
-                    Head Teacher's Record: You have mastered ${solvedCount} ${this.state.tier.toUpperCase()} problems.
+            <div class="info-panel" style="background: white; border: 1px solid #ddd; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                
+                <!-- THE COUNTDOWN HOOK -->
+                <div style="background: #fee2e2; border: 1px solid #f87171; color: #991b1b; padding: 12px; border-radius: 8px; font-size: 1.2rem; margin-bottom: 20px;">
+                    ${this.state.tier === 'gcse' ? countdownText : 'IGCSE Exams Complete!'}
                 </div>
-                <h3>Choose a Revision Area</h3>
+
+                <!-- THE GAMIFICATION HOOK -->
+                <div class="hub-stats" style="background: var(--brand-green-light); padding: 20px; border-radius: 8px; margin-bottom: 25px; border: 2px solid var(--brand-green);">
+                    <h3 style="margin: 0 0 10px 0; color: var(--brand-purple-dark);">Your Revision Rank: ${rank}</h3>
+                    ${progressHTML}
+                </div>
+
+                <h3 style="color: var(--brand-purple);">Choose your Revision Area</h3>
                 <div class="menu-grid">
                     ${mapping.map(m => `<button class="menu-btn" onclick="BradleyHub.serveArena('${m.id}')">${m.label}</button>`).join('')}
-                    <button class="menu-btn random" onclick="BradleyHub.serveArena('all')">★ Random Mix ★</button>
+                    <button class="menu-btn random" style="background: linear-gradient(135deg, var(--brand-purple), var(--brand-purple-dark)); color: white; border: none; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.15);" onclick="BradleyHub.serveArena('all')">★ Random Exam Mix ★</button>
                 </div>
-                <p style="margin-top:30px;"><a href="index.html" style="color: var(--text-muted); font-size: 0.85rem;">Return to Homepage</a></p>
+                <p style="margin-top:30px;"><a href="index.html" style="color: var(--text-muted); font-size: 0.85rem; text-decoration: underline;">Return to Homepage</a></p>
             </div>`;
     },
 
@@ -390,10 +433,15 @@ const BradleyHub = {
 
         // --- FEEDBACK ---
         if (isCorrect) {
-            feedbackBox.style.display = "block";
+            // --- NEW: SAVE TO CORRECT SCORE ---
+            if (!this.state.correctIds.includes(probId)) {
+                this.state.correctIds.push(probId);
+                localStorage.setItem('bradley_correct_ids', JSON.stringify(this.state.correctIds));
+            }
+
             feedbackBox.style.background = "#d1fae5"; // green tint
             feedbackBox.style.color = "#065f46";
-            feedbackBox.border = "1px solid #34d399";
+            feedbackBox.style.border = "1px solid #34d399";
             feedbackBox.innerHTML = `<strong>Correct!</strong> Outstanding work. Here is the fully worked solution:`;
         } else {
             feedbackBox.style.display = "block";
@@ -402,7 +450,7 @@ const BradleyHub = {
             feedbackBox.border = "1px solid #f87171";
             feedbackBox.innerHTML = `
                 <strong>Not quite.</strong>  
-                Don't worry, this is a common misconception — review the model answer below to see where you went wrong.
+                Don't worry, this isn't a disaster — review the model answer below to see where you went wrong.
             `;
         }
 
