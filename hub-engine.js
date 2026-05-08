@@ -595,5 +595,25 @@ const BradleyHub = {
         if (window.MathJax) MathJax.typesetPromise();
     },
 
-    loadSpecificMonth(mm) { this.init('audit', this.state.tier); }
+    // --- AUDIT PAGE CONTROLS ---
+    
+    // 1. Fix for changing the month
+    loadSpecificMonth(mm) { 
+        // Update the dropdown visually so it matches what we clicked
+        const picker = document.getElementById('month-picker');
+        if (picker && picker.value !== mm) {
+            picker.value = mm;
+        }
+        // Re-initialize to fetch the new data
+        this.init('audit', this.state.tier); 
+    },
+
+    // 2. New Fix for changing the tier (GCSE to IGCSE)
+    switchAuditTier(newTier) {
+        this.state.tier = newTier;
+        localStorage.setItem('bradley_tier', newTier);
+        
+        // Re-initialize the page with the newly selected tier
+        this.init('audit', newTier);
+    }
 };
