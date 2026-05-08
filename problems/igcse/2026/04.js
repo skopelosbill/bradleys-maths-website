@@ -349,13 +349,13 @@ const problemBank = [
         "topic": "Financial Maths",
         "subtopic": "Currency conversion",
         "difficulty": "C/D",
-        "q": "Bill changes $£500$ into Euros (€) at an exchange rate of $\\£1 = \\€1.15$. He spends $\\€400$ and then changes the remaining amount back to Pounds (£) at a rate of $£1 = €1.12$. Calculate how much Bill receives in Pounds.",
+        "q": "Bill changes $£500$ into Euros (€) at an exchange rate of $\\text{£}1 = \\text{€}1.15$. He spends $\\text{€}400$ and then changes the remaining amount back to Pounds (£) at a rate of $\\text{£}1 = \\text{€}1.12$. Calculate how much Bill receives in Pounds.",
         "steps": [
-            "First, we convert the initial Pounds into Euros: $500 \\times 1.15 = \\€575$.",
-            "We subtract the amount spent: $575 - 400 =\\€175$.",
+            "First, we convert the initial Pounds into Euros: $500 \\times 1.15 = \\text{€}575$.",
+            "We subtract the amount spent: $575 - 400 =\\text{€}175$.",
             "To convert back to Pounds, we use the new rate. Since we are moving from the foreign currency to the home currency, we divide by the rate.",
             "Calculation: $175 \\div 1.12 = 156.25$.",
-            "Final Answer: $$\\£156.25$$"
+            "Final Answer: $$\\text{£}156.25$$"
         ],
         "bradley_insight": {
             "type": "pro-tip",
