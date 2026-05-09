@@ -136,7 +136,7 @@ const problemBank = [
             "FD ($25-45$): $14 \\div 20 = 0.7$.",
             "FD ($45-50$): $13 \\div 5 = 2.6$.",
             "The tallest bar corresponds to the highest FD ($45 < w \\le 50$).",
-            "Final Answer: $$45 < w \\le 50$$"
+            "Final Answer: $$45 < w \\le 50 <img src='images/05/g_06_sol.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>$$"
         ],
         "bradley_insight": {
             "type": "deeper",
