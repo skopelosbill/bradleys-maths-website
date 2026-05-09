@@ -330,7 +330,7 @@ const problemBank = [
         "major_area": "Geometry & Measures",
         "topic": "Trigonometry",
         "subtopic": "Right Angled Trigonometry",
-        "difficulty": "4/5",
+        "difficulty": "5/6",
         "q": "A ladder $5\\text{m}$ long leans against a vertical wall.<br>The base of the ladder is $3\\text{m}$ from the wall on horizontal ground.<br>Calculate the angle the ladder makes with the ground.",
         "img": "true",
         "steps": [
