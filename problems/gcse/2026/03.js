@@ -84,7 +84,7 @@ const problemBank = [
         "major_area": "Geometry & Measures",
         "topic": "Trigonometry",
         "subtopic": "Cosine Rule",
-        "difficulty": "8/9",
+        "difficulty": "7/8",
         "img": "true",
         "q": "In triangle $ABC$, $AB = 7\\text{ cm}$, $AC = 10\\text{ cm}$ and angle $BAC = 35^circ$.<br>(a) Calculate the length of $BC$ to 3 significant figures.<br>(b) Calculate the area of triangle $ABC$ to 3 significant figures.",
         "steps": [
@@ -372,6 +372,7 @@ const problemBank = [
         "topic": "Transformations",
         "subtopic": "Transformations",
         "difficulty": "6/7",
+        "img": "true",
         "q": "Triangle $A$ has vertices at $(1, 2)$, $(3, 2)$, and $(2, 5)$.<br>(a) Triangle $B$ is the image of $A$ after a translation by the vector $\\mathbf{v} = \\begin{pmatrix} 4 \\\\ -1 \\end{pmatrix}$. State the coordinates of the vertices of Triangle $B$.<br>(b) Find the single vector that would translate Triangle $B$ back to its original position at Triangle $A$.",
         "steps": [
             "For part (a), we apply the translation vector to each vertex by adding 4 to the $x$-coordinates and subtracting 1 from the $y$-coordinates.",
@@ -395,7 +396,7 @@ const problemBank = [
         "id": "002052",
         "date": "16 March 2026",
         "major_area": "Probability",
-        "topic": "Conditional Probability",
+        "topic": "Combined Events",
         "subtopic": "Probability Tree Diagrams",
         "difficulty": "7/8",
         "q": "A bag contains 3 red counters and 2 blue counters. Two counters are taken at random without replacement.<br>(a) Calculate the probability that both counters are the same colour.<br>(b) Calculate the probability that the two counters are different colours.",
@@ -477,8 +478,7 @@ const problemBank = [
         "topic": "Algebraic Fractions",
         "subtopic": "Algebraic Fractions 2",
         "difficulty": "7/8",
-        "img": "true",
-        "q": "Simplify fully the expression: $$\\dfrac{2x^2 - 8}{4x^2 + 8x}$$",
+        "q": "Simplify fully the expression: $$\\dfrac{2x^2 - 8}{4x^2+8x}$$",
         "steps": [
             "First, we factorise the numerator. We factor out the common factor 2: $2(x^2 - 4)$.",
             "Next, we recognise the difference of two squares in the bracket: $2(x - 2)(x + 2)$.",
@@ -504,6 +504,7 @@ const problemBank = [
         "topic": "Trigonometry",
         "subtopic": "Cosine Rule",
         "difficulty": "7/8",
+        "img": "true",
         "q": "In triangle $ABC$, $AB = 7\\text{ cm}$, $AC = 9\\text{ cm}$ and angle $BAC = 120^\\circ$.<br>(a) Calculate the exact value of the length $BC^2$.<br>(b) Calculate the length of $BC$, giving your answer to 1 decimal place.",
         "steps": [
             "For part (a), we use the Cosine Rule: $a^2 = b^2 + c^2 - 2bc\\cos(A)$.",
