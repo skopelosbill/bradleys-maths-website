@@ -395,7 +395,7 @@ const problemBank = [
         "subtopic": "Vectors in 2D",
         "difficulty": "7/8",
         "img": "true",
-        "q": "$OABC$ is a quadrilateral where the vector $\\vec{OA} = 3\\mathbf{a}$ and the vector $\\vec{OC} = 2\\mathbf{c}$. $B$ is a point such that the vector $\\vec{CB} = \\mathbf{a}$. Given that $M$ is the midpoint of the line segment $AB$, find the vector $\\vec{OM}$ in terms of $\\mathbf{a}$ and $\\mathbf{c}$.",
+        "q": "$OABC$ is a quadrilateral where the vector $\\vec{OA} = 3\\mathbf{a}$ and the vector $\\vec{OC} = 2\\mathbf{c}$. $B$ is a point such that the vector $\\vec{CB} = \\mathbf{a}$.<br>Given that $M$ is the midpoint of the line segment $AB$, find the vector $\\vec{OM}$ in terms of $\\mathbf{a}$ and $\\mathbf{c}$.",
         "steps": [
             "We first determine the vector $\\vec{AB}$ by following the path from $A$ to $O$, then $O$ to $C$, and finally $C$ to $B$: $\\vec{AB} = -3\\mathbf{a} + 2\\mathbf{c} + \\mathbf{a} = 2\\mathbf{c} - 2\\mathbf{a}$.",
             "Since $M$ is the midpoint of $AB$, the vector $\\vec{AM}$ is half of $\\vec{AB}$, which is $\\mathbf{c} - \\mathbf{a}$.",
