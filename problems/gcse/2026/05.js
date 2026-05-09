@@ -129,7 +129,7 @@ const problemBank = [
         "subtopic": "Histograms",
         "difficulty": "7/8",
         "img": "true",
-        "q": "The table shows information about the weights of 50 bags.<br><br><table style='border-collapse: collapse; width: 100%; text-align: center;' border='1'><tr><th style='padding: 8px;'>Weight ($w$ grams)</th><th style='padding: 8px;'>Frequency</th></tr><tr><td style='padding: 5px;'>$0 < w \\le 10$</td><td style='padding: 5px;'>8</td></tr><tr><td style='padding: 5px;'>$10 < w \\le 25$</td><td style='padding: 5px;'>15</td></tr><tr><td style='padding: 5px;'>$25 < w \\le 45$</td><td style='padding: 5px;'>14</td></tr><tr><td style='padding: 5px;'>$45 < w \\le 50$</td><td style='padding: 5px;'>13</td></tr></table><br>(a) Calculate the frequency density for each class.<br>(b) State which bar would be the tallest on a histogram.",
+        "q": "The table shows information about the weights of 50 bags.<br><br><table style='border-collapse: collapse; width: 100%; text-align: center;' border='1'><tr><th style='padding: 8px;'>Weight ($w$ grams)</th><th style='padding: 8px;'>Frequency</th></tr><tr><td style='padding: 5px;'>$0 < w \\le 10$</td><td style='padding: 5px;'>8</td></tr><tr><td style='padding: 5px;'>$10 < w \\le 25$</td><td style='padding: 5px;'>15</td></tr><tr><td style='padding: 5px;'>$25 < w \\le 45$</td><td style='padding: 5px;'>14</td></tr><tr><td style='padding: 5px;'>$45 < w \\le 50$</td><td style='padding: 5px;'>13</td></tr></table><br>(a) Calculate the frequency density for each class.<br>(b) State which bar would be the tallest on a histogram.<br>(c) Using graph paper, copy the blank histogram and complete it.",
         "steps": [
             "FD ($0-10$): $8 \\div 10 = 0.8$.",
             "FD ($10-25$): $15 \\div 15 = 1.0$.",
@@ -395,7 +395,7 @@ const problemBank = [
         "subtopic": "Vectors in 2D",
         "difficulty": "7/8",
         "img": "true",
-        "q": "$OABC$ is a quadrilateral where the vector $\\vec{OA} = 3\\mathbf{a}$ and the vector $\\vec{OC} = 2\\mathbf{c}$. $B$ is a point such that the vector $\vec{CB} = \\mathbf{a}$. Given that $M$ is the midpoint of the line segment $AB$, find the vector $\\vec{OM}$ in terms of $\\mathbf{a}$ and $\\mathbf{c}$.",
+        "q": "$OABC$ is a quadrilateral where the vector $\\vec{OA} = 3\\mathbf{a}$ and the vector $\\vec{OC} = 2\\text{<strong>c</strong>}$. $B$ is a point such that the vector $\vec{CB} = \\mathbf{a}$. Given that $M$ is the midpoint of the line segment $AB$, find the vector $\\vec{OM}$ in terms of $\\mathbf{a}$ and $\\mathbf{c}$.",
         "steps": [
             "We first determine the vector $\\vec{AB}$ by following the path from $A$ to $O$, then $O$ to $C$, and finally $C$ to $B$: $\\vec{AB} = -3\\mathbf{a} + 2\\mathbf{c} + \\mathbf{a} = 2\\mathbf{c} - 2\\mathbf{a}$.",
             "Since $M$ is the midpoint of $AB$, the vector $\\vec{AM}$ is half of $\\vec{AB}$, which is $\\mathbf{c} - \\mathbf{a}$.",
@@ -541,13 +541,13 @@ const problemBank = [
         "topic": "Decimals",
         "subtopic": "Recurring Decimals to Fractions",
         "difficulty": "7/8",
-        "q": "Show that the recurring decimal $0.4\\dot{7}$ (where only the 7 is recurring) can be written as the fraction $\\dfrac{43}{90}$ in its simplest form.",
+        "q": "Express the recurring decimal $0.6\\dot{3}\\dot{5}$ in the form $\\dfrac{a}{b}$ where $a$ and $b$ are integers in their simplest form.",
         "steps": [
-            "We begin by setting $x = 0.4777...$.",
-            "Multiplying by 10 gives $10x = 4.777...$ and multiplying by 100 gives $100x = 47.777...$.",
-            "By subtracting $10x$ from $100x$, we eliminate the recurring part: $90x = 43$.",
-            "We divide by 90 to express $x$ as a fraction.",
-            "Final Answer: $$\\dfrac{43}{90}$$"
+            "We begin by setting $x = 0.6353535...$.",
+            "Multiplying by 10 gives $10x = 6.353535...$ and multiplying by 1000 gives $1000x = 635.353535...$.",
+            "By subtracting $10x$ from $1000x$, we eliminate the recurring part: $990x = 629$.",
+            "We divide by 990 to express $x$ as a fraction.",
+            "Final Answer: $$\\dfrac{629}{990}$$"
         ],
         "bradley_insight": {
             "type": "caution",
