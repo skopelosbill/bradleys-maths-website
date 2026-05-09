@@ -245,7 +245,6 @@ const problemBank = [
         "difficulty": "8/9",
         "img": "true",
         "q": "A cuboid has dimensions $3\\text{cm}$ by $4\\text{cm}$ by $12\\text{cm}$.<br>Calculate the length of the internal diagonal (the longest distance between two corners).",
-        "img": "",
         "steps": [
             "Use the 3D Pythagoras formula: $d^2 = a^2 + b^2 + c^2$.",
             "Substitute: $d^2 = 3^2 + 4^2 + 12^2$.",
