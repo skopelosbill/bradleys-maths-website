@@ -243,6 +243,7 @@ const problemBank = [
         "topic": "Pythagoras",
         "subtopic": "Trigonometry in 3D",
         "difficulty": "8/9",
+        "img": "true",
         "q": "A cuboid has dimensions $3\\text{cm}$ by $4\\text{cm}$ by $12\\text{cm}$.<br>Calculate the length of the internal diagonal (the longest distance between two corners).",
         "img": "",
         "steps": [
