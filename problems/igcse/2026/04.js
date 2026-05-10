@@ -293,7 +293,7 @@ const problemBank = [
     {
         "id": "003102",
         "date": "12 April 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Vectors, Probability and Statistics",
         "topic": "Vectors",
         "subtopic": "Vector geometry",
         "difficulty": "A*",
@@ -746,7 +746,7 @@ const problemBank = [
         "major_area": "Number",
         "topic": "Standard Form",
         "subtopic": "Calculations in standard form",
-        "difficulty": "B/A",
+        "difficulty": "B",
         "q": "The distance from Earth to a distant planet is $1.65 \\times 10^8 \\text{ km}$. A spacecraft travels at an average speed of $5.5 \\times 10^4 \\text{ km/h}$.<br>(a) Calculate the time taken for the journey in hours, giving your answer in standard form.<br>(b) Calculate the time taken for the journey in days.",
         "steps": [
             "For part (a), we use the formula $\\text{Time} = \\text{Distance} \\div \\text{Speed}$.",
