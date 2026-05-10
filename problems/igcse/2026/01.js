@@ -274,7 +274,7 @@ const problemBank = [
         "major_area": "Number",
         "topic": "Estimation & Bounds",
         "subtopic": "Upper and lower bounds",
-        "difficulty": "A*",
+        "difficulty": "B",
         "q": "The distance $d$ is $100\\text{ m}$ correct to the nearest $5\\text{ m}$. The time $t$ is $10\\text{ s}$ correct to the nearest second.<br>Calculate the upper bound for the average speed. Give your answer to 3 significant figures.",
         "steps": [
             "To maximize the speed, we must divide the upper bound of distance by the lower bound of time: $S_{\\text{max}} = \\dfrac{D_{\\text{UB}}}{T_{\\text{LB}}}$.",
@@ -325,7 +325,7 @@ const problemBank = [
         "major_area": "Algebra",
         "topic": "Algebraic Fractions",
         "subtopic": "Adding/subtracting",
-        "difficulty": "B/A",
+        "difficulty": "A",
         "q": "(a) Solve the equation $\\dfrac{2}{x} + \\dfrac{3}{x + 1} = 1$.<br>(b) Give your answers correct to 2 decimal places.",
         "steps": [
             "To solve, we first find a common denominator: $\\dfrac{2(x + 1) + 3x}{x(x + 1)} = 1$.",
@@ -586,7 +586,7 @@ const problemBank = [
         "major_area": "Geometry & Measures",
         "topic": "Coordinates",
         "subtopic": "Gradients",
-        "difficulty": "B/A",
+        "difficulty": "C",
         "q": "Point $A$ has coordinates $(2, 4)$ and Point $B$ has coordinates $(8, 10)$.<br>(a) Find the coordinates of the midpoint of $AB$.<br>(b) Find the equation of the perpendicular bisector of the line $AB$.",
         "steps": [
             "For part (a), we use the midpoint formula: $\\left(\\dfrac{x_1+x_2}{2}, \\dfrac{y_1+y_2}{2}\\right)$.",
