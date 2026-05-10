@@ -3,9 +3,9 @@ const problemBank =[
     {
         "id": "003060",
         "date": "1 March 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Vectors, Probability and Statistics",
         "topic": "Vectors",
-        "subtopic": "Scalar multiplication",
+        "subtopic": "Position Vectors",
         "difficulty": "B/A",
         "q": "The points $A$ and $B$ have position vectors $\\mathbf{a}$ and $\\mathbf{b}$ respectively, relative to an origin $O$. Point $C$ lies on the line $AB$ produced such that $\\overrightarrow{AC} = 2\\overrightarrow{AB}$.<br>(a) Find the vector $\\overrightarrow{AB}$ in terms of $\\mathbf{a}$ and $\\mathbf{b}$.<br>(b) Find the position vector of $C$ in terms of $\\mathbf{a}$ and $\\mathbf{b}$, giving your answer in its simplest form.",
         "steps": [
@@ -20,7 +20,7 @@ const problemBank =[
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Position Vector Logic",
-            "content": "A position vector is always relative to the origin $O$. In IGCSE Extended problems, you must be careful to distinguish between a vector *between* two points and the *position* vector of a point. Always start your path at $O$ and use known segments as your 'roads' to reach your destination."
+            "content": "A position vector is always relative to the origin $O$. In IGCSE Extended problems, you must be careful to distinguish between a vector <strong>between</strong> two points and the <strong>position</strong> vector of a point. Always start your path at $O$ and use known segments as your 'roads' to reach your destination."
         },
         "payhip_link": "https://payhip.com/b/example",
         "button_text": "Master IGCSE Vectors: Download the Extended Pack"
@@ -142,7 +142,7 @@ const problemBank =[
         "major_area": "Algebra",
         "topic": "Simultaneous Equations",
         "subtopic": "Substitution",
-        "difficulty": "B/A",
+        "difficulty": "A",
         "q": "Solve the following simultaneous equations to find the coordinates of the points of intersection:<br>$y = x + 1$<br>$x^2 + y^2 = 25$",
         "steps": [
             "We substitute the expression for $y$ from the first equation into the second: $x^2 + (x + 1)^2 = 25$.",
@@ -166,10 +166,11 @@ const problemBank =[
     {
         "id": "003066",
         "date": "7 March 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Vectors, Probability and Statistics",
         "topic": "Vectors",
-        "subtopic": "Parallel vectors",
+        "subtopic": "Column vectors",
         "difficulty": "B/A",
+        "img": "true",
         "q": "The points $A$ and $B$ have position vectors $\\overrightarrow{OA} = \\begin{pmatrix} 2 \\\\ -1 \\end{pmatrix}$ and $\\overrightarrow{OB} = \\begin{pmatrix} 6 \\\\ 3 \\end{pmatrix}$. Point $C$ lies on the segment $AB$ such that $AC : CB = 1 : 2$.<br>(a) Find the vector $\\overrightarrow{AB}$ as a column vector.<br>(b) Find the position vector $\\overrightarrow{OC}$ as a column vector.",
         "steps": [
             "For part (a), the vector from $A$ to $B$ is found by $\\overrightarrow{OB} - \\overrightarrow{OA}$.",
@@ -185,8 +186,8 @@ const problemBank =[
             "title": "The Head Teacher's Eye: Ratio Partitioning",
             "content": "A common error in vector ratio problems is using the wrong fraction. If the ratio is $1:2$, the total number of parts is $3$, so $AC$ is $\\dfrac{1}{3}$ of $AB$, and $CB$ is $\\dfrac{2}{3}$ of $AB$. Always check that your fraction's denominator is the sum of the ratio parts."
         },
-        "payhip_link": "https://payhip.com/b/example",
-        "button_text": "Master IGCSE Geometry: Download the Extended Pack"
+        "payhip_link": "hhttps://payhip.com/b/rsVCz",
+        "button_text": "Master IGCSE Vectors: Download the Extended Pack"
     },
     // 8 March
     {
@@ -404,7 +405,7 @@ const problemBank =[
         "major_area": "Algebra",
         "topic": "Differentiation",
         "subtopic": "Differentiate sums of terms",
-        "difficulty": "B/C",
+        "difficulty": "A",
         "q": "The equation of a curve is $y = 4x^3 - 2x^2 + 5x - 7$.<br>(a) Find the derivative $\\dfrac{dy}{dx}$.<br>(b) Calculate the gradient of the curve at the point where $x = -1$.",
         "steps": [
             "For part (a), we apply the power rule of differentiation, $\\dfrac{d}{dx}(ax^n) = anx^{n-1}$, to each term independently.",
@@ -428,10 +429,11 @@ const problemBank =[
     {
         "id": "003076",
         "date": "17 March 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Vectors, Probability and Statistics",
         "topic": "Vectors",
         "subtopic": "Vector addition",
         "difficulty": "A/A*",
+        "img": "true",
         "q": "Relative to an origin $O$, the points $A$, $B$ and $C$ have position vectors $\\mathbf{a}$, $\\mathbf{b}$ and $\\mathbf{c}$ respectively. $M$ is the midpoint of $AB$ and $N$ is the midpoint of $AC$.<br>Prove algebraically that $\\overrightarrow{MN} = \\dfrac{1}{2}(\\mathbf{c} - \\mathbf{b})$.",
         "steps": [
             "We first define the position vectors of the midpoints $M$ and $N$.",
@@ -448,8 +450,8 @@ const problemBank =[
             "title": "The Head Teacher's Eye: Midpoint Theorem",
             "content": "This algebraic proof demonstrates a fundamental geometric property: the line segment joining the midpoints of two sides of a triangle is parallel to the third side and half its length. In IGCSE, providing a clear audit trail of your vector paths is essential for gaining the full communication marks in Paper 4."
         },
-        "payhip_link": "https://payhip.com/b/example",
-        "button_text": "Master IGCSE Geometry: Download the Extended Pack"
+        "payhip_link": "https://payhip.com/b/rsVCz",
+        "button_text": "Master IGCSE Vectors: Download the Extended Pack"
     },
     // 18 March
     {
