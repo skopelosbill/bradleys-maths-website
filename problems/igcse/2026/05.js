@@ -230,7 +230,7 @@ const problemBank = [
         "difficulty": "B/A",
         "q": "A box contains 6 green apples and 4 red apples.<br>Two apples are picked at random without replacement.<br>(a) Draw a probability tree diagram to illustrate this situation.<br>(b) Find the probability that both apples are the same colour.",
         "steps": [
-            "(a) See the diagram after the final answer",
+            "(a) See the diagram after the final answer.",
             "(b) We identify two mutually exclusive scenarios: picking two green (GG) or picking two red (RR).",
             "Probability of two green: $P(GG) = \\dfrac{6}{10} \\times \\dfrac{5}{9} = \\dfrac{30}{90}$.",
             "Probability of two red: $P(RR) = \\dfrac{4}{10} \\times \\dfrac{3}{9} = \\dfrac{12}{90}$.",
