@@ -232,7 +232,7 @@ const problemBank = [
             "Region $A$ only contains $\\{5, 7\\}$.",
             "Region $B$ only contains $\\{1, 4, 6\\}$.",
             "Outside: $\\{8, 9, 10\\}$.",
-            "Final Answer: $$\\frac{2}{10} \\text{ (or } 0.2) <br><img src='images/05/g_10_sol.png' alt='Venn Solution' style='max-width:300px;'>$$"
+            "Final Answer: $$\\frac{2}{10} \\text{ (or } 0.2)<img src='images/05/g_10_sol.png' alt='Venn Solution' style='max-width:300px;'>$$"
         ],
         "bradley_insight": {
             "type": "deeper",
