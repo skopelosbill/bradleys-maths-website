@@ -236,7 +236,7 @@ const problemBank = [
             "Probability of two red: $P(RR) = \\dfrac{4}{10} \\times \\dfrac{3}{9} = \\dfrac{12}{90}$.",
             "We sum these probabilities: $\\dfrac{30}{90} + \\dfrac{12}{90} = \\dfrac{42}{90}$.",
             "Finally, we simplify the fraction to its lowest terms.",
-            "Final Answer: $$\\dfrac{7}{15}$$<img src='images/05/i_10_sol.png' alt='Probability tree diagram' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>""
+            "Final Answer: $$\\dfrac{7}{15}$$<img src='images/05/i_10_sol.png' alt='Probability tree diagram' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>"
         ],
         "bradley_insight": {
             "type": "caution",
