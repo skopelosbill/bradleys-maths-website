@@ -131,7 +131,7 @@ const problemBank = [
         "topic": "Frequency Tables",
         "subtopic": "Grouped data",
         "difficulty": "B/C",
-        "q": "The table shows the time, $t$ seconds, taken by 50 students to complete a puzzle.<br><table><tr><th>Time ($t$ s)</th><th>Frequency</th></tr><tr><td>$20 < t \\le 30$</td><td>8</td></tr><tr><td>$30 < t \\le 40$</td><td>15</td></tr><tr><td>$40 < t \\le 50$</td><td>17</td></tr><tr><td>$50 < t \\le 60$</td><td>10</td></tr></table><br>Calculate an estimate for the mean time.",
+        "q": "The table shows the time, $t$ seconds, taken by 50 students to complete a puzzle.<br><table style='border-collapse:collapse;width:260px;text-align:center;'><tr><th style='padding:6px;'>Time (t s)</th><th style='padding:6px;'>Frequency</th></tr><tr><td style='padding:6px;'>20 &lt; t ≤ 30</td><td style='padding:6px;'>8</td></tr><tr><td style='padding:6px;'>30 &lt; t ≤ 40</td><td style='padding:6px;'>15</td></tr><tr><td style='padding:6px;'>40 &lt; t ≤ 50</td><td style='padding:6px;'>17</td></tr><tr><td style='padding:6px;'>50 &lt; t ≤ 60</td><td style='padding:6px;'>10</td></tr></table><br>Calculate an estimate for the mean time.",
         "steps": [
             "We first identify the mid-interval values ($x$) for each group: 25, 35, 45, and 55.",
             "Next, we multiply each midpoint by its frequency ($f \\times x$): $200$, $525$, $765$, and $550$.",
@@ -228,14 +228,15 @@ const problemBank = [
         "topic": "Tree Diagrams",
         "subtopic": "Without replacement",
         "difficulty": "B/A",
-        "q": "A box contains 6 green apples and 4 red apples. Two apples are picked at random without replacement. Find the probability that both apples are the same colour.",
+        "q": "A box contains 6 green apples and 4 red apples.<br>Two apples are picked at random without replacement.<br>(a) Draw a probability tree diagram to illustrate this situation.<br>(b) Find the probability that both apples are the same colour.",
         "steps": [
-            "We identify two mutually exclusive scenarios: picking two green (GG) or picking two red (RR).",
+            "(a) See the diagram after the final answer",
+            "(b) We identify two mutually exclusive scenarios: picking two green (GG) or picking two red (RR).",
             "Probability of two green: $P(GG) = \\dfrac{6}{10} \\times \\dfrac{5}{9} = \\dfrac{30}{90}$.",
             "Probability of two red: $P(RR) = \\dfrac{4}{10} \\times \\dfrac{3}{9} = \\dfrac{12}{90}$.",
             "We sum these probabilities: $\\dfrac{30}{90} + \\dfrac{12}{90} = \\dfrac{42}{90}$.",
             "Finally, we simplify the fraction to its lowest terms.",
-            "Final Answer: $$\\dfrac{7}{15}$$"
+            "Final Answer: $$\\dfrac{7}{15}$$<img src='images/05/i_10_sol.png' alt='Probability tree diagram' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>""
         ],
         "bradley_insight": {
             "type": "caution",
@@ -363,7 +364,7 @@ const problemBank = [
             "Dividing by 6 gives $x^2 - 3x + 2 = 0$, which factorises to $(x - 1)(x - 2) = 0$.",
             "The $x$-coordinates are $1$ and $2$. We substitute these into the original equation for $y$.",
             "When $x = 1, y = 2$. When $x = 2, y = 1$.",
-            "Final Answer: $$(1, 2) \\text{ and } (2, 1)$$"
+            "Final Answer: $$(1, 2) \\text{ and } (2, 1)$$<img src='images/05/i_15_sol.png' alt='cubic graphs showing the turning points.' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>""
         ],
         "bradley_insight": {
             "type": "deeper",
@@ -406,7 +407,7 @@ const problemBank = [
         "subtopic": "Cyclic quadrilaterals",
         "difficulty": "B/A",
         "img": "true",
-        "q": "$A, B, C$ and $D$ are points on a circle. $AB$ is parallel to $DC$. Given $\\angle ADC = 108^\\circ$, calculate the sizes of $\\angle ABC$ and $\\angle BCD$.",
+        "q": "$A, B, C$ and $D$ are points on a circle. $AB$ is parallel to $DC$. Given $\\angle ADC = 108^\\circ$, calculate the sizes of $\\angle ABC$ and $\\angle BCD$ giving clear geometrical reasons for your answers.",
         "steps": [
             "We identify $ABCD$ as a cyclic quadrilateral. Opposite angles sum to $180^\\circ$.",
             "Therefore, $\\angle ABC = 180^\\circ - 108^\\circ = 72^\\circ$.",
@@ -649,7 +650,6 @@ const problemBank = [
         "topic": "Angles",
         "subtopic": "Regular polygons",
         "difficulty": "C/D",
-        "img": "true",
         "q": "Calculate the size of one exterior angle of a regular polygon with 15 sides.",
         "steps": [
             "The sum of exterior angles for any convex polygon is $360^\\circ$.",
