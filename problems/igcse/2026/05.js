@@ -364,7 +364,7 @@ const problemBank = [
             "Dividing by 6 gives $x^2 - 3x + 2 = 0$, which factorises to $(x - 1)(x - 2) = 0$.",
             "The $x$-coordinates are $1$ and $2$. We substitute these into the original equation for $y$.",
             "When $x = 1, y = 2$. When $x = 2, y = 1$.",
-            "Final Answer: $$(1, 2) \\text{ and } (2, 1)$$<img src='images/05/i_15_sol.png' alt='cubic graphs showing the turning points.' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>""
+            "Final Answer: $$(1, 2) \\text{ and } (2, 1)$$<img src='images/05/i_15_sol.png' alt='cubic graphs showing the turning points.' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>"
         ],
         "bradley_insight": {
             "type": "deeper",
