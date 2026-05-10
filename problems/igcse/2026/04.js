@@ -113,7 +113,7 @@ const problemBank = [
         "topic": "Frequency Tables",
         "subtopic": "Grouped data",
         "difficulty": "B/A",
-        "q": "The table shows the times, $t$ minutes, taken by 40 students to complete a puzzle.<br><table><tr><th>Time ($t$)</th><th>Frequency</th></tr><tr><td>$0 < t \\le 5$</td><td>6</td></tr><tr><td>$5 < t \\le 10$</td><td>12</td></tr><tr><td>$10 < t \\le 15$</td><td>14</td></tr><tr><td>$15 < t \\le 20$</td><td>8</td></tr></table><br>Estimate the mean time taken.",
+        "q": "The table shows the times, $t$ minutes, taken by 40 students to complete a puzzle.<br><table style='border-collapse: collapse; width: 260px; text-align: center;'><tr><th style='padding: 6px;'>Time (t)</th><th style='padding: 6px;'>Frequency</th></tr><tr><td style='padding: 6px;'>0 &lt; t ≤ 5</td><td style='padding: 6px;'>6</td></tr><tr><td style='padding: 6px;'>5 &lt; t ≤ 10</td><td style='padding: 6px;'>12</td></tr><tr><td style='padding: 6px;'>10 &lt; t ≤ 15</td><td style='padding: 6px;'>14</td></tr><tr><td style='padding: 6px;'>15 &lt; t ≤ 20</td><td style='padding: 6px;'>8</td></tr></table><br>Estimate the mean time taken.",
         "img": "",
         "steps": [
             "To estimate the mean, we first identify the midpoint ($x$) of each class interval: $2.5, 7.5, 12.5, 17.5$.",
