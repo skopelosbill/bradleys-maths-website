@@ -59,20 +59,20 @@ const problemBank = [
         "topic": "Financial Maths",
         "subtopic": "Compound interest",
         "difficulty": "B/A",
-        "q": "Jade invests $€18,000$ at $5.25\\%$ per year compound interest for 10 years.<br>(a) Calculate the total value of her investment at the end of 10 years. Give your answer to the nearest Euro.<br>(b) Round your answer to part (a) to the nearest ten thousand Euros.",
+        "q": "Jade invests $\\text{€}18,000$ at $5.25\\%$ per year compound interest for 10 years.<br>(a) Calculate the total value of her investment at the end of 10 years. Give your answer to the nearest Euro.<br>(b) Round your answer to part (a) to the nearest ten thousand Euros.",
         "steps": [
             "For part (a), we use the compound interest multiplier: $1 + 0.0525 = 1.0525$.",
             "The formula for the total value is $18000 \\times (1.0525)^{10}$.",
             "Calculation: $18000 \\times 1.66810... = 30025.86...$.",
-            "Rounding to the nearest Euro gives $€30,026$.",
-            "For part (b), we round $€30,026$ to the nearest ten thousand.",
+            "Rounding to the nearest Euro gives $\\text{€}30,026$.",
+            "For part (b), we round $\\text{€}30,026$ to the nearest ten thousand.",
             "Since the thousands digit is 0, we round down.",
-            "Final Answer: $$(a)\\ €30,026,\\ (b)\\ €30,000$$"
+            "Final Answer: $$(a)\\text{ €}30,026,\\ (b)\\text{ €}30,000$$"
         ],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Significant Rounding",
-            "content": "Financial questions in IGCSE Paper 4 often conclude with a specific rounding instruction. While $€30,026$ is the accurate value, the examiner is testing your understanding of place value by asking for the 'nearest ten thousand'. Always double-check which column you are rounding to in the final step."
+            "content": "Financial questions in IGCSE Paper 4 often conclude with a specific rounding instruction. While $\\text{€}€30,026$ is the accurate value, the examiner is testing your understanding of place value by asking for the 'nearest ten thousand'. Always double-check which column you are rounding to in the final step."
         },
         "payhip_link": "https://payhip.com/b/example",
         "button_text": "Master IGCSE Number: Download the Extended Pack"
@@ -140,10 +140,10 @@ const problemBank = [
         "img": "true",
         "q": "In the right-angled triangle $ABC$, $AC = 20\\text{ cm}$ and $BC = 7\\text{ cm}$.<br>(a) Calculate the length of $AB$ to 3 significant figures.<br>(b) Calculate the size of angle $BAC$ to 1 decimal place.",
         "steps": [
-            "For part (a), assuming $AB$ is the hypotenuse: $AB^2 = 20^2 + 7^2 = 400 + 49 = 449$.",
+            "(a) The right-angle is shown at $\\angle ACB$ so $AB$ is the hypotenuse: $AB^2 = 20^2 + 7^2 = 400 + 49 = 449$.",
             "Taking the square root: $AB = \\sqrt{449} \\approx 21.189...$.",
             "Rounding to 3 significant figures gives $21.2\\text{ cm}$.",
-            "For part (b), we use the tangent ratio: $\\tan(\\angle BAC) = \\dfrac{\\text{Opposite}}{\\text{Adjacent}} = \\dfrac{7}{20}$.",
+            "(b) We are given the opposite and adjacent sides and so use the tangent ratio: $\\tan(\\angle BAC) = \\dfrac{\\text{Opposite}}{\\text{Adjacent}} = \\dfrac{7}{20}$.",
             "Calculation: $\\angle BAC = \\tan^{-1}(0.35) \\approx 19.29...^\\circ$.",
             "Rounding to 1 decimal place: $19.3^\\circ$.",
             "Final Answer: $$(a)\\ 21.2\\text{ cm},\\ (b)\\ 19.3^\\circ$$"
@@ -513,6 +513,7 @@ const problemBank = [
         "topic": "Pythagoras",
         "subtopic": "3D Pythagoras",
         "difficulty": "A/A*",
+        "img": "true",
         "q": "A cuboid has a length of $6\\text{ cm}$, a width of $4\\text{ cm}$ and a height of $2.5\\text{ cm}$.<br>(a) Calculate the length of the space diagonal correct to 3 significant figures.<br>(b) Calculate the angle that the space diagonal makes with the horizontal base of the cuboid.",
         "steps": [
             "For part (a), we use the 3D Pythagorean formula: $d^2 = l^2 + w^2 + h^2$.",
