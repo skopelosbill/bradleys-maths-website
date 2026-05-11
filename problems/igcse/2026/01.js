@@ -3,9 +3,9 @@ const problemBank = [
     {
         "id": "003001",
         "date": "1 January 2026",
-        "major_area": "Number",
-        "topic": "Indices Laws",
-        "subtopic": "Fractional indices",
+        "major_area": "Algebra",
+        "topic": "Laws of Indices",
+        "subtopic": "Indices II",
         "difficulty": "B/A",
         "q": "(a) Evaluate $27^{\\frac{2}{3}}$ without the use of a calculator.<br>(b) Simplify fully $(16x^8)^{\\frac{1}{4}}$.",
         "steps": [
@@ -22,17 +22,17 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Root Before Power",
             "content": "In Paper 2 (Non-Calculator), you must prioritize the root before the power. Attempting to square 27 before taking the cube root is mathematically valid but numerically cumbersome. Mastering the 'recalls' of powers—specifically squares up to 15 and cubes up to 5—is a mandatory requirement for the 2025 syllabus."
         },
-        "payhip_link": "https://payhip.com/b/example",
-        "button_text": "Master IGCSE Number: Download the Extended Pack"
+        "payhip_link": "https://payhip.com/b/mg5YS",
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 2 January
     {
         "id": "003002",
         "date": "2 January 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Geometry",
         "topic": "Circle Theorems",
-        "subtopic": "Cyclic quadrilaterals",
-        "difficulty": "A*",
+        "subtopic": "Circle Theorems 2",
+        "difficulty": "A/A*",
         "img": "true",
         "q": "$ABCD$ is a cyclic quadrilateral where the diagonal $AD$ passes through the centre $O$. Angle $BOD = 72^\\circ$ and the chord $BC$ is equal in length to chord $CD$.<br>(a) State the size of angle $ABD$, giving a geometric reason.<br>(b) Calculate the size of angle $CBD$.<br>(c) Find the total size of angle $ABC$.",
         "steps": [
@@ -49,8 +49,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Multi-Theorem Synthesis",
             "content": "This is a classic 'Level 8' IGCSE problem. It requires the synthesis of three distinct geometric properties: the semicircle rule, the relationship between equal chords, and the centre-to-circumference theorem. In the 2025 series, marks are heavily weighted toward the clear identification of these reasons."
         },
-        "payhip_link": "https://payhip.com/b/example",
-        "button_text": "Master IGCSE Geometry: Download the Extended Pack"
+        "payhip_link": "https://payhip.com/b/L6skH",
+        "button_text": "Master IGCSE Coordinate Geometry and Geometry: Download the Extended Pack"
     },
     // 3 January
     {
@@ -58,7 +58,7 @@ const problemBank = [
         "date": "3 January 2026",
         "major_area": "Algebra",
         "topic": "Differentiation",
-        "subtopic": "Stationary points",
+        "subtopic": "Stationary Points",
         "difficulty": "B/A",
         "q": "The equation of a curve is $y = x^2 - 8x + 5$.<br>(a) Find the expression for $\\dfrac{dy}{dx}$.<br>(b) Find the coordinates of the turning point of the curve.<br>(c) By considering the second derivative, determine the nature of this turning point.",
         "steps": [
@@ -76,7 +76,7 @@ const problemBank = [
             "title": "The Head Teacher's Eye: The Second Derivative Test",
             "content": "The 2025 IGCSE syllabus explicitly requires the second derivative test to justify the nature of stationary points. Simply looking at the shape of the parabola is no longer sufficient for full marks in Paper 4. Remember: $f''(x) > 0$ is a minimum, and $f''(x) < 0$ is a maximum."
         },
-        "payhip_link": "https://payhip.com/b/example",
+        "payhip_link": "https://payhip.com/b/mg5YS",
         "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 4 January
@@ -85,7 +85,7 @@ const problemBank = [
         "date": "4 January 2026",
         "major_area": "Probability",
         "topic": "Basic Probability",
-        "subtopic": "Sample Space Diagrams",
+        "subtopic": "Sets and Venn Diagrams",
         "difficulty": "B/C",
         "q": "In a group of 20 students, 12 study Art ($A$), 10 study Biology ($B$), and 18 study at least one of these subjects.<br>(a) Find the number of students who study both Art and Biology, $n(A \\cap B)$.<br>(b) A student is chosen at random from the whole group. Find the probability that the student studies Biology but not Art.",
         "steps": [
@@ -102,8 +102,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Set Notation Precision",
             "content": "In IGCSE Set Theory, the phrase 'Biology but not Art' refers to the set $B \\cap A'$. Visualizing this on a Venn diagram is the most effective way to avoid adding the intersection by mistake. Always ensure your final probability is simplified to its lowest terms unless specified otherwise."
         },
-        "payhip_link": "https://payhip.com/b/example",
-        "button_text": "Master IGCSE Statistics: Download the Extended Pack"
+        "payhip_link": "https://payhip.com/b/rsVCz",
+        "button_text": "Master IGCSE Transformations, Vectors, Probability, and Statistics: Download the Extended Pack"
     },
     // 5 January
     {
@@ -111,7 +111,7 @@ const problemBank = [
         "date": "5 January 2026",
         "major_area": "Number",
         "topic": "Surds",
-        "subtopic": "Rationalising denominators",
+        "subtopic": "Surds",
         "difficulty": "B/C",
         "q": "(a) Rationalise the denominator of $\\dfrac{10}{\\sqrt{2}}$, giving your answer in its simplest form.<br>(b) Simplify $2\\sqrt{18} - \\sqrt{8}$ without using a calculator.",
         "steps": [
@@ -129,7 +129,7 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Surd Fluency",
             "content": "Rationalising the denominator is a new emphasis in the 0580 syllabus. It is a fundamental algebraic skill used to simplify expressions for Paper 2. Always look for the largest square number ($4, 9, 16, 25...$) when simplifying surds to ensure the radicand is as small as possible."
         },
-        "payhip_link": "https://payhip.com/b/example",
+        "payhip_link": "https://payhip.com/b/XEV2Z",
         "button_text": "Master IGCSE Number: Download the Extended Pack"
     },
     // 6 January
@@ -137,8 +137,8 @@ const problemBank = [
         "id": "003006",
         "date": "6 January 2026",
         "major_area": "Algebra",
-        "topic": "Graphs",
-        "subtopic": "Linear graphs",
+        "topic": "Functions",
+        "subtopic": "Inverse Functions",
         "difficulty": "B/A",
         "q": "The function $f$ is defined by $f(x) = 2x - 5$.<br>(a) Find the value of $f(3.5)$.<br>(b) Find an expression for the inverse function $f^{-1}(x)$.<br>(c) Solve the equation $f(x) = f^{-1}(x)$.",
         "steps": [
@@ -157,16 +157,16 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Reflections in y = x",
             "content": "When solving $f(x) = f^{-1}(x)$, you are finding the point where the function crosses the line of symmetry $y = x$. If you are short on time, you can often solve this more quickly by simply setting $f(x) = x$. Try it: $2x - 5 = x \\implies x = 5$. A sophisticated examiner will recognize this as high-level functional understanding."
         },
-        "payhip_link": "https://payhip.com/b/example",
+        "payhip_link": "https://payhip.com/b/mg5YS",
         "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 7 January
     {
         "id": "003007",
         "date": "7 January 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Vectors",
         "topic": "Vectors",
-        "subtopic": "Vector addition",
+        "subtopic": "Vector Geometry",
         "difficulty": "A*",
         "img": "true",
         "q": "Relative to an origin $O$, the position vector of point $P$ is $2\\mathbf{a}$ and the position vector of point $Q$ is $3\\mathbf{b}$. Point $M$ is the midpoint of the line segment $PQ$.<br>(a) Find the vector $\\overrightarrow{PQ}$ in terms of $\\mathbf{a}$ and $\\mathbf{b}$.<br>(b) Show that the position vector of $M$ is $\\mathbf{a} + 1.5\\mathbf{b}$.",
@@ -184,16 +184,16 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Midpoint Formula",
             "content": "While navigating paths is the most reliable method for complex vector proofs, you can verify your answer using the midpoint formula for position vectors: $\\overrightarrow{OM} = \\dfrac{1}{2}(\\overrightarrow{OP} + \\overrightarrow{OQ})$. Calculation: $\\dfrac{1}{2}(2\\mathbf{a} + 3\\mathbf{b}) = \\mathbf{a} + 1.5\\mathbf{b}$. This is an excellent way to double-check your work."
         },
-        "payhip_link": "https://payhip.com/b/example",
-        "button_text": "Master IGCSE Geometry: Download the Extended Pack"
+        "payhip_link": "https://payhip.com/b/rsVCz",
+        "button_text": "Master IGCSE Transformations, Vectors, Probability, and Statistics: Download the Extended Pack"
       },
     // 8 January
     {
         "id": "003008",
         "date": "8 January 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Mensuration",
         "topic": "3D Shapes",
-        "subtopic": "Surface area",
+        "subtopic": "Surface Areas and Volumes",
         "difficulty": "B/C",
         "q": "A sector of a circle has a radius of $6\\text{ cm}$ and a sector angle of $60^\\circ$.<br>(a) Calculate the exact length of the arc. Give your answer in terms of $\\pi$.<br>(b) Calculate the exact area of the sector. Give your answer in terms of $\\pi$.",
         "steps": [
@@ -210,14 +210,14 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Exact Values of Pi",
             "content": "In the new Paper 2 format, questions often require answers 'in terms of $\\pi$'. This is a direct test of your ability to manipulate fractions and indices without relying on a calculator. Always simplify your fraction of the circle before multiplying by the radius to keep the arithmetic manageable."
         },
-        "payhip_link": "https://payhip.com/b/example",
-        "button_text": "Master IGCSE Geometry: Download the Extended Pack"
+        "payhip_link": "https://payhip.com/b/KjXoP",
+        "button_text": "Master IGCSE Mensuration and Trigonometry: Download the Extended Pack"
     },
     // 9 January
     {
         "id": "003009",
         "date": "9 January 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Trigonometry",
         "topic": "Trigonometry",
         "subtopic": "SOHCAHTOA",
         "difficulty": "B/A",
@@ -236,16 +236,16 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Non-Calculator Trig",
             "content": "The ability to recall and manipulate exact trigonometric values is now a mandatory component of the IGCSE Extended Paper 2. If you find these difficult to memorize, I recommend learning the derivation using the equilateral triangle (for $30/60$ degrees) and the right-angled isosceles triangle (for 45 degrees)."
         },
-        "payhip_link": "https://payhip.com/b/example",
-        "button_text": "Master IGCSE Trigonometry: Download the Extended Pack"
+        "payhip_link": "https://payhip.com/b/KjXoP",
+        "button_text": "Master IGCSE Mensuration and Trigonometry: Download the Extended Pack"
     },
     // 10 January
     {
         "id": "003010",
         "date": "10 January 2026",
         "major_area": "Algebra",
-        "topic": "Sequences",
-        "subtopic": "Quadratic sequences",
+        "topic": "Quadratic sequences",
+        "subtopic": "Sequences",
         "difficulty": "A",
         "q": "The first four terms of a quadratic sequence are $5, 12, 23, 38$.<br>(a) Find the $n^{th}$ term of this sequence.<br>(b) Find the $20^{th}$ term of this sequence.",
         "steps": [
@@ -264,7 +264,7 @@ const problemBank = [
             "title": "The Head Teacher's Eye: The Second Difference",
             "content": "In quadratic sequences, the coefficient of $n^2$ is always half of the constant second difference. If you master this 'method of differences', you can solve any Extended-level sequence problem without resorting to complex simultaneous equations."
         },
-        "payhip_link": "https://payhip.com/b/example",
+        "payhip_link": "https://payhip.com/b/mg5YS",
         "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 11 January
@@ -273,7 +273,7 @@ const problemBank = [
         "date": "11 January 2026",
         "major_area": "Number",
         "topic": "Estimation & Bounds",
-        "subtopic": "Upper and lower bounds",
+        "subtopic": "Limits of Accuracy",
         "difficulty": "B",
         "q": "The distance $d$ is $100\\text{ m}$ correct to the nearest $5\\text{ m}$. The time $t$ is $10\\text{ s}$ correct to the nearest second.<br>Calculate the upper bound for the average speed. Give your answer to 3 significant figures.",
         "steps": [
@@ -289,7 +289,7 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Boundary Logic",
             "content": "A very common error is using the upper bound for both values in a division. In IGCSE Extended questions involving fractions, you must remember the 'inverse rule': to make a fraction as large as possible, you must make the denominator as small as possible."
         },
-        "payhip_link": "https://payhip.com/b/example",
+        "payhip_link": "https://payhip.com/b/XEV2Z",
         "button_text": "Master IGCSE Number: Download the Extended Pack"
     },
     // 12 January
@@ -298,8 +298,8 @@ const problemBank = [
         "date": "12 January 2026",
         "major_area": "Algebra",
         "topic": "Differentiation",
-        "subtopic": "Gradient from tangents",
-        "difficulty": "A*",
+        "subtopic": "Estimating Gradients and Basic Differentiation",
+        "difficulty": "A/A*",
         "q": "A curve has the equation $y = x^3 - 4x + 1$.<br>(a) Find the gradient of the curve at the point where $x = 2$.<br>(b) Find the equation of the tangent to the curve at the point where $x = 2$.",
         "steps": [
             "For part (a), we differentiate the equation: $\\dfrac{dy}{dx} = 3x^2 - 4$.",
@@ -315,7 +315,7 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Tangents vs Curves",
             "content": "Remember that a tangent is a straight line that 'just touches' the curve at a specific point. Because it is a straight line, it must follow the $y = mx + c$ format. Using the derivative to find 'm' is the bridge between calculus and coordinate geometry."
         },
-        "payhip_link": "https://payhip.com/b/example",
+        "payhip_link": "https://payhip.com/b/mg5YS",
         "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 13 January
@@ -324,7 +324,7 @@ const problemBank = [
         "date": "13 January 2026",
         "major_area": "Algebra",
         "topic": "Algebraic Fractions",
-        "subtopic": "Adding/subtracting",
+        "subtopic": "Algebraic Fractions 2",
         "difficulty": "A",
         "q": "(a) Solve the equation $\\dfrac{2}{x} + \\dfrac{3}{x + 1} = 1$.<br>(b) Give your answers correct to 2 decimal places.",
         "steps": [
@@ -343,7 +343,7 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Rational Rearrangement",
             "content": "The most common error in algebraic fraction equations is failing to multiply the entire right-hand side by the common denominator. In this case, ensure the '1' is multiplied by $x(x+1)$. Forgetting this will lead to a linear equation instead of the required quadratic."
         },
-        "payhip_link": "https://payhip.com/b/example",
+        "payhip_link": "https://payhip.com/b/mg5YS",
         "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 14 January
@@ -352,7 +352,7 @@ const problemBank = [
         "date": "14 January 2026",
         "major_area": "Algebra",
         "topic": "Graphs",
-        "subtopic": "Exponential graphs",
+        "subtopic": "Plotting Curved Graphs",
         "difficulty": "B/A",
         "q": "The function $f$ is defined as $f(x) = \\dfrac{1}{x - 3} + 2$.<br>(a) State the value of $x$ that must be excluded from the domain.<br>(b) State the equation of the horizontal asymptote of the graph $y = f(x)$.",
         "steps": [
@@ -369,7 +369,7 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Asymptote Intuition",
             "content": "In the 2025 syllabus, understanding the behavior of reciprocal graphs is essential. An asymptote is a line that the curve gets closer and closer to but never actually touches. The vertical asymptote is found from the domain restriction, and the horizontal one from the constant term outside the fraction."
         },
-        "payhip_link": "https://payhip.com/b/example",
+        "payhip_link": "https://payhip.com/b/mg5YS",
         "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 15 January
@@ -378,7 +378,7 @@ const problemBank = [
         "date": "15 January 2026",
         "major_area": "Statistics",
         "topic": "Averages & Range",
-        "subtopic": "Mean",
+        "subtopic": "Averages and Measures of Spread (Ungrouped Data)",
         "difficulty": "B/C",
         "q": "The mean mass of a group of 5 athletes is $72\\text{ kg}$.<br>(a) Calculate the total mass of the 5 athletes.<br>(b) A 6th athlete with a mass of $90\\text{ kg}$ joins the group. Calculate the new mean mass for the 6 athletes.",
         "steps": [
@@ -394,16 +394,16 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Working with Totals",
             "content": "In 'averages' problems, the most powerful tool is finding the total sum of the data. Almost every question that involves adding or removing a data point is solved by establishing the initial total first. This logical step ensures you are working with the correct numerical base before performing the final division."
         },
-        "payhip_link": "https://payhip.com/b/example",
-        "button_text": "Master IGCSE Statistics: Download the Extended Pack"
+        "payhip_link": "https://payhip.com/b/rsVCz",
+        "button_text": "Master IGCSE Transformations, Vectors, Probability, and Statistics: Download the Extended Pack"
     },
     // 16 January
     {
         "id": "003016",
         "date": "16 January 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Geometry",
         "topic": "Circle Theorems",
-        "subtopic": "Tangents",
+        "subtopic": "Circle Theorems 2",
         "difficulty": "B/A",
         "img": "true",
         "q": "$TP$ and $TQ$ are tangents to a circle with centre $O$ and radius $5\\text{ cm}$. The point $T$ is $13\\text{ cm}$ from the centre $O$.<br>(a) Calculate the length of the tangent $TP$.<br>(b) Calculate the size of the angle $PTQ$ to 1 decimal place.",
@@ -423,8 +423,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Tangent Properties",
             "content": "There are two vital properties to remember here: first, the radius-tangent angle is always $90^\\circ$; second, tangents from an external point are equal in length. This symmetry allows you to solve for angles and lengths in one triangle and simply double them to find the total for the quadrilateral $OPTQ$."
         },
-        "payhip_link": "https://payhip.com/b/example",
-        "button_text": "Master IGCSE Geometry: Download the Extended Pack"
+        "payhip_link": "https://payhip.com/b/L6skH",
+        "button_text": "Master IGCSE Coordinate Geometry and Geometry: Download the Extended Pack"
     },
     // 17 January
     {
@@ -432,7 +432,7 @@ const problemBank = [
         "date": "17 January 2026",
         "major_area": "Number",
         "topic": "Financial Maths",
-        "subtopic": "Compound interest",
+        "subtopic": "Percentage Change and Interest",
         "difficulty": "B/A",
         "q": "An investment of $£500$ is made into an account paying $10\\%$ compound interest per year.<br>(a) Calculate the total value of the investment after 2 years.<br>(b) Find the smallest number of years it will take for the total value of the investment to exceed $£800$.",
         "steps": [
@@ -451,16 +451,16 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Trial and Improvement",
             "content": "For Paper 4, you are expected to find the time period '$n$' in compound interest problems. While logarithms are not explicitly on the 0580 syllabus, the 'Trial and Improvement' method using the power key on your calculator is the standard approach. Always show your tests for both the year before and the year the target is exceeded."
         },
-        "payhip_link": "https://payhip.com/b/example",
+        "payhip_link": "https://payhip.com/b/XEV2Z",
         "button_text": "Master IGCSE Number: Download the Extended Pack"
     },
     // 18 January
     {
         "id": "003018",
         "date": "18 January 2026",
-        "major_area": "Ratio, Proportion & Rates of Change",
+        "major_area": "Algebra",
         "topic": "Direct & Inverse Proportion",
-        "subtopic": "Proportion equations",
+        "subtopic": "Proportion",
         "difficulty": "B/A",
         "q": "The variable $y$ is inversely proportional to the square of $x$. When $x = 2$, $y = 10$.<br>(a) Find the equation connecting $y$ and $x$.<br>(b) Calculate the value of $y$ when $x = 5$.",
         "steps": [
@@ -477,16 +477,16 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Power Proportions",
             "content": "Higher Tier and Extended students often miss the word 'square' or 'root' in proportion questions. Always read the question twice to ensure you have identified the correct power of $x$ before calculating $k$. Failing to square $x$ in this problem would result in a loss of almost all marks."
         },
-        "payhip_link": "https://payhip.com/b/example",
-        "button_text": "Master IGCSE Ratio: Download the Extended Pack"
+        "payhip_link": "https://payhip.com/b/mg5YS",
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 19 January
     {
         "id": "003019",
         "date": "19 January 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Geometry",
         "topic": "Polygons",
-        "subtopic": "Exterior angles",
+        "subtopic": "Polygons and Circles",
         "difficulty": "B/C",
         "q": "The interior angle of a regular polygon is $144^\\circ$.<br>(a) Calculate the size of the exterior angle.<br>(b) Calculate the number of sides of this polygon.",
         "steps": [
@@ -501,16 +501,16 @@ const problemBank = [
             "title": "The Head Teacher's Eye: The Exterior Constant",
             "content": "I always advise my students to work with exterior angles whenever possible. While the formula for interior angles $(n-2) \\times 180$ is useful, the fact that exterior angles always sum to $360$ provides a much faster and more reliable path to finding the number of sides ($n$)."
         },
-        "payhip_link": "https://payhip.com/b/example",
-        "button_text": "Master IGCSE Geometry: Download the Extended Pack"
+        "payhip_link": "https://payhip.com/b/L6skH",
+        "button_text": "Master IGCSE Coordinate Geometry and Geometry: Download the Extended Pack"
     },
     // 20 January
     {
         "id": "003020",
         "date": "20 January 2026",
         "major_area": "Algebra",
-        "topic": "Indices Laws",
-        "subtopic": "Negative indices",
+        "topic": "Laws of Indices",
+        "subtopic": "Indices II",
         "difficulty": "B/A",
         "q": "Simplify fully the following expression, leaving your answer in the form of a fraction:<br>$$(2x^{-2})^{-3}$$",
         "steps": [
@@ -525,16 +525,16 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Distributed Powers",
             "content": "A very common error is failing to apply the power to the coefficient. Many students correctly calculate $x^6$ but leave the coefficient as 2 or change it to -6. Remember that the bracket means *everything* inside is raised to the power of -3. Treat the number and the variable as two separate tasks."
         },
-        "payhip_link": "https://payhip.com/b/example",
+        "payhip_link": "https://payhip.com/b/mg5YS",
         "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 21 January
     {
         "id": "003021",
         "date": "21 January 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Trigonometry",
         "topic": "Trigonometry",
-        "subtopic": "Trigonometric Graphs",
+        "subtopic": "Graphs of Trigonometric Functions",
         "difficulty": "A",
         "q": "Without using a calculator, solve the equation $2\\cos(x) + 1 = 0$ for $0^\\circ \\le x \\le 360^\\circ$.",
         "steps": [
@@ -550,8 +550,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Quadrant Analysis",
             "content": "In Paper 2, you will be expected to solve trigonometric equations using exact values. Always find the acute reference angle first (using the positive value), then use the 'CAST' diagram or the symmetry of the cosine graph to locate the specific quadrants where the function is negative."
         },
-        "payhip_link": "https://payhip.com/b/example",
-        "button_text": "Master IGCSE Trigonometry: Download the Extended Pack"
+        "payhip_link": "https://payhip.com/b/KjXoP",
+        "button_text": "Master IGCSE Mensuration and Trigonometry: Download the Extended Pack"
     },
     // 22 January
     {
@@ -559,7 +559,7 @@ const problemBank = [
         "date": "22 January 2026",
         "major_area": "Probability",
         "topic": "Tree Diagrams",
-        "subtopic": "Without replacement",
+        "subtopic": "Probability of Combined Events",
         "difficulty": "B/A",
         "q": "The probability that event $A$ occurs is $0.4$. The probability that event $B$ occurs is $0.5$.<br>(a) Given that $A$ and $B$ are independent events, calculate the probability that both $A$ and $B$ occur.<br>(b) Calculate the probability that neither $A$ nor $B$ occurs.",
         "steps": [
@@ -576,16 +576,16 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Independence Logic",
             "content": "Independence is a specific mathematical condition. In Paper 2, if you are told events are independent, you are being given a direct instruction to multiply the probabilities. Do not confuse this with mutually exclusive events, where you would add the probabilities."
         },
-        "payhip_link": "https://payhip.com/b/example",
-        "button_text": "Master IGCSE Probability: Download the Extended Pack"
+        "payhip_link": "https://payhip.com/b/rsVCz",
+        "button_text": "Master IGCSE Transformations, Vectors, Probability, and Statistics: Download the Extended Pack"
     },
     // 23 January
     {
         "id": "003023",
         "date": "23 January 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Geometry",
         "topic": "Coordinates",
-        "subtopic": "Gradients",
+        "subtopic": "Length and Midpoint of a Line Segment",
         "difficulty": "C",
         "q": "Point $A$ has coordinates $(2, 4)$ and Point $B$ has coordinates $(8, 10)$.<br>(a) Find the coordinates of the midpoint of $AB$.<br>(b) Find the equation of the perpendicular bisector of the line $AB$.",
         "steps": [
@@ -603,8 +603,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: The Perpendicular Bisector",
             "content": "Finding a perpendicular bisector is a multi-skill task often found in Paper 4. You must find the midpoint for the position and the negative reciprocal gradient for the orientation. A common error is using one of the original points ($A$ or $B$) instead of the midpoint; remember, the bisector must pass through the center of the segment."
         },
-        "payhip_link": "https://payhip.com/b/example",
-        "button_text": "Master IGCSE Geometry: Download the Extended Pack"
+        "payhip_link": "https://payhip.com/b/L6skH",
+        "button_text": "Master IGCSE Coordinate Geometry and Geometry: Download the Extended Pack"
     },
     // 24 January
     {
@@ -612,7 +612,7 @@ const problemBank = [
         "date": "24 January 2026",
         "major_area": "Number",
         "topic": "Estimation & Bounds",
-        "subtopic": "Error intervals",
+        "subtopic": "Limits of Accuracy",
         "difficulty": "B/C",
         "q": "The value of $x$ is $5.4$ correct to 2 significant figures.<br>(a) Write down the lower bound of $x$.<br>(b) Write down the upper bound of $x$.<br>(c) State the error interval for $x$.",
         "steps": [
@@ -628,16 +628,16 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Inclusive Boundaries",
             "content": "In the IGCSE Extended syllabus, you must use the correct inequality symbols for error intervals. The lower bound is inclusive ($\\le$) while the upper bound is exclusive ($<$). Writing $x \\le 5.45$ would imply that $5.45$ rounds to $5.4$, which is incorrect."
         },
-        "payhip_link": "https://payhip.com/b/example",
+        "payhip_link": "https://payhip.com/b/XEV2Z",
         "button_text": "Master IGCSE Number: Download the Extended Pack"
     },
     // 25 January
     {
         "id": "003025",
         "date": "25 January 2026",
-        "major_area": "Ratio, Proportion & Rates of Change",
+        "major_area": "Number",
         "topic": "Compound Measures",
-        "subtopic": "Speed",
+        "subtopic": "Rates",
         "difficulty": "B/C",
         "q": "A cyclist travels $20\\text{ km}$ in $30\\text{ minutes}$.<br>(a) Calculate the speed of the cyclist in $\\text{km/h}$.<br>(b) Convert this speed into $\\text{metres per second (m/s)}$.",
         "steps": [
@@ -654,8 +654,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Unit Conversion Efficiency",
             "content": "Converting between km/h and m/s is a frequent requirement in IGCSE physics-style math problems. To convert km/h to m/s, you can use the shortcut of dividing by $3.6$. Understanding why this works (multiplying by 1000 and dividing by 3600) is key to modular math fluency."
         },
-        "payhip_link": "https://payhip.com/b/example",
-        "button_text": "Master IGCSE Ratio: Download the Extended Pack"
+        "payhip_link": "https://payhip.com/b/XEV2Z",
+        "button_text": "Master IGCSE Number: Download the Extended Pack"
     },
     // 26 January
     {
@@ -663,7 +663,7 @@ const problemBank = [
         "date": "26 January 2026",
         "major_area": "Algebra",
         "topic": "Factorising",
-        "subtopic": "Difference of squares",
+        "subtopic": "Factrising Expressions",
         "difficulty": "B/A",
         "q": "(a) Factorise fully $x^2 - 6x + 9$.<br>(b) Factorise fully $25x^2 - 16y^2$.",
         "steps": [
@@ -679,16 +679,16 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Identifying Structure",
             "content": "In algebraic manipulation, recognizing the structure of the expression is half the battle. If you see two squared terms separated by a minus sign, immediately apply the Difference of Two Squares. It is the most common factorisation shortcut in the Extended syllabus."
         },
-        "payhip_link": "https://payhip.com/b/example",
+        "payhip_link": "https://payhip.com/b/mg5YS",
         "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 27 January
     {
         "id": "003027",
         "date": "27 January 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Vectors",
         "topic": "Vectors",
-        "subtopic": "Scalar multiplication",
+        "subtopic": "Magnitude of a Vector",
         "difficulty": "B/A",
         "q": "Given the vectors $\\mathbf{a} = \\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix}$ and $\\mathbf{b} = \\begin{pmatrix} -1 \\\\ 5 \\end{pmatrix}$.<br>(a) Find the vector $2\\mathbf{a} + \\mathbf{b}$ as a column vector.<br>(b) Calculate the magnitude of the vector $\\mathbf{b}$, $|\\mathbf{b}|$. Give your answer as a surd.",
         "steps": [
@@ -703,8 +703,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Magnitude and Negatives",
             "content": "When calculating magnitude, remember that squaring any real number—positive or negative—results in a positive value. A common mistake is calculating $(-1)^2$ as $-1$. Always use brackets on your calculator to avoid this fundamental arithmetic error."
         },
-        "payhip_link": "https://payhip.com/b/example",
-        "button_text": "Master IGCSE Geometry: Download the Extended Pack"
+        "payhip_link": "https://payhip.com/b/rsVCz",
+        "button_text": "Master IGCSE Transformations, Vectors, Probability, and Statistics: Download the Extended Pack"
     },
     // 28 January
     {
@@ -712,7 +712,7 @@ const problemBank = [
         "date": "28 January 2026",
         "major_area": "Algebra",
         "topic": "Simultaneous Equations",
-        "subtopic": "Substitution",
+        "subtopic": "Simultaneous Equations (Linear – Quadratic)",
         "difficulty": "A",
         "q": "Solve the simultaneous equations:<br>$y = x^2 - 5$<br>$y = 3x - 1$",
         "steps": [
@@ -729,7 +729,7 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Points of Intersection",
             "content": "In IGCSE Extended, simultaneous equations often involve a linear and a quadratic function. Geometrically, you are finding the two points where a straight line crosses a parabola. Always provide your final answer as coordinate pairs $(x, y)$ to ensure full communication marks."
         },
-        "payhip_link": "https://payhip.com/b/example",
+        "payhip_link": "https://payhip.com/b/mg5YS",
         "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 29 January
@@ -738,7 +738,7 @@ const problemBank = [
         "date": "29 January 2026",
         "major_area": "Number",
         "topic": "Standard Form",
-        "subtopic": "Calculations in standard form",
+        "subtopic": "Standard Form",
         "difficulty": "B/A",
         "q": "(a) Calculate $(2.4 \\times 10^3) \\times (5 \\times 10^2)$. Give your answer in standard form.<br>(b) Calculate $(2.4 \\times 10^3) + (3.1 \\times 10^2)$. Give your answer in standard form.",
         "steps": [
@@ -755,16 +755,16 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Addition Rigour",
             "content": "Addition is much more difficult than multiplication in standard form. You cannot simply add the coefficients ($2.4 + 3.1$) because they represent different place values. Always normalize the numbers to the highest power before performing the addition."
         },
-        "payhip_link": "https://payhip.com/b/example",
+        "payhip_link": "https://payhip.com/b/XEV2Z",
         "button_text": "Master IGCSE Number: Download the Extended Pack"
     },
     // 30 January
     {
         "id": "003030",
         "date": "30 January 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Mensuration",
         "topic": "3D Shapes",
-        "subtopic": "Volume",
+        "subtopic": "Surface Areas and Volumes",
         "difficulty": "B/A",
         "q": "A solid hemisphere has a radius of $3\\text{ cm}$.<br>(a) Calculate the volume of the hemisphere in terms of $\\pi$.<br>(b) Calculate the total surface area of the hemisphere in terms of $\\pi$.",
         "steps": [
@@ -782,33 +782,37 @@ const problemBank = [
             "title": "The Head Teacher's Eye: The Hemisphere Base",
             "content": "A very common error in IGCSE 3D geometry is forgetting the circular base of a hemisphere when calculating surface area. The formula $2\\pi r^2$ only gives the 'dome' part. Unless the question states 'hollow', you must add the $\\pi r^2$ for the base to find the total area."
         },
-        "payhip_link": "https://payhip.com/b/example",
-        "button_text": "Master IGCSE Geometry: Download the Extended Pack"
+        "payhip_link": "https://payhip.com/b/KjXoP",
+        "button_text": "Master IGCSE Mensuration and Trigonometry: Download the Extended Pack"
     },
     // 31 January
-    {
-        "id": "003031",
-        "date": "31 January 2026",
-        "major_area": "Algebra",
-        "topic": "Algebraic Proof",
-        "subtopic": "General Proof",
-        "difficulty": "A*",
-        "q": "(a) Show that the sum of any three consecutive integers is always a multiple of 3.<br>(b) Prove that the square of any even number is always a multiple of 4.",
-        "steps": [
-            "For part (a), let the three consecutive integers be $n$, $n+1$, and $n+2$.",
-            "Sum = $n + (n + 1) + (n + 2) = 3n + 3$.",
-            "Factorising gives $3(n + 1)$. Since $(n+1)$ is an integer, the sum is a multiple of 3.",
-            "For part (b), let the even number be $2n$, where $n$ is an integer.",
-            "Square of the number = $(2n)^2 = 4n^2$.",
-            "Since $n^2$ is an integer, $4n^2$ is clearly a multiple of 4.",
-            "Final Answer: $$\\text{Both results proven algebraically}$$"
-        ],
-        "bradley_insight": {
-            "type": "pro-tip",
-            "title": "The Head Teacher's Eye: Generalisation",
-            "content": "In algebraic proof, you must never use specific numbers (like $2, 4, 6$) to 'prove' a statement. You must use the general variable $n$ and the formal definitions ($2n$ for even, $2n+1$ for odd) to show that the result holds for *every* possible integer."
-        },
-        "payhip_link": "https://payhip.com/b/example",
-        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
-    }
+    {        
+    "id": "003031",
+    "date": "31 January 2026",
+    "major_area": "Algebra",
+    "topic": "Contextual Linear Simultaneous Equations",
+    "subtopic": "Simultaneous Equations in Context",
+    "difficulty": "B",
+    "q": "A cinema sells adult tickets and student tickets for a film showing.<br>Two adults and three students pay a total of $£42$.<br>Five adults and one student pay a total of $£59.50$.<br>(a) Form two simultaneous equations in $a$ and $s$, where $a$ is the price of an adult ticket and $s$ is the price of a student ticket.<br>(b) Solve the equations to find the price of each ticket.",
+    "steps": [
+        "For part (a), we translate each sentence into an algebraic equation.",
+        "Two adults and three students cost £42: $2a + 3s = 42$.",
+        "Five adults and one student cost £59: $5a + s = 59.5$.",
+        "For part (b), we solve the simultaneous equations. We eliminate $s$ by multiplying the second equation by 3: $15a + 3s = 178.5$.",
+        "Subtract the first equation from this: $(15a + 3s) - (2a + 3s) = 178.5 - 42$.",
+        "This simplifies to $13a = 136.5$, giving $a = 10.50$.",
+        "Substitute $a$ back into $5a + s = 59$: $5(10.50) + s = 59.50$.",
+        "Calculation: $52 + s = 59$, so $s = 7$.",
+        "Rounded to the nearest penny: $a = £10.50$ and $s = £7.00$.",
+        "Final Answer: $$(a)\\ 2a + 3s = 42,\\ 5a + s = 59.5,\\ (b)\\ a = £10.50,\\ s = £7.00$$"
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Context First, Algebra Second",
+        "content": "In contextual simultaneous equations, the real skill is translating the language into algebra."
+    },
+    "payhip_link": "https://payhip.com/b/mg5YS",
+    "button_text": "Master IGCSE Algebra: Download the Extended Pack"
+}
+
 ];
