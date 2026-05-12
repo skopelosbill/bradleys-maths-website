@@ -273,7 +273,7 @@ const problemBank = [
         "topic": "Estimation & Bounds",
         "subtopic": "Limits of Accuracy and Bounds",
         "difficulty": "6/7",
-        "q": "The value of $A$ is calculated using the formula $A = \dfrac{b}{c}$. Given that $b = 400$ correct to the nearest 10, and $c = 25$ correct to the nearest 5, calculate the upper bound for the value of $A$.",
+        "q": "The value of $A$ is calculated using the formula $A = \\dfrac{b}{c}$. Given that $b = 400$ correct to the nearest 10, and $c = 25$ correct to the nearest 5, calculate the upper bound for the value of $A$.",
         "steps": [
             "First, we must determine the upper and lower bounds for both variables. For $b$, the bounds are $395 \\le b < 405$. For $c$, the bounds are $22.5 \\le c < 27.5$.",
             "To calculate the maximum possible value (the upper bound) of a division, we must divide the maximum possible numerator by the minimum possible denominator.",
