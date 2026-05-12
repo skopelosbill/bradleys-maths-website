@@ -3,10 +3,10 @@ const problemBank =[
     {
         "id": "003060",
         "date": "1 March 2026",
-        "major_area": "Vectors, Probability and Statistics",
+        "major_area": "Vectors",
         "topic": "Vectors",
-        "subtopic": "Position Vectors",
-        "difficulty": "B/A",
+        "subtopic": "Vectors in Two Dimensions",
+        "difficulty": "B",
         "q": "The points $A$ and $B$ have position vectors $\\mathbf{a}$ and $\\mathbf{b}$ respectively, relative to an origin $O$. Point $C$ lies on the line $AB$ produced such that $\\overrightarrow{AC} = 2\\overrightarrow{AB}$.<br>(a) Find the vector $\\overrightarrow{AB}$ in terms of $\\mathbf{a}$ and $\\mathbf{b}$.<br>(b) Find the position vector of $C$ in terms of $\\mathbf{a}$ and $\\mathbf{b}$, giving your answer in its simplest form.",
         "steps": [
             "For part (a), we find the vector from $A$ to $B$ by navigating through the origin: $\\overrightarrow{AB} = \\overrightarrow{AO} + \\overrightarrow{OB}$.",
@@ -31,7 +31,7 @@ const problemBank =[
         "date": "2 March 2026",
         "major_area": "Algebra",
         "topic": "Quadratic Equations",
-        "subtopic": "Completing the square",
+        "subtopic": "Completing the Square",
         "difficulty": "A/A*",
         "q": "Consider the quadratic equation $2x^2 - 3x - 5 = 0$.<br>(a) Write $2x^2 - 3x - 5$ in the form $a(x + b)^2 + c$.<br>(b) Hence, solve the equation $2x^2 - 3x - 5 = 0$ without the use of a calculator.<br>(c) State the coordinates of the turning point of the graph of $y = 2x^2 - 3x - 5$.",
         "steps": [
@@ -85,9 +85,9 @@ const problemBank =[
     {
         "id": "003063",
         "date": "4 March 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Trigonometry",
         "topic": "Trigonometry",
-        "subtopic": "Sine rule",
+        "subtopic": "The Sine Rule",
         "difficulty": "B/C",
         "img": "true",
         "q": "In triangle $ABC$, $AB = 8\\text{ cm}$, $\\angle BAC = 40^\\circ$ and $\\angle ABC = 65^\\circ$.<br>(a) Calculate the size of angle $\\angle ACB$.<br>(b) Calculate the length of $AC$ to 3 significant figures.<br>(c) Calculate the area of triangle $ABC$.",
@@ -114,8 +114,8 @@ const problemBank =[
         "id": "003064",
         "date": "5 March 2026",
         "major_area": "Algebra",
-        "topic": "Indices Laws",
-        "subtopic": "Negative indices",
+        "topic": "Laws of Indices",
+        "subtopic": "Indices II",
         "difficulty": "B/C",
         "q": "Simplify fully the following expression, leaving your answer with only positive indices:<br>$$\\dfrac{5x^3 y^{-2}}{10x^{-1} y}$$",
         "steps": [
@@ -141,7 +141,7 @@ const problemBank =[
         "date": "6 March 2026",
         "major_area": "Algebra",
         "topic": "Simultaneous Equations",
-        "subtopic": "Substitution",
+        "subtopic": "Simultaneous Equations (Linear - Quadratic)",
         "difficulty": "A",
         "q": "Solve the following simultaneous equations to find the coordinates of the points of intersection:<br>$y = x + 1$<br>$x^2 + y^2 = 25$",
         "steps": [
