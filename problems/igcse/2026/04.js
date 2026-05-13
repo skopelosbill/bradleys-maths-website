@@ -1,15 +1,15 @@
-const problemBank = [
+const problemBank =[
     // 1 April
     {
         "id": "003091",
         "date": "1 April 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Geometry",
         "topic": "Coordinates",
-        "subtopic": "Gradients",
+        "subtopic": "Equations of Linear Graphs",
         "difficulty": "C/D",
         "q": "Find the equation of the straight line passing through the points $(3, -4)$ and $(5, 6)$.",
         "img": "",
-        "steps": [
+        "steps":[
             "We first calculate the gradient ($m$) of the line using the formula $m = \\dfrac{y_2 - y_1}{x_2 - x_1}$.",
             "Substituting the given coordinates: $m = \\dfrac{6 - (-4)}{5 - 3} = \\dfrac{10}{2} = 5$.",
             "We now use the straight-line formula $y - y_1 = m(x - x_1)$ with the point $(5, 6)$.",
@@ -23,8 +23,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Choose the 'Easy' Point",
             "content": "When substituting a point back into the formula to find the equation, you can use either point provided. I always recommend choosing the one with the fewest negative signs to reduce the risk of a simple arithmetic error during the expansion of the brackets."
         },
-        "payhip_link": "https://payhip.com/b/L6skh",
-        "button_text": "Master Coordinates: Download the Extended Pack"
+        "payhip_link": "https://payhip.com/b/L6skH",
+        "button_text": "Master IGCSE Coordinate Geometry and Geometry: Download the Extended Pack"
     },
     // 2 April
     {
@@ -32,11 +32,11 @@ const problemBank = [
         "date": "2 April 2026",
         "major_area": "Number",
         "topic": "Factors, Multiples & Primes",
-        "subtopic": "LCM",
+        "subtopic": "Prime Numbers, HCF, LCM",
         "difficulty": "C/D",
         "q": "Buses on three routes, A, B and C, leave the bus station at 8:00 AM. Route A buses leave every 20 minutes, Route B every 30 minutes, and Route C every 45 minutes.<br>Calculate the next time all three buses will leave the station together.",
         "img": "",
-        "steps": [
+        "steps":[
             "To find when the events coincide again, we must find the Lowest Common Multiple (LCM) of 20, 30, and 45.",
             "We begin with prime factorisation: $20 = 2^2 \\times 5$; $30 = 2 \\times 3 \\times 5$; $45 = 3^2 \\times 5$.",
             "The LCM is found by taking the highest power of every prime factor present: $2^2 \\times 3^2 \\times 5$.",
@@ -51,7 +51,7 @@ const problemBank = [
             "content": "In contextual problems, whenever you are asked to find when multiple cycles synchronize or 'meet again,' you are being asked for the LCM. Using prime factorisation is the most rigorous method to ensure you do not omit any necessary factors."
         },
         "payhip_link": "https://payhip.com/b/XEV2Z",
-        "button_text": "Master Number: Download the Full Number Pack"
+        "button_text": "Master IGCSE Number: Download the Extended Pack"
     },
     // 3 April
     {
@@ -59,11 +59,11 @@ const problemBank = [
         "date": "3 April 2026",
         "major_area": "Algebra",
         "topic": "Factorising",
-        "subtopic": "Quadratic factorising",
+        "subtopic": "Factorising 2",
         "difficulty": "B/A",
         "q": "Factorise fully the quadratic expression: $$-2x^2 + 5x - 3$$",
         "img": "",
-        "steps": [
+        "steps":[
             "We use the AC method, multiplying the coefficient of $x^2$ by the constant: $-2 \\times -3 = 6$.",
             "We find two factors of 6 that sum to the middle coefficient (5). These are 2 and 3.",
             "We split the middle term: $-2x^2 + 2x + 3x - 3$.",
@@ -77,7 +77,7 @@ const problemBank = [
             "content": "Quadratic expressions with a negative leading coefficient are a frequent discriminator in IGCSE Paper 2. If the negative sign is confusing, you can factor out $-1$ from the entire expression first, factorise the positive quadratic, and then re-distribute the negative sign."
         },
         "payhip_link": "https://payhip.com/b/mg5YS",
-        "button_text": "Master Algebra: Download the Full Algebra Pack"
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 4 April
     {
@@ -85,11 +85,11 @@ const problemBank = [
         "date": "4 April 2026",
         "major_area": "Algebra",
         "topic": "Algebraic Fractions",
-        "subtopic": "Multiplying/dividing",
+        "subtopic": "Algebraic Fractions 2",
         "difficulty": "A/A*",
         "q": "Simplify fully: $$\\dfrac{x^2 - x - 12}{x^2 - 2x - 15} \\div \\dfrac{x^2 - 6x + 8}{x^2 - 3x - 10}$$",
         "img": "",
-        "steps": [
+        "steps":[
             "First, we factorise every quadratic expression in the numerator and denominator.",
             "$x^2 - x - 12 = (x + 3)(x - 4)$ and $x^2 - 2x - 15 = (x + 3)(x - 5)$.",
             "$x^2 - 6x + 8 = (x - 4)(x - 2)$ and $x^2 - 3x - 10 = (x - 5)(x + 2)$.",
@@ -103,7 +103,7 @@ const problemBank = [
             "content": "A critical error in algebraic fraction problems is attempting to cancel individual terms like $x^2$. You must remember that you can only cancel common factors that are being multiplied. Always factorise every component completely before attempting to simplify."
         },
         "payhip_link": "https://payhip.com/b/mg5YS",
-        "button_text": "Master Algebra: Download the Full Algebra Pack"
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 5 April
     {
@@ -111,11 +111,11 @@ const problemBank = [
         "date": "5 April 2026",
         "major_area": "Statistics",
         "topic": "Frequency Tables",
-        "subtopic": "Grouped data",
+        "subtopic": "Averages and Measures of Spread (Grouped Data)",
         "difficulty": "B/A",
         "q": "The table shows the times, $t$ minutes, taken by 40 students to complete a puzzle.<br><table style='border-collapse: collapse; width: 260px; text-align: center;'><tr><th style='padding: 6px;'>Time (t)</th><th style='padding: 6px;'>Frequency</th></tr><tr><td style='padding: 6px;'>0 &lt; t ≤ 5</td><td style='padding: 6px;'>6</td></tr><tr><td style='padding: 6px;'>5 &lt; t ≤ 10</td><td style='padding: 6px;'>12</td></tr><tr><td style='padding: 6px;'>10 &lt; t ≤ 15</td><td style='padding: 6px;'>14</td></tr><tr><td style='padding: 6px;'>15 &lt; t ≤ 20</td><td style='padding: 6px;'>8</td></tr></table><br>Estimate the mean time taken.",
         "img": "",
-        "steps": [
+        "steps":[
             "To estimate the mean, we first identify the midpoint ($x$) of each class interval: $2.5, 7.5, 12.5, 17.5$.",
             "We multiply each midpoint by its corresponding frequency ($f \\times x$):",
             "$2.5 \\times 6 = 15$; $7.5 \\times 12 = 90$; $12.5 \\times 14 = 175$; $17.5 \\times 8 = 140$.",
@@ -130,7 +130,7 @@ const problemBank = [
             "content": "In grouped frequency tables, we do not know the exact data values—only the range they fall into. We assume every student in a group scores exactly at the midpoint. This is why the result is always described as an 'estimate' rather than an exact mean."
         },
         "payhip_link": "https://payhip.com/b/rsVCz",
-        "button_text": "Master Statistics: Download the Extended Pack"
+        "button_text": "Master IGCSE Transformations, Vectors, Probability, and Statistics: Download the Extended Pack"
     },
     // 6 April
     {
@@ -138,10 +138,10 @@ const problemBank = [
         "date": "6 April 2026",
         "major_area": "Algebra",
         "topic": "Differentiation",
-        "subtopic": "Stationary points",
+        "subtopic": "Stationary Points",
         "difficulty": "A*",
         "q": "A curve has the equation $y = x^3 - 3x^2 - 9x + 5$.<br>(a) Find the derivative $\\dfrac{dy}{dx}$.<br>(b) Find the coordinates of the two stationary points.",
-        "steps": [
+        "steps":[
             "For part (a), we differentiate each term using the power rule: $\\dfrac{dy}{dx} = 3x^2 - 6x - 9$.",
             "For part (b), stationary points occur when the gradient is zero. We set $3x^2 - 6x - 9 = 0$.",
             "Dividing by 3 gives $x^2 - 2x - 3 = 0$, which factorises to $(x - 3)(x + 1) = 0$.",
@@ -156,19 +156,19 @@ const problemBank = [
             "content": "A stationary point is a location where the tangent to the curve is horizontal. For full marks in Paper 4, you must ensure you substitute your $x$-values back into the original curve equation, not the derivative, to find the corresponding $y$-coordinates."
         },
         "payhip_link": "https://payhip.com/b/mg5YS",
-        "button_text": "Master Algebra: Download the Extended Pack"
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 7 April
     {
         "id": "003097",
         "date": "7 April 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Geometry",
         "topic": "Circle Theorems",
-        "subtopic": "Tangents",
+        "subtopic": "Circle Theorems 2",
         "difficulty": "B/A",
         "img": "true",
         "q": "In the diagram, $ST$ is a tangent to the circle at point $A$. $B$ and $C$ are points on the circumference. Given that $\\angle BAS = 62^\\circ$ and $\\angle ABC = 54^\\circ$, calculate the size of $\\angle BAC$.",
-        "steps": [
+        "steps":[
             "According to the Alternate Segment Theorem, the angle between the tangent and the chord is equal to the angle in the alternate segment.",
             "Therefore, $\\angle BCA = \\angle BAS = 62^\\circ$.",
             "We now consider the triangle $\\triangle ABC$, where the sum of interior angles is $180^\\circ$.",
@@ -182,19 +182,19 @@ const problemBank = [
             "content": "The Alternate Segment Theorem is a high-level discriminator in IGCSE geometry. Look for a triangle 'balanced' on a tangent line. The angle outside the triangle at the point of contact is identical to the interior angle at the opposite vertex."
         },
         "payhip_link": "https://payhip.com/b/L6skH",
-        "button_text": "Master Geometry: Download the Extended Pack"
+        "button_text": "Master IGCSE Coordinate Geometry and Geometry: Download the Extended Pack"
     },
     // 8 April
     {
         "id": "003098",
         "date": "8 April 2026",
         "major_area": "Algebra",
-        "topic": "Rearranging Formulae",
+        "topic": "Changing the Subject of a Formula",
         "subtopic": "Rearranging with fractions",
         "difficulty": "B/A",
         "q": "Make $x$ the subject of the formula: $$y = \\dfrac{2x + 3}{x - 5}$$",
         "img": "",
-        "steps": [
+        "steps":[
             "We first multiply both sides by the denominator to clear the fraction: $y(x - 5) = 2x + 3$.",
             "Expanding the bracket: $xy - 5y = 2x + 3$.",
             "We rearrange to group all terms involving $x$ on one side: $xy - 2x = 5y + 3$.",
@@ -208,15 +208,15 @@ const problemBank = [
             "content": "A common point of failure is when the new subject appears in multiple terms. Whenever your target variable is found more than once, you must collect those terms and factorise. This is the only algebraic path to isolating the variable."
         },
         "payhip_link": "https://payhip.com/b/mg5YS",
-        "button_text": "Master Algebra: Download the Full Algebra Pack"
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 9 April
     {
         "id": "003099",
         "date": "9 April 2026",
         "major_area": "Number",
-        "topic": "Indices Laws",
-        "subtopic": "Fractional indices",
+        "topic": "Laws of Indices",
+        "subtopic": "Indices II",
         "difficulty": "B/A",
         "q": "Without using a calculator, evaluate the following:<br>(a) $27^{\\frac{2}{3}}$<br>(b) $16^{-\\frac{3}{4}}$",
         "steps": [
@@ -233,18 +233,18 @@ const problemBank = [
             "content": "In Paper 2, always evaluate the root before the power. It is significantly easier to find the cube root of 27 and then square it than to square 27 and attempt to find the cube root of 729 mentally."
         },
         "payhip_link": "https://payhip.com/b/XEV2Z",
-        "button_text": "Master Number: Download the Full Number Pack"
+        "button_text": "Master IGCSE Number: Download the Extended Pack"
     },
     // 10 April
     {
         "id": "003100",
         "date": "10 April 2026",
         "major_area": "Probability",
-        "topic": "Tree Diagrams",
-        "subtopic": "Without replacement",
-        "difficulty": "A*",
+        "topic": "Tree Diagrams Without Replacement",
+        "subtopic": "Probability of Combined Events",
+        "difficulty": "A",
         "q": "A box contains 5 green pens and 3 blue pens. Two pens are taken at random without replacement. Calculate the probability that at least one green pen is taken.",
-        "steps": [
+        "steps":[
             "The total number of pens is $5 + 3 = 8$.",
             "The most efficient way to find 'at least one' is to use the complement: $1 - P(\\text{no green pens})$.",
             "'No green pens' means both pens selected were blue.",
@@ -260,7 +260,7 @@ const problemBank = [
             "content": "In high-stakes exams, time management is vital. Whenever you see 'at least one', calculate the probability of the outcome you don't want and subtract it from 1. This prevents you from having to calculate and sum multiple successful scenarios."
         },
         "payhip_link": "https://payhip.com/b/rsVCz",
-        "button_text": "Master Probability: Download the Extended Pack"
+        "button_text": "Master IGCSE Transformations, Vectors, Probability, and Statistics: Download the Extended Pack"
     },
     // 11 April
     {
@@ -268,11 +268,11 @@ const problemBank = [
         "date": "11 April 2026",
         "major_area": "Algebra",
         "topic": "Quadratic Equations",
-        "subtopic": "Quadratic formula",
+        "subtopic": "Factorising 2",
         "difficulty": "B/A",
         "q": "Solve the equation $3x^2 - 10x + 2 = 0$. Give your answers correct to 2 decimal places.",
         "img": "",
-        "steps": [
+        "steps":[
             "We identify the coefficients from the standard form $ax^2 + bx + c = 0$: $a = 3, b = -10, c = 2$.",
             "We substitute these into the quadratic formula: $x = \\dfrac{-(-10) \\pm \\sqrt{(-10)^2 - 4(3)(2)}}{2(3)}$.",
             "Simplifying the discriminant: $\\sqrt{100 - 24} = \\sqrt{76}$.",
@@ -286,19 +286,20 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Watch the Signs!",
             "content": "A very common error in Paper 4 is failing to handle negative coefficients correctly. Remember that $-b$ becomes $+10$ because $b$ was already negative. Additionally, always place negative numbers in parentheses when squaring on a calculator to avoid sign errors."
         },
-        "payhip_link": "https://payhip.com/mg5YS",
-        "button_text": "Master Algebra: Download the Full Algebra Pack"
+        "payhip_link": "https://payhip.com/b/mg5YS",
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 12 April
     {
         "id": "003102",
         "date": "12 April 2026",
-        "major_area": "Vectors, Probability and Statistics",
+        "major_area": "Vectors",
         "topic": "Vectors",
-        "subtopic": "Vector geometry",
+        "subtopic": "Vector Geometry",
         "difficulty": "A*",
+        "img": "true",
         "q": "Relative to an origin $O$, $\\overrightarrow{OP} = \\mathbf{a}$ and $\\overrightarrow{OQ} = \\mathbf{b}$. $R$ is a point on $PQ$ such that $PR:RQ = 1:2$. Find $\\overrightarrow{OR}$ in terms of $\\mathbf{a}$ and $\\mathbf{b}$.",
-        "steps": [
+        "steps":[
             "First, we find the vector $\\overrightarrow{PQ}$ by navigating through the origin: $\\overrightarrow{PQ} = \\overrightarrow{OQ} - \\overrightarrow{OP} = \\mathbf{b} - \\mathbf{a}$.",
             "Since $PR:RQ = 1:2$, the point $R$ is $\\dfrac{1}{3}$ of the way along the segment $PQ$.",
             "We define the path to $R$ as $\\overrightarrow{OR} = \\overrightarrow{OP} + \\overrightarrow{PR}$.",
@@ -313,7 +314,7 @@ const problemBank = [
             "content": "This problem illustrates the 'section formula' in vector geometry. Notice that the resulting position vector is a weighted average of the endpoints. If the ratio were $1:1$ (the midpoint), the answer would simplify to the standard $\\dfrac{1}{2}(\\mathbf{a} + \\mathbf{b})$."
         },
         "payhip_link": "https://payhip.com/b/rsVCz",
-        "button_text": "Master Vectors: Download the Extended Pack"
+        "button_text": "Master IGCSE Transformations, Vectors, Probability, and Statistics: Download the Extended Pack"
     },
     // 13 April
     {
@@ -321,10 +322,10 @@ const problemBank = [
         "date": "13 April 2026",
         "major_area": "Algebra",
         "topic": "Differentiation",
-        "subtopic": "Gradient from tangents",
+        "subtopic": "Estimating Gradients and Basic Differentiation",
         "difficulty": "A",
         "q": "A curve has the equation $y = kx^2 + 5x$, where $k$ is a constant. The gradient of the curve at the point where $x = 2$ is 13. Calculate the value of $k$.",
-        "steps": [
+        "steps":[
             "We first find the gradient function by differentiating $y$ with respect to $x$: $\\dfrac{dy}{dx} = 2kx + 5$.",
             "We are given that the gradient is 13 when $x = 2$.",
             "We substitute these values into our gradient expression: $13 = 2k(2) + 5$.",
@@ -339,7 +340,7 @@ const problemBank = [
             "content": "Cambridge examiners frequently 'reverse' standard problems. Instead of asking for a gradient, they provide the gradient and require you to find a missing coefficient. Always derive the general $\\dfrac{dy}{dx}$ formula before attempting any numerical substitutions."
         },
         "payhip_link": "https://payhip.com/b/mg5YS",
-        "button_text": "Master Algebra: Download the Extended Pack"
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 14 April
     {
@@ -347,10 +348,10 @@ const problemBank = [
         "date": "14 April 2026",
         "major_area": "Number",
         "topic": "Financial Maths",
-        "subtopic": "Currency conversion",
+        "subtopic": "Money",
         "difficulty": "C/D",
         "q": "Bill changes $£500$ into Euros (€) at an exchange rate of $\\text{£}1 = \\text{€}1.15$. He spends $\\text{€}400$ and then changes the remaining amount back to Pounds (£) at a rate of $\\text{£}1 = \\text{€}1.12$. Calculate how much Bill receives in Pounds.",
-        "steps": [
+        "steps":[
             "First, we convert the initial Pounds into Euros: $500 \\times 1.15 = \\text{€}575$.",
             "We subtract the amount spent: $575 - 400 =\\text{€}175$.",
             "To convert back to Pounds, we use the new rate. Since we are moving from the foreign currency to the home currency, we divide by the rate.",
@@ -363,18 +364,18 @@ const problemBank = [
             "content": "To check your logic in currency problems, consider the relative strength of the currencies. If you are converting back to a 'stronger' currency (where the unit value is higher), the numerical value should decrease. If your answer is larger than the number of Euros you started with, you have likely multiplied instead of divided."
         },
         "payhip_link": "https://payhip.com/b/XEV2Z",
-        "button_text": "Master Number: Download the Full Number Pack"
+        "button_text": "Master IGCSE Number: Download the Extended Pack"
     },
     // 15 April
     {
         "id": "003105",
         "date": "15 April 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Geometry",
         "topic": "3D Shapes",
-        "subtopic": "Volume",
+        "subtopic": "Solids and the Linear, Area, Volume Relationship",
         "difficulty": "B/C",
         "q": "A cylinder has a volume of $500\\pi\\text{ cm}^3$ and a height of $20\\text{ cm}$. Calculate the radius of the cylinder.",
-        "steps": [
+        "steps":[
             "We start with the formula for the volume of a cylinder: $V = \\pi r^2 h$.",
             "Substituting the known values into the equation: $500\\pi = \\pi \\times r^2 \\times 20$.",
             "Dividing both sides by $\\pi$ simplifies the equation to $500 = 20r^2$.",
@@ -387,8 +388,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Preserve Pi",
             "content": "When a value is given 'in terms of $\\pi$', do not convert it to a decimal. By keeping the $\\pi$ symbol, it will almost always cancel out during the algebraic simplification, leading to a much cleaner and more accurate calculation."
         },
-        "payhip_link": "https://payhip.com/b/KjXoP",
-        "button_text": "Master Mensuration: Download the Extended Pack"
+        "payhip_link": "https://payhip.com/b/L6skH",
+        "button_text": "Master IGCSE Coordinate Geometry and Geometry: Download the Extended Pack"
     },
     // 16 April
     {
@@ -396,10 +397,10 @@ const problemBank = [
         "date": "16 April 2026",
         "major_area": "Algebra",
         "topic": "Differentiation",
-        "subtopic": "Maxima and minima",
+        "subtopic": "Stationary Points",
         "difficulty": "A*",
         "q": "The volume of a box is given by $V = 48x - x^3$.<br>(a) Find the value of $x$ for which the volume is a maximum.<br>(b) Justify that this value of $x$ provides a maximum using the second derivative.",
-        "steps": [
+        "steps":[
             "For part (a), we find the derivative $\\dfrac{dV}{dx} = 48 - 3x^2$.",
             "We set the derivative to zero to find the stationary point: $48 - 3x^2 = 0 \\implies x^2 = 16$.",
             "This gives $x = 4$ (we ignore $-4$ as dimensions must be positive).",
@@ -414,18 +415,19 @@ const problemBank = [
             "content": "In optimization problems, physical constraints are as important as the calculus. We discard the negative root because a box cannot have a negative dimension. Always state the second derivative value to provide a formal justification for the nature of the stationary point."
         },
         "payhip_link": "https://payhip.com/b/mg5YS",
-        "button_text": "Master Algebra: Download the Full Algebra Pack"
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 17 April
     {
         "id": "003107",
         "date": "17 April 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Geometry",
         "topic": "Circle Theorems",
         "subtopic": "Cyclic quadrilaterals",
         "difficulty": "B/C",
+        "img": "true",
         "q": "In a cyclic quadrilateral $ABCD$, $\\angle DAB = (2x + 10)^\\circ$ and $\\angle BCD = (3x - 20)^\\circ$. Calculate the value of $x$.",
-        "steps": [
+        "steps":[
             "According to the circle theorem, opposite angles in a cyclic quadrilateral sum to $180^\\circ$.",
             "We set up the equation: $(2x + 10) + (3x - 20) = 180$.",
             "Combining like terms: $5x - 10 = 180$.",
@@ -439,7 +441,7 @@ const problemBank = [
             "content": "Ensure you do not confuse cyclic quadrilateral rules with parallel line properties. Only the angles directly across from one another (the opposite angles) are supplementary. If you correctly identify the pair, the problem becomes a straightforward linear equation."
         },
         "payhip_link": "https://payhip.com/b/L6skH",
-        "button_text": "Master Geometry: Download the Extended Pack"
+        "button_text": "Master IGCSE Coordinate Geometry and Geometry: Download the Extended Pack"
     },
     // 18 April
     {
@@ -447,10 +449,10 @@ const problemBank = [
         "date": "18 April 2026",
         "major_area": "Algebra",
         "topic": "Sequences",
-        "subtopic": "Quadratic sequences",
+        "subtopic": "Sequences",
         "difficulty": "A/A*",
         "q": "Calculate the $n^{th}$ term of the quadratic sequence: $5, 12, 23, 38, 57...$",
-        "steps": [
+        "steps":[
             "We calculate the first differences: $7, 11, 15, 19$.",
             "We calculate the second difference, which is constant: $4$.",
             "The coefficient of the $n^2$ term is half of the second difference: $4 \\div 2 = 2$. The formula starts with $2n^2$.",
@@ -465,7 +467,7 @@ const problemBank = [
             "content": "The constant second difference is the definitive indicator of a quadratic sequence. Always remember that this difference equals $2a$ from the general form $an^2 + bn + c$. Once you have identified 'a', the problem reduces to a simple linear sequence task."
         },
         "payhip_link": "https://payhip.com/b/mg5YS",
-        "button_text": "Master Algebra: Download the Full Algebra Pack"
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 19 April
     {
@@ -473,10 +475,10 @@ const problemBank = [
         "date": "19 April 2026",
         "major_area": "Number",
         "topic": "Estimation & Bounds",
-        "subtopic": "Error intervals",
+        "subtopic": "Limits of Accuracy",
         "difficulty": "B/A",
         "q": "The mass of a bag of sugar is $500\\text{ g}$ correct to the nearest $10\\text{ g}$. State the error interval for the mass $m$.",
-        "steps": [
+        "steps":[
             "The degree of accuracy is $10\\text{ g}$, so the maximum error is $\\pm 5\\text{ g}$.",
             "The lower bound is calculated as $500 - 5 = 495\\text{ g}$.",
             "The upper bound is calculated as $500 + 5 = 505\\text{ g}$.",
@@ -489,42 +491,48 @@ const problemBank = [
             "content": "Pay close attention to the symbols used in error intervals. The lower bound is always inclusive ($\\le$), while the upper bound is exclusive ($<$). This is because a value of exactly $505$ would round up to the next interval, not down to $500$."
         },
         "payhip_link": "https://payhip.com/b/XEV2Z",
-        "button_text": "Master Number: Download the Full Number Pack"
+        "button_text": "Master IGCSE Number: Download the Extended Pack"
     },
-    // 20 April
+    // 20 April (Double Triangle Trigonometry)
     {
         "id": "003110",
         "date": "20 April 2026",
-        "major_area": "Algebra",
-        "topic": "Inequalities",
-        "subtopic": "Solving inequalities",
-        "difficulty": "A",
-        "q": "Solve the quadratic inequality: $x^2 - x - 12 > 0$.",
-        "steps": [
-            "First, we find the critical values by factorising the quadratic: $(x - 4)(x + 3) > 0$.",
-            "The critical values where the graph crosses the $x$-axis are $x = 4$ and $x = -3$.",
-            "Considering the 'U-shape' of the parabola, the expression is positive (above the axis) in the 'tails' of the graph.",
-            "This corresponds to the regions where $x$ is less than the smaller root or greater than the larger root.",
-            "Final Answer: $$x < -3 \\text{ or } x > 4$$"
+        "major_area": "Trigonometry",
+        "topic": "Trigonometry",
+        "subtopic": "The Sine Rule",
+        "difficulty": "A/A*",
+        "img": "true",
+        "q": "From a point $X$ on level ground, the angle of elevation to the top of a Television Transmitter Mast is $65^\\circ$.<br>Point $Y$ is on the same line as point $X$ and also on level ground, but it is $355\\text{ m}$ further away from the mast. The angle of elevation from $Y$ is $31.8^\\circ$.<br>(a) Calculate the height of the mast.<br>(b) Calculate the distance of point $X$ from the base of the mast.<br>Give both answers to 3 significant figures.",
+        "steps":[
+            "We first look at the obtuse triangle formed by $X$, $Y$, and the Top of the mast ($T$).",
+            "The angle inside this triangle at $X$ is $180^\\circ - 65^\\circ = 115^\\circ$.",
+            "The angle at the top ($T$) is $180^\\circ - 115^\\circ - 31.8^\\circ = 33.2^\\circ$.",
+            "We use the Sine Rule to find the length $XT$: $\\dfrac{XT}{\\sin(31.8^\\circ)} = \\dfrac{355}{\\sin(33.2^\\circ)}$.",
+            "Calculation: $XT = \\dfrac{355 \\times \\sin(31.8^\\circ)}{\\sin(33.2^\\circ)} \\approx 341.64\\text{ m}$.",
+            "For part (a), we now use right-angled trigonometry on the smaller triangle to find the height ($h$): $\\sin(65^\\circ) = \\dfrac{h}{341.64}$.",
+            "Calculation: $h = 341.64 \\times \\sin(65^\\circ) \\approx 309.6\\text{ m}$.",
+            "For part (b), we use cosine to find the distance ($d$) from the base: $\\cos(65^\\circ) = \\dfrac{d}{341.64}$.",
+            "Calculation: $d = 341.64 \\times \\cos(65^\\circ) \\approx 144.4\\text{ m}$.",
+            "Final Answer: $$(a)\\ 310\\text{ m},\\ (b)\\ 144\\text{ m}$$"
         ],
         "bradley_insight": {
-            "type": "deeper",
-            "title": "The Head Teacher's Eye: Sketching for Precision",
-            "content": "Never attempt to solve a quadratic inequality without a quick sketch of the parabola. Visualizing the regions above and below the $x$-axis is the only way to be certain whether your solution requires a single combined range or two separate inequalities."
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: The Sine Rule Shortcut",
+            "content": "You can solve this using two simultaneous equations with the Tangent ratio, but it involves very messy algebra. In Extended IGCSE, whenever you see a 'double triangle' like this, the fastest and safest method is always to use the Sine Rule on the non-right-angled triangle first to find the shared hypotenuse!"
         },
-        "payhip_link": "https://payhip.com/b/mg5YS",
-        "button_text": "Master Algebra: Download the Full Algebra Pack"
+        "payhip_link": "https://payhip.com/b/KjXoP",
+        "button_text": "Master IGCSE Mensuration and Trigonometry: Download the Extended Pack"
     },
     // 21 April
     {
         "id": "003111",
         "date": "21 April 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Mensuration",
         "topic": "3D Shapes",
-        "subtopic": "Surface area",
-        "difficulty": "B/A",
+        "subtopic": "Surface Areas and Volumes",
+        "difficulty": "A",
         "q": "A solid sphere has a radius of $6\\text{ cm}$. A solid cylinder has a radius of $3\\text{ cm}$ and a height of $h\\text{ cm}$. Given that the total surface area of the cylinder is equal to the surface area of the sphere, find the value of $h$.",
-        "steps": [
+        "steps":[
             "We calculate the surface area of the sphere: $4\\pi r^2 = 4\\pi(6^2) = 144\\pi$.",
             "We define the total surface area of the cylinder as the sum of the two bases and the curved surface: $2\\pi r^2 + 2\\pi rh$.",
             "Substituting the cylinder's radius: $2\\pi(3^2) + 2\\pi(3)h = 18\\pi + 6\\pi h$.",
@@ -539,7 +547,7 @@ const problemBank = [
             "content": "In cylinder problems, always check if the question specifies 'solid' or 'hollow'. For a solid cylinder, you must include both circular ends ($2\\pi r^2$) in addition to the curved lateral surface ($2\\pi rh$). Forgetting the ends is the most common cause of lost marks in Paper 4."
         },
         "payhip_link": "https://payhip.com/b/KjXoP",
-        "button_text": "Master Mensuration: Download the Extended Pack"
+        "button_text": "Master IGCSE Mensuration and Trigonometry: Download the Extended Pack"
     },
     // 22 April
     {
@@ -547,10 +555,10 @@ const problemBank = [
         "date": "22 April 2026",
         "major_area": "Algebra",
         "topic": "Functions",
-        "subtopic": "Composite and inverse",
+        "subtopic": "Composite Functions",
         "difficulty": "B/A",
         "q": "The functions $f$ and $g$ are defined by $f(x) = 3x - 5$ and $g(x) = \\dfrac{x + 1}{2}$.<br>(a) Find the composite function $gf(x)$ in its simplest form.<br>(b) Find the inverse function $f^{-1}(x)$.",
-        "steps": [
+        "steps":[
             "For part (a), $gf(x)$ means substituting $f(x)$ into $g(x)$: $g(3x - 5) = \\dfrac{(3x - 5) + 1}{2}$.",
             "Simplifying the numerator: $\\dfrac{3x - 4}{2}$.",
             "For part (b), we set $y = 3x - 5$ and interchange the variables to reflect in $y=x$: $x = 3y - 5$.",
@@ -562,8 +570,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Functional Reflections",
             "content": "Interchanging $x$ and $y$ is the formal geometric instruction to reflect the function in the line $y=x$. Always follow this methodology to ensure you are meeting the IGCSE Extended standard for algebraic proof."
         },
-        "payhip_link": "https://payhip.com/b/wRN86",
-        "button_text": "Master Algebra: Download the Extended Pack"
+        "payhip_link": "https://payhip.com/b/mg5YS",
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 23 April
     {
@@ -571,10 +579,10 @@ const problemBank = [
         "date": "23 April 2026",
         "major_area": "Algebra",
         "topic": "Differentiation",
-        "subtopic": "Gradient from tangents",
+        "subtopic": "Estimating Gradients and Basic Differentiation",
         "difficulty": "A/A*",
         "q": "A curve has the equation $y = x^2 - 6x + 8$. Find the equation of the tangent to the curve at the point $(5, 3)$.",
-        "steps": [
+        "steps":[
             "We first differentiate the curve equation: $\\dfrac{dy}{dx} = 2x - 6$.",
             "The gradient of the tangent at $x=5$ is found by substituting into the derivative: $m = 2(5) - 6 = 4$.",
             "Using the point $(5, 3)$ and $m=4$, we apply $y - y_1 = m(x - x_1)$.",
@@ -586,17 +594,17 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Tangents as Straight Lines",
             "content": "A tangent is always a linear function ($y=mx+c$). The derivative provides the gradient at a single point, but you must combine it with the specific coordinates to find the full line equation. Always double-check your final $y$-intercept against the point of contact."
         },
-        "payhip_link": "https://payhip.com/b/wRN86",
-        "button_text": "Master Algebra: Download the Extended Pack"
+        "payhip_link": "https://payhip.com/b/mg5YS",
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 24 April
     {
         "id": "003114",
         "date": "24 April 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Mensuration",
         "topic": "Similarity & Congruence",
-        "subtopic": "Similar shapes",
-        "difficulty": "A/A*",
+        "subtopic": "Surface Areas and Volumes",
+        "difficulty": "A",
         "q": "Two mathematically similar solids have volumes of $54\\text{ cm}^3$ and $128\\text{ cm}^3$. Given the surface area of the larger solid is $160\\text{ cm}^2$, calculate the surface area of the smaller solid.",
         "steps": [
             "We find the volume scale factor ($k^3$) by dividing the volumes: $k^3 = 128 \\div 54 = 64/27$.",
@@ -610,8 +618,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: The Linear Bridge",
             "content": "You cannot go directly from volume to area. You must always use the linear scale factor ($k$) as your 'bridge'. Standardizing your working to show $k, k^2$ and $k^3$ will prevent the common error of using the wrong power during calculation."
         },
-        "payhip_link": "https://payhip.com/b/XAGch",
-        "button_text": "Master Geometry: Download the Extended Pack"
+        "payhip_link": "https://payhip.com/b/KjXoP",
+        "button_text": "Master IGCSE Mensuration and Trigonometry: Download the Extended Pack"
     },
     // 25 April
     {
@@ -619,10 +627,10 @@ const problemBank = [
         "date": "25 April 2026",
         "major_area": "Number",
         "topic": "Standard Form",
-        "subtopic": "Calculations in standard form",
+        "subtopic": "Standard Form",
         "difficulty": "B/C",
         "q": "Calculate the value of $(4.2 \\times 10^5) + (3.8 \\times 10^4)$, giving your answer in standard form.",
-        "steps": [
+        "steps":[
             "To add numbers in standard form, we must first equalise the powers of 10.",
             "We convert the smaller number to match the larger power: $3.8 \\times 10^4 = 0.38 \\times 10^5$.",
             "Now we add the coefficients: $4.2 + 0.38 = 4.58$.",
@@ -635,18 +643,18 @@ const problemBank = [
             "content": "You cannot simply add the leading numbers if the powers of 10 are different. In Paper 2, always convert both numbers to the higher power to ensure your result is already in, or very close to, correct standard form."
         },
         "payhip_link": "https://payhip.com/b/XEV2Z",
-        "button_text": "Master Number: Download the Full Number Pack"
+        "button_text": "Master IGCSE Number: Download the Extended Pack"
     },
     // 26 April
     {
         "id": "003116",
         "date": "26 April 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Mensuration",
         "topic": "Similarity & Congruence",
-        "subtopic": "Scale factors",
+        "subtopic": "Solids and the Linear, Area, Volume Relationship",
         "difficulty": "A/A*",
         "q": "The ratio of the heights of two similar cylinders is $2:5$. The volume of the smaller cylinder is $80\\text{ cm}^3$. Calculate the volume of the larger cylinder.",
-        "steps": [
+        "steps":[
             "The linear scale factor ($k$) is found from the ratio of the heights: $k = 5 \\div 2 = 2.5$.",
             "The volume scale factor ($k^3$) is the cube of the linear scale factor: $2.5^3 = 15.625$.",
             "We multiply the volume of the smaller cylinder by the volume scale factor.",
@@ -658,8 +666,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Dimensional Powers",
             "content": "Always identify your linear scale factor first. Remember: lengths use $k$, areas use $k^2$, and volumes use $k^3$. Mastery of this distinction is essential for solving these high-scoring Paper 4 geometry problems."
         },
-        "payhip_link": "https://payhip.com/b/L6skH",
-        "button_text": "Master Geometry: Download the Extended Pack"
+        "payhip_link": "https://payhip.com/b/KjXoP",
+        "button_text": "Master IGCSE Mensuration and Trigonometry: Download the Extended Pack"
     },
     // 27 April
     {
@@ -667,10 +675,10 @@ const problemBank = [
         "date": "27 April 2026",
         "major_area": "Algebra",
         "topic": "Expanding Brackets",
-        "subtopic": "Triple brackets",
+        "subtopic": "Expanding Products",
         "difficulty": "B/A",
         "q": "Expand and simplify fully: $(x + 2)(x - 3)(x + 4)$.",
-        "steps": [
+        "steps":[
             "We first expand the first two brackets using the FOIL method: $(x + 2)(x - 3) = x^2 - 3x + 2x - 6$.",
             "Simplifying this gives $x^2 - x - 6$.",
             "Next, we multiply this quadratic by the third bracket: $(x^2 - x - 6)(x + 4)$.",
@@ -684,19 +692,19 @@ const problemBank = [
             "content": "Never attempt to expand three brackets simultaneously. Expand the first pair, fully simplify the resulting quadratic, and only then distribute the third bracket. This structured approach significantly reduces sign errors and missing terms."
         },
         "payhip_link": "https://payhip.com/b/mg5YS",
-        "button_text": "Master Algebra: Download the Full Algebra Pack"
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 28 April
     {
         "id": "003118",
         "date": "28 April 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Trigonometry",
         "topic": "Trigonometry",
         "subtopic": "Sine Rule",
         "difficulty": "A",
         "img": "true",
         "q": "In triangle $ABC$, $AB = 8\\text{ cm}$, $BC = 11\\text{ cm}$ and $\\angle BAC = 75^\\circ$. Calculate the size of angle $\\angle ACB$, giving your answer to 1 decimal place.",
-        "steps": [
+        "steps":[
             "We use the Sine Rule: $\\dfrac{\\sin C}{c} = \\dfrac{\\sin A}{a}$.",
             "Substituting the known values: $\\dfrac{\\sin C}{8} = \\dfrac{\\sin 75^\\circ}{11}$.",
             "Rearranging to solve for $\\sin C$: $\\sin C = \\dfrac{8 \\times \\sin 75^\\circ}{11} \\approx 0.7025...$.",
@@ -710,7 +718,7 @@ const problemBank = [
             "content": "To apply the Sine Rule, you must identify a 'known pair' (a side and its opposite angle). Here, we have $11\\text{ cm}$ and $75^\\circ$. Always check for this pair before deciding between the Sine and Cosine rules."
         },
         "payhip_link": "https://payhip.com/b/KjXoP",
-        "button_text": "Master Trigonometry: Download the Extended Pack"
+        "button_text": "Master IGCSE Mensuration and Trigonometry: Download the Extended Pack"
     },
     // 29 April
     {
@@ -718,10 +726,10 @@ const problemBank = [
         "date": "29 April 2026",
         "major_area": "Algebra",
         "topic": "Simultaneous Equations",
-        "subtopic": "Substitution",
+        "subtopic": "Simultaneous Equations (Linear – Quadratic)",
         "difficulty": "A/A*",
         "q": "Calculate the coordinates of the two points where the line $y = 2x + 1$ intersects the circle $x^2 + y^2 = 13$.",
-        "steps": [
+        "steps":[
             "We substitute the linear equation into the circle equation: $x^2 + (2x + 1)^2 = 13$.",
             "Expanding the bracket: $x^2 + (4x^2 + 4x + 1) = 13$.",
             "Rearranging into standard quadratic form: $5x^2 + 4x - 12 = 0$.",
@@ -736,8 +744,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Substitution Efficiency",
             "content": "When solving simultaneous equations involving a line and a circle, always substitute your $x$-values back into the linear equation to find $y$. It is faster and far less prone to error than using the circle equation."
         },
-        "payhip_link": "https://payhip.com/bradleysmaths",
-        "button_text": "Master Algebra: Download the Extended Pack"
+        "payhip_link": "https://payhip.com/b/mg5YS",
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 30 April
     {
@@ -745,10 +753,10 @@ const problemBank = [
         "date": "30 April 2026",
         "major_area": "Number",
         "topic": "Standard Form",
-        "subtopic": "Calculations in standard form",
+        "subtopic": "Standard Form",
         "difficulty": "B",
         "q": "The distance from Earth to a distant planet is $1.65 \\times 10^8 \\text{ km}$. A spacecraft travels at an average speed of $5.5 \\times 10^4 \\text{ km/h}$.<br>(a) Calculate the time taken for the journey in hours, giving your answer in standard form.<br>(b) Calculate the time taken for the journey in days.",
-        "steps": [
+        "steps":[
             "For part (a), we use the formula $\\text{Time} = \\text{Distance} \\div \\text{Speed}$.",
             "Calculation: $(1.65 \\times 10^8) \\div (5.5 \\times 10^4)$.",
             "Dividing coefficients: $1.65 \\div 5.5 = 0.3$.",
@@ -763,6 +771,6 @@ const problemBank = [
             "content": "When performing division in standard form, ensure your final result has a leading coefficient in the range $1\\le n < 10$. Leaving an answer as $0.3 \\times 10^4$ will cost you the final accuracy mark in IGCSE Paper 2."
         },
         "payhip_link": "https://payhip.com/b/XEV2Z",
-        "button_text": "Master Number: Download the Full Number Pack"
+        "button_text": "Master IGCSE Number: Download the Extended Pack"
     }
 ];
