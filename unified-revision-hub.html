@@ -153,35 +153,25 @@
     <script src="/hub-engine.js"></script>
 
     <!-- Hub wiring -->
+    <!-- Hub wiring (Gateway Redirects) -->
     <script>
-      (function () {
-        const selector = document.getElementById('tier-selector');
-        const switcher = document.getElementById('tier-switcher');
-        const switchBtn = document.getElementById('switch-tier-btn');
+      document.addEventListener("DOMContentLoaded", function() {
         const btnGCSE = document.getElementById('btn-gcse');
         const btnIGCSE = document.getElementById('btn-igcse');
 
-        function startHub(tier) {
-          selector.style.display = 'none';
-          switcher.style.display = 'block';
-          BradleyHub.init('student', tier);
+        // Redirect directly to the dedicated hubs
+        if (btnGCSE) {
+            btnGCSE.addEventListener('click', function () {
+                window.location.href = 'gcse-hub.html';
+            });
         }
 
-        btnGCSE.addEventListener('click', function () {
-          startHub('gcse');
-        });
-
-        btnIGCSE.addEventListener('click', function () {
-          startHub('igcse');
-        });
-
-        switchBtn.addEventListener('click', function () {
-          selector.style.display = 'block';
-          switcher.style.display = 'none';
-          document.getElementById('hub-stage').innerHTML =
-            '<p>Please choose GCSE or IGCSE above to load your revision hub.</p>';
-        });
-      })();
+        if (btnIGCSE) {
+            btnIGCSE.addEventListener('click', function () {
+                window.location.href = 'igcse-hub.html';
+            });
+        }
+      });
     </script>
 
 </body>
