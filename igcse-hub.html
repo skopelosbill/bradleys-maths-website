@@ -494,7 +494,17 @@
     <script src="hub-engine.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            BradleyHub.init('student', 'igcse');
+            // 1. Start the engine for IGCSE
+            if (typeof BradleyHub !== 'undefined') {
+                BradleyHub.init('student', 'igcse');
+            }
+
+            // 2. Attach the click listeners to the accordion menus safely
+            document.querySelectorAll('.topic-toggle').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    btn.parentElement.classList.toggle('open');
+                });
+            });
         });
     </script>
 </body>
