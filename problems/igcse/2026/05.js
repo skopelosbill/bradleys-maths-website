@@ -5,7 +5,7 @@ const problemBank = [
         "date": "1 May 2026",
         "major_area": "Number",
         "topic": "Factors, Multiples & Primes",
-        "subtopic": "HCF",
+        "subtopic": "Prime Numbers, HCF, LCM",
         "difficulty": "C/D",
         "q": "Without using a calculator, find the highest common factor (HCF) of 168 and 180.",
         "steps": [
@@ -21,15 +21,15 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Systematic Factorisation",
             "content": "In the non-calculator Paper 2, speed and accuracy are paramount. Listing factors manually is risky and time-consuming. The prime factorisation method is far more robust and ensures that no common factors are overlooked in the process."
         },
-        "payhip_link": "https://payhip.com/b/wRN86",
-        "button_text": "Master IGCSE: Download the Extended Number Pack"
+        "payhip_link": "https://payhip.com/b/XEV2Z",
+        "button_text": "Master IGCSE Number: Download the Extended Pack"
     },
     // 2 May
     {
         "id": "003122",
         "date": "2 May 2026",
         "major_area": "Algebra",
-        "topic": "Indices Laws",
+        "topic": "Laws of Indices",
         "subtopic": "Fractional indices",
         "difficulty": "B/C",
         "q": "Without using a calculator, simplify fully: $$\\left(\\dfrac{16}{x^8}\\right)^{-\\frac{3}{4}}$$.",
@@ -46,16 +46,16 @@ const problemBank = [
             "title": "The Head Teacher's Eye: The Order of Operations",
             "content": "In index manipulation, the order in which you apply the components of the power is vital. I always advise taking the root before the power to keep the numbers small and manageable in a non-calculator environment. Attempting to cube 16 before taking the 4th root is numerically difficult and increases the risk of error."
         },
-        "payhip_link": "https://payhip.com/b/wRN86",
-        "button_text": "Master IGCSE: Download the Extended Algebra Pack"
+        "payhip_link": "https://payhip.com/b/mg5YS",
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 3 May
     {
         "id": "003123",
         "date": "3 May 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Trigonometry",
         "topic": "Trigonometry",
-        "subtopic": "Sine rule",
+        "subtopic": "The Sine Rule",
         "difficulty": "B/A",
         "img": "true",
         "q": "In triangle $PQR$, $PQ = 12.6\\text{ cm}$, $\\angle PRQ = 41^\\circ$ and $\\angle QPR = 73^\\circ$. Calculate the length of $QR$.",
@@ -72,8 +72,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Three Significant Figures",
             "content": "Unless otherwise stated, Cambridge IGCSE requires all non-exact numerical answers to be given correct to 3 significant figures. This is a general instruction found on the front of every paper. Failing to adhere to this convention will result in the loss of an accuracy mark even if your working is correct."
         },
-        "payhip_link": "https://payhip.com/b/XAGch",
-        "button_text": "Master IGCSE: Download the Extended Geometry Pack"
+        "payhip_link": "https://payhip.com/b/KjXoP",
+        "button_text": "Master IGCSE Mensuration and Trigonometry: Download the Extended Pack"
     },
     // 4 May
     {
@@ -81,7 +81,7 @@ const problemBank = [
         "date": "4 May 2026",
         "major_area": "Algebra",
         "topic": "Rearranging Formulae",
-        "subtopic": "Rearranging with powers",
+        "subtopic": "Changing the Subject of a Formula",
         "difficulty": "B/C",
         "q": "Make $w$ the subject of the formula: $$t = 3 + \\sqrt{\\dfrac{w-x}{2}}$$",
         "steps": [
@@ -96,8 +96,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Reverse BIDMAS",
             "content": "Rearranging a formula is effectively 'undressing' the subject. We must reverse the order of operations, dealing with the terms furthest away from the $w$ (the addition of 3) before we address the operations directly attached to the variable."
         },
-        "payhip_link": "https://payhip.com/b/wRN86",
-        "button_text": "Master IGCSE: Download the Extended Algebra Pack"
+        "payhip_link": "https://payhip.com/b/mg5YS",
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 5 May
     {
@@ -105,7 +105,7 @@ const problemBank = [
         "date": "5 May 2026",
         "major_area": "Number",
         "topic": "Financial Maths",
-        "subtopic": "Compound interest",
+        "subtopic": "Percentage Change and Interest",
         "difficulty": "B/A",
         "q": "A bank account pays compound interest at a rate of $2.5\\%$ per year. After 4 years, the value of the investment is $£6,622.72$. Calculate the original amount invested.",
         "steps": [
@@ -120,8 +120,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Principal vs Interest",
             "content": "Always read the final instruction of the question with great care. If the examiner asks for the 'interest earned', you must subtract the original principal from the final total. In this case, we were looking for the original principal itself."
         },
-        "payhip_link": "https://payhip.com/b/wRN86",
-        "button_text": "Master IGCSE: Download the Extended Number Pack"
+        "payhip_link": "https://payhip.com/b/XEV2Z",
+        "button_text": "Master IGCSE Number: Download the Extended Pack"
     },
     // 6 May
     {
@@ -129,7 +129,7 @@ const problemBank = [
         "date": "6 May 2026",
         "major_area": "Statistics",
         "topic": "Frequency Tables",
-        "subtopic": "Grouped data",
+        "subtopic": "Averages and Measures of Spread (Grouped Data)",
         "difficulty": "B/C",
         "q": "The table shows the time, $t$ seconds, taken by 50 students to complete a puzzle.<br><table style='border-collapse:collapse;width:260px;text-align:center;'><tr><th style='padding:6px;'>Time (t s)</th><th style='padding:6px;'>Frequency</th></tr><tr><td style='padding:6px;'>20 &lt; t ≤ 30</td><td style='padding:6px;'>8</td></tr><tr><td style='padding:6px;'>30 &lt; t ≤ 40</td><td style='padding:6px;'>15</td></tr><tr><td style='padding:6px;'>40 &lt; t ≤ 50</td><td style='padding:6px;'>17</td></tr><tr><td style='padding:6px;'>50 &lt; t ≤ 60</td><td style='padding:6px;'>10</td></tr></table><br>Calculate an estimate for the mean time.",
         "steps": [
@@ -144,8 +144,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Why it is an Estimate",
             "content": "Cambridge frequently includes a 1-mark 'reasoning' question alongside this calculation. The result is an 'estimate' because we do not know the exact times of the students within each interval; we must assume they are distributed evenly around the midpoint."
         },
-        "payhip_link": "https://payhip.com/b/XAGch",
-        "button_text": "Master IGCSE: Download the Extended Statistics Pack"
+        "payhip_link": "https://payhip.com/b/rsVCz",
+        "button_text": "Master IGCSE Transformations, Vectors, Probability, and Statistics: Download the Extended Pack"
     },
     // 7 May
     {
@@ -153,7 +153,7 @@ const problemBank = [
         "date": "7 May 2026",
         "major_area": "Algebra",
         "topic": "Differentiation",
-        "igcse_only": true,
+        "subtopic": "Estimating Gradients and Basic Differentiation",
         "difficulty": "B/A",
         "q": "A curve has the equation $y = x^3 - 3x^2 + 4$.<br>(a) Find $\\dfrac{dy}{dx}$.<br>(b) Find the gradient of the curve at the point where $x = 4$.",
         "steps": [
@@ -169,17 +169,17 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Calculus Foundations",
             "content": "Differentiation is a signature topic of the Extended IGCSE syllabus. Mastery of the power rule is the foundation that allows you to solve complex Paper 4 problems involving tangents, normals, and optimization."
         },
-        "payhip_link": "https://payhip.com/b/wRN86",
-        "button_text": "Master IGCSE: Download the Extended Algebra Pack"
+        "payhip_link": "https://payhip.com/b/mg5YS",
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 8 May
     {
         "id": "003128",
         "date": "8 May 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Geometry",
         "topic": "Similarity & Congruence",
-        "subtopic": "Similar shapes",
-        "difficulty": "A/A*",
+        "subtopic": "Solids and the Linear, Area, Volume Relationship",
+        "difficulty": "A",
         "q": "The volumes of two mathematically similar solids are $250\\text{ cm}^3$ and $128\\text{ cm}^3$. Given that the surface area of the larger solid is $150\\text{ cm}^2$, calculate the surface area of the smaller solid.",
         "steps": [
             "We find the volume scale factor ($k^3$) by dividing the two volumes: $k^3 = 250 \\div 128 = 1.953125$.",
@@ -193,8 +193,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Dimensional Bridging",
             "content": "You cannot jump directly from volume to area. You <strong>must</strong> find the linear scale factor ($k$) first. Think of $k$ as the essential bridge that connects 1D, 2D, and 3D properties in similar shapes."
         },
-        "payhip_link": "https://payhip.com/b/XAGch",
-        "button_text": "Master IGCSE: Download the Extended Geometry Pack"
+        "payhip_link": "https://payhip.com/b/L6skH",
+        "button_text": "Master IGCSE Coordinate Geometry and Geometry: Download the Extended Pack"
     },
     // 9 May
     {
@@ -202,7 +202,7 @@ const problemBank = [
         "date": "9 May 2026",
         "major_area": "Number",
         "topic": "Standard Form",
-        "subtopic": "Calculations in standard form",
+        "subtopic": "Standard Form",
         "difficulty": "C/D",
         "q": "Without using a calculator, calculate the value of $5.2 \\times 10^{12} + 3.1 \\times 10^{10}$. Give your answer in standard form.",
         "steps": [
@@ -217,16 +217,16 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Power Alignment",
             "content": "In Paper 2, aligning the powers of 10 is the most reliable way to perform addition or subtraction. Always convert to the higher power to ensure your final coefficient is already correctly placed for standard form."
         },
-        "payhip_link": "https://payhip.com/b/wRN86",
-        "button_text": "Master IGCSE: Download the Extended Number Pack"
+        "payhip_link": "https://payhip.com/b/XEV2Z",
+        "button_text": "Master IGCSE Number: Download the Extended Pack"
     },
     // 10 May
     {
         "id": "003130",
         "date": "10 May 2026",
         "major_area": "Probability",
-        "topic": "Tree Diagrams",
-        "subtopic": "Without replacement",
+        "topic": "Tree Diagrams Without replacement",
+        "subtopic": "Probability of Combined Events",
         "difficulty": "B/A",
         "q": "A box contains 6 green apples and 4 red apples.<br>Two apples are picked at random without replacement.<br>(a) Draw a probability tree diagram to illustrate this situation.<br>(b) Find the probability that both apples are the same colour.",
         "steps": [
@@ -243,16 +243,16 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Selection Dependencies",
             "content": "In probability, 'without replacement' is a instruction to reduce both the numerator and the denominator for the second pick. This transition from 10 to 9 items is where most marks are lost in Paper 4."
         },
-        "payhip_link": "https://payhip.com/b/XAGch",
-        "button_text": "Master IGCSE Probability: Download the Extended Pack"
+        "payhip_link": "https://payhip.com/b/rsVCz",
+        "button_text": "Master IGCSE Transformations, Vectors, Probability, and Statistics: Download the Extended Pack"
     },
     // 11 May
     {
         "id": "003131",
         "date": "11 May 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Geometry",
         "topic": "Coordinates",
-        "subtopic": "Gradients",
+        "subtopic": "Parallel and Perpendicular Lines, Mixed Problems",
         "difficulty": "B/C",
         "q": "Line $L$ passes through $A(2, 5)$ and $B(6, -3)$. Find the equation of the line perpendicular to $L$ that passes through the midpoint of $AB$.",
         "steps": [
@@ -268,14 +268,14 @@ const problemBank = [
             "title": "The Head Teacher's Eye: The Perpendicular Rule",
             "content": "In coordinate geometry, 'perpendicular' is an algebraic command to use the $m_1 m_2 = -1$ rule. Always apply both the negative and the reciprocal to ensure your new line is correctly oriented."
         },
-        "payhip_link": "https://payhip.com/b/XAGch",
-        "button_text": "Master IGCSE: Download the Extended Geometry Pack"
+        "payhip_link": "https://payhip.com/b/L6skH",
+        "button_text": "Master IGCSE Coordinate Geometry and Geometry: Download the Extended Pack"
     },
     // 12 May
     {
         "id": "003132",
         "date": "12 May 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Trigonometry",
         "topic": "Trigonometry",
         "subtopic": "Cosine rule",
         "difficulty": "B/A",
@@ -294,8 +294,34 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Degree Precision",
             "content": "For Cambridge IGCSE, all angles in degrees must be rounded to exactly 1 decimal place unless the question provides a different instruction. Standard over-rounding to the nearest degree will result in an accuracy penalty."
         },
-        "payhip_link": "https://payhip.com/b/XAGch",
-        "button_text": "Master IGCSE: Download the Extended Geometry Pack"
+        "payhip_link": "https://payhip.com/b/KjXoP",
+        "button_text": "Master IGCSE Mensuration and Trigonometry: Download the Extended Pack"
+    },
+    // 14 May (Rewritten for Cylinder to Sphere Recasting)
+    {
+        "id": "003134",
+        "date": "14 May 2026",
+        "major_area": "Mensuration",
+        "topic": "3D Shapes",
+        "subtopic": "Surface Areas and Volumes",
+        "difficulty": "B/A",
+        "q": "A solid metal cylinder of radius $6\\text{ cm}$ and height $8\\text{ cm}$ is melted down and recast into a solid sphere. Calculate the radius of the sphere.",
+        "steps": [
+            "We first calculate the volume of the cylinder: $V = \\pi r^2 h = \\pi(6^2)(8) = 288\\pi\\text{ cm}^3$.",
+            "Since the metal is recast, the volume of the sphere must also be exactly $288\\pi$.",
+            "We use the sphere volume formula: $V = \\dfrac{4}{3}\\pi r^3$.",
+            "Substituting our values: $288\\pi = \\dfrac{4}{3}\\pi r^3$.",
+            "Cancelling $\\pi$ and multiplying by $\\dfrac{3}{4}$ gives $r^3 = 216$.",
+            "Taking the cube root of 216 gives $r = 6$.",
+            "Final Answer: $$6\\text{ cm}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Working with Pi",
+            "content": "In recasting problems, leave the $\\pi$ symbol in your working until the final step. It prevents rounding errors midway through the problem and usually cancels out entirely, making the final division much simpler."
+        },
+        "payhip_link": "https://payhip.com/b/KjXoP",
+        "button_text": "Master IGCSE Mensuration and Trigonometry: Download the Extended Pack"
     },
     // 13 May
     {
@@ -303,7 +329,7 @@ const problemBank = [
         "date": "13 May 2026",
         "major_area": "Algebra",
         "topic": "Quadratic Equations",
-        "subtopic": "Factorising method",
+        "subtopic": "Factorising 2",
         "difficulty": "B/C",
         "q": "Without using a calculator, solve the equation: $2x^2 + 5x - 12 = 0$.",
         "steps": [
@@ -320,33 +346,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Factorising vs Formula",
             "content": "While the quadratic formula is a universal tool, being able to factorise non-monic quadratics quickly is a major time-saver in Paper 2. Use the grouping method shown above to maintain algebraic rigour."
         },
-        "payhip_link": "https://payhip.com/b/wRN86",
-        "button_text": "Master IGCSE: Download the Extended Algebra Pack"
-    },
-    // 14 May
-    {
-        "id": "003134",
-        "date": "14 May 2026",
-        "major_area": "Geometry & Measures",
-        "topic": "3D Shapes",
-        "subtopic": "Volume",
-        "difficulty": "B/A",
-        "q": "A solid metal sphere of radius $6\\text{ cm}$ is melted down and recast into a cylinder of radius $8\\text{ cm}$. Calculate the height of the cylinder.",
-        "steps": [
-            "We first calculate the volume of the sphere: $V = \\dfrac{4}{3}\\pi(6^3) = 288\\pi\\text{ cm}^3$.",
-            "Since the metal is recast, the volume of the cylinder must also be $288\\pi$.",
-            "We use the cylinder volume formula: $V = \\pi r^2 h$.",
-            "Substituting our values: $288\\pi = \\pi(8^2)h$.",
-            "Cancelling $\\pi$ and simplifying gives $288 = 64h$.",
-            "Final Answer: $$4.5\\text{ cm}$$"
-        ],
-        "bradley_insight": {
-            "type": "pro-tip",
-            "title": "The Head Teacher's Eye: Working with Pi",
-            "content": "In recasting problems, leave the $\\pi$ symbol in your working until the final step. It prevents rounding errors midway through the problem and usually cancels out entirely, making the final division much simpler."
-        },
-        "payhip_link": "https://payhip.com/b/XAGch",
-        "button_text": "Master IGCSE: Download the Extended Geometry Pack"
+        "payhip_link": "https://payhip.com/b/mg5YS",
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 15 May
     {
@@ -355,7 +356,7 @@ const problemBank = [
         "major_area": "Algebra",
         "topic": "Differentiation",
         "igcse_only": true,
-        "subtopic": "Stationary points",
+        "subtopic": "Stationary Points",
         "difficulty": "A/A*",
         "q": "Find the coordinates of the two stationary points on the curve $y = 2x^3 - 9x^2 + 12x - 3$.",
         "steps": [
@@ -371,8 +372,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Stationary Point Protocol",
             "content": "The term 'stationary point' is a specific command to solve for a gradient of zero. I remind my students to perform a final coordinate check: a 'point' must always be presented as an $(x, y)$ pair. Failing to find the $y$-values is a very common omission in Paper 4."
         },
-        "payhip_link": "https://payhip.com/b/wRN86",
-        "button_text": "Master IGCSE: Download the Extended Algebra Pack"
+        "payhip_link": "https://payhip.com/b/mg5YS",
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 16 May
     {
@@ -380,7 +381,7 @@ const problemBank = [
         "date": "16 May 2026",
         "major_area": "Algebra",
         "topic": "Linear Equations",
-        "subtopic": "Equations with brackets",
+        "subtopic": "Fractional Linear Equations",
         "difficulty": "C/D",
         "q": "Solve the equation: $\\dfrac{3(x + 4)}{5} = 12$.",
         "steps": [
@@ -395,16 +396,16 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Logical Sequencing",
             "content": "In non-calculator questions, the order of steps is vital. Many students expand brackets before removing the fraction, but multiplying first creates simpler integers to work with and reduces the risk of mental arithmetic errors."
         },
-        "payhip_link": "https://payhip.com/b/wRN86",
-        "button_text": "Master IGCSE: Download the Extended Algebra Pack"
+        "payhip_link": "https://payhip.com/b/mg5YS",
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 17 May
     {
         "id": "003137",
         "date": "17 May 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Geometry",
         "topic": "Circle Theorems",
-        "subtopic": "Cyclic quadrilaterals",
+        "subtopic": "Circle Theorems 2",
         "difficulty": "B/A",
         "img": "true",
         "q": "$A, B, C$ and $D$ are points on a circle. $AB$ is parallel to $DC$. Given $\\angle ADC = 108^\\circ$, calculate the sizes of $\\angle ABC$ and $\\angle BCD$ giving clear geometrical reasons for your answers.",
@@ -420,8 +421,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Chord Parallelism",
             "content": "Cambridge often combines circle theorems with basic angle geometry. Parallel lines within a circle create an isosceles trapezium, which is a unique property worth memorising for the more challenging Paper 4 questions."
         },
-        "payhip_link": "https://payhip.com/b/XAGch",
-        "button_text": "Master IGCSE: Download the Extended Geometry Pack"
+        "payhip_link": "https://payhip.com/b/L6skH",
+        "button_text": "Master IGCSE Coordinate Geometry and Geometry: Download the Extended Pack"
     },
     // 18 May
     {
@@ -429,7 +430,7 @@ const problemBank = [
         "date": "18 May 2026",
         "major_area": "Number",
         "topic": "Fractions",
-        "subtopic": "Fraction operations",
+        "subtopic": "The Four Operations with Mixed Numbers",
         "difficulty": "C/D",
         "q": "Without using a calculator, calculate $3\\dfrac{1}{4} - 1\\dfrac{2}{3}$. Give your answer as a mixed number in its simplest form.",
         "steps": [
@@ -444,8 +445,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: The Common Denominator",
             "content": "I discourage students from subtracting whole numbers and fractions separately, as this often leads to errors when the second fraction is larger. The improper fraction method is universally reliable."
         },
-        "payhip_link": "https://payhip.com/b/wRN86",
-        "button_text": "Master IGCSE: Download the Extended Number Pack"
+        "payhip_link": "https://payhip.com/b/XEV2Z",
+        "button_text": "Master IGCSE Number: Download the Extended Pack"
     },
     // 19 May
     {
@@ -453,7 +454,7 @@ const problemBank = [
         "date": "19 May 2026",
         "major_area": "Algebra",
         "topic": "Functions",
-        "subtopic": "Inverse functions",
+        "subtopic": "Inverse Functions",
         "difficulty": "B/A",
         "q": "The function $f(x) = \\dfrac{2x + 3}{x - 5}$ for $x \\neq 5$. Find an expression for $f^{-1}(x)$.",
         "steps": [
@@ -471,16 +472,16 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Inverse Reflexivity",
             "content": "When $x$ appears in both parts of a fraction, the 'interchange' and 'factorise' steps are non-negotiable. This is a high-level functional skill that is frequently assessed in the final section of Extended papers."
         },
-        "payhip_link": "https://payhip.com/b/wRN86",
-        "button_text": "Master IGCSE: Download the Extended Algebra Pack"
+        "payhip_link": "https://payhip.com/b/mg5YS",
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 20 May
     {
         "id": "003140",
         "date": "20 May 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Mensuration",
         "topic": "3D Shapes",
-        "subtopic": "Surface area",
+        "subtopic": "Surface Areas and Volumes",
         "difficulty": "B/A",
         "img": "true",
         "q": "A cone has a base radius of $5\\text{ cm}$ and a slant height of $13\\text{ cm}$. Calculate the total surface area of the cone, correct to 1 decimal place.",
@@ -497,8 +498,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Slant vs Vertical",
             "content": "The most frequent error in cone geometry is using the vertical height ($h$) for the curved area. Always verify if the slant height ($l$) is provided; if given $h$, you must first use Pythagoras to find $l$."
         },
-        "payhip_link": "https://payhip.com/b/XAGch",
-        "button_text": "Master IGCSE: Download the Extended Geometry Pack"
+        "payhip_link": "https://payhip.com/b/KjXoP",
+        "button_text": "Master IGCSE Mensuration and Trigonometry: Download the Extended Pack"
     },
     // 21 May
     {
@@ -506,8 +507,8 @@ const problemBank = [
         "date": "21 May 2026",
         "major_area": "Number",
         "topic": "Surds",
-        "subtopic": "Rationalising denominators",
-        "difficulty": "A/A*",
+        "subtopic": "Surds",
+        "difficulty": "B/A",
         "q": "Without using a calculator, show that $\\dfrac{10}{\\sqrt{5}}$ can be expressed in the form $a\\sqrt{5}$.",
         "steps": [
             "To rationalise the denominator, we multiply the fraction by $\\dfrac{\\sqrt{5}}{\\sqrt{5}}$.",
@@ -520,16 +521,16 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Radical Efficiency",
             "content": "Rationalising is a mandatory skill for the new non-calculator Paper 2. Think of it as 'moving' the irrationality from the bottom to the top to leave a rational integer below."
         },
-        "payhip_link": "https://payhip.com/b/wRN86",
-        "button_text": "Master IGCSE: Download the Extended Number Pack"
+        "payhip_link": "https://payhip.com/b/XEV2Z",
+        "button_text": "Master IGCSE Number: Download the Extended Pack"
     },
-    // 22 May
+    // 22 May (Rewritten for Insight clarity)
     {
         "id": "003142",
         "date": "22 May 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Trigonometry",
         "topic": "Trigonometry",
-        "subtopic": "Area of triangle 1/2 ab sin C",
+        "subtopic": "The Sine Rule",
         "difficulty": "B/A",
         "img": "true",
         "q": "The area of triangle $ABC$ is $40\\text{ cm}^2$. Given $AB = 10\\text{ cm}$ and $AC = 12\\text{ cm}$, find the two possible sizes for angle $BAC$.",
@@ -542,11 +543,11 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "deeper",
-            "title": "The Head Teacher's Eye: Ambiguous Case Logic",
-            "content": "Paper 4 often tests the 'ambiguous' nature of sine. Because $\\sin(x) = \\sin(180-x)$, there are always two possible triangles unless the angle is $90^\\circ$."
+            "title": "The Head Teacher's Eye: Area and the Sine Curve",
+            "content": "Because $\\sin(x) = \\sin(180^\\circ - x)$, knowing the area and two enclosing sides will always yield two possible supplementary angles (one acute and one obtuse), unless the angle is exactly $90^\\circ$. Always check if the question specifically asks for the acute or obtuse angle, or in this case, both!"
         },
-        "payhip_link": "https://payhip.com/b/XAGch",
-        "button_text": "Master IGCSE: Download the Extended Geometry Pack"
+        "payhip_link": "https://payhip.com/b/KjXoP",
+        "button_text": "Master IGCSE Mensuration and Trigonometry: Download the Extended Pack"
     },
     // 23 May
     {
@@ -554,7 +555,7 @@ const problemBank = [
         "date": "23 May 2026",
         "major_area": "Algebra",
         "topic": "Factorising",
-        "subtopic": "Common factors",
+        "subtopic": "Factoring Expressions",
         "difficulty": "C/D",
         "q": "Factorise fully: $6ax - 3ay - 4bx + 2by$.",
         "steps": [
@@ -569,16 +570,16 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Sign Grouping",
             "content": "The second bracket must match the first. If you factorise incorrectly, the signs will not align. Always mental-expand your result to check against the original."
         },
-        "payhip_link": "https://payhip.com/b/wRN86",
-        "button_text": "Master IGCSE: Download the Extended Algebra Pack"
+        "payhip_link": "https://payhip.com/b/mg5YS",
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 24 May
     {
         "id": "003144",
         "date": "24 May 2026",
-        "major_area": "Ratio, Proportion & Rates of Change",
+        "major_area": "Algebra",
         "topic": "Direct & Inverse Proportion",
-        "subtopic": "Proportion equations",
+        "subtopic": "Proportion",
         "difficulty": "B/A",
         "q": "$y$ is proportional to $(x - 1)^2$. When $x = 4, y = 18$. Find $y$ when $x = 6$.",
         "steps": [
@@ -593,8 +594,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Identifying 'k'",
             "content": "In proportion problems, establishing the constant $k$ is the 'anchor step' that allows the rest of the problem to be solved safely."
         },
-        "payhip_link": "https://payhip.com/b/wRN86",
-        "button_text": "Master IGCSE: Download the Extended Number Pack"
+        "payhip_link": "https://payhip.com/b/mg5YS",
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 25 May
     {
@@ -602,7 +603,7 @@ const problemBank = [
         "date": "25 May 2026",
         "major_area": "Algebra",
         "topic": "Inequalities",
-        "subtopic": "Solving inequalities",
+        "subtopic": "Linear Inequalities",
         "difficulty": "C/D",
         "q": "Solve the inequality: $5 - 2x < 11$.",
         "steps": [
@@ -615,8 +616,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: The Negative Flip",
             "content": "Dividing an inequality by a negative number is a classic trap. Failing to reverse the sign will result in zero marks for the final solution."
         },
-        "payhip_link": "https://payhip.com/b/wRN86",
-        "button_text": "Master IGCSE: Download the Extended Algebra Pack"
+        "payhip_link": "https://payhip.com/b/mg5YS",
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 26 May
     {
@@ -624,7 +625,7 @@ const problemBank = [
         "date": "26 May 2026",
         "major_area": "Statistics",
         "topic": "Histograms",
-        "subtopic": "Interpreting histograms",
+        "subtopic": "histograms",
         "difficulty": "B/A",
         "q": "In a histogram, a bar of width $3\\text{ cm}$ and height $4\\text{ cm}$ represents 60 units. Calculate the frequency of a bar with width $2\\text{ cm}$ and height $5\\text{ cm}$.",
         "steps": [
@@ -639,16 +640,16 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Area vs Density",
             "content": "High-tier problems often use physical bar dimensions to test if you truly understand that frequency is the total area, not just the height."
         },
-        "payhip_link": "https://payhip.com/b/XAGch",
-        "button_text": "Master IGCSE: Download the Extended Statistics Pack"
+        "payhip_link": "https://payhip.com/b/rsVCz",
+        "button_text": "Master IGCSE Transformations, Vectors, Probability, and Statistics: Download the Extended Pack"
     },
     // 27 May
     {
         "id": "003147",
         "date": "27 May 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Geometry",
         "topic": "Angles",
-        "subtopic": "Regular polygons",
+        "subtopic": "Polygons and Circles",
         "difficulty": "C/D",
         "q": "Calculate the size of one exterior angle of a regular polygon with 15 sides.",
         "steps": [
@@ -661,8 +662,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Geometric Constants",
             "content": "Working with exterior angles is the most efficient path for polygon problems. This constant $360$ applies regardless of the number of sides."
         },
-        "payhip_link": "https://payhip.com/b/XAGch",
-        "button_text": "Master IGCSE: Download the Extended Geometry Pack"
+        "payhip_link": "https://payhip.com/b/L6skH",
+        "button_text": "Master IGCSE Coordinate Geometry and Geometry: Download the Extended Pack"
     },
     // 28 May
     {
@@ -670,7 +671,7 @@ const problemBank = [
         "date": "28 May 2026",
         "major_area": "Number",
         "topic": "Financial Maths",
-        "subtopic": "Currency conversion",
+        "subtopic": "Money",
         "difficulty": "C/D",
         "q": "An investor converts $£800$ into dollars at $£1 = \\$1.26$, then back to pounds at $£1 = \\$1.20$. Calculate the profit in pounds.",
         "steps": [
@@ -684,8 +685,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Directional Logic",
             "content": "When moving to a currency worth 'less' per unit, you multiply. When returning to the 'stronger' unit, you divide. Logic-checking the final value ensures you used the correct operation."
         },
-        "payhip_link": "https://payhip.com/b/wRN86",
-        "button_text": "Master IGCSE: Download the Extended Number Pack"
+        "payhip_link": "https://payhip.com/b/XEV2Z",
+        "button_text": "Master IGCSE Number: Download the Extended Pack"
     },
     // 29 May
     {
@@ -693,7 +694,7 @@ const problemBank = [
         "date": "29 May 2026",
         "major_area": "Algebra",
         "topic": "Quadratic Equations",
-        "subtopic": "Factorising method",
+        "subtopic": "Quadratic Equations 1",
         "difficulty": "B/A",
         "q": "Solve the equation: $x^2 - 11x + 24 = 0$.",
         "steps": [
@@ -707,16 +708,16 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Bracket to Solution",
             "content": "A common 'final step' error is finding the factors but failing to solve for zero. Always state the final values clearly."
         },
-        "payhip_link": "https://payhip.com/b/wRN86",
-        "button_text": "Master IGCSE: Download the Extended Algebra Pack"
+        "payhip_link": "https://payhip.com/b/mg5YS",
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 30 May
     {
         "id": "003150",
         "date": "30 May 2026",
-        "major_area": "Geometry & Measures",
+        "major_area": "Vectors",
         "topic": "Vectors",
-        "subtopic": "Column vectors",
+        "subtopic": "Magnitude of a Vector",
         "difficulty": "C/D",
         "q": "If $\\mathbf{a} = \\begin{pmatrix} 3 \\\\ -4 \\end{pmatrix}$ and $\\mathbf{b} = \\begin{pmatrix} -1 \\\\ 2 \\end{pmatrix}$, calculate the magnitude of $2\\mathbf{a} + 3\\mathbf{b}$.",
         "steps": [
@@ -730,8 +731,8 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Magnitude as Distance",
             "content": "The magnitude is simply the hypotenuse of the triangle formed by the vector components. Always use Pythagoras."
         },
-        "payhip_link": "https://payhip.com/b/XAGch",
-        "button_text": "Master IGCSE: Download the Extended Geometry Pack"
+        "payhip_link": "https://payhip.com/b/rsVCz",
+        "button_text": "Master IGCSE Transformations, Vectors, Probability, and Statistics: Download the Extended Pack"
     },
     // 31 May
     {
@@ -740,7 +741,7 @@ const problemBank = [
         "major_area": "Algebra",
         "topic": "Differentiation",
         "igcse_only": true,
-        "subtopic": "Stationary points",
+        "subtopic": "Stationary Points",
         "difficulty": "A*",
         "img": "true",
         "q": "The volume of a box is $V = x^3 - 21x^2 + 108x$. Calculate the value of $x$ for which the volume is a maximum.",
@@ -756,7 +757,7 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Modelling Constraints",
             "content": "Optimization requires you to check your results against reality. Discard any roots that would result in negative dimensions."
         },
-        "payhip_link": "https://payhip.com/b/wRN86",
-        "button_text": "Master IGCSE: Download the Extended Algebra Pack"
+        "payhip_link": "https://payhip.com/b/mg5YS",
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     }
 ];
