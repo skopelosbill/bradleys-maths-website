@@ -201,7 +201,7 @@ const problemBank = [
             "We have two sides and the included angle, so we apply the Cosine Rule: $AB^2 = 7^2 + 10^2 - 2(7)(10)\\cos(60^\\circ)$.",
             "Calculation: $AB^2 = 49 + 100 - 140(0.5) = 149 - 70 = 79$. Taking the square root gives $AB = \\sqrt{79} \\approx 8.888...\\text{ km}$.",
             "For part (b), we need to find the angle at $B$ (angle $PBA$) using the Sine Rule: $\\dfrac{\\sin(B)}{7} = \\dfrac{\\sin(60^\\circ)}{\\sqrt{79}}$.",
-            "Calculation: $\\sin(B) = \\dfrac{7 \\times \\sin(60^\\circ)}{\\sqrt{79}} \\approx 0.682...$ which gives angle $B \approx 43.0^\\circ$.",
+            "Calculation: $\\sin(B) = \\dfrac{7 \\times \\sin(60^\\circ)}{\\sqrt{79}} \\approx 0.682...$ which gives $\\angle B \\approx 43.0^\\circ$.",
             "To find the bearing from $B$, we first find the bearing of $P$ from $B$, which is $105^\\circ + 180^\\circ = 285^\\circ$.",
             "Ship $A$ is 'inside' this bearing by the angle we just calculated. Therefore, we subtract angle $B$ from $285^\\circ$.",
             "Calculation: $285^\\circ - 43.0^\\circ = 242.0^\\circ$.",
