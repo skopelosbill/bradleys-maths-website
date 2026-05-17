@@ -187,6 +187,7 @@ const problemBank = [
         "button_text": "Master GCSE Number: Download the Pack"
     },
     // 8 June
+    // 8 June
     {
         "id": "002159",
         "date": "8 June 2026",
@@ -201,20 +202,21 @@ const problemBank = [
             "We have two sides and the included angle, so we apply the Cosine Rule: $AB^2 = 7^2 + 10^2 - 2(7)(10)\\cos(60^\\circ)$.",
             "Calculation: $AB^2 = 49 + 100 - 140(0.5) = 149 - 70 = 79$. Taking the square root gives $AB = \\sqrt{79} \\approx 8.888...\\text{ km}$.",
             "For part (b), we need to find the angle at $B$ (angle $PBA$) using the Sine Rule: $\\dfrac{\\sin(B)}{7} = \\dfrac{\\sin(60^\\circ)}{\\sqrt{79}}$.",
-            "Calculation: $\\sin(B) = \\dfrac{7 \\times \\sin(60^\\circ)}{\\sqrt{79}} \\approx 0.682...$ which gives $\\angle B \\approx 43.0^\\circ$.",
-            "To find the bearing from $B$, we first find the bearing of $P$ from $B$, which is $105^\\circ + 180^\\circ = 285^\\circ$.",
-            "Ship $A$ is 'inside' this bearing by the angle we just calculated. Therefore, we subtract angle $B$ from $285^\\circ$.",
-            "Calculation: $285^\\circ - 43.0^\\circ = 242.0^\\circ$.",
-            "Final Answer: $$(a)\\ 8.9\\text{ km},\\ (b)\\ 242.0^\\circ$$"
+            "Calculation: $\\sin(B) = \\dfrac{7 \\times \\sin(60^\\circ)}{\\sqrt{79}} \\approx 0.682...$ which gives angle $B \\approx 43.0^\\circ$.",
+            "To find the bearing from $B$, we first find the return bearing of $P$ from $B$, which is $105^\\circ + 180^\\circ = 285^\\circ$.",
+            "Ship $A$ is situated clockwise from the line $BP$. Therefore, we add angle $B$ to our return bearing.",
+            "Calculation: $285^\\circ + 43.0^\\circ = 328.0^\\circ$.",
+            "Final Answer: $$(a)\\ 8.9\\text{ km},\\ (b)\\ 328.0^\\circ$$"
         ],
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Return Bearings",
-            "content": "Finding the bearing of $A$ from $B$ is a classic high-tier discriminator. Always draw a North line at your target point ($B$). The fastest way to find the baseline orientation is to add $180^\\circ$ to the outbound bearing ($105^\\circ + 180^\\circ = 285^\\circ$). From there, it is a simple matter of adding or subtracting the internal triangle angle."
+            "content": "Finding the bearing of $A$ from $B$ is a classic high-tier discriminator. Always draw a North line at your target point ($B$). The fastest way to find the baseline orientation is to add $180^\\circ$ to the outbound bearing ($105^\\circ + 180^\\circ = 285^\\circ$). From there, use your sketch to visually check whether you must add or subtract the internal triangle angle."
         },
         "payhip_link": "https://payhip.com/b/KLYAp",
         "button_text": "Master GCSE Geometry: Download the Pack"
     },
+        
     // 9 June
     {
         "id": "002160",
