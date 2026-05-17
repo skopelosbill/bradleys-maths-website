@@ -5,7 +5,7 @@ const BradleyHub = {
         seenIds: JSON.parse(localStorage.getItem('bradley_seen_ids') || '[]'),
         correctIds: JSON.parse(localStorage.getItem('bradley_correct_ids') || '[]'),
         masterVault: [],
-        activeMonths: ['01', '02', '03', '04', '05'],
+        activeMonths: ['01', '02', '03', '04', '05','06'],
         currentGroup: null, // We now track the "Group" (Booklet) instead of just topic
         isTeacherMode: false
     },
