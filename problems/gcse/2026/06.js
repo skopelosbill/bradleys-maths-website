@@ -92,11 +92,11 @@ const problemBank = [
         "steps": [
             "For part (a), we create a running total of the frequencies. The cumulative frequencies are: $8, 26, 50, 60$.",
             "For part (b), we plot these cumulative frequencies against the upper bound of each class interval: $(120, 8), (140, 26), (160, 50), (180, 60)$. We join these points with a smooth, continuous curve.",
-            "<img src='images/06/g_04_ans.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+            "<img src='images/06/g_04_sol.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
             "For part (c), we find the median position by halving the total frequency. Calculation: $60 \\div 2 = 30$.",
             "We locate 30 on the vertical Cumulative Frequency axis, draw a horizontal line across to our curve, and drop a vertical line down to the Weight axis.",
             "Reading from the horizontal axis gives our estimated median weight.",
-            "Final Answer: $$(a)\\ 8, 26, 50, 60,\\ (c)\\ 143\\text{ g} \\text{ (Accept } 142\\text{-}144\\text{ g)}$$<img src='images/06/g_04_sol.png' alt='Cumulative Frequency Graph' style='max-width:300px;'>"
+            "Final Answer: $$(a)\\ 8, 26, 50, 60,\\ (c)\\ 143\\text{ g} \\text{ (Accept } 142\\text{-}144\\text{ g)}$$>"
         ],
         "bradley_insight": {
             "type": "caution",
