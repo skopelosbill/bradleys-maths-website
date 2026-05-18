@@ -361,7 +361,7 @@ const problemBank = [
         "topic": "Percentages",
         "subtopic": "Reverse Percentages",
         "difficulty": "5/6",
-        "q": "A local electronics store reduces the price of a television by $20\\%$ in a summer sale. The sale price of the television is $£360$.<br>(a) Calculate the original price of the television before the sale.<br>(b) On the final day of the sale, the manager reduces the sale price by a further $10\%$. Calculate the final price of the television.<br>(c) Calculate the overall percentage reduction from the original price to the final price.",
+        "q": "A local electronics store reduces the price of a television by $20\\%$ in a summer sale. The sale price of the television is $£360$.<br>(a) Calculate the original price of the television before the sale.<br>(b) On the final day of the sale, the manager reduces the sale price by a further $10\\%$. Calculate the final price of the television.<br>(c) Calculate the overall percentage reduction from the original price to the final price.",
         "steps": [
             "For part (a), the sale price represents $80\\%$ (or $0.80$) of the original price. We set up the equation: $\\text{Original} \\times 0.80 = 360$.",
             "To find the original price, we divide the sale price by the multiplier. Calculation: $360 \\div 0.80 = £450$.",
