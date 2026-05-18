@@ -407,6 +407,7 @@ const problemBank = [
         "button_text": "Master GCSE Geometry: Download the Pack"
     },
     // 16 June
+    // 16 June
     {
         "id": "002167",
         "date": "16 June 2026",
@@ -414,21 +415,21 @@ const problemBank = [
         "topic": "Probability",
         "subtopic": "Probability of Combined Events",
         "difficulty": "8/9",
-        "q": "A bag contains $x$ red counters and 5 blue counters. A counter is taken at random, its colour is noted, and it is NOT replaced. A second counter is then taken.<br>(a) Write down an expression, in terms of $x$, for the total number of counters in the bag initially.<br>(b) The probability that both counters drawn are red is $\\dfrac{1}{3}$. Show that $x^2 - 4x - 15 = 0$ is incorrect, and derive the correct quadratic equation.<br>(c) Solve your corrected quadratic equation to find the initial number of red counters in the bag.",
+        "q": "A bag contains $x$ red counters and 5 blue counters. A counter is taken at random, its colour is noted, and it is NOT replaced. A second counter is then taken.<br>(a) Write down an expression, in terms of $x$, for the total number of counters in the bag initially.<br>(b) The probability that both counters drawn are red is $\\dfrac{1}{6}$. Show algebraically that this leads to the equation $x^2 - 3x - 4 = 0$.<br>(c) Solve this equation to find the initial number of red counters in the bag.",
         "steps": [
             "For part (a), the total number of counters is simply the sum of the red and blue counters: $x + 5$.",
             "For part (b), the probability of choosing a red counter first is $\\dfrac{x}{x + 5}$. Because it is not replaced, the probability of choosing a second red counter is $\\dfrac{x - 1}{x + 4}$.",
-            "We multiply these probabilities and set them equal to $\\dfrac{1}{3}$: $\\dfrac{x(x - 1)}{(x + 5)(x + 4)} = \\dfrac{1}{3}$.",
-            "Cross-multiplying gives $3x(x - 1) = 1(x + 5)(x + 4)$. Expanding both sides yields $3x^2 - 3x = x^2 + 9x + 20$.",
-            "Subtracting the right-hand side to equal zero gives $2x^2 - 12x - 20 = 0$. Dividing the entire equation by 2 gives the correct quadratic: $x^2 - 6x - 10 = 0$.",
-            "For part (c), we solve $x^2 - 6x - 10 = 0$ using the quadratic formula: $x = \\dfrac{-(-6) \\pm \\sqrt{(-6)^2 - 4(1)(-10)}}{2(1)}$.",
-            "Calculation: $x = \\dfrac{6 \\pm \\sqrt{36 + 40}}{2} = \\dfrac{6 \\pm \\sqrt{76}}{2}$. Wait, physical counters must be an integer! Let us review the question statement. If the probability was $\\dfrac{2}{11}$, the quadratic becomes $x^2 - x - 20 = 0$. (Note: As an exam-style exercise, let's assume the root factors cleanly in a standard question. For this specific scenario, let's substitute a valid probability in the final answer step to demonstrate the method).",
-            "Final Answer: $$(a)\\ x + 5,\\ (b)\\ x^2 - 6x - 10 = 0 \\text{ (or valid root)},\\ (c)\\ \\text{Integer root required}$$"
+            "We multiply these probabilities and set them equal to $\\dfrac{1}{6}$: $\\dfrac{x(x - 1)}{(x + 5)(x + 4)} = \\dfrac{1}{6}$.",
+            "Cross-multiplying gives $6x(x - 1) = 1(x + 5)(x + 4)$. Expanding both sides yields $6x^2 - 6x = x^2 + 9x + 20$.",
+            "Subtracting the right-hand side to equal zero gives $5x^2 - 15x - 20 = 0$. Dividing the entire equation by 5 gives the required quadratic: $x^2 - 3x - 4 = 0$.",
+            "For part (c), we factorise the quadratic equation: $(x - 4)(x + 1) = 0$.",
+            "This gives the roots $x = 4$ and $x = -1$. Because the number of physical counters cannot be negative, we discard $-1$.",
+            "Final Answer: $$(a)\\ x + 5,\\ (b)\\ \\text{Shown algebraically},\\ (c)\\ 4 \\text{ red counters}$$"
         ],
         "bradley_insight": {
             "type": "caution",
-            "title": "The Head Teacher's Eye: Algebraic Probability",
-            "content": "This is one of the most challenging topics on Paper 2. You must remember that when a counter is not replaced, both the specific colour total AND the overall bag total must decrease by 1. Cross-multiplying the resulting algebraic fractions requires exceptional care with your bracket expansions."
+            "title": "The Head Teacher's Eye: Discarding the Impossible",
+            "content": "This is one of the most challenging topics on Paper 2. Notice how the mathematics provides two perfectly valid roots ($4$ and $-1$), but reality only allows one. You must explicitly cross out or write 'discard' next to the negative root to show the examiner you understand the physical constraints of the problem."
         },
         "payhip_link": "https://payhip.com/b/fGC0u",
         "button_text": "Master GCSE Stats & Prob: Download the Pack"
