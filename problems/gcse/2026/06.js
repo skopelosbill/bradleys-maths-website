@@ -489,6 +489,172 @@ const problemBank = [
         },
         "payhip_link": "https://payhip.com/b/z2KF1",
         "button_text": "Master GCSE Geometry: Download the Pack"
+    },
+    // 19 June
+    {
+        "id": "002170",
+        "date": "19 June 2026",
+        "major_area": "Algebra",
+        "topic": "Linear Equations",
+        "subtopic": "Solving Linear Equations",
+        "difficulty": "5/6",
+        "q": "The length of a rectangle is $(4x - 3)\\text{ cm}$ and its width is $(x + 5)\\text{ cm}$. The perimeter of the rectangle is $54\\text{ cm}$.<br>(a) Set up and solve a linear equation to find the value of $x$.<br>(b) Calculate the area of the rectangle.<br>(c) A square has the exact same area as this rectangle. Calculate the side length of the square, giving your answer to 1 decimal place.",
+        "steps": [
+            "For part (a), the perimeter of a rectangle is $2 \\times \\text{length} + 2 \\times \\text{width}$. We establish the equation: $2(4x - 3) + 2(x + 5) = 54$.",
+            "Expanding the brackets gives $8x - 6 + 2x + 10 = 54$.",
+            "Collecting like terms: $10x + 4 = 54$. Subtracting 4 gives $10x = 50$, so $x = 5$.",
+            "For part (b), we substitute $x = 5$ back into the dimension expressions. The length is $4(5) - 3 = 17\\text{ cm}$. The width is $5 + 5 = 10\\text{ cm}$.",
+            "The area of the rectangle is $17 \\times 10 = 170\\text{ cm}^2$.",
+            "For part (c), if the square has an area of $170\\text{ cm}^2$, its side length is the square root of the area. Calculation: $\\sqrt{170} \\approx 13.038...\\text{ cm}$.",
+            "Final Answer: $$(a)\\ x = 5,\\ (b)\\ 170\\text{ cm}^2,\\ (c)\\ 13.0\\text{ cm}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Perimeter Algebra",
+            "content": "A frequent mistake is equating the sum of just one length and one width to the full perimeter (e.g., $4x-3 + x+5 = 54$). Always remember a rectangle has four sides! Writing out the full algebraic perimeter before simplifying prevents this costly slip."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master GCSE Algebra: Download the Pack"
+    },
+    // 20 June
+    {
+        "id": "002171",
+        "date": "20 June 2026",
+        "major_area": "Number",
+        "topic": "Estimation & Bounds",
+        "subtopic": "Limits of Accuracy and Bounds",
+        "difficulty": "8/9",
+        "q": "The density of a block of metal is given by the formula $D = \\dfrac{M}{V}$.<br>The mass, $M$, is $450\\text{ g}$, measured correct to the nearest $5\\text{ g}$.<br>The volume, $V$, is $60\\text{ cm}^3$, measured correct to the nearest $2\\text{ cm}^3$.<br>(a) Write down the lower and upper bounds for the mass and the volume.<br>(b) Calculate the lower bound for the density of the metal. Give your answer to 3 decimal places.",
+        "steps": [
+            "For part (a), the mass is to the nearest $5\\text{ g}$, giving an error margin of $\\pm 2.5\\text{ g}$. LB $= 447.5\\text{ g}$, UB $= 452.5\\text{ g}$.",
+            "The volume is to the nearest $2\\text{ cm}^3$, giving an error margin of $\\pm 1\\text{ cm}^3$. LB $= 59\\text{ cm}^3$, UB $= 61\\text{ cm}^3$.",
+            "For part (b), to calculate the absolute minimum (lower bound) of a division, we must divide the smallest possible numerator by the largest possible denominator.",
+            "This requires dividing the Lower Bound of the mass by the Upper Bound of the volume.",
+            "Calculation: $D_{LB} = \\dfrac{447.5}{61} \\approx 7.33606...$.",
+            "Rounding to 3 decimal places gives $7.336\\text{ g/cm}^3$.",
+            "Final Answer: $$(a)\\ M \\in [447.5, 452.5), V \\in [59, 61),\\ (b)\\ 7.336\\text{ g/cm}^3$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: The Division Bound Trap",
+            "content": "Students often intuitively assume that the 'Lower Bound' of a formula uses all the lower bound values. In division, making the denominator smaller actually makes the final result *bigger*! Always memorize: Minimum equals Smallest divided by Biggest."
+        },
+        "payhip_link": "https://payhip.com/b/IVWzJ",
+        "button_text": "Master GCSE Number: Download the Pack"
+    },
+    // 21 June
+    {
+        "id": "002172",
+        "date": "21 June 2026",
+        "major_area": "Probability and Statistics",
+        "topic": "Data Handling",
+        "subtopic": "Histograms",
+        "difficulty": "7/8",
+        "img": "true",
+        "q": "The histogram shows the time taken, $t$ minutes, for passengers to pass through airport security.<br>The frequency density for the $0 < t \\le 10$ class is $1.5$.<br>(a) Use the histogram to complete the frequency table.<br>(b) Calculate the total number of passengers surveyed.<br>(c) Estimate the fraction of passengers who took longer than $25$ minutes.",
+        "steps": [
+            "For part (a), Frequency is calculated as Frequency Density $\\times$ Class Width. For the first bar: $1.5 \\times 10 = 15$.",
+            "Second bar ($10-30$): Width is 20, FD is 1.2. Frequency = $20 \\times 1.2 = 24$.",
+            "Third bar ($30-40$): Width is 10, FD is 1.8. Frequency = $10 \\times 1.8 = 18$.",
+            "Fourth bar ($40-70$): Width is 30, FD is 0.7. Frequency = $30 \\times 0.7 = 21$.",
+            "For part (b), we sum the frequencies: $15 + 24 + 18 + 21 = 78$ passengers.",
+            "For part (c), we need the passengers taking longer than 25 minutes. This includes the top quarter of the $10-30$ class, plus all of the $30-40$ and $40-70$ classes.",
+            "The proportion of the $10-30$ class is from 25 to 30, which is a width of 5. Area = $5 \\times 1.2 = 6$ passengers.",
+            "Total longer than 25 mins = $6 + 18 + 21 = 45$ passengers.",
+            "The fraction is $\\dfrac{45}{78}$, which simplifies to $\\dfrac{15}{26}$.",
+            "Final Answer: $$(b)\\ 78 \\text{ passengers},\\ (c)\\ \\dfrac{15}{26}$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Fractional Bars",
+            "content": "When asked to estimate a value that falls partway through a histogram bar, we assume the data is spread perfectly evenly. Finding the width of the required sub-section (from 25 to 30) and multiplying it by the bar's frequency density is the most reliable way to calculate these estimates."
+        },
+        "payhip_link": "https://payhip.com/b/RVbqM",
+        "button_text": "Master GCSE Stats & Prob: Download the Pack"
+    },
+    // 22 June
+    {
+        "id": "002173",
+        "date": "22 June 2026",
+        "major_area": "Algebra",
+        "topic": "Graphs",
+        "subtopic": "Equation of a Circle",
+        "difficulty": "8/9",
+        "img": "true",
+        "q": "A circle is centered at the origin $(0,0)$ and has the equation $x^2 + y^2 = 20$.<br>The point $P(-4, 2)$ lies on the circumference of the circle.<br>(a) Show algebraically that point $P$ lies on the circle.<br>(b) Find the gradient of the radius $OP$.<br>(c) Find the equation of the tangent to the circle at point $P$. Give your answer in the form $y = mx + c$.",
+        "steps": [
+            "For part (a), we substitute the coordinates $x = -4$ and $y = 2$ into the left hand side of the equation.",
+            "Calculation: $(-4)^2 + (2)^2 = 16 + 4 = 20$. Since this equals the right hand side, the point lies on the circle.",
+            "For part (b), the gradient of the radius from $(0,0)$ to $(-4, 2)$ is $\\dfrac{y_2 - y_1}{x_2 - x_1} = \\dfrac{2 - 0}{-4 - 0} = -\\dfrac{2}{4}$.",
+            "Simplifying this gives a gradient of $-0.5$.",
+            "For part (c), a tangent is always perpendicular to the radius at the point of contact. The gradient of the tangent is the negative reciprocal of $-0.5$, which is $2$.",
+            "We use the straight line equation $y - y_1 = m(x - x_1)$ with the point $(-4, 2)$ and gradient $m = 2$.",
+            "Calculation: $y - 2 = 2(x - (-4)) \\implies y - 2 = 2(x + 4) \\implies y - 2 = 2x + 8$.",
+            "Adding 2 to both sides yields the final equation.",
+            "Final Answer: $$(a)\\ \\text{Shown algebraically},\\ (b)\\ -0.5,\\ (c)\\ y = 2x + 10$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: The Negative Reciprocal",
+            "content": "Finding the equation of a tangent is a multi-step process that beautifully combines circle geometry with coordinate algebra. The critical step is remembering that Tangent Gradient $\\times$ Radius Gradient $= -1$. If you forget to flip the sign and the fraction, your tangent will slice straight through the middle of the circle!"
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master GCSE Algebra: Download the Pack"
+    },
+    // 23 June
+    {
+        "id": "002174",
+        "date": "23 June 2026",
+        "major_area": "Geometry",
+        "topic": "Trigonometry",
+        "subtopic": "The Sine Rule",
+        "difficulty": "6/7",
+        "img": "true",
+        "q": "The area of triangle $ABC$ is $30\\text{ cm}^2$. The length of $AB$ is $8.5\\text{ cm}$ and the length of $AC$ is $10.2\\text{ cm}$.<br>Given that the angle $BAC$ is obtuse, calculate the size of angle $BAC$ to 1 decimal place.",
+        "steps": [
+            "We use the trigonometric formula for the area of a triangle: $\\text{Area} = \\dfrac{1}{2}bc\\sin(A)$.",
+            "Substituting our known values into the formula: $30 = 0.5 \\times 8.5 \\times 10.2 \\times \\sin(A)$.",
+            "We simplify the right hand side: $30 = 43.35 \\times \\sin(A)$.",
+            "Dividing both sides by 43.35 isolates the sine function: $\\sin(A) = \\dfrac{30}{43.35} \\approx 0.69204...$.",
+            "We use the inverse sine function to find the primary (acute) angle: $A = \\sin^{-1}(0.69204...) \\approx 43.78...^\\circ$.",
+            "Because the question explicitly states the angle is obtuse, we must use the sine symmetry rule ($\\sin(x) = \\sin(180-x)$) to find the second quadrant solution.",
+            "Calculation: $180^\\circ - 43.78...^\\circ = 136.21...^\\circ$.",
+            "Final Answer: $$136.2^\\circ$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: The Ambiguous Obtuse",
+            "content": "Calculators will only ever return the principal (acute) angle when you use the inverse sine button. It is your mathematical responsibility to read the question carefully. If the word 'obtuse' appears, you must actively subtract your calculator's answer from 180 degrees to gain the final marks."
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master GCSE Geometry: Download the Pack"
+    },
+    // 24 June
+    {
+        "id": "002175",
+        "date": "24 June 2026",
+        "major_area": "Geometry",
+        "topic": "Similarity",
+        "subtopic": "Comparing Lengths, Areas, and Volumes",
+        "difficulty": "8/9",
+        "img": "true",
+        "q": "A large solid cone has a vertical height of $30\\text{ cm}$. A smaller, mathematically similar cone of vertical height $10\\text{ cm}$ is cut from the top of the large cone and removed.<br>The volume of the small removed cone is $40\\text{ cm}^3$.<br>(a) Find the volume scale factor between the small cone and the large cone.<br>(b) Calculate the total volume of the large cone before the cut.<br>(c) Calculate the volume of the frustum (the remaining bottom part) that is left over.",
+        "steps": [
+            "For part (a), we first find the linear scale factor ($k$) between the heights. Calculation: $k = 30 \\div 10 = 3$.",
+            "The volume scale factor is the cube of the linear scale factor. Calculation: $k^3 = 3^3 = 27$.",
+            "For part (b), we multiply the volume of the small cone by the volume scale factor to find the volume of the original large cone.",
+            "Calculation: $40 \\times 27 = 1080\\text{ cm}^3$.",
+            "For part (c), a frustum is created by subtracting the small top cone from the large original cone.",
+            "Calculation: $1080 - 40 = 1040\\text{ cm}^3$.",
+            "Final Answer: $$(a)\\ 27,\\ (b)\\ 1080\\text{ cm}^3,\\ (c)\\ 1040\\text{ cm}^3$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Frustum Fundamentals",
+            "content": "A frustum might look like a completely new and complex shape, but it is always just 'Big Cone minus Small Cone'. Provided you use the linear scale factor ($k$) to find the volume scale factor ($k^3$), you can easily find the volume of the big cone and perform the subtraction."
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master GCSE Geometry: Download the Pack"
     }
 
 
