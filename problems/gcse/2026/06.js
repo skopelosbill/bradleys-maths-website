@@ -532,7 +532,7 @@ const problemBank = [
             "This requires dividing the Lower Bound of the mass by the Upper Bound of the volume.",
             "Calculation: $D_{LB} = \\dfrac{447.5}{61} \\approx 7.33606...$.",
             "Rounding to 3 decimal places gives $7.336\\text{ g/cm}^3$.",
-            "Final Answer: $$(a)\\ M \\in [447.5, 452.5), V \\in [59, 61),\\ (b)\\ 7.336\\text{ g/cm}^3$$"
+            "Final Answer: $$(a)\\ 447.5 \\le M < 452.5 \\text{ and } 59 \\le V < 61,\\ (b)\\ 7.336\\text{ g/cm}^3$$"
         ],
         "bradley_insight": {
             "type": "caution",
