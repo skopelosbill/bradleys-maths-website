@@ -655,8 +655,173 @@ const problemBank = [
         },
         "payhip_link": "https://payhip.com/b/XAGch",
         "button_text": "Master GCSE Geometry: Download the Pack"
+    },
+    // 25 June
+    {
+        "id": "002176",
+        "date": "25 June 2026",
+        "major_area": "Number",
+        "topic": "Factors, Multiples & Primes",
+        "subtopic": "Prime Numbers, HCF, LCM",
+        "difficulty": "4/5",
+        "q": "Three lighthouses flash their lights at different intervals. Lighthouse A flashes every 12 seconds, Lighthouse B every 15 seconds, and Lighthouse C every 18 seconds. All three lighthouses flash together at exactly 22:00:00.<br>(a) Express 12, 15, and 18 as products of their prime factors.<br>(b) Calculate the Lowest Common Multiple (LCM) of these three numbers.<br>(c) Find the exact time when they will next all flash together.",
+        "steps": [
+            "For part (a), using factor trees: $12 = 2^2 \\times 3$, $15 = 3 \\times 5$, and $18 = 2 \\times 3^2$.",
+            "For part (b), the LCM is found by multiplying the highest powers of all prime factors present across the numbers.",
+            "Calculation: $2^2 \\times 3^2 \\times 5 = 4 \\times 9 \\times 5 = 180$.",
+            "For part (c), the LCM tells us they will flash together every 180 seconds.",
+            "We convert 180 seconds into minutes: $180 \\div 60 = 3$ minutes.",
+            "Adding 3 minutes to 22:00:00 gives the final time.",
+            "Final Answer: $$(a)\\ 12=2^2 \\times 3, 15=3 \\times 5, 18=2 \\times 3^2,\\ (b)\\ 180,\\ (c)\\ 22:03:00$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Contextual LCM",
+            "content": "Whenever a question asks when cyclic events will 'next happen at the same time', it is a hidden command to find the Lowest Common Multiple. Using prime factorisation rather than listing multiples prevents you from missing a number and dropping easy method marks."
+        },
+        "payhip_link": "https://payhip.com/b/ul4LH",
+        "button_text": "Master GCSE Number: Download the Pack"
+    },
+    // 26 June
+    {
+        "id": "002177",
+        "date": "26 June 2026",
+        "major_area": "Algebra",
+        "topic": "Sequences",
+        "subtopic": "Sequences",
+        "difficulty": "5/6",
+        "q": "The first four terms of an arithmetic sequence are $8, 13, 18, 23, \\dots$<br>(a) Find an expression, in terms of $n$, for the $n^{\\text{th}}$ term of this sequence.<br>(b) Determine whether $145$ is a term in this sequence. Show working to justify your answer.<br>(c) Find the value of the first term in the sequence that is strictly greater than $200$.",
+        "steps": [
+            "For part (a), the sequence increases by $5$ each time, so the formula begins with $5n$.",
+            "The 'zeroth' term (the number before 8) would be $8 - 5 = 3$. Therefore, the $n^{\\text{th}}$ term is $5n + 3$.",
+            "For part (b), we set the expression equal to $145$: $5n + 3 = 145$.",
+            "Subtracting 3 gives $5n = 142$. Dividing by 5 yields $n = 28.4$.",
+            "Because $n$ must be a positive integer (a whole position in the sequence), 145 is not in the sequence.",
+            "For part (c), we set $5n + 3 > 200$. Subtracting 3 gives $5n > 197$.",
+            "Dividing by 5 gives $n > 39.4$. The next whole position is $n = 40$.",
+            "Substituting $n = 40$ into the formula: $5(40) + 3 = 203$.",
+            "Final Answer: $$(a)\\ 5n + 3,\\ (b)\\ \\text{No, } n=28.4 \\text{ is not an integer},\\ (c)\\ 203$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Mathematical Proof",
+            "content": "Answering 'No' to part (b) will score zero marks without the algebra. Setting the formula equal to the target number and showing that $n$ results in a decimal is the only accepted way to mathematically prove a number is missing from a linear sequence."
+        },
+        "payhip_link": "https://payhip.com/b/GWKby",
+        "button_text": "Master GCSE Algebra: Download the Pack"
+    },
+    // 27 June
+    {
+        "id": "002178",
+        "date": "27 June 2026",
+        "major_area": "Number",
+        "topic": "Surds",
+        "subtopic": "Surds",
+        "difficulty": "8/9",
+        "q": "A rectangle has a length of $(3 + \\sqrt{5})\\text{ cm}$ and an area of $(14 + 2\\sqrt{5})\\text{ cm}^2$.<br>(a) Find the width of the rectangle in the form $a + b\\sqrt{5}$, where $a$ and $b$ are integers.<br>(b) Calculate the exact perimeter of the rectangle.",
+        "steps": [
+            "For part (a), width is Area $\\div$ Length. This gives the fraction: $\\dfrac{14 + 2\\sqrt{5}}{3 + \\sqrt{5}}$.",
+            "To rationalise the denominator, we multiply the numerator and denominator by the conjugate $(3 - \\sqrt{5})$.",
+            "Denominator: $(3 + \\sqrt{5})(3 - \\sqrt{5}) = 3^2 - (\\sqrt{5})^2 = 9 - 5 = 4$.",
+            "Numerator: $(14 + 2\\sqrt{5})(3 - \\sqrt{5}) = 42 - 14\\sqrt{5} + 6\\sqrt{5} - 2(5) = 42 - 8\\sqrt{5} - 10 = 32 - 8\\sqrt{5}$.",
+            "Dividing the numerator by 4: $\\dfrac{32 - 8\\sqrt{5}}{4} = 8 - 2\\sqrt{5}\\text{ cm}$.",
+            "For part (b), the perimeter is $2 \\times \\text{Length} + 2 \\times \\text{Width}$.",
+            "Calculation: $2(3 + \\sqrt{5}) + 2(8 - 2\\sqrt{5}) = 6 + 2\\sqrt{5} + 16 - 4\\sqrt{5}$.",
+            "Simplifying the surds: $22 - 2\\sqrt{5}\\text{ cm}$.",
+            "Final Answer: $$(a)\\ 8 - 2\\sqrt{5}\\text{ cm},\\ (b)\\ 22 - 2\\sqrt{5}\\text{ cm}$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Expanding Complex Surds",
+            "content": "When expanding the double brackets in the numerator, students often stumble on the $+2\\sqrt{5} \\times -\\sqrt{5}$ step. Remember that $\\sqrt{5} \\times \\sqrt{5} = 5$, so this term simplifies to $-2 \\times 5 = -10$. Take your time with FOIL to avoid sign errors."
+        },
+        "payhip_link": "https://payhip.com/b/BaZjD",
+        "button_text": "Master GCSE Number: Download the Pack"
+    },
+    // 28 June
+    {
+        "id": "002179",
+        "date": "28 June 2026",
+        "major_area": "Algebra",
+        "topic": "Algebraic Proof",
+        "subtopic": "Algebraic Proof",
+        "difficulty": "8/9",
+        "q": "Prove algebraically that the sum of the squares of any two consecutive odd integers is always 2 more than a multiple of 8.",
+        "steps": [
+            "We define any even integer as $2n$. Therefore, an odd integer can be written as $2n + 1$.",
+            "The next consecutive odd integer is two steps away, written as $2n + 3$.",
+            "The question asks for the sum of their squares: $(2n + 1)^2 + (2n + 3)^2$.",
+            "Expanding the first bracket: $(2n + 1)(2n + 1) = 4n^2 + 4n + 1$.",
+            "Expanding the second bracket: $(2n + 3)(2n + 3) = 4n^2 + 12n + 9$.",
+            "Adding them together: $(4n^2 + 4n + 1) + (4n^2 + 12n + 9) = 8n^2 + 16n + 10$.",
+            "To prove it is '2 more than a multiple of 8', we must separate a 2 and factorise out an 8 from the rest: $8n^2 + 16n + 8 + 2$.",
+            "Factorising the 8 gives $8(n^2 + 2n + 1) + 2$. Since $n$ is an integer, the bracket evaluates to an integer, completing the proof.",
+            "Final Answer: $$8(n^2 + 2n + 1) + 2 \\text{, completing the proof.}$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Structuring the Proof",
+            "content": "The most common mistake here is defining consecutive odd numbers as $x$ and $x+2$. While this is true, it does not force the numbers to be odd. Starting with $2n+1$ guarantees the odd property. Finally, factorising out the 8 is the required algebraic 'finish line' for full marks."
+        },
+        "payhip_link": "https://payhip.com/b/EKtuw",
+        "button_text": "Master GCSE Algebra: Download the Pack"
+    },
+    // 29 June
+    {
+        "id": "002180",
+        "date": "29 June 2026",
+        "major_area": "Number",
+        "topic": "Decimals",
+        "subtopic": "Recurring Decimals",
+        "difficulty": "7/8",
+        "q": "(a) Express the recurring decimal $0.4\\dot{7}\\dot{1}$ as a fraction in its simplest form. Show all your working.<br>(b) Hence, or otherwise, calculate the exact value of $0.4\\dot{7}\\dot{1} + \\dfrac{2}{33}$.",
+        "steps": [
+            "For part (a), let $x = 0.4717171...$",
+            "To move the decimal point past the non-recurring digit, we multiply by 10: $10x = 4.717171...$",
+            "To move the decimal point past the first full recurring cycle, we multiply the original $x$ by 1000: $1000x = 471.717171...$",
+            "We subtract the equations to eliminate the recurring tail: $1000x - 10x = 471.7171... - 4.7171...$",
+            "This gives $990x = 467$. Therefore, $x = \\dfrac{467}{990}$. This fraction cannot be simplified.",
+            "For part (b), we use our exact fraction: $\\dfrac{467}{990} + \\dfrac{2}{33}$.",
+            "To find a common denominator, we multiply the numerator and denominator of $\\dfrac{2}{33}$ by 30.",
+            "Calculation: $\\dfrac{467}{990} + \\dfrac{60}{990} = \\dfrac{527}{990}$.",
+            "Final Answer: $$(a)\\ \\dfrac{467}{990},\\ (b)\\ \\dfrac{527}{990}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Perfect Tail Alignment",
+            "content": "When dealing with decimals that have a delayed recurring pattern, you must multiply to create two equations where the decimal point is exactly at the start of the repeating cycle. Subtracting $x$ from $100x$ here would misalign the 4 with the 7, breaking the proof."
+        },
+        "payhip_link": "https://payhip.com/b/dAvne",
+        "button_text": "Master GCSE Number: Download the Pack"
+    },
+    // 30 June
+    {
+        "id": "002181",
+        "date": "30 June 2026",
+        "major_area": "Algebra",
+        "topic": "Simultaneous Equations",
+        "subtopic": "Simultaneous Equations (Non‑Linear)",
+        "difficulty": "8/9",
+        "img": "true",
+        "q": "The straight line $y = 2x - 3$ intersects the circle $x^2 + y^2 = 41$ at two points, $A$ and $B$.<br>(a) Find the coordinates of the points $A$ and $B$.<br>(b) Calculate the exact length of the line segment $AB$. Give your answer in the form $a\\sqrt{b}$.",
+        "steps": [
+            "For part (a), we substitute the linear expression for $y$ into the circle's equation: $x^2 + (2x - 3)^2 = 41$.",
+            "We expand the bracket carefully: $x^2 + (4x^2 - 12x + 9) = 41$.",
+            "Simplifying and bringing 41 to the left side: $5x^2 - 12x - 32 = 0$.",
+            "We factorise the quadratic (factors of $-160$ that sum to $-12$ are $-20$ and $8$): $(5x + 8)(x - 4) = 0$.",
+            "This gives $x = -1.6$ and $x = 4$.",
+            "Substitute into the linear equation to find $y$: when $x = -1.6, y = -6.2$. When $x = 4, y = 5$.",
+            "For part (b), we use the distance formula between $A(-1.6, -6.2)$ and $B(4, 5)$.",
+            "Calculation: $AB = \\sqrt{(4 - -1.6)^2 + (5 - -6.2)^2} = \\sqrt{5.6^2 + 11.2^2} = \\sqrt{31.36 + 125.44} = \\sqrt{156.8}$.",
+            "To write this in exact surd form, we recognise $156.8$ as $\\dfrac{1568}{10} = \\dfrac{784}{5}$. Alternatively, notice the horizontal distance is $5.6$ and vertical is $11.2$ (which is $2 \\times 5.6$). So distance is $\\sqrt{5.6^2 + (2 \\times 5.6)^2} = \\sqrt{5(5.6^2)} = 5.6\\sqrt{5}$. Let's express it as a fractional surd or extract common factors: $5.6 = \\dfrac{28}{5}$. So length is $\\dfrac{28\\sqrt{5}}{5}$.",
+            "Final Answer: $$(a)\\ (-1.6, -6.2) \\text{ and } (4, 5),\\ (b)\\ \\dfrac{28\\sqrt{5}}{5}$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Clever Pythagoras",
+            "content": "When dealing with decimals in Pythagoras, look for proportional relationships. Here, the vertical distance ($11.2$) is exactly twice the horizontal distance ($5.6$). You can use the ratio $1:2:\\sqrt{5}$ and simply multiply $\\sqrt{5}$ by the base length ($5.6$) to find the hypotenuse instantly!"
+        },
+        "payhip_link": "https://payhip.com/b/BqWhb",
+        "button_text": "Master GCSE Algebra: Download the Pack"
     }
-
-
-
 ]
