@@ -326,7 +326,7 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/5HqEG",
         "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
-    // 13 June
+   // 13 June (Rewritten)
     {
         "id": "003164",
         "date": "13 June 2026",
@@ -334,24 +334,25 @@ const problemBank = [
         "topic": "Histograms",
         "subtopic": "Histograms",
         "difficulty": "8/9",
-        "q": "The histogram shows information about the mass, $m$ grams, of 120 tomatoes.<br>The first bar ($0 < m \\le 40$) has a frequency of $30$.<br>The second bar ($40 < m \\le 50$) has a height of $3.6$ units on the frequency density axis.<br>The third bar ($50 < m \\le 70$) has a height of $1.5$ units.<br>The final bar is for $70 < m \\le 100$.<br>(a) Calculate the frequency density for the first bar.<br>(b) Calculate the frequency of the second bar and the third bar.<br>(c) Calculate the height of the final bar on the histogram.",
+        "img": "true",
+        "q": "The histogram shows information about the mass, $m$ grams, of 120 tomatoes. The bar for $70 < m \\le 100$ has not been drawn.<br><br><table style='border-collapse:collapse;width:100%;text-align:center;' border='1'><tr><th style='padding:6px;'>Mass ($m$ grams)</th><th style='padding:6px;'>Frequency</th></tr><tr><td style='padding:6px;'>$0 < m \\le 40$</td><td style='padding:6px;'>30</td></tr><tr><td style='padding:6px;'>$40 < m \\le 50$</td><td style='padding:6px;'></td></tr><tr><td style='padding:6px;'>$50 < m \\le 70$</td><td style='padding:6px;'></td></tr><tr><td style='padding:6px;'>$70 < m \\le 100$</td><td style='padding:6px;'></td></tr></table><br>(a) Use the histogram to calculate the missing frequencies for the table.<br>(b) Calculate the frequency density for the final class ($70 < m \\le 100$).<br>(c) State the height of the bar that needs to be drawn to complete the histogram.",
         "steps": [
-            "For part (a), Frequency Density (FD) = Frequency $\\div$ Class Width.",
-            "Calculation: $FD = 30 \\div 40 = 0.75$.",
-            "For part (b), Frequency = FD $\\times$ Class Width. For the second bar: $3.6 \\times 10 = 36$.",
-            "For the third bar: $1.5 \\times 20 = 30$.",
-            "For part (c), we first find the frequency of the final bar by subtracting the known frequencies from the total of 120 tomatoes.",
+            "For part (a), Frequency = Frequency Density (FD) $\\times$ Class Width. We read the FD from the $y$-axis.",
+            "Second class ($40-50$): Width is 10, FD is 3.6. Frequency = $10 \\times 3.6 = 36$.",
+            "Third class ($50-70$): Width is 20, FD is 1.5. Frequency = $20 \\times 1.5 = 30$.",
+            "To find the final missing frequency, we subtract the known frequencies from the total of 120.",
             "Calculation: $120 - (30 + 36 + 30) = 120 - 96 = 24$.",
-            "The height (FD) of the final bar is its frequency divided by its width ($100 - 70 = 30$).",
-            "Calculation: $FD = 24 \\div 30 = 0.8$.",
-            "Final Answer: $$(a)\\ 0.75,\\ (b)\\ 36 \\text{ and } 30,\\ (c)\\ 0.8$$"
+            "For part (b), we calculate the FD for the final class: Frequency $\\div$ Class Width.",
+            "Calculation: $24 \\div 30 = 0.8$.",
+            "For part (c), in a standard histogram, the height of the bar is exactly equal to the Frequency Density.",
+            "Final Answer: $$(a)\\ 36, 30, 24,\\ (b)\\ 0.8,\\ (c)\\ 0.8 \\text{ units}$$"
         ],
         "bradley_insight": {
             "type": "pro-tip",
-            "title": "The Head Teacher's Eye: Missing Frequencies",
-            "content": "Cambridge examiners love giving you the total frequency and making you work backwards to find the final bar. Always be methodical: find the areas (frequencies) of the bars you know, subtract from the total, and then divide that remainder by the width of the final class to find the height."
+            "title": "The Head Teacher's Eye: Missing Bars",
+            "content": "A classic Paper 4 structure! The examiner gives you the total frequency so you can work backwards to find the data for the 'missing' bar. Always remember the golden rule of histograms: Frequency equals the Area of the bar, and the Height equals the Frequency Density."
         },
-        "payhip_link": "https://payhip.com/b/rsVCz",
+        "payhip_link": "https://payhip.com/b/4AZYG",
         "button_text": "Master IGCSE Transformations, Vectors, Probability, and Statistics: Download the Extended Pack"
     },
     // 14 June
