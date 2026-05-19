@@ -325,7 +325,7 @@ const problemBank = [
         },
         "payhip_link": "https://payhip.com/b/5HqEG",
         "button_text": "Master IGCSE Algebra: Download the Extended Pack"
-    }
+    },
     // 13 June
     {
         "id": "003164",
