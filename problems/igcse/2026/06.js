@@ -159,5 +159,171 @@ const problemBank = [
         },
         "payhip_link": "https://payhip.com/b/XEV2Z",
         "button_text": "Master IGCSE Number: Download the Extended Pack"
+    },
+    // 7 June
+    {
+        "id": "003158",
+        "date": "7 June 2026",
+        "major_area": "Number",
+        "topic": "Estimation & Bounds",
+        "subtopic": "Limits of Accuracy",
+        "difficulty": "8/9",
+        "q": "The distance from Earth to a star is $4.5 \\times 10^{12}\\text{ km}$, correct to 2 significant figures.<br>The speed of light is $3.0 \\times 10^5\\text{ km/s}$, correct to 2 significant figures.<br>Calculate the upper bound for the time taken for light to travel from the star to Earth.<br>Give your answer in seconds, in standard form correct to 3 significant figures.",
+        "steps": [
+            "We first establish the bounds for the distance. It is rounded to the nearest $0.1 \\times 10^{12}$, so the error margin is $\\pm 0.05 \\times 10^{12}$.",
+            "The upper bound for distance is $4.55 \\times 10^{12}\\text{ km}$.",
+            "Next, we establish the bounds for the speed. It is rounded to the nearest $0.1 \\times 10^5$, so the error margin is $\\pm 0.05 \\times 10^5$.",
+            "The lower bound for speed is $2.95 \\times 10^5\\text{ km/s}$.",
+            "Time is calculated as Distance $\\div$ Speed. To find the maximum possible time (upper bound), we must divide the largest distance by the smallest speed.",
+            "Calculation: $(4.55 \\times 10^{12}) \\div (2.95 \\times 10^5) = 15423728.81...$ seconds.",
+            "Converting to standard form and rounding to 3 significant figures gives $1.54 \\times 10^7$.",
+            "Final Answer: $$1.54 \\times 10^7\\text{ seconds}$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Bounds in Standard Form",
+            "content": "Finding the bounds of numbers already in standard form can be confusing. Do not change the power of 10! Look at the decimal part: $4.5$ is rounded to 1 decimal place, so its bounds are simply $4.45$ and $4.55$. Keep the $\\times 10^{12}$ attached like a unit of measurement."
+        },
+        "payhip_link": "https://payhip.com/b/9LFtZ",
+        "button_text": "Master IGCSE Number: Download the Extended Pack"
+    },
+    // 8 June
+    {
+        "id": "003159",
+        "date": "8 June 2026",
+        "major_area": "Algebra",
+        "topic": "Algebraic Fractions",
+        "subtopic": "Algebraic Fractions 2",
+        "difficulty": "8/9",
+        "q": "Solve the equation: $$\\dfrac{4}{x - 1} - \\dfrac{3}{x + 2} = 1$$<br>Show all your working and give your answers in exact surd form.",
+        "steps": [
+            "We must clear the fractions by multiplying every term by the common denominator, $(x - 1)(x + 2)$.",
+            "This gives: $4(x + 2) - 3(x - 1) = 1(x - 1)(x + 2)$.",
+            "Expanding the left-hand side carefully: $4x + 8 - 3x + 3 = x + 11$.",
+            "Expanding the right-hand side using FOIL: $x^2 + 2x - 1x - 2 = x^2 + x - 2$.",
+            "We equate the two expanded sides: $x + 11 = x^2 + x - 2$.",
+            "Subtracting $x$ and $11$ from both sides sets the quadratic to zero: $x^2 - 13 = 0$.",
+            "This is a straightforward difference equation. We add 13 to both sides: $x^2 = 13$.",
+            "Taking the square root gives two exact solutions.",
+            "Final Answer: $$x = \\sqrt{13} \\text{ and } x = -\\sqrt{13}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Exact Surd Form",
+            "content": "If a Paper 4 question explicitly asks for the answer in 'exact surd form', it is a massive hint that the quadratic will not factorise neatly. Furthermore, when taking a square root to solve $x^2 = k$, you must always remember the $\\pm$ symbol to ensure you capture both the positive and negative roots."
+        },
+        "payhip_link": "https://payhip.com/b/x02Ge",
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
+    },
+    // 9 June
+    {
+        "id": "003160",
+        "date": "9 June 2026",
+        "major_area": "Vectors",
+        "topic": "Vectors",
+        "subtopic": "Vector Geometry",
+        "difficulty": "7/8",
+        "img": "true",
+        "q": "$OABC$ is a parallelogram. $\\overrightarrow{OA} = \\mathbf{a}$ and $\\overrightarrow{OC} = \\mathbf{c}$.<br>$M$ is the midpoint of $AB$.<br>$N$ is a point on $CB$ such that $CN : NB = 1 : 2$.<br>(a) Find the vector $\\overrightarrow{OM}$ in terms of $\\mathbf{a}$ and $\\mathbf{c}$.<br>(b) Find the vector $\\overrightarrow{MN}$ in terms of $\\mathbf{a}$ and $\\mathbf{c}$. Give your answer in its simplest form.",
+        "steps": [
+            "For part (a), we navigate from $O$ to $M$ via $A$. The path is $\\overrightarrow{OA} + \\overrightarrow{AM}$.",
+            "Because $OABC$ is a parallelogram, vector $\\overrightarrow{AB}$ is identical to $\\overrightarrow{OC}$, which is $\\mathbf{c}$.",
+            "Since $M$ is the midpoint of $AB$, $\\overrightarrow{AM} = \\dfrac{1}{2}\\mathbf{c}$. Therefore, $\\overrightarrow{OM} = \\mathbf{a} + \\dfrac{1}{2}\\mathbf{c}$.",
+            "For part (b), we navigate from $M$ to $N$. We can use the path $\\overrightarrow{MB} + \\overrightarrow{BN}$.",
+            "Vector $\\overrightarrow{MB}$ is the remaining half of $AB$, so $\\overrightarrow{MB} = \\dfrac{1}{2}\\mathbf{c}$.",
+            "Vector $\\overrightarrow{CB}$ is identical to $\\overrightarrow{OA}$, which is $\\mathbf{a}$. Since $CN:NB = 1:2$, $BN$ is going 'backwards' along $CB$ and represents $\\dfrac{2}{3}$ of the line. So $\\overrightarrow{BN} = -\\dfrac{2}{3}\\mathbf{a}$.",
+            "Adding the components together gives $\\overrightarrow{MN} = \\dfrac{1}{2}\\mathbf{c} - \\dfrac{2}{3}\\mathbf{a}$.",
+            "Final Answer: $$(a)\\ \\mathbf{a} + \\dfrac{1}{2}\\mathbf{c},\\ (b)\\ \\dfrac{1}{2}\\mathbf{c} - \\dfrac{2}{3}\\mathbf{a}$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Direction is Everything",
+            "content": "A very common mistake in part (b) is defining $\\overrightarrow{BN}$ as $+\\dfrac{2}{3}\\mathbf{a}$. You must look at the arrow direction defined by the parallel sides! Vector $\\overrightarrow{CB}$ travels in the same direction as $\\mathbf{a}$. Because $N$ to $B$ is a forward movement, moving from $M$ to $B$ and then 'down' to $N$ means you are fighting the flow of $\\mathbf{a}$, hence the negative sign."
+        },
+        "payhip_link": "https://payhip.com/b/wzbn9",
+        "button_text": "Master IGCSE Transformations, Vectors, Probability, and Statistics: Download the Extended Pack"
+    },
+    // 10 June
+    {
+        "id": "003161",
+        "date": "10 June 2026",
+        "major_area": "Geometry",
+        "topic": "Similarity",
+        "subtopic": "Solids and the Linear, Area, Volume Relationship",
+        "difficulty": "8/9",
+        "q": "Two mathematically similar metal statues are made from the exact same alloy.<br>The mass of the smaller statue is $400\\text{ g}$. The mass of the larger statue is $1350\\text{ g}$.<br>The base area of the smaller statue is $48\\text{ cm}^2$.<br>Calculate the base area of the larger statue.",
+        "steps": [
+            "Because the statues are made of the same alloy (identical density), the ratio of their masses is exactly equal to the ratio of their volumes.",
+            "We find the volume scale factor ($k^3$) by dividing the masses: $k^3 = \\dfrac{1350}{400} = \\dfrac{27}{8}$.",
+            "To find the linear scale factor ($k$), we take the cube root of the volume scale factor: $k = \\sqrt[3]{\\dfrac{27}{8}} = \\dfrac{3}{2} = 1.5$.",
+            "We now find the area scale factor ($k^2$) by squaring the linear scale factor: $k^2 = 1.5^2 = 2.25$.",
+            "Finally, we multiply the base area of the smaller statue by the area scale factor: $48 \\times 2.25 = 108$.",
+            "Final Answer: $$108\\text{ cm}^2$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Mass implies Volume",
+            "content": "Cambridge 0580 questions rarely give you the 'volume' outright anymore. They will give you 'mass' or 'capacity' or 'litres' to test if you understand that these physical properties scale three-dimensionally ($k^3$). If density is constant, mass is a perfect substitute for volume!"
+        },
+        "payhip_link": "https://payhip.com/b/e9UMS",
+        "button_text": "Master IGCSE Coordinate Geometry and Geometry: Download the Extended Pack"
+    },
+    // 11 June
+    {
+        "id": "003162",
+        "date": "11 June 2026",
+        "major_area": "Mensuration",
+        "topic": "3D Shapes",
+        "subtopic": "Arcs and Sectors",
+        "difficulty": "A/A*",
+        "img": "true",
+        "q": "A sector of a circle has a radius of $12\\text{ cm}$ and a sector angle of $150^\\circ$.<br>The straight edges of the sector are folded and joined together to form the curved surface of a hollow right circular cone.<br>(a) Calculate the base radius of the resulting cone.<br>(b) Calculate the exact vertical height of the cone, giving your answer as a surd.",
+        "steps": [
+            "For part (a), the arc length of the 2D sector becomes the entire circumference of the 3D cone's base.",
+            "Arc length $= \\dfrac{150}{360} \\times 2 \\times \\pi \\times 12 = \\dfrac{5}{12} \\times 24\\pi = 10\\pi\\text{ cm}$.",
+            "Equating this to the cone's base circumference: $2\\pi r = 10\\pi$. Dividing by $2\\pi$ yields $r = 5\\text{ cm}$.",
+            "For part (b), the original radius of the sector ($12\\text{ cm}$) becomes the slant height ($l$) of the cone.",
+            "We form a right-angled triangle inside the cone using the height ($h$), the base radius ($r=5$), and the slant height ($l=12$).",
+            "Using Pythagoras' theorem: $h^2 + 5^2 = 12^2$.",
+            "Calculation: $h^2 = 144 - 25 = 119$. Taking the square root gives the exact height.",
+            "Final Answer: $$(a)\\ 5\\text{ cm},\\ (b)\\ \\sqrt{119}\\text{ cm}$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Folding Geometry",
+            "content": "This is a classic 'transformation of shape' question. You must memorize the physical reality of folding a sector: the arc length wraps around to become the new circular base, and the flat, straight edge of the paper becomes the slanted outer wall of the cone. Drawing a quick sketch of the transition makes the math instantly obvious."
+        },
+        "payhip_link": "https://payhip.com/b/gR9jw",
+        "button_text": "Master IGCSE Mensuration and Trigonometry: Download the Extended Pack"
+    },
+    // 12 June
+    {
+        "id": "003163",
+        "date": "12 June 2026",
+        "major_area": "Algebra",
+        "topic": "Sequences",
+        "subtopic": "Sequences",
+        "difficulty": "7/8",
+        "q": "The first four terms of a sequence are $5, 14, 27, 44...$<br>(a) Find an expression, in terms of $n$, for the $n^{\\text{th}}$ term of this sequence.<br>(b) Is 300 a term in this sequence? Show working to justify your answer.",
+        "steps": [
+            "For part (a), we find the first differences between the terms: $9, 13, 17$.",
+            "The second differences are constant: $4, 4$. A constant second difference proves it is a quadratic sequence ($an^2 + bn + c$).",
+            "The coefficient $a$ is half the second difference: $4 \\div 2 = 2$. Our formula begins with $2n^2$.",
+            "We generate the sequence for $2n^2$ ($2, 8, 18, 32$) and subtract it from the original sequence ($5, 14, 27, 44$).",
+            "This yields a linear remainder sequence: $3, 6, 9, 12$. The $n^{\\text{th}}$ term for this linear sequence is $3n$.",
+            "Combining them gives the final formula: $2n^2 + 3n$.",
+            "For part (b), we set the formula equal to the target: $2n^2 + 3n = 300$.",
+            "Rearranging into a quadratic: $2n^2 + 3n - 300 = 0$.",
+            "Using the quadratic formula: $n = \\dfrac{-3 \\pm \\sqrt{9 - 4(2)(-300)}}{4} = \\dfrac{-3 \\pm \\sqrt{2409}}{4}$.",
+            "Since $\\sqrt{2409}$ is not an integer (it is approx $49.08$), $n$ will not be a whole number. Therefore, 300 is not a term.",
+            "Final Answer: $$(a)\\ 2n^2 + 3n,\\ (b)\\ \\text{No, } n \\text{ is not an integer}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Quadratic Proofs",
+            "content": "To prove a number is NOT in a quadratic sequence, you must set up the full quadratic equation, equal to zero, and attempt to solve it. If the discriminant ($b^2 - 4ac$) is not a perfect square, it is physically impossible for the root $n$ to be an integer. This is the fastest way to prove the negative."
+        },
+        "payhip_link": "https://payhip.com/b/5HqEG",
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     }
 ]
