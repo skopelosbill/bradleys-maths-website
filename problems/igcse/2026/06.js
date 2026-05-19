@@ -444,8 +444,7 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/XIALH",
         "button_text": "Master IGCSE Transformations, Vectors, Probability, and Statistics: Download the Extended Pack"
     },
-    // 17 June
-    {
+   {
         "id": "003168",
         "date": "17 June 2026",
         "major_area": "Trigonometry",
@@ -453,22 +452,21 @@ const problemBank = [
         "subtopic": "The Cosine Rule",
         "difficulty": "8/9",
         "img": "true",
-        "q": "The points $A, B, C$, and $D$ lie on a circle to form a cyclic quadrilateral.<br>$AB = 8\\text{ cm}$, $BC = 6\\text{ cm}$, and angle $ABC = 110^\\circ$.<br>(a) Calculate the length of the diagonal $AC$.<br>(b) Calculate the size of angle $ADC$.<br>(c) Given that $AD = 9\\text{ cm}$, calculate the area of triangle $ADC$.",
+        "q": "The points $A, B, C$, and $D$ lie on a circle to form a cyclic quadrilateral.<br>$AB = 8\\text{ cm}$, $BC = 6\\text{ cm}$, and angle $ABC = 110^\\circ$.<br>(a) Calculate the length of the diagonal $AC$.<br>(b) Calculate the size of angle $ADC$.<br>(c) Given that angle $CAD = 35^\\circ$, calculate the length of $CD$.",
         "steps": [
             "For part (a), we consider triangle $ABC$. We have two sides and the included angle, so we use the Cosine Rule: $AC^2 = 8^2 + 6^2 - 2(8)(6)\\cos(110^\\circ)$.",
             "Calculation: $AC^2 = 64 + 36 - 96(-0.3420...) = 100 + 32.834... = 132.834...$",
             "Taking the square root gives $AC \\approx 11.525...\\text{ cm}$. Rounding to 3 sig figs gives $11.5\\text{ cm}$.",
             "For part (b), opposite angles in a cyclic quadrilateral sum to $180^\\circ$.",
             "Calculation: angle $ADC = 180^\\circ - 110^\\circ = 70^\\circ$.",
-            "For part (c), we have triangle $ADC$ with sides $AD = 9$, angle $D = 70^\\circ$, and $AC = 11.525...$ We need the area formula $\\dfrac{1}{2}ab\\sin(C)$. However, we need the side $CD$ to use the $70^\\circ$ angle, which we don't have. Instead, we can use the Sine Rule to find angle $ACD$, then angle $CAD$, and apply the area rule.",
-            "Alternatively, use the Cosine rule to find $CD$: $11.525^2 = 9^2 + x^2 - 2(9)(x)\\cos(70^\\circ)$. $132.83 = 81 + x^2 - 6.156x$. This gives a quadratic $x^2 - 6.156x - 51.83 = 0$. Solving gives $x \\approx 10.87$.",
-            "Area $= 0.5(9)(10.87)\\sin(70^\\circ) \approx 45.9\\text{ cm}^2$.",
-            "Final Answer: $$(a)\\ 11.5\\text{ cm},\\ (b)\\ 70^\\circ,\\ (c)\\ 45.9\\text{ cm}^2$$"
+            "For part (c), we look at triangle $ADC$. We know $AC = 11.525...\\text{ cm}$, angle $ADC = 70^\\circ$, and angle $CAD = 35^\\circ$. We use the Sine Rule: $\\dfrac{CD}{\\sin(35^\\circ)} = \\dfrac{11.525...}{\\sin(70^\\circ)}$.",
+            "Calculation: $CD = \\dfrac{11.525... \\times \\sin(35^\\circ)}{\\sin(70^\\circ)} \\approx 7.035...\\text{ cm}$.",
+            "Final Answer: $$(a)\\ 11.5\\text{ cm},\\ (b)\\ 70^\\circ,\\ (c)\\ 7.04\\text{ cm}$$"
         ],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Bridging Triangles",
-            "content": "In compound geometry questions, a shared diagonal like $AC$ is the 'bridge' that carries information from one triangle into the next. Always keep the full, unrounded value of the bridge ($\\sqrt{132.834}$) in your calculator memory for use in the subsequent steps to ensure your final area is perfectly accurate."
+            "content": "In compound geometry questions, a shared diagonal like $AC$ is the 'bridge' that carries information from one triangle into the next. Always keep the full, unrounded value of the bridge ($\\sqrt{132.834}$) in your calculator memory for use in the subsequent steps to ensure your final answer is perfectly accurate."
         },
         "payhip_link": "https://payhip.com/b/KLYAp",
         "button_text": "Master IGCSE Mensuration and Trigonometry: Download the Extended Pack"
