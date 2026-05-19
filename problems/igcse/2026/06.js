@@ -497,5 +497,171 @@ const problemBank = [
         },
         "payhip_link": "https://payhip.com/b/JrS9d",
         "button_text": "Master IGCSE Number: Download the Extended Pack"
+    },
+    // 19 June
+    {
+        "id": "003170",
+        "date": "19 June 2026",
+        "major_area": "Number",
+        "topic": "Financial Maths",
+        "subtopic": "Percentage Change and Interest",
+        "difficulty": "8/9",
+        "q": "Elias invests $\\$12,000$ in a high-yield account that pays compound interest at a rate of $4.2\\%$ per year.<br>At the end of 5 years, he withdraws the entire amount and pays a $1.5\\%$ withdrawal tax on the total balance.<br>(a) Calculate the total amount Elias has after the tax is deducted.<br>(b) Calculate the overall percentage profit he made on his initial $\\$12,000$ investment, giving your answer to 1 decimal place.",
+        "steps": [
+            "For part (a), we first calculate the value of the investment before tax. The growth multiplier is $1.042$.",
+            "Calculation: $12000 \\times (1.042)^5 = 12000 \\times 1.22839... \\approx \\$14740.76$.",
+            "A $1.5\\%$ tax means he keeps $98.5\\%$ of the money. We multiply the balance by the tax multiplier $0.985$.",
+            "Calculation: $14740.76 \\times 0.985 \\approx \\$14519.65$.",
+            "For part (b), we find the actual profit by subtracting the initial investment from the final amount: $14519.65 - 12000 = \\$2519.65$.",
+            "To find the percentage profit, we divide the profit by the original amount and multiply by 100.",
+            "Calculation: $(2519.65 \\div 12000) \\times 100 = 20.997...\\%$.",
+            "Rounding to 1 decimal place gives $21.0\\%$.",
+            "Final Answer: $$(a)\\ \\$14519.65,\\ (b)\\ 21.0\\%$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Chain Multipliers",
+            "content": "In Paper 4, you should aim to do this entire calculation in a single unbroken chain on your calculator: $12000 \\times 1.042^5 \\times 0.985$. Writing down intermediate steps is great for method marks, but re-typing rounded decimals back into your calculator is the number one cause of lost accuracy marks in financial maths."
+        },
+        "payhip_link": "https://payhip.com/b/Ebcut",
+        "button_text": "Master IGCSE Number: Download the Extended Pack"
+    },
+    // 20 June
+    {
+        "id": "003171",
+        "date": "20 June 2026",
+        "major_area": "Algebra",
+        "topic": "Changing the Subject of a Formula",
+        "subtopic": "Changing the Subject of a Formula",
+        "difficulty": "8/9",
+        "q": "Rearrange the formula to make $x$ the subject:<br>$$y = \\dfrac{3x^2 - 5}{2x^2 + w}$$<br>Show all of your algebraic steps clearly.",
+        "steps": [
+            "We begin by multiplying both sides by the denominator to clear the fraction: $y(2x^2 + w) = 3x^2 - 5$.",
+            "Next, we expand the bracket on the left-hand side: $2x^2y + wy = 3x^2 - 5$.",
+            "We must collect all terms containing the target subject ($x^2$) on one side of the equation. We subtract $2x^2y$ from both sides, and add $5$ to both sides.",
+            "This gives: $wy + 5 = 3x^2 - 2x^2y$.",
+            "We factorise $x^2$ out of the right-hand side: $wy + 5 = x^2(3 - 2y)$.",
+            "To isolate $x^2$, we divide both sides by the bracket: $x^2 = \\dfrac{wy + 5}{3 - 2y}$.",
+            "Finally, we take the square root of both sides. Because we are taking a square root algebraically, we must include the $\\pm$ symbol.",
+            "Final Answer: $$x = \\pm\\sqrt{\\dfrac{wy + 5}{3 - 2y}}$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: The Factorising Step",
+            "content": "Whenever your required subject appears more than once in the equation (here, as $3x^2$ and $2x^2y$), you cannot simply 'move' things to isolate it. You absolutely must get them on the same side and factorise the subject out into a single term. Without that factorisation step, the question is impossible to solve."
+        },
+        "payhip_link": "https://payhip.com/b/Ipgz3",
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
+    },
+    // 21 June
+    {
+        "id": "003172",
+        "date": "21 June 2026",
+        "major_area": "Geometry",
+        "topic": "Circle Theorems",
+        "subtopic": "Circle Theorems 2",
+        "difficulty": "A*",
+        "img": "true",
+        "q": "The points $A, B, C$, and $D$ lie on the circumference of a circle, forming a cyclic quadrilateral.<br>The angles are given algebraically as:<br>$\\angle DAB = (4x + 3y)^\\circ$<br>$\\angle ABC = (5x + 3y)^\\circ$<br>$\\angle BCD = (6x + y)^\\circ$<br>$\\angle CDA = (x + 3y)^\\circ$<br>(a) Set up a pair of simultaneous equations in terms of $x$ and $y$.<br>(b) Solve the equations to find the values of $x$ and $y$.<br>(c) Calculate the size of the largest angle in the quadrilateral.",
+        "steps": [
+            "For part (a), we use the cyclic quadrilateral property: opposite angles sum to $180^\\circ$.",
+            "Pair 1 ($A$ and $C$): $(4x + 3y) + (6x + y) = 180 \\implies 10x + 4y = 180$. Dividing by 2 simplifies this to $5x + 2y = 90$.",
+            "Pair 2 ($B$ and $D$): $(5x + 3y) + (x + 3y) = 180 \\implies 6x + 6y = 180$. Dividing by 6 simplifies this to $x + y = 30$.",
+            "For part (b), we solve the system. From the second equation, $y = 30 - x$.",
+            "Substitute into the first equation: $5x + 2(30 - x) = 90 \\implies 5x + 60 - 2x = 90$.",
+            "This gives $3x = 30$, so $x = 10$. Substituting $x=10$ into $y = 30 - x$ gives $y = 20$.",
+            "For part (c), we substitute $x=10$ and $y=20$ back into all four angle expressions.",
+            "$A = 40 + 60 = 100^\\circ$. $B = 50 + 60 = 110^\\circ$. $C = 60 + 20 = 80^\\circ$. $D = 10 + 60 = 70^\\circ$.",
+            "The largest angle is angle $B$.",
+            "Final Answer: $$(a)\\ 5x + 2y = 90 \\text{ and } x + y = 30,\\ (b)\\ x = 10, y = 20,\\ (c)\\ 110^\\circ$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Cross-Topic Synthesis",
+            "content": "Cambridge 0580 Paper 4 loves to merge two completely different topics together. If a geometry question is flooded with $x$ and $y$ variables, stop thinking about geometry and start treating it as an algebra problem. Use the single geometric rule you know to build the equations, and let the algebra do the heavy lifting."
+        },
+        "payhip_link": "https://payhip.com/b/xrmnz",
+        "button_text": "Master IGCSE Coordinate Geometry and Geometry: Download the Extended Pack"
+    },
+    // 22 June
+    {
+        "id": "003173",
+        "date": "22 June 2026",
+        "major_area": "Mensuration",
+        "topic": "Arcs and Sectors",
+        "subtopic": "Arcs and Sectors",
+        "difficulty": "8/9",
+        "img": "true",
+        "q": "The diagram shows a sector of a circle with centre $O$ and radius $12\\text{ cm}$. The angle of the sector is $150^\\circ$.<br>A chord joins the two ends of the arc, splitting the sector into a triangle and a shaded segment.<br>(a) Calculate the exact area of the entire sector in terms of $\\pi$.<br>(b) Calculate the area of the shaded segment. Give your answer to 3 significant figures.",
+        "steps": [
+            "For part (a), the area of a sector is given by the formula $\\dfrac{\\theta}{360} \\times \\pi r^2$.",
+            "Calculation: $\\dfrac{150}{360} \\times \\pi \\times 12^2 = \\dfrac{5}{12} \\times 144\\pi = 5 \\times 12\\pi = 60\\pi\\text{ cm}^2$.",
+            "For part (b), the area of the segment is the Area of the Sector minus the Area of the Triangle.",
+            "We calculate the area of the triangle using the sine formula: $\\text{Area} = \\dfrac{1}{2}ab\\sin(C)$.",
+            "Calculation: $\\dfrac{1}{2} \\times 12 \\times 12 \\times \\sin(150^\\circ) = 72 \\times 0.5 = 36\\text{ cm}^2$.",
+            "We now subtract the triangle from the sector: $60\\pi - 36$.",
+            "Using a calculator: $188.495... - 36 = 152.495...\\text{ cm}^2$.",
+            "Final Answer: $$(a)\\ 60\\pi\\text{ cm}^2,\\ (b)\\ 152\\text{ cm}^2$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Segment Formula",
+            "content": "There is no single formula for the area of a segment. You must always think of it as a subtraction process: 'Pizza Slice minus Triangle'. It perfectly tests your ability to use the $\\dfrac{1}{2}ab\\sin(C)$ formula in a context outside of standard trigonometry."
+        },
+        "payhip_link": "https://payhip.com/b/gR9jw",
+        "button_text": "Master IGCSE Mensuration and Trigonometry: Download the Extended Pack"
+    },
+    // 23 June
+    {
+        "id": "003174",
+        "date": "23 June 2026",
+        "major_area": "Transformations",
+        "topic": "Transformations",
+        "subtopic": "Transformations",
+        "difficulty": "8/9",
+        "img": "true",
+        "q": "Triangle $A$ has vertices at $(2, 2)$, $(6, 2)$ and $(2, 6)$.<br>Triangle $A$ is mapped onto Triangle $B$ by an enlargement with scale factor $-0.5$ and centre of enlargement $(4, 4)$.<br>(a) Calculate the coordinates of the vertices of Triangle $B$.<br>(b) Describe fully the single transformation that maps Triangle $B$ back onto Triangle $A$.",
+        "steps": [
+            "For part (a), we measure the vector distances from the centre $(4, 4)$ to the vertices of $A$, multiply them by $-0.5$, and apply them back to the centre.",
+            "Vertex 1 $(2, 2)$: Vector from centre is $\\begin{pmatrix} -2 \\\\ -2 \\end{pmatrix}$. Multiply by $-0.5$ gives $\\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix}$. New point: $(4+1, 4+1) = (5, 5)$.",
+            "Vertex 2 $(6, 2)$: Vector from centre is $\\begin{pmatrix} 2 \\\\ -2 \\end{pmatrix}$. Multiply by $-0.5$ gives $\\begin{pmatrix} -1 \\\\ 1 \\end{pmatrix}$. New point: $(4-1, 4+1) = (3, 5)$.",
+            "Vertex 3 $(2, 6)$: Vector from centre is $\\begin{pmatrix} -2 \\\\ 2 \\end{pmatrix}$. Multiply by $-0.5$ gives $\\begin{pmatrix} 1 \\\\ -1 \\end{pmatrix}$. New point: $(4+1, 4-1) = (5, 3)$.",
+            "For part (b), the reverse transformation must undo the scale factor. The reciprocal of $-0.5$ is $-2$. The centre of enlargement remains the exact same.",
+            "Final Answer: $$(a)\\ (5, 5), (3, 5), (5, 3),\\ (b)\\ \\text{Enlargement, Scale Factor } -2\\text{, Centre } (4, 4)$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Negative Scale Factors",
+            "content": "A negative scale factor pushes the image through the centre of enlargement and out the other side, meaning the shape will be inverted (upside down). If your final coordinates produce a triangle facing the same way as the original, you have missed the negative sign!"
+        },
+        "payhip_link": "https://payhip.com/b/U2nMw",
+        "button_text": "Master IGCSE Transformations, Vectors, Probability, and Statistics: Download the Extended Pack"
+    },
+    // 24 June
+    {
+        "id": "003175",
+        "date": "24 June 2026",
+        "major_area": "Number",
+        "topic": "Estimation & Bounds",
+        "subtopic": "Limits of Accuracy",
+        "difficulty": "8/9",
+        "q": "A car travels a distance of $340\\text{ km}$, measured correct to the nearest $10\\text{ km}$.<br>It uses $28\\text{ litres}$ of fuel, measured correct to the nearest litre.<br>Calculate the lower bound for the fuel consumption of the car, measured in kilometres per litre ($\\text{km/l}$).<br>Give your answer to 2 decimal places.",
+        "steps": [
+            "We first establish the bounds for both measurements.",
+            "Distance is to the nearest $10\\text{ km}$, so the error margin is $\\pm 5\\text{ km}$. Lower Bound = $335\\text{ km}$, Upper Bound = $345\\text{ km}$.",
+            "Fuel is to the nearest $1\\text{ litre}$, so the error margin is $\\pm 0.5\\text{ l}$. Lower Bound = $27.5\\text{ l}$, Upper Bound = $28.5\\text{ l}$.",
+            "Fuel consumption is calculated as Distance $\\div$ Fuel. To find the lower bound (minimum possible value) of a division, we must divide the smallest possible numerator by the largest possible denominator.",
+            "Calculation: Minimum Consumption = Lower Bound Distance $\\div$ Upper Bound Fuel.",
+            "Substitution: $335 \\div 28.5 = 11.75438...$",
+            "Rounding the result to 2 decimal places gives $11.75$.",
+            "Final Answer: $$11.75\\text{ km/l}$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Division Bounds",
+            "content": "I cannot stress this enough: The Lower Bound of a calculation does not mean 'use all the lower bounds'. In a division formula ($A \\div B$), making the denominator ($B$) bigger makes the overall result smaller. Therefore, the absolute minimum result comes from Smallest $\\div$ Biggest."
+        },
+        "payhip_link": "https://payhip.com/b/9LFtZ",
+        "button_text": "Master IGCSE Number: Download the Extended Pack"
     }
 ]
