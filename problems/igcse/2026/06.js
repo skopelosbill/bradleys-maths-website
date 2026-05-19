@@ -326,4 +326,173 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/5HqEG",
         "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     }
+    // 13 June
+    {
+        "id": "003164",
+        "date": "13 June 2026",
+        "major_area": "Statistics",
+        "topic": "Histograms",
+        "subtopic": "Histograms",
+        "difficulty": "8/9",
+        "q": "The histogram shows information about the mass, $m$ grams, of 120 tomatoes.<br>The first bar ($0 < m \\le 40$) has a frequency of $30$.<br>The second bar ($40 < m \\le 50$) has a height of $3.6$ units on the frequency density axis.<br>The third bar ($50 < m \\le 70$) has a height of $1.5$ units.<br>The final bar is for $70 < m \\le 100$.<br>(a) Calculate the frequency density for the first bar.<br>(b) Calculate the frequency of the second bar and the third bar.<br>(c) Calculate the height of the final bar on the histogram.",
+        "steps": [
+            "For part (a), Frequency Density (FD) = Frequency $\\div$ Class Width.",
+            "Calculation: $FD = 30 \\div 40 = 0.75$.",
+            "For part (b), Frequency = FD $\\times$ Class Width. For the second bar: $3.6 \\times 10 = 36$.",
+            "For the third bar: $1.5 \\times 20 = 30$.",
+            "For part (c), we first find the frequency of the final bar by subtracting the known frequencies from the total of 120 tomatoes.",
+            "Calculation: $120 - (30 + 36 + 30) = 120 - 96 = 24$.",
+            "The height (FD) of the final bar is its frequency divided by its width ($100 - 70 = 30$).",
+            "Calculation: $FD = 24 \\div 30 = 0.8$.",
+            "Final Answer: $$(a)\\ 0.75,\\ (b)\\ 36 \\text{ and } 30,\\ (c)\\ 0.8$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Missing Frequencies",
+            "content": "Cambridge examiners love giving you the total frequency and making you work backwards to find the final bar. Always be methodical: find the areas (frequencies) of the bars you know, subtract from the total, and then divide that remainder by the width of the final class to find the height."
+        },
+        "payhip_link": "https://payhip.com/b/rsVCz",
+        "button_text": "Master IGCSE Transformations, Vectors, Probability, and Statistics: Download the Extended Pack"
+    },
+    // 14 June
+    {
+        "id": "003165",
+        "date": "14 June 2026",
+        "major_area": "Algebra",
+        "topic": "Simultaneous Equations",
+        "subtopic": "Simultaneous Equations (Linear – Quadratic)",
+        "difficulty": "8/9",
+        "q": "Solve the simultaneous equations:<br>$y = 2x + 1$<br>$x^2 + y^2 = 29$<br>Show clear algebraic working.",
+        "steps": [
+            "We substitute the linear expression for $y$ into the quadratic equation: $x^2 + (2x + 1)^2 = 29$.",
+            "Expanding the double bracket carefully: $x^2 + (4x^2 + 4x + 1) = 29$.",
+            "Collecting like terms: $5x^2 + 4x + 1 = 29$.",
+            "Subtracting 29 from both sides to set the equation to zero gives $5x^2 + 4x - 28 = 0$.",
+            "We can factorise this quadratic. We need factors of $5 \\times -28 = -140$ that sum to $+4$. These are $+14$ and $-10$.",
+            "Factorising by grouping or inspection yields $(5x + 14)(x - 2) = 0$.",
+            "This gives $x = -\\dfrac{14}{5} = -2.8$ and $x = 2$.",
+            "Substitute these $x$-values into $y = 2x + 1$ to find the corresponding $y$-values.",
+            "When $x = 2, y = 2(2) + 1 = 5$. When $x = -2.8, y = 2(-2.8) + 1 = -4.6$.",
+            "Final Answer: $$(2, 5) \\text{ and } (-2.8, -4.6)$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Squaring the Bracket",
+            "content": "The most catastrophic error in this topic is expanding $(2x + 1)^2$ as $4x^2 + 1$. You must remember the middle term ($+4x$)! Writing the bracket out twice as $(2x + 1)(2x + 1)$ and using FOIL guarantees you won't throw away 5 marks in Paper 4."
+        },
+        "payhip_link": "https://payhip.com/b/mg5YS",
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
+    },
+    // 15 June
+    {
+        "id": "003166",
+        "date": "15 June 2026",
+        "major_area": "Algebra",
+        "topic": "Functions",
+        "subtopic": "Inverse Functions",
+        "difficulty": "8/9",
+        "q": "A function is defined as $f(x) = \\dfrac{3x + 2}{x - 3}$, where $x \\neq 3$.<br>(a) Find an expression for $f^{-1}(x)$.<br>(b) State the mathematical name given to a function where $f(x) = f^{-1}(x)$.",
+        "steps": [
+            "For part (a), we set $y = \\dfrac{3x + 2}{x - 3}$.",
+            "To find the inverse, we interchange $x$ and $y$: $x = \\dfrac{3y + 2}{y - 3}$.",
+            "Multiply both sides by $(y - 3)$ to clear the fraction: $x(y - 3) = 3y + 2$.",
+            "Expand the bracket: $xy - 3x = 3y + 2$.",
+            "Rearrange to group all terms containing $y$ on the left, and everything else on the right: $xy - 3y = 3x + 2$.",
+            "Factorise $y$ out on the left-hand side: $y(x - 3) = 3x + 2$.",
+            "Divide by $(x - 3)$ to isolate $y$: $y = \\dfrac{3x + 2}{x - 3}$.",
+            "For part (b), because the inverse function is exactly identical to the original function, it is its own inverse.",
+            "Final Answer: $$(a)\\ f^{-1}(x) = \\dfrac{3x + 2}{x - 3},\\ (b)\\ \\text{Self-inverse function}$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Self-Inverse Functions",
+            "content": "A self-inverse function is a beautiful piece of algebra. Geometrically, it means that if you plot $y = f(x)$, the graph is perfectly symmetrical across the line $y = x$. If you ever perform the inverse process and get exactly what you started with, don't panic—you haven't made a mistake, you've just discovered a self-inverse function!"
+        },
+        "payhip_link": "https://payhip.com/b/mg5YS",
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
+    },
+    // 16 June
+    {
+        "id": "003167",
+        "date": "16 June 2026",
+        "major_area": "Probability",
+        "topic": "Probability",
+        "subtopic": "Conditional Probability",
+        "difficulty": "8/9",
+        "img": "true",
+        "q": "Box A contains 4 white and 6 black balls. Box B contains 7 white and 3 black balls.<br>A fair coin is flipped. If it lands on Heads, a ball is drawn from Box A. If it lands on Tails, a ball is drawn from Box B.<br>(a) Draw a fully labelled tree diagram to represent this information.<br>(b) Calculate the probability that the drawn ball is white.<br>(c) Given that the drawn ball is white, find the probability that it came from Box A.",
+        "steps": [
+            "(a) The first branches are Heads (Box A, P=0.5) and Tails (Box B, P=0.5). From Box A, the branches are White (0.4) and Black (0.6). From Box B, the branches are White (0.7) and Black (0.3).",
+            "For part (b), the ball can be white via two paths: (Heads AND White) OR (Tails AND White).",
+            "Calculation: $P(W) = (0.5 \\times 0.4) + (0.5 \\times 0.7) = 0.2 + 0.35 = 0.55$.",
+            "For part (c), we use the conditional probability formula: $P(A | W) = \\dfrac{P(A \\cap W)}{P(W)}$.",
+            "The probability of coming from Box A AND being white is $0.2$. The total probability of being white is $0.55$.",
+            "Calculation: $\\dfrac{0.2}{0.55} = \\dfrac{20}{55}$.",
+            "Simplifying the fraction gives $\\dfrac{4}{11}$.",
+            "Final Answer: $$(b)\\ 0.55,\\ (c)\\ \\dfrac{4}{11}$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Bayes' Theorem",
+            "content": "Part (c) is a classic 'Given that' working-backwards problem. You know the final outcome (the ball is white), and you must find the probability of the path taken. The rule is simple: The specific path you want (Box A and White) divided by the Total Probability of the outcome (All White paths). This is Bayes' Theorem in action!"
+        },
+        "payhip_link": "https://payhip.com/b/rsVCz",
+        "button_text": "Master IGCSE Transformations, Vectors, Probability, and Statistics: Download the Extended Pack"
+    },
+    // 17 June
+    {
+        "id": "003168",
+        "date": "17 June 2026",
+        "major_area": "Trigonometry",
+        "topic": "Trigonometry",
+        "subtopic": "The Cosine Rule",
+        "difficulty": "8/9",
+        "img": "true",
+        "q": "The points $A, B, C$, and $D$ lie on a circle to form a cyclic quadrilateral.<br>$AB = 8\\text{ cm}$, $BC = 6\\text{ cm}$, and angle $ABC = 110^\\circ$.<br>(a) Calculate the length of the diagonal $AC$.<br>(b) Calculate the size of angle $ADC$.<br>(c) Given that $AD = 9\\text{ cm}$, calculate the area of triangle $ADC$.",
+        "steps": [
+            "For part (a), we consider triangle $ABC$. We have two sides and the included angle, so we use the Cosine Rule: $AC^2 = 8^2 + 6^2 - 2(8)(6)\\cos(110^\\circ)$.",
+            "Calculation: $AC^2 = 64 + 36 - 96(-0.3420...) = 100 + 32.834... = 132.834...$",
+            "Taking the square root gives $AC \\approx 11.525...\\text{ cm}$. Rounding to 3 sig figs gives $11.5\\text{ cm}$.",
+            "For part (b), opposite angles in a cyclic quadrilateral sum to $180^\\circ$.",
+            "Calculation: angle $ADC = 180^\\circ - 110^\\circ = 70^\\circ$.",
+            "For part (c), we have triangle $ADC$ with sides $AD = 9$, angle $D = 70^\\circ$, and $AC = 11.525...$ We need the area formula $\\dfrac{1}{2}ab\\sin(C)$. However, we need the side $CD$ to use the $70^\\circ$ angle, which we don't have. Instead, we can use the Sine Rule to find angle $ACD$, then angle $CAD$, and apply the area rule.",
+            "Alternatively, use the Cosine rule to find $CD$: $11.525^2 = 9^2 + x^2 - 2(9)(x)\\cos(70^\\circ)$. $132.83 = 81 + x^2 - 6.156x$. This gives a quadratic $x^2 - 6.156x - 51.83 = 0$. Solving gives $x \\approx 10.87$.",
+            "Area $= 0.5(9)(10.87)\\sin(70^\\circ) \approx 45.9\\text{ cm}^2$.",
+            "Final Answer: $$(a)\\ 11.5\\text{ cm},\\ (b)\\ 70^\\circ,\\ (c)\\ 45.9\\text{ cm}^2$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Bridging Triangles",
+            "content": "In compound geometry questions, a shared diagonal like $AC$ is the 'bridge' that carries information from one triangle into the next. Always keep the full, unrounded value of the bridge ($\\sqrt{132.834}$) in your calculator memory for use in the subsequent steps to ensure your final area is perfectly accurate."
+        },
+        "payhip_link": "https://payhip.com/b/KLYAp",
+        "button_text": "Master IGCSE Mensuration and Trigonometry: Download the Extended Pack"
+    },
+    // 18 June
+    {
+        "id": "003169",
+        "date": "18 June 2026",
+        "major_area": "Number",
+        "topic": "Financial Maths",
+        "subtopic": "Exponential Growth and Decay",
+        "difficulty": "8/9",
+        "q": "The population of a city grows exponentially at a constant rate of $r\\%$ per year.<br>In 2020, the population was $150,000$. By 2025, the population had risen to $182,498$.<br>(a) Calculate the value of $r$, giving your answer to 1 decimal place.<br>(b) Assuming this growth rate continues, predict the population in the year 2030, giving your answer to the nearest whole number.",
+        "steps": [
+            "For part (a), we set up the compound growth formula: $150000 \\times \\left(1 + \\dfrac{r}{100}\\right)^5 = 182498$.",
+            "Divide both sides by 150000: $\\left(1 + \\dfrac{r}{100}\\right)^5 = \\dfrac{182498}{150000} = 1.216653...$",
+            "Take the 5th root of both sides: $1 + \\dfrac{r}{100} = \\sqrt[5]{1.216653...} = 1.039999...$",
+            "Subtract 1 and multiply by 100 to find $r$. $r = 3.9999...$ which rounds exactly to $4.0\\%$.",
+            "For part (b), the year 2030 is a further 5 years of growth from 2025.",
+            "We take the 2025 population and multiply by the growth multiplier $1.04$ to the power of 5: $182498 \\times 1.04^5$.",
+            "Calculation: $182498 \\times 1.21665... = 222037.2...$ people.",
+            "Final Answer: $$(a)\\ 4.0\\%,\\ (b)\\ 222,037$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Roots for Rates",
+            "content": "Finding the interest rate requires working backwards through powers. Make sure you know where the $x\\sqrt{y}$ button is on your scientific calculator! A common error is dividing by 5 instead of taking the 5th root. Always check your answer logically: a $4\\%$ growth rate is a perfectly realistic real-world scenario."
+        },
+        "payhip_link": "https://payhip.com/b/JrS9d",
+        "button_text": "Master IGCSE Number: Download the Extended Pack"
+    }
 ]
