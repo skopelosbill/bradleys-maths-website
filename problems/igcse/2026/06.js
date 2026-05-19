@@ -413,31 +413,33 @@ const problemBank = [
         "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
     // 16 June
+   // 16 June (Rewritten for IGCSE Conditional Probability)
     {
         "id": "003167",
         "date": "16 June 2026",
         "major_area": "Probability",
         "topic": "Probability",
         "subtopic": "Conditional Probability",
-        "difficulty": "8/9",
-        "img": "true",
-        "q": "Box A contains 4 white and 6 black balls. Box B contains 7 white and 3 black balls.<br>A fair coin is flipped. If it lands on Heads, a ball is drawn from Box A. If it lands on Tails, a ball is drawn from Box B.<br>(a) Draw a fully labelled tree diagram to represent this information.<br>(b) Calculate the probability that the drawn ball is white.<br>(c) Given that the drawn ball is white, find the probability that it came from Box A.",
+        "difficulty": "7/8",
+        "q": "100 students were asked whether they prefer Tea or Coffee.<br>There are 45 male students in total.<br>30 of the male students prefer Coffee.<br>20 of the female students prefer Tea.<br>A total of 65 students prefer Coffee.<br>(a) Construct and complete a two-way table to display this information.<br>(b) A student is chosen at random. Calculate the probability that the student is a female who prefers Coffee.<br>(c) Given that a randomly chosen student prefers Tea, calculate the probability that the student is male.",
         "steps": [
-            "(a) The first branches are Heads (Box A, P=0.5) and Tails (Box B, P=0.5). From Box A, the branches are White (0.4) and Black (0.6). From Box B, the branches are White (0.7) and Black (0.3).",
-            "For part (b), the ball can be white via two paths: (Heads AND White) OR (Tails AND White).",
-            "Calculation: $P(W) = (0.5 \\times 0.4) + (0.5 \\times 0.7) = 0.2 + 0.35 = 0.55$.",
-            "For part (c), we use the conditional probability formula: $P(A | W) = \\dfrac{P(A \\cap W)}{P(W)}$.",
-            "The probability of coming from Box A AND being white is $0.2$. The total probability of being white is $0.55$.",
-            "Calculation: $\\dfrac{0.2}{0.55} = \\dfrac{20}{55}$.",
-            "Simplifying the fraction gives $\\dfrac{4}{11}$.",
-            "Final Answer: $$(b)\\ 0.55,\\ (c)\\ \\dfrac{4}{11}$$"
+            "For part (a), we set up a table with rows for Male/Female and columns for Tea/Coffee/Total.",
+            "We fill in the given totals: Grand Total = 100, Male Total = 45. This means Female Total = 100 - 45 = 55.",
+            "We fill in the specific given cells: Male/Coffee = 30, Female/Tea = 20, Total Coffee = 65.",
+            "We deduce the missing values: Female/Coffee = Total Coffee (65) - Male/Coffee (30) = 35. Male/Tea = Male Total (45) - Male/Coffee (30) = 15. Total Tea = 15 + 20 = 35.",
+            "For part (b), we look for the specific intersection of Female and Coffee, which is 35 out of the total 100 students.",
+            "Calculation: $\\dfrac{35}{100}$, which simplifies to $\\dfrac{7}{20}$.",
+            "For part (c), the phrase 'Given that' restricts our denominator. We only look at the 'Total Tea' column, which has 35 students.",
+            "Out of these 35 students, 15 are male. The probability is $\\dfrac{15}{35}$.",
+            "Simplifying the fraction gives $\\dfrac{3}{7}$.",
+            "Final Answer: $$(b)\\ \\dfrac{7}{20},\\ (c)\\ \\dfrac{3}{7}$$"
         ],
         "bradley_insight": {
-            "type": "deeper",
-            "title": "The Head Teacher's Eye: Bayes' Theorem",
-            "content": "Part (c) is a classic 'Given that' working-backwards problem. You know the final outcome (the ball is white), and you must find the probability of the path taken. The rule is simple: The specific path you want (Box A and White) divided by the Total Probability of the outcome (All White paths). This is Bayes' Theorem in action!"
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Table Conditioning",
+            "content": "A two-way table is one of the most powerful tools for solving conditional probability at IGCSE. Whenever you see the phrase 'Given that...', you must immediately ignore the grand total of 100. Your new denominator is solely the total of the row or column specified by the condition."
         },
-        "payhip_link": "https://payhip.com/b/rsVCz",
+        "payhip_link": "https://payhip.com/b/XIALH",
         "button_text": "Master IGCSE Transformations, Vectors, Probability, and Statistics: Download the Extended Pack"
     },
     // 17 June
