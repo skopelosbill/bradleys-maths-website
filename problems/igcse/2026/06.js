@@ -412,8 +412,7 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/mg5YS",
         "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
-    // 16 June
-   // 16 June (Rewritten for IGCSE Conditional Probability)
+    // 16 June (Two-Way Table)
     {
         "id": "003167",
         "date": "16 June 2026",
@@ -421,12 +420,15 @@ const problemBank = [
         "topic": "Probability",
         "subtopic": "Conditional Probability",
         "difficulty": "7/8",
-        "q": "100 students were asked whether they prefer Tea or Coffee.<br>There are 45 male students in total.<br>30 of the male students prefer Coffee.<br>20 of the female students prefer Tea.<br>A total of 65 students prefer Coffee.<br>(a) Construct and complete a two-way table to display this information.<br>(b) A student is chosen at random. Calculate the probability that the student is a female who prefers Coffee.<br>(c) Given that a randomly chosen student prefers Tea, calculate the probability that the student is male.",
+        "img": "true",
+        "q": "100 students were asked whether they prefer Tea or Coffee.<br>The partially completed two-way table shows some information about their choices.<br>(a) Complete the two-way table.<br>(b) A student is chosen at random. Calculate the probability that the student is a female who prefers Coffee.<br>(c) Given that a randomly chosen student prefers Tea, calculate the probability that the student is male.",
         "steps": [
-            "For part (a), we set up a table with rows for Male/Female and columns for Tea/Coffee/Total.",
-            "We fill in the given totals: Grand Total = 100, Male Total = 45. This means Female Total = 100 - 45 = 55.",
-            "We fill in the specific given cells: Male/Coffee = 30, Female/Tea = 20, Total Coffee = 65.",
-            "We deduce the missing values: Female/Coffee = Total Coffee (65) - Male/Coffee (30) = 35. Male/Tea = Male Total (45) - Male/Coffee (30) = 15. Total Tea = 15 + 20 = 35.",
+            "For part (a), we fill in the missing gaps by ensuring every row and column adds up correctly.",
+            "Female Total = 100 - 45 = 55.",
+            "Female/Coffee = Total Coffee (65) - Male/Coffee (30) = 35.",
+            "Male/Tea = Male Total (45) - Male/Coffee (30) = 15.",
+            "Total Tea = 15 + 20 = 35. We check our columns and rows: 35 + 65 = 100. Perfect.",
+            "<img src='images/06/i_16_ans.png' style='width:100%; max-width:450px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
             "For part (b), we look for the specific intersection of Female and Coffee, which is 35 out of the total 100 students.",
             "Calculation: $\\dfrac{35}{100}$, which simplifies to $\\dfrac{7}{20}$.",
             "For part (c), the phrase 'Given that' restricts our denominator. We only look at the 'Total Tea' column, which has 35 students.",
