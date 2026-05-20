@@ -115,7 +115,7 @@
             "For Bar A: $5 \\div 10 = 0.5$.",
             "For Bar B: $20 \\div 20 = 1.0$.",
             "For part (b), we compare the frequency densities. Since Bar B has a higher frequency density, it will be the taller bar.",
-            "Final Answer: $$(a)\\ A: 0.5, B: 1.0,\\ (b)\\ \text{Bar B}$$"
+            "Final Answer: $$(a)\\ A: 0.5, B: 1.0,\\ (b)\\ \\text{Bar B}$$"
         ],
         "bradley_insight": {
             "type": "deeper",
