@@ -678,16 +678,16 @@ const problemBank = [
             "For part (a), the median is the value at half of the total frequency ($80 \\div 2 = 40$). Reading across from 40 on the y-axis down to the x-axis gives $40\\text{ cm}$.",
             "For part (b), we need the Upper Quartile (UQ) and Lower Quartile (LQ).",
             "The UQ is at $75\\%$ of the frequency: $0.75 \\times 80 = 60$. Reading across from 60 gives $47\\text{ cm}$.",
-            "The LQ is at $25\\%$ of the frequency: $0.25 \\times 80 = 20$. Reading across from 20 gives $32\\text{ cm}$.",
-            "The Interquartile Range (IQR) is $UQ - LQ = 47 - 32 = 15\\text{ cm}$.",
-            "For part (c), we find $45\\text{ cm}$ on the x-axis and read UP to the curve, then ACROSS to the y-axis. This gives a cumulative frequency of $54$.",
-            "This means 54 plants are $45\\text{ cm}$ or *shorter*. The number of plants *taller* than $45\\text{ cm}$ is $80 - 54 = 26$.",
-            "Final Answer: $$(a)\\ 40\\text{ cm},\\ (b)\\ 15\\text{ cm},\\ (c)\\ 26$$"
+            "The LQ is at $25\\%$ of the frequency: $0.25 \\times 80 = 20$. Reading across from 20 gives $34\\text{ cm}$.",
+            "The Interquartile Range (IQR) is $UQ - LQ = 47 - 34 = 13\\text{ cm}$.",
+            "For part (c), we find $45\\text{ cm}$ on the x-axis and read UP to the curve, then ACROSS to the y-axis. This gives a cumulative frequency of $55$.",
+            "This means 54 plants are $45\\text{ cm}$ or <strong>shorter</strong>. The number of plants <em>taller<em> than $45\\text{ cm}$ is $80 - 55 = 25$.",
+            "Final Answer: $$(a)\\ 40\\text{ cm},\\ (b)\\ 13\\text{ cm},\\ (c)\\ 25$$"
         ],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: 'Greater Than' Trap",
-            "content": "In part (c), the graph tells you how many plants are *up to* a certain height. When asked for 'greater than' or 'taller than', you must always remember to subtract your reading from the total frequency (80). Writing down 54 here is one of the most common dropped marks in Paper 4."
+            "content": "In part (c), the graph tells you how many plants are <em>>up to</em> a certain height. When asked for 'greater than' or 'taller than', you must always remember to subtract your reading from the total frequency (80). Writing down 54 here is one of the most common dropped marks in Paper 4."
         },
         "payhip_link": "https://payhip.com/b/NhqEx",
         "button_text": "Master IGCSE Transformations, Vectors, Probability, and Statistics: Download the Extended Pack"
