@@ -394,16 +394,51 @@ const BradleyHub = {
                     ${progressHTML}
                 </div>
 
-                <h3 style="color: var(--brand-purple);">Choose your Revision Area</h3>
+                <h3 style="color: var(--brand-purple);">Step 1: Choose an Area</h3>
                 <div class="menu-grid">
-                    ${mapping.map(m => `<button class="menu-btn" onclick="BradleyHub.serveArena('${m.id}')">${m.label}</button>`).join('')}
-                    <button class="menu-btn random" style="background: linear-gradient(135deg, var(--brand-purple), var(--brand-purple-dark)); color: white; border: none; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.15);" onclick="BradleyHub.serveArena('all')">★ Random Exam Mix ★</button>
+                    ${mapping.map(m => `<button class="menu-btn" onclick="BradleyHub.showDifficultyMenu('${m.id}')">${m.label}</button>`).join('')}
+                    <button class="menu-btn random" style="background: linear-gradient(135deg, var(--brand-purple), var(--brand-purple-dark)); color: white; border: none; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.15);" onclick="BradleyHub.showDifficultyMenu('all')">★ Random Exam Mix ★</button>
                 </div>
                 <p style="margin-top:30px;"><a href="index.html" style="color: var(--text-muted); font-size: 0.85rem; text-decoration: underline;">Return to Homepage</a></p>
             </div>`;
     },
+    // --- STEP 2: THE NEW TARGET GRADE MENU ---
+    showDifficultyMenu(groupId) {
+        let diffButtons = '';
+        
+        if (this.state.tier === 'gcse') {
+            diffButtons = `
+                <button class="menu-btn" onclick="BradleyHub.serveArena('${groupId}', '35')">Grades 3 - 5</button>
+                <button class="menu-btn" onclick="BradleyHub.serveArena('${groupId}', '46')">Grades 4 - 6</button>
+                <button class="menu-btn" onclick="BradleyHub.serveArena('${groupId}', '57')">Grades 5 - 7</button>
+                <button class="menu-btn" onclick="BradleyHub.serveArena('${groupId}', '68')">Grades 6 - 8</button>
+                <button class="menu-btn" onclick="BradleyHub.serveArena('${groupId}', '79')">Grades 7 - 9</button>
+            `;
+        } else {
+            diffButtons = `
+                <button class="menu-btn" onclick="BradleyHub.serveArena('${groupId}', 'EC')">Grades E - C</button>
+                <button class="menu-btn" onclick="BradleyHub.serveArena('${groupId}', 'DB')">Grades D - B</button>
+                <button class="menu-btn" onclick="BradleyHub.serveArena('${groupId}', 'CA')">Grades C - A</button>
+                <button class="menu-btn" onclick="BradleyHub.serveArena('${groupId}', 'BA*')">Grades B - A*</button>
+            `;
+        }
 
-    serveArena(groupId) {
+        document.getElementById('hub-stage').innerHTML = `
+            <div class="info-panel" style="background: white; border: 1px solid #ddd; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                <h3 style="color: var(--brand-purple);">Step 2: Select Target Difficulty</h3>
+                <p>We will tailor the questions to match your target grade.</p>
+                <div class="menu-grid">
+                    <button class="menu-btn random" style="background: linear-gradient(135deg, var(--brand-green), #047857); color: white;" onclick="BradleyHub.serveArena('${groupId}', 'all')">★ Any Difficulty ★</button>
+                    ${diffButtons}
+                </div>
+                <p style="margin-top:30px;">
+                    <button class="btn" style="background: var(--text-muted); color: white !important;" onclick="BradleyHub.renderMenu()">← Back to Topics</button>
+                </p>
+            </div>
+        `;
+    },
+
+ serveArena(groupId, targetDifficulty = 'all') {
         this.state.currentGroup = groupId;
         const today = new Date();
         today.setHours(0,0,0,0);
@@ -412,28 +447,54 @@ const BradleyHub = {
         const group = mapping.find(m => m.id === groupId);
 
         let pool = this.state.masterVault.filter(p => {
-            const unseen = !this.state.seenIds.includes(p.id);
-            const isPast = new Date(p.date) < today;
-            if (groupId === 'all') return unseen && isPast;
+            const unseen = !this.state.correctIds.includes(p.id);
+            const isPast = new Date(p.date) <= today;
             
-            // Check if the problem's major_area OR topic is in the booklet group's areas
+            // --- NEW: THE DIFFICULTY MATCHER ---
+            let diffMatch = true;
+            if (targetDifficulty !== 'all' && p.difficulty) {
+                // This splits "7/8" into ["7", "8"], or "B/A*" into ["B", "A*"]
+                let grades = p.difficulty.replace(/[^A-Za-z0-9*]/g, ' ').split(/\s+/).filter(Boolean);
+                
+                const targetMap = {
+                    '35': ['3', '4', '5'], '46': ['4', '5', '6'], '57': ['5', '6', '7'], '68': ['6', '7', '8'], '79': ['7', '8', '9'],
+                    'EC': ['E', 'D', 'C'], 'DB': ['D', 'C', 'B'], 'CA': ['C', 'B', 'A'], 'BA*': ['B', 'A', 'A*']
+                };
+                
+                const validGrades = targetMap[targetDifficulty] || [];
+                // If any of the question's grades fall into the chosen bucket, it's a match!
+                diffMatch = grades.some(g => validGrades.includes(g));
+            }
+
+            if (groupId === 'all') return unseen && isPast && diffMatch;
+            
             const areaMatch = group.areas.includes(p.major_area) || group.areas.includes(p.topic);
-            return areaMatch && unseen && isPast;
+            return areaMatch && unseen && isPast && diffMatch;
         });
 
+        // What happens if they've answered all questions for that specific grade?
         if (pool.length === 0) {
-            document.getElementById('hub-stage').innerHTML = `<div class="info-panel"><h2>Area Mastered!</h2><button class="btn btn-purple" onclick="BradleyHub.renderMenu()">Return to Menu</button></div>`;
+            document.getElementById('hub-stage').innerHTML = `
+                <div class="info-panel" style="text-align: center;">
+                    <h2>Grade Range Mastered!</h2>
+                    <p>You have successfully answered all available questions for this specific topic and grade level!</p>
+                    <button class="btn btn-purple" style="margin-top: 15px;" onclick="BradleyHub.showDifficultyMenu('${groupId}')">Try Another Grade</button>
+                    <br><br>
+                    <button class="btn" style="background: var(--text-muted); color: white !important;" onclick="BradleyHub.renderMenu()">Return to Main Menu</button>
+                </div>`;
             return;
         }
 
         const prob = pool[Math.floor(Math.random() * pool.length)];
-        // Look up the correct directory for the current tier (GCSE or IGCSE)
+        
         const tierDirectory = this.worksheetDirectory[this.state.tier] || {};
         const specificLink = tierDirectory[prob.subtopic];
+        
+        let finalLink = specificLink ? specificLink : (groupId === 'all' ? prob.payhip_link : group.link);
+        let finalText = specificLink ? `Need practice? Get the ${prob.subtopic} Worksheet` : (groupId === 'all' ? prob.button_text : group.btnText);
 
-        // Fallback gracefully: If there is no specific link (like for IGCSE right now), use the big booklet!
-        const finalLink = specificLink ? specificLink : (groupId === 'all' ? prob.payhip_link : group.link);
-        const finalText = specificLink ? `Need practice? Get the ${prob.subtopic} Worksheet` : (groupId === 'all' ? prob.button_text : group.btnText);
+        if (!finalLink || finalLink === "undefined") finalLink = "https://bradleysmaths.co.uk";
+        if (!finalText || finalText === "undefined") finalText = "Get the Complete Revision Pack";
 
         const stage = document.getElementById('hub-stage');
         stage.innerHTML = '';
