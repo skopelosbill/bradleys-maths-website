@@ -741,7 +741,7 @@ const problemBank = [
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Algebraic Geometry",
-            "content": "This is a classic Cambridge puzzle. Instead of guessing numbers, set it up as a simple linear equation. Furthermore, always make the *exterior* angle your target variable ($x$). Once you know the exterior angle, finding the number of sides is a trivial $360 \\div x$ calculation."
+            "content": "This is a classic Cambridge puzzle. Instead of guessing numbers, set it up as a simple linear equation. Furthermore, always make the <em>>exterior</em>> angle your target variable ($x$). Once you know the exterior angle, finding the number of sides is a trivial $360 \\div x$ calculation."
         },
         "payhip_link": "https://payhip.com/b/InbTp",
         "button_text": "Master IGCSE Coordinate Geometry and Geometry: Download the Extended Pack"
@@ -824,8 +824,8 @@ const problemBank = [
         ],
         "bradley_insight": {
             "type": "deeper",
-            "title": "The Head Teacher's Eye: The Multi-Step Synthesis",
-            "content": "This is a flawless example of a final Paper 4 question. It tests fractions, ratios, and compound interest in one continuous narrative. The key is simply treating it as three separate, 2-mark questions. Do not rush; write down 'Alice = ', 'Remainder = ', and 'Bob = ' explicitly to keep your logic clean."
+            "title": "The Head Teacher's Eye: The Fractional Shortcut",
+            "content": "Working chronologically is safe, but top-tier mathematicians look for structural shortcuts. If Alice takes 2/5, the remainder is 3/5. Bob takes 5 parts out of 9 (5/9) of that remainder. Multiplying the fractions (5/9 × 3/5) simplifies beautifully to 1/3. You can bypass the middle steps entirely: Bob simply gets 1/3 of the total $12,000, which is $4,000! Use this to verify your chronological working."
         },
         "payhip_link": "https://payhip.com/b/Ebcut",
         "button_text": "Master IGCSE Number: Download the Extended Pack"
