@@ -473,7 +473,7 @@ const problemBank = [
             "Expanding the brackets gives $(4n^2 + 4n + 1) - (4n^2 - 4n + 1)$.",
             "By collecting like terms and distributing the negative sign, we simplify the expression to $8n$.",
             "Since $8n$ is clearly a multiple of 8 for any integer $n$, the proof is complete.",
-            "Final Answer: $$8n \text{ is a multiple of 8}$$"
+            "Final Answer: $$8n \\text{ is a multiple of 8}$$"
         ],
         "bradley_insight": {
             "type": "caution",
