@@ -663,5 +663,171 @@ const problemBank = [
         },
         "payhip_link": "https://payhip.com/b/9LFtZ",
         "button_text": "Master IGCSE Number: Download the Extended Pack"
+    },
+    // 25 June
+    {
+        "id": "003176",
+        "date": "25 June 2026",
+        "major_area": "Statistics",
+        "topic": "Data Handling",
+        "subtopic": "Cumulative Frequency Diagrams",
+        "difficulty": "6/7",
+        "img": "true",
+        "q": "The cumulative frequency graph shows information about the heights, $h\\text{ cm}$, of 80 plants.<br>Use the graph to find an estimate for:<br>(a) the median height.<br>(b) the interquartile range.<br>(c) the number of plants with a height greater than $45\\text{ cm}$.",
+        "steps": [
+            "For part (a), the median is the value at half of the total frequency ($80 \\div 2 = 40$). Reading across from 40 on the y-axis down to the x-axis gives $40\\text{ cm}$.",
+            "For part (b), we need the Upper Quartile (UQ) and Lower Quartile (LQ).",
+            "The UQ is at $75\\%$ of the frequency: $0.75 \\times 80 = 60$. Reading across from 60 gives $47\\text{ cm}$.",
+            "The LQ is at $25\\%$ of the frequency: $0.25 \\times 80 = 20$. Reading across from 20 gives $32\\text{ cm}$.",
+            "The Interquartile Range (IQR) is $UQ - LQ = 47 - 32 = 15\\text{ cm}$.",
+            "For part (c), we find $45\\text{ cm}$ on the x-axis and read UP to the curve, then ACROSS to the y-axis. This gives a cumulative frequency of $54$.",
+            "This means 54 plants are $45\\text{ cm}$ or *shorter*. The number of plants *taller* than $45\\text{ cm}$ is $80 - 54 = 26$.",
+            "Final Answer: $$(a)\\ 40\\text{ cm},\\ (b)\\ 15\\text{ cm},\\ (c)\\ 26$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: 'Greater Than' Trap",
+            "content": "In part (c), the graph tells you how many plants are *up to* a certain height. When asked for 'greater than' or 'taller than', you must always remember to subtract your reading from the total frequency (80). Writing down 54 here is one of the most common dropped marks in Paper 4."
+        },
+        "payhip_link": "https://payhip.com/b/NhqEx",
+        "button_text": "Master IGCSE Transformations, Vectors, Probability, and Statistics: Download the Extended Pack"
+    },
+    // 26 June
+    {
+        "id": "003177",
+        "date": "26 June 2026",
+        "major_area": "Algebra",
+        "topic": "Indices",
+        "subtopic": "Indices II",
+        "difficulty": "8/9",
+        "q": "Find the value of $x$ in the equation: $$4^{2x+1} \\times 8^{x-1} = 32$$<br>Show all your algebraic working.",
+        "steps": [
+            "We must express every term in the equation using the same base number. The numbers 4, 8, and 32 are all powers of 2.",
+            "We rewrite the equation as: $(2^2)^{2x+1} \\times (2^3)^{x-1} = 2^5$.",
+            "Using the power law $(a^m)^n = a^{mn}$, we expand the indices: $2^{4x+2} \\times 2^{3x-3} = 2^5$.",
+            "Using the multiplication law $a^m \\times a^n = a^{m+n}$, we add the indices on the left: $2^{(4x+2) + (3x-3)} = 2^5$.",
+            "Simplifying the index gives $2^{7x-1} = 2^5$.",
+            "Since the bases are identical, the indices must be equal. We equate the indices: $7x - 1 = 5$.",
+            "Adding 1 gives $7x = 6$. Dividing by 7 yields the final value for $x$.",
+            "Final Answer: $$x = \\dfrac{6}{7}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Base Equality",
+            "content": "Whenever you see an equation where the large numbers are 2, 4, 8, 16, or 32, immediately convert everything to base 2. Once the bases match, you can completely ignore them and simply solve the linear equation created by the powers. Use brackets when substituting the new base to avoid expansion errors."
+        },
+        "payhip_link": "https://payhip.com/b/0RBC9",
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
+    },
+    // 27 June
+    {
+        "id": "003178",
+        "date": "27 June 2026",
+        "major_area": "Geometry",
+        "topic": "Angles",
+        "subtopic": "Polygons and Circles",
+        "difficulty": "7/8",
+        "q": "The interior angle of a regular polygon is $144^\\circ$ larger than its exterior angle.<br>Calculate the number of sides the polygon has.",
+        "steps": [
+            "We know two fundamental rules about the angles of any regular polygon: Interior + Exterior = $180^\\circ$.",
+            "The question gives us a second relationship: Interior = Exterior + $144^\\circ$.",
+            "Let the exterior angle be $x$. The interior angle is $x + 144$.",
+            "Substituting these into the first rule gives: $(x + 144) + x = 180$.",
+            "Simplifying gives $2x + 144 = 180$. Subtracting 144 yields $2x = 36$.",
+            "Dividing by 2 gives the exterior angle: $x = 18^\\circ$.",
+            "To find the number of sides, we divide $360^\\circ$ by the exterior angle: $360 \\div 18 = 20$.",
+            "Final Answer: $$20\\text{ sides}$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Algebraic Geometry",
+            "content": "This is a classic Cambridge puzzle. Instead of guessing numbers, set it up as a simple linear equation. Furthermore, always make the *exterior* angle your target variable ($x$). Once you know the exterior angle, finding the number of sides is a trivial $360 \\div x$ calculation."
+        },
+        "payhip_link": "https://payhip.com/b/InbTp",
+        "button_text": "Master IGCSE Coordinate Geometry and Geometry: Download the Extended Pack"
+    },
+    // 28 June
+    {
+        "id": "003179",
+        "date": "28 June 2026",
+        "major_area": "Mensuration",
+        "topic": "3D Shapes",
+        "subtopic": "3D Compound Shapes",
+        "difficulty": "8/9",
+        "img": "true",
+        "q": "A solid toy is made by attaching a solid hemisphere to the flat base of a solid right circular cone.<br>The cone and the hemisphere share a common radius of $3\\text{ cm}$.<br>The slant height of the cone is $8\\text{ cm}$.<br>Calculate the total surface area of the toy. Give your answer exactly, in terms of $\\pi$.",
+        "steps": [
+            "The total surface area of the toy consists of the curved surface area of the cone and the curved surface area of the hemisphere. (Note: the flat circular bases are joined together inside the toy, so they are not part of the surface area).",
+            "First, calculate the curved surface area of the cone using the formula $\\pi r l$.",
+            "Calculation: $\\pi \\times 3 \\times 8 = 24\\pi\\text{ cm}^2$.",
+            "Next, calculate the curved surface area of the hemisphere. The surface area of a full sphere is $4\\pi r^2$, so a hemisphere is $2\\pi r^2$.",
+            "Calculation: $2 \\times \\pi \\times 3^2 = 18\\pi\\text{ cm}^2$.",
+            "We sum these two areas to find the total surface area of the toy.",
+            "Calculation: $24\\pi + 18\\pi = 42\\pi$.",
+            "Final Answer: $$42\\pi\\text{ cm}^2$$"
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Internal Faces",
+            "content": "A very common error when dealing with compound 3D solids is blindly applying the 'Total Surface Area' formula for both shapes. Because the flat faces are glued together, they are 'inside' the object and cannot be touched. You must only calculate the outer curved components."
+        },
+        "payhip_link": "https://payhip.com/b/Y6gsh",
+        "button_text": "Master IGCSE Mensuration and Trigonometry: Download the Extended Pack"
+    },
+    // 29 June
+    {
+        "id": "003180",
+        "date": "29 June 2026",
+        "major_area": "Algebra",
+        "topic": "Quadratics",
+        "subtopic": "Completing the Square",
+        "difficulty": "A*",
+        "q": "(a) Express $2x^2 - 12x + 23$ in the form $a(x - h)^2 + k$, where $a, h,$ and $k$ are constants.<br>(b) Hence, write down the coordinates of the minimum point of the curve $y = 2x^2 - 12x + 23$.",
+        "steps": [
+            "For part (a), we first factorise the coefficient of $x^2$ out of the $x$ terms only: $2(x^2 - 6x) + 23$.",
+            "We complete the square for the expression inside the bracket. Half of $-6$ is $-3$, so we use $(x - 3)^2 - (-3)^2$.",
+            "Substituting this back: $2[(x - 3)^2 - 9] + 23$.",
+            "We expand the outer bracket, ensuring we multiply the $-9$ by $2$: $2(x - 3)^2 - 18 + 23$.",
+            "Simplifying the constants gives $2(x - 3)^2 + 5$.",
+            "For part (b), an expression in the form $a(x - h)^2 + k$ has its minimum point at $(h, k)$.",
+            "The bracket is $(x - 3)$, meaning the $x$-coordinate is $+3$. The constant is $+5$, meaning the $y$-coordinate is $5$.",
+            "Final Answer: $$(a)\\ 2(x - 3)^2 + 5,\\ (b)\\ (3, 5)$$"
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Non-Monic Completion",
+            "content": "Completing the square when $a > 1$ is arguably the hardest purely algebraic skill on the syllabus. Factoring out the '2' from the $x$ terms but leaving the constant (+23) alone on the outside is the safest way to avoid arithmetic disasters during the final expansion step."
+        },
+        "payhip_link": "https://payhip.com/b/NTGZX",
+        "button_text": "Master IGCSE Algebra: Download the Extended Pack"
+    },
+    // 30 June
+    {
+        "id": "003181",
+        "date": "30 June 2026",
+        "major_area": "Number",
+        "topic": "Mixed Applications",
+        "subtopic": "Fractions, Decimals, Percentages",
+        "difficulty": "8/9",
+        "q": "A sum of $\\$12,000$ is shared between Alice, Bob and Charlie.<br>Alice receives $\\dfrac{2}{5}$ of the money.<br>The remainder is shared between Bob and Charlie in the ratio $5 : 4$.<br>Bob invests his entire share in an account paying $3.2\\%$ per year compound interest.<br>Calculate the total value of Bob's investment after 4 years. Give your answer to the nearest dollar.",
+        "steps": [
+            "First, calculate Alice's share: $\\dfrac{2}{5} \\times 12000 = \\$4800$.",
+            "Calculate the remainder left for Bob and Charlie: $12000 - 4800 = \\$7200$.",
+            "The remainder is shared in the ratio $5 : 4$. The total number of parts is $5 + 4 = 9$.",
+            "The value of one part is $7200 \\div 9 = \\$800$.",
+            "Bob receives 5 parts. Bob's share $= 5 \\times 800 = \\$4000$.",
+            "We now calculate Bob's compound interest. The multiplier for a $3.2\\%$ increase is $1.032$.",
+            "The formula is $4000 \\times (1.032)^4$.",
+            "Calculation: $4000 \\times 1.13427... = 4537.09...$",
+            "Rounding to the nearest dollar gives $\\$4537$.",
+            "Final Answer: $$\\$4537$$"
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: The Multi-Step Synthesis",
+            "content": "This is a flawless example of a final Paper 4 question. It tests fractions, ratios, and compound interest in one continuous narrative. The key is simply treating it as three separate, 2-mark questions. Do not rush; write down 'Alice = ', 'Remainder = ', and 'Bob = ' explicitly to keep your logic clean."
+        },
+        "payhip_link": "https://payhip.com/b/Ebcut",
+        "button_text": "Master IGCSE Number: Download the Extended Pack"
     }
 ]
