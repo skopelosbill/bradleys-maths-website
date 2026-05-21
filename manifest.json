@@ -1,0 +1,21 @@
+{
+  "name": "Bradley's Maths Revision Hub",
+  "short_name": "Maths Hub",
+  "description": "Interactive GCSE and IGCSE Higher Tier Maths Revision.",
+  "start_url": "/unified-revision-hub.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#5C2092",
+  "icons": [
+    {
+      "src": "images/app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

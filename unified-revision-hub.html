@@ -22,6 +22,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- PWA App Links -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#5C2092">
+    <link rel="apple-touch-icon" href="/images/app-icon-192.png">
+
     <!-- DEFAULTS (will be replaced by overrides if present) -->
     <title>Bradley's Maths</title>
     <meta name="description" content="Higher Tier GCSE & IGCSE Maths resources. Worksheets, model answers, and predicted papers.">
@@ -173,6 +178,17 @@
         }
       });
     </script>
-
+    <!-- Register Service Worker for PWA -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').then(reg => {
+            console.log('App ready for download!', reg.scope);
+          }).catch(err => {
+            console.error('App download registration failed:', err);
+          });
+        });
+      }
+    </script>
 </body>
 </html>
