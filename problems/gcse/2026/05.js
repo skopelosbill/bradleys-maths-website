@@ -498,7 +498,7 @@ const problemBank = [
             "The distance from the center of the square base to the midpoint of a 10 cm side is exactly 5 cm.",
             "We apply Pythagoras' Theorem: $s^2 = 12^2 + 5^2$.",
             "Calculating the result gives $s^2 = 144 + 25 = 169$. Taking the square root gives the final slant height.",
-            "Final Answer: $$13\text{ cm}$$"
+            "Final Answer: $$13\\text{ cm}$$"
         ],
         "bradley_insight": {
             "type": "pro-tip",
