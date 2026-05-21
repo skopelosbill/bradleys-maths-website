@@ -4,9 +4,12 @@ const BradleyHub = {
         tier: localStorage.getItem('bradley_tier') || 'gcse',
         seenIds: JSON.parse(localStorage.getItem('bradley_seen_ids') || '[]'),
         correctIds: JSON.parse(localStorage.getItem('bradley_correct_ids') || '[]'),
+        // --- NEW: PAYWALL TRACKING ---
+        freeQuestionsLeft: localStorage.getItem('bradley_free_left') !== null ? parseInt(localStorage.getItem('bradley_free_left')) : 20,
+        isPremium: localStorage.getItem('bradley_premium') === 'true',
         masterVault: [],
-        activeMonths: ['01', '02', '03', '04', '05','06'],
-        currentGroup: null, // We now track the "Group" (Booklet) instead of just topic
+        activeMonths: ['01', '02', '03', '04', '05', '06'], // (Make sure 06 is in here now!)
+        currentGroup: null, 
         isTeacherMode: false
     },
     // AUTOMATIC WORKSHEET LOOKUP DIRECTORY (Separated by Tier)
@@ -363,6 +366,9 @@ const BradleyHub = {
                <div style="width: 100%; background: #ddd; height: 10px; border-radius: 5px; margin-top: 5px;">
                    <div style="width: ${(score/nextTarget)*100}%; background: var(--brand-purple); height: 100%; border-radius: 5px; transition: width 0.5s;"></div>
                </div>`;
+        let premiumStatus = this.state.isPremium 
+            ? `<div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(0,0,0,0.1); font-weight: bold; color: #059669;">🔓 Premium Access Unlocked</div>`
+            : `<div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(0,0,0,0.1); font-weight: bold; color: #d97706;">⏳ Free Trial: ${this.state.freeQuestionsLeft} Questions Remaining</div>`;
 
         // Exam Countdown Logic
         const today = new Date();
@@ -392,6 +398,7 @@ const BradleyHub = {
                 <div class="hub-stats" style="background: var(--brand-green-light); padding: 20px; border-radius: 8px; margin-bottom: 25px; border: 2px solid var(--brand-green);">
                     <h3 style="margin: 0 0 10px 0; color: var(--brand-purple-dark);">Your Revision Rank: ${rank}</h3>
                     ${progressHTML}
+                    ${premiumStatus}
                 </div>
 
                 <h3 style="color: var(--brand-purple);">Step 1: Choose an Area</h3>
@@ -422,7 +429,7 @@ const BradleyHub = {
                 <button class="menu-btn" onclick="BradleyHub.serveArena('${groupId}', 'BA*')">Grades B - A*</button>
             `;
         }
-
+        
         document.getElementById('hub-stage').innerHTML = `
             <div class="info-panel" style="background: white; border: 1px solid #ddd; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
                 <h3 style="color: var(--brand-purple);">Step 2: Select Target Difficulty</h3>
@@ -437,9 +444,63 @@ const BradleyHub = {
             </div>
         `;
     },
+// --- PAYWALL & UNLOCK LOGIC ---
+    renderPaywall() {
+        document.getElementById('hub-stage').innerHTML = `
+            <div class="info-panel" style="background: white; border: 3px solid #d9534f; text-align: center; box-shadow: 0 8px 15px rgba(0,0,0,0.1); padding: 30px; border-radius: 12px;">
+                <h2 style="color: #d9534f; font-size: 2.2rem; margin-bottom: 10px;">Free Trial Complete!</h2>
+                <p style="font-size: 1.1rem; color: #555; margin-bottom: 25px; line-height: 1.6;">
+                    You have answered all 20 free questions.<br>To continue your revision, keep ranking up, and access all 360+ exam-standard questions, unlock Premium today.
+                </p>
+                
+                <!-- UPDATE THIS LINK WITH YOUR NEW £9.99 PAYHIP PRODUCT -->
+                <a href="https://payhip.com/b/7mDNy" target="_blank" class="btn btn-purple" style="font-size: 1.2rem; padding: 15px 30px; display: inline-block; margin-bottom: 25px; background: linear-gradient(135deg, var(--brand-purple), var(--brand-purple-dark)); color: white; text-decoration: none; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                    Unlock the Full Database for £9.99
+                </a>
+                
+                <hr style="border: 0; height: 1px; background: #eee; margin-bottom: 20px;">
+                
+                <p style="font-size: 0.95rem; color: #666; margin-bottom: 10px;">Already purchased? Check your email receipt for your Secret Access Code.</p>
+                
+                <div style="margin-top: 10px; padding: 20px; background: #f8f9fa; border-radius: 8px; display: inline-block; border: 1px solid #ddd;">
+                    <input type="text" id="access-code-input" placeholder="Enter Access Code" style="padding: 10px; font-size: 1rem; border: 1px solid #ccc; border-radius: 4px; width: 220px; text-transform: uppercase;">
+                    <button class="btn" style="background: var(--brand-green); color: white; padding: 10px 20px; font-size: 1rem; border: none; border-radius: 4px; cursor: pointer; margin-left: 10px; font-weight: bold;" onclick="BradleyHub.checkPasscode()">Unlock</button>
+                    <div id="passcode-feedback" style="color: #d9534f; margin-top: 10px; font-weight: bold; display: none;">Invalid Code. Please try again or check your receipt.</div>
+                </div>
 
+                <div style="margin-top: 30px;">
+                    <button class="btn" style="background: white; color: var(--text-muted); border: 1px solid #ccc;" onclick="BradleyHub.renderMenu()">← Back to Main Menu</button>
+                </div>
+            </div>
+        `;
+    },
+
+    checkPasscode() {
+        const input = document.getElementById('access-code-input').value.trim().toUpperCase();
+        const feedback = document.getElementById('passcode-feedback');
+        
+        // THE SECRET CODE
+        if (input === 'BRADLEY-ELITE-2026') {
+            this.state.isPremium = true;
+            localStorage.setItem('bradley_premium', 'true');
+            
+            // Give them back an infinite supply just in case!
+            this.state.freeQuestionsLeft = 9999; 
+            localStorage.setItem('bradley_free_left', '9999');
+            
+            // Reload the menu to show off their new unlocked status!
+            this.renderMenu(); 
+        } else {
+            feedback.style.display = 'block';
+        }
+    },
  serveArena(groupId, targetDifficulty = 'all') {
         this.state.currentGroup = groupId;
+        // --- NEW: PAYWALL INTERCEPTOR ---
+        if (!this.state.isPremium && this.state.freeQuestionsLeft <= 0) {
+            this.renderPaywall();
+            return;
+        }
         const today = new Date();
         today.setHours(0,0,0,0);
         
@@ -756,15 +817,21 @@ const BradleyHub = {
         if (opts) opts.style.display = 'block';
         if (act) act.style.display = 'none';
     },
-    // --- REVEAL SOLUTION
     revealSolution(id, isAudit) {
         const sol = document.getElementById(`sol-${id}`);
         const act = document.getElementById(`action-area-${id}`);
         if (sol) sol.style.display = 'block';
         if (act) act.style.display = 'none';
+        
         if (!isAudit && !this.state.seenIds.includes(id)) {
             this.state.seenIds.push(id);
             localStorage.setItem('bradley_seen_ids', JSON.stringify(this.state.seenIds));
+            
+            // --- NEW: TICK DOWN THE FREE TRIAL ---
+            if (!this.state.isPremium) {
+                this.state.freeQuestionsLeft--;
+                localStorage.setItem('bradley_free_left', this.state.freeQuestionsLeft.toString());
+            }
         }
         if (window.MathJax) MathJax.typesetPromise();
     },
