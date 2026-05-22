@@ -1,6 +1,6 @@
 
    const problemBank = [
-    // 1 February
+   // 1 February
     {
         "id": "002009",
         "date": "1 February 2026",
@@ -16,6 +16,20 @@
             "For part (b), we divide our result from part (a) by 2: $\\dfrac{14 + 6\\sqrt{5}}{2}$.",
             "Dividing both terms by 2 gives the final simplified form.",
             "Final Answer: $$(a)\\ 14 + 6\\sqrt{5},\\ (b)\\ 7 + 3\\sqrt{5}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "(a) 14, (b) 7",
+                "feedback": "You calculated $3^2 + (\\sqrt{5})^2 = 9 + 5 = 14$. This is a classic error! You must write out the brackets twice $(3+\\sqrt{5})(3+\\sqrt{5})$ and expand using FOIL to get the middle terms."
+            },
+            {
+                "ans": "(a) 14 + 6\\sqrt{5}, (b) 14 + 3\\sqrt{5}",
+                "feedback": "You expanded the brackets perfectly, but in part (b) you only divided the surd by 2! When dividing an algebraic expression by a number, you must divide *every* term."
+            },
+            {
+                "ans": "(a) 9 + 5\\sqrt{5}, (b) 4.5 + 2.5\\sqrt{5}",
+                "feedback": "It looks like you multiplied the $3$ and the $\\sqrt{5}$ together but forgot to expand properly. Remember, $(a+b)^2$ is $a^2 + 2ab + b^2$."
+            }
         ],
         "bradley_insight": {
             "type": "caution",
@@ -43,6 +57,20 @@
             "Substituting our values, the minimum point is $(1, -2)$.",
             "Final Answer: $$(a)\\ 3(x - 1)^2 - 2,\\ (b)\\ (1, -2)$$"
         ],
+        "wrong_options": [
+            {
+                "ans": "(a) 3(x - 1)^2 - 1, (b) (1, -1)",
+                "feedback": "You completed the square correctly inside the bracket, but forgot to multiply your $-1$ by the $3$ sitting outside the bracket! The $-1$ becomes a $-3$ before adding the $+1$."
+            },
+            {
+                "ans": "(a) 3(x - 1)^2 - 2, (b) (-1, -2)",
+                "feedback": "You completed the square perfectly, but you forgot to invert the sign of the $x$-coordinate for the turning point. The coordinate is the value that makes the bracket equal to zero."
+            },
+            {
+                "ans": "(a) (3x - 1)^2 - 2, (b) (1, -2)",
+                "feedback": "You kept the 3 attached to the $x$ inside the bracket! The correct format requires factorising the $a$ entirely *outside* the completed square: $a(x+b)^2+c$."
+            }
+        ],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Factoring First",
@@ -67,6 +95,20 @@
             "Combining these results gives the tripartite ratio $3 : 6 : 10$.",
             "For part (b), we extract the values for $x$ and $z$ from our combined ratio.",
             "Final Answer: $$(a)\\ 3 : 6 : 10,\\ (b)\\ 3 : 10$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "(a) 1 : 5 : 5, (b) 1 : 5",
+                "feedback": "It looks like you just added the $y$ values together (2+3) instead of finding a common multiple! You must multiply the ratios to make the central variable identical."
+            },
+            {
+                "ans": "(a) 3 : 6 : 5, (b) 3 : 5",
+                "feedback": "You multiplied the first ratio correctly to get $3:6$, but you forgot to multiply the $z$ side of the second ratio! If you double the $y$ to get 6, you must double the $z$ to get 10."
+            },
+            {
+                "ans": "(a) 1 : 6 : 5, (b) 1 : 5",
+                "feedback": "You found the common multiple of 6 for $y$, but forgot to multiply the $x$ and $z$ parts by the same scale factors. A ratio must always be scaled evenly on both sides."
+            }
         ],
         "bradley_insight": {
             "type": "pro-tip",
@@ -93,6 +135,20 @@
             "Rounding to 3 significant figures gives the final result.",
             "Final Answer: $$(a)\\ 2.08,\\ (b)\\ 2.09$$"
         ],
+        "wrong_options": [
+            {
+                "ans": "(a) 2.08, (b) 2.11",
+                "feedback": "You calculated $x_1$ correctly, but in part (b) you substituted $x_0 = 2$ back into the formula instead of using your new $x_1$ value! Iteration means feeding the previous answer back into the machine."
+            },
+            {
+                "ans": "(a) 3, (b) 2.15",
+                "feedback": "It looks like you found the square root instead of the cube root in part (a)! Always check the small number written outside the root symbol."
+            },
+            {
+                "ans": "(a) 2.08, (b) 2.08",
+                "feedback": "You likely rounded your $x_1$ value too early before plugging it back in for $x_2$. Always use the full, unrounded 'ANS' key on your calculator for iterative steps."
+            }
+        ],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Iteration and the ANS Key",
@@ -116,6 +172,20 @@
             "For Bar B: $20 \\div 20 = 1.0$.",
             "For part (b), we compare the frequency densities. Since Bar B has a higher frequency density, it will be the taller bar.",
             "Final Answer: $$(a)\\ A: 0.5, B: 1.0,\\ (b)\\ \\text{Bar B}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "(a) A: 2.0, B: 1.0, (b) Bar A",
+                "feedback": "You calculated Class Width $\\div$ Frequency instead of Frequency $\\div$ Class Width! Frequency is always the numerator when finding Frequency Density."
+            },
+            {
+                "ans": "(a) A: 0.5, B: 0.66, (b) Bar B",
+                "feedback": "For Bar B, you divided by the Upper Bound ($30$) instead of the Class Width ($20$). Width is the difference between the bounds ($30 - 10$)."
+            },
+            {
+                "ans": "(a) A: 50, B: 400, (b) Bar B",
+                "feedback": "It looks like you multiplied the Frequency and the Class Width together. To find Frequency Density, you must divide the frequency by the width."
+            }
         ],
         "bradley_insight": {
             "type": "deeper",
@@ -141,6 +211,20 @@
             "This gives $x = 3$ and $x = -1$.",
             "We substitute these values into $y = x^2$ to find the corresponding $y$-coordinates: if $x = 3, y = 9$; if $x = -1, y = 1$.",
             "Final Answer: $$(3, 9) \\text{ and } (-1, 1)$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "x = 3, x = -1",
+                "feedback": "You found the correct $x$-values, but you didn't finish the question! When asked for coordinates or solving simultaneous equations, you must always substitute back in to find the $y$-values."
+            },
+            {
+                "ans": "(3, 9) and (1, 1)",
+                "feedback": "You correctly factorised to $(x-3)(x+1)$, but you forgot to invert the $+1$ sign to get $x = -1$. Because $(-1)^2$ is also 1, this error can sometimes be hidden in the $y$-value check!"
+            },
+            {
+                "ans": "(3, 9) and (-1, -1)",
+                "feedback": "You calculated $y$ by substituting into $y = x^2$, but you wrote $(-1)^2 = -1$. Remember, a negative number squared is always a positive result!"
+            }
         ],
         "bradley_insight": {
             "type": "pro-tip",
