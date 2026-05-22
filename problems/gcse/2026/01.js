@@ -1,6 +1,4 @@
 const problemBank = [
-    // 1 January
-    {
         // 1 January
     {
         "id": "001001",
