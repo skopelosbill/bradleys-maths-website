@@ -663,8 +663,8 @@ const BradleyHub = {
         distractors.push(d1, d2, d3);
         return [...new Set(distractors)];
     },
-   // --- THE ANSWER CHECKER ---
-    checkAnswer(probId, isCorrect, isNoneOfAbove) {
+  // --- THE ANSWER CHECKER ---
+    checkAnswer(probId, isCorrect, feedbackHTML) {
         const feedbackBox = document.getElementById(`feedback-${probId}`);
         const optionsBox = document.getElementById(`options-${probId}`);
         if (!feedbackBox) return;
@@ -674,16 +674,13 @@ const BradleyHub = {
         let justLeveledUp = false;
         let rankName = "";
         
-        // Helper to calculate the score for their current tier
         const getScore = () => this.state.correctIds.filter(id => (this.state.tier === 'gcse' ? id.startsWith('002') : id.startsWith('003'))).length;
 
         if (isCorrect) {
-            // Add to Score if they haven't already solved this exact question
             if (!this.state.correctIds.includes(probId)) {
                 this.state.correctIds.push(probId);
                 localStorage.setItem('bradley_correct_ids', JSON.stringify(this.state.correctIds));
                 
-                // Check if this exact answer triggered a Level Up
                 let newScore = getScore();
                 if (newScore === 5) { justLeveledUp = true; rankName = "Grade 5 Challenger"; }
                 else if (newScore === 15) { justLeveledUp = true; rankName = "Grade 6 Scholar"; }
@@ -692,8 +689,6 @@ const BradleyHub = {
             }
 
             let currentScore = getScore();
-
-            // Build the dynamic success message
             let extraMessage = `<br><div style="margin-top: 10px; font-size: 0.95rem; color: #047857;">⭐ <strong>Current Score:</strong> ${currentScore} correct answers!</div>`;
             if (justLeveledUp) {
                 extraMessage += `<div style="margin-top: 5px; font-size: 1.15rem; color: #059669; font-weight: bold; text-transform: uppercase;">🎉 LEVEL UP! You are now a ${rankName}! 🎉</div>`;
@@ -702,46 +697,73 @@ const BradleyHub = {
             feedbackBox.style.background = "#d1fae5";
             feedbackBox.style.color = "#065f46";
             feedbackBox.style.border = "1px solid #34d399";
-            feedbackBox.innerHTML = `<strong>Correct!</strong> Outstanding work. Here is the fully worked solution:${extraMessage}`;
+            // Uses the correct feedback passed from the button
+            feedbackBox.innerHTML = feedbackHTML + extraMessage;
         
         } else {
-            // Even if they get it wrong, remind them of their score to keep them motivated
             let currentScore = getScore();
             let extraMessage = `<br><div style="margin-top: 10px; font-size: 0.95rem; color: #991b1b;">⭐ <strong>Current Score:</strong> ${currentScore} correct answers. Keep going!</div>`;
 
             feedbackBox.style.background = "#fee2e2";
             feedbackBox.style.color = "#991b1b";
             feedbackBox.style.border = "1px solid #f87171";
-            
-            if (isNoneOfAbove) {
-                feedbackBox.innerHTML = `<strong>Not quite!</strong> The correct answer was actually staring you in the face! Check the model answer below.${extraMessage}`;
-            } else {
-                feedbackBox.innerHTML = `<strong>Not quite.</strong> Don't worry, review the model answer below to see where you went wrong!${extraMessage}`;
-            }
+            // Uses the specific diagnostic feedback passed from the button
+            feedbackBox.innerHTML = feedbackHTML + extraMessage;
         }
 
         if (optionsBox) optionsBox.style.display = "none";
         this.revealSolution(probId, false);
     },
 
-  // --- INTERACTIVE CARD GENERATOR  ---
+    // --- INTERACTIVE CARD GENERATOR ---
     createInteractiveCard(prob, link, btnText) {
         const card = document.createElement('div');
         card.className = 'daily-widget';
 
         const finalStep = prob.steps[prob.steps.length - 1];
         const correct = this.extractFinalAnswer(finalStep);
-        const distractors = this.generateDistractors(correct, prob);
 
-        const optionsToShuffle = [correct, ...distractors];
-        
-        // TRUE RANDOM SHUFFLE ALGORITHM (Fisher-Yates)
-        for (let i = optionsToShuffle.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));[optionsToShuffle[i], optionsToShuffle[j]] = [optionsToShuffle[j], optionsToShuffle[i]];
+        // Build options array as Objects containing the answer and the specific feedback
+        let optionsObj = [];
+        optionsObj.push({ 
+            text: correct, 
+            isCorrect: true, 
+            feedback: `<strong>Correct!</strong> Outstanding work. Here is the fully worked solution:` 
+        });
+
+        // If we have written diagnostic options for this question, use them!
+        if (prob.wrong_options && prob.wrong_options.length > 0) {
+            prob.wrong_options.forEach(wo => {
+                optionsObj.push({ 
+                    text: wo.ans, 
+                    isCorrect: false, 
+                    feedback: `<strong>Not quite!</strong> ${wo.feedback}` 
+                });
+            });
+        } else {
+            // Fallback for older questions not yet updated
+            const distractors = this.generateDistractors(correct, prob);
+            distractors.forEach(d => {
+                optionsObj.push({ 
+                    text: d, 
+                    isCorrect: false, 
+                    feedback: `<strong>Not quite.</strong> Don't worry, review the model answer below to see where you went wrong!` 
+                });
+            });
+        }
+
+        // TRUE RANDOM SHUFFLE ALGORITHM for the generated options
+        for (let i = optionsObj.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [optionsObj[i], optionsObj[j]] = [optionsObj[j], optionsObj[i]];
         }
         
-        const shuffled = optionsToShuffle;
-        shuffled.push("None of the above");
+        // Pin "None of the above" to the bottom
+        optionsObj.push({ 
+            text: "None of the above", 
+            isCorrect: false, 
+            feedback: `<strong>Not quite!</strong> The correct answer was actually staring you in the face! Check the model answer below to see how to get there.` 
+        });
 
         let imgHTML = '';
         if (prob.img === "true") {
@@ -752,14 +774,12 @@ const BradleyHub = {
             imgHTML = `<img src="images/${mm}/${t}_${dd}.png" class="question-img" style="margin: 20px auto; display: block;">`;
         }
 
-        // BUTTON FALLBACK LOGIC
         const tierDirectory = this.worksheetDirectory[this.state.tier] || {};
         const specificLink = tierDirectory[prob.subtopic];
         
         let finalLink = specificLink ? specificLink : (this.state.currentGroup === 'all' ? prob.payhip_link : link);
         let finalText = specificLink ? `Need practice? Get the ${prob.subtopic} Worksheet` : (this.state.currentGroup === 'all' ? prob.button_text : btnText);
 
-        // Ultimate Failsafe if Data is Missing
         if (!finalLink || finalLink === "undefined") finalLink = "https://bradleysmaths.co.uk";
         if (!finalText || finalText === "undefined") finalText = "Get the Complete Revision Pack";
 
@@ -775,14 +795,13 @@ const BradleyHub = {
             <div id="options-${prob.id}" class="mcq-options" style="display:none; margin-top: 20px;">
                 <p style="margin-bottom: 15px; font-weight: bold; color: var(--brand-purple); text-align: center;">Select your answer:</p>
                 <div style="display: flex; flex-direction: column; gap: 8px; align-items: center;">
-                    ${shuffled.map(opt => {
-                        // Determine if it's correct BEFORE creating the button logic!
-                        const isOptCorrect = (opt === correct);
-                        const isNone = (opt === "None of the above");
+                    ${optionsObj.map(opt => {
+                        // Safely escape quotes to prevent breaking the HTML onclick handler
+                        const safeFeedback = opt.feedback.replace(/'/g, "\\'").replace(/"/g, "&quot;");
                         return `
                         <button class="mcq-btn" style="width: 100%; max-width: 400px; padding: 12px; font-size: 1rem; border: 1px solid var(--brand-purple); border-radius: 6px; background: white; cursor: pointer;" 
-                                onclick="BradleyHub.checkAnswer('${prob.id}', ${isOptCorrect}, ${isNone})">
-                            ${opt}
+                                onclick="BradleyHub.checkAnswer('${prob.id}', ${opt.isCorrect}, '${safeFeedback}')">
+                            ${opt.text}
                         </button>`
                     }).join('')}
                 </div>
