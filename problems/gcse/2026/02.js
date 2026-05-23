@@ -15,19 +15,19 @@
             "Collecting like terms yields $14 + 6\\sqrt{5}$.",
             "For part (b), we divide our result from part (a) by 2: $\\dfrac{14 + 6\\sqrt{5}}{2}$.",
             "Dividing both terms by 2 gives the final simplified form.",
-            "Final Answer: $$(a)\\ 14 + 6\\sqrt{5},\\ (b)\\ 7 + 3\\sqrt{5}$$"
+            "Final Answer: $$\\text{(a) } 14 + 6\\sqrt{5}, \\text{ (b) } 7 + 3\\sqrt{5}$$"
         ],
         "wrong_options": [
             {
-                "ans": "(a) 14, (b) 7",
+                "ans": "$$\\text{(a) } 14, \\text{ (b) } 7$$",
                 "feedback": "You calculated $3^2 + (\\sqrt{5})^2 = 9 + 5 = 14$. This is a classic error! You must write out the brackets twice $(3+\\sqrt{5})(3+\\sqrt{5})$ and expand using FOIL to get the middle terms."
             },
             {
-                "ans": "(a) 14 + 6\\sqrt{5}, (b) 14 + 3\\sqrt{5}",
+                "ans": "$$\\text{(a) } 14 + 6\\sqrt{5}, \\text{ (b) } 14 + 3\\sqrt{5}$$",
                 "feedback": "You expanded the brackets perfectly, but in part (b) you only divided the surd by 2! When dividing an algebraic expression by a number, you must divide *every* term."
             },
             {
-                "ans": "(a) 9 + 5\\sqrt{5}, (b) 4.5 + 2.5\\sqrt{5}",
+                "ans": "$$\\text{(a) } 9 + 5\\sqrt{5}, \\text{ (b) } 4.5 + 2.5\\sqrt{5}$$",
                 "feedback": "It looks like you multiplied the $3$ and the $\\sqrt{5}$ together but forgot to expand properly. Remember, $(a+b)^2$ is $a^2 + 2ab + b^2$."
             }
         ],
@@ -55,19 +55,19 @@
             "Distributing the 3 gives $3(x - 1)^2 - 3 + 1$, which simplifies to $3(x - 1)^2 - 2$.",
             "For part (b), the minimum point of $y = a(x + b)^2 + c$ is located at $(-b, c)$.",
             "Substituting our values, the minimum point is $(1, -2)$.",
-            "Final Answer: $$(a)\\ 3(x - 1)^2 - 2,\\ (b)\\ (1, -2)$$"
+            "Final Answer: $$\\text{(a) } 3(x - 1)^2 - 2, \\text{ (b) } (1, -2)$$"
         ],
         "wrong_options": [
             {
-                "ans": "(a) 3(x - 1)^2 - 1, (b) (1, -1)",
+                "ans": "$$\\text{(a) } 3(x - 1)^2 - 1, \\text{ (b) } (1, -1)$$",
                 "feedback": "You completed the square correctly inside the bracket, but forgot to multiply your $-1$ by the $3$ sitting outside the bracket! The $-1$ becomes a $-3$ before adding the $+1$."
             },
             {
-                "ans": "(a) 3(x - 1)^2 - 2, (b) (-1, -2)",
+                "ans": "$$\\text{(a) } 3(x - 1)^2 - 2, \\text{ (b) } (-1, -2)$$",
                 "feedback": "You completed the square perfectly, but you forgot to invert the sign of the $x$-coordinate for the turning point. The coordinate is the value that makes the bracket equal to zero."
             },
             {
-                "ans": "(a) (3x - 1)^2 - 2, (b) (1, -2)",
+                "ans": "$$\\text{(a) } (3x - 1)^2 - 2, \\text{ (b) } (1, -2)$$",
                 "feedback": "You kept the 3 attached to the $x$ inside the bracket! The correct format requires factorising the $a$ entirely *outside* the completed square: $a(x+b)^2+c$."
             }
         ],
@@ -94,19 +94,19 @@
             "We scale the second ratio by 2: $y : z = 6 : 10$.",
             "Combining these results gives the tripartite ratio $3 : 6 : 10$.",
             "For part (b), we extract the values for $x$ and $z$ from our combined ratio.",
-            "Final Answer: $$(a)\\ 3 : 6 : 10,\\ (b)\\ 3 : 10$$"
+            "Final Answer: $$\\text{(a) } 3 : 6 : 10, \\text{ (b) } 3 : 10$$"
         ],
         "wrong_options": [
             {
-                "ans": "(a) 1 : 5 : 5, (b) 1 : 5",
+                "ans": "$$\\text{(a) } 1 : 5 : 5, \\text{ (b) } 1 : 5$$",
                 "feedback": "It looks like you just added the $y$ values together (2+3) instead of finding a common multiple! You must multiply the ratios to make the central variable identical."
             },
             {
-                "ans": "(a) 3 : 6 : 5, (b) 3 : 5",
+                "ans": "$$\\text{(a) } 3 : 6 : 5, \\text{ (b) } 3 : 5$$",
                 "feedback": "You multiplied the first ratio correctly to get $3:6$, but you forgot to multiply the $z$ side of the second ratio! If you double the $y$ to get 6, you must double the $z$ to get 10."
             },
             {
-                "ans": "(a) 1 : 6 : 5, (b) 1 : 5",
+                "ans": "$$\\text{(a) } 1 : 6 : 5, \\text{ (b) } 1 : 5$$",
                 "feedback": "You found the common multiple of 6 for $y$, but forgot to multiply the $x$ and $z$ parts by the same scale factors. A ratio must always be scaled evenly on both sides."
             }
         ],
@@ -133,19 +133,19 @@
             "For part (b), we substitute $x_1$ back into the formula: $x_2 = \\sqrt[3]{2.08008... + 7}$.",
             "Calculation: $x_2 = \\sqrt[3]{9.08008...} \\approx 2.0862...$.",
             "Rounding to 3 significant figures gives the final result.",
-            "Final Answer: $$(a)\\ 2.08,\\ (b)\\ 2.09$$"
+            "Final Answer: $$\\text{(a) } 2.08, \\text{ (b) } 2.09$$"
         ],
         "wrong_options": [
             {
-                "ans": "(a) 2.08, (b) 2.11",
+                "ans": "$$\\text{(a) } 2.08, \\text{ (b) } 2.11$$",
                 "feedback": "You calculated $x_1$ correctly, but in part (b) you substituted $x_0 = 2$ back into the formula instead of using your new $x_1$ value! Iteration means feeding the previous answer back into the machine."
             },
             {
-                "ans": "(a) 3, (b) 2.15",
+                "ans": "$$\\text{(a) } 3, \\text{ (b) } 2.15$$",
                 "feedback": "It looks like you found the square root instead of the cube root in part (a)! Always check the small number written outside the root symbol."
             },
             {
-                "ans": "(a) 2.08, (b) 2.08",
+                "ans": "$$\\text{(a) } 2.08, \\text{ (b) } 2.08$$",
                 "feedback": "You likely rounded your $x_1$ value too early before plugging it back in for $x_2$. Always use the full, unrounded 'ANS' key on your calculator for iterative steps."
             }
         ],
@@ -171,19 +171,19 @@
             "For Bar A: $5 \\div 10 = 0.5$.",
             "For Bar B: $20 \\div 20 = 1.0$.",
             "For part (b), we compare the frequency densities. Since Bar B has a higher frequency density, it will be the taller bar.",
-            "Final Answer: $$(a)\\ A: 0.5, B: 1.0,\\ (b)\\ \\text{Bar B}$$"
+            "Final Answer: $$\\text{(a) A: } 0.5\\text{, B: } 1.0, \\text{ (b) Bar B}$$"
         ],
         "wrong_options": [
             {
-                "ans": "(a) A: 2.0, B: 1.0, (b) Bar A",
+                "ans": "$$\\text{(a) A: } 2.0\\text{, B: } 1.0, \\text{ (b) Bar A}$$",
                 "feedback": "You calculated Class Width $\\div$ Frequency instead of Frequency $\\div$ Class Width! Frequency is always the numerator when finding Frequency Density."
             },
             {
-                "ans": "(a) A: 0.5, B: 0.66, (b) Bar B",
+                "ans": "$$\\text{(a) A: } 0.5\\text{, B: } 0.67, \\text{ (b) Bar B}$$",
                 "feedback": "For Bar B, you divided by the Upper Bound ($30$) instead of the Class Width ($20$). Width is the difference between the bounds ($30 - 10$)."
             },
             {
-                "ans": "(a) A: 50, B: 400, (b) Bar B",
+                "ans": "$$\\text{(a) A: } 50\\text{, B: } 400, \\text{ (b) Bar B}$$",
                 "feedback": "It looks like you multiplied the Frequency and the Class Width together. To find Frequency Density, you must divide the frequency by the width."
             }
         ],
@@ -214,15 +214,15 @@
         ],
         "wrong_options": [
             {
-                "ans": "x = 3, x = -1",
+                "ans": "$$x = 3, x = -1$$",
                 "feedback": "You found the correct $x$-values, but you didn't finish the question! When asked for coordinates or solving simultaneous equations, you must always substitute back in to find the $y$-values."
             },
             {
-                "ans": "(3, 9) and (1, 1)",
+                "ans": "$$(3, 9) \\text{ and } (1, 1)$$",
                 "feedback": "You correctly factorised to $(x-3)(x+1)$, but you forgot to invert the $+1$ sign to get $x = -1$. Because $(-1)^2$ is also 1, this error can sometimes be hidden in the $y$-value check!"
             },
             {
-                "ans": "(3, 9) and (-1, -1)",
+                "ans": "$$(3, 9) \\text{ and } (-1, -1)$$",
                 "feedback": "You calculated $y$ by substituting into $y = x^2$, but you wrote $(-1)^2 = -1$. Remember, a negative number squared is always a positive result!"
             }
         ],
@@ -233,8 +233,8 @@
         },
         "payhip_link": "https://payhip.com/b/wRN86",
         "button_text": "Master Algebra: Download the Full Algebra Pack"
-    },
-    // 7 February
+    },    
+   // 7 February
     {
         "id": "002015",
         "date": "7 February 2026",
@@ -249,7 +249,21 @@
             "Calculation: $£5000 \\times 1.061208 = £5306.04$.",
             "For part (b), the interest earned is the difference between the final value and the original investment.",
             "Calculation: $£5306.04 - £5000 = £306.04$.",
-            "Final Answer: $$(a)\\ £5306.04,\\ (b)\\ £306.04$$"
+            "Final Answer: $$\\text{(a) } £5306.04, \\text{ (b) } £306.04$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) } £5300.00, \\text{ (b) } £300.00$$",
+                "feedback": "You calculated Simple Interest instead of Compound Interest! For compound interest, you must use powers (e.g., $1.02^3$) because you earn interest on top of your interest each year."
+            },
+            {
+                "ans": "$$\\text{(a) } £10368.00, \\text{ (b) } £5368.00$$",
+                "feedback": "Check your decimal multiplier! A $2\\%$ increase is $1.02$. It looks like you used $1.2$, which represents a massive $20\\%$ increase."
+            },
+            {
+                "ans": "$$\\text{(a) } £5306.04, \\text{ (b) } £5306.04$$",
+                "feedback": "You nailed the calculation in part (a), but you just repeated the total value for part (b). 'Interest earned' means you must subtract the original £5000 investment from your final total."
+            }
         ],
         "bradley_insight": {
             "type": "caution",
@@ -259,7 +273,7 @@
         "payhip_link": "https://payhip.com/b/IVWzJ",
         "button_text": "Master Number: Download the Full Number Pack"
     },
-// 8 February
+    // 8 February
     {
         "id": "002016",
         "date": "8 February 2026",
@@ -275,7 +289,21 @@
             "For part (b), we use the formula for the sum of interior angles: $(n - 2) \\times 180^\\circ$.",
             "Substituting $n = 20$: $(20 - 2) \\times 180 = 18 \\times 180$.",
             "Calculation: $3240^\\circ$.",
-            "Final Answer: $$(a)\\ 20\\text{ sides},\\ (b)\\ 3240^\\circ$$"
+            "Final Answer: $$\\text{(a) } 20 \\text{ sides}, \\text{ (b) } 3240^\\circ$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) } 10 \\text{ sides}, \\text{ (b) } 1440^\\circ$$",
+                "feedback": "You divided $180$ by $18$ instead of $360$! The exterior angles of any polygon always sum to exactly $360^\\circ$, not $180^\\circ$."
+            },
+            {
+                "ans": "$$\\text{(a) } 20 \\text{ sides}, \\text{ (b) } 3600^\\circ$$",
+                "feedback": "You found the number of sides correctly, but forgot to subtract 2 in your interior angle formula! The sum is $(n-2) \\times 180$, because a 20-sided polygon can be split into 18 triangles."
+            },
+            {
+                "ans": "$$\\text{(a) } 20 \\text{ sides}, \\text{ (b) } 162^\\circ$$",
+                "feedback": "For part (b), you found the size of ONE interior angle ($180 - 18$). Read the question carefully: it asks for the SUM of all the interior angles!"
+            }
         ],
         "bradley_insight": {
             "type": "pro-tip",
@@ -299,7 +327,21 @@
             "The coefficient $3$ represents the amplitude of the wave, so the maximum value is $3 \\times 1 = 3$.",
             "For part (b), a standard sine wave reaches its first maximum at $90^\\circ$.",
             "The $y$-coordinate at this point is the maximum value we found in part (a).",
-            "Final Answer: $$(a)\\ 3,\\ (b)\\ (90^\\circ, 3)$$"
+            "Final Answer: $$\\text{(a) } 3, \\text{ (b) } (90^\\circ, 3)$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) } 3, \\text{ (b) } (180^\\circ, 3)$$",
+                "feedback": "You got the amplitude right, but $180^\\circ$ is where the sine graph crosses the $x$-axis! A standard sine wave always hits its first peak at $90^\\circ$."
+            },
+            {
+                "ans": "$$\\text{(a) } 3, \\text{ (b) } (0^\\circ, 3)$$",
+                "feedback": "You're thinking of the Cosine graph! The graph of $y = \\cos(x)$ starts at its peak at $0^\\circ$. The Sine graph starts at $0$ and goes up."
+            },
+            {
+                "ans": "$$\\text{(a) } 1, \\text{ (b) } (90^\\circ, 1)$$",
+                "feedback": "You ignored the number $3$ in front of the function! A normal sine wave has a max of 1, but multiplying the function by 3 stretches it vertically (an amplitude of 3)."
+            }
         ],
         "bradley_insight": {
             "type": "deeper",
@@ -324,7 +366,21 @@
             "Calculation: $400 \\div 8 = 50$.",
             "For part (b), we find the increase required: $£50 - £40 = £10$.",
             "We calculate the percentage increase using the sale price as the original: $\\dfrac{10}{40} \\times 100$.",
-            "Final Answer: $$(a)\\ £50,\\ (b)\\ 25\\%$$"
+            "Final Answer: $$\\text{(a) } £50, \\text{ (b) } 25\\%$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) } £48, \\text{ (b) } 20\\%$$",
+                "feedback": "For part (a), you calculated $20\\%$ of £40 and added it on! This is a Reverse Percentage question. You must divide by $0.8$ because the £40 represents $80\\%$ of the original price."
+            },
+            {
+                "ans": "$$\\text{(a) } £50, \\text{ (b) } 20\\%$$",
+                "feedback": "You calculated the original price perfectly, but fell into the percentage trap! To go from £40 back to £50 is an increase of £10. You must calculate that £10 out of the new starting point (£40), which is $25\\%$."
+            },
+            {
+                "ans": "$$\\text{(a) } £32, \\text{ (b) } 25\\%$$",
+                "feedback": "You multiplied £40 by $0.8$ instead of dividing! If a price was reduced in a sale, the original price must be higher than the sale price. Logic-check your answers!"
+            }
         ],
         "bradley_insight": {
             "type": "caution",
@@ -349,7 +405,21 @@
             "Therefore, the transformation is a translation by 2 units to the right.",
             "In formal vector notation, this is $\\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix}$.",
             "For part (b), an external negative sign reflects all $y$-values across the $x$-axis.",
-            "Final Answer: $$(a)\\ \\text{Translation by } \\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix},\\ (b)\\ \\text{Reflection in the } x\\text{-axis}$$"
+            "Final Answer: $$\\text{(a) Translation by } \\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix}, \\text{ (b) Reflection in the } x\\text{-axis}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) Translation by } \\begin{pmatrix} -2 \\\\ 0 \\end{pmatrix}, \\text{ (b) Reflection in the } x\\text{-axis}$$",
+                "feedback": "A very common error! Changes inside the bracket $f(x-a)$ shift the graph in the OPPOSITE direction to the sign. A minus 2 shifts it 2 units to the right (positive $x$ direction)."
+            },
+            {
+                "ans": "$$\\text{(a) Translation by } \\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix}, \\text{ (b) Reflection in the } y\\text{-axis}$$",
+                "feedback": "You translated correctly, but a negative sign OUTSIDE the function ($-f(x)$) negates the $y$-values, which flips the graph upside down across the $x$-axis! A reflection in the $y$-axis would be written as $f(-x)$."
+            },
+            {
+                "ans": "$$\\text{(a) Translation by } \\begin{pmatrix} 0 \\\\ -2 \\end{pmatrix}, \\text{ (b) Reflection in the } x\\text{-axis}$$",
+                "feedback": "Transformations inside the bracket only affect the $x$-axis (horizontal movement). A vertical translation of -2 would be written outside the bracket as $f(x) - 2$."
+            }
         ],
         "bradley_insight": {
             "type": "pro-tip",
@@ -374,7 +444,21 @@
             "For part (b), we set the expression equal to 51 and solve for $n$: $2n^2 + 1 = 51$.",
             "Subtracting 1 gives $2n^2 = 50$, then dividing by 2 gives $n^2 = 25$.",
             "Taking the square root gives $n = 5$. Since 5 is a positive integer, 51 is the $5^{th}$ term of the sequence.",
-            "Final Answer: $$(a)\\ 19,\\ (b)\\ \\text{5th term}$$"
+            "Final Answer: $$\\text{(a) } 19, \\text{ (b) 5th term (} n=5 \\text{)}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) } 37, \\text{ (b) } n=5$$",
+                "feedback": "In part (a), you calculated $(2 \\times 3)^2 + 1 = 37$. Remember BIDMAS! You must square the $n$ value ($3^2 = 9$) before you multiply by the 2."
+            },
+            {
+                "ans": "$$\\text{(a) } 19, \\text{ (b) Yes}$$",
+                "feedback": "You cannot just write 'Yes'! In an exam, 'Show that' means you must provide mathematical proof. You must write out the algebra to prove that $n = 5$."
+            },
+            {
+                "ans": "$$\\text{(a) } 13, \\text{ (b) } n=25$$",
+                "feedback": "In part (a), it looks like you multiplied $2 \\times 3 \\times 2 + 1$. And in part (b), you found $n^2 = 25$ but forgot to take the square root to find the actual term position!"
+            }
         ],
         "bradley_insight": {
             "type": "pro-tip",
@@ -399,7 +483,21 @@
             "Calculation: $5\\text{ g/cm}^3$.",
             "For part (b), we use the density from part (a) and the new volume: $\\text{Mass} = \\text{Density} \\times \\text{Volume}$.",
             "Calculation: $5 \\times 150 = 750\\text{ g}$.",
-            "Final Answer: $$(a)\\ 5\\text{ g/cm}^3,\\ (b)\\ 750\\text{ g}$$"
+            "Final Answer: $$\\text{(a) } 5\\text{ g/cm}^3, \\text{ (b) } 750\\text{ g}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) } 0.005\\text{ g/cm}^3, \\text{ (b) } 0.75\\text{ g}$$",
+                "feedback": "You forgot to convert the units! The question asks for the density in $\\text{g/cm}^3$, but you used the mass as $2\\text{ kg}$ instead of $2000\\text{ g}$."
+            },
+            {
+                "ans": "$$\\text{(a) } 200\\text{ g/cm}^3, \\text{ (b) } 30000\\text{ g}$$",
+                "feedback": "You divided the volume by the mass instead of mass by volume! Look at the units: $\\text{g/cm}^3$ literally translates to 'grams divided by cubic centimeters'."
+            },
+            {
+                "ans": "$$\\text{(a) } 5\\text{ g/cm}^3, \\text{ (b) } 30\\text{ g}$$",
+                "feedback": "In part (b), you divided the volume ($150$) by the density ($5$). To find mass, you must multiply the density by the volume."
+            }
         ],
         "bradley_insight": {
             "type": "caution",
@@ -424,7 +522,21 @@
             "For part (b), a point lies on the circumference if its coordinates satisfy the equation.",
             "We substitute $x = 3$ and $y = 4$ into the equation: $3^2 + 4^2$.",
             "Calculation: $9 + 16 = 25$. Since the result equals $r^2$, the point lies on the circle.",
-            "Final Answer: $$(a)\\ x^2 + y^2 = 25,\\ (b)\\ \\text{Shown}$$"
+            "Final Answer: $$\\text{(a) } x^2 + y^2 = 25, \\text{ (b) Shown}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) } x^2 + y^2 = 5, \\text{ (b) Shown}$$",
+                "feedback": "You forgot to square the radius! The standard equation is $x^2 + y^2 = r^2$. If the radius is 5, the number on the right must be 25."
+            },
+            {
+                "ans": "$$\\text{(a) } x + y = 25, \\text{ (b) Not Shown}$$",
+                "feedback": "The equation of a circle must have squared terms ($x^2 + y^2$). Without the squares, you have just written the equation for a straight line!"
+            },
+            {
+                "ans": "$$\\text{(a) } x^2 + y^2 = 10, \\text{ (b) Shown}$$",
+                "feedback": "You multiplied the radius by 2 instead of squaring it! Remember, $r^2$ means $5 \\times 5$, not $5 \\times 2$."
+            }
         ],
         "bradley_insight": {
             "type": "pro-tip",
@@ -449,7 +561,21 @@
             "Combining these results gives $4 \\times 10^7$.",
             "For part (b), $10^7$ represents a 1 followed by seven zeros.",
             "Calculation: $4 \\times 10,000,000 = 40,000,000$.",
-            "Final Answer: $$(a)\\ 4 \\times 10^7,\\ (b)\\ 40,000,000$$"
+            "Final Answer: $$\\text{(a) } 4 \\times 10^7, \\text{ (b) } 40,000,000$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) } 4 \\times 10^3, \\text{ (b) } 4,000$$",
+                "feedback": "You fell into the negative index trap! When dividing, you subtract the powers. $5 - (-2)$ is the same as $5 + 2$, which gives 7. You simply calculated $5 - 2$."
+            },
+            {
+                "ans": "$$\\text{(a) } 6 \\times 10^7, \\text{ (b) } 60,000,000$$",
+                "feedback": "You handled the powers of 10 correctly, but you subtracted the leading numbers ($8 - 2$) instead of dividing them! Coefficients must be divided."
+            },
+            {
+                "ans": "$$\\text{(a) } 4 \\times 10^{-10}, \\text{ (b) } 0.0000000004$$",
+                "feedback": "It looks like you multiplied the powers together ($5 \\times -2$) instead of subtracting them. Remember the division rule for indices: $a^m \\div a^n = a^{m-n}$."
+            }
         ],
         "bradley_insight": {
             "type": "caution",
@@ -476,7 +602,21 @@
             "For part (b), the formula for the area of a sector is $\\dfrac{\\theta}{360} \\times \\pi r^2$.",
             "Substituting the values: $\\dfrac{1}{6} \\times \\pi \\times 6^2 = \\dfrac{1}{6} \\times 36\\pi$.",
             "Simplifying this gives $6\\pi\\text{ cm}^2$.",
-            "Final Answer: $$(a)\\ 2\\pi\\text{ cm},\\ (b)\\ 6\\pi\\text{ cm}^2$$"
+            "Final Answer: $$\\text{(a) } 2\\pi\\text{ cm}, \\text{ (b) } 6\\pi\\text{ cm}^2$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) } 6\\pi\\text{ cm}, \\text{ (b) } 2\\pi\\text{ cm}^2$$",
+                "feedback": "You swapped the formulas! Arc length is based on the circumference ($2\\pi r$), and sector area is based on the area of a circle ($\\pi r^2$)."
+            },
+            {
+                "ans": "$$\\text{(a) } 12\\pi\\text{ cm}, \\text{ (b) } 36\\pi\\text{ cm}^2$$",
+                "feedback": "You found the circumference and area of the entire circle! You forgot to multiply your answers by the fraction of the circle you actually have ($\\frac{60}{360}$ or $\\frac{1}{6}$)."
+            },
+            {
+                "ans": "$$\\text{(a) } \\pi\\text{ cm}, \\text{ (b) } 6\\pi\\text{ cm}^2$$",
+                "feedback": "For part (a), it looks like you used $\\pi d$ but kept the radius as 6. If you use $\\pi d$, the diameter must be $12$. Alternatively, use $2\\pi r$ to avoid this mistake."
+            }
         ],
         "bradley_insight": {
             "type": "pro-tip",
@@ -504,6 +644,20 @@
             "Finally, we divide by 90 to express $x$ as a fraction.",
             "Final Answer: $$\\dfrac{41}{90}$$"
         ],
+        "wrong_options": [
+            {
+                "ans": "$$\\dfrac{45}{99}$$",
+                "feedback": "This is the fraction for $0.\\dot{4}\\dot{5}$ (0.454545...). Only the 5 is recurring in this question ($0.4555...$), so you must set up equations where the 'tails' match perfectly before subtracting."
+            },
+            {
+                "ans": "$$\\dfrac{41}{99}$$",
+                "feedback": "You subtracted the equations correctly ($45.55... - 4.55... = 41$), but you subtracted $x$ from $100x$ to get $99x$! You must subtract $10x$ from $100x$ to get $90x$ on the bottom."
+            },
+            {
+                "ans": "$$\\dfrac{45}{100}$$",
+                "feedback": "This is the fraction for the terminating decimal $0.45$. The dot above the 5 means it recurs infinitely, so it cannot be written over 100."
+            }
+        ],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Alignment is Key",
@@ -527,7 +681,21 @@
             "For part (b), we use the property that the volume scale factor is $k^3$.",
             "The volume scale factor is $3^3 = 27$.",
             "To find the volume of the larger sphere, we multiply the smaller volume by the scale factor: $10 \\times 27 = 270\\text{ cm}^3$.",
-            "Final Answer: $$(a)\\ 1:9,\\ (b)\\ 270\\text{ cm}^3$$"
+            "Final Answer: $$\\text{(a) } 1:9, \\text{ (b) } 270\\text{ cm}^3$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) } 1:3, \\text{ (b) } 30\\text{ cm}^3$$",
+                "feedback": "You multiplied the area and the volume by the linear scale factor (3). Because area is 2D and volume is 3D, you must square the scale factor for area ($3^2$) and cube it for volume ($3^3$)."
+            },
+            {
+                "ans": "$$\\text{(a) } 1:9, \\text{ (b) } 90\\text{ cm}^3$$",
+                "feedback": "You used the area scale factor ($3^2=9$) to calculate the volume! Volume is a 3D property, so you must cube the linear scale factor ($3^3=27$)."
+            },
+            {
+                "ans": "$$\\text{(a) } 1:6, \\text{ (b) } 270\\text{ cm}^3$$",
+                "feedback": "For part (a), it looks like you multiplied the ratio by 2 instead of squaring it. The area scale factor is $k^2$, so $3^2$ is 9, not 6!"
+            }
         ],
         "bradley_insight": {
             "type": "pro-tip",
@@ -537,7 +705,7 @@
         "payhip_link": "https://payhip.com/b/XAGch",
         "button_text": "Master Geometry: Download the Full Geometry Pack"
     },
-    // 19 February
+   // 19 February
     {
         "id": "002027",
         "date": "19 February 2026",
@@ -552,6 +720,20 @@
             "The denominator becomes $(x + 2)(x + 3)$.",
             "We identify $(x + 3)$ as a common factor in both the numerator and the denominator and cancel it.",
             "Final Answer: $$\\dfrac{x - 3}{x + 2}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\dfrac{-9}{5x + 6}$$",
+                "feedback": "You tried to cancel out the $x^2$ terms! You cannot cross out individual parts of an algebraic fraction if they are separated by plus or minus signs. You must factorise the top and bottom into brackets first."
+            },
+            {
+                "ans": "$$\\dfrac{x - 3}{x - 2}$$",
+                "feedback": "You factorised the numerator correctly, but made a sign error on the denominator! The factors of $+6$ that add to $+5$ are $+2$ and $+3$, not $-2$ and $-3$."
+            },
+            {
+                "ans": "$$\\dfrac{x + 3}{x + 2}$$",
+                "feedback": "It looks like you cancelled the wrong bracket! The numerator factorises to $(x-3)(x+3)$. Since the denominator has an $(x+3)$, those are the brackets that cancel out, leaving the $(x-3)$ on top."
+            }
         ],
         "bradley_insight": {
             "type": "pro-tip",
@@ -575,7 +757,21 @@
             "Calculation: $3 \\text{ (starters)} \\times 4 \\text{ (mains)} \\times 2 \\text{ (desserts)} = 24$.",
             "For part (b), we reduce the number of main courses to 3.",
             "New calculation: $3 \\times 3 \\times 2 = 18$.",
-            "Final Answer: $$(a)\\ 24,\\ (b)\\ 18$$"
+            "Final Answer: $$\\text{(a) } 24, \\text{ (b) } 18$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) } 9, \\text{ (b) } 8$$",
+                "feedback": "You added the options together instead of multiplying! When choosing one item AND another item, you must use the Product Rule for counting and multiply the combinations."
+            },
+            {
+                "ans": "$$\\text{(a) } 24, \\text{ (b) } 23$$",
+                "feedback": "For part (b), it looks like you just subtracted 1 from the total combinations! If a main course is removed, you lose a whole set of combinations. You must recalculate $3 \\times 3 \\times 2$."
+            },
+            {
+                "ans": "$$\\text{(a) } 12, \\text{ (b) } 9$$",
+                "feedback": "It looks like you only multiplied the starters and the main courses. A 3-course meal also includes a dessert! You must multiply by 2 at the end."
+            }
         ],
         "bradley_insight": {
             "type": "deeper",
@@ -601,7 +797,21 @@
             "Substituting the values: $y - 5 = -\\dfrac{1}{3}(x - 6)$.",
             "Expanding the bracket: $y - 5 = -\\dfrac{1}{3}x + 2$.",
             "Adding 5 to both sides gives the final linear equation.",
-            "Final Answer: $$(a)\\ -\\dfrac{1}{3},\\ (b)\\ y = -\\dfrac{1}{3}x + 7$$"
+            "Final Answer: $$\\text{(a) } -\\dfrac{1}{3}, \\text{ (b) } y = -\\dfrac{1}{3}x + 7$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) } \\dfrac{1}{3}, \\text{ (b) } y = \\dfrac{1}{3}x + 3$$",
+                "feedback": "You remembered to flip the gradient into a fraction (the reciprocal), but you forgot to make it negative! Perpendicular gradients must follow the rule $m_1 \\times m_2 = -1$."
+            },
+            {
+                "ans": "$$\\text{(a) } -3, \\text{ (b) } y = -3x + 23$$",
+                "feedback": "You remembered the negative sign, but forgot to flip the fraction! To find a perpendicular gradient, you must find the negative *reciprocal*."
+            },
+            {
+                "ans": "$$\\text{(a) } -\\dfrac{1}{3}, \\text{ (b) } y = -\\dfrac{1}{3}x + 5$$",
+                "feedback": "You found the correct gradient, but in part (b) you just pasted the y-coordinate ($5$) as your intercept ($c$). You must use $y-y_1 = m(x-x_1)$ to find the true intercept."
+            }
         ],
         "bradley_insight": {
             "type": "pro-tip",
@@ -611,8 +821,7 @@
         "payhip_link": "https://payhip.com/b/XAGch",
         "button_text": "Master Geometry: Download the Full Geometry Pack"
     },
-    // 22 Feb
-   // 22 February
+    // 22 February
     {
         "id": "002030",
         "date": "22 February 2026",
@@ -626,7 +835,21 @@
             "We then apply the numerator of the index, which is the cube: $4^3 = 64$.",
             "For part (b), a negative index indicates the reciprocal of the base.",
             "Using the result from part (a), we take the reciprocal of 64.",
-            "Final Answer: $$(a)\\ 64,\\ (b)\\ \\dfrac{1}{64}$$"
+            "Final Answer: $$\\text{(a) } 64, \\text{ (b) } \\dfrac{1}{64}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) } 24, \\text{ (b) } -24$$",
+                "feedback": "You multiplied 16 by $\\frac{3}{2}$. A fractional index is not a multiplication! The denominator tells you the root (square root), and the numerator tells you the power (cube)."
+            },
+            {
+                "ans": "$$\\text{(a) } 4096, \\text{ (b) } \\dfrac{1}{4096}$$",
+                "feedback": "It looks like you cubed 16 to get 4096, but forgot to take the square root afterwards! Always apply the root (denominator) first to keep the numbers manageable."
+            },
+            {
+                "ans": "$$\\text{(a) } 64, \\text{ (b) } -64$$",
+                "feedback": "You nailed part (a), but made a crucial error in part (b). A negative index does NOT make the answer negative! It means you must find the reciprocal (1 over the number)."
+            }
         ],
         "bradley_insight": {
             "type": "pro-tip",
@@ -652,6 +875,20 @@
             "Calculation: $10 \\div \\dfrac{3}{2} = 10 \\times \\dfrac{2}{3} = \\dfrac{20}{3}$.",
             "Final Answer: $$6.\\dot{6}$$"
         ],
+        "wrong_options": [
+            {
+                "ans": "$$4$$",
+                "feedback": "You divided 10 by the Upper Bound of $x$ ($2.5$). Making the denominator bigger makes the final answer *smaller*. To find the maximum value, you must divide by the Lower Bound!"
+            },
+            {
+                "ans": "$$5$$",
+                "feedback": "You didn't use bounds at all! You just calculated $10 \\div 2$. When a question asks for a 'maximum possible value', you must find the bounds before doing any calculations."
+            },
+            {
+                "ans": "$$6.5$$",
+                "feedback": "It looks like you found the lower bound of $x$ as $1.5$, but subtracted it from 10 instead of dividing! Pay close attention to the formula provided."
+            }
+        ],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Inverse Maximisation",
@@ -675,7 +912,21 @@
             "For part (b), we observe that $\\overrightarrow{AB}$ and $\\overrightarrow{BC}$ are both scalar multiples of the same vector $\\mathbf{a}$.",
             "This means the two line segments are parallel to each other.",
             "Since the segments also share a common point ($B$), they must be collinear.",
-            "Final Answer: $$(a)\\ 5\\mathbf{a},\\ (b)\\ \\text{They are parallel and share a common point}$$"
+            "Final Answer: $$\\text{(a) } 5\\mathbf{a}, \\text{ (b) Parallel and share a common point}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) } 5\\mathbf{a}, \\text{ (b) They are parallel}$$",
+                "feedback": "You are only halfway there! While it is true they are parallel because they are multiples of $\\mathbf{a}$, parallel lines don't have to be the same line. You must also state that they share a common point ($B$)."
+            },
+            {
+                "ans": "$$\\text{(a) } -\\mathbf{a}, \\text{ (b) They are parallel}$$",
+                "feedback": "You subtracted the vectors instead of adding them! To travel from A to C, you must go forward along AB and forward along BC, so $2\\mathbf{a} + 3\\mathbf{a}$."
+            },
+            {
+                "ans": "$$\\text{(a) } 5\\mathbf{a}, \\text{ (b) They share a common point}$$",
+                "feedback": "You correctly noted they share point $B$, but you forgot the other half of the proof! Two lines can share a point and shoot off in different directions. You must also state they are scalar multiples (parallel)."
+            }
         ],
         "bradley_insight": {
             "type": "pro-tip",
@@ -698,7 +949,21 @@
             "For part (a), we recall the exact trigonometric values. $\\tan(45^\\circ)$ is equal to $1$.",
             "For part (b), we recall that $\\sin(90^\\circ)$ is also equal to $1$.",
             "We sum the two values: $1 + 1 = 2$.",
-            "Final Answer: $$(a)\\ 1,\\ (b)\\ 2$$"
+            "Final Answer: $$\\text{(a) } 1, \\text{ (b) } 2$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) } 1, \\text{ (b) } 1$$",
+                "feedback": "You correctly recalled $\\tan(45^\\circ)=1$, but it looks like you thought $\\sin(90^\\circ)$ was 0. Think about the sine graph: it starts at 0, but reaches its peak of 1 at $90^\\circ$!"
+            },
+            {
+                "ans": "$$\\text{(a) } 0.5, \\text{ (b) } 1.5$$",
+                "feedback": "You confused $\\tan(45^\\circ)$ with $\\sin(30^\\circ)$! $\\tan(45^\\circ)$ is exactly 1 because the opposite and adjacent sides of a $45^\\circ$ right-angled triangle are equal length."
+            },
+            {
+                "ans": "$$\\text{(a) } \\dfrac{\\sqrt{2}}{2}, \\text{ (b) } 1 + \\dfrac{\\sqrt{2}}{2}$$",
+                "feedback": "You gave the exact value for $\\sin(45^\\circ)$ or $\\cos(45^\\circ)$ instead of $\\tan(45^\\circ)$. Remember SOH CAH TOA: Tan is Opposite $\\div$ Adjacent, which gives $1 \\div 1 = 1$."
+            }
         ],
         "bradley_insight": {
             "type": "pro-tip",
@@ -714,7 +979,7 @@
         "date": "26 February 2026",
         "major_area": "Geometry & Measures",
         "topic": "Circle Theorems",
-        "subtopic": "Exact Trigonometric Values",
+        "subtopic": "Circle Theorems 2",
         "difficulty": "5/6",
         "img": "true",
         "q": "In the diagram, $ABCD$ is a cyclic quadrilateral. Angle $A = 80^\\circ$.<br>(a) Find the size of angle $C$.<br>(b) Given that angle $B$ is twice the size of angle $D$, calculate the size of angle $D$.",
@@ -724,7 +989,21 @@
             "For part (b), we let angle $D$ be $x$ and angle $B$ be $2x$.",
             "Since they are opposite angles, $x + 2x = 180^\\circ \\implies 3x = 180^\\circ$.",
             "Solving for $x$: $x = 180 \\div 3 = 60^\\circ$.",
-            "Final Answer: $$(a)\\ 100^\\circ,\\ (b)\\ 60^\\circ$$"
+            "Final Answer: $$\\text{(a) } 100^\\circ, \\text{ (b) } 60^\\circ$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) } 80^\\circ, \\text{ (b) } 60^\\circ$$",
+                "feedback": "You assumed that opposite angles are equal! That is true for a parallelogram, but in a cyclic quadrilateral, opposite angles must *add up to* $180^\\circ$."
+            },
+            {
+                "ans": "$$\\text{(a) } 100^\\circ, \\text{ (b) } 120^\\circ$$",
+                "feedback": "You set up the algebra perfectly ($3x = 180$), but you gave the answer for angle $B$ ($120^\\circ$)! The question specifically asked for the size of angle $D$ ($60^\\circ$)."
+            },
+            {
+                "ans": "$$\\text{(a) } 100^\\circ, \\text{ (b) } 90^\\circ$$",
+                "feedback": "It looks like you solved $x + x = 180$ instead of $2x + x = 180$. Remember, angle B is *twice* the size of angle D, so there are 3 'parts' in total making up the $180^\\circ$."
+            }
         ],
         "bradley_insight": {
             "type": "deeper",
@@ -749,7 +1028,21 @@
             "Testing $(1, 1)$ in $y > x$: $1 > 1$ is false (it is equal). Therefore, the point lies on the boundary, not inside the region.",
             "For part (b), we choose a point where the $y$-value is greater than the $x$-value, and the sum is less than 4.",
             "Testing $(1, 2)$: $2 > 1$ is true, and $1 + 2 = 3$, which is less than 4. This point satisfies both.",
-            "Final Answer: $$(a)\\ \\text{No},\\ (b)\\ (1, 2)$$"
+            "Final Answer: $$\\text{(a) No}, \\text{ (b) } (1, 2)$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) Yes}, \\text{ (b) } (1, 1)$$",
+                "feedback": "You assumed that because $(1, 1)$ is on the line $y=x$, it is in the region! The symbol $>$ means strictly greater than. If it was $\\ge$, you would be correct."
+            },
+            {
+                "ans": "$$\\text{(a) No}, \\text{ (b) } (2, 1)$$",
+                "feedback": "Your point $(2, 1)$ has $x=2$ and $y=1$. This fails the first inequality ($y > x$) because $1$ is not greater than $2$!"
+            },
+            {
+                "ans": "$$\\text{(a) Yes}, \\text{ (b) } (2, 2)$$",
+                "feedback": "The point $(2, 2)$ fails both inequalities! $2$ is not strictly greater than $2$, and $2+2=4$, which is not strictly less than $4$."
+            }
         ],
         "bradley_insight": {
             "type": "caution",
@@ -775,7 +1068,21 @@
             "For part (b), we express $\\dfrac{1}{27}$ as a power of 3.",
             "We know $27 = 3^3$, so the reciprocal $\\dfrac{1}{27} = 3^{-3}$.",
             "Therefore, $y = -3$.",
-            "Final Answer: $$(a)\\ 1.5,\\ (b)\\ -3$$"
+            "Final Answer: $$\\text{(a) } 1.5, \\text{ (b) } -3$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) } 3, \\text{ (b) } \\dfrac{1}{3}$$",
+                "feedback": "For part (a), you found that $2x = 3$, but forgot to divide by 2! For part (b), a fraction like $\\frac{1}{27}$ is created by a *negative* index, not a fractional index."
+            },
+            {
+                "ans": "$$\\text{(a) } 9, \\text{ (b) } -9$$",
+                "feedback": "It looks like you divided 27 by 3 to get 9! Indices represent powers ($3 \\times 3 \\times 3 = 27$), not multiplication ($3 \\times 9 = 27$)."
+            },
+            {
+                "ans": "$$\\text{(a) } 1.5, \\text{ (b) } 3$$",
+                "feedback": "You nailed part (a), but missed the negative sign in part (b). $3^3 = 27$, but because the 27 is on the denominator of a fraction, the index must be negative ($-3$)."
+            }
         ],
         "bradley_insight": {
             "type": "pro-tip",
@@ -785,4 +1092,5 @@
         "payhip_link": "https://payhip.com/b/wRN86",
         "button_text": "Master Algebra: Download the Full Algebra Pack"
     }
+    
 ];
