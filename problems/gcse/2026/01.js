@@ -16,15 +16,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "(a) 0.5, (b) 1.5",
+                "ans": "$$\\text{(a) 0.5, (b) 1.5}$$",
                 "feedback": "You recalled $\\sin(30^\\circ)$ correctly, but it looks like you thought $\\cos(60^\\circ)$ was equal to $1$. Remember that $\\sin(30^\\circ)$ and $\\cos(60^\\circ)$ are complementary and have the exact same value!"
             },
             {
-                "ans": "(a) 0.866, (b) 1.366",
+                "ans": "$$\\text{(a) 0.866, (b) 1.366}$$",
                 "feedback": "You have confused $\\sin(30^\\circ)$ with $\\cos(30^\\circ)$, which is $\\frac{\\sqrt{3}}{2}$ (approx $0.866$). Make sure you memorise the exact values for the non-calculator paper!"
             },
             {
-                "ans": "(a) 0.5, (b) 0",
+                "ans": "$$\\text{(a) 0.5, (b) 0}$$",
                 "feedback": "It looks like you subtracted the two values instead of adding them, or you mistakenly thought $\\cos(60^\\circ)$ was negative!"
             }
         ],
@@ -55,15 +55,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "(a) £320, (b) £224",
+                "ans": "$$\\text{(a) £320, (b) £224}$$",
                 "feedback": "You divided the £40 by the total ratio parts (8) instead of the difference between their parts (2). Remember, the £40 represents how much *more* Beth has, not the total amount!"
             },
             {
-                "ans": "(a) £160, (b) £140",
+                "ans": "$$\\text{(a) £160, (b) £140}$$",
                 "feedback": "You calculated the total correctly, but in part (b), you kept the value of one part as £20. When the ratio changes to $3:7$, the total number of parts changes to 10, so you must calculate a new value for one part."
             },
             {
-                "ans": "(a) £100, (b) £112",
+                "ans": "$$\\text{(a) £100, (b) £112}$$",
                 "feedback": "It looks like you calculated Beth's original share (£100) instead of the total amount shared for part (a). Always re-read the final instruction!"
             }
         ],
@@ -93,15 +93,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "$x^3 - 24$",
+                "ans": "$$x^3 - 24$$",
                 "feedback": "You cannot simply multiply the first terms and the last terms together! You must expand the brackets methodically using grid multiplication or FOIL to ensure you don't miss the $x^2$ and $x$ terms."
             },
             {
-                "ans": "$x^3 + 5x^2 + 10x - 24$",
+                "ans": "$$x^3 + 5x^2 + 10x - 24$$",
                 "feedback": "You made a sign error when combining your $x$ terms. Expanding the final bracket gives $-6x$ and $+4x$. Remember that $-6 + 4$ is $-2$, not $+10$!"
             },
             {
-                "ans": "$x^3 + 5x^2 - 2x + 24$",
+                "ans": "$$x^3 + 5x^2 - 2x + 24$$",
                 "feedback": "Watch your signs on the final multiplication! You multiplied $-6$ by $+4$ but wrote a positive result. A negative multiplied by a positive always results in a negative number."
             }
         ],
@@ -131,15 +131,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "(a) u = v - \\sqrt{2as}, (b) 8",
+                "ans": "$$\\text{(a)} u = v - \\sqrt{2as}, \\text{(b) 8}$$",
                 "feedback": "You cannot square root individual terms separated by a minus sign! $\\sqrt{v^2 - 2as}$ does not equal $v - \\sqrt{2as}$. The square root symbol must act as a bracket over the entire expression."
             },
             {
-                "ans": "(a) u = \\sqrt{v^2 + 2as}, (b) 23.3",
+                "ans": "$$\\text{(a)} u = \\sqrt{v^2 + 2as}, \\text{(b) 23.3}$$",
                 "feedback": "You made a sign error when moving the $2as$ across the equals sign. To move a positive term to the other side, you must subtract it!"
             },
             {
-                "ans": "(a) u = \\dfrac{v^2}{2as}, (b) 2.78",
+                "ans": "$$\\text{(a)} u = \\dfrac{v^2}{2as}\\text{, (b) 2.78}$$",
                 "feedback": "You divided by $2as$ instead of subtracting it. Because $u^2$ and $2as$ are added together, you must use subtraction to separate them."
             }
         ],
@@ -170,15 +170,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "(a) 400, (b) Underestimate",
+                "ans": "$$\\text{(a) 400, (b) Underestimate}$$",
                 "feedback": "It looks like you divided by 2 instead of 0.5. Remember that dividing a number by 0.5 is the mathematical equivalent of doubling it!"
             },
             {
-                "ans": "(a) 1600, (b) Overestimate",
+                "ans": "$$\\text{(a) 1600, (b) Overestimate}$$",
                 "feedback": "You calculated the estimate correctly, but your reasoning is flawed. Because we rounded the denominator UP to 0.5, we divided by a larger number, which makes the final answer smaller (an underestimate)."
             },
             {
-                "ans": "(a) 1628.2, (b) Exact value",
+                "ans": "$$\\text{(a) 1628.2, (b) Exact value}$$",
                 "feedback": "You used a calculator to find the exact value! When a question says 'Estimate', you MUST round every single number to 1 significant figure first, or you will score zero marks."
             }
         ],
@@ -209,15 +209,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "(a) (3x - 5y)(3x + 5y), (b) 800",
+                "ans": "$$\\text{(a)} (3x - 5y)(3x + 5y)\\text{, (b) 800}$$",
                 "feedback": "You correctly spotted the Difference of Two Squares, but you forgot to factor out the common numerical factor of 2 first! Both terms are even numbers, so 2 must be sitting outside the brackets."
             },
             {
-                "ans": "(a) 2(9x^2 - 25y^2), (b) 1600",
+                "ans": "$$\\text{(a)} 2(9x^2 - 25y^2)\\text{, (b) 1600}$$",
                 "feedback": "You calculated part (b) correctly, but you didn't 'factorise fully' in part (a). Once you pull out the factor of 2, you must factorise the remaining quadratic using the Difference of Two Squares."
             },
             {
-                "ans": "(a) 2(3x - 5y)^2, (b) 800",
+                "ans": "$$\\text{(a)} 2(3x - 5y)^2\\text{, (b) 800}$$",
                 "feedback": "Be careful! $(3x - 5y)^2$ expands to $9x^2 - 30xy + 25y^2$. The Difference of Two Squares must always have one bracket with a plus sign and one with a minus sign to cancel out the middle term."
             }
         ],
@@ -247,15 +247,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "(a) (x + 8)(x - 3), (b) x = -8, x = 3",
+                "ans": "$$\\text{(a)} (x + 8)(x - 3)\\text{, (b) x = -8, x = 3}$$",
                 "feedback": "You chose the correct numbers (8 and 3), but your signs are backwards! If you expand $(x + 8)(x - 3)$, the middle term becomes $+5x$. We need $-5x$, so the larger number must be negative."
             },
             {
-                "ans": "(a) (x - 8)(x + 3), (b) x = -8, x = 3",
+                "ans": "$$\\text{(a)} (x - 8)(x + 3)\\text{, (b) x = -8, x = 3}$$",
                 "feedback": "You factorised perfectly in part (a), but you forgot to invert the signs when solving the equation! If $(x - 8) = 0$, then $x$ must be positive 8."
             },
             {
-                "ans": "(a) (x - 12)(x + 2), (b) x = 12, x = -2",
+                "ans": "$$\\text{(a)} (x - 12)(x + 2)\\text{, (b) x = 12, x = -2}$$",
                 "feedback": "Be careful with your factor pairs! While $-12$ and $+2$ multiply to make $-24$, they add together to make $-10x$. You need the pair that adds to make $-5x$."
             }
         ],
@@ -286,15 +286,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "$\\dfrac{30 + 10\\sqrt{2}}{7}$",
+                "ans": "$$\\dfrac{30 + 10\\sqrt{2}}{7}$$",
                 "feedback": "You multiplied by the correct terms, but you forgot to change the sign! To create the 'difference of two squares' on the bottom, you must multiply by the conjugate: $(3 - \\sqrt{2})$."
             },
             {
-                "ans": "$\\dfrac{30 - 10\\sqrt{2}}{11}$",
+                "ans": "$$\\dfrac{30 - 10\\sqrt{2}}{11}$$",
                 "feedback": "You made an error expanding the denominator. $(3 + \\sqrt{2})(3 - \\sqrt{2})$ expands to $9 - 2$. It looks like you added the 2 instead of subtracting it!"
             },
             {
-                "ans": "$\\dfrac{10(3 - \\sqrt{2})}{5}$",
+                "ans": "$$\\dfrac{10(3 - \\sqrt{2})}{5}$$",
                 "feedback": "You expanded the denominator incorrectly. It looks like you added $3$ and $2$ rather than squaring them ($3^2 - 2$). Remember, $(a+b)(a-b) = a^2 - b^2$."
             }
         ],
@@ -324,15 +324,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "$18x^4$",
+                "ans": "$$18x^4$$",
                 "feedback": "You applied the index laws correctly to the $x$ term, but you multiplied $27$ by $\\frac{2}{3}$. Remember, $27$ is a base number, so you must find its cube root and then square it!"
             },
             {
-                "ans": "$9x^{18}$",
+                "ans": "$$9x^{18}$$",
                 "feedback": "You evaluated the coefficient correctly ($9$), but you applied the power to the $x$ term incorrectly. When raising a power to a power, you must multiply the indices ($6 \\times \\frac{2}{3}$), not raise $x^6$ to the power of 3!"
             },
             {
-                "ans": "$27x^4$",
+                "ans": "$$27x^4$$",
                 "feedback": "You correctly multiplied the powers on the $x$ term, but you completely ignored the numerical coefficient! The power outside the bracket must be applied to every single item inside the bracket."
             }
         ],
@@ -362,15 +362,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "(a) 0.5, (b) y = 0.5x + 4",
+                "ans": "$$\\text{(a) 0.5, (b) }y = 0.5x + 4$$",
                 "feedback": "It looks like you calculated the change in $x$ divided by the change in $y$! The gradient formula is 'rise over run', meaning the $y$-values must always be on the top of the fraction."
             },
             {
-                "ans": "(a) 2, (b) y = 4x + 2",
+                        "ans": "\\text{(a) 2, (b) }y = 4x + 2$$",
                 "feedback": "You calculated the gradient correctly, but you swapped your $m$ and $c$ values in the final equation! The gradient is the number attached to $x$, and the intercept stands alone."
             },
             {
-                "ans": "(a) 4.6, (b) y = 4.6x",
+                "ans": "\\text{(a) 4.6, (b) }y = 4.6x$$",
                 "feedback": "You tried to calculate the gradient by dividing $14$ by $3$. You added the coordinates together instead of subtracting them! Remember: $y_2 - y_1$ over $x_2 - x_1$."
             }
         ],
@@ -399,15 +399,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "(a) 8.35, (b) 8.35 \\le x < 8.45",
+                "ans": "$$\\text{(a) 8.35, (b) }8.35 \\le x < 8.45$$",
                 "feedback": "You have calculated the bounds for a number that has been *rounded*! Truncation is different; it simply chops the end off the number. Therefore, $8.49$ truncates to $8.4$, not $8.5$."
             },
             {
-                "ans": "(a) 8.4, (b) 8.4 \\le x \\le 8.5",
+                "ans": "$$\\text{(a) 8.4, (b) }8.4 \\le x \\le 8.5$$",
                 "feedback": "You correctly identified the values, but your upper inequality sign is incorrect! If $x$ was exactly $8.5$, it would truncate to $8.5$. Therefore, $x$ must be strictly *less than* $8.5$."
             },
             {
-                "ans": "(a) 8.41, (b) 8.41 \\le x < 8.49",
+                "ans": "$$\\text{(a) 8.41, (b) }8.41 \\le x < 8.49$$",
                 "feedback": "You have written out the next available digits, but bounds in mathematics consider infinite continuous values (like $8.499999...$). Therefore, the upper limit is exactly $8.5$."
             }
         ],
@@ -438,15 +438,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "x = 8",
+                "ans": "$$x = 8$$",
                 "feedback": "You expanded and grouped your terms correctly, but you made a sign error at the end! $-1 - 15$ results in $-16$. Dividing by $+2$ gives a negative answer."
             },
             {
-                "ans": "x = -7",
+                "ans": "$$x = -7$$",
                 "feedback": "When you multiplied by 3 to clear the fraction, it looks like you only multiplied the $2x$ and forgot to multiply the $5$! The 3 must distribute across every term on the right-hand side."
             },
             {
-                "ans": "x = 2",
+                "ans": "$$x = 2$$",
                 "feedback": "You tried to subtract $4x$ from $2x$ which gives $-2x$, but you likely divided $16$ by $+2x$ by mistake. Always write your lines out in full to keep your signs straight."
             }
         ],
@@ -476,15 +476,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "(a) 150^\\circ, (b) 15^\\circ",
+                "ans": "$$\\text{(a)} 150^\\circ\\text{, (b)} 15^\\circ$$",
                 "feedback": "You assumed the triangle was isosceles because of the circle's radius! However, the line AB passes straight across the whole circle, making it the diameter. The angle opposite the diameter is always a right angle ($90^\\circ$)."
             },
             {
-                "ans": "(a) 60^\\circ, (b) 90^\\circ",
+                "ans": "$$\\text{(a)} 60^\\circ\\text{, (b)} 90^\\circ$$",
                 "feedback": "You correctly identified that there must be a $90^\\circ$ angle, but you placed it at vertex B instead of C! The right angle must always be at the circumference, directly opposite the diameter line AB."
             },
             {
-                "ans": "(a) 90^\\circ, (b) 150^\\circ",
+                "ans": "$$\\text{(a)] 90^\\circ\\text{, (b)} 150^\\circ$$",
                 "feedback": "You correctly found part (a), but made an arithmetic slip in part (b). Remember, the angles inside a triangle sum to $180^\\circ$, so you must subtract the known angles ($90+30=120$) from 180."
             }
         ],
@@ -517,15 +517,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "(a) \\dfrac{6}{25}, (b) \\dfrac{13}{25}",
+                "ans": "$$\\text{(a)} \\dfrac{6}{25}\\text{, (b)} \\dfrac{13}{25}$$",
                 "feedback": "You calculated the probabilities as if the sweets were *replaced* in the box! Because the question explicitly says 'without replacement', the denominator for the second sweet must decrease to 9."
             },
             {
-                "ans": "(a) \\dfrac{24}{90}, (b) \\dfrac{12}{90}",
+                "ans": "$$\\text{(a)} \\dfrac{24}{90}\\text{, (b)} \\dfrac{12}{90}$$",
                 "feedback": "You correctly calculated the 'without replacement' probability for Red then Blue, but for part (b) it looks like you only calculated the probability of Red-Red. 'Same colour' also includes Blue-Blue!"
             },
             {
-                "ans": "(a) \\dfrac{10}{19}, (b) \\dfrac{42}{100}",
+                "ans": "$$\\text{(a)} \\dfrac{10}{19}\\text{, (b)} \\dfrac{42}{100}$$",
                 "feedback": "You added the probabilities along the branches instead of multiplying them! You must always *multiply* across the tree for 'AND' events, and *add* the results together for 'OR' events."
             }
         ],
@@ -556,15 +556,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "(a) 10, (b) x = 3",
+                "ans": "$$\\text{(a) 10, (b) }x = 3$$",
                 "feedback": "You evaluated the functions in the wrong order! For $fg(3)$, you put 3 into $f$ first, giving 5, then doubled it to get 10. You must always work from the 'inside out', starting with the function closest to the number."
             },
             {
-                "ans": "(a) 32, (b) x = 3",
+                "ans": "$$\\text{(a) 32, (b) }x = 3$$",
                 "feedback": "You executed the algebra perfectly, but you forgot that a square root has two answers! Solving $x^2 = 9$ yields both a positive and a negative 3."
             },
             {
-                "ans": "(a) 32, (b) x = 7",
+                "ans": "$$\\text{(a) 32, (b) }x = 7$$",
                 "feedback": "In part (b), it looks like you substituted $f(x)$ into $g$ as $(2x)^2 - 4$ instead of $2(x^2 - 4)$. Remember, $gf(x)$ means taking the entire expression for $f$ and placing it where the $x$ is in $g$!"
             }
         ],
@@ -595,15 +595,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "(a) 160\\pi, (b) 80\\pi",
+                "ans": "$$\\text{(a) }160\\pi\\text{, (b) }80\\pi$$",
                 "feedback": "You calculated the volume perfectly, but for part (b) you only found the curved surface area! The question asks for the TOTAL surface area of a solid cylinder, which means you must add the areas of the two circular ends."
             },
             {
-                "ans": "(a) 40\\pi, (b) 112\\pi",
+                "ans": "$$\\text{(a) }40\\pi\\text{, (b) }112\\pi$$",
                 "feedback": "It looks like you used $2\\pi r h$ instead of $\\pi r^2 h$ for the volume! Remember, the volume is the area of the base (a circle) multiplied by the height."
             },
             {
-                "ans": "(a) 160\\pi, (b) 96\\pi",
+                "ans": "$$\\text{(a) }160\\pi\\text{, (b) }96\\pi$$",
                 "feedback": "You remembered to add the circular ends in part (b), but you only added ONE of them! A solid cylinder has a top and a bottom, so you must add $2\\pi r^2$."
             }
         ],
@@ -633,15 +633,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "(a) 33.3\\%, (b) £5,400",
+                "ans": "$$\\text{(a) }33.3\\%,\text{, (b)£5,400}$$",
                 "feedback": "You calculated the percentage decrease by dividing by the NEW price (£6000) instead of the ORIGINAL price (£8000). Percentage change is always Change / Original!"
             },
             {
-                "ans": "(a) 25\\%, (b) £5,200",
+                "ans": "$$\\text{(a) }25\\%\\text{, (b)£5,200}$$",
                 "feedback": "In part (b), it looks like you took another 10% off the *original* £8000 price instead of the £6000 price. Compound depreciation is always calculated using the current value."
             },
             {
-                "ans": "(a) 75\\%, (b) £5,400",
+                "ans": "$$\\text{(a) }75\\%,\text{, (b)£5,400}$$",
                 "feedback": "You calculated what percentage the new price *is* of the original price (75%), rather than calculating the percentage *decrease* (25%). Read the instruction carefully!"
             }
         ],
@@ -672,15 +672,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "(a) 5, (b) \\begin{pmatrix} 10 \\\\ -2 \\end{pmatrix}",
+            "ans": "$$\\text{(a) }5\\text{, (b) }\\begin{pmatrix} 10 \\\\ -2 \\end{pmatrix}$$",
                 "feedback": "You found the magnitude perfectly, but for part (b) you just added $\\vec{AB}$ and $\\vec{AC}$ together! Remember, to go from B to C, you must go 'backwards' along AB first, meaning you must flip its signs."
             },
             {
-                "ans": "(a) -1, (b) \\begin{pmatrix} 4 \\\\ 6 \\end{pmatrix}",
+                "ans": "$$\\text{(a) }-1\\text{, (b) }\\begin{pmatrix} 4 \\\\ 6 \\end{pmatrix}$$",
                 "feedback": "You found the path correctly, but you made a mistake with Pythagoras in part (a). A magnitude (length) can never be negative. Remember that $(-4)^2$ is positive 16, not -16!"
             },
             {
-                "ans": "(a) 5, (b) \\begin{pmatrix} -4 \\\\ -6 \\end{pmatrix}",
+                "ans": "$$\\text{(a) }5\\text{, (b) }\\begin{pmatrix} -4 \\\\ -6 \\end{pmatrix}$$",
                 "feedback": "You subtracted the vectors in the wrong order! Finding $\\vec{AB} - \\vec{AC}$ gives the path for $\\vec{CB}$. Since you want $\\vec{BC}$, you must start at B and move to A."
             }
         ],
@@ -710,15 +710,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "$x > 3$",
+                "ans": "$$x > 3$$",
                 "feedback": "You just square-rooted both sides! While $x > 3$ is partially correct, you missed the negative solutions. A number like $-4$ squared is $16$, which is also greater than 9!"
             },
             {
-                "ans": "$-3 < x < 3$",
+                "ans": "$$-3 < x < 3$$",
                 "feedback": "You found the correct critical values, but you picked the wrong region on the graph. This region represents values where $x^2$ is *less* than 9 (e.g., $x=0$, $0^2=0$)."
             },
             {
-                "ans": "$x > \\pm 3$",
+                "ans": "$$x > \\pm 3$$",
                 "feedback": "Writing $x > \\pm 3$ is mathematically meaningless! You cannot be 'greater than' plus or minus 3. You must write two separate inequalities to show the two distinct regions."
             }
         ],
@@ -749,15 +749,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "(a) y = 10x, (b) 30, (c) 8",
+                "ans": "$$\\text{(a) }y = 10x\\text{, (b) 30, (c) 8}$$",
                 "feedback": "You calculated the constant $k$ as if $y$ was directly proportional to $x$, not $x^2$! You must square the $x$-value ($2^2=4$) before dividing 20."
             },
             {
-                "ans": "(a) y = 5x^2, (b) 15, (c) 16",
+                "ans": "$$\\text{(a) }y = 5x^2\\text{, (b) 15, (c) 16}$$",
                 "feedback": "In part (b), you forgot to square the 3 before multiplying! And in part (c), you found $x^2=16$ but forgot to take the square root to find $x$."
             },
             {
-                "ans": "(a) y = 5x^2, (b) 225, (c) 4",
+                "ans": "$$\\text{(a) }y = 5x^2\\text{, (b) 225, (c) 4}$$",
                 "feedback": "In part (b), it looks like you multiplied $5$ by $3$ to get $15$, and then squared the $15$! Due to BIDMAS, you must square the $x$-value first, and then multiply by $k$."
             }
         ],
@@ -789,15 +789,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "(a) \\sqrt{87}, (b) Shown",
+                "ans": "$$\\text{(a) }\\sqrt{87}\\text{, (b) Shown}$$",
                 "feedback": "You cannot simply add the numbers inside the square roots together! You must simplify each surd independently until they share the same 'root' before you can combine them."
             },
             {
-                "ans": "(a) 7\\sqrt{6}, (b) Shown",
+                "ans": "$$\\text{(a) }7\\sqrt{6}\\text{, (b) Shown}$$",
                 "feedback": "It looks like you found the coefficients perfectly (5 + 2 = 7), but you added the roots together too ($\\sqrt{3} + \\sqrt{3} = \\sqrt{6}$). Surds act like algebra: $5x + 2x = 7x$, not $7x^2$."
             },
             {
-                "ans": "(a) 7\\sqrt{3}, (b) Cannot be shown",
+                "ans": "$$\\text{(a) }7\\sqrt{3}\\text{, (b) Cannot be shown}$$",
                 "feedback": "You correctly simplified part (a), but it seems you struggled with the rationalisation in part (b). Remember to multiply the top and bottom of the fraction by $\\sqrt{3}$ to remove the surd from the denominator."
             }
         ],
@@ -828,15 +828,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "(a) (x + 3)^2 + 7, (b) (-3, 7)",
+                "ans": "$$\\text{(a) }(x + 3)^2 + 7\\text{, (b) }(-3, 7)$$",
                 "feedback": "When completing the square, expanding $(x+3)^2$ gives a $+9$. You added 7 to the $-2$ instead of thinking: 'how do I get from +9 down to -2?'. You must subtract 11."
             },
             {
-                "ans": "(a) (x + 3)^2 - 11, (b) (3, -11)",
+                "ans": "$$\\text{(a) }(x + 3)^2 - 11\\text{, (b) }(3, -11)$$",
                 "feedback": "You completed the square perfectly, but you forgot to invert the sign for the $x$-coordinate of the turning point. The $x$-coordinate is the value that makes the bracket equal to zero."
             },
             {
-                "ans": "(a) (x + 6)^2 - 38, (b) (-6, -38)",
+                "ans": "$$\\text{(a) }(x + 6)^2 - 38\\text{, (b) }(-6, -38)$$",
                 "feedback": "You forgot to halve the $x$-coefficient inside the bracket! The number inside the bracket must be half of $6$, which is $3$."
             }
         ],
@@ -866,15 +866,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "(a) 2000 N/cm^2, (b) The pressure increases",
+                "ans": "$$\\text{(a) }2000 N/cm^2\\text{, (b) The pressure increases}$$",
                 "feedback": "You multiplied the force and the area together! Remember the formula triangle: Pressure = Force $\\div$ Area."
             },
             {
-                "ans": "(a) 5 N/cm^2, (b) The pressure increases",
+                "ans": "$$\\text{(a) }5 N/cm^2\\text{, (b) The pressure increases}$$",
                 "feedback": "You calculated the pressure correctly, but your logic in part (b) is flawed. If you spread the same amount of force over a much larger area, the pressure on any specific spot will drop."
             },
             {
-                "ans": "(a) 0.2 N/cm^2, (b) The pressure decreases",
+                "ans": "$$\\text{(a) }0.2 N/cm^2\\text{, (b) The pressure decreases}$$",
                 "feedback": "You divided the numbers in the wrong order (Area $\\div$ Force). If you are unsure, look at the units in the question: $\\text{N/cm}^2$ literally means Newtons divided by centimeters squared!"
             }
         ],
@@ -905,15 +905,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "n^2 + 2, which is not a multiple of 4",
+                "ans": "$$n^2 + 2\\text{, which is not a multiple of 4}$$",
                 "feedback": "You expanded the brackets incorrectly! $(n+1)^2$ does not equal $n^2 + 1^2$. You must write the bracket out twice and use FOIL to get $n^2 + 2n + 1$."
             },
             {
-                "ans": "0, which is not a multiple of 4",
+                "ans": "$$0\\text{, which is a multiple of 4}$$",
                 "feedback": "You made a very common sign error during subtraction. When you subtracted $(n^2 - 2n + 1)$, you likely calculated $2n - 2n$. Subtracting a negative is the same as adding, so $2n - (-2n) = 4n$."
             },
             {
-                "ans": "4n^2, which is a multiple of 4",
+                "ans": "$$4n^2\\text{, which is a multiple of 4}$$",
                 "feedback": "You multiplied the two brackets together instead of subtracting them! Read the question carefully: there is a minus sign between the two squared terms."
             }
         ],
@@ -944,15 +944,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "$\\dfrac{1}{2}(\\mathbf{b} - \\mathbf{a})$",
+                "ans": "$$\\dfrac{1}{2}(\\mathbf{b} - \\mathbf{a})$$",
                 "feedback": "This is the vector $\\overrightarrow{AM}$, not $\\overrightarrow{OM}$! You found the journey from A to the midpoint, but the question asks for the position vector starting from the origin $O$."
             },
             {
-                "ans": "$\\mathbf{a} + \\mathbf{b}$",
+                "ans": "$$\\mathbf{a} + \\mathbf{b}$$",
                 "feedback": "You added the two vectors together, which would take you to the far corner of a parallelogram! To find the midpoint, you must use the path $\\overrightarrow{OA} + \\overrightarrow{AM}$."
             },
             {
-                "ans": "$\\dfrac{1}{2}(\\mathbf{a} - \\mathbf{b})$",
+                "ans": "$$\\dfrac{1}{2}(\\mathbf{a} - \\mathbf{b})$$",
                 "feedback": "You made a sign error when finding the path $\\overrightarrow{AB}$. Travelling from A to O goes against the arrow, so it must be $-\\mathbf{a}$, not positive $\\mathbf{a}$."
             }
         ],
@@ -985,15 +985,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "(a) 2.5, (b) f^{-1}(x) = x - 2",
+                "ans": "$$\\text{(a) }2.5\\text{, (b) }f^{-1}(x) = x - 2$$",
                 "feedback": "For part (a), you calculated the denominator ($0.5 + 2$) but forgot that it was under a $1$! For part (b), you cannot just 'flip' the fraction without properly rearranging the algebra."
             },
             {
-                "ans": "(a) 0.4, (b) f^{-1}(x) = \\dfrac{1}{x} + 2",
+                "ans": "$$\\text{(a) }0.4\\text{, (b) }f^{-1}(x) = \\dfrac{1}{x} + 2$$",
                 "feedback": "You isolated the $y$ term but made a sign error at the very end. When you moved the $+2$ across the equals sign from $y + 2 = \\frac{1}{x}$, you forgot to subtract it."
             },
             {
-                "ans": "(a) 0.4, (b) f^{-1}(x) = \\dfrac{1}{x - 2}",
+                "ans": "$$\\text{(a) }0.4\\text{, (b) }f^{-1}(x) = \\dfrac{1}{x - 2}$$",
                 "feedback": "You subtracted 2 before dealing with the fraction! You must follow reverse BIDMAS. Because the $y+2$ is locked together as a denominator, you must multiply it out first."
             }
         ],
@@ -1027,15 +1027,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "(a) 24\\text{ cm}^2, (b) 4.11\\text{ cm}",
+                "ans": "$$\\text{(a) }24\\text{ cm}^2\\text{, (b) }4.11\\text{ cm}$$",
                 "feedback": "You calculated part (b) perfectly, but for part (a) you forgot the $\\frac{1}{2}$ in the area formula! The formula is $\\frac{1}{2}ab\\sin(C)$, not just $ab\\sin(C)$."
             },
             {
-                "ans": "(a) 12\\text{ cm}^2, (b) 16.9\\text{ cm}",
+                "ans": "$$\\text{(a) }12\\text{ cm}^2\\text{, (b) }16.9\\text{ cm}$$",
                 "feedback": "You successfully applied the Cosine Rule and calculated $c^2 = 16.864$, but you forgot the final step! You must take the square root to find the actual length of the side $c$."
             },
             {
-                "ans": "(a) 12\\text{ cm}^2, (b) 13.5\\text{ cm}",
+                "ans": "$$\\text{(a) }12\\text{ cm}^2\\text{, (b) }13.5\\text{ cm}$$",
                 "feedback": "You made a sign error in the Cosine Rule. The formula is $a^2 + b^2 - 2ab\\cos(C)$. It looks like you added the final term instead of subtracting it!"
             }
         ],
@@ -1067,15 +1067,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "x = 3 - y",
+                "ans": "$$x = 3 - y$$",
                 "feedback": "You set up the equation as $x + y = 3$. Remember that the base $4$ must be rewritten as $2^2$, meaning the $y$ index becomes $2y$, not just $y$!"
             },
             {
-                "ans": "x + y = 3",
+                "ans": "$$x + y = 3$$",
                 "feedback": "You equated the indices without making the base numbers match first! You cannot add the powers of $2^x$ and $4^y$ directly. Everything must be converted to base 2."
             },
             {
-                "ans": "x = 3 + 2y",
+                "ans": "$$x = 3 + 2y$$",
                 "feedback": "You correctly formed the equation $x + 2y = 3$, but you made a sign error when rearranging. To isolate $x$, you must *subtract* $2y$ from both sides."
             }
         ],
@@ -1106,15 +1106,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "\\dfrac{58}{100}",
+                "ans": "$$\\dfrac{58}{100}$$",
                 "feedback": "You calculated the probabilities as if the counters were *replaced*! Because it is 'without replacement', the denominator for the second pick must decrease to 9."
             },
             {
-                "ans": "\\dfrac{6}{90}",
+                "ans": "$$\\dfrac{6}{90}$$",
                 "feedback": "It looks like you only calculated the probability of picking Red-Red. 'Same colour' means you must also calculate Blue-Blue and add them together!"
             },
             {
-                "ans": "\\dfrac{18}{90}",
+                "ans": "$$\\dfrac{18}{90}$$",
                 "feedback": "You added the probabilities along the branches instead of multiplying them! You must always *multiply* across the tree for 'AND' events, and *add* the results for 'OR' events."
             }
         ],
@@ -1145,15 +1145,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "9.5",
+                "ans": "$$9.5$$",
                 "feedback": "You subtracted the Upper Bound of $y$ ($5.5$) from the Upper Bound of $x$ ($15$). To maximise a subtraction, you must subtract the *smallest* possible value ($LB_y$) from the largest possible value ($UB_x$)."
             },
             {
-                "ans": "5.5",
+                "ans": "$$5.5$$",
                 "feedback": "You used the Lower Bounds for both numbers ($5 - 4.5$)! This actually gives you the *minimum* possible value. To find the maximum difference, you need $UB_x - LB_y$."
             },
             {
-                "ans": "20.5",
+                "ans": "$$20.5$$",
                 "feedback": "You added the Upper Bound of $x$ and the Upper Bound of $y$! The question asks for the maximum value of $x - y$, which is a subtraction."
             }
         ],
@@ -1185,15 +1185,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": "\\dfrac{4}{3}",
+                "ans": "$$\\dfrac{4}{3}$$",
                 "feedback": "You successfully found the gradient of the radius, but the question asked for the gradient of the *tangent*. The tangent is always perpendicular to the radius!"
             },
             {
-                "ans": "-\\dfrac{4}{3}",
+                "ans": "$$-\\dfrac{4}{3}$$",
                 "feedback": "You remembered to make the gradient negative, but you forgot to find the reciprocal (flip the fraction)! Perpendicular gradients follow the rule $m_1 \\times m_2 = -1$."
             },
             {
-                "ans": "\\dfrac{3}{4}",
+                "ans": "$$\\dfrac{3}{4}$$",
                 "feedback": "You calculated the gradient of the radius upside down as 'change in $x$' over 'change in $y$'. Gradient is always rise over run ($y$ over $x$)."
             }
         ],
