@@ -1,6 +1,6 @@
 
 const problemBank = [
-    // 1 March
+   // 1 March
     {
         "id": "002037",
         "date": "1 March 2026",
@@ -17,7 +17,21 @@ const problemBank = [
             "For part (b), we consider the right-angled triangle $ACH$ where $CH$ is the vertical height.",
             "Applying Pythagoras' Theorem again: $AH^2 = AC^2 + CH^2 = 10^2 + 10^2 = 100 + 100 = 200$.",
             "We simplify the surd: $AH = \\sqrt{200} = \\sqrt{100 \\times 2} = 10\\sqrt{2}$.",
-            "Final Answer: $$(a)\\ 10\\text{ cm},\\ (b)\\ 10\\sqrt{2}\\text{ cm}$$"
+            "Final Answer: $$\\text{(a) } 10\\text{ cm}, \\text{ (b) } 10\\sqrt{2}\\text{ cm}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) } 10\\text{ cm}, \\text{ (b) } 200\\text{ cm}$$",
+                "feedback": "You calculated $AH^2 = 200$ perfectly, but you forgot to take the square root to find the actual length! This is the most common error in multi-step Pythagoras questions."
+            },
+            {
+                "ans": "$$\\text{(a) } 14\\text{ cm}, \\text{ (b) } 24\\text{ cm}$$",
+                "feedback": "You added the sides together instead of squaring them! Remember Pythagoras' theorem is $a^2 + b^2 = c^2$, not $a + b = c$."
+            },
+            {
+                "ans": "$$\\text{(a) } 10\\text{ cm}, \\text{ (b) } 2\\sqrt{10}\\text{ cm}$$",
+                "feedback": "You simplified the surd $\\sqrt{200}$ incorrectly. Look for the largest square number that goes into 200 (which is 100). $\\sqrt{100} = 10$, leaving the 2 inside the root."
+            }
         ],
         "bradley_insight": {
             "type": "pro-tip",
@@ -42,7 +56,21 @@ const problemBank = [
             "For part (b), we apply a further 2 years of depreciation at a rate of $12\\%$. The multiplier for this period is $1 - 0.12 = 0.88$.",
             "We apply this multiplier to the value at the end of the first year: $12000 \\times 0.88^2$.",
             "Calculation: $12000 \\times 0.7744 = £9,292.80$.",
-            "Final Answer: $$(a)\\ £12,000,\\ (b)\\ £9,292.80$$"
+            "Final Answer: $$\\text{(a) } £12,000, \\text{ (b) } £9,292.80$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) } £12,000, \\text{ (b) } £8,400.00$$",
+                "feedback": "You added the percentages together ($20\\% + 12\\% + 12\\% = 44\\%$) and subtracted it from the original price! This is compound depreciation, so the value must be calculated step-by-step using multipliers."
+            },
+            {
+                "ans": "$$\\text{(a) } £12,000, \\text{ (b) } £10,230.12$$",
+                "feedback": "For part (b), you used the $0.88$ multiplier for 3 years ($0.88^3$)! The question states the depreciation is $20\\%$ for the *first* year, and $12\\%$ for the remaining *two* years."
+            },
+            {
+                "ans": "$$\\text{(a) } £12,000, \\text{ (b) } £9,120.00$$",
+                "feedback": "You calculated Simple Interest instead of Compound! You took $12\\%$ of £15,000 (£1,800) and subtracted it twice. Remember, depreciation is always calculated on the *current* value of the car."
+            }
         ],
         "bradley_insight": {
             "type": "caution",
@@ -67,7 +95,21 @@ const problemBank = [
             "Distributing the terms: $x(x^2 + 3x - 4) + 2(x^2 + 3x - 4) = x^3 + 3x^2 - 4x + 2x^2 + 6x - 8$.",
             "Collecting like terms: $x^3 + 5x^2 + 2x - 8$.",
             "For part (b), the coefficient is the numerical value multiplying the $x$ term.",
-            "Final Answer: $$(a)\\ x^3 + 5x^2 + 2x - 8,\\ (b)\\ 2$$"
+            "Final Answer: $$\\text{(a) } x^3 + 5x^2 + 2x - 8, \\text{ (b) } 2$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) } x^3 + 5x^2 + 2x + 8, \\text{ (b) } 2$$",
+                "feedback": "You made a sign error on the final constant! The first two brackets give a $-4$. Multiplying $-4$ by the $+2$ in the final bracket must result in a negative 8."
+            },
+            {
+                "ans": "$$\\text{(a) } x^3 + 5x^2 + 10x - 8, \\text{ (b) } 10$$",
+                "feedback": "When distributing the final bracket, you likely added the $x$ terms incorrectly. $-4x + 6x = +2x$. It looks like you added $4x$ and $6x$ instead."
+            },
+            {
+                "ans": "$$\\text{(a) } x^3 - 8, \\text{ (b) } 0$$",
+                "feedback": "You cannot simply multiply the first terms ($x \\times x \\times x$) and the last terms ($4 \\times -1 \\times 2$)! You must fully expand the expression to find the $x^2$ and $x$ components."
+            }
         ],
         "bradley_insight": {
             "type": "pro-tip",
@@ -86,15 +128,29 @@ const problemBank = [
         "subtopic": "Cosine Rule",
         "difficulty": "7/8",
         "img": "true",
-        "q": "In triangle $ABC$, $AB = 7\\text{ cm}$, $AC = 10\\text{ cm}$ and angle $BAC = 35^circ$.<br>(a) Calculate the length of $BC$ to 3 significant figures.<br>(b) Calculate the area of triangle $ABC$ to 3 significant figures.",
+        "q": "In triangle $ABC$, $AB = 7\\text{ cm}$, $AC = 10\\text{ cm}$ and angle $BAC = 35^\\circ$.<br>(a) Calculate the length of $BC$ to 3 significant figures.<br>(b) Calculate the area of triangle $ABC$ to 3 significant figures.",
         "steps": [
             "For part (a), we have two sides and the included angle (SAS), so we must use the Cosine Rule: $a^2 = b^2 + c^2 - 2bc\\cos(A)$.",
             "Substituting the values: $BC^2 = 10^2 + 7^2 - 2(10)(7)\\cos(35^\\circ)$.",
             "Calculation: $BC^2 = 100 + 49 - 140(0.81915...) = 149 - 114.68... = 34.318...$.",
-            "Taking the square root: $BC = 5.858...\\text{ cm}$.",
+            "Taking the square root: $BC = 5.86\\text{ cm}$.",
             "For part (b), we use the trigonometric area formula: $\\text{Area} = \\dfrac{1}{2}bc\\sin(A)$.",
-            "Calculation: $\\dfrac{1}{2} \\times 10 \\times 7 \\times \\sin(35^\\circ) = 35 \\times 0.57357... = 20.075...$.",
-            "Final Answer: $$(a)\\ 5.86\\text{ cm},\\ (b)\\ 20.1\\text{ cm}^2$$"
+            "Calculation: $\\dfrac{1}{2} \\times 10 \\times 7 \\times \\sin(35^\\circ) = 35 \\times 0.57357... = 20.1\\text{ cm}^2$.",
+            "Final Answer: $$\\text{(a) } 5.86\\text{ cm}, \\text{ (b) } 20.1\\text{ cm}^2$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) } 5.30\\text{ cm}, \\text{ (b) } 20.1\\text{ cm}^2$$",
+                "feedback": "You fell into the classic BODMAS trap! You evaluated $149 - 140$ to get $9$, and then multiplied by $\\cos(35^\\circ)$. Multiplication must be done before subtraction!"
+            },
+            {
+                "ans": "$$\\text{(a) } 5.86\\text{ cm}, \\text{ (b) } 28.7\\text{ cm}^2$$",
+                "feedback": "You calculated part (a) perfectly, but in part (b) you used $\\cos(35^\\circ)$ in the area formula instead of $\\sin(35^\\circ)$! The formula is $\\frac{1}{2}ab\\sin(C)$."
+            },
+            {
+                "ans": "$$\\text{(a) } 34.3\\text{ cm}, \\text{ (b) } 20.1\\text{ cm}^2$$",
+                "feedback": "You calculated $BC^2$ perfectly, but you forgot to take the square root at the end to find the actual length of the side!"
+            }
         ],
         "bradley_insight": {
             "type": "pro-tip",
@@ -120,7 +176,21 @@ const problemBank = [
             "For part (b), we first apply the power of 3 to every term inside the bracket: $3^3(x^2)^3(y^4)^3 = 27x^6y^{12}$.",
             "We then divide this by the denominator: $\\dfrac{27x^6y^{12}}{9x^5y}$.",
             "Dividing coefficients and subtracting indices: $3x^{6-5}y^{12-1} = 3xy^{11}$.",
-            "Final Answer: $$(a)\\ 1.6,\\ (b)\\ 3xy^{11}$$"
+            "Final Answer: $$\\text{(a) } 1.6, \\text{ (b) } 3xy^{11}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) } 1.6, \\text{ (b) } x y^{11}$$",
+                "feedback": "For part (b), you multiplied the coefficient ($3 \\times 3 = 9$) instead of cubing it ($3^3 = 27$)! This meant your $9 \\div 9$ cancelled out completely."
+            },
+            {
+                "ans": "$$\\text{(a) } 0.625, \\text{ (b) } 3xy^{11}$$",
+                "feedback": "You evaluated the square root perfectly in part (a), but you forgot to apply the negative index! A negative index means you must flip the fraction upside down."
+            },
+            {
+                "ans": "$$\\text{(a) } 1.6, \\text{ (b) } 3x^1y^4$$",
+                "feedback": "For part (b), you only cubed the coefficient (3) and forgot to cube the variables inside the bracket! The power outside the bracket applies to *every* term inside."
+            }
         ],
         "bradley_insight": {
             "type": "caution",
@@ -147,7 +217,21 @@ const problemBank = [
             "This gives $x = 1.2$ and $x = -2$.",
             "Substituting $x = 1.2$ into $y = 2x + 1$: $y = 2(1.2) + 1 = 3.4$.",
             "Substituting $x = -2$ into $y = 2x + 1$: $y = 2(-2) + 1 = -3$.",
-            "Final Answer: $$(1.2, 3.4) \\text{ and } (-2, -3)$$"
+            "Final Answer: $$\\text{(a) } (1.2, 3.4) \\text{ and } (-2, -3)$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(1.5, 4) \\text{ and } (-2.4, -3.8)$$",
+                "feedback": "You expanded $(2x+1)^2$ as $4x^2+1$ and completely forgot the middle term ($+4x$)! You must always write the bracket out twice and use FOIL."
+            },
+            {
+                "ans": "$$x = 1.2, x = -2$$",
+                "feedback": "You solved the quadratic perfectly, but stopped halfway! The question asks for 'coordinates of intersection'. You must substitute your $x$ values back into the linear equation to find the $y$ values."
+            },
+            {
+                "ans": "$$(-1.2, -1.4) \\text{ and } (2, 5)$$",
+                "feedback": "You factorised perfectly to $(5x-6)(x+2)=0$, but you made a sign error when solving the brackets. Remember, if $(x+2)=0$, then $x=-2$!"
+            }
         ],
         "bradley_insight": {
             "type": "pro-tip",
@@ -174,6 +258,21 @@ const problemBank = [
             "Adding the coefficients: $(5 + 0.8) \\times 10^4 = 5.8 \\times 10^4$.",
             "Final Answer: $$(a)\\ 4 \\times 10^8,\\ (b)\\ 5.8 \\times 10^4$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$4.0 \\times 10^7,\\ 13 \\times 10^3$$",
+        "feedback": "You multiplied the powers correctly in part (a) but forgot to convert $40 \\times 10^7$ into standard form. In part (b), you added the coefficients without matching the powers of 10 first."
+    },
+    {
+        "ans": "$$40 \\times 10^7,\\ 13 \\times 10^4$$",
+        "feedback": "In part (a), you left the answer as $40 \\times 10^7$, which is not standard form because the first number must be between 1 and 10. In part (b), you added $5$ and $8$ directly without converting $B$ to the same power of 10 as $A$."
+    },
+    {
+        "ans": "$$4 \\times 10^8,\\ 0.58 \\times 10^5$$",
+        "feedback": "Part (a) is correct, but in part (b) you converted the final answer incorrectly. $5.8 \\times 10^4$ is already standard form — moving the decimal again changes the value."
+    }
+],
+
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Addition vs Multiplication",
@@ -201,6 +300,20 @@ const problemBank = [
             "The percentage decrease is $100\\% - 76.5\\% = 23.5\\%$.",
             "Final Answer: $$(a)\\ £61.20,\\ (b)\\ 23.5\\%$$"
         ],
+        "wrong_options":[
+    {
+        "ans": "$$£56,\\ 25\\%$$",
+        "feedback": "You treated the reductions as if they were both taken from the original £80. The second reduction must be applied to the new price, not the starting one."
+    },
+    {
+        "ans": "$$£61.20,\\ 15\\% + 10\\% = 25\\%$$",
+        "feedback": "Part (a) is correct, but in part (b) you added the percentages. Successive percentage changes multiply, they do not add."
+    },
+    {
+        "ans": "$$£68,\\ 23\\%$$",
+        "feedback": "You stopped after the first reduction in part (a). In part (b), your percentage decrease is close but not accurate — you must use the combined multiplier $0.85 \\times 0.90$."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Don't Just Add Percentages",
@@ -227,6 +340,20 @@ const problemBank = [
             "Calculation: $180^\\circ - 55^\\circ = 125^\\circ$.",
             "Final Answer: $$(a)\\ 55^\\circ\\text{ (Angle at centre is twice angle at circumference)},\\ (b)\\ 125^\\circ$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$110^\\circ,\\ 70^\\circ$$",
+        "feedback": "You used the centre angle directly for part (a). The angle at the circumference is always half the angle at the centre, not the same."
+    },
+    {
+        "ans": "$$55^\\circ,\\ 145^\\circ$$",
+        "feedback": "Part (a) is correct, but in part (b) you added instead of subtracting. Opposite angles in a cyclic quadrilateral must sum to $180^\\circ$."
+    },
+    {
+        "ans": "$$220^\\circ,\\ 125^\\circ$$",
+        "feedback": "You doubled the centre angle in part (a), which reverses the theorem. The centre angle is the larger one — the circumference angle is half of it."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Euclidean Rigour",
@@ -253,6 +380,20 @@ const problemBank = [
             "For part (b), we set each factor to zero: $2x - 3 = 0 \\implies x = 1.5$; $x - 2 = 0 \\implies x = 2$.",
             "Final Answer: $$(a)\\ (2x - 3)(x - 2),\\ (b)\\ x = 1.5, x = 2$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(2x + 3)(x - 2),\\ x = -1.5,\\ x = 2$$",
+        "feedback": "You found numbers that multiply to 12 but got the signs wrong. This changes the roots completely."
+    },
+    {
+        "ans": "$$(2x - 3)(x + 2),\\ x = 1.5,\\ x = -2$$",
+        "feedback": "You factorised incorrectly — the middle term would be $+x$, not $-7x$. The incorrect factorisation leads to the wrong second root."
+    },
+    {
+        "ans": "$$2(x - 3)(x - 2),\\ x = 3,\\ x = 2$$",
+        "feedback": "You pulled out a factor of 2 incorrectly. Expanding your brackets does not give the original quadratic."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The AC Method",
@@ -280,6 +421,20 @@ const problemBank = [
             "Summing these areas: $32\\pi + 80\\pi = 112\\pi\\text{ cm}^2$.",
             "Final Answer: $$(a)\\ 160\\pi\\text{ cm}^3,\\ (b)\\ 112\\pi\\text{ cm}^2$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$80\\pi\\text{ cm}^3,\\ 96\\pi\\text{ cm}^2$$",
+        "feedback": "You used $r$ instead of $r^2$ in the volume formula. In the surface area, you missed one of the circular ends."
+    },
+    {
+        "ans": "$$160\\pi\\text{ cm}^3,\\ 64\\pi\\text{ cm}^2$$",
+        "feedback": "The volume is correct, but for surface area you only calculated the two circular ends and forgot the curved surface."
+    },
+    {
+        "ans": "$$320\\pi\\text{ cm}^3,\\ 112\\pi\\text{ cm}^2$$",
+        "feedback": "You doubled the height when calculating the volume. The formula is $\\pi r^2 h$, not $2h$."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Don't Forget the Ends",
@@ -306,6 +461,20 @@ const problemBank = [
             "Simplifying by dividing both by 12: $2 : 5$.",
             "Final Answer: $$(a)\\ £48,\\ (b)\\ 2 : 5$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$£36,\\ 3 : 5$$",
+        "feedback": "You gave Alan’s share instead of Barbara’s in part (a). In part (b), you added £12 to Barbara but forgot to subtract it from Alan."
+    },
+    {
+        "ans": "$$£48,\\ 4 : 7$$",
+        "feedback": "Part (a) is correct, but in part (b) you added the £12 to both people. A transfer means one loses money and the other gains it."
+    },
+    {
+        "ans": "$$£40,\\ 1 : 3$$",
+        "feedback": "You recalculated the ratio as if the £12 was shared in the original 3:4 ratio. The transfer changes the ratio completely — it is not a new sharing question."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Ratio Stability",
@@ -331,6 +500,20 @@ const problemBank = [
             "This is unreliable because the positive trend may not continue indefinitely (for example, scores cannot exceed $100\\%$).",
             "Final Answer: $$(a)\\ \text{As study hours increase, scores increase},\\ (b)\\ \text{Extrapolation is unreliable}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\text{As } x \\text{ increases, } y \\text{ decreases}$$",
+        "feedback": "You’ve described a negative correlation. The graph shows a strong positive correlation, meaning both variables increase together."
+    },
+    {
+        "ans": "$$\\text{A line of best fit will always work, even for } 100 \\text{ hours}$$",
+        "feedback": "This ignores extrapolation. Predicting far outside the data range (0–20 hours) is unreliable because the trend may not continue."
+    },
+    {
+        "ans": "$$\\text{The relationship is perfect and } y = x$$",
+        "feedback": "A strong correlation does not mean a perfect one. The points won’t lie exactly on a straight line, and the relationship isn’t necessarily }y=x\\text{."
+    }
+],
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Correlation vs Causation",
@@ -356,6 +539,20 @@ const problemBank = [
             "The values are $-1, 0, 1, 2, 3$.",
             "Final Answer: $$(a)\\ x > 7,\\ (b)\\ -1, 0, 1, 2, 3$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$x > 4,\\ -2, -1, 0, 1, 2, 3$$",
+        "feedback": "You subtracted 3 incorrectly when solving the inequality. Also, $-2$ should not be included because the inequality is strict."
+    },
+    {
+        "ans": "$$x > 7,\\ -1, 0, 1, 2$$",
+        "feedback": "Part (a) is correct, but you missed the value $3$ in part (b). The symbol $\\le 3$ means 3 must be included."
+    },
+    {
+        "ans": "$$x > 14,\\ 0, 1, 2, 3$$",
+        "feedback": "You divided by 2 incorrectly in part (a). In part (b), you forgot that the values must be greater than $-2$, so $-1$ should be included."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Inclusion Symbols",
@@ -383,6 +580,20 @@ const problemBank = [
             "The inverse of $\\begin{pmatrix} 4 \\\\ -1 \\end{pmatrix}$ is $\\begin{pmatrix} -4 \\\\ 1 \\end{pmatrix}$.",
             "Final Answer: $$(a)\\ (5, 1), (7, 1), (6, 4),\\ (b)\\ \\begin{pmatrix} -4 \\\\ 1 \\end{pmatrix}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(3, 3), (5, 3), (4, 6),\\ \\begin{pmatrix} 4 \\\\ -1 \\end{pmatrix}$$",
+        "feedback": "You added the vector the wrong way around: you added $-1$ to the $x$‑coordinates and $4$ to the $y$‑coordinates."
+    },
+    {
+        "ans": "$$(5, 1), (7, 1), (6, 4),\\ \\begin{pmatrix} 4 \\\\ -1 \\end{pmatrix}$$",
+        "feedback": "Part (a) is correct, but the vector in part (b) should be the *negative* of the original translation to reverse it."
+    },
+    {
+        "ans": "$$(5, 3), (7, 3), (6, 6),\\ \\begin{pmatrix} -4 \\\\ -1 \\end{pmatrix}$$",
+        "feedback": "You added 4 to both coordinates instead of only to the $x$‑values. The $y$‑coordinates should decrease by 1."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Vector vs Coordinate",
@@ -410,6 +621,20 @@ const problemBank = [
             "Alternatively, $P(RB) + P(BR) = \\dfrac{6}{20} + \\dfrac{6}{20} = \\dfrac{12}{20} = \\dfrac{3}{5}$.",
             "Final Answer: $$(a)\\ \\dfrac{2}{5},\\ (b)\\ \\dfrac{3}{5}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\dfrac{6}{25},\\ \\dfrac{19}{25}$$",
+        "feedback": "You treated the second pick as if the counters were replaced. The denominators must change because the counters are not put back."
+    },
+    {
+        "ans": "$$\\dfrac{1}{2},\\ \\dfrac{1}{2}$$",
+        "feedback": "You assumed the events were equally likely. The bag has more red counters than blue, so the probabilities are not 50–50."
+    },
+    {
+        "ans": "$$\\dfrac{8}{20},\\ \\dfrac{8}{20}$$",
+        "feedback": "You repeated the same probability for both parts. Part (b) is the complement of part (a), so the two answers must add to 1."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: The Complement Shortcut",
@@ -437,6 +662,21 @@ const problemBank = [
             "Rounding to 2 decimal places gives $44.36\\text{ cm}^2$.",
             "Final Answer: $$(a)\\ 8.35\\text{ cm},\\ (b)\\ 44.36\\text{ cm}^2$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$8.4\\text{ cm},\\ 44.00\\text{ cm}^2$$",
+        "feedback": "You used the rounded measurement instead of the lower bound. Bounds require adjusting by half the degree of accuracy."
+    },
+    {
+        "ans": "$$8.3\\text{ cm},\\ 43.89\\text{ cm}^2$$",
+        "feedback": "You rounded the lower bound too aggressively. The correct lower bound is $8.35\\text{ cm}$ because the accuracy is to the nearest $0.1$."
+    },
+    {
+        "ans": "$$8.35\\text{ cm},\\ 44.25\\text{ cm}^2$$",
+        "feedback": "Part (a) is correct, but for part (b) you must use the *upper* bounds of both dimensions to maximise the area."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Maximum Product Logic",
@@ -462,6 +702,20 @@ const problemBank = [
             "Substituting our values, the turning point is $(-3, -4)$.",
             "Final Answer: $$(a)\\ (x + 3)^2 - 4,\\ (b)\\ (-3, -4)$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(x + 3)^2 + 5,\\ (-3, 5)$$",
+        "feedback": "You forgot to subtract the square of 3 when completing the square. This changes the constant term and the turning point."
+    },
+    {
+        "ans": "$$(x + 6)^2 - 31,\\ (-6, -31)$$",
+        "feedback": "You halved the coefficient incorrectly. Half of 6 is 3, not 6."
+    },
+    {
+        "ans": "$$(x - 3)^2 - 4,\\ (3, -4)$$",
+        "feedback": "You changed the sign inside the bracket. The expression $(x+3)^2$ gives a turning point at $(-3, -4)$, not $(3, -4)$."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: The Turning Point Sign",
@@ -488,6 +742,20 @@ const problemBank = [
             "The remaining factor in the numerator is $(x - 2)$.",
             "Final Answer: $$\\dfrac{x - 2}{2x}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\dfrac{2(x-2)}{4x}$$",
+        "feedback": "You cancelled the $(x+2)$ correctly but forgot that the numerator was $2(x-2)$, not just $(x-2)$. You must simplify the coefficients as well."
+    },
+    {
+        "ans": "$$\\dfrac{x^2-4}{2x(x+2)}$$",
+        "feedback": "You factorised the numerator but didn’t factorise the denominator fully. The denominator must be written as $4x(x+2)$ before cancelling."
+    },
+    {
+        "ans": "$$\\dfrac{x+2}{2x}$$",
+        "feedback": "You cancelled the wrong bracket. The numerator is $2(x-2)(x+2)$, so the $(x+2)$ cancels, leaving $(x-2)$, not $(x+2)$."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Nested Factorisation",
@@ -516,6 +784,20 @@ const problemBank = [
             "Rounding to 1 decimal place gives $13.9\\text{ cm}$.",
             "Final Answer: $$(a)\\ 193,\\ (b)\\ 13.9\\text{ cm}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$BC^2 = 81 + 49 - 126(0.5),\\ BC = 5.7\\text{ cm}$$",
+        "feedback": "You used $\\cos(120^\\circ)=0.5$ instead of $-0.5$. Obtuse angles always have negative cosine values."
+    },
+    {
+        "ans": "$$BC^2 = 193,\\ BC = 14\\text{ cm}$$",
+        "feedback": "Part (a) is correct, but you rounded $\\sqrt{193}$ incorrectly. It is approximately $13.9$, not $14$."
+    },
+    {
+        "ans": "$$BC^2 = 130 - 63 = 67,\\ BC = 8.2\\text{ cm}$$",
+        "feedback": "You subtracted the final term instead of adding it. The double negative in the Cosine Rule becomes a plus."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Negative Cosine Values",
@@ -548,6 +830,20 @@ const problemBank = [
             "title": "The Head Teacher's Eye: Consistency and Spread",
             "content": "The Interquartile Range is a measure of spread that focuses on the middle $50\\%$ of the data. Examiners often ask you to compare two datasets; remember that a lower $IQR$ indicates that the data is more consistent (less spread out) around the median."
         },
+        "wrong_options": [
+    {
+        "ans": "$$Q_1: 40,\\ M: 20,\\ Q_3: 60,\\ IQR = 9\\text{ kg}$$",
+        "feedback": "You swapped the positions of $Q_1$ and the median. Quartiles must be at 20, 40, and 60 for a total of 80 students."
+    },
+    {
+        "ans": "$$Q_1: 20,\\ M: 40,\\ Q_3: 60,\\ IQR = 29\\text{ kg}$$",
+        "feedback": "Part (a) is correct, but you added the quartiles instead of subtracting them. The IQR is $Q_3 - Q_1$."
+    },
+    {
+        "ans": "$$Q_1: 10,\\ M: 40,\\ Q_3: 70,\\ IQR = 18\\text{ kg}$$",
+        "feedback": "You used incorrect cumulative frequency positions. Quartiles divide the total frequency into four equal parts: 20, 40, and 60."
+    }
+],
         "payhip_link": "https://payhip.com/b/XAGch",
         "button_text": "Master Statistics: Download the Full Statistics Pack"
     },
@@ -571,6 +867,20 @@ const problemBank = [
             "Rounding to 3 decimal places gives 0.591.",
             "Final Answer: $$(a)\\ \\text{Shown},\\ (b)\\ x_2 = 0.794, x_3 = 0.591$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$x_2 = 0.5,\\ x_3 = 0.5$$",
+        "feedback": "You reused the starting value instead of applying the iteration. Each new value must be substituted back into the formula."
+    },
+    {
+        "ans": "$$x_2 = 0.794,\\ x_3 = 0.794$$",
+        "feedback": "You calculated $x_2$ correctly but forgot to use it to find $x_3$. Iteration requires repeated substitution."
+    },
+    {
+        "ans": "$$x_2 = 0.63,\\ x_3 = 0.86$$",
+        "feedback": "You used square roots instead of cube roots. The formula uses a cube root: $x_{n+1} = \\sqrt[3]{1 - x_n}$."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Iteration Efficiency",
@@ -598,6 +908,20 @@ const problemBank = [
             "Calculation: $2 \\times 64 = 128\\text{ cm}^3$.",
             "Final Answer: $$(a)\\ 3 : 4,\\ (b)\\ 128\\text{ cm}^3$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$3 : 4,\\ 96\\text{ cm}^3$$",
+        "feedback": "You used the area scale factor instead of the volume scale factor. Volume scales with $k^3$, not $k^2$."
+    },
+    {
+        "ans": "$$4 : 3,\\ 128\\text{ cm}^3$$",
+        "feedback": "You reversed the height ratio. The smaller cone corresponds to the smaller height, so the ratio must be $3 : 4$."
+    },
+    {
+        "ans": "$$3 : 4,\\ 216\\text{ cm}^3$$",
+        "feedback": "You multiplied by $k^3$ incorrectly. The volume scale factor is $\\dfrac{64}{27}$, not $8$."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Linear Bridge",
@@ -625,6 +949,20 @@ const problemBank = [
             "Solving the second case: $3x = 1 \\implies x = \\dfrac{1}{3}$.",
             "Final Answer: $$(a)\\ 3x^2 - 2,\\ (b)\\ 9x^2 - 12x + 4,\\ (c)\\ x = 1, x = \\dfrac{1}{3}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$fg(x) = 3x - 2,\\ gf(x) = 9x - 2,\\ x = 1$$",
+        "feedback": "You substituted incorrectly. $fg(x)$ means substitute $g(x)$ into $f$, not the other way around."
+    },
+    {
+        "ans": "$$fg(x) = 3x^2 - 2,\\ gf(x) = 9x^2 - 12x + 4,\\ x = -1$$",
+        "feedback": "Parts (a) and (b) are correct, but you solved $(3x - 2)^2 = 1$ incorrectly. Both positive and negative square roots must be considered."
+    },
+    {
+        "ans": "$$fg(x) = 3x^2 - 2,\\ gf(x) = (3x - 2),\\ x = \\dfrac{1}{3}$$",
+        "feedback": "You forgot to square the bracket in $gf(x)$. $g(x)$ squares its input, so $(3x - 2)$ must be squared."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Function Order",
@@ -651,6 +989,20 @@ const problemBank = [
             "Calculation: Angle $BCD = 180^\\circ - 78^\\circ = 102^\\circ$.",
             "Final Answer: $$(a)\\ 102^\\circ\\text{ (Opposite angles in a cyclic quadrilateral sum to } 180^\\circ),\\ (b)\\ 102^\\circ$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$102^\\circ,\\ 78^\\circ$$",
+        "feedback": "You correctly used opposite angles for part (a), but in part (b) you treated the angles as corresponding rather than co‑interior. Because the lines are parallel, the angles must add to $180^\\circ$."
+    },
+    {
+        "ans": "$$78^\\circ,\\ 102^\\circ$$",
+        "feedback": "You reused the given angle for part (a). Opposite angles in a cyclic quadrilateral must sum to $180^\\circ$, so the angle cannot stay the same."
+    },
+    {
+        "ans": "$$102^\\circ,\\ 90^\\circ$$",
+        "feedback": "Part (a) is correct, but in part (b) you used alternate angles instead of co‑interior angles. Because the lines are parallel, the angles must be supplementary."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Geometric Reasons",
@@ -677,6 +1029,20 @@ const problemBank = [
             "The $\\sqrt{5}$ terms cancel out, leaving the integer 5.",
             "Final Answer: $$(a)\\ 5\\sqrt{5},\\ (b)\\ 5$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\sqrt{65},\\ 13$$",
+        "feedback": "You added the numbers under the square roots directly. Surds can only be added when simplified to like terms."
+    },
+    {
+        "ans": "$$5\\sqrt{5},\\ \\sqrt{5}$$",
+        "feedback": "Part (a) is correct, but in part (b) you divided the coefficients instead of cancelling the surds. $\\sqrt{5}$ cancels completely."
+    },
+    {
+        "ans": "$$\\sqrt{20} + \\sqrt{45},\\ 5\\sqrt{\\frac{5}{5}}$$",
+        "feedback": "You didn’t simplify the surds before dividing. Always simplify first to reveal the common factor."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Surd Addition",
@@ -702,6 +1068,20 @@ const problemBank = [
             "Calculation: $1 - P(RR) = 1 - \\dfrac{2}{7} = \\dfrac{5}{7}$.",
             "Final Answer: $$(a)\\ \\dfrac{2}{7},\\ (b)\\ \\dfrac{5}{7}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\dfrac{4}{7} \\times \\dfrac{4}{7} = \\dfrac{16}{49},\\ \\dfrac{33}{49}$$",
+        "feedback": "You treated the second pick as if the counters were replaced. The denominator must decrease after the first pick."
+    },
+    {
+        "ans": "$$\\dfrac{2}{7},\\ \\dfrac{2}{7}$$",
+        "feedback": "You repeated the probability of both red for part (b). 'At least one blue' is the complement of 'both red'."
+    },
+    {
+        "ans": "$$\\dfrac{12}{42},\\ \\dfrac{30}{42}$$",
+        "feedback": "You used the unsimplified fraction for part (a) and then subtracted incorrectly. The complement must be $1 - P(RR)$."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: The 'At Least' Shortcut",
@@ -728,6 +1108,20 @@ const problemBank = [
             "The expression is now in the form $4k + 1$, which is one more than a multiple of 4.",
             "Final Answer: $$4(n^2 + n) + 1 \\text{ is one more than a multiple of 4}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(2n+1)^2 = 4n^2 + 1,\\ \\text{so it is odd}$$",
+        "feedback": "You forgot the middle term $4n$. Without it, the expression cannot be written in the form $4k+1$."
+    },
+    {
+        "ans": "$$(2n-1)^2 = 4n^2 - 4n + 1,\\ \\text{so it is even}$$",
+        "feedback": "You used a valid odd number form, but concluded it was even. The expression is $4k+1$, which is odd, not even."
+    },
+    {
+        "ans": "$$(2n+1)^2 = 2(2n^2 + 2n + 1)$$",
+        "feedback": "You factored out a 2 incorrectly. The expression cannot be written as $2(\text{integer})$ because it is always odd."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Defining integers",
@@ -755,6 +1149,20 @@ const problemBank = [
             "Since the result equals $r^2$, the point satisfies the equation and lies on the circumference.",
             "Final Answer: $$(a)\\ (x - 2)^2 + (y + 3)^2 = 25,\\ (b)\\ \\text{Shown}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(x + 2)^2 + (y - 3)^2 = 25,\\ \\text{Not shown}$$",
+        "feedback": "You changed both signs incorrectly. Remember: $(x - a)$ and $(y - b)$ use the centre $(a, b)$ exactly as given."
+    },
+    {
+        "ans": "$$(x - 2)^2 + (y + 3)^2 = 25,\\ 9 + 4 = 13$$",
+        "feedback": "Part (a) is correct, but you substituted the point incorrectly. $(1+3)^2$ should be $16$, not $4$."
+    },
+    {
+        "ans": "$$(x - 2)^2 + (y - 3)^2 = 25,\\ 9 + 16 = 25$$",
+        "feedback": "You used the wrong sign for the $y$‑coordinate in the equation. The centre is $(2, -3)$, so the equation must use $(y + 3)$."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Coordinate Sign Trap",
@@ -782,6 +1190,21 @@ const problemBank = [
             "The image is also rotated $180^\\circ$ relative to the object.",
             "Final Answer: $$(a)\\ (-2, -2), (-4, -2), (-2, -6),\\ (b)\\ \text{Opposite side and rotated } 180^\\circ$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(2, 2), (4, 2), (2, 6),\\ \\text{Reflected but not rotated}$$",
+        "feedback": "You used a positive scale factor instead of a negative one. A negative scale factor reverses the direction of the coordinates."
+    },
+    {
+        "ans": "$$(-2, -2), (-4, -2), (-2, -6),\\ \\text{Same orientation}$$",
+        "feedback": "Part (a) is correct, but a negative enlargement always flips the shape, creating a $180^\\circ$ rotation."
+    },
+    {
+        "ans": "$$(-1, -1), (-2, -1), (-1, -3),\\ \\text{Opposite side only}$$",
+        "feedback": "You halved the scale factor instead of multiplying by $-2$. The coordinates must be scaled by the full factor."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Negative Enlargement",
@@ -807,6 +1230,20 @@ const problemBank = [
             "Therefore, $n(n - 1)$ is always even for all integer values of $n$.",
             "Final Answer: $$n(n-1) \\text{ is always even}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$n(n-1) = n^2 - 1,\\ \\text{always even}$$",
+        "feedback": "You expanded incorrectly. $n(n-1)$ expands to $n^2 - n$, not $n^2 - 1$."
+    },
+    {
+        "ans": "$$n(n-1) = 2k + 1$$",
+        "feedback": "You concluded the expression is odd. One of the consecutive integers is always even, so the product must be even."
+    },
+    {
+        "ans": "$$n(n-1) = 2n^2 - 2n$$",
+        "feedback": "You multiplied the entire expression by 2 unnecessarily. The goal is to show the expression itself is even, not $2$ times the expression."
+    }
+],
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Logic vs Expansion",
