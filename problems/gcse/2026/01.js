@@ -1203,6 +1203,6 @@ const problemBank = [
             "content": "This is a classic high-tier coordinate geometry question. You aren't given the line for the tangent, so you must use the radius as your 'anchor'. Just remember: Radius $\\perp$ Tangent. Once you have the radius gradient, the negative reciprocal gives you the tangent gradient immediately."
         },
         "payhip_link": "https://payhip.com/b/XAGch",
-        "button_text": "Master Geometry: Download the Full Geometry Pick"
+        "button_text": "Master Geometry: Download the Full Geometry Pack"
     }
 ];
