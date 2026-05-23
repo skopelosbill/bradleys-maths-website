@@ -796,8 +796,8 @@ const BradleyHub = {
                 <p style="margin-bottom: 15px; font-weight: bold; color: var(--brand-purple); text-align: center;">Select your answer:</p>
                 <div style="display: flex; flex-direction: column; gap: 8px; align-items: center;">
                     ${optionsObj.map(opt => {
-                        // Safely escape quotes to prevent breaking the HTML onclick handler
-                        const safeFeedback = opt.feedback.replace(/'/g, "\\'").replace(/"/g, "&quot;");
+                        // Safely escape backslashes and quotes to prevent breaking the HTML onclick handler
+                        const safeFeedback = opt.feedback.replace(/\\/g, "\\\\").replace(/'/g, "\\'").replace(/"/g, "&quot;");
                         return `
                         <button class="mcq-btn" style="width: 100%; max-width: 400px; padding: 12px; font-size: 1rem; border: 1px solid var(--brand-purple); border-radius: 6px; background: white; cursor: pointer;" 
                                 onclick="BradleyHub.checkAnswer('${prob.id}', ${opt.isCorrect}, '${safeFeedback}')">
