@@ -90,7 +90,7 @@ const problemBank = [
             "(a) $\\text{Time} = \\frac{145}{60} = 2.4166... \\text{ hours}$.",
             "(b) The whole number is 2 hours.",
             "Convert $0.4166...$ to minutes: $0.4166... \\times 60 = 25\\text{ minutes}$.",
-            "Final Answer: $$2\\text{ hours } 25\\text{ minutes}$$"
+            "Final Answer: $$\\text{(a)}2.4166...\\text{ hours, (b) }2\\text{ hours } 25\\text{ minutes}$$"
         ],
         "wrong_options": [
             {

@@ -762,7 +762,7 @@ const BradleyHub = {
         optionsObj.push({ 
             text: "None of the above", 
             isCorrect: false, 
-            feedback: `<strong>Not quite!</strong> The correct answer was actually staring you in the face! Check the model answer below to see how to get there.` 
+            feedback: `<strong>Not quite!</strong> It looks like you need some extra help with this topic.  Perhaps you should consider purchasing the worksheet below for targeted help.` 
         });
 
         let imgHTML = '';
