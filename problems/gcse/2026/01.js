@@ -366,11 +366,11 @@ const problemBank = [
                 "feedback": "It looks like you calculated the change in $x$ divided by the change in $y$! The gradient formula is 'rise over run', meaning the $y$-values must always be on the top of the fraction."
             },
             {
-                        "ans": "\\text{(a) 2, (b) }y = 4x + 2$$",
+                        "ans": "$$\\text{(a) 2, (b) }y = 4x + 2$$",
                 "feedback": "You calculated the gradient correctly, but you swapped your $m$ and $c$ values in the final equation! The gradient is the number attached to $x$, and the intercept stands alone."
             },
             {
-                "ans": "\\text{(a) 4.6, (b) }y = 4.6x$$",
+                "ans": "$$\\text{(a) 4.6, (b) }y = 4.6x$$",
                 "feedback": "You tried to calculate the gradient by dividing $14$ by $3$. You added the coordinates together instead of subtracting them! Remember: $y_2 - y_1$ over $x_2 - x_1$."
             }
         ],
