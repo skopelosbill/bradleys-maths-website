@@ -17,6 +17,20 @@ const problemBank = [
             "Combining these results gives the final simplified expression.",
             "Final Answer: $$(a)\\ 9,\\ (b)\\ 2x^2$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 27^{2/3} = 27^{1/3} = 3,\\ (b)\\ 4x^2$$",
+        "feedback": "In part (a) you forgot to square the cube root. In part (b) you took the fourth root of 16 incorrectly."
+    },
+    {
+        "ans": "$$(a)\\ 27^{2/3} = 27^2 = 729,\\ (b)\\ 2x^4$$",
+        "feedback": "In part (a) you applied the numerator before the denominator. In part (b) you multiplied the indices incorrectly."
+    },
+    {
+        "ans": "$$(a)\\ 9,\\ (b)\\ x^2$$",
+        "feedback": "Part (a) is correct, but in part (b) you forgot to apply the fourth root to the coefficient 16."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Root Before Power",
@@ -44,6 +58,21 @@ const problemBank = [
             "Calculation: $90^\\circ + 18^\\circ = 108^\\circ$.",
             "Final Answer: $$(a)\\ 90^\\circ\\text{ (Angle in a semicircle)},\\ (b)\\ 18^\\circ,\\ (c)\\ 108^\\circ$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 90^\\circ,\\ (b)\\ 36^\\circ,\\ (c)\\ 126^\\circ$$",
+        "feedback": "Part (a) is correct, but in part (b) you used the centre angle instead of halving it."
+    },
+    {
+        "ans": "$$(a)\\ 72^\\circ,\\ (b)\\ 18^\\circ,\\ (c)\\ 90^\\circ$$",
+        "feedback": "Part (b) is correct, but in part (a) you ignored the semicircle rule."
+    },
+    {
+        "ans": "$$(a)\\ 72^\\circ,\\ (b)\\ 36^\\circ,\\ (c)\\ 108^\\circ$$",
+        "feedback": "Part (c) is correct, but parts (a) and (b) misapply the circle theorems."
+    }
+],
+
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Multi-Theorem Synthesis",
@@ -71,6 +100,21 @@ const problemBank = [
             "Since the second derivative is positive ($>0$), the turning point is a minimum.",
             "Final Answer: $$(a)\\ 2x - 8,\\ (b)\\ (4, -11),\\ (c)\\ \\text{Minimum}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 2x + 8,\\ (b)\\ (4, -11),\\ (c)\\ \\text{Maximum}$$",
+        "feedback": "Part (b) is correct, but in part (a) you differentiated $-8x$ incorrectly, and in part (c) a positive second derivative indicates a minimum."
+    },
+    {
+        "ans": "$$(a)\\ 2x - 8,\\ (b)\\ (8, -11),\\ (c)\\ \\text{Minimum}$$",
+        "feedback": "Part (a) and (c) are correct, but in part (b) you substituted the wrong $x$ value."
+    },
+    {
+        "ans": "$$(a)\\ 2,\\ (b)\\ (4, -11),\\ (c)\\ \\text{Maximum}$$",
+        "feedback": "You treated the derivative as a constant and misinterpreted the second derivative."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Second Derivative Test",
@@ -97,6 +141,21 @@ const problemBank = [
             "The probability is the number of 'Biology only' students divided by the total group size: $\\dfrac{6}{20}$.",
             "Final Answer: $$(a)\\ 4,\\ (b)\\ \\dfrac{3}{10}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 2,\\ (b)\\ \\dfrac{1}{5}$$",
+        "feedback": "You subtracted incorrectly in part (a), which led to an incorrect Biology‑only region."
+    },
+    {
+        "ans": "$$(a)\\ 4,\\ (b)\\ \\dfrac{1}{2}$$",
+        "feedback": "Part (a) is correct, but in part (b) you used the intersection instead of Biology‑only."
+    },
+    {
+        "ans": "$$(a)\\ 6,\\ (b)\\ \\dfrac{3}{10}$$",
+        "feedback": "Part (b) is correct, but in part (a) you added instead of subtracting when applying inclusion–exclusion."
+    }
+],
+
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Set Notation Precision",
@@ -124,6 +183,20 @@ const problemBank = [
             "Subtracting the terms: $6\\sqrt{2} - 2\\sqrt{2} = 4\\sqrt{2}$.",
             "Final Answer: $$(a)\\ 5\\sqrt{2},\\ (b)\\ 4\\sqrt{2}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ \\dfrac{10}{2} = 5,\\ (b)\\ 4\\sqrt{8}$$",
+        "feedback": "In part (a) you forgot to multiply the numerator by $\\sqrt{2}$. In part (b) you did not simplify the surds fully."
+    },
+    {
+        "ans": "$$(a)\\ 10\\sqrt{2},\\ (b)\\ 2\\sqrt{2}$$",
+        "feedback": "Part (a) incorrectly multiplies only the numerator. Part (b) simplifies $\\sqrt{18}$ incorrectly."
+    },
+    {
+        "ans": "$$(a)\\ 5\\sqrt{2},\\ (b)\\ 8\\sqrt{2}$$",
+        "feedback": "Part (a) is correct, but in part (b) you doubled instead of subtracting the simplified surds."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Surd Fluency",
@@ -152,6 +225,21 @@ const problemBank = [
             "Solving for $x$ gives $x = 5$.",
             "Final Answer: $$(a)\\ 2,\\ (b)\\ f^{-1}(x) = \\dfrac{x+5}{2},\\ (c)\\ x = 5$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 2,\\ (b)\\ 2x - 5,\\ (c)\\ x = 5$$",
+        "feedback": "Part (a) and (c) are correct, but in part (b) you repeated the original function instead of finding the inverse."
+    },
+    {
+        "ans": "$$(a)\\ 1,\\ (b)\\ \\dfrac{x - 5}{2},\\ (c)\\ x = 5$$",
+        "feedback": "Part (c) is correct, but in part (a) you substituted incorrectly, and in part (b) you rearranged the inverse incorrectly."
+    },
+    {
+        "ans": "$$(a)\\ 2,\\ (b)\\ \\dfrac{x+5}{2},\\ (c)\\ x = -5$$",
+        "feedback": "Parts (a) and (b) are correct, but in part (c) you solved the equation incorrectly."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Reflections in y = x",
@@ -179,6 +267,20 @@ const problemBank = [
             "Collecting like terms: $\\overrightarrow{OM} = \\mathbf{a} + 1.5\\mathbf{b}$.",
             "Final Answer: $$(a)\\ 3\\mathbf{b} - 2\\mathbf{a},\\ (b)\\ \\text{Shown}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 3\\mathbf{b} + 2\\mathbf{a},\\ (b)\\ \\mathbf{a} + 3\\mathbf{b}$$",
+        "feedback": "In part (a) you reversed the direction of $\\overrightarrow{PO}$. In part (b) you doubled the midpoint vector instead of halving it."
+    },
+    {
+        "ans": "$$(a)\\ \\mathbf{b} - \\mathbf{a},\\ (b)\\ \\dfrac{1}{2}(2\\mathbf{a} - 3\\mathbf{b})$$",
+        "feedback": "Both parts use incorrect path combinations. The midpoint must be the average of the two position vectors."
+    },
+    {
+        "ans": "$$(a)\\ 3\\mathbf{b} - 2\\mathbf{a},\\ (b)\\ 2\\mathbf{a} + 1.5\\mathbf{b}$$",
+        "feedback": "Part (a) is correct, but in part (b) you added the full vector $OP$ instead of averaging $OP$ and $OQ$."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Midpoint Formula",
@@ -205,6 +307,20 @@ const problemBank = [
             "Simplifying this gives $6\\pi\\text{ cm}^2$.",
             "Final Answer: $$(a)\\ 2\\pi\\text{ cm},\\ (b)\\ 6\\pi\\text{ cm}^2$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ \\pi\\text{ cm},\\ (b)\\ 3\\pi\\text{ cm}^2$$",
+        "feedback": "You used $\\theta/360$ incorrectly by halving the fraction instead of using $1/6$."
+    },
+    {
+        "ans": "$$(a)\\ 12\\pi\\text{ cm},\\ (b)\\ 36\\pi\\text{ cm}^2$$",
+        "feedback": "You used the full circumference and full area instead of the sector fraction."
+    },
+    {
+        "ans": "$$(a)\\ 2\\pi\\text{ cm},\\ (b)\\ 12\\pi\\text{ cm}^2$$",
+        "feedback": "Part (a) is correct, but in part (b) you forgot to divide by 6."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Exact Values of Pi",
@@ -231,6 +347,20 @@ const problemBank = [
             "Finally, we sum the two results: $\\dfrac{1}{2} + \\dfrac{1}{2} = 1$.",
             "Final Answer: $$1$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\dfrac{\\sqrt{3}}{2}$$",
+        "feedback": "You multiplied $\\sin(60)$ and $\\tan(30)$ incorrectly and omitted the $\\cos(45)^2$ term."
+    },
+    {
+        "ans": "$$\\dfrac{3}{2}$$",
+        "feedback": "You added the exact values without rationalising or squaring correctly."
+    },
+    {
+        "ans": "$$0$$",
+        "feedback": "You assumed $\\tan(30)$ cancels $\\sin(60)$ completely and forgot the $\\cos(45)^2$ contribution."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Non-Calculator Trig",
@@ -259,6 +389,20 @@ const problemBank = [
             "Calculation: $2(400) + 22 = 800 + 22 = 822$.",
             "Final Answer: $$(a)\\ 2n^2 + n + 2,\\ (b)\\ 822$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 4n^2 + n + 2,\\ (b)\\ 1642$$",
+        "feedback": "You doubled the second difference instead of halving it to find the coefficient of $n^2$."
+    },
+    {
+        "ans": "$$(a)\\ 2n^2 + 2n + 1,\\ (b)\\ 841$$",
+        "feedback": "Part (a) has an incorrect linear remainder, which leads to an incorrect 20th term."
+    },
+    {
+        "ans": "$$(a)\\ n^2 + 3n + 1,\\ (b)\\ 461$$",
+        "feedback": "You treated the sequence as linear-plus-square without using the method of differences."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Second Difference",
@@ -284,6 +428,21 @@ const problemBank = [
             "Rounding to 3 significant figures gives $10.8\\text{ m/s}$.",
             "Final Answer: $$10.8\\text{ m/s}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$10.3\\text{ m/s}$$",
+        "feedback": "You used the lower bound of distance and upper bound of time, which gives the minimum speed."
+    },
+    {
+        "ans": "$$9.5\\text{ m/s}$$",
+        "feedback": "You used the rounded values 100/10 instead of applying bounds."
+    },
+    {
+        "ans": "$$11.0\\text{ m/s}$$",
+        "feedback": "You used the upper bound for both distance and time, which does not maximise the quotient."
+    }
+],
+
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Boundary Logic",
@@ -310,6 +469,21 @@ const problemBank = [
             "Expanding and rearranging: $y - 1 = 8x - 16 \\implies y = 8x - 15$.",
             "Final Answer: $$(a)\\ 8,\\ (b)\\ y = 8x - 15$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 4,\\ (b)\\ y = 4x - 7$$",
+        "feedback": "You differentiated $x^3$ incorrectly as $3x$ instead of $3x^2$."
+    },
+    {
+        "ans": "$$(a)\\ 8,\\ (b)\\ y = 8x + 1$$",
+        "feedback": "Part (a) is correct, but in part (b) you used the wrong point on the curve."
+    },
+    {
+        "ans": "$$(a)\\ -8,\\ (b)\\ y = -8x + 17$$",
+        "feedback": "You substituted $x = -2$ instead of $x = 2$ when evaluating the derivative."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Tangents vs Curves",
@@ -338,6 +512,20 @@ const problemBank = [
             "Rounding to 2 decimal places: $x = 4.45$ or $x = -0.45$.",
             "Final Answer: $$4.45, -0.45$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$x = 2.45 \\text{ or } x = -2.45$$",
+        "feedback": "You formed the quadratic incorrectly by forgetting to multiply the right-hand side by the common denominator."
+    },
+    {
+        "ans": "$$x = 4.45 \\text{ or } x = 0.45$$",
+        "feedback": "Part of the quadratic was solved correctly, but you lost the negative root when taking the square root of 24."
+    },
+    {
+        "ans": "$$x = 3 \\text{ or } x = -1$$",
+        "feedback": "These values come from treating the equation as linear. The correct method produces a quadratic."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Rational Rearrangement",
@@ -364,6 +552,21 @@ const problemBank = [
             "The equation of the asymptote is $y = 2$.",
             "Final Answer: $$(a)\\ x \\neq 3,\\ (b)\\ y = 2$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ x \\neq -3,\\ (b)\\ y = 0$$",
+        "feedback": "The denominator becomes zero at $x = 3$, not $-3$. The horizontal asymptote is the constant term outside the fraction."
+    },
+    {
+        "ans": "$$(a)\\ x \\neq 3,\\ (b)\\ y = \\dfrac{1}{3}$$",
+        "feedback": "Part (a) is correct, but the asymptote is not found by substituting $x = 3$; it is the value the function approaches as $x$ becomes large."
+    },
+    {
+        "ans": "$$(a)\\ x \\neq 0,\\ (b)\\ y = 3$$",
+        "feedback": "Both parts misinterpret the structure of the reciprocal function."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Asymptote Intuition",
@@ -389,6 +592,20 @@ const problemBank = [
             "Calculation: $450 \\div 6 = 75\\text{ kg}$.",
             "Final Answer: $$(a)\\ 360\\text{ kg},\\ (b)\\ 75\\text{ kg}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 72\\text{ kg},\\ (b)\\ 27\\text{ kg}$$",
+        "feedback": "You treated the mean as the total instead of multiplying by the number of athletes."
+    },
+    {
+        "ans": "$$(a)\\ 360\\text{ kg},\\ (b)\\ 81\\text{ kg}$$",
+        "feedback": "Part (a) is correct, but in part (b) you divided by 5 instead of 6."
+    },
+    {
+        "ans": "$$(a)\\ 300\\text{ kg},\\ (b)\\ 65\\text{ kg}$$",
+        "feedback": "Both parts use incorrect totals. Always calculate the initial total before adding new data."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Working with Totals",
@@ -418,6 +635,20 @@ const problemBank = [
             "Rounding to 1 decimal place: $45.2^\\circ$.",
             "Final Answer: $$(a)\\ 12\\text{ cm},\\ (b)\\ 45.2^\\circ$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 8\\text{ cm},\\ (b)\\ 30.0^\\circ$$",
+        "feedback": "You subtracted instead of applying Pythagoras. The angle must be doubled because there are two congruent right triangles."
+    },
+    {
+        "ans": "$$(a)\\ 12\\text{ cm},\\ (b)\\ 22.6^\\circ$$",
+        "feedback": "Part (a) is correct, but in part (b) you forgot to double the angle $OTP$."
+    },
+    {
+        "ans": "$$(a)\\ 5\\text{ cm},\\ (b)\\ 60.0^\\circ$$",
+        "feedback": "Both parts misapply tangent properties. Tangents from a point are equal and form right angles with the radius."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Tangent Properties",
@@ -446,6 +677,20 @@ const problemBank = [
             "Therefore, it takes 5 years for the value to exceed $£800$.",
             "Final Answer: $$(a)\\ £605,\\ (b)\\ 5\\text{ years}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ £600,\\ (b)\\ 4\\text{ years}$$",
+        "feedback": "Part (a) uses simple interest instead of compound interest. In part (b), $1.1^4$ is still below the target."
+    },
+    {
+        "ans": "$$(a)\\ £605,\\ (b)\\ 6\\text{ years}$$",
+        "feedback": "Part (a) is correct, but in part (b) you did not check the smallest $n$ for which the value exceeds £800."
+    },
+    {
+        "ans": "$$(a)\\ £550,\\ (b)\\ 5\\text{ years}$$",
+        "feedback": "Part (a) uses the wrong multiplier. Compound interest requires $(1.1)^2$."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Trial and Improvement",
@@ -472,6 +717,20 @@ const problemBank = [
             "Simplifying the fraction: $y = \\dfrac{8}{5} = 1.6$.",
             "Final Answer: $$(a)\\ y = \\dfrac{40}{x^2},\\ (b)\\ 1.6$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ y = \\dfrac{20}{x^2},\\ (b)\\ 0.8$$",
+        "feedback": "You halved the constant incorrectly when solving for $k$."
+    },
+    {
+        "ans": "$$(a)\\ y = \\dfrac{40}{x},\\ (b)\\ 8$$",
+        "feedback": "Part (a) ignores the word 'square'. This leads to a completely different relationship."
+    },
+    {
+        "ans": "$$(a)\\ y = \\dfrac{40}{x^2},\\ (b)\\ 5$$",
+        "feedback": "Part (a) is correct, but in part (b) you substituted $x = 5$ incorrectly."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Power Proportions",
@@ -496,6 +755,21 @@ const problemBank = [
             "For a regular polygon, all exterior angles are equal. We divide the total by the size of one exterior angle: $360 \\div 36 = 10$.",
             "Final Answer: $$(a)\\ 36^\\circ,\\ (b)\\ 10$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 144^\\circ,\\ (b)\\ 2.5$$",
+        "feedback": "You used the interior angle instead of subtracting from $180^\\circ$, and then divided $360$ by the wrong value."
+    },
+    {
+        "ans": "$$(a)\\ 36^\\circ,\\ (b)\\ 8$$",
+        "feedback": "Part (a) is correct, but in part (b) you used the interior angle formula instead of the exterior angle method."
+    },
+    {
+        "ans": "$$(a)\\ 46^\\circ,\\ (b)\\ 7.8$$",
+        "feedback": "Both parts are incorrect. The exterior angle must be $180 - 144$."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Exterior Constant",
@@ -520,6 +794,20 @@ const problemBank = [
             "Combining these results gives $\\dfrac{1}{8} \\times x^6 = \\dfrac{x^6}{8}$.",
             "Final Answer: $$\\dfrac{x^6}{8}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\dfrac{x^{-6}}{8}$$",
+        "feedback": "You multiplied the indices correctly but forgot that a negative power inverts the base."
+    },
+    {
+        "ans": "$$8x^6$$",
+        "feedback": "You applied the power to the variable but not to the coefficient."
+    },
+    {
+        "ans": "$$\\dfrac{1}{8x^6}$$",
+        "feedback": "You inverted both the coefficient and the variable. Only the coefficient becomes a reciprocal."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Distributed Powers",
@@ -545,6 +833,20 @@ const problemBank = [
             "3rd Quadrant solution: $180^\\circ + 60^\\circ = 240^\\circ$.",
             "Final Answer: $$120^\\circ, 240^\\circ$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$60^\\circ, 300^\\circ$$",
+        "feedback": "These are the angles where $\\cos(x) = +\\tfrac{1}{2}$. The equation requires $\\cos(x) = -\\tfrac{1}{2}$."
+    },
+    {
+        "ans": "$$120^\\circ, 300^\\circ$$",
+        "feedback": "You found one correct quadrant but used the wrong symmetry for the second solution."
+    },
+    {
+        "ans": "$$240^\\circ, 360^\\circ$$",
+        "feedback": "You included $360^\\circ$, which is outside the valid range for unique solutions."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Quadrant Analysis",
@@ -571,6 +873,20 @@ const problemBank = [
             "Calculation: $0.6 \\times 0.5 = 0.3$.",
             "Final Answer: $$(a)\\ 0.2,\\ (b)\\ 0.3$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 0.9,\\ (b)\\ 0.1$$",
+        "feedback": "You added the probabilities instead of multiplying for independent events."
+    },
+    {
+        "ans": "$$(a)\\ 0.2,\\ (b)\\ 0.6$$",
+        "feedback": "Part (a) is correct, but in part (b) you added the complements instead of multiplying them."
+    },
+    {
+        "ans": "$$(a)\\ 0.4,\\ (b)\\ 0.5$$",
+        "feedback": "Both parts ignore the independence rule. $P(A\\cap B)$ must be $P(A)P(B)$."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Independence Logic",
@@ -598,6 +914,20 @@ const problemBank = [
             "Rearranging gives the final linear equation $y = -x + 12$.",
             "Final Answer: $$(a)\\ (5, 7),\\ (b)\\ y = -x + 12$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ (4, 6),\\ (b)\\ y = -x + 10$$",
+        "feedback": "You averaged incorrectly in part (a), which shifted the bisector to the wrong point."
+    },
+    {
+        "ans": "$$(a)\\ (5, 7),\\ (b)\\ y = x - 5$$",
+        "feedback": "Part (a) is correct, but in part (b) you used the same gradient instead of the negative reciprocal."
+    },
+    {
+        "ans": "$$(a)\\ (4, 6),\\ (b)\\ y = x + 1$$",
+        "feedback": "Both parts are incorrect. The midpoint and perpendicular gradient must both be used."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Perpendicular Bisector",
@@ -623,6 +953,20 @@ const problemBank = [
             "For part (c), the error interval is expressed using inequalities.",
             "Final Answer: $$(a)\\ 5.35,\\ (b)\\ 5.45,\\ (c)\\ 5.35 \\le x < 5.45$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 5.30,\\ (b)\\ 5.50,\\ (c)\\ 5.30 \\le x < 5.50$$",
+        "feedback": "You used rounding to 1 decimal place instead of 2 significant figures."
+    },
+    {
+        "ans": "$$(a)\\ 5.35,\\ (b)\\ 5.45,\\ (c)\\ 5.35 \\le x \\le 5.45$$",
+        "feedback": "Part (c) is incorrect: the upper bound must be exclusive because 5.45 does not round to 5.4."
+    },
+    {
+        "ans": "$$(a)\\ 5.4,\\ (b)\\ 5.5,\\ (c)\\ 5.4 \\le x < 5.5$$",
+        "feedback": "You used the rounded value instead of applying the ±0.05 error interval."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Inclusive Boundaries",
@@ -649,6 +993,20 @@ const problemBank = [
             "Simplifying the fraction: $\\dfrac{100}{9} \\approx 11.1\\text{ m/s}$.",
             "Final Answer: $$(a)\\ 40\\text{ km/h},\\ (b)\\ 11.1\\text{ m/s}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 20\\text{ km/h},\\ (b)\\ 5.6\\text{ m/s}$$",
+        "feedback": "You used 30 minutes as 1 hour instead of 0.5 hours, halving both answers."
+    },
+    {
+        "ans": "$$(a)\\ 40\\text{ km/h},\\ (b)\\ 14\\text{ m/s}$$",
+        "feedback": "Part (a) is correct, but in part (b) you multiplied by 3.6 instead of dividing."
+    },
+    {
+        "ans": "$$(a)\\ 60\\text{ km/h},\\ (b)\\ 16.7\\text{ m/s}$$",
+        "feedback": "You used 20 km in 20 minutes instead of 30 minutes, giving an inflated speed."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Unit Conversion Efficiency",
@@ -674,6 +1032,20 @@ const problemBank = [
             "The factorised form is $(a - b)(a + b)$.",
             "Final Answer: $$(a)\\ (x - 3)^2,\\ (b)\\ (5x - 4y)(5x + 4y)$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ (x - 9)(x + 1),\\ (b)\\ (5x - 4y)^2$$",
+        "feedback": "Part (a) incorrectly splits 9. Part (b) squares instead of applying the difference of squares."
+    },
+    {
+        "ans": "$$(a)\\ (x - 3)(x + 3),\\ (b)\\ (25x^2 - 16y^2)$$",
+        "feedback": "Part (a) uses the wrong pair of factors. Part (b) is not factorised at all."
+    },
+    {
+        "ans": "$$(a)\\ (x - 3)^2,\\ (b)\\ (5x - 4y)(5x - 4y)$$",
+        "feedback": "Part (a) is correct, but in part (b) you repeated the same bracket instead of using plus/minus."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Identifying Structure",
@@ -698,6 +1070,20 @@ const problemBank = [
             "Calculation: $|\\mathbf{b}| = \\sqrt{(-1)^2 + 5^2} = \\sqrt{1 + 25}$.",
             "Final Answer: $$(a)\\ \\begin{pmatrix} 1 \\\\ 9 \\end{pmatrix},\\ (b)\\ \\sqrt{26}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ \\begin{pmatrix} -1 \\\\ 7 \\end{pmatrix},\\ (b)\\ \\sqrt{24}$$",
+        "feedback": "You added components incorrectly and miscalculated $(-1)^2$."
+    },
+    {
+        "ans": "$$(a)\\ \\begin{pmatrix} 1 \\\\ 9 \\end{pmatrix},\\ (b)\\ 6$$",
+        "feedback": "Part (a) is correct, but in part (b) you forgot the square root."
+    },
+    {
+        "ans": "$$(a)\\ \\begin{pmatrix} 3 \\\\ 6 \\end{pmatrix},\\ (b)\\ \\sqrt{10}$$",
+        "feedback": "Both parts are incorrect. Scalar multiplication must be applied before addition."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Magnitude and Negatives",
@@ -724,6 +1110,20 @@ const problemBank = [
             "Substitute $x = -1$ into $y = 3x - 1$: $y = 3(-1) - 1 = -4$.",
             "Final Answer: $$(4, 11) \\text{ and } (-1, -4)$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(4, -1) \\text{ and } (-1, 4)$$",
+        "feedback": "You substituted the $x$‑values into the wrong equation when finding $y$."
+    },
+    {
+        "ans": "$$(2, 5) \\text{ only}$$",
+        "feedback": "You solved the linear equation alone and ignored the quadratic intersection."
+    },
+    {
+        "ans": "$$(4, 11) \\text{ only}$$",
+        "feedback": "You found one intersection but forgot that a line and parabola usually meet twice."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Points of Intersection",
@@ -750,6 +1150,21 @@ const problemBank = [
             "Add the coefficients: $2.4 + 0.31 = 2.71$.",
             "Final Answer: $$(a)\\ 1.2 \\times 10^6,\\ (b)\\ 2.71 \\times 10^3$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 12 \\times 10^5,\\ (b)\\ 5.5 \\times 10^3$$",
+        "feedback": "Part (a) is not in standard form. In part (b) you added coefficients without aligning powers."
+    },
+    {
+        "ans": "$$(a)\\ 1.2 \\times 10^5,\\ (b)\\ 2.71 \\times 10^2$$",
+        "feedback": "Both answers shift the powers incorrectly by one place."
+    },
+    {
+        "ans": "$$(a)\\ 12 \\times 10^6,\\ (b)\\ 5.5 \\times 10^2$$",
+        "feedback": "Both parts misapply the rules of standard form and place value."
+    }
+],
+
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Addition Rigour",
@@ -777,6 +1192,20 @@ const problemBank = [
             "Total Surface Area = $18\\pi + 9\\pi = 27\\pi\\text{ cm}^2$.",
             "Final Answer: $$(a)\\ 18\\pi\\text{ cm}^3,\\ (b)\\ 27\\pi\\text{ cm}^2$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 36\\pi,\\ (b)\\ 18\\pi$$",
+        "feedback": "You doubled the hemisphere volume and omitted the circular base in the surface area."
+    },
+    {
+        "ans": "$$(a)\\ 9\\pi,\\ (b)\\ 27\\pi$$",
+        "feedback": "Part (b) is correct, but in part (a) you forgot the factor of $\\tfrac{2}{3}$."
+    },
+    {
+        "ans": "$$(a)\\ 18\\pi,\\ (b)\\ 18\\pi$$",
+        "feedback": "Part (a) is correct, but in part (b) you omitted the base area."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: The Hemisphere Base",
@@ -806,6 +1235,20 @@ const problemBank = [
         "Rounded to the nearest penny: $a = £10.50$ and $s = £7.00$.",
         "Final Answer: $$(a)\\ 2a + 3s = 42,\\ 5a + s = 59.5,\\ (b)\\ a = £10.50,\\ s = £7.00$$"
     ],
+    "wrong_options": [
+    {
+        "ans": "$$(a)\\ 2a + s = 42,\\ 5a + 3s = 59.5,\\ (b)\\ a = £7,\\ s = £10.50$$",
+        "feedback": "You swapped the coefficients for adults and students, reversing the final prices."
+    },
+    {
+        "ans": "$$(a)\\ 2a + 3s = 42,\\ 5a + s = 59.5,\\ (b)\\ a = £12,\\ s = £6$$",
+        "feedback": "Part (a) is correct, but in part (b) you solved the elimination incorrectly."
+    },
+    {
+        "ans": "$$(a)\\ 2a + 3s = 42,\\ 5a + s = 59.5,\\ (b)\\ a = £10,\\ s = £7.50$$",
+        "feedback": "Part (a) is correct, but in part (b) you made an arithmetic slip when substituting back."
+    }
+],
     "bradley_insight": {
         "type": "pro-tip",
         "title": "The Head Teacher's Eye: Context First, Algebra Second",
