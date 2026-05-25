@@ -205,7 +205,7 @@ const problemBank = [
             "Discriminant: $7^2 - 4(2)(-4) = 49 + 32 = 81$.",
             "(b) Substitute into formula: $x = \\dfrac{-7 \\pm \\sqrt{81}}{2(2)}$.",
             "Calculate: $x = \\dfrac{-7 + 9}{4} = 0.5$ and $x = \\dfrac{-7 - 9}{4} = -4$.",
-            "Final Answer: $$x = 0.5, x = -4$$"
+            "Final Answer: $$\\text{(a )}81\\text{ (b) }x = 0.5, x = -4$$"
         ],
         "wrong_options": [
             {

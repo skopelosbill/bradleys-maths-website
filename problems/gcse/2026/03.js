@@ -260,15 +260,15 @@ const problemBank = [
         ],
         "wrong_options": [
     {
-        "ans": "$$4.0 \\times 10^7,\\ 13 \\times 10^3$$",
+        "ans": "$$(a)\\ 4.0 \\times 10^7,\\ (b)\\ 13 \\times 10^3$$",
         "feedback": "You multiplied the powers correctly in part (a) but forgot to convert $40 \\times 10^7$ into standard form. In part (b), you added the coefficients without matching the powers of 10 first."
     },
     {
-        "ans": "$$40 \\times 10^7,\\ 13 \\times 10^4$$",
+        "ans": "$$(a)\\ 40 \\times 10^7,\\ (b)\\ 13 \\times 10^4$$",
         "feedback": "In part (a), you left the answer as $40 \\times 10^7$, which is not standard form because the first number must be between 1 and 10. In part (b), you added $5$ and $8$ directly without converting $B$ to the same power of 10 as $A$."
     },
     {
-        "ans": "$$4 \\times 10^8,\\ 0.58 \\times 10^5$$",
+        "ans": "$$(a)\\ 4 \\times 10^8,\\ (b)\\ 0.58 \\times 10^5$$",
         "feedback": "Part (a) is correct, but in part (b) you converted the final answer incorrectly. $5.8 \\times 10^4$ is already standard form — moving the decimal again changes the value."
     }
 ],
@@ -302,15 +302,15 @@ const problemBank = [
         ],
         "wrong_options":[
     {
-        "ans": "$$£56,\\ 25\\%$$",
+        "ans": "$$(a)\\ £56,\\ (b)\\ 25\\%$$",
         "feedback": "You treated the reductions as if they were both taken from the original £80. The second reduction must be applied to the new price, not the starting one."
     },
     {
-        "ans": "$$£61.20,\\ 15\\% + 10\\% = 25\\%$$",
+        "ans": "$$(a)\\ £61.20,\\ (b)\\ 15\\% + 10\\% = 25\\%$$",
         "feedback": "Part (a) is correct, but in part (b) you added the percentages. Successive percentage changes multiply, they do not add."
     },
     {
-        "ans": "$$£68,\\ 23\\%$$",
+        "ans": "$$(a)\\ £68,\\ (b)\\ 23\\%$$",
         "feedback": "You stopped after the first reduction in part (a). In part (b), your percentage decrease is close but not accurate — you must use the combined multiplier $0.85 \\times 0.90$."
     }
 ],
@@ -342,11 +342,11 @@ const problemBank = [
         ],
         "wrong_options": [
     {
-        "ans": "$$110^\\circ,\\ 70^\\circ$$",
+        "ans": "$$(a)\\ 110^\\circ,\\ (b)\\ 70^\\circ$$",
         "feedback": "You used the centre angle directly for part (a). The angle at the circumference is always half the angle at the centre, not the same."
     },
     {
-        "ans": "$$55^\\circ,\\ 145^\\circ$$",
+        "ans": "$$(a)\\ 55^\\circ,\\ (b)\\ 145^\\circ$$",
         "feedback": "Part (a) is correct, but in part (b) you added instead of subtracting. Opposite angles in a cyclic quadrilateral must sum to $180^\\circ$."
     },
     {

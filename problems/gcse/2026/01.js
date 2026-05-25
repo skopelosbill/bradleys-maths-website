@@ -484,7 +484,7 @@ const problemBank = [
                 "feedback": "You correctly identified that there must be a $90^\\circ$ angle, but you placed it at vertex B instead of C! The right angle must always be at the circumference, directly opposite the diameter line AB."
             },
             {
-                "ans": "$$\\text{(a)] 90^\\circ\\text{, (b)} 150^\\circ$$",
+                "ans": "$$\\text{(a)} 90^\\circ\\text{, (b)} 150^\\circ$$",
                 "feedback": "You correctly found part (a), but made an arithmetic slip in part (b). Remember, the angles inside a triangle sum to $180^\\circ$, so you must subtract the known angles ($90+30=120$) from 180."
             }
         ],
