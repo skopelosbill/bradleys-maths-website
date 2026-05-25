@@ -17,6 +17,20 @@ const problemBank =[
             "Calculation: $(4s^2t + 2s^2t) + (-3rt + 5rt) - st^2$.",
             "Final Answer: $$(a)\\ 5a - b,\\ (b)\\ x^2 + x + 7,\\ (c)\\ 6s^2t + 2rt - st^2$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 19a + 9b,\\ (b)\\ x^2 + 9x + 7,\\ (c)\\ 4s^2t - 3rt + 2ts^2 + 5tr - st^2$$",
+        "feedback": "You added unlike terms together in parts (a) and (b), and in part (c) you did not combine any like terms at all."
+    },
+    {
+        "ans": "$$(a)\\ 5a + b,\\ (b)\\ x^2 - x + 7,\\ (c)\\ 6s^2t - 2rt - st^2$$",
+        "feedback": "You made sign errors when combining the $b$ terms in (a), the $x$ terms in (b), and the $rt$ terms in (c)."
+    },
+    {
+        "ans": "$$(a)\\ 12a - 7a + 4b - 5b,\\ (b)\\ x^2 + x + 7,\\ (c)\\ 6s^2t + 2rt + st^2$$",
+        "feedback": "Part (b) is correct, but in (a) you did not simplify, and in (c) you changed the sign of the $st^2$ term."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Commutativity in Algebra",
@@ -43,6 +57,20 @@ const problemBank =[
             "For part (b), the reason is that corresponding angles between parallel lines are equal.",
             "Final Answer: $$(a)\\ a = 143^\\circ, b = 40^\\circ, c = 103^\\circ,\\ (b)\\ \\text{Corresponding angles are equal}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ a = 37^\\circ, b = 40^\\circ, c = 77^\\circ,\\ (b)\\ \\text{Alternate angles are equal}$$",
+        "feedback": "You used the supplementary angle instead of the corresponding angle for $a$."
+    },
+    {
+        "ans": "$$(a)\\ a = 143^\\circ, b = 140^\\circ, c = 3^\\circ,\\ (b)\\ \\text{Co-interior angles sum to }180^\\circ$$",
+        "feedback": "Part (a) misidentifies angle $b$ as co-interior instead of alternate."
+    },
+    {
+        "ans": "$$(a)\\ a = 40^\\circ, b = 143^\\circ, c = 103^\\circ,\\ (b)\\ \\text{Vertically opposite angles are equal}$$",
+        "feedback": "You swapped the corresponding and alternate angles."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Naming the Rule",
@@ -69,6 +97,20 @@ const problemBank =[
             "Since the thousands digit is 0, we round down.",
             "Final Answer: $$(a)\\text{ €}30,026,\\ (b)\\text{ €}30,000$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\text{ €}28,000,\\ (b)\\text{ €}30,000$$",
+        "feedback": "Part (a) uses simple interest instead of compound interest."
+    },
+    {
+        "ans": "$$(a)\\text{ €}30,026,\\ (b)\\text{ €}40,000$$",
+        "feedback": "Part (a) is correct, but in part (b) you rounded to the nearest ten thousand incorrectly."
+    },
+    {
+        "ans": "$$(a)\\text{ €}31,000,\\ (b)\\text{ €}30,000$$",
+        "feedback": "Part (a) overestimates the compound multiplier."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Significant Rounding",
@@ -94,6 +136,20 @@ const problemBank =[
             "The interior angle is $180^\\circ - 30^\\circ = 150^\\circ$.",
             "Final Answer: $$(a)\\ 24\\text{ sides},\\ (b)\\ 150^\\circ$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 12,\\ (b)\\ 165^\\circ$$",
+        "feedback": "You halved the exterior angle instead of dividing 360 by it."
+    },
+    {
+        "ans": "$$(a)\\ 15,\\ (b)\\ 150^\\circ$$",
+        "feedback": "Part (b) is correct, but in part (a) you used the interior angle formula incorrectly."
+    },
+    {
+        "ans": "$$(a)\\ 24,\\ (b)\\ 30^\\circ$$",
+        "feedback": "Part (a) is correct, but in part (b) you gave the exterior angle instead of the interior angle."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Exterior Path",
@@ -121,6 +177,20 @@ const problemBank =[
             "Dividing both the numerator and the denominator by 2 gives the simplest form $\\dfrac{29}{45}$.",
             "Final Answer: $$\\dfrac{29}{45}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\dfrac{58}{90}$$",
+        "feedback": "This is the unsimplified fraction. You must divide numerator and denominator by 2."
+    },
+    {
+        "ans": "$$\\dfrac{29}{90}$$",
+        "feedback": "You subtracted incorrectly when forming the equation $100x - 10x$."
+    },
+    {
+        "ans": "$$\\dfrac{64}{99}$$",
+        "feedback": "You treated the decimal as $0.\\dot{64}$ instead of $0.6\\dot{4}$."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Tail Alignment",
@@ -148,6 +218,20 @@ const problemBank =[
             "Rounding to 1 decimal place: $19.3^\\circ$.",
             "Final Answer: $$(a)\\ 21.2\\text{ cm},\\ (b)\\ 19.3^\\circ$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 20.6\\text{ cm},\\ (b)\\ 17.5^\\circ$$",
+        "feedback": "You subtracted the squares instead of adding them, and used the wrong trig ratio."
+    },
+    {
+        "ans": "$$(a)\\ 21.2\\text{ cm},\\ (b)\\ 18.0^\\circ$$",
+        "feedback": "Part (a) is correct, but in part (b) you rounded too early or used the hypotenuse incorrectly."
+    },
+    {
+        "ans": "$$(a)\\ 27\\text{ cm},\\ (b)\\ 19.3^\\circ$$",
+        "feedback": "Part (b) is correct, but in part (a) you added the sides instead of applying Pythagoras."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Choosing the Ratio",
@@ -175,6 +259,20 @@ const problemBank =[
             "Calculation: $n(B) - n(A \\cap B) = 28 - 18 = 10$.",
             "Final Answer: $$(a)\\ 18,\\ (b)\\ 10$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 14,\\ (b)\\ 14$$",
+        "feedback": "You subtracted the complement from only one set instead of using the union formula."
+    },
+    {
+        "ans": "$$(a)\\ 18,\\ (b)\\ 28$$",
+        "feedback": "Part (a) is correct, but in part (b) you forgot to remove the intersection from set B."
+    },
+    {
+        "ans": "$$(a)\\ 10,\\ (b)\\ 18$$",
+        "feedback": "You swapped the intersection with the B-only region."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Union Formula",
@@ -203,6 +301,21 @@ const problemBank =[
             "Rounding to 1 decimal place, we obtain $6.0\\%$.",
             "Final Answer: $$(a)\\ \\text{Shown},\\ (b)\\ 6.0\\%$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ \\text{Shown},\\ (b)\\ 3.0\\%$$",
+        "feedback": "You took the square root instead of the tenth root when isolating the multiplier."
+    },
+    {
+        "ans": "$$(a)\\ \\text{Incorrect},\\ (b)\\ 10.0\\%$$",
+        "feedback": "Part (a) does not match the required form, and part (b) uses simple interest instead of compound."
+    },
+    {
+        "ans": "$$(a)\\ \\text{Shown},\\ (b)\\ 5.0\\%$$",
+        "feedback": "You rounded too early when taking the tenth root, giving an underestimated rate."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Power Roots",
@@ -230,6 +343,21 @@ const problemBank =[
             "Taking the $7^{th}$ root of both sides isolates $p$.",
             "Final Answer: $$(a)\\ 81,\\ (b)\\ p = \\sqrt[7]{q^2 y^3}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 27,\\ (b)\\ p = q^{2/7} y^{1/3}$$",
+        "feedback": "Part (a) incorrectly simplifies the indices. Part (b) applies the cube root incorrectly when rearranging."
+    },
+    {
+        "ans": "$$(a)\\ 81,\\ (b)\\ p = (q^2 y^3)^7$$",
+        "feedback": "Part (a) is correct, but in part (b) you inverted the power instead of taking the seventh root."
+    },
+    {
+        "ans": "$$(a)\\ 9,\\ (b)\\ p = q^{6/7} y^{3/7}$$",
+        "feedback": "Both parts misapply index laws. The cube root must be undone before isolating p."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Indices as Subjects",
@@ -258,6 +386,20 @@ const problemBank =[
             "Rounding both to 2 decimal places.",
             "Final Answer: $$(2.37, 6.10) \\text{ and } (0.63, 0.90)$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(3, 8) \\text{ and } (1, 2)$$",
+        "feedback": "These come from solving the linear equation alone without substituting into the quadratic."
+    },
+    {
+        "ans": "$$(2.37, 5.11) \\text{ and } (0.63, -0.11)$$",
+        "feedback": "You substituted the x‑values into the quadratic instead of the simpler linear equation."
+    },
+    {
+        "ans": "$$(2.00, 5.00) \\text{ only}$$",
+        "feedback": "You found only one intersection. A line and a parabola typically meet twice."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Coordinate Pairs",
@@ -284,6 +426,20 @@ const problemBank =[
             "Summing these gives $\\sqrt{130}$. Since 130 has no square factors, the surd is already in its simplest form.",
             "Final Answer: $$(a)\\ \\begin{pmatrix} 26 \\\\ -29 \\end{pmatrix},\\ (b)\\ \\sqrt{130}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ \\begin{pmatrix} -16 \\\\ 7 \\end{pmatrix},\\ (b)\\ \\sqrt{22}$$",
+        "feedback": "You added instead of subtracting in part (a), and mis‑squared the components in part (b)."
+    },
+    {
+        "ans": "$$(a)\\ \\begin{pmatrix} 26 \\\\ -29 \\end{pmatrix},\\ (b)\\ 11.4$$",
+        "feedback": "Part (a) is correct, but in part (b) you gave a decimal instead of an exact surd."
+    },
+    {
+        "ans": "$$(a)\\ \\begin{pmatrix} 5 \\\\ -2 \\end{pmatrix},\\ (b)\\ \\sqrt{1300}$$",
+        "feedback": "Part (a) ignores the scalar multiplication. Part (b) incorrectly multiplies the components."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Magnitude and Modulus",
@@ -311,6 +467,20 @@ const problemBank =[
             "Since $n$ is a positive integer, $-167$ is indeed the $32^{nd}$ term.",
             "Final Answer: $$(a)\\ -5,\\ (b)\\ 25 - 6n,\\ (c)\\ \\text{Yes, the 32nd term}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 7,\\ (b)\\ 25 + 6n,\\ (c)\\ \\text{No}$$",
+        "feedback": "You treated the sequence as increasing instead of decreasing, reversing the sign of d."
+    },
+    {
+        "ans": "$$(a)\\ -11,\\ (b)\\ 19 - 6n,\\ (c)\\ \\text{Yes}$$",
+        "feedback": "Part (c) is correct, but in (a) and (b) you used the wrong starting term."
+    },
+    {
+        "ans": "$$(a)\\ -5,\\ (b)\\ 25 - 6n,\\ (c)\\ \\text{No}$$",
+        "feedback": "Parts (a) and (b) are correct, but in part (c) you solved the equation incorrectly."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Decreasing Sequences",
@@ -325,7 +495,7 @@ const problemBank =[
         "date": "13 February 2026",
         "major_area": "Number",
         "topic": "Standard Form",
-        "subtopic": "St",
+        "subtopic": "Standard Form",
         "difficulty": "B/C",
         "q": "Calculate the value of $\\dfrac{3.6 \\times 10^4}{1.8 \\times 10^{-3}}$.<br>(a) Give your answer in standard form without using a calculator.<br>(b) Give your answer as an ordinary number.",
         "steps":[
@@ -337,6 +507,20 @@ const problemBank =[
             "Calculation: $20,000,000$.",
             "Final Answer: $$(a)\\ 2 \\times 10^7,\\ (b)\\ 20,000,000$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 2 \\times 10^1,\\ (b)\\ 20$$",
+        "feedback": "You subtracted the indices incorrectly: $4 - (-3)$ must become $4 + 3$, not $4 - 3$."
+    },
+    {
+        "ans": "$$(a)\\ 0.2 \\times 10^8,\\ (b)\\ 2,000,000$$",
+        "feedback": "Part (a) is not in standard form and the decimal shift was applied in the wrong direction."
+    },
+    {
+        "ans": "$$(a)\\ 2 \\times 10^6,\\ (b)\\ 2,000,000$$",
+        "feedback": "You added the powers incorrectly, using $4 + (-3)$ instead of $4 - (-3)$."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Negative Index Traps",
@@ -363,6 +547,20 @@ const problemBank =[
             "Calculation: $54 - 60 = -6$.",
             "Final Answer: $$(a)\\ 60,\\ (b)\\ -6$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 12,\\ (b)\\ -48$$",
+        "feedback": "You treated the mean as the total instead of multiplying by the number of values."
+    },
+    {
+        "ans": "$$(a)\\ 60,\\ (b)\\ 6$$",
+        "feedback": "Part (a) is correct, but in part (b) you forgot that the mean decreased, so the added value must be below 12."
+    },
+    {
+        "ans": "$$(a)\\ 72,\\ (b)\\ -18$$",
+        "feedback": "You used the new mean to calculate the original total, reversing the logic."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Negative Data",
@@ -391,6 +589,20 @@ const problemBank =[
             "We calculate the remaining angle: $\\angle ABD = 180^\\circ - (62^\\circ + 26^\\circ) = 92^\\circ$.",
             "Final Answer: $$(a)\\ 26^\\circ,\\ (b)\\ 118^\\circ,\\ (c)\\ 92^\\circ$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 52^\\circ,\\ (b)\\ 118^\\circ,\\ (c)\\ 10^\\circ$$",
+        "feedback": "You doubled the angle in the same segment instead of keeping it equal."
+    },
+    {
+        "ans": "$$(a)\\ 26^\\circ,\\ (b)\\ 62^\\circ,\\ (c)\\ 92^\\circ$$",
+        "feedback": "Part (a) and (c) are correct, but in part (b) you forgot that opposite angles in a cyclic quadrilateral sum to $180^\\circ$."
+    },
+    {
+        "ans": "$$(a)\\ 154^\\circ,\\ (b)\\ 118^\\circ,\\ (c)\\ 8^\\circ$$",
+        "feedback": "Part (a) incorrectly uses the exterior angle of the triangle instead of the same‑segment theorem."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Identifying Segments",
@@ -416,6 +628,20 @@ const problemBank =[
             "As we calculated in part (a), $f(4) = 81$. Therefore, $x = 81$.",
             "Final Answer: $$(a)\\ 81,\\ (b)\\ 81$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 81,\\ (b)\\ 4$$",
+        "feedback": "You reversed the inverse relationship. $f^{-1}(x)=4$ means $f(4)=x$, not the other way around."
+    },
+    {
+        "ans": "$$(a)\\ 12,\\ (b)\\ 81$$",
+        "feedback": "Part (b) is correct, but in part (a) you added the powers instead of multiplying 3 four times."
+    },
+    {
+        "ans": "$$(a)\\ 81,\\ (b)\\ 3^4$$",
+        "feedback": "Part (b) must be a numerical value, not an expression."
+    }
+],
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Functional Reciprocity",
@@ -444,6 +670,20 @@ const problemBank =[
             "Calculation: $y = \\tan^{-1}(0.2) \\approx 11.309...^\\circ$.",
             "Final Answer: $$(a)\\ 13.75\\text{ m}^2,\\ (b)\\ 2.55\\text{ m},\\ (c)\\ 11.3^\\circ$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 6.875\\text{ m}^2,\\ (b)\\ 2.5\\text{ m},\\ (c)\\ 11.3^\\circ$$",
+        "feedback": "You forgot to double the trapezium area in part (a)."
+    },
+    {
+        "ans": "$$(a)\\ 13.75\\text{ m}^2,\\ (b)\\ 3.0\\text{ m},\\ (c)\\ 9.5^\\circ$$",
+        "feedback": "Part (a) is correct, but in part (b) you added the sides instead of applying Pythagoras."
+    },
+    {
+        "ans": "$$(a)\\ 20\\text{ m}^2,\\ (b)\\ 2.55\\text{ m},\\ (c)\\ 14.0^\\circ$$",
+        "feedback": "Part (a) overestimates the area by using the wrong height."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Composite Mensuration",
@@ -471,6 +711,20 @@ const problemBank =[
             "Combining the factors gives the final fully factorised form.",
             "Final Answer: $$3(5x - 1)(2x + 1)$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$3(10x^2 + 3x - 1)$$",
+        "feedback": "You factored out the 3 but did not factorise the quadratic fully."
+    },
+    {
+        "ans": "$$3(5x + 1)(2x - 1)$$",
+        "feedback": "The signs are incorrect. The middle term must expand to $+3x$."
+    },
+    {
+        "ans": "$$(15x - 3)(2x + 1)$$",
+        "feedback": "You multiplied the common factor back in, so the expression is not fully factorised."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Factor First",
@@ -497,6 +751,20 @@ const problemBank =[
             "Collecting like terms: $x^3 - 4x^2 - 11x + 30$.",
             "Final Answer: $$(a)\\ x^2 - 2x - 15,\\ (b)\\ x^3 - 4x^2 - 11x + 30$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ x^2 + 2x - 15,\\ (b)\\ x^3 - 4x^2 + 11x - 30$$",
+        "feedback": "You added instead of subtracting the middle terms in part (a), which reversed the signs in part (b)."
+    },
+    {
+        "ans": "$$(a)\\ x^2 - 8x + 15,\\ (b)\\ x^3 - 6x^2 - 5x - 30$$",
+        "feedback": "Part (a) incorrectly multiplies the constants, which carries through to the cubic expansion."
+    },
+    {
+        "ans": "$$(a)\\ x^2 - 2x - 15,\\ (b)\\ x^3 - 2x^2 - 15x - 2x^2 + 4x + 30$$",
+        "feedback": "Part (a) is correct, but in part (b) you did not collect like terms."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Triple Expansion Rigour",
@@ -525,6 +793,20 @@ const problemBank =[
             "Calculation: $\\theta = \\tan^{-1}(0.3466...) \\approx 19.11...^circ$.",
             "Final Answer: $$(a)\\ 7.63\\text{ cm},\\ (b)\\ 19.1^\\circ$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 6.40\\text{ cm},\\ (b)\\ 23.4^\\circ$$",
+        "feedback": "You omitted the height when applying 3D Pythagoras, and used the wrong adjacent side for the angle."
+    },
+    {
+        "ans": "$$(a)\\ 7.63\\text{ cm},\\ (b)\\ 11.3^\\circ$$",
+        "feedback": "Part (a) is correct, but in part (b) you used the height and length instead of the base diagonal."
+    },
+    {
+        "ans": "$$(a)\\ 8.25\\text{ cm},\\ (b)\\ 19.1^\\circ$$",
+        "feedback": "Part (b) is correct, but in part (a) you added the lengths instead of squaring them."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Identifying 3D Triangles",
@@ -552,6 +834,20 @@ const problemBank =[
             "Subtracting 6 gives $x = 94$.",
             "Final Answer: $$(a)\\ y = \\dfrac{400}{\\sqrt{x + 6}},\\ (b)\\ 94$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ y = \\dfrac{40}{\\sqrt{x + 6}},\\ (b)\\ 10$$",
+        "feedback": "You miscalculated the constant k, which led to an incorrect value of x."
+    },
+    {
+        "ans": "$$(a)\\ y = \\dfrac{400}{x + 6},\\ (b)\\ 94$$",
+        "feedback": "Part (b) is correct, but in part (a) you forgot that the denominator must be a square root."
+    },
+    {
+        "ans": "$$(a)\\ y = \\dfrac{400}{\\sqrt{x + 6}},\\ (b)\\ 16$$",
+        "feedback": "Part (a) is correct, but in part (b) you squared the 10 incorrectly."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Constant First",
@@ -561,7 +857,6 @@ const problemBank =[
         "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
 //22 Feb
-    // 22 February
     {
         "id": "003053",
         "date": "22 February 2026",
@@ -578,6 +873,20 @@ const problemBank =[
             "Using the symmetry of the sine wave ($180^\\circ - \\theta$), we calculate the second solution: $180^\\circ - 30^\\circ = 150^\\circ$.",
             "Final Answer: $$30^\\circ \\text{ or } 150^\\circ$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$30^\\circ \\text{ or } 330^\\circ$$",
+        "feedback": "You used the symmetry incorrectly. On the sine graph, $\\sin(x)$ is positive between $0^\\circ$ and $180^\\circ$, so $330^\\circ$ cannot be a solution."
+    },
+    {
+        "ans": "$$150^\\circ \\text{ only}$$",
+        "feedback": "You found the second‑quadrant solution but missed the first‑quadrant solution at $30^\\circ$, where the sine graph also has the value $\\tfrac{1}{2}$."
+    },
+    {
+        "ans": "$$210^\\circ \\text{ or } 330^\\circ$$",
+        "feedback": "These angles lie in regions where the sine graph is negative. The equation requires a positive sine value."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Exact Value Mastery",
@@ -605,6 +914,20 @@ const problemBank =[
             "Finally, we convert the result back into a mixed number.",
             "Final Answer: $$3\\dfrac{3}{10}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\dfrac{132}{40} = 3\\dfrac{12}{40}$$",
+        "feedback": "You multiplied without simplifying first, and the final fraction is not in simplest form."
+    },
+    {
+        "ans": "$$2\\dfrac{3}{10}$$",
+        "feedback": "You divided instead of multiplying the improper fractions."
+    },
+    {
+        "ans": "$$3\\dfrac{1}{2}$$",
+        "feedback": "You rounded the improper fraction instead of converting it exactly."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Simplify Before You Multiply",
@@ -632,6 +955,21 @@ const problemBank =[
             "Calculation: $8 \\times 3 \\times 7 = 168$.",
             "Final Answer: $$(a)\\ 2^3 \\times 3, 2^2 \\times 3 \\times 7,\\ (b)\\ \\text{HCF}=12, \\text{LCM}=168$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 24 = 2^2 \\times 6,\\ 84 = 4 \\times 21,\\ (b)\\ \\text{HCF}=6,\\ \\text{LCM}=336$$",
+        "feedback": "Part (a) is not fully factorised into primes, which leads to incorrect HCF and LCM values."
+    },
+    {
+        "ans": "$$(a)\\ 24 = 2^3 \\times 3,\\ 84 = 2^2 \\times 3 \\times 7,\\ (b)\\ \\text{HCF}=4,\\ \\text{LCM}=504$$",
+        "feedback": "Part (a) is correct, but in part (b) you used the lowest power of 2 only and omitted the 3 when finding the HCF."
+    },
+    {
+        "ans": "$$(a)\\ 24 = 2^3 \\times 3,\\ 84 = 2^2 \\times 3 \\times 7,\\ (b)\\ \\text{HCF}=24,\\ \\text{LCM}=84$$",
+        "feedback": "You used the product of the smaller number for both HCF and LCM, which is incorrect."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Venn Diagram Method",
@@ -658,6 +996,20 @@ const problemBank =[
             "Calculation: $15 + 7y = 22 \\implies 7y = 7$. Thus, $y = 1$.",
             "Final Answer: $$x = 5, y = 1$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$x = 1,\\ y = 5$$",
+        "feedback": "You substituted the values into the wrong variables when checking your solution."
+    },
+    {
+        "ans": "$$x = 5,\\ y = -1$$",
+        "feedback": "You solved for x correctly but made a sign error when substituting back to find y."
+    },
+    {
+        "ans": "$$x = 2,\\ y = 2$$",
+        "feedback": "You added the equations instead of eliminating a variable, leading to an incorrect pair."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Substitution Check",
@@ -687,6 +1039,20 @@ const problemBank =[
             "Simplifying the fraction: $\\dfrac{9}{14}$.",
             "Final Answer: $$(a)\\ \\dfrac{15}{56},\\ (b)\\ \\dfrac{13}{28},\\ (c)\\ \\dfrac{9}{14}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ \\dfrac{15}{64},\\ (b)\\ \\dfrac{25}{64},\\ (c)\\ \\dfrac{39}{64}$$",
+        "feedback": "You treated the events as independent and kept the denominator at 8 for both draws."
+    },
+    {
+        "ans": "$$(a)\\ \\dfrac{5}{8},\\ (b)\\ \\dfrac{1}{2},\\ (c)\\ \\dfrac{3}{4}$$",
+        "feedback": "You used single‑event probabilities instead of multiplying the conditional probabilities."
+    },
+    {
+        "ans": "$$(a)\\ \\dfrac{3}{56},\\ (b)\\ \\dfrac{13}{56},\\ (c)\\ \\dfrac{43}{56}$$",
+        "feedback": "You reversed the numerators for red and blue in the second draw."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Dependent Probabilities",
@@ -712,6 +1078,20 @@ const problemBank =[
             "The numerator remains $3 + \\sqrt{2}$.",
             "Final Answer: $$\\dfrac{3 + \\sqrt{2}}{7}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\dfrac{3 - \\sqrt{2}}{7}$$",
+        "feedback": "You used the conjugate in the numerator instead of multiplying the original numerator by the conjugate."
+    },
+    {
+        "ans": "$$\\dfrac{1}{7(3 + \\sqrt{2})}$$",
+        "feedback": "You multiplied the denominator correctly but forgot to multiply the numerator by the conjugate."
+    },
+    {
+        "ans": "$$\\dfrac{3 + \\sqrt{2}}{5}$$",
+        "feedback": "You miscalculated the denominator: $(3 - \\sqrt{2})(3 + \\sqrt{2})$ must give $9 - 2 = 7$."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Conjugate Rule",
@@ -738,6 +1118,20 @@ const problemBank =[
             "We now write the fraction with the factorised terms and cancel the common factor $(3x + 1)$.",
             "Final Answer: $$\\dfrac{2x - 3}{3x - 1}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\dfrac{6x^2 - 7x - 3}{9x^2 - 1}$$",
+        "feedback": "You did not factorise the expression, so no cancellation was possible."
+    },
+    {
+        "ans": "$$\\dfrac{3x + 1}{3x - 1}$$",
+        "feedback": "You cancelled incorrectly; only identical factors can be cancelled."
+    },
+    {
+        "ans": "$$\\dfrac{2x - 3}{9x^2 - 1}$$",
+        "feedback": "You cancelled the numerator factor but forgot to factorise the denominator first."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Structure Recognition",
