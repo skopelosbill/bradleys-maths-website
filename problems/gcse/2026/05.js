@@ -14,6 +14,20 @@ const problemBank = [
             "Add the terms together: $4\\sqrt{3} + 3\\sqrt{3} = 7\\sqrt{3}$.",
             "Final Answer: $$7\\sqrt{3}$$"
         ],
+            "wrong_options": [
+    {
+        "ans": "$$(a)\\ \\dfrac{12}{\\sqrt{3}} = 12\\sqrt{3}$$",
+        "feedback": "You multiplied the numerator by $\\sqrt{3}$ but forgot to multiply the denominator. Rationalising requires multiplying top and bottom."
+    },
+    {
+        "ans": "$$(a)\\ \\sqrt{27} = \\sqrt{9+18} = 3 + \\sqrt{18}$$",
+        "feedback": "You cannot split a square root over addition. Only multiplication works: $\\sqrt{ab} = \\sqrt{a}\\sqrt{b}$."
+    },
+    {
+        "ans": "$$(a)\\ 4\\sqrt{3} + 27 = 31\\sqrt{3}$$",
+        "feedback": "You treated $\\sqrt{27}$ as 27. Always simplify the surd first: $\\sqrt{27} = 3\\sqrt{3}$."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Common Radicals",
@@ -38,6 +52,20 @@ const problemBank = [
             "Divide by 3.",
             "Final Answer: $$x = 8$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$5x - 3 = 2x + 9$$",
+        "feedback": "You expanded $5(x - 3)$ incorrectly. The $-3$ must also be multiplied by 5."
+    },
+    {
+        "ans": "$$x = 6$$",
+        "feedback": "A common slip: $3x = 18$ instead of $3x = 24$. Recheck the step where you add 15."
+    },
+    {
+        "ans": "$$x = -8$$",
+        "feedback": "You moved terms to the wrong side and changed signs incorrectly. Keep the balance method consistent."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: The Expansion Trap",
@@ -64,6 +92,20 @@ const problemBank = [
             "(b) Area $= \\frac{1}{2}bc \\sin(A) = \\frac{1}{2}(11)(8) \\sin(72^\\circ)$.",
             "Final Answer: $$(a)\\ 11.4\\text{ cm},\\ (b)\\ 41.8\\text{ cm}^2$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 11.4\\text{ cm},\\ (b)\\ 50.3\\text{ cm}^2$$",
+        "feedback": "Part (a) is correct, but in part (b) you used the cosine rule instead of the sine area formula, giving an inflated area."
+    },
+    {
+        "ans": "$$(a)\\ 13.0\\text{ cm},\\ (b)\\ 41.8\\text{ cm}^2$$",
+        "feedback": "Part (b) is correct, but in part (a) you used the wrong angle or rounded incorrectly when applying the cosine rule."
+    },
+    {
+        "ans": "$$(a)\\ 12.6\\text{ cm},\\ (b)\\ 46.2\\text{ cm}^2$$",
+        "feedback": "Both parts are incorrect. These values typically come from entering the angle in radians or mis‑typing the cosine and sine values."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: SAS Recognition",
@@ -88,6 +130,20 @@ const problemBank = [
             "Convert to standard form: $3.2 \\times 10^1 \\times 10^4$.",
             "Final Answer: $$3.2 \\times 10^5$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$2.4 \\times 10^5$$",
+        "feedback": "You multiplied the numbers incorrectly: $4 \\times 8$ should be 32, not 24."
+    },
+    {
+        "ans": "$$3.2 \\times 10^4$$",
+        "feedback": "You forgot to adjust the power of ten after converting 32 into 3.2."
+    },
+    {
+        "ans": "$$32 \\times 10^4$$",
+        "feedback": "This is not in standard form. The first number must be between 1 and 10."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: The Final Check",
@@ -112,6 +168,20 @@ const problemBank = [
             "Value after Year 2: $15300 \\times 0.90$.",
             "Final Answer: $$£13,770$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$£13{,}500$$",
+        "feedback": "You combined the 15% and 10% depreciations into a single 25% drop, which is not correct for successive percentage changes."
+    },
+    {
+        "ans": "$$£15{,}290$$",
+        "feedback": "You subtracted 10 instead of 10%. Percentages must be applied multiplicatively."
+    },
+    {
+        "ans": "$$£16{,}830$$",
+        "feedback": "You used a multiplier of $1.10$ instead of $0.90$ in the second year, increasing the value instead of decreasing it."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Avoid the Addition Error",
@@ -136,8 +206,23 @@ const problemBank = [
             "FD ($25-45$): $14 \\div 20 = 0.7$.",
             "FD ($45-50$): $13 \\div 5 = 2.6$.",
             "The tallest bar corresponds to the highest FD ($45 < w \\le 50$).",
-            "Final Answer: $$45 < w \\le 50$$ <img src='images/05/g_06_sol.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>"
+            "Final Answer: $$(a)\\ 0.8,\\ 1.0,\\ 0.7,\\ 2.6,\\ (b)\\ 45 < w \\le 50,\\ \\(c)\\ \\text{Histogram drawn}$$ <img src='images/05/g_06_sol.png' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 0.8,\\ 1.0,\\ 0.7,\\ 0.26,\\ (b)\\ 10<w\\le25,\\ (c)\\ \\text{Histogram drawn}$$",
+        "feedback": "Part (a) uses the wrong class width for the final group, and part (b) incorrectly chooses the class with the highest frequency instead of the highest density."
+    },
+    {
+        "ans": "$$(a)\\ 0.8,\\ 1.5,\\ 0.7,\\ 2.6,\\ (b)\\ 45<w\\le50,\\ (c)\\ \\text{Histogram drawn}$$",
+        "feedback": "Part (a) incorrectly divides 15 by 10 instead of 15. Part (b) is correct."
+    },
+    {
+        "ans": "$$(a)\\ 0.8,\\ 1.0,\\ 0.35,\\ 2.6,\\ (b)\\ 25<w\\le45,\\ (c)\\ \\text{Histogram drawn}$$",
+        "feedback": "Part (a) uses a class width of 40 instead of 20 for the third group, and part (b) incorrectly selects the wrong tallest bar."
+    }
+],
+
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Area is Frequency",
@@ -161,6 +246,20 @@ const problemBank = [
             "Cancel the common factor $(x + 3)$.",
             "Final Answer: $$\\dfrac{2x - 1}{x - 3}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\dfrac{2x - 1}{x + 3}$$",
+        "feedback": "You cancelled the wrong factor. Only the common factor $(x+3)$ can be cancelled, not $(x-3)$."
+    },
+    {
+        "ans": "$$\\dfrac{2x + 1}{x - 3}$$",
+        "feedback": "You factorised the numerator incorrectly. $(2x^2 + 5x - 3)$ becomes $(2x - 1)(x + 3)$, not $(2x + 1)(x + 3)$."
+    },
+    {
+        "ans": "$$\\dfrac{2x - 1}{x^2 - 9}$$",
+        "feedback": "You cancelled nothing. The denominator must be factorised before cancelling: $(x-3)(x+3)$."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Hint in the Question",
@@ -186,6 +285,20 @@ const problemBank = [
             "Angle $OAB = (180 - 130) \\div 2$.",
             "Final Answer: $$25^\\circ$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$35^\\circ$$",
+        "feedback": "You subtracted incorrectly when splitting the isosceles triangle. The base angles must sum to $180 - 130$."
+    },
+    {
+        "ans": "$$65^\\circ$$",
+        "feedback": "You halved the wrong angle. Only the angle at the centre ($130^\\circ$) should be split, not the $50^\\circ$."
+    },
+    {
+        "ans": "$$15^\\circ$$",
+        "feedback": "You used $150^\\circ$ instead of $130^\\circ$ for angle $AOB$. Recheck the tangent–radius right angles."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Isosceles Radius",
@@ -208,6 +321,20 @@ const problemBank = [
             "(b) $P = 24/\\sqrt{64} = 24/8 = 3$.",
             "Final Answer: $$(a)\\ P = \\dfrac{24}{\\sqrt{m}},\\ (b)\\ 3$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ P = \\dfrac{24}{\\sqrt{m}},\\ (b)\\ 6$$",
+        "feedback": "Part (a) is correct, but for part (b) you used $\\sqrt{64} = 4$ instead of 8."
+    },
+    {
+        "ans": "$$(a)\\ P = \\dfrac{12}{\\sqrt{m}},\\ (b)\\ 3$$",
+        "feedback": "Part (b) is correct, but in part (a) you solved for $k$ incorrectly. $4 = k/6$ gives $k = 24$."
+    },
+    {
+        "ans": "$$(a)\\ P = \\dfrac{12}{\\sqrt{m}},\\ (b)\\ 6$$",
+        "feedback": "Both parts are incorrect. These values come from using $k = 12$ instead of 24."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Root vs Square",
@@ -232,8 +359,24 @@ const problemBank = [
             "Region $A$ only contains $\\{5, 7\\}$.",
             "Region $B$ only contains $\\{1, 4, 6\\}$.",
             "Outside: $\\{8, 9, 10\\}$.",
-            "Final Answer: $$\\frac{2}{10} \\text{ (or } 0.2)$$<img src='images/05/g_10_sol.png' alt='Venn Solution' style='max-width:300px;'>"        ],
-              "bradley_insight": {
+            "Final Answer: $$\\frac{2}{10} \\text{ (or } 0.2)$$<img src='images/05/g_10_sol.png' alt='Venn Solution' style='max-width:300px;'>"        
+        ],
+        "wrong_options": [
+    {
+        "ans": "$$\\dfrac{4}{10}$$",
+        "feedback": "You counted all elements in set $A$ instead of excluding those also in $B$."
+    },
+    {
+        "ans": "$$\\dfrac{3}{10}$$",
+        "feedback": "You included one element from outside the sets. Only $5$ and $7$ belong to $A \\cap B'$."
+    },
+    {
+        "ans": "$$\\dfrac{1}{10}$$",
+        "feedback": "You selected only one of the elements in $A$‑only. There are two: $5$ and $7$."
+    }
+],
+
+        "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Order of Entry",
             "content": "Always fill the intersection first, then subtract from the totals to fill the 'only' regions."
@@ -257,6 +400,21 @@ const problemBank = [
             "For part (c), the transformation $-f(x)$ represents a reflection in the $x$-axis. This changes the sign of the $y$-coordinate, resulting in the point $(3, 2)$.",
             "Final Answer: $$(a)\ (1, -2),\ (b)\ (3, 3),\ (c)\ (3, 2)$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ (5, -2),\\ (b)\\ (3, 3),\\ (c)\\ (3, 2)$$",
+        "feedback": "Part (b) and (c) are correct, but in part (a) you shifted the graph right instead of left."
+    },
+    {
+        "ans": "$$(a)\\ (1, -2),\\ (b)\\ (3, -7),\\ (c)\\ (3, 2)$$",
+        "feedback": "Part (a) and (c) are correct, but in part (b) you subtracted 5 instead of adding 5."
+    },
+    {
+        "ans": "$$(a)\\ (5, -2),\\ (b)\\ (3, -7),\\ (c)\\ (3, -2)$$",
+        "feedback": "All three parts are incorrect. These errors come from reversing the direction of translations and reflections."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Inside vs. Outside Operations",
@@ -280,6 +438,21 @@ const problemBank = [
             "We calculate the upper bound of $A$ by dividing 405 by 22.5.",
             "Final Answer: $$18$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$16$$",
+        "feedback": "You divided the lower bound of $b$ by the upper bound of $c$. That gives the minimum value, not the maximum."
+    },
+    {
+        "ans": "$$18.4$$",
+        "feedback": "You used $400$ instead of the upper bound $405$ for $b$. Bounds must use the extremes, not the rounded values."
+    },
+    {
+        "ans": "$$20$$",
+        "feedback": "You divided both upper bounds. To maximise a quotient, divide the largest numerator by the smallest denominator."
+    }
+],
+
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Maximising the Quotient",
@@ -304,6 +477,21 @@ const problemBank = [
             "Finally, we substitute these values back into the linear equation to find the corresponding $y$-coordinates: if $x = 0, y = 5$; if $x = -4, y = -3$.",
             "Final Answer: $$(0, 5) \text{ and } (-4, -3)$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(0, 5) \\text{ and } (-4, 3)$$",
+        "feedback": "You found the correct $x$-values, but substituted incorrectly for the second coordinate pair. When $x=-4$, $y=2(-4)+5=-3$."
+    },
+    {
+        "ans": "$$(0, -5) \\text{ and } (-4, -3)$$",
+        "feedback": "You solved the second solution correctly, but for $x=0$ you used $y=-5$ instead of $y=5$."
+    },
+    {
+        "ans": "$$(0, -5) \\text{ and } (-4, 3)$$",
+        "feedback": "Both coordinate pairs are incorrect. These errors come from sign mistakes when substituting into $y=2x+5$."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Coordinate Pairs",
@@ -327,6 +515,21 @@ const problemBank = [
             "We divide $360$ by the size of one exterior angle, $18$, to determine the total number of sides.",
             "Final Answer: $$20$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$18$$",
+        "feedback": "You divided $360$ by the interior angle instead of the exterior angle. The exterior angle is $18^\\circ$, not $162^\\circ$."
+    },
+    {
+        "ans": "$$10$$",
+        "feedback": "You halved the correct answer. This usually happens when confusing interior angle with the sum of interior angles."
+    },
+    {
+        "ans": "$$12$$",
+        "feedback": "You used the formula incorrectly. $(n-2)\\times180 = 162$ does not give $n=12$."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Exterior Advantage",
@@ -352,6 +555,21 @@ const problemBank = [
             "The values from the graph are $Q_3 \\approx 36.5$ and $Q_1 \\approx 21.5$, we subtract to find the IQR.",
             "Final Answer: $$15\\text{ minutes}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$10\\text{ minutes}$$",
+        "feedback": "You used the median instead of the quartiles. The IQR is $Q_3 - Q_1$, not $Q_2 - Q_1$."
+    },
+    {
+        "ans": "$$20\\text{ minutes}$$",
+        "feedback": "You misread one of the quartile values from the graph. Check the 20th and 60th cumulative frequencies carefully."
+    },
+    {
+        "ans": "$$25\\text{ minutes}$$",
+        "feedback": "You subtracted the wrong pair of cumulative frequency values. Only the quartile positions should be used."
+    }
+],
+
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Precise Plotting",
@@ -377,6 +595,21 @@ const problemBank = [
             "Finally, we divide by $(y - 1)$ and take the square root of the entire expression.",
             "Final Answer: $$x = \\sqrt{\\dfrac{a + yb}{y - 1}}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$x = \\sqrt{\\dfrac{a - yb}{y - 1}}$$",
+        "feedback": "You subtracted instead of adding $yb$ when rearranging. The expansion gives $yx^2 - yb = x^2 + a$."
+    },
+    {
+        "ans": "$$x = \\sqrt{\\dfrac{a + yb}{1 - y}}$$",
+        "feedback": "You reversed the denominator. Dividing by $(1-y)$ instead of $(y-1)$ changes the sign of the entire expression."
+    },
+    {
+        "ans": "$$x = \\dfrac{a + yb}{y - 1}$$",
+        "feedback": "You forgot the square root. After isolating $x^2$, you must take the square root to find $x$."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Factorising 'Secret'",
@@ -402,6 +635,21 @@ const problemBank = [
             "Simplifying this expression gives the final vector result.",
             "Final Answer: $$2\\mathbf{a} + \\mathbf{c}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$3\\mathbf{a} + \\mathbf{c}$$",
+        "feedback": "You added the full vector $\\vec{AB}$ instead of half of it. $M$ is the midpoint, so only half of $AB$ should be added to $OA$."
+    },
+    {
+        "ans": "$$2\\mathbf{a} - \\mathbf{c}$$",
+        "feedback": "You reversed the direction of $\\vec{CB}$. The vector $\\vec{CB}$ is $+\\mathbf{a}$, not $-\\mathbf{a}$."
+    },
+    {
+        "ans": "$$\\mathbf{a} + \\mathbf{c}$$",
+        "feedback": "You halved the wrong vector. Only $AB$ should be halved, not $OA$."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Vector Roadmap",
@@ -426,6 +674,21 @@ const problemBank = [
             "Given that $2^6 = 64$, we multiply 1000 by 64 to find the final population.",
             "Final Answer: $$64,000$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$32{,}000$$",
+        "feedback": "You used $2^5$ instead of $2^6$. There are 6 doubling periods in 24 hours."
+    },
+    {
+        "ans": "$$128{,}000$$",
+        "feedback": "You used $2^7$ instead of $2^6$. Doubling 7 times would require 28 hours, not 24."
+    },
+    {
+        "ans": "$$6{,}400$$",
+        "feedback": "You multiplied by 2 six times incorrectly. $1000 \\times 2^6 = 64{,}000$, not $6{,}400$."
+    }
+],
+
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Fluency with Powers",
@@ -450,6 +713,21 @@ const problemBank = [
             "We conclude that Class B performed better on average and displayed greater consistency in their results.",
             "Final Answer: $$\\text{Class B has higher average and higher consistency}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\text{Class A has a higher median and Class B is more consistent}$$",
+        "feedback": "You reversed the median comparison. Class B’s median (72) is higher than Class A’s (65)."
+    },
+    {
+        "ans": "$$\\text{Class B has a higher median and Class A is more consistent}$$",
+        "feedback": "You compared the IQR incorrectly. A smaller IQR means more consistency, so Class B is more consistent."
+    },
+    {
+        "ans": "$$\\text{Class A has a higher median and Class A is more consistent}$$",
+        "feedback": "Both comparisons are incorrect. Class B has both the higher median and the smaller IQR."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Standard for Comparison",
@@ -475,6 +753,21 @@ const problemBank = [
             "Since $8n$ is clearly a multiple of 8 for any integer $n$, the proof is complete.",
             "Final Answer: $$8n \\text{ is a multiple of 8}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$4n \\text{ is a multiple of 8}$$",
+        "feedback": "You lost a factor of 2 when expanding the brackets. The correct simplification is $8n$, not $4n$."
+    },
+    {
+        "ans": "$$8n + 2 \\text{ is a multiple of 8}$$",
+        "feedback": "You added an extra constant term. This usually comes from distributing the subtraction incorrectly."
+    },
+    {
+        "ans": "$$16n \\text{ is a multiple of 8}$$",
+        "feedback": "Although $16n$ is a multiple of 8, it is not the simplified expression for the difference of the squares."
+    }
+],
+
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Sign Management in Proof",
@@ -500,6 +793,20 @@ const problemBank = [
             "Calculating the result gives $s^2 = 144 + 25 = 169$. Taking the square root gives the final slant height.",
             "Final Answer: $$13\\text{ cm}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$12\\text{ cm}$$",
+        "feedback": "You used the vertical height instead of applying Pythagoras with the horizontal distance of 5 cm."
+    },
+    {
+        "ans": "$$sqrt{12^2 - 5^2} = \\sqrt{119}$$",
+        "feedback": "You subtracted instead of adding. The slant height is the hypotenuse, so $12^2 + 5^2$ must be used."
+    },
+    {
+        "ans": "$$15\\text{ cm}$$",
+        "feedback": "This comes from using the full diagonal of the base instead of the midpoint distance of 5 cm."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Extracting 2D Planes",
@@ -524,6 +831,20 @@ const problemBank = [
             "The original red pens were $2(10) = 20$ and the original blue pens were $3(10) = 30$. We then find the total sum.",
             "Final Answer: $$50$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$40$$",
+        "feedback": "You solved $2x + 10 = 2x$ instead of $2x + 10 = 3x$. The ratio becomes 1:1, not 2:2."
+    },
+    {
+        "ans": "$$60$$",
+        "feedback": "You used $2x + 10 = x$ instead of $3x$. The blue pens remain at $3x$."
+    },
+    {
+        "ans": "$$30$$",
+        "feedback": "You added the 10 pens to the total instead of only to the red pens."
+    }
+],
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Bridging Ratio and Algebra",
@@ -548,6 +869,21 @@ const problemBank = [
             "We divide by 990 to express $x$ as a fraction.",
             "Final Answer: $$\\dfrac{629}{990}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\dfrac{635}{990}$$",
+        "feedback": "You subtracted $x$ from $1000x$ instead of $10x$ from $1000x$, misaligning the recurring digits."
+    },
+    {
+        "ans": "$$\\dfrac{629}{900}$$",
+        "feedback": "You used the wrong power of 10. The recurring block has two digits, so $1000x$ and $10x$ must be used."
+    },
+    {
+        "ans": "$$\\dfrac{63}{99}$$",
+        "feedback": "You treated the decimal as $0.\\dot{63}$ instead of $0.6\\dot{3}\\dot{5}$. Only the repeating block should be isolated."
+    }
+],
+
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Aligning the Recurring Digits",
@@ -572,6 +908,20 @@ const problemBank = [
             "The turning point occurs at the values $(h, k)$ where the equation is in the form $y = (x - h)^2 + k$.",
             "Final Answer: $$(3, 1)$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(3, 10)$$",
+        "feedback": "You used the constant term from the original expression instead of the completed square form."
+    },
+    {
+        "ans": "$$( -3, 1 )$$",
+        "feedback": "You reversed the sign incorrectly. The turning point occurs when $(x - 3)^2 = 0$, so $x = 3$."
+    },
+    {
+        "ans": "$$( -3, 10 )$$",
+        "feedback": "Both coordinates are incorrect. The completed square form must be used to identify the turning point."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Sign Reversal",
@@ -596,6 +946,21 @@ const problemBank = [
             "We simplify the fraction to its lowest terms.",
             "Final Answer: $$\\dfrac{8}{15}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\dfrac{7}{15}$$",
+        "feedback": "You calculated the probability of selecting at least one red ball instead of at least one blue ball."
+    },
+    {
+        "ans": "$$\\dfrac{14}{45}$$",
+        "feedback": "You multiplied the probabilities of RB and BR but forgot to include BB or use the complementary method."
+    },
+    {
+        "ans": "$$\\dfrac{1}{3}$$",
+        "feedback": "You used replacement probabilities. The second draw must use the reduced denominator."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Complementary Shortcut",
@@ -620,6 +985,21 @@ const problemBank = [
             "We conclude that the total distance travelled is 50 metres.",
             "Final Answer: $$(a)\\ 4\\text{ m/s}^2,\\ (b)\ 50\\text{ m}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 5\\text{ m/s}^2,\\ (b)\\ 50\\text{ m}$$",
+        "feedback": "Part (b) is correct, but in part (a) you divided the time by the speed instead of speed by time."
+    },
+    {
+        "ans": "$$(a)\\ 4\\text{ m/s}^2,\\ (b)\\ 100\\text{ m}$$",
+        "feedback": "Part (a) is correct, but in part (b) you used a rectangle instead of the triangular area."
+    },
+    {
+        "ans": "$$(a)\\ 5\\text{ m/s}^2,\\ (b)\\ 100\\text{ m}$$",
+        "feedback": "Both parts are incorrect. The graph shows a straight-line acceleration from 0 to 20 m/s over 5 seconds."
+    }
+],
+
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Rates of Change",
@@ -633,7 +1013,7 @@ const problemBank = [
         "id": "002127",
         "date": "27 May 2026",
         "major_area": "Algebra",
-        "topic": "Indices Laws",
+        "topic": "Laws of Indices",
         "subtopic": "Indices",
         "difficulty": "6/7",
         "q": "Evaluate the exact value of $27^{-2/3}$.",
@@ -644,6 +1024,20 @@ const problemBank = [
             "The final result is expressed as a fraction.",
             "Final Answer: $$\\dfrac{1}{9}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\dfrac{1}{27^{1/3}} = \\dfrac{1}{3}$$",
+        "feedback": "You applied the cube root but forgot to square the result."
+    },
+    {
+        "ans": "$$\\dfrac{1}{27^2} = \\dfrac{1}{729}$$",
+        "feedback": "You squared before taking the cube root. The denominator of the index must be applied first."
+    },
+    {
+        "ans": "$$9$$",
+        "feedback": "You ignored the negative index. A negative power produces a reciprocal."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Root Before Power",
@@ -667,6 +1061,21 @@ const problemBank = [
             "Finally, we multiply the volume of the smaller container by the volume scale factor: $400 \times 3.375$.",
             "Final Answer: $$1350\text{ cm}^3$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$600\\text{ cm}^3$$",
+        "feedback": "You multiplied by the linear scale factor instead of the volume scale factor $k^3$."
+    },
+    {
+        "ans": "$$900\\text{ cm}^3$$",
+        "feedback": "You used $k^2$ (area scale factor) instead of $k^3$."
+    },
+    {
+        "ans": "$$2025\\text{ cm}^3$$",
+        "feedback": "You used the incorrect linear scale factor of 1.5 squared and then multiplied incorrectly."
+    }
+],
+
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Bridging the Dimensions",
@@ -690,6 +1099,20 @@ const problemBank = [
             "We complete the factorisation using the identity $(a^2 - b^2) = (a - b)(a + b)$.",
             "Final Answer: $$2(5x - 3)(5x + 3)$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$2(25x^2 + 9)$$",
+        "feedback": "You added instead of subtracting. The expression is a difference of squares, not a sum."
+    },
+    {
+        "ans": "$$2(5x - 3)^2$$",
+        "feedback": "You squared one bracket instead of forming the conjugate pair $(a-b)(a+b)$."
+    },
+    {
+        "ans": "$$2(5x - 9)(5x + 1)$$",
+        "feedback": "You attempted to factorise without recognising the difference of squares pattern."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Two-Stage Challenge",
@@ -715,6 +1138,21 @@ const problemBank = [
             "Finally, we simplify the equation into its general form.",
             "Final Answer: $$3x + 4y = 25$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$4x + 3y = 25$$",
+        "feedback": "You used the gradient of the radius instead of the negative reciprocal for the tangent."
+    },
+    {
+        "ans": "$$3x - 4y = 25$$",
+        "feedback": "You used the correct gradient magnitude but the wrong sign."
+    },
+    {
+        "ans": "$$3x + 4y = 5$$",
+        "feedback": "You substituted the point incorrectly into the line equation."
+    }
+],
+
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Interdisciplinary Links",
@@ -737,8 +1175,23 @@ const problemBank = [
             "For part (b), we substitute $x_0 = 1$ into the iteration formula to find $x_1 = 5 / (1^2 + 7) = 0.625$.",
             "We then use $x_1$ to find $x_2 = 5 / (0.625^2 + 7) \\approx 0.6765$.",
             "Finally, we use $x_2$ to find $x_3 = 5 / (0.6765^2 + 7) \\approx 0.6704$.",
-            "Final Answer: $$0.670 \text{ (to 3 decimal places)}$$ "
+            "Final Answer: $$(a)\\ x = \\dfrac{5}{x^2 + 7},\\ (b)\\ 0.670 \\text{ (to 3 decimal places)}$$ "
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ x = \\dfrac{5}{x + 7},\\ (b)\\ 0.625$$",
+        "feedback": "Part (b) is just the first iteration. In part (a), you failed to factor out $x$ correctly."
+    },
+    {
+        "ans": "$$(a)\\ x = \\dfrac{5}{x^2 - 7},\\ (b)\\ 0.702$$",
+        "feedback": "Part (a) has the wrong sign in the denominator. Part (b) comes from iterating the incorrect formula."
+    },
+    {
+        "ans": "$$(a)\\ x = \\dfrac{5}{x + 7},\\ (b)\\ 0.580$$",
+        "feedback": "Both parts are incorrect. The rearrangement must isolate $x$ from $x(x^2+7)=5$."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Efficient Calculator Usage",
