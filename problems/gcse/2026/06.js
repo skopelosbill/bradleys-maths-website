@@ -17,6 +17,20 @@ const problemBank = [
             "We divide all three numbers by their highest common factor, which is 10, to obtain the simplest integer ratio.",
             "Final Answer: $$(a)\\ 375\\text{ g},\\ (b)\\ 30\\text{ muffins},\\ (c)\\ 15:11:8$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 300\\text{ g},\\ (b)\\ 30\\text{ muffins},\\ (c)\\ 15:10:8$$",
+        "feedback": "Part (b) is correct, but in part (a) you scaled by 2 instead of 2.5. In part (c), you simplified incorrectly."
+    },
+    {
+        "ans": "$$(a)\\ 375\\text{ g},\\ (b)\\ 24\\text{ muffins},\\ (c)\\ 15:11:10$$",
+        "feedback": "Part (a) and (c) are correct, but in part (b) you divided 275 by 12 instead of 110."
+    },
+    {
+        "ans": "$$(a)\\ 300\\text{ g},\\ (b)\\ 24\\text{ muffins},\\ (c)\\ 3:2:1$$",
+        "feedback": "All parts are incorrect. The scaling factor and the ratio simplification were both misapplied."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Unitary Method",
@@ -45,6 +59,20 @@ const problemBank = [
             "The perimeter is the sum of all four sides: $10 + 10 + 4 + 4 = 28\\text{ m}$.",
             "Final Answer: $$(b)\\ x = 6,\\ (c)\\ 28\\text{ m}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(b)\\ x = -8,\\ (c)\\ 28\\text{ m}$$",
+        "feedback": "Part (c) is correct, but in part (b) you selected the negative root, which is invalid for a physical length."
+    },
+    {
+        "ans": "$$(b)\\ x = 6,\\ (c)\\ 24\\text{ m}$$",
+        "feedback": "Part (b) is correct, but in part (c) you used $6+4$ and $6-2$ incorrectly when calculating the perimeter."
+    },
+    {
+        "ans": "$$(b)\\ x = -8,\\ (c)\\ 24\\text{ m}$$",
+        "feedback": "Both parts are incorrect. The negative root cannot be used, and the perimeter calculation was misapplied."
+    }
+],
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Modelling Constraints",
@@ -71,6 +99,21 @@ const problemBank = [
             "Angle $ADC$ is directly opposite angle $ABC$. Calculation: $180^\\circ - 105^\\circ = 75^\\circ$.",
             "Final Answer: $$(a)\\ 48^\\circ\\text{ (Alternate Segment)},\\ (b)\\ 75^\\circ\\text{ (Cyclic Quadrilateral)}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 48^\\circ,\\ (b)\\ 105^\\circ$$",
+        "feedback": "Part (a) is correct, but in part (b) you forgot that opposite angles in a cyclic quadrilateral sum to $180^\\circ$."
+    },
+    {
+        "ans": "$$(a)\\ 132^\\circ,\\ (b)\\ 75^\\circ$$",
+        "feedback": "Part (b) is correct, but in part (a) you used the exterior angle instead of applying the Alternate Segment Theorem."
+    },
+    {
+        "ans": "$$(a)\\ 132^\\circ,\\ (b)\\ 105^\\circ$$",
+        "feedback": "Both parts are incorrect. Neither the tangent–chord relationship nor the cyclic quadrilateral rule was applied correctly."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Naming the Theorems",
@@ -98,6 +141,20 @@ const problemBank = [
             "Reading from the horizontal axis gives our estimated median weight.",
             "Final Answer: $$(a)\\ 8, 26, 50, 60,\\ (c)\\ 143\\text{ g} \\text{ (Accept } 142\\text{-}144\\text{ g)}$$>"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 8, 18, 42, 60,\\ (c)\\ 150\\text{ g}$$",
+        "feedback": "Part (a) uses incorrect cumulative totals, and part (c) reads the median too far to the right on the graph."
+    },
+    {
+        "ans": "$$(a)\\ 8, 26, 50, 60,\\ (c)\\ 135\\text{ g}$$",
+        "feedback": "Part (a) is correct, but in part (c) you misread the 30th value on the cumulative frequency curve."
+    },
+    {
+        "ans": "$$(a)\\ 8, 18, 24, 34,\\ (c)\\ 160\\text{ g}$$",
+        "feedback": "Both parts are incorrect. The cumulative totals must be running totals, not repeated frequencies."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Plotting on the Upper Bound",
@@ -124,6 +181,20 @@ const problemBank = [
             "This graph is characterised by two distinct curved asymptotes that never touch the $x$ or $y$ axes.",
             "Final Answer: $$(a)\\ y = \\dfrac{60}{x},\\ (b)\\ y = 6,\\ (c)\\ \\text{A reciprocal curve}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ y = \\dfrac{15}{x},\\ (b)\\ 6,\\ (c)\\ \\text{A straight line}$$",
+        "feedback": "Part (b) is correct, but in part (a) you used the given pair directly instead of solving for $k$. The graph is not linear."
+    },
+    {
+        "ans": "$$(a)\\ y = \\dfrac{60}{x},\\ (b)\\ 4,\\ (c)\\ \\text{A reciprocal curve}$$",
+        "feedback": "Parts (a) and (c) are correct, but in part (b) you divided incorrectly: $60/10 = 6$."
+    },
+    {
+        "ans": "$$(a)\\ y = 60x,\\ (b)\\ 600,\\ (c)\\ \\text{An exponential curve}$$",
+        "feedback": "All parts are incorrect. You used direct proportion instead of inverse proportion."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The 'k' Constant",
@@ -151,6 +222,21 @@ const problemBank = [
             "Calculation: $\\theta = \\tan^{-1}\\left(\\dfrac{7}{13}\\right) \\approx 28.3007...^\\circ$.",
             "Final Answer: $$(a)\\ 13\\text{ cm},\\ (b)\\ 28.3^\\circ$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 13\\text{ cm},\\ (b)\\ 33.7^\\circ$$",
+        "feedback": "Part (a) is correct, but in part (b) you used $\\tan^{-1}(13/7)$ instead of $7/13$."
+    },
+    {
+        "ans": "$$(a)\\ 12\\text{ cm},\\ (b)\\ 28.3^\\circ$$",
+        "feedback": "Part (b) is correct, but in part (a) you used the vertical height instead of applying Pythagoras on the base."
+    },
+    {
+        "ans": "$$(a)\\ 12\\text{ cm},\\ (b)\\ 33.7^\\circ$$",
+        "feedback": "Both parts are incorrect. The base diagonal must be found using Pythagoras before applying trigonometry."
+    }
+],
+
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Visualising 3D Triangles",
@@ -178,6 +264,20 @@ const problemBank = [
             "Subtracting $10x$ from both sides gives $5x = 20$. Dividing by 5 yields $x = 4$.",
             "Final Answer: $$(a)\\ 7.5 \\text{ days},\\ (b)\\ \\text{Builders might get in each other's way (time increases)},\\ (c)\\ x = 4$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 9\\text{ days},\\ (b)\\ \\text{Builders might speed up over time},\\ (c)\\ x = 4$$",
+        "feedback": "Part (c) is correct, but in part (a) you used direct proportion instead of inverse proportion. Part (b) does not relate to the context."
+    },
+    {
+        "ans": "$$(a)\\ 7.5\\text{ days},\\ (b)\\ \\text{All builders work at different speeds},\\ (c)\\ x = 5$$",
+        "feedback": "Parts (a) and (b) are acceptable, but in part (c) you solved $15x = 10x + 10$ instead of $20$."
+    },
+    {
+        "ans": "$$(a)\\ 9\\text{ days},\\ (b)\\ \\text{They might get tired},\\ (c)\\ x = 5$$",
+        "feedback": "All parts are incorrect. The man‑day method must be used for both (a) and (c)."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Contextual Assumptions",
@@ -186,7 +286,6 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/JYBkq",
         "button_text": "Master GCSE Number: Download the Pack"
     },
-    // 8 June
     // 8 June
     {
         "id": "002159",
@@ -208,6 +307,20 @@ const problemBank = [
             "Calculation: $285^\\circ + 43.0^\\circ = 328.0^\\circ$.",
             "Final Answer: $$(a)\\ 8.9\\text{ km},\\ (b)\\ 328.0^\\circ$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 8.9\\text{ km},\\ (b)\\ 242.0^\\circ$$",
+        "feedback": "Part (a) is correct, but in part (b) you subtracted the internal angle instead of adding it to the return bearing."
+    },
+    {
+        "ans": "$$(a)\\ 11.0\\text{ km},\\ (b)\\ 328.0^\\circ$$",
+        "feedback": "Part (b) is correct, but in part (a) you used $\\cos(45^\\circ)$ instead of the included angle $60^\\circ$."
+    },
+    {
+        "ans": "$$(a)\\ 11.0\\text{ km},\\ (b)\\ 242.0^\\circ$$",
+        "feedback": "Both parts are incorrect. The included angle is $105^\\circ - 45^\\circ = 60^\\circ$, and bearings must be measured clockwise from North."
+    }
+],
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Return Bearings",
@@ -237,6 +350,20 @@ const problemBank = [
             "Because there is a change of sign between $2.485$ and $2.495$, the root must lie between them. Any number in this range rounds to $2.49$ to 2 decimal places.",
             "Final Answer: $$(b)\\ x_2 = 2.3513, x_3 = 2.4528,\\ (c)\\ \\text{Sign change proves root is } 2.49$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(b)\\ x_2 = 2.3513,\\ x_3 = 2.5000,\\ (c)\\ \\text{Root is } 2.50$$",
+        "feedback": "Part (b) incorrectly substitutes $x_2$ into the formula. Part (c) must show a sign change, not just rounding."
+    },
+    {
+        "ans": "$$(b)\\ x_2 = 2.2000,\\ x_3 = 2.3000,\\ (c)\\ \\text{Root is } 2.49$$",
+        "feedback": "Part (c) is correct, but the iterative values in part (b) do not follow the formula $x_{n+1} = \\sqrt[3]{5x_n + 3}$."
+    },
+    {
+        "ans": "$$(b)\\ x_2 = 2.2000,\\ x_3 = 2.3000,\\ (c)\\ \\text{Root is } 2.50$$",
+        "feedback": "Both parts are incorrect. The iteration must be applied accurately and the sign change must be demonstrated."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Sign Change Proof",
@@ -263,6 +390,20 @@ const problemBank = [
             "For part (c), since the absolute minimum speed he could possibly have run is $9.30\\text{ m/s}$, and $9.30$ is strictly greater than $9.2$, his speed is definitely greater.",
             "Final Answer: $$(a)\\ \\text{LB } = 199.5\\text{ m}, \\text{UB } = 21.45\\text{ s},\\ (b)\\ 9.30\\text{ m/s},\\ (c)\\ \\text{Yes, minimum is } 9.30$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 199\\text{ m},\\ 21.5\\text{ s},\\ (b)\\ 9.20\\text{ m/s},\\ (c)\\ \\text{No}$$",
+        "feedback": "All bounds are incorrect. Minimum speed uses Small $\\div$ Big, which gives 9.30, not 9.20."
+    },
+    {
+        "ans": "$$(a)\\ 199.5\\text{ m},\\ 21.45\\text{ s},\\ (b)\\ 9.10\\text{ m/s},\\ (c)\\ \\text{No}$$",
+        "feedback": "Part (a) is correct, but in part (b) you used the wrong combination of bounds."
+    },
+    {
+        "ans": "$$(a)\\ 200.5\\text{ m},\\ 21.35\\text{ s},\\ (b)\\ 9.40\\text{ m/s},\\ (c)\\ \\text{Yes}$$",
+        "feedback": "Both bounds in part (a) are incorrect. The distance is measured to the nearest metre, not the nearest 10."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Compound Bounds",
@@ -291,6 +432,20 @@ const problemBank = [
             "Since $320\\text{ kg}$ is less than the $500\\text{ kg}$ limit, the van can carry the load.",
             "Final Answer: $$(a)\\ 4s+3L=32, 5s+2L=29.5,\\ (b)\\ s = 3.5\\text{ kg}, L = 6\\text{ kg},\\ (c)\\ \\text{Yes (}320\\text{ kg } < 500\\text{ kg)}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 4s+3L=32,\\ 5s+2L=29.5,\\ (b)\\ s = 3\\text{ kg}, L = 7\\text{ kg},\\ (c)\\ \\text{Yes}$$",
+        "feedback": "Part (a) is correct, but in part (b) you solved the elimination incorrectly."
+    },
+    {
+        "ans": "$$(a)\\ 4s+3L=32,\\ 5s+2L=29.5,\\ (b)\\ s = 3.5\\text{ kg}, L = 6\\text{ kg},\\ (c)\\ \\text{No}$$",
+        "feedback": "Parts (a) and (b) are correct, but in part (c) you miscalculated the total mass: it is 320 kg, not above the limit."
+    },
+    {
+        "ans": "$$(a)\\ 4s+2L=32,\\ 5s+3L=29.5,\\ (b)\\ s = 3\\text{ kg}, L = 7\\text{ kg},\\ (c)\\ \\text{No}$$",
+        "feedback": "All parts are incorrect. The equations must match the problem statement exactly."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Define Your Variables",
@@ -318,6 +473,21 @@ const problemBank = [
             "Calculation: $810 \\div 3.375 = 240\\text{ g}$.",
             "Final Answer: $$(a)\\ 8 : 27,\\ (b)\\ 270\\pi\\text{ cm}^2,\\ (c)\\ 240\\text{ g}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 4 : 6,\\ (b)\\ 180\\pi\\text{ cm}^2,\\ (c)\\ 360\\text{ g}$$",
+        "feedback": "All parts use the linear scale factor instead of the correct powers $k^2$ and $k^3$."
+    },
+    {
+        "ans": "$$(a)\\ 8 : 27,\\ (b)\\ 300\\pi\\text{ cm}^2,\\ (c)\\ 240\\text{ g}$$",
+        "feedback": "Parts (a) and (c) are correct, but in part (b) you used $k^3$ instead of $k^2$ for area."
+    },
+    {
+        "ans": "$$(a)\\ 4 : 9,\\ (b)\\ 270\\pi\\text{ cm}^2,\\ (c)\\ 300\\text{ g}$$",
+        "feedback": "Part (b) is correct, but the ratios in (a) and the mass in (c) do not follow the correct scale factors."
+    }
+],
+
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Mass Follows Volume",
@@ -345,6 +515,21 @@ const problemBank = [
             "Factorising out $4x$ gives $4x(x - 3) = 0$. This yields two solutions: $x = 0$ and $x = 3$.",
             "Final Answer: $$(a)\\ 23,\\ (b)\\ 4x^2 - 12x + 13,\\ (c)\\ x = 0 \\text{ and } x = 3$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 23,\\ (b)\\ 4x^2 - 6x + 13,\\ (c)\\ x = 0 \\text{ and } x = 1.5$$",
+        "feedback": "Part (a) is correct, but in part (b) you expanded $(2x-3)^2$ incorrectly. In part (c), solving the incorrect expression leads to the wrong roots."
+    },
+    {
+        "ans": "$$(a)\\ 17,\\ (b)\\ 4x^2 - 12x + 13,\\ (c)\\ x = 0 \\text{ and } x = 3$$",
+        "feedback": "Parts (b) and (c) are correct, but in part (a) you evaluated $g(3)$ incorrectly as $7$ instead of $13$."
+    },
+    {
+        "ans": "$$(a)\\ 17,\\ (b)\\ 4x^2 - 6x + 9,\\ (c)\\ x = 1 \\text{ and } x = 3$$",
+        "feedback": "All parts are incorrect. The composite must be evaluated inside–out, and the quadratic must be simplified before solving."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Inside-Out Logic",
@@ -371,6 +556,20 @@ const problemBank = [
             "To find the overall percentage reduction, we divide the savings by the original price and multiply by 100. Calculation: $(126 \\div 450) \\times 100 = 28\\%$.",
             "Final Answer: $$(a)\\ £450,\\ (b)\\ £324,\\ (c)\\ 28\\%$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ £450,\\ (b)\\ £306,\\ (c)\\ 32\\%$$",
+        "feedback": "Part (a) is correct, but in part (b) you applied a 15% reduction instead of 10%. This leads to an incorrect overall percentage."
+    },
+    {
+        "ans": "$$(a)\\ £400,\\ (b)\\ £324,\\ (c)\\ 19\\%$$",
+        "feedback": "Parts (b) is correct, but in part (a) you divided by 0.9 instead of 0.8. This affects the percentage reduction in part (c)."
+    },
+    {
+        "ans": "$$(a)\\ £400,\\ (b)\\ £300,\\ (c)\\ 33\\%$$",
+        "feedback": "All parts are incorrect. Successive percentage changes must use multipliers, not simple subtraction."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Successive Percentages",
@@ -398,6 +597,20 @@ const problemBank = [
             "We already established $\\overrightarrow{AM} = \\dfrac{2}{3}\\mathbf{b} - \\dfrac{2}{3}\\mathbf{a}$. Since $\\overrightarrow{AM}$ is a multiple of $(\\mathbf{b} - \\mathbf{a})$ and $\\overrightarrow{AN}$ is a multiple of $(2\\mathbf{b} - 3\\mathbf{a})$, they are not scalar multiples of each other and therefore cannot be parallel.",
             "Final Answer: $$(a)\\ \\mathbf{b} - \\mathbf{a},\\ (b)\\ \\dfrac{1}{3}\\mathbf{a} + \\dfrac{2}{3}\\mathbf{b},\\ (c)\\ \\text{Shown algebraically}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ \\mathbf{b} - \\mathbf{a},\\ (b)\\ \\dfrac{1}{2}\\mathbf{a} + \\dfrac{1}{2}\\mathbf{b},\\ (c)\\ \\text{Not parallel}$$",
+        "feedback": "Parts (a) and (c) are correct, but in part (b) you used the midpoint instead of the 2:1 ratio."
+    },
+    {
+        "ans": "$$(a)\\ \\mathbf{a} - \\mathbf{b},\\ (b)\\ \\dfrac{1}{3}\\mathbf{a} + \\dfrac{2}{3}\\mathbf{b},\\ (c)\\ \\text{Not parallel}$$",
+        "feedback": "Part (b) is correct, but in part (a) you reversed the direction of $AB$."
+    },
+    {
+        "ans": "$$(a)\\ \\mathbf{a} - \\mathbf{b},\\ (b)\\ \\dfrac{1}{2}\\mathbf{a} + \\dfrac{1}{2}\\mathbf{b},\\ (c)\\ \\text{Parallel}$$",
+        "feedback": "All parts are incorrect. The ratio must be applied correctly, and the vectors cannot be scalar multiples."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Parallel Proofs",
@@ -406,7 +619,6 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/CZ0J4",
         "button_text": "Master GCSE Geometry: Download the Pack"
     },
-    // 16 June
     // 16 June
     {
         "id": "002167",
@@ -426,6 +638,21 @@ const problemBank = [
             "This gives the roots $x = 4$ and $x = -1$. Because the number of physical counters cannot be negative, we discard $-1$.",
             "Final Answer: $$(a)\\ x + 5,\\ (b)\\ \\text{Shown algebraically},\\ (c)\\ 4 \\text{ red counters}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ x + 5,\\ (b)\\ \\text{Shown},\\ (c)\\ 5$$",
+        "feedback": "Parts (a) and (b) are correct, but in part (c) you selected the wrong root. The quadratic gives $x=4$ or $x=-1$; only $4$ is valid."
+    },
+    {
+        "ans": "$$(a)\\ x + 4,\\ (b)\\ \\text{Shown},\\ (c)\\ 4$$",
+        "feedback": "Part (c) is correct, but in part (a) you forgot to include all 5 blue counters."
+    },
+    {
+        "ans": "$$(a)\\ x + 4,\\ (b)\\ \\text{Incorrect algebra},\\ (c)\\ -1$$",
+        "feedback": "All parts are incorrect. The total counters must be $x+5$, and negative counters are impossible."
+    }
+],
+
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Discarding the Impossible",
@@ -453,6 +680,20 @@ const problemBank = [
             "Evaluating both roots: $x \\approx 5.372...$ and $x \\approx -0.372...$.",
             "Final Answer: $$(a)\\ \\text{Shown algebraically},\\ (b)\\ x = 5.37 \\text{ and } x = -0.37$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ \\text{Shown},\\ (b)\\ x = 4.00 \\text{ and } x = -0.50$$",
+        "feedback": "Part (a) is correct, but in part (b) you miscalculated the discriminant."
+    },
+    {
+        "ans": "$$(a)\\ \\text{Incorrect},\\ (b)\\ x = 5.37 \\text{ and } x = -0.37$$",
+        "feedback": "Part (b) is correct, but in part (a) you did not combine the fractions using the common denominator."
+    },
+    {
+        "ans": "$$(a)\\ \\text{Incorrect},\\ (b)\\ x = 4.00 \\text{ and } x = -0.50$$",
+        "feedback": "Both parts are incorrect. The quadratic must be formed before applying the quadratic formula."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Common Denominator",
@@ -482,6 +723,21 @@ const problemBank = [
             "Because we cannot buy a fraction of a batch, we must round up and purchase 45 batches. Total cost $= 45 \\times 3.50 = £157.50$.",
             "Final Answer: $$(a)\\ 286\\text{ m},\\ (b)\\ 4460\\text{ m}^2,\\ (c)\\ £157.50$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 366\\text{ m},\\ (b)\\ 4460\\text{ m}^2,\\ (c)\\ £157.50$$",
+        "feedback": "Parts (b) and (c) are correct, but in part (a) you incorrectly included the internal 40 m lines."
+    },
+    {
+        "ans": "$$(a)\\ 286\\text{ m},\\ (b)\\ 3200\\text{ m}^2,\\ (c)\\ £112.00$$",
+        "feedback": "Part (a) is correct, but in part (b) you omitted the circular area, affecting the cost in part (c)."
+    },
+    {
+        "ans": "$$(a)\\ 366\\text{ m},\\ (b)\\ 3200\\text{ m}^2,\\ (c)\\ £112.00$$",
+        "feedback": "All parts are incorrect. The circular components must be included in both perimeter and area."
+    }
+],
+
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Internal Lines Don't Count",
@@ -508,6 +764,20 @@ const problemBank = [
             "For part (c), if the square has an area of $170\\text{ cm}^2$, its side length is the square root of the area. Calculation: $\\sqrt{170} \\approx 13.038...\\text{ cm}$.",
             "Final Answer: $$(a)\\ x = 5,\\ (b)\\ 170\\text{ cm}^2,\\ (c)\\ 13.0\\text{ cm}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ x = 4,\\ (b)\\ 170\\text{ cm}^2,\\ (c)\\ 13.0\\text{ cm}$$",
+        "feedback": "Parts (b) and (c) are correct, but in part (a) you solved $10x + 4 = 54$ incorrectly."
+    },
+    {
+        "ans": "$$(a)\\ x = 5,\\ (b)\\ 160\\text{ cm}^2,\\ (c)\\ 12.6\\text{ cm}$$",
+        "feedback": "Part (a) is correct, but in part (b) you used the wrong width. This error carries into the square root in part (c)."
+    },
+    {
+        "ans": "$$(a)\\ x = 4,\\ (b)\\ 160\\text{ cm}^2,\\ (c)\\ 12.6\\text{ cm}$$",
+        "feedback": "All parts are incorrect. The perimeter equation must include both pairs of sides."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Perimeter Algebra",
@@ -534,6 +804,20 @@ const problemBank = [
             "Rounding to 3 decimal places gives $7.336\\text{ g/cm}^3$.",
             "Final Answer: $$(a)\\ 447.5 \\le M < 452.5 \\text{ and } 59 \\le V < 61,\\ (b)\\ 7.336\\text{ g/cm}^3$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 445 \\le M < 455,\\ 58 \\le V < 62,\\ (b)\\ 7.20\\text{ g/cm}^3$$",
+        "feedback": "Part (a) uses incorrect rounding intervals. In part (b), minimum density must use Small $\\div$ Big."
+    },
+    {
+        "ans": "$$(a)\\ 447.5 \\le M < 452.5,\\ 59 \\le V < 61,\\ (b)\\ 7.64\\text{ g/cm}^3$$",
+        "feedback": "Part (a) is correct, but in part (b) you divided by the lower bound instead of the upper bound."
+    },
+    {
+        "ans": "$$(a)\\ 445 \\le M < 455,\\ 58 \\le V < 62,\\ (b)\\ 7.64\\text{ g/cm}^3$$",
+        "feedback": "All parts are incorrect. The bounds must reflect the nearest 5 g and nearest 2 cm³ measurements."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: The Division Bound Trap",
@@ -564,6 +848,20 @@ const problemBank = [
             "The fraction is $\\dfrac{45}{78}$, which simplifies to $\\dfrac{15}{26}$.",
             "Final Answer: $$(b)\\ 78 \\text{ passengers},\\ (c)\\ \\dfrac{15}{26}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(b)\\ 78,\\ (c)\\ \\dfrac{12}{26}$$",
+        "feedback": "Part (b) is correct, but in part (c) you used only the $30$–$40$ class and omitted the fractional part of the $10$–$30$ class."
+    },
+    {
+        "ans": "$$(b)\\ 70,\\ (c)\\ \\dfrac{15}{26}$$",
+        "feedback": "Part (c) is correct, but in part (b) you added the frequency densities instead of the frequencies."
+    },
+    {
+        "ans": "$$(b)\\ 70,\\ (c)\\ \\dfrac{12}{26}$$",
+        "feedback": "Both parts are incorrect. Frequencies must be calculated as FD × width."
+    }
+],
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Fractional Bars",
@@ -593,6 +891,21 @@ const problemBank = [
             "Adding 2 to both sides yields the final equation.",
             "Final Answer: $$(a)\\ \\text{Shown algebraically},\\ (b)\\ -0.5,\\ (c)\\ y = 2x + 10$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ \\text{Shown},\\ (b)\\ -0.5,\\ (c)\\ y = -2x + 10$$",
+        "feedback": "Parts (a) and (b) are correct, but in part (c) you used the reciprocal instead of the negative reciprocal."
+    },
+    {
+        "ans": "$$(a)\\ \\text{Shown},\\ (b)\\ 0.5,\\ (c)\\ y = 2x + 10$$",
+        "feedback": "Part (c) is correct, but in part (b) you reversed the sign of the gradient."
+    },
+    {
+        "ans": "$$(a)\\ \\text{Incorrect},\\ (b)\\ 0.5,\\ (c)\\ y = -2x + 10$$",
+        "feedback": "All parts are incorrect. The radius gradient must be calculated before finding the tangent gradient."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Negative Reciprocal",
@@ -621,6 +934,21 @@ const problemBank = [
             "Calculation: $180^\\circ - 43.78...^\\circ = 136.21...^\\circ$.",
             "Final Answer: $$136.2^\\circ$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$43.8^\\circ$$",
+        "feedback": "This is the acute angle returned by the calculator. The question states the angle is obtuse."
+    },
+    {
+        "ans": "$$133.8^\\circ$$",
+        "feedback": "You subtracted from 177 instead of 180. The sine symmetry rule requires $180 - \\theta$."
+    },
+    {
+        "ans": "$$140.0^\\circ$$",
+        "feedback": "This comes from rounding too early in the calculation of $\\sin(A)$."
+    }
+],
+
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: The Ambiguous Obtuse",
@@ -648,6 +976,20 @@ const problemBank = [
             "Calculation: $1080 - 40 = 1040\\text{ cm}^3$.",
             "Final Answer: $$(a)\\ 27,\\ (b)\\ 1080\\text{ cm}^3,\\ (c)\\ 1040\\text{ cm}^3$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 9,\\ (b)\\ 360\\text{ cm}^3,\\ (c)\\ 320\\text{ cm}^3$$",
+        "feedback": "All parts use the area scale factor $k^2$ instead of the volume scale factor $k^3$."
+    },
+    {
+        "ans": "$$(a)\\ 27,\\ (b)\\ 1080\\text{ cm}^3,\\ (c)\\ 1000\\text{ cm}^3$$",
+        "feedback": "Parts (a) and (b) are correct, but in part (c) you subtracted incorrectly: $1080 - 40 = 1040$."
+    },
+    {
+        "ans": "$$(a)\\ 9,\\ (b)\\ 360\\text{ cm}^3,\\ (c)\\ 1000\\text{ cm}^3$$",
+        "feedback": "All parts are incorrect. The linear scale factor is 3, so the volume scale factor must be $3^3 = 27$."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Frustum Fundamentals",
@@ -674,6 +1016,20 @@ const problemBank = [
             "Adding 3 minutes to 22:00:00 gives the final time.",
             "Final Answer: $$(a)\\ 12=2^2 \\times 3, 15=3 \\times 5, 18=2 \\times 3^2,\\ (b)\\ 180,\\ (c)\\ 22:03:00$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 12=2\\times6,\\ 15=3\\times5,\\ 18=2\\times9,\\ (b)\\ 90,\\ (c)\\ 22:01:30$$",
+        "feedback": "Part (a) is not fully factorised into primes. In part (b) you used common multiples rather than the LCM."
+    },
+    {
+        "ans": "$$(a)\\ 12=2^2\\times3,\\ 15=3\\times5,\\ 18=2\\times3^2,\\ (b)\\ 360,\\ (c)\\ 22:06:00$$",
+        "feedback": "Part (a) is correct, but in part (b) you doubled the correct LCM."
+    },
+    {
+        "ans": "$$(a)\\ 12=2^2\\times3,\\ 15=3\\times5,\\ 18=2\\times3^2,\\ (b)\\ 60,\\ (c)\\ 22:01:00$$",
+        "feedback": "Part (b) is incorrect. The LCM must include the highest powers of all primes."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Contextual LCM",
@@ -702,6 +1058,20 @@ const problemBank = [
             "Substituting $n = 40$ into the formula: $5(40) + 3 = 203$.",
             "Final Answer: $$(a)\\ 5n + 3,\\ (b)\\ \\text{No, } n=28.4 \\text{ is not an integer},\\ (c)\\ 203$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 5n + 8,\\ (b)\\ \\text{No},\\ (c)\\ 208$$",
+        "feedback": "Part (b) is correct, but in part (a) you used the first term instead of the zeroth term."
+    },
+    {
+        "ans": "$$(a)\\ 5n + 3,\\ (b)\\ \\text{Yes},\\ (c)\\ 203$$",
+        "feedback": "Parts (a) and (c) are correct, but in part (b) you ignored that $n$ must be an integer."
+    },
+    {
+        "ans": "$$(a)\\ 5n + 8,\\ (b)\\ \\text{Yes},\\ (c)\\ 208$$",
+        "feedback": "All parts are incorrect. The general term must be derived from the common difference."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Mathematical Proof",
@@ -730,6 +1100,21 @@ const problemBank = [
             "Simplifying the surds: $22 - 2\\sqrt{5}\\text{ cm}$.",
             "Final Answer: $$(a)\\ 8 - 2\\sqrt{5}\\text{ cm},\\ (b)\\ 22 - 2\\sqrt{5}\\text{ cm}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 8 + 2\\sqrt{5},\\ (b)\\ 22 + 2\\sqrt{5}$$",
+        "feedback": "You reversed the sign when expanding the conjugate. The numerator contains $-8\\sqrt{5}$, not $+8\\sqrt{5}$."
+    },
+    {
+        "ans": "$$(a)\\ 4 - \\sqrt{5},\\ (b)\\ 14 - \\sqrt{5}$$",
+        "feedback": "You divided by 8 instead of 4 when simplifying the rationalised numerator."
+    },
+    {
+        "ans": "$$(a)\\ 8 - 2\\sqrt{5},\\ (b)\\ 11 - \\sqrt{5}$$",
+        "feedback": "Part (a) is correct, but in part (b) you forgot to double both the length and the width."
+    }
+],
+
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Expanding Complex Surds",
@@ -758,6 +1143,20 @@ const problemBank = [
             "Factorising the 8 gives $8(n^2 + 2n + 1) + 2$. Since $n$ is an integer, the bracket evaluates to an integer, completing the proof.",
             "Final Answer: $$8(n^2 + 2n + 1) + 2 \\text{, completing the proof.}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$8(n^2 + n + 1) + 2$$",
+        "feedback": "You expanded the brackets incorrectly. The middle term must be $2n$."
+    },
+    {
+        "ans": "$$4(n^2 + 2n + 1) + 2$$",
+        "feedback": "You factored out 4 instead of 8. The expression must show a multiple of 8."
+    },
+    {
+        "ans": "$$8(n^2 + 2n + 1)$$",
+        "feedback": "You omitted the +2, which is essential to proving the statement."
+    }
+],
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Structuring the Proof",
@@ -786,6 +1185,21 @@ const problemBank = [
             "Calculation: $\\dfrac{467}{990} + \\dfrac{60}{990} = \\dfrac{527}{990}$.",
             "Final Answer: $$(a)\\ \\dfrac{467}{990},\\ (b)\\ \\dfrac{527}{990}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ \\dfrac{47}{99},\\ (b)\\ \\dfrac{113}{99}$$",
+        "feedback": "You treated the decimal as $0.\\dot{47}$ instead of $0.4\\dot{7}\\dot{1}$."
+    },
+    {
+        "ans": "$$(a)\\ \\dfrac{467}{990},\\ (b)\\ \\dfrac{467}{990}$$",
+        "feedback": "Part (a) is correct, but in part (b) you forgot to add $\\dfrac{2}{33}$."
+    },
+    {
+        "ans": "$$(a)\\ \\dfrac{467}{900},\\ (b)\\ \\dfrac{527}{900}$$",
+        "feedback": "You used the wrong power of 10 when aligning the recurring digits."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Perfect Tail Alignment",
@@ -816,6 +1230,20 @@ const problemBank = [
             "To write this in exact surd form, we recognise $156.8$ as $\\dfrac{1568}{10} = \\dfrac{784}{5}$. Alternatively, notice the horizontal distance is $5.6$ and vertical is $11.2$ (which is $2 \\times 5.6$). So distance is $\\sqrt{5.6^2 + (2 \\times 5.6)^2} = \\sqrt{5(5.6^2)} = 5.6\\sqrt{5}$. Let's express it as a fractional surd or extract common factors: $5.6 = \\dfrac{28}{5}$. So length is $\\dfrac{28\\sqrt{5}}{5}$.",
             "Final Answer: $$(a)\\ (-1.6, -6.2) \\text{ and } (4, 5),\\ (b)\\ \\dfrac{28\\sqrt{5}}{5}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ (-1.6, -6.2) \\text{ and } (4, 5),\\ (b)\\ 5.6\\sqrt{2}$$",
+        "feedback": "Part (a) is correct, but in part (b) you used $\\sqrt{1^2 + 2^2}$ instead of the correct ratio $1:2:\\sqrt{5}$."
+    },
+    {
+        "ans": "$$(a)\\ (-1, -5),\\ (b)\\ \\dfrac{28\\sqrt{5}}{5}$$",
+        "feedback": "Part (b) is correct, but in part (a) you substituted incorrectly into the line equation."
+    },
+    {
+        "ans": "$$(a)\\ (-1, -5),\\ (b)\\ 5.6\\sqrt{2}$$",
+        "feedback": "Both parts are incorrect. The substitution must be exact and the surd must be simplified using the 1:2 ratio."
+    }
+],
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Clever Pythagoras",
