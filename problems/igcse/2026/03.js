@@ -17,6 +17,20 @@ const problemBank =[
             "Collecting like terms yields the final position vector.",
             "Final Answer: $$(a)\\ \\mathbf{b} - \\mathbf{a},\\ (b)\\ 2\\mathbf{b} - \\mathbf{a}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ \\mathbf{a} - \\mathbf{b},\\ (b)\\ \\mathbf{a} + 2\\mathbf{b}$$",
+        "feedback": "You reversed the direction of $\\overrightarrow{AB}$, which then affected the position vector of C."
+    },
+    {
+        "ans": "$$(a)\\ \\mathbf{b} - \\mathbf{a},\\ (b)\\ 2\\mathbf{a} - \\mathbf{b}$$",
+        "feedback": "Part (a) is correct, but in part (b) you doubled the wrong vector when forming $\\overrightarrow{AC}$."
+    },
+    {
+        "ans": "$$(a)\\ \\mathbf{b} + \\mathbf{a},\\ (b)\\ 2\\mathbf{b} + \\mathbf{a}$$",
+        "feedback": "You added the position vectors instead of forming the displacement vector $\\mathbf{b} - \\mathbf{a}$."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Position Vector Logic",
@@ -45,6 +59,20 @@ const problemBank =[
             "For part (c), from the form in part (a), the turning point is $(-b, c)$.",
             "Final Answer: $$(a)\\ 2(x - \\dfrac{3}{4})^2 - \\dfrac{49}{8},\\ (b)\\ 2.5, -1,\\ (c)\\ (0.75, -6.125)$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ (x - \\tfrac{3}{4})^2 - \\tfrac{49}{8},\\ (b)\\ 2.5, -1,\\ (c)\\ (\\tfrac{3}{4}, -\\tfrac{49}{8})$$",
+        "feedback": "You forgot to factor out the 2 before completing the square, which changes the turning point."
+    },
+    {
+        "ans": "$$(a)\\ 2(x - \\tfrac{3}{2})^2 - 5,\\ (b)\\ 3, -\\tfrac{5}{2},\\ (c)\\ (1.5, -5)$$",
+        "feedback": "You halved the wrong coefficient when completing the square, leading to incorrect roots and turning point."
+    },
+    {
+        "ans": "$$(a)\\ 2(x - \\tfrac{3}{4})^2 - \\tfrac{49}{8},\\ (b)\\ \\text{No real solutions},\\ (c)\\ (0.75, -6.125)$$",
+        "feedback": "Part (a) and (c) are correct, but in part (b) you misinterpreted the square root step."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Non-Monic Completion",
@@ -73,6 +101,20 @@ const problemBank =[
             "Since the discriminant is negative, there are no real solutions.",
             "Final Answer: $$(a)\\ 2x^2 - 5,\\ (b)\\ 4x^2 + 4x - 2,\\ (c)\\ \\text{No real solutions}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 2x^2 + 1,\\ (b)\\ 4x^2 - 2,\\ (c)\\ x = 1$$",
+        "feedback": "You substituted incorrectly into both compositions, and the resulting quadratic does not satisfy the equality."
+    },
+    {
+        "ans": "$$(a)\\ 2x^2 - 5,\\ (b)\\ 4x^2 + 4x - 2,\\ (c)\\ x = -1, 3$$",
+        "feedback": "Parts (a) and (b) are correct, but in part (c) you solved the quadratic without checking the discriminant."
+    },
+    {
+        "ans": "$$(a)\\ 2x - 5,\\ (b)\\ (2x + 1)^2 - 3,\\ (c)\\ \\text{No solutions}$$",
+        "feedback": "Part (a) is incorrect because you did not square the input when evaluating $g(x)$."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Order of Composition",
@@ -101,6 +143,20 @@ const problemBank =[
             "Calculation: $\\dfrac{1}{2} \\times 7.505 \\times 8 \\times \\sin(40^\\circ) \\approx 19.29...\\text{ cm}^2$.",
             "Final Answer: $$(a)\\ 75^\\circ,\\ (b)\\ 7.51\\text{ cm},\\ (c)\\ 19.3\\text{ cm}^2$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 75^\\circ,\\ (b)\\ 6.8\\text{ cm},\\ (c)\\ 17.5\\text{ cm}^2$$",
+        "feedback": "Part (a) is correct, but in part (b) you inverted the Sine Rule ratio."
+    },
+    {
+        "ans": "$$(a)\\ 75^\\circ,\\ (b)\\ 7.51\\text{ cm},\\ (c)\\ 15.0\\text{ cm}^2$$",
+        "feedback": "Part (b) is correct, but in part (c) you used the wrong included angle in the area formula."
+    },
+    {
+        "ans": "$$(a)\\ 40^\\circ,\\ (b)\\ 7.51\\text{ cm},\\ (c)\\ 19.3\\text{ cm}^2$$",
+        "feedback": "You misapplied the angle sum rule in part (a), which affects all subsequent calculations."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Intermediate Accuracy",
@@ -127,6 +183,20 @@ const problemBank =[
             "To express the answer with positive indices, we move $y^{-3}$ to the denominator as $y^3$.",
             "Final Answer: $$\\dfrac{x^4}{2y^3}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\dfrac{x^2}{2y}$$",
+        "feedback": "You subtracted the indices incorrectly for both x and y."
+    },
+    {
+        "ans": "$$\\dfrac{x^4 y^3}{2}$$",
+        "feedback": "You moved the negative index to the numerator instead of the denominator."
+    },
+    {
+        "ans": "$$\\dfrac{1}{2x^4 y^3}$$",
+        "feedback": "You inverted both variables instead of only the one with the negative index."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Negative Index Mastery",
@@ -154,6 +224,20 @@ const problemBank =[
             "Substituting $x = 3$ into $y = x + 1$ gives $y = 4$.",
             "Final Answer: $$(-4, -3) \\text{ and } (3, 4)$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(0, 1) \\text{ and } (5, 6)$$",
+        "feedback": "You substituted incorrectly into the circle equation, giving points that do not satisfy $x^2 + y^2 = 25$."
+    },
+    {
+        "ans": "$$(3, 4) \\text{ only}$$",
+        "feedback": "A line and a circle typically intersect at two points; you missed the negative solution."
+    },
+    {
+        "ans": "$$(4, 3) \\text{ and } (-3, -4)$$",
+        "feedback": "You swapped the x and y coordinates when substituting back into the linear equation."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Linear-Quadratic Pairs",
@@ -180,6 +264,21 @@ const problemBank =[
             "Now sum the vectors: $\\begin{pmatrix} 2 \\\\ -1 \\end{pmatrix} + \\begin{pmatrix} 4/3 \\\\ 4/3 \\end{pmatrix} = \\begin{pmatrix} 10/3 \\\\ 1/3 \\end{pmatrix}$.",
             "Final Answer: $$(a)\\ \\begin{pmatrix} 4 \\\\ 4 \\end{pmatrix},\\ (b)\\ \\begin{pmatrix} 10/3 \\\\ 1/3 \\end{pmatrix}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ \\begin{pmatrix} 4 \\\\ 2 \\end{pmatrix},\\ (b)\\ \\begin{pmatrix} 8/3 \\\\ -1/3 \\end{pmatrix}$$",
+        "feedback": "You subtracted the y‑coordinates incorrectly in part (a), which shifted the ratio point in part (b)."
+    },
+    {
+        "ans": "$$(a)\\ \\begin{pmatrix} 4 \\\\ 4 \\end{pmatrix},\\ (b)\\ \\begin{pmatrix} 14/3 \\\\ 5/3 \\end{pmatrix}$$",
+        "feedback": "Part (a) is correct, but in part (b) you used the wrong fraction of $AB$; $AC$ is one‑third, not two‑thirds."
+    },
+    {
+        "ans": "$$(a)\\ \\begin{pmatrix} -4 \\\\ -4 \\end{pmatrix},\\ (b)\\ \\begin{pmatrix} 2 \\\\ -1 \\end{pmatrix}$$",
+        "feedback": "You reversed the direction of $AB$, which led to using the wrong displacement for point C."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Ratio Partitioning",
@@ -206,6 +305,20 @@ const problemBank =[
             "Rounding to the nearest whole number gives 13,633.",
             "Final Answer: $$(a)\\ 13,911,\\ (b)\\ 13,633$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 12,360,\\ (b)\\ 12,113$$",
+        "feedback": "You applied simple interest instead of compound growth for the first 5 years."
+    },
+    {
+        "ans": "$$(a)\\ 13,911,\\ (b)\\ 14,189$$",
+        "feedback": "Part (a) is correct, but in part (b) you used a 2% increase instead of a decrease."
+    },
+    {
+        "ans": "$$(a)\\ 14,000,\\ (b)\\ 13,720$$",
+        "feedback": "You rounded too early in part (a), which inflated the final population."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Successive Multipliers",
@@ -232,6 +345,20 @@ const problemBank =[
             "The points $(1, y)$ now map to $(-5, y)$. This is a reflection in the line $x = -2$.",
             "Final Answer: $$(a)\\ (3, 3),\\ (b)\\ \\text{Reflection in } x = 2,\\ (c)\\ (-5, 4), \\text{Reflection in } x = -2$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ (-3, 3),\\ (b)\\ \\text{Reflection in } x = -2,\\ (c)\\ (5, 4),\\ \\text{Reflection in } x = 2$$",
+        "feedback": "You reversed the order of the transformations, which completely changes the final line of reflection."
+    },
+    {
+        "ans": "$$(a)\\ (3, 3),\\ (b)\\ \\text{Translation then reflection},\\ (c)\\ (-5, 4),\\ \\text{Translation then reflection}$$",
+        "feedback": "Part (a) and (c) are correct, but the description in part (b) must be a single transformation, not a sequence."
+    },
+    {
+        "ans": "$$(a)\\ (3, -3),\\ (b)\\ \\text{Reflection in } y = 2,\\ (c)\\ (-5, -4),\\ \\text{Reflection in } y = -2$$",
+        "feedback": "You reflected in the wrong axis; only the x‑coordinate changes when reflecting in the y‑axis."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Transformation Order",
@@ -259,6 +386,20 @@ const problemBank =[
             "We now cancel the common factors: $(x - 3)$, $(x + 3)$, and $(x + 4)$.",
             "Final Answer: $$\\dfrac{x}{x - 2}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\dfrac{x^2 - 9}{x^2 + x - 12} \\times \\dfrac{x^2 + x - 6}{x^2 + 4x}$$",
+        "feedback": "You rewrote the division but did not factorise or simplify any expressions."
+    },
+    {
+        "ans": "$$\\dfrac{x - 3}{x - 2}$$",
+        "feedback": "You cancelled the $(x + 3)$ factor incorrectly; only identical factors can be cancelled."
+    },
+    {
+        "ans": "$$\\dfrac{x}{x + 2}$$",
+        "feedback": "You mis‑factorised $x^2 + x - 6$, which should be $(x + 3)(x - 2)$."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Factorise Before Cancelling",
@@ -284,6 +425,20 @@ const problemBank =[
             "The conditional probability is $\\dfrac{n(F \\cap S)}{n(S)} = \\dfrac{5}{12}$.",
             "Final Answer: $$(a)\\ \\dfrac{3}{5},\\ (b)\\ \\dfrac{5}{12}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ \\dfrac{18}{30},\\ (b)\\ \\dfrac{5}{30}$$",
+        "feedback": "Part (a) is unsimplified, and in part (b) you used the full class size instead of the restricted sample space."
+    },
+    {
+        "ans": "$$(a)\\ \\dfrac{3}{5},\\ (b)\\ \\dfrac{5}{18}$$",
+        "feedback": "Part (a) is correct, but in part (b) you used the French total instead of the Spanish total."
+    },
+    {
+        "ans": "$$(a)\\ \\dfrac{12}{30},\\ (b)\\ \\dfrac{5}{12}$$",
+        "feedback": "You misread the number of French students in part (a)."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Restricted Sample Space",
@@ -309,6 +464,20 @@ const problemBank =[
             "Calculation: $12 \\div 3 = 4$ hours.",
             "Final Answer: $$4\\text{ hours}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$3\\text{ hours}$$",
+        "feedback": "You assumed the mass halved four times instead of three; $160 \\to 20$ is a factor of $\\tfrac{1}{8}$."
+    },
+    {
+        "ans": "$$6\\text{ hours}$$",
+        "feedback": "You divided the total time by the wrong number of halvings; $\\tfrac{1}{8}$ corresponds to three half‑lives."
+    },
+    {
+        "ans": "$$12\\text{ hours}$$",
+        "feedback": "You treated the entire decay as one half‑life instead of recognising the repeated halving pattern."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Powers of Two",
@@ -336,6 +505,20 @@ const problemBank =[
             "Calculation: $y = 18 - 15 + 3 = 6$.",
             "Final Answer: $$(a)\\ 4x - 5,\\ (b)\\ 7,\\ (c)\\ (3, 6)$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 2x - 5,\\ (b)\\ 1,\\ (c)\\ (1, 0)$$",
+        "feedback": "You differentiated $2x^2$ incorrectly and substituted the wrong x‑value when finding the coordinate."
+    },
+    {
+        "ans": "$$(a)\\ 4x - 5,\\ (b)\\ 7,\\ (c)\\ (3, 1)$$",
+        "feedback": "Parts (a) and (b) are correct, but in part (c) you substituted into the derivative instead of the original curve."
+    },
+    {
+        "ans": "$$(a)\\ 4x + 5,\\ (b)\\ 17,\\ (c)\\ (-3, 6)$$",
+        "feedback": "You changed the sign of the constant term in the derivative, which affects all later calculations."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Derivative as a Tool",
@@ -363,6 +546,20 @@ const problemBank =[
             "The probability is $\\dfrac{8}{40}$, which simplifies to $\\dfrac{1}{5}$.",
             "Final Answer: $$(a)\\ 7,\\ (b)\\ \\dfrac{1}{5}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 15,\\ (b)\\ \\dfrac{8}{33}$$",
+        "feedback": "You added the totals without subtracting the intersection, which double‑counts students."
+    },
+    {
+        "ans": "$$(a)\\ 7,\\ (b)\\ \\dfrac{10}{40}$$",
+        "feedback": "Part (a) is correct, but in part (b) you used the intersection instead of the Physics‑only region."
+    },
+    {
+        "ans": "$$(a)\\ 0,\\ (b)\\ \\dfrac{1}{5}$$",
+        "feedback": "You assumed all students study at least one subject, which contradicts the given totals."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Filling the Venn",
@@ -389,6 +586,20 @@ const problemBank =[
             "Collecting like terms gives $9 + 4\\sqrt{5}$.",
             "Final Answer: $$(a)\\ -6 - 3\\sqrt{5},\\ (b)\\ 9 + 4\\sqrt{5}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ \\dfrac{6 + 3\\sqrt{5}}{4 - 5},\\ (b)\\ 4 + 2\\sqrt{5}$$",
+        "feedback": "Part (a) is unsimplified and part (b) incorrectly expands the binomial."
+    },
+    {
+        "ans": "$$(a)\\ 6 - 3\\sqrt{5},\\ (b)\\ 9 - 4\\sqrt{5}$$",
+        "feedback": "You forgot that the denominator becomes −1, which changes the signs of both numerator terms."
+    },
+    {
+        "ans": "$$(a)\\ -3 - 6\\sqrt{5},\\ (b)\\ 7 + 2\\sqrt{5}$$",
+        "feedback": "Both parts contain sign and coefficient errors when expanding and simplifying."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Negative Denominators",
@@ -416,6 +627,21 @@ const problemBank =[
             "Calculation: $12(-1)^2 - 4(-1) + 5 = 12(1) + 4 + 5 = 21$.",
             "Final Answer: $$(a)\\ 12x^2 - 4x + 5,\\ (b)\\ 21$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 12x^2 - 4 + 5,\\ (b)\\ 13$$",
+        "feedback": "You differentiated $-2x^2$ incorrectly and treated $5x$ as a constant."
+    },
+    {
+        "ans": "$$(a)\\ 12x^2 - 4x,\\ (b)\\ 17$$",
+        "feedback": "You omitted the constant derivative of 5, which affects the gradient at x = −1."
+    },
+    {
+        "ans": "$$(a)\\ 8x^3 - 4x + 5,\\ (b)\\ 21$$",
+        "feedback": "Part (b) is correct, but in part (a) you multiplied the power instead of reducing it."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Derivative Significance",
@@ -444,6 +670,20 @@ const problemBank =[
             "The $\\dfrac{1}{2}\\mathbf{a}$ terms cancel out, leaving $\\dfrac{1}{2}\\mathbf{c} - \\dfrac{1}{2}\\mathbf{b}$, which factorises to $\\dfrac{1}{2}(\\mathbf{c} - \\mathbf{b})$.",
             "Final Answer: $$\\text{Proven algebraically as } \\dfrac{1}{2}(\\mathbf{c} - \\mathbf{b})$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\dfrac{1}{2}(\\mathbf{b} - \\mathbf{c})$$",
+        "feedback": "You reversed the direction of the vector; $\\overrightarrow{MN}$ must go from M to N."
+    },
+    {
+        "ans": "$$\\mathbf{c} - \\mathbf{b}$$",
+        "feedback": "You omitted the factor of one‑half, which is essential because M and N are midpoints."
+    },
+    {
+        "ans": "$$\\dfrac{1}{2}(\\mathbf{a} - \\mathbf{b})$$",
+        "feedback": "You used the wrong pair of points; the midpoint theorem relates the third side, not AB."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Midpoint Theorem",
@@ -470,6 +710,21 @@ const problemBank =[
             "Calculation: $1 + 0.5 - 1 = 0.5$.",
             "Final Answer: $$\\dfrac{1}{2}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$0$$",
+        "feedback": "You subtracted incorrectly; $1 + 0.5 - 1$ leaves a positive value."
+    },
+    {
+        "ans": "$$1$$",
+        "feedback": "You doubled the sine value incorrectly and omitted the subtraction of $\\tan 45^\\circ$."
+    },
+    {
+        "ans": "$$\\dfrac{3}{2}$$",
+        "feedback": "You added all three exact values instead of applying the signs in the expression."
+    }
+],
+
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Non-Calculator Trig",
@@ -496,6 +751,20 @@ const problemBank =[
             "The $\\sqrt{2}$ terms cancel each other out, leaving 11, which is an integer.",
             "Final Answer: $$(a)\\ 11\\sqrt{2},\\ (b)\\ 11$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 7\\sqrt{2},\\ (b)\\ 7$$",
+        "feedback": "You simplified $\\sqrt{8}$ incorrectly; it should become $2\\sqrt{2}$ before multiplying by 3."
+    },
+    {
+        "ans": "$$(a)\\ 11\\sqrt{2},\\ (b)\\ \\sqrt{2}$$",
+        "feedback": "Part (a) is correct, but in part (b) you forgot that dividing identical surds cancels them completely."
+    },
+    {
+        "ans": "$$(a)\\ 5\\sqrt{2} + 3\\sqrt{8},\\ (b)\\ 11\\sqrt{2}$$",
+        "feedback": "You did not simplify the surds in part (a), so the expression in part (b) cannot reduce to an integer."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Surd Addition",
@@ -522,6 +791,21 @@ const problemBank =[
             "This gives two solutions: $x = 0$ and $2x - 3 = 0 \\implies x = 1.5$.",
             "Final Answer: $$(a)\\ 21,\\ (b)\\ 0 \\text{ and } 1.5$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 17,\\ (b)\\ 1.5$$",
+        "feedback": "You substituted incorrectly in part (a) and lost the $x=0$ solution by dividing through by x."
+    },
+    {
+        "ans": "$$(a)\\ 21,\\ (b)\\ -1.5 \\text{ and } 0$$",
+        "feedback": "Part (a) is correct, but in part (b) you solved $2x^2 - 3x = 0$ incorrectly."
+    },
+    {
+        "ans": "$$(a)\\ 32,\\ (b)\\ 0 \\text{ only}$$",
+        "feedback": "You squared 4 incorrectly in part (a) and lost the second solution in part (b)."
+    }
+],
+
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Dual Solutions",
@@ -551,6 +835,20 @@ const problemBank =[
             "Simplifying gives $y = -0.75x + 1.875 + 4 = -0.75x + 5.875$.",
             "Final Answer: $$(a)\\ AB = BC = 5,\\ (b)\\ y = -0.75x + 5.875$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ AB = AC,\\ (b)\\ y = 0.75x + 4$$",
+        "feedback": "You compared the wrong pair of sides in part (a) and used the reciprocal instead of the negative reciprocal in part (b)."
+    },
+    {
+        "ans": "$$(a)\\ BC = AC,\\ (b)\\ y = -\\tfrac{3}{4}x + 4$$",
+        "feedback": "Part (a) uses incorrect distances, and in part (b) you used the wrong midpoint."
+    },
+    {
+        "ans": "$$(a)\\ \\text{Not isosceles},\\ (b)\\ y = -0.75x + 3$$",
+        "feedback": "You miscalculated the side lengths, which led to an incorrect conclusion and bisector."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Geometric Proofs",
@@ -577,6 +875,21 @@ const problemBank =[
             "The values are 2, 3, and 4.",
             "Final Answer: $$(a)\\ x \\le 4,\\ (b)\\ 2, 3, 4$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ x < 4,\\ (b)\\ 1, 2, 3$$",
+        "feedback": "You used a strict inequality in part (a), which incorrectly excludes 4."
+    },
+    {
+        "ans": "$$(a)\\ x \\ge 4,\\ (b)\\ 2, 3$$",
+        "feedback": "You reversed the inequality in part (a) and omitted the upper boundary in part (b)."
+    },
+    {
+        "ans": "$$(a)\\ x \\le 4,\\ (b)\\ 1, 2, 3, 4$$",
+        "feedback": "Part (a) is correct, but in part (b) you included 1 even though the inequality is strict."
+    }
+],
+
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Inequality Boundaries",
@@ -605,6 +918,20 @@ const problemBank =[
             "Simplifying the fraction gives $\\dfrac{7}{10}$.",
             "Final Answer: $$(a)\\ \\dfrac{2}{5},\\ (b)\\ \\dfrac{7}{10}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ \\dfrac{6}{25},\\ (b)\\ \\dfrac{19}{25}$$",
+        "feedback": "You treated the events as independent and kept the denominator at 5 for both draws."
+    },
+    {
+        "ans": "$$(a)\\ \\dfrac{2}{5},\\ (b)\\ \\dfrac{4}{5}$$",
+        "feedback": "Part (a) is correct, but in part (b) you forgot to subtract the probability of RR from 1."
+    },
+    {
+        "ans": "$$(a)\\ \\dfrac{1}{2},\\ (b)\\ \\dfrac{3}{5}$$",
+        "feedback": "You miscounted the number of favourable outcomes for both same‑colour and at‑least‑one‑blue events."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Complement Rule",
@@ -633,6 +960,20 @@ const problemBank =[
             "At $x = 3$, $\\dfrac{d^2y}{dx^2} = 6(3) - 12 = 6$. Since this is positive ($>0$), the point $(3, 0)$ is a minimum.",
             "Final Answer: $$(a)\\ 3x^2 - 12x + 9,\\ (b)\\ (1, 4), (3, 0),\\ (c)\\ \\text{Max: }(1, 4), \\text{Min: }(3, 0)$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 3x^2 - 12x,\\ (b)\\ (1, 3), (3, -3),\\ (c)\\ \\text{Both maxima}$$",
+        "feedback": "You omitted the constant derivative in (a), which shifted both stationary point values."
+    },
+    {
+        "ans": "$$(a)\\ 3x^2 - 12x + 9,\\ (b)\\ (1, 4), (3, 0),\\ (c)\\ \\text{Both minima}$$",
+        "feedback": "Parts (a) and (b) are correct, but the second derivative test was interpreted incorrectly."
+    },
+    {
+        "ans": "$$(a)\\ 6x - 12,\\ (b)\\ (2, 2), (3, 0),\\ (c)\\ \\text{Max at }(3, 0)$$",
+        "feedback": "You used the second derivative instead of the first derivative to find stationary points."
+    }
+],
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Second Derivative Rigour",
@@ -660,6 +1001,20 @@ const problemBank =[
             "Rearranging: $y = 1.5x - 7.5 + 3 = 1.5x - 4.5$.",
             "Final Answer: $$(a)\\ y = -\\dfrac{2}{3}x + \\dfrac{19}{3},\\ (b)\\ y = 1.5x - 4.5$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ y = \\tfrac{3}{2}x + 1,\\ (b)\\ y = -\\tfrac{2}{3}x + 5$$",
+        "feedback": "You used the perpendicular gradient for part (a) and the original gradient for part (b), reversing the roles."
+    },
+    {
+        "ans": "$$(a)\\ y = -\\tfrac{2}{3}x + \\tfrac{19}{3},\\ (b)\\ y = 1.5x + 4.5$$",
+        "feedback": "Part (a) is correct, but in part (b) you used the wrong point when forming the perpendicular bisector."
+    },
+    {
+        "ans": "$$(a)\\ y = -2x + 3,\\ (b)\\ y = \\tfrac{1}{2}x - 4.5$$",
+        "feedback": "You miscalculated the gradient in part (a), which led to an incorrect reciprocal in part (b)."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Perpendicular Precision",
@@ -686,6 +1041,20 @@ const problemBank =[
             "Rounding to 1 decimal place gives $53.1^\\circ$.",
             "Final Answer: $$(a)\\ 25\\text{ m},\\ (b)\\ 53.1^\\circ$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 35\\text{ m},\\ (b)\\ 30^\\circ$$",
+        "feedback": "You added the sides instead of applying Pythagoras, and used the wrong trig ratio for the angle."
+    },
+    {
+        "ans": "$$(a)\\ 25\\text{ m},\\ (b)\\ 53.8^\\circ$$",
+        "feedback": "Part (a) is correct, but in part (b) you rounded too early, inflating the final angle."
+    },
+    {
+        "ans": "$$(a)\\ 20\\text{ m},\\ (b)\\ 53.1^\\circ$$",
+        "feedback": "You used the height instead of the hypotenuse for the cable length."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Angle of Elevation",
@@ -711,6 +1080,20 @@ const problemBank =[
             "Collecting like terms: the $x^2$ terms cancel out, $3x + 4x = 7x$, and $-28 - 4 = -32$.",
             "Final Answer: $$7x - 32$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$x^2 + 3x - 28 - x^2 - 4x + 4 = -x - 24$$",
+        "feedback": "You expanded correctly but made sign errors when subtracting the second bracket."
+    },
+    {
+        "ans": "$$7x + 32$$",
+        "feedback": "You forgot to distribute the negative sign across all terms of $(x - 2)^2$."
+    },
+    {
+        "ans": "$$x^2 + 3x - 28 - x^2 + 4x - 4 = 3x - 32$$",
+        "feedback": "You combined the x‑terms incorrectly; $3x + 4x$ should give $7x$."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Subtracting Polynomials",
@@ -739,6 +1122,21 @@ const problemBank =[
             "Subtract 16: $3a = 27$. Divide by 3: $a = 9$.",
             "Final Answer: $$\\text{Adult: } \\text{£}9, \\text{ Child: } \\text{£}4$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$a = 4,\\ c = 9$$",
+        "feedback": "You solved correctly but assigned the values to the wrong ticket types."
+    },
+    {
+        "ans": "$$a = 11,\\ c = 2$$",
+        "feedback": "You subtracted the equations in the wrong order, reversing the sign of c."
+    },
+    {
+        "ans": "$$a = 9,\\ c = 3$$",
+        "feedback": "You substituted incorrectly when solving for c in the first equation."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Define Your Variables",
@@ -765,6 +1163,20 @@ const problemBank =[
             "The shaded area is the large area minus the unshaded area: $9\\pi - 7\\pi = 2\\pi$.",
             "Final Answer: $$2\\pi\\text{ cm}^2$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$9\\pi - 6\\pi = 3\\pi$$",
+        "feedback": "You counted only six small circles instead of seven."
+    },
+    {
+        "ans": "$$9\\pi - 7 = 2\\pi$$",
+        "feedback": "You removed the π from the small circle areas, treating them as unit circles."
+    },
+    {
+        "ans": "$$9\\pi - 14\\pi = -5\\pi$$",
+        "feedback": "You doubled the number of small circles; there are 7, not 14."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Exact Answers",
@@ -790,6 +1202,20 @@ const problemBank =[
             "Rounding to 3 significant figures gives $71.4\\text{ cm}^2$.",
             "Final Answer: $$(a)\\ \\text{LB: } 8.35, \\text{ UB: } 8.45,\\ (b)\\ 71.4\\text{ cm}^2$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 8.4 \\pm 0.1,\\ (b)\\ 70.6\\text{ cm}^2$$",
+        "feedback": "You used ±0.1 instead of ±0.05, doubling the error interval."
+    },
+    {
+        "ans": "$$(a)\\ 8.35, 8.45,\\ (b)\\ 8.4^2 = 70.6$$",
+        "feedback": "Part (a) is correct, but in part (b) you squared the rounded measurement instead of the upper bound."
+    },
+    {
+        "ans": "$$(a)\\ 8.3, 8.5,\\ (b)\\ 72.3$$",
+        "feedback": "You rounded the bounds to 1 decimal place instead of using the exact ±0.05 interval."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Boundary Powers",
@@ -816,6 +1242,20 @@ const problemBank =[
             "The Interquartile Range is $UQ - LQ = 38.5 - 21.5 = 17$.",
             "Final Answer: $$(b)\\ 29.5,\\ (c)\\ 17$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(b)\\ 30,\\ (c)\\ 15$$",
+        "feedback": "You used the 16th value only for the median and misidentified the quartile positions."
+    },
+    {
+        "ans": "$$(b)\\ 29.5,\\ (c)\\ 19$$",
+        "feedback": "Part (b) is correct, but in part (c) you used the wrong values for LQ and UQ."
+    },
+    {
+        "ans": "$$(b)\\ 28,\\ (c)\\ 17$$",
+        "feedback": "You miscounted the ordered data when locating the median position."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: The Golden Key",
