@@ -18,6 +18,20 @@ const problemBank =[
             "Finally, we add 6 to both sides to express the equation in the form $y = mx + c$.",
             "Final Answer: $$y = 5x - 19$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$y = -5x + 19$$",
+        "feedback": "You used the negative of the correct gradient; the slope from (3,−4) to (5,6) is positive."
+    },
+    {
+        "ans": "$$y = 5x + 19$$",
+        "feedback": "You calculated the gradient correctly but substituted the point incorrectly when finding the intercept."
+    },
+    {
+        "ans": "$$y = \\tfrac{1}{5}x - 19$$",
+        "feedback": "You inverted the gradient instead of using the change in y over the change in x."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Choose the 'Easy' Point",
@@ -45,6 +59,20 @@ const problemBank =[
             "Adding 3 hours to the initial time of 8:00 AM gives the final result.",
             "Final Answer: $$11:00\\text{ AM}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$10{:}00\\text{ AM}$$",
+        "feedback": "You found a common multiple but not the *lowest* common multiple of 20, 30, and 45."
+    },
+    {
+        "ans": "$$11{:}30\\text{ AM}$$",
+        "feedback": "You added the three intervals instead of finding their LCM."
+    },
+    {
+        "ans": "$$8{:}45\\text{ AM}$$",
+        "feedback": "You used the greatest common factor instead of the LCM."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Identifying LCM",
@@ -71,6 +99,20 @@ const problemBank =[
             "We then collect the common binomial factor $(x - 1)$.",
             "Final Answer: $$(3 - 2x)(x - 1)$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(2x - 3)(x - 1)$$",
+        "feedback": "You lost the negative sign from the leading term; the quadratic begins with −2x²."
+    },
+    {
+        "ans": "$$-(2x - 3)(x - 1)$$",
+        "feedback": "You factored out −1 but did not adjust the signs inside the brackets correctly."
+    },
+    {
+        "ans": "$$(3 + 2x)(x - 1)$$",
+        "feedback": "The middle term becomes +5x only if the signs are handled correctly; here they are not."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: The Negative x² Term",
@@ -97,6 +139,20 @@ const problemBank =[
             "We now cancel the common factors: $(x + 3)$, $(x - 4)$, and $(x - 5)$.",
             "Final Answer: $$\\dfrac{x + 2}{x - 2}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\dfrac{x - 2}{x + 2}$$",
+        "feedback": "You inverted the final fraction; remember division becomes multiplication by the reciprocal."
+    },
+    {
+        "ans": "$$\\dfrac{x + 3}{x - 5}$$",
+        "feedback": "You cancelled terms before factorising, which is not allowed."
+    },
+    {
+        "ans": "$$\\dfrac{x + 2}{x - 4}$$",
+        "feedback": "You cancelled the wrong pair of factors; only identical factors can be removed."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Factor-First Rule",
@@ -124,6 +180,21 @@ const problemBank =[
             "Finally, we divide the total sum by the total frequency: $420 \\div 40 = 10.5$.",
             "Final Answer: $$10.5\\text{ minutes}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$11.2\\text{ minutes}$$",
+        "feedback": "You used the upper bounds instead of the midpoints when calculating fx."
+    },
+    {
+        "ans": "$$10\\text{ minutes}$$",
+        "feedback": "You rounded the midpoint products too early, reducing accuracy."
+    },
+    {
+        "ans": "$$12.5\\text{ minutes}$$",
+        "feedback": "You divided by the number of groups instead of the total frequency."
+    }
+],
+
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Why an Estimate?",
@@ -150,6 +221,20 @@ const problemBank =[
             "We substitute $x = -1$ into the original equation: $y = (-1)^3 - 3(-1)^2 - 9(-1) + 5 = 10$.",
             "Final Answer: $$(3, -22) \\text{ and } (-1, 10)$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 3x^2 - 6x + 9,\\ (b)\\ (3, 22), (-1, -10)$$",
+        "feedback": "You differentiated the constant incorrectly and substituted into the derivative instead of the original curve."
+    },
+    {
+        "ans": "$$(a)\\ 6x - 6,\\ (b)\\ (1, -6) \\text{ only}$$",
+        "feedback": "You used the second derivative instead of the first derivative to find stationary points."
+    },
+    {
+        "ans": "$$(a)\\ 3x^2 - 6x - 9,\\ (b)\\ (3, -22) \\text{ only}$$",
+        "feedback": "You found one stationary point but forgot that a cubic typically has two turning points."
+    }
+],
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Horizontal Tangents",
@@ -176,6 +261,20 @@ const problemBank =[
             "Simplifying gives $\\angle BAC = 180^\\circ - 116^\\circ$.",
             "Final Answer: $$64^\\circ$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$54^\\circ$$",
+        "feedback": "You subtracted only one of the angles from 180°, forgetting that both interior angles must be used."
+    },
+    {
+        "ans": "$$62^\\circ$$",
+        "feedback": "You used the tangent–chord angle directly as angle BAC instead of as angle BCA."
+    },
+    {
+        "ans": "$$116^\\circ$$",
+        "feedback": "You added the two given angles instead of subtracting them from 180°."
+    }
+],
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Spotting the Theorem",
@@ -202,6 +301,20 @@ const problemBank =[
             "Finally, we divide by $(y - 2)$ to isolate $x$.",
             "Final Answer: $$x = \\dfrac{5y + 3}{y - 2}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$x = \\dfrac{5y - 3}{y - 2}$$",
+        "feedback": "You expanded incorrectly; the constant term should move to the opposite side as +3."
+    },
+    {
+        "ans": "$$x = \\dfrac{2y + 3}{y - 5}$$",
+        "feedback": "You rearranged the original fraction incorrectly before clearing the denominator."
+    },
+    {
+        "ans": "$$x = \\dfrac{2y - 3}{y + 5}$$",
+        "feedback": "You mixed the coefficients of x and the constants when factorising."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Factorising Step",
@@ -227,6 +340,21 @@ const problemBank =[
             "We then apply the power of 3: $2^3 = 8$.",
             "Final Answer: $$(a)\\ 9,\\ (b)\\ \\dfrac{1}{8}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 27^{2/3} = 27^2 = 729,\\ (b)\\ 16^{-3/4} = -\\dfrac{1}{8}$$",
+        "feedback": "You applied the power before the root in part (a) and introduced an incorrect negative sign in part (b)."
+    },
+    {
+        "ans": "$$(a)\\ 3,\\ (b)\\ \\dfrac{1}{64}$$",
+        "feedback": "You found the cube root of 27 but forgot to square it; in part (b) you cubed 2 incorrectly."
+    },
+    {
+        "ans": "$$(a)\\ 81,\\ (b)\\ \\dfrac{1}{4}$$",
+        "feedback": "You squared 9 instead of 3 in part (a), and used the square root instead of the fourth root in part (b)."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Root then Power",
@@ -254,6 +382,20 @@ const problemBank =[
             "Simplifying the fraction gives $\\dfrac{25}{28}$.",
             "Final Answer: $$\\dfrac{25}{28}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\dfrac{5}{8}$$",
+        "feedback": "You calculated the probability of selecting a green pen on the first draw only."
+    },
+    {
+        "ans": "$$\\dfrac{19}{28}$$",
+        "feedback": "You added the probabilities of GB and BG but forgot the GG case."
+    },
+    {
+        "ans": "$$\\dfrac{6}{56}$$",
+        "feedback": "You calculated the probability of selecting two blue pens instead of subtracting it from 1."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The 'At Least' Shortcut",
@@ -281,6 +423,20 @@ const problemBank =[
             "Rounding to 2 decimal places gives the final results.",
             "Final Answer: $$3.12\\text{ and } 0.21$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$x = 3.12 \\text{ and } -0.21$$",
+        "feedback": "You introduced a negative sign incorrectly when evaluating the second solution."
+    },
+    {
+        "ans": "$$x = 3 \\text{ and } 0.2$$",
+        "feedback": "You rounded too early, reducing accuracy below the required 2 decimal places."
+    },
+    {
+        "ans": "$$x = 10 \\pm \\sqrt{76}$$",
+        "feedback": "You substituted into the formula but did not divide by 6 to complete the calculation."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Watch the Signs!",
@@ -308,6 +464,20 @@ const problemBank =[
             "Collecting like terms yields the final expression.",
             "Final Answer: $$\\dfrac{2}{3}\\mathbf{a} + \\dfrac{1}{3}\\mathbf{b}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\dfrac{1}{3}\\mathbf{a} + \\dfrac{2}{3}\\mathbf{b}$$",
+        "feedback": "You reversed the ratio; PR is one part from P, not two."
+    },
+    {
+        "ans": "$$\\mathbf{a} + \\dfrac{1}{3}(\\mathbf{a} - \\mathbf{b})$$",
+        "feedback": "You used the vector AP instead of PQ when forming the section vector."
+    },
+    {
+        "ans": "$$\\dfrac{1}{2}(\\mathbf{a} + \\mathbf{b})$$",
+        "feedback": "This is the midpoint formula, which only applies to a 1:1 ratio."
+    }
+],
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: The Section Formula",
@@ -334,6 +504,20 @@ const problemBank =[
             "Dividing by 4 gives the value of the constant.",
             "Final Answer: $$k = 2$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$k = 4$$",
+        "feedback": "You substituted into the original equation instead of the derivative; the gradient comes from $2kx + 5$."
+    },
+    {
+        "ans": "$$k = 1$$",
+        "feedback": "You solved $13 = 2k + 5$ instead of $13 = 4k + 5$; remember to substitute $x = 2$."
+    },
+    {
+        "ans": "$$k = -2$$",
+        "feedback": "You moved terms incorrectly when isolating k; the gradient must increase when k is positive."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Working Backwards",
@@ -358,6 +542,20 @@ const problemBank =[
             "Calculation: $175 \\div 1.12 = 156.25$.",
             "Final Answer: $$\\text{£}156.25$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$£175$$",
+        "feedback": "You forgot to convert back using the second exchange rate; €175 is not the final answer."
+    },
+    {
+        "ans": "$$£196$$",
+        "feedback": "You multiplied by 1.12 instead of dividing; converting back to Pounds requires division."
+    },
+    {
+        "ans": "$$£140$$",
+        "feedback": "You subtracted incorrectly after spending €400; the remaining amount should be €175."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Divide or Multiply?",
@@ -383,6 +581,20 @@ const problemBank =[
             "Taking the square root of both sides gives the radius.",
             "Final Answer: $$5\\text{ cm}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$25\\text{ cm}$$",
+        "feedback": "You forgot to square the radius in the volume formula; $r^2$ must equal 25, not r."
+    },
+    {
+        "ans": "$$\\sqrt{500}\\text{ cm}$$",
+        "feedback": "You divided by the height incorrectly; the π terms cancel before isolating $r^2$."
+    },
+    {
+        "ans": "$$10\\text{ cm}$$",
+        "feedback": "You doubled the radius after finding $r^2 = 25$; the radius is 5, not the diameter."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Preserve Pi",
@@ -409,6 +621,20 @@ const problemBank =[
             "Since the second derivative is negative, the volume is at a maximum at $x = 4$.",
             "Final Answer: $$(a)\\ 4,\\ (b)\\ \\text{Shown via negative second derivative}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ x = -4,\\ (b)\\ \\text{Minimum point}$$",
+        "feedback": "Negative dimensions are not valid, and the second derivative at x = 4 is negative, not positive."
+    },
+    {
+        "ans": "$$(a)\\ x = 0,\\ (b)\\ \\text{Maximum point}$$",
+        "feedback": "You solved $48 - 3x^2 = 48$ instead of setting it equal to zero."
+    },
+    {
+        "ans": "$$(a)\\ x = 4,\\ (b)\\ \\text{Cannot determine}$$",
+        "feedback": "The second derivative test is essential; a negative value confirms a maximum."
+    }
+],
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Calculus in Context",
@@ -435,6 +661,21 @@ const problemBank =[
             "Dividing by 5 gives the value of $x$.",
             "Final Answer: $$38$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$x = 28$$",
+        "feedback": "You subtracted the expressions instead of adding them to make 180°."
+    },
+    {
+        "ans": "$$x = 19$$",
+        "feedback": "You divided too early; combine like terms before isolating x."
+    },
+    {
+        "ans": "$$x = 40$$",
+        "feedback": "You mis‑handled the constants; (2x + 10) + (3x − 20) must equal 180°."
+    }
+],
+
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Opposite vs Adjacent",
@@ -461,6 +702,20 @@ const problemBank =[
             "Combining the two parts gives the final formula.",
             "Final Answer: $$2n^2 + n + 2$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$2n^2 + 2n + 1$$",
+        "feedback": "You misidentified the linear sequence; the remainder terms increase by 1, not 2."
+    },
+    {
+        "ans": "$$4n^2 + n + 2$$",
+        "feedback": "You used the second difference directly instead of halving it to find the coefficient of $n^2$."
+    },
+    {
+        "ans": "$$2n^2 + 3$$",
+        "feedback": "You omitted the linear term entirely; the sequence does not increase at a constant rate."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Quadratic Shortcuts",
@@ -485,6 +740,20 @@ const problemBank =[
             "We express the error interval using inequality notation.",
             "Final Answer: $$495 \\le m < 505$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$490 \\le m < 510$$",
+        "feedback": "You used ±10 instead of ±5; the rounding to the nearest 10 g gives a maximum error of 5 g."
+    },
+    {
+        "ans": "$$495 < m \\le 505$$",
+        "feedback": "The inequality symbols are reversed; the lower bound is inclusive and the upper bound is exclusive."
+    },
+    {
+        "ans": "$$500 - 10 < m < 500 + 10$$",
+        "feedback": "You subtracted and added the full degree of accuracy instead of half of it."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Inequality Rigour",
@@ -515,6 +784,20 @@ const problemBank =[
             "Calculation: $d = 341.64 \\times \\cos(65^\\circ) \\approx 144.4\\text{ m}$.",
             "Final Answer: $$(a)\\ 310\\text{ m},\\ (b)\\ 144\\text{ m}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 355\\text{ m},\\ (b)\\ 144\\text{ m}$$",
+        "feedback": "You used the horizontal distance instead of the slanted distance XT when applying trigonometry."
+    },
+    {
+        "ans": "$$(a)\\ 280\\text{ m},\\ (b)\\ 120\\text{ m}$$",
+        "feedback": "You used the tangent ratio in the non‑right‑angled triangle, which is not valid."
+    },
+    {
+        "ans": "$$(a)\\ 310\\text{ m},\\ (b)\\ 200\\text{ m}$$",
+        "feedback": "Part (a) is correct, but in part (b) you used sine instead of cosine to find the horizontal distance."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Sine Rule Shortcut",
@@ -541,6 +824,20 @@ const problemBank =[
             "Dividing by $6\\pi$ isolates $h$.",
             "Final Answer: $$h = 21$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$h = 7$$",
+        "feedback": "You divided by 18π instead of isolating the full expression 6πh."
+    },
+    {
+        "ans": "$$h = 42$$",
+        "feedback": "You doubled the height after solving; the cylinder already includes both circular ends."
+    },
+    {
+        "ans": "$$h = 14$$",
+        "feedback": "You used the radius of the sphere instead of the cylinder when forming the surface area equation."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Total Surface Area",
@@ -565,6 +862,20 @@ const problemBank =[
             "Rearranging to solve for $y$: $x + 5 = 3y$, so $y = \\dfrac{x + 5}{3}$.",
             "Final Answer: $$(a)\\ \\dfrac{3x - 4}{2},\\ (b)\\ f^{-1}(x) = \\dfrac{x + 5}{3}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ \\dfrac{3x - 5}{2},\\ (b)\\ \\dfrac{x - 5}{3}$$",
+        "feedback": "You mis‑handled the constant terms in both the composite and the inverse."
+    },
+    {
+        "ans": "$$(a)\\ 3\\left(\\dfrac{x + 1}{2}\\right) - 5,\\ (b)\\ \\dfrac{3x + 5}{3}$$",
+        "feedback": "You reversed the order of composition and incorrectly rearranged the inverse."
+    },
+    {
+        "ans": "$$(a)\\ \\dfrac{3x - 4}{2},\\ (b)\\ 3x - 5$$",
+        "feedback": "Part (a) is correct, but in part (b) you repeated the original function instead of finding its inverse."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Functional Reflections",
@@ -589,6 +900,20 @@ const problemBank =[
             "Calculation: $y - 3 = 4(x - 5) \\implies y - 3 = 4x - 20$.",
             "Final Answer: $$y = 4x - 17$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$y = 4x + 17$$",
+        "feedback": "You used the correct gradient but substituted the point incorrectly when finding the intercept."
+    },
+    {
+        "ans": "$$y = 2x - 17$$",
+        "feedback": "You halved the gradient; the derivative at x = 5 is 4, not 2."
+    },
+    {
+        "ans": "$$y = -4x + 23$$",
+        "feedback": "You used the negative reciprocal, which would give the normal, not the tangent."
+    }
+],
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Tangents as Straight Lines",
@@ -613,6 +938,20 @@ const problemBank =[
             "Finally, we divide the larger area by the area scale factor: $160 \\div (16/9) = 90\\text{ cm}^2$.",
             "Final Answer: $$90\\text{ cm}^2$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$80\\text{ cm}^2$$",
+        "feedback": "You used the volume scale factor directly instead of converting to the linear and then area scale factor."
+    },
+    {
+        "ans": "$$106\\text{ cm}^2$$",
+        "feedback": "You multiplied by the area scale factor instead of dividing by it."
+    },
+    {
+        "ans": "$$40\\text{ cm}^2$$",
+        "feedback": "You used the linear scale factor instead of its square when scaling the surface area."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: The Linear Bridge",
@@ -637,6 +976,21 @@ const problemBank =[
             "Combining this with the power gives the final result.",
             "Final Answer: $$4.58 \\times 10^5$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$4.2 \\times 10^5 + 3.8 \\times 10^4 = 8.0 \\times 10^5$$",
+        "feedback": "You added the coefficients without equalising the powers of 10."
+    },
+    {
+        "ans": "$$4.58 \\times 10^4$$",
+        "feedback": "You converted the larger number down instead of converting the smaller number up."
+    },
+    {
+        "ans": "$$45.8 \\times 10^4$$",
+        "feedback": "You added correctly but did not convert back to standard form."
+    }
+],
+
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Adding Powers",
@@ -661,6 +1015,20 @@ const problemBank =[
             "Calculation: $80 \\times 15.625 = 1250$.",
             "Final Answer: $$1250\\text{ cm}^3$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$250\\text{ cm}^3$$",
+        "feedback": "You used the linear scale factor instead of cubing it for volume."
+    },
+    {
+        "ans": "$$500\\text{ cm}^3$$",
+        "feedback": "You used the area scale factor ($k^2$) instead of the volume scale factor ($k^3$)."
+    },
+    {
+        "ans": "$$2000\\text{ cm}^3$$",
+        "feedback": "You multiplied by the ratio 5:2 directly instead of using the cube of the linear scale factor."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Dimensional Powers",
@@ -686,6 +1054,20 @@ const problemBank =[
             "Collecting like terms yields the final cubic expression.",
             "Final Answer: $$x^3 + 3x^2 - 10x - 24$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$x^3 + x^2 - 14x - 24$$",
+        "feedback": "You combined the middle terms incorrectly; −x + 4x should give +3x², not +1x²."
+    },
+    {
+        "ans": "$$x^3 + 7x^2 - 10x - 24$$",
+        "feedback": "You added the x² terms instead of subtracting one from the other."
+    },
+    {
+        "ans": "$$x^3 - x^2 - 10x - 24$$",
+        "feedback": "You dropped the +4x² term entirely when distributing the third bracket."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Incremental Expansion",
@@ -712,7 +1094,21 @@ const problemBank =[
             "Calculation: $C \\approx 44.63...^\\circ$.",
             "Final Answer: $$44.6^\\circ$$"
         ],
-        "bradley_insight": {
+        "wrong_options": [
+    {
+        "ans": "$$75^\\circ$$",
+        "feedback": "You used the given angle instead of applying the Sine Rule to find angle C."
+    },
+    {
+        "ans": "$$59.6^\\circ$$",
+        "feedback": "You inverted the Sine Rule ratio, giving a value of sin C greater than 1."
+    },
+    {
+        "ans": "$$30.4^\\circ$$",
+        "feedback": "You subtracted incorrectly after finding sin C; the inverse sine step was misapplied."
+    }
+],
+            "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Side-Angle Pairs",
             "content": "To apply the Sine Rule, you must identify a 'known pair' (a side and its opposite angle). Here, we have $11\\text{ cm}$ and $75^\\circ$. Always check for this pair before deciding between the Sine and Cosine rules."
@@ -739,6 +1135,20 @@ const problemBank =[
             "Substituting $x = -2$ into $y = 2x + 1$ gives $y = -3$.",
             "Final Answer: $$(1.2, 3.4) \\text{ and } (-2, -3)$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(1.2, 2.4) \\text{ and } (-2, -5)$$",
+        "feedback": "You substituted the x‑values back into the circle equation instead of the line equation."
+    },
+    {
+        "ans": "$$(1, 3) \\text{ only}$$",
+        "feedback": "A line and a circle typically intersect at two points; you missed the second solution."
+    },
+    {
+        "ans": "$$(1.2, -3.4) \\text{ and } (-2, 3)$$",
+        "feedback": "You reversed the signs when substituting into the linear equation."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Substitution Efficiency",
@@ -765,6 +1175,20 @@ const problemBank =[
             "For part (b), we divide the hours by 24: $3000 \\div 24 = 125$ days.",
             "Final Answer: $$(a)\\ 3 \\times 10^3\\text{ hours},\\ (b)\\ 125\\text{ days}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 0.3 \\times 10^4,\\ (b)\\ 12.5\\text{ days}$$",
+        "feedback": "Part (a) is not in correct standard form, and part (b) divides by 240 instead of 24."
+    },
+    {
+        "ans": "$$(a)\\ 3 \\times 10^4,\\ (b)\\ 1250\\text{ days}$$",
+        "feedback": "You added the powers of 10 instead of subtracting them during division."
+    },
+    {
+        "ans": "$$(a)\\ 5.5 \\times 10^3,\\ (b)\\ 229\\text{ days}$$",
+        "feedback": "You divided the coefficients incorrectly; 1.65 ÷ 5.5 = 0.3, not 5.5."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Standard Form Protocol",
