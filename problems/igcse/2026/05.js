@@ -16,6 +16,20 @@ const problemBank = [
             "Finally, we multiply these values: $4 \\times 3 = 12$.",
             "Final Answer: $$12$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$6$$",
+        "feedback": "You only used one factor of 2 and one factor of 3, effectively taking 2 × 3 instead of using all common prime factors with their lowest powers."
+    },
+    {
+        "ans": "$$24$$",
+        "feedback": "You used the highest powers of the common primes (2³ and 3) instead of the lowest powers required for the HCF."
+    },
+    {
+        "ans": "$$4$$",
+        "feedback": "You only used the common factor 2² and forgot to include the common factor 3 in the HCF."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Systematic Factorisation",
@@ -41,6 +55,21 @@ const problemBank = [
             "Finally, we cube both terms to obtain the simplified expression.",
             "Final Answer: $$\\dfrac{x^6}{8}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\dfrac{8}{x^6}$$",
+        "feedback": "You have inverted the fraction incorrectly when dealing with the negative index, effectively applying the reciprocal at the wrong stage."
+    },
+    {
+        "ans": "$$\\dfrac{x^6}{16}$$",
+        "feedback": "You treated the fourth root of 16 as 4 instead of 2, so the denominator was not simplified correctly."
+    },
+    {
+        "ans": "$$\\dfrac{x^3}{2}$$",
+        "feedback": "You appear to have applied the cube before taking the fourth root, mixing the order of operations in the fractional index."
+    }
+],
+
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: The Order of Operations",
@@ -67,6 +96,20 @@ const problemBank = [
             "Finally, we round the result to the required degree of accuracy.",
             "Final Answer: $$18.4\\text{ cm}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$13.0\\text{ cm}$$",
+        "feedback": "You likely placed \\(\\sin 73^\\circ\\) in the denominator instead of the numerator when rearranging the Sine Rule."
+    },
+    {
+        "ans": "$$27.9\\text{ cm}$$",
+        "feedback": "This suggests you may have used the Cosine Rule instead of the Sine Rule, which is not appropriate for the information given."
+    },
+    {
+        "ans": "$$16.0\\text{ cm}$$",
+        "feedback": "You may have rounded intermediate values too early or used an approximate ratio instead of keeping full calculator accuracy until the final step."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Three Significant Figures",
@@ -91,6 +134,20 @@ const problemBank = [
             "Finally, we add $x$ to both sides to isolate $w$.",
             "Final Answer: $$w = 2(t - 3)^2 + x$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$w = 2t^2 - 12t + 18 + x$$",
+        "feedback": "You expanded \\((t - 3)^2\\) incorrectly; the correct expansion is \\(t^2 - 6t + 9\\), not \\(t^2 - 6t + 18\\)."
+    },
+    {
+        "ans": "$$w = (t - 3)^2 + 2x$$",
+        "feedback": "You multiplied the wrong side by 2, applying it to the \\(x\\) term instead of to the entire squared expression."
+    },
+    {
+        "ans": "$$w = 2t^2 - 12 + x$$",
+        "feedback": "You have lost the \\(t\\) term from the expansion of \\((t - 3)^2\\), suggesting an incomplete or incorrect expansion."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Reverse BIDMAS",
@@ -115,6 +172,20 @@ const problemBank = [
             "Calculation: $6622.72 \\div 1.103812... = 6000$.",
             "Final Answer: $$£6,000$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$£6622.72$$",
+        "feedback": "You have given the final value after interest instead of working backwards to find the original investment."
+    },
+    {
+        "ans": "$$£6450$$",
+        "feedback": "You only divided by one year’s multiplier, \\(1.025\\), instead of \\(1.025^4\\) for four years of compound interest."
+    },
+    {
+        "ans": "$$£5400$$",
+        "feedback": "You appear to have treated the problem as simple interest, subtracting a fixed percentage each year rather than using a compound multiplier."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Principal vs Interest",
@@ -139,6 +210,21 @@ const problemBank = [
             "Finally, we divide the total time by the number of students ($n = 50$).",
             "Final Answer: $$40.8\\text{ seconds}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$38.5\\text{ seconds}$$",
+        "feedback": "You may have used class boundaries or incorrect midpoints instead of the true mid-interval values for each group."
+    },
+    {
+        "ans": "$$42\\text{ seconds}$$",
+        "feedback": "This suggests you divided by an incorrect total frequency, such as 48 instead of the full 50 students."
+    },
+    {
+        "ans": "$$45.3\\text{ seconds}$$",
+        "feedback": "You likely used the upper class limits as if they were midpoints, overestimating the mean time."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Why it is an Estimate",
@@ -164,6 +250,21 @@ const problemBank = [
             "Calculation: $3(4)^2 - 6(4) = 3(16) - 24 = 48 - 24$.",
             "Final Answer: $$(a)\\ 3x^2 - 6x,\\ (b)\\ 24$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(a)\\ 3x^2 - 3x,\\ (b)\\ 36$$",
+        "feedback": "You differentiated \\(-3x^2\\) as \\(-3x\\) instead of \\(-6x\\), and then used this incorrect derivative to find the gradient at x = 4."
+    },
+    {
+        "ans": "$$(a)\\ x^3 - 3x^2,\\ (b)\\ 28$$",
+        "feedback": "You have written the original function again instead of differentiating, then substituted x = 4 into it to get the gradient."
+    },
+    {
+        "ans": "$$(a)\\ 3x^2 + 6x,\\ (b)\\ 72$$",
+        "feedback": "You changed the sign when differentiating \\(-3x^2\\), and then used this incorrect derivative to calculate the gradient."
+    }
+],
+
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Calculus Foundations",
@@ -188,6 +289,20 @@ const problemBank = [
             "Finally, to find the smaller area, we divide the larger area by the area scale factor: $150 \\div 1.5625$.",
             "Final Answer: $$96\\text{ cm}^2$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$60\\text{ cm}^2$$",
+        "feedback": "You appear to have used the linear scale factor directly on the area instead of using the area scale factor."
+    },
+    {
+        "ans": "$$240\\text{ cm}^2$$",
+        "feedback": "You multiplied the larger area by the area scale factor instead of dividing to find the smaller area."
+    },
+    {
+        "ans": "$$120\\text{ cm}^2$$",
+        "feedback": "You may have used an incorrect scale factor between the solids, mixing up the roles of larger and smaller."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Dimensional Bridging",
@@ -212,6 +327,20 @@ const problemBank = [
             "Combining this with the power of 10 yields the final expression.",
             "Final Answer: $$5.231 \\times 10^{12}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$8.3 \\times 10^{22}$$",
+        "feedback": "You added the powers of 10 instead of aligning them before adding the coefficients."
+    },
+    {
+        "ans": "$$5.231 \\times 10^{10}$$",
+        "feedback": "You converted both terms to the smaller power of 10, then forgot to adjust back to standard form with the higher power."
+    },
+    {
+        "ans": "$$5.503 \\times 10^{12}$$",
+        "feedback": "You added 5.2 and 0.31 instead of 0.031, misplacing the decimal when converting powers."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Power Alignment",
@@ -238,6 +367,21 @@ const problemBank = [
             "Finally, we simplify the fraction to its lowest terms.",
             "Final Answer: $$\\dfrac{7}{15}$$<img src='images/05/i_10_sol.png' alt='Probability tree diagram' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\dfrac{1}{3}$$",
+        "feedback": "You may have treated the events as if they were independent with replacement, ignoring the change in denominators."
+    },
+    {
+        "ans": "$$\\dfrac{2}{5}$$",
+        "feedback": "You have only considered the probability of two green apples and ignored the two-red outcome."
+    },
+    {
+        "ans": "$$\\dfrac{7}{30}$$",
+        "feedback": "You added the correct numerators but did not add the denominators consistently, effectively halving the total probability."
+    }
+],
+
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Selection Dependencies",
@@ -263,6 +407,20 @@ const problemBank = [
             "Expanding and simplifying gives the final equation.",
             "Final Answer: $$y = \\dfrac{1}{2}x - 1$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$y = -2x + 9$$",
+        "feedback": "This is the equation of the original line through A and B, not the perpendicular line."
+    },
+    {
+        "ans": "$$y = 2x - 7$$",
+        "feedback": "You used the reciprocal of the gradient but did not change the sign to make it perpendicular."
+    },
+    {
+        "ans": "$$y = \\dfrac{1}{2}x + 1$$",
+        "feedback": "You used the correct perpendicular gradient but substituted point A or B instead of the midpoint."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The Perpendicular Rule",
@@ -289,36 +447,25 @@ const problemBank = [
             "Calculating the angle: $Y = \\cos^{-1}(-14/126) \\approx 96.379...$.",
             "Final Answer: $$96.4^\\circ$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$83.6^\\circ$$",
+        "feedback": "You may have taken the acute angle associated with the cosine value instead of recognising that the largest angle must be obtuse."
+    },
+    {
+        "ans": "$$43.6^\\circ$$",
+        "feedback": "You likely used the Cosine Rule with the wrong side as the one opposite the angle you were finding."
+    },
+    {
+        "ans": "$$100^\\circ$$",
+        "feedback": "You have over-rounded or mis-keyed the calculator value when applying the inverse cosine function."
+    }
+],
+
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Degree Precision",
             "content": "For Cambridge IGCSE, all angles in degrees must be rounded to exactly 1 decimal place unless the question provides a different instruction. Standard over-rounding to the nearest degree will result in an accuracy penalty."
-        },
-        "payhip_link": "https://payhip.com/b/KjXoP",
-        "button_text": "Master IGCSE Mensuration and Trigonometry: Download the Extended Pack"
-    },
-    // 14 May (Rewritten for Cylinder to Sphere Recasting)
-    {
-        "id": "003134",
-        "date": "14 May 2026",
-        "major_area": "Mensuration",
-        "topic": "3D Shapes",
-        "subtopic": "Surface Areas and Volumes",
-        "difficulty": "B/A",
-        "q": "A solid metal cylinder of radius $6\\text{ cm}$ and height $8\\text{ cm}$ is melted down and recast into a solid sphere. Calculate the radius of the sphere.",
-        "steps": [
-            "We first calculate the volume of the cylinder: $V = \\pi r^2 h = \\pi(6^2)(8) = 288\\pi\\text{ cm}^3$.",
-            "Since the metal is recast, the volume of the sphere must also be exactly $288\\pi$.",
-            "We use the sphere volume formula: $V = \\dfrac{4}{3}\\pi r^3$.",
-            "Substituting our values: $288\\pi = \\dfrac{4}{3}\\pi r^3$.",
-            "Cancelling $\\pi$ and multiplying by $\\dfrac{3}{4}$ gives $r^3 = 216$.",
-            "Taking the cube root of 216 gives $r = 6$.",
-            "Final Answer: $$6\\text{ cm}$$"
-        ],
-        "bradley_insight": {
-            "type": "pro-tip",
-            "title": "The Head Teacher's Eye: Working with Pi",
-            "content": "In recasting problems, leave the $\\pi$ symbol in your working until the final step. It prevents rounding errors midway through the problem and usually cancels out entirely, making the final division much simpler."
         },
         "payhip_link": "https://payhip.com/b/KjXoP",
         "button_text": "Master IGCSE Mensuration and Trigonometry: Download the Extended Pack"
@@ -341,6 +488,20 @@ const problemBank = [
             "Solving for $x$ gives $x = 1.5$ and $x = -4$.",
             "Final Answer: $$x = 1.5, x = -4$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$x = -6, x = 1$$",
+        "feedback": "You likely factorised using numbers that sum to +5 but multiply to +6 instead of -24, leading to incorrect brackets."
+    },
+    {
+        "ans": "$$x = 3, x = -2$$",
+        "feedback": "You appear to have divided the equation by 2 incorrectly or misapplied the quadratic formula without adjusting for the coefficient of x²."
+    },
+    {
+        "ans": "$$x = 4, x = -1.5$$",
+        "feedback": "You may have reversed the signs when solving each bracket, treating (2x − 3)(x + 4) = 0 as if the signs were opposite."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Factorising vs Formula",
@@ -349,6 +510,47 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/mg5YS",
         "button_text": "Master IGCSE Algebra: Download the Extended Pack"
     },
+    // 14 May (Rewritten for Cylinder to Sphere Recasting)
+    {
+        "id": "003134",
+        "date": "14 May 2026",
+        "major_area": "Mensuration",
+        "topic": "3D Shapes",
+        "subtopic": "Surface Areas and Volumes",
+        "difficulty": "B/A",
+        "q": "A solid metal cylinder of radius $6\\text{ cm}$ and height $8\\text{ cm}$ is melted down and recast into a solid sphere. Calculate the radius of the sphere.",
+        "steps": [
+            "We first calculate the volume of the cylinder: $V = \\pi r^2 h = \\pi(6^2)(8) = 288\\pi\\text{ cm}^3$.",
+            "Since the metal is recast, the volume of the sphere must also be exactly $288\\pi$.",
+            "We use the sphere volume formula: $V = \\dfrac{4}{3}\\pi r^3$.",
+            "Substituting our values: $288\\pi = \\dfrac{4}{3}\\pi r^3$.",
+            "Cancelling $\\pi$ and multiplying by $\\dfrac{3}{4}$ gives $r^3 = 216$.",
+            "Taking the cube root of 216 gives $r = 6$.",
+            "Final Answer: $$6\\text{ cm}$$"
+        ],
+        "wrong_options": [
+    {
+        "ans": "$$3\\text{ cm}$$",
+        "feedback": "You may have taken the square root instead of the cube root when solving for r³ = 216."
+    },
+    {
+        "ans": "$$4.8\\text{ cm}$$",
+        "feedback": "You likely used a linear scale factor idea instead of equating the full volumes of the solids."
+    },
+    {
+        "ans": "$$12\\text{ cm}$$",
+        "feedback": "You appear to have doubled the correct radius, confusing the diameter with the radius of the sphere."
+    }
+],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Working with Pi",
+            "content": "In recasting problems, leave the $\\pi$ symbol in your working until the final step. It prevents rounding errors midway through the problem and usually cancels out entirely, making the final division much simpler."
+        },
+        "payhip_link": "https://payhip.com/b/KjXoP",
+        "button_text": "Master IGCSE Mensuration and Trigonometry: Download the Extended Pack"
+    },
+    
     // 15 May
     {
         "id": "003135",
@@ -367,6 +569,20 @@ const problemBank = [
             "When $x = 1, y = 2$. When $x = 2, y = 1$.",
             "Final Answer: $$(1, 2) \\text{ and } (2, 1)$$<img src='images/05/i_15_sol.png' alt='cubic graphs showing the turning points.' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(1, 1) \\text{ and } (2, 2)$$",
+        "feedback": "You seem to have substituted x into the derivative instead of the original function to find the y-coordinates."
+    },
+    {
+        "ans": "$$(1, 2) \\text{ and } (2, -1)$$",
+        "feedback": "You likely made a sign error when substituting x = 2 into the original cubic to find the y-value."
+    },
+    {
+        "ans": "$$(1, 2)$$",
+        "feedback": "You found one stationary point correctly but did not include the second solution from the quadratic equation."
+    }
+],
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Stationary Point Protocol",
@@ -391,6 +607,20 @@ const problemBank = [
             "Dividing by 3 yields the final value for $x$.",
             "Final Answer: $$16$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$4$$",
+        "feedback": "You may have divided 12 by 3 first and ignored the factor of 5 in the denominator."
+    },
+    {
+        "ans": "$$20$$",
+        "feedback": "You likely added 4 after finding 16 instead of recognising that 16 already satisfies the equation."
+    },
+    {
+        "ans": "$$8$$",
+        "feedback": "You may have misapplied inverse operations, effectively halving 16 or mishandling the multiplication by 5."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Logical Sequencing",
@@ -416,6 +646,21 @@ const problemBank = [
             "Calculation: $\\angle BCD = 180^\\circ - 72^\\circ = 108^\\circ$.",
             "Final Answer: $$\\angle ABC = 72^\\circ, \\angle BCD = 108^\\circ$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\angle ABC = 108^\\circ, \\angle BCD = 72^\\circ$$",
+        "feedback": "You have reversed the roles of the opposite angles in the cyclic quadrilateral."
+    },
+    {
+        "ans": "$$\\angle ABC = 72^\\circ, \\angle BCD = 72^\\circ$$",
+        "feedback": "You treated the adjacent angles as equal instead of using the facts about opposite and co-interior angles."
+    },
+    {
+        "ans": "$$\\angle ABC = 90^\\circ, \\angle BCD = 90^\\circ$$",
+        "feedback": "You assumed the quadrilateral was a rectangle, which is not implied by the information given."
+    }
+],
+
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Chord Parallelism",
@@ -440,6 +685,20 @@ const problemBank = [
             "Finally, we convert back into a mixed number.",
             "Final Answer: $$1\\dfrac{7}{12}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$2\\dfrac{1}{12}$$",
+        "feedback": "You subtracted whole numbers and fractions separately, not accounting for the fact that \\(\\tfrac{2}{3} > \\tfrac{1}{4}\\)."
+    },
+    {
+        "ans": "$$1\\dfrac{5}{12}$$",
+        "feedback": "You found a common denominator correctly but subtracted the numerators incorrectly: 39 − 20 should be 19, not 17."
+    },
+    {
+        "ans": "$$\\dfrac{7}{12}$$",
+        "feedback": "You correctly subtracted the fractional parts but forgot to include the whole number part in your final answer."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: The Common Denominator",
@@ -467,6 +726,20 @@ const problemBank = [
             "Finally, we divide to isolate $y$.",
             "Final Answer: $$f^{-1}(x) = \\dfrac{5x + 3}{x - 2}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$f^{-1}(x) = \\dfrac{2x - 3}{x + 5}$$",
+        "feedback": "You swapped x and y but did not correctly expand and regroup the terms before isolating y."
+    },
+    {
+        "ans": "$$f^{-1}(x) = \\dfrac{x - 3}{2 - x}$$",
+        "feedback": "You inverted the function as if it were a simple fraction rather than solving algebraically for y."
+    },
+    {
+        "ans": "$$f^{-1}(x) = \\dfrac{5x - 3}{x + 2}$$",
+        "feedback": "A sign error occurred when moving terms across the equation during the rearrangement."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Inverse Reflexivity",
@@ -493,6 +766,20 @@ const problemBank = [
             "Using a calculator: $90 \\times \\pi \\approx 282.743...$.",
             "Final Answer: $$282.7\\text{ cm}^2$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$254.5\\text{ cm}^2$$",
+        "feedback": "You used the vertical height instead of the slant height when calculating the curved surface area."
+    },
+    {
+        "ans": "$$325.0\\text{ cm}^2$$",
+        "feedback": "You added an extra base area, effectively counting the circular base twice."
+    },
+    {
+        "ans": "$$260.8\\text{ cm}^2$$",
+        "feedback": "You rounded intermediate values too early, reducing the accuracy of the final result."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Slant vs Vertical",
@@ -516,6 +803,20 @@ const problemBank = [
             "Dividing 10 by 5 yields the final simplified form.",
             "Final Answer: $$2\\sqrt{5}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\dfrac{10}{5\\sqrt{5}}$$",
+        "feedback": "You multiplied only the denominator by \\(\\sqrt{5}\\) instead of multiplying the entire fraction."
+    },
+    {
+        "ans": "$$10\\sqrt{5}$$",
+        "feedback": "You multiplied the numerator correctly but forgot to divide by the new denominator of 5."
+    },
+    {
+        "ans": "$$\\dfrac{2}{\\sqrt{5}}$$",
+        "feedback": "You divided 10 by 5 but did not complete the rationalisation step."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Radical Efficiency",
@@ -541,6 +842,20 @@ const problemBank = [
             "The obtuse solution is found by $180^\\circ - 41.8^\\circ$.",
             "Final Answer: $$41.8^\\circ \\text{ and } 138.2^\\circ$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$41.8^\\circ \\text{ only}$$",
+        "feedback": "You found the acute angle but did not include the supplementary obtuse angle."
+    },
+    {
+        "ans": "$$138.2^\\circ \\text{ only}$$",
+        "feedback": "You selected only the obtuse angle, forgetting that the sine equation has two valid solutions."
+    },
+    {
+        "ans": "$$48.2^\\circ \\text{ and } 131.8^\\circ$$",
+        "feedback": "You used the correct method but subtracted from 180° incorrectly when finding the obtuse angle."
+    }
+],
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Area and the Sine Curve",
@@ -565,6 +880,20 @@ const problemBank = [
             "Finally, we collect the common bracketed factor.",
             "Final Answer: $$(3a - 2b)(2x - y)$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$(3a + 2b)(2x - y)$$",
+        "feedback": "You factored the second pair incorrectly, causing the signs in the bracket not to match."
+    },
+    {
+        "ans": "$$(3a - 2b)(x - y)$$",
+        "feedback": "You did not factor out the full common factor from each pair, leaving the bracket incomplete."
+    },
+    {
+        "ans": "$$(6a - 4b)(x - y)$$",
+        "feedback": "You attempted to factor out a common factor from all four terms at once, which is not possible here."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Sign Grouping",
@@ -589,6 +918,20 @@ const problemBank = [
             "Now substitute $x = 6$ into our formula.",
             "Final Answer: $$50$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$18$$",
+        "feedback": "You substituted x = 6 into the original proportionality without first finding the constant k."
+    },
+    {
+        "ans": "$$72$$",
+        "feedback": "You used k = 3 instead of k = 2, likely from mis-evaluating the initial substitution."
+    },
+    {
+        "ans": "$$32$$",
+        "feedback": "You substituted into (x − 1) instead of (x − 1)², forgetting the square in the proportionality."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Identifying 'k'",
@@ -611,6 +954,20 @@ const problemBank = [
             "We divide by $-2$, which reverses the inequality sign.",
             "Final Answer: $$x > -3$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$x < -3$$",
+        "feedback": "You forgot to reverse the inequality sign when dividing by the negative coefficient −2."
+    },
+    {
+        "ans": "$$x > 3$$",
+        "feedback": "You subtracted 5 incorrectly, treating 5 − 2x < 11 as if it were 2x − 5 < 11."
+    },
+    {
+        "ans": "$$x = -3$$",
+        "feedback": "You treated the inequality as an equation and did not express the full range of solutions."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: The Negative Flip",
@@ -635,6 +992,20 @@ const problemBank = [
             "Multiplying by our density factor gives the final result.",
             "Final Answer: $$50$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$20$$",
+        "feedback": "You used only the height ratio instead of using the full area (width × height) for each bar."
+    },
+    {
+        "ans": "$$25$$",
+        "feedback": "You halved the original frequency, ignoring that the second bar’s area is slightly smaller, not half."
+    },
+    {
+        "ans": "$$60$$",
+        "feedback": "You assumed equal frequencies for both bars, ignoring the different bar dimensions."
+    }
+],
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Area vs Density",
@@ -657,6 +1028,21 @@ const problemBank = [
             "For a regular polygon, we divide the total by the number of sides.",
             "Final Answer: $$24^\\circ$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$156^\\circ$$",
+        "feedback": "You calculated the interior angle instead of the exterior angle of the polygon."
+    },
+    {
+        "ans": "$$12^\\circ$$",
+        "feedback": "You divided 180° by 15 instead of using the 360° sum of exterior angles."
+    },
+    {
+        "ans": "$$30^\\circ$$",
+        "feedback": "You may have rounded 360 ÷ 12 instead of using the correct number of sides, 15."
+    }
+],
+
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Geometric Constants",
@@ -680,6 +1066,20 @@ const problemBank = [
             "Profit is the difference: $£840 - £800$.",
             "Final Answer: $$£40$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$£-40$$",
+        "feedback": "You reversed the order of subtraction, effectively calculating a loss instead of a profit."
+    },
+    {
+        "ans": "$$£8$$",
+        "feedback": "You may have subtracted the exchange rates directly instead of working with the converted amounts."
+    },
+    {
+        "ans": "$$£48$$",
+        "feedback": "You likely rounded intermediate values or miscalculated one of the conversions."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Directional Logic",
@@ -703,6 +1103,20 @@ const problemBank = [
             "We invert the signs to find the actual roots.",
             "Final Answer: $$x = 3, x = 8$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$x = -3, x = -8$$",
+        "feedback": "You took the factor values themselves as the roots instead of changing the signs when solving (x − 3)(x − 8) = 0."
+    },
+    {
+        "ans": "$$x = 4, x = 6$$",
+        "feedback": "You chose factor pairs of 24 that sum to 10, not −11, so the factorisation is incorrect."
+    },
+    {
+        "ans": "$$x = 3$$",
+        "feedback": "You found only one root and did not state the second solution from the quadratic."
+    }
+],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Bracket to Solution",
@@ -726,6 +1140,20 @@ const problemBank = [
             "Magnitude is $\\sqrt{3^2 + (-2)^2} = \\sqrt{13}$.",
             "Final Answer: $$3.61$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$\\sqrt{29}$$",
+        "feedback": "You may have added the squares of the original vectors’ components instead of the combined vector."
+    },
+    {
+        "ans": "$$5$$",
+        "feedback": "You added the components 3 and −2 directly and treated the result as the magnitude."
+    },
+    {
+        "ans": "$$13$$",
+        "feedback": "You added 3² and (−2)² correctly but forgot to take the square root at the end."
+    }
+],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Magnitude as Distance",
@@ -752,6 +1180,20 @@ const problemBank = [
             "We discard 10.6 as it exceeds the physical dimensions of the problem.",
             "Final Answer: $$3.39\\text{ cm}$$"
         ],
+        "wrong_options": [
+    {
+        "ans": "$$10.6\\text{ cm}$$",
+        "feedback": "You selected the larger root from the quadratic without considering the physical constraints of the model."
+    },
+    {
+        "ans": "$$7.0\\text{ cm}$$",
+        "feedback": "You may have averaged the two roots instead of testing which gives the maximum volume."
+    },
+    {
+        "ans": "$$3.4\\text{ cm}$$",
+        "feedback": "You rounded the smaller root prematurely, which can lose accuracy in an optimisation context."
+    }
+],      
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Modelling Constraints",
