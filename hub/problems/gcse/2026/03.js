@@ -1188,7 +1188,7 @@ const problemBank = [
             "Vertex 3: $(1 \\times -2, 3 \\times -2) = (-2, -6)$.",
             "For part (b), a negative scale factor means the image is on the opposite side of the centre of enlargement.",
             "The image is also rotated $180^\\circ$ relative to the object.",
-            "Final Answer: $$(a)\\ (-2, -2), (-4, -2), (-2, -6),\\ (b)\\ \text{Opposite side and rotated } 180^\\circ$$"
+            "Final Answer: $$(a)\\ (-2, -2), (-4, -2), (-2, -6),\\ (b)\\ \\text{Opposite side and rotated } 180^\\circ$$"
         ],
         "wrong_options": [
     {
