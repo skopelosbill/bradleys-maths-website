@@ -49,27 +49,27 @@ const problemBank =[
         "difficulty": "A/A*",
         "q": "Consider the quadratic equation $2x^2 - 3x - 5 = 0$.<br>(a) Write $2x^2 - 3x - 5$ in the form $a(x + b)^2 + c$.<br>(b) Hence, solve the equation $2x^2 - 3x - 5 = 0$ without the use of a calculator.<br>(c) State the coordinates of the turning point of the graph of $y = 2x^2 - 3x - 5$.",
         "steps":[
-            "For part (a), we first factorise out the coefficient of $x^2$ from the algebraic terms: $2(x^2 - \\dfrac{3}{2}x) - 5$.",
-            "We complete the square inside the bracket by halving the $x$ coefficient: $(x - \\dfrac{3}{4})^2 - (\\dfrac{3}{4})^2$.",
-            "Substituting this back: $2[(x - \\dfrac{3}{4})^2 - \\dfrac{9}{16}] - 5$.",
-            "Distributing the 2: $2(x - \\dfrac{3}{4})^2 - \\dfrac{9}{8} - 5 = 2(x - \\dfrac{3}{4})^2 - \\dfrac{49}{8}$.",
+            "For part (a), we first factorise out the coefficient of $x^2$ from the algebraic terms: $2\\left(x^2 - \\dfrac{3}{2}x\\right) - 5$.",
+            "We complete the square inside the bracket by halving the $x$ coefficient: $\\left(x - \\dfrac{3}{4}\\right)^2 - \\left(\\dfrac{3}{4}\\right)^2$.",
+            "Substituting this back: $2\\left[\\left(x - \\dfrac{3}{4}\\right)^2 - \\dfrac{9}{16}\\right] - 5$.",
+            "Distributing the 2: $2\\left(x - \\dfrac{3}{4}\\right)^2 - \\dfrac{9}{8} - 5 = 2\\left(x - \\dfrac{3}{4}\\right)^2 - \\dfrac{49}{8}$.",
             "For part (b), we set the expression to zero: $2(x - \\dfrac{3}{4})^2 = \\dfrac{49}{8}$.",
-            "Dividing by 2 gives $(x - \\dfrac{3}{4})^2 = \\dfrac{49}{16}$. Taking square roots: $x - \\dfrac{3}{4} = \\pm \\dfrac{7}{4}$.",
+            "Dividing by 2 gives $\\left(x - \\dfrac{3}{4}\\right)^2 = \\dfrac{49}{16}$. Taking square roots: $x - \\dfrac{3}{4} = \\pm \\dfrac{7}{4}$.",
             "Solutions: $x = \\dfrac{3+7}{4} = 2.5$ or $x = \\dfrac{3-7}{4} = -1$.",
             "For part (c), from the form in part (a), the turning point is $(-b, c)$.",
-            "Final Answer: $$(a)\\ 2(x - \\dfrac{3}{4})^2 - \\dfrac{49}{8},\\ (b)\\ 2.5, -1,\\ (c)\\ (0.75, -6.125)$$"
+            "Final Answer: $$(a)\\ 2\\left(x - \\dfrac{3}{4}\\right)^2 - \\dfrac{49}{8},\\ (b)\\ 2.5, -1,\\ (c)\\ (0.75, -6.125)$$"
         ],
         "wrong_options": [
     {
-        "ans": "$$(a)\\ (x - \\tfrac{3}{4})^2 - \\tfrac{49}{8},\\ (b)\\ 2.5, -1,\\ (c)\\ (\\tfrac{3}{4}, -\\tfrac{49}{8})$$",
+        "ans": "$$(a)\\ \\left(x - \\dfrac{3}{4}\\right)^2 - \\dfrac{49}{8},\\ (b)\\ 2.5, -1,\\ (c)\\ \\left(\\dfrac{3}{4}, -\\dfrac{49}{8}\\right)$$",
         "feedback": "You forgot to factor out the 2 before completing the square, which changes the turning point."
     },
     {
-        "ans": "$$(a)\\ 2(x - \\tfrac{3}{2})^2 - 5,\\ (b)\\ 3, -\\tfrac{5}{2},\\ (c)\\ (1.5, -5)$$",
+        "ans": "$$(a)\\ 2\\left(x - \\dfrac{3}{2}\\right)^2 - 5,\\ (b)\\ 3, -\\dfrac{5}{2},\\ (c)\\ (1.5, -5)$$",
         "feedback": "You halved the wrong coefficient when completing the square, leading to incorrect roots and turning point."
     },
     {
-        "ans": "$$(a)\\ 2(x - \\tfrac{3}{4})^2 - \\tfrac{49}{8},\\ (b)\\ \\text{No real solutions},\\ (c)\\ (0.75, -6.125)$$",
+        "ans": "$$(a)\\ 2\\left(x - \\dfrac{3}{4}\\right)^2 - \dfrac{49}{8},\\ (b)\\ \\text{No real solutions},\\ (c)\\ (0.75, -6.125)$$",
         "feedback": "Part (a) and (c) are correct, but in part (b) you misinterpreted the square root step."
     }
 ],
