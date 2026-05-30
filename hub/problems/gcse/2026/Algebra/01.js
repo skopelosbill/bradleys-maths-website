@@ -1,81 +1,5 @@
 const problemBank = [
-        // 1 January
-    {
-        "id": "001001",
-        "date": "1 January 2026",
-        "major_area": "Geometry",
-        "topic": "Trigonometry",
-        "subtopic": "Exact Trigonometric Values",
-        "difficulty": "6/7",
-        "q": "(a) Write down the exact value of $\\sin(30^\\circ)$.<br>(b) Calculate the value of $\\sin(30^\\circ) + \\cos(60^\\circ)$.",
-        "steps": [
-            "For part (a), we recall the exact trigonometric values for standard angles. The value of $\\sin(30^\\circ)$ is $0.5$ (or $\\dfrac{1}{2}$).",
-            "For part (b), we recall that $\\cos(60^\\circ)$ is also equal to $0.5$.",
-            "We then add these two values together: $0.5 + 0.5 = 1$.",
-            "Final Answer: $$(a)\\ 0.5,\\ (b)\\ 1$$"
-        ],
-        "wrong_options": [
-            {
-                "ans": "$$\\text{(a) 0.5, (b) 1.5}$$",
-                "feedback": "You recalled $\\sin(30^\\circ)$ correctly, but it looks like you thought $\\cos(60^\\circ)$ was equal to $1$. Remember that $\\sin(30^\\circ)$ and $\\cos(60^\\circ)$ are complementary and have the exact same value!"
-            },
-            {
-                "ans": "$$\\text{(a) 0.866, (b) 1.366}$$",
-                "feedback": "You have confused $\\sin(30^\\circ)$ with $\\cos(30^\\circ)$, which is $\\frac{\\sqrt{3}}{2}$ (approx $0.866$). Make sure you memorise the exact values for the non-calculator paper!"
-            },
-            {
-                "ans": "$$\\text{(a) 0.5, (b) 0}$$",
-                "feedback": "It looks like you subtracted the two values instead of adding them, or you mistakenly thought $\\cos(60^\\circ)$ was negative!"
-            }
-        ],
-        "bradley_insight": {
-            "type": "pro-tip",
-            "title": "The Head Teacher's Eye: Complementary Angles",
-            "content": "A useful shortcut for the non-calculator paper is remembering that $\\sin(\\theta) = \\cos(90 - \\theta)$. This explains why $\\sin(30^\\circ)$ and $\\cos(60^\\circ)$ share the same value. Mastery of these exact values is essential for Grade 7 success."
-        },
-        "payhip_link": "https://payhip.com/b/XAGch",
-        "button_text": "Master Geometry: Download the Full Geometry Pack"
-    },
-    // 2 January
-    {
-        "id": "001002",
-        "date": "2 January 2026",
-        "major_area": "Number",
-        "topic": "Ratio",
-        "subtopic": "Ratio and Sharing",
-        "difficulty": "4/5",
-        "q": "Ali and Beth share an amount of money in the ratio $3 : 5$. Beth receives $£40$ more than Ali.<br>(a) Calculate the total amount of money shared.<br>(b) If the ratio were changed to $3 : 7$ for the same total amount, how much would Beth receive?",
-        "steps": [
-            "For part (a), we identify the difference in parts between Beth and Ali: $5 - 3 = 2$ parts.",
-            "We are given that this difference represents $£40$, so $1$ part is equal to $£40 \\div 2 = £20$.",
-            "The total number of parts is $3 + 5 = 8$ parts. Therefore, the total money is $8 \\times £20 = £160$.",
-            "For part (b), the new ratio $3 : 7$ has a total of $10$ parts. We divide the total money by $10$ to find the value of one new part: $£160 \\div 10 = £16$.",
-            "Beth's share is $7$ parts, so we calculate $7 \\times £16 = £112$.",
-            "Final Answer: $$(a)\\ £160,\\ (b)\\ £112$$"
-        ],
-        "wrong_options": [
-            {
-                "ans": "$$\\text{(a) £320, (b) £224}$$",
-                "feedback": "You divided the £40 by the total ratio parts (8) instead of the difference between their parts (2). Remember, the £40 represents how much *more* Beth has, not the total amount!"
-            },
-            {
-                "ans": "$$\\text{(a) £160, (b) £140}$$",
-                "feedback": "You calculated the total correctly, but in part (b), you kept the value of one part as £20. When the ratio changes to $3:7$, the total number of parts changes to 10, so you must calculate a new value for one part."
-            },
-            {
-                "ans": "$$\\text{(a) £100, (b) £112}$$",
-                "feedback": "It looks like you calculated Beth's original share (£100) instead of the total amount shared for part (a). Always re-read the final instruction!"
-            }
-        ],
-        "bradley_insight": {
-            "type": "caution",
-            "title": "The Head Teacher's Eye: The 'Difference' Trap",
-            "content": "The most common error is dividing the $£40$ by the total parts (8) instead of the difference in parts (2). Always read carefully to see if the value given is the 'total' or the 'difference' between shares."
-        },
-        "payhip_link": "https://payhip.com/b/IVWzJ",
-        "button_text": "Master Ratio: Download the Full Number & Ratio Pack"
-    },
-    // 3 January
+    
     {
         "id": "001003",
         "date": "3 January 2026",
@@ -151,46 +75,6 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/wRN86",
         "button_text": "Master Algebra: Download the Full Algebra Pack"
     },
-    // 5 January
-    {
-        "id": "001005",
-        "date": "5 January 2026",
-        "major_area": "Number",
-        "topic": "Estimation & Bounds",
-        "subtopic": "Rounding, Estimation and Error Intervals",
-        "difficulty": "4/5",
-        "q": "(a) Estimate the value of $\\dfrac{403 \\times 1.98}{0.49}$.<br>(b) State, with a reason, whether your estimate is an overestimate or an underestimate.",
-        "steps": [
-            "For part (a), we round each number to one significant figure: $403 \\approx 400$, $1.98 \\approx 2$, and $0.49 \\approx 0.5$.",
-            "We perform the calculation: $\\dfrac{400 \\times 2}{0.5} = \\dfrac{800}{0.5}$.",
-            "Dividing by $0.5$ is equivalent to multiplying by $2$, so the estimate is $1600$.",
-            "For part (b), we compare the rounded values to the originals. We rounded the numerator terms down slightly, but we rounded the denominator up more significantly ($0.49$ to $0.5$ is actually an increase).",
-            "Since the numerator stayed roughly the same but we divided by a larger number than the original, the result is an underestimate.",
-            "Final Answer: $$(a)\\ 1600,\\ (b)\\ \\text{Underestimate (denominator increased)}$$"
-        ],
-        "wrong_options": [
-            {
-                "ans": "$$\\text{(a) 400, (b) Underestimate}$$",
-                "feedback": "It looks like you divided by 2 instead of 0.5. Remember that dividing a number by 0.5 is the mathematical equivalent of doubling it!"
-            },
-            {
-                "ans": "$$\\text{(a) 1600, (b) Overestimate}$$",
-                "feedback": "You calculated the estimate correctly, but your reasoning is flawed. Because we rounded the denominator UP to 0.5, we divided by a larger number, which makes the final answer smaller (an underestimate)."
-            },
-            {
-                "ans": "$$\\text{(a) 1628.2, (b) Exact value}$$",
-                "feedback": "You used a calculator to find the exact value! When a question says 'Estimate', you MUST round every single number to 1 significant figure first, or you will score zero marks."
-            }
-        ],
-        "bradley_insight": {
-            "type": "pro-tip",
-            "title": "The Head Teacher's Eye: Dividing by Decimals",
-            "content": "Students often struggle with $\\div 0.5$. I always teach my classes to remember that 'how many halves go into 800' is the same as doubling the 800. It turns a potential decimal error into a simple mental calculation."
-        },
-        "payhip_link": "https://payhip.com/b/IVWzJ",
-        "button_text": "Master Number: Download the Full Number Pack"
-    },
-    // 6 January
     {
         "id": "001006",
         "date": "6 January 2026",
@@ -267,47 +151,7 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/wRN86",
         "button_text": "Master Algebra: Download the Full Algebra Pack"
     },
-    // 8 January
-    {
-        "id": "001008",
-        "date": "8 January 2026",
-        "major_area": "Number",
-        "topic": "Surds",
-        "subtopic": "Surds",
-        "difficulty": "8/9",
-        "q": "Rationalise the denominator and simplify fully:<br>$$\\dfrac{10}{3 + \\sqrt{2}}$$",
-        "steps": [
-            "To rationalise the denominator, we multiply both the numerator and the denominator by the conjugate of the expression, which is $3 - \\sqrt{2}$.",
-            "The numerator becomes $10(3 - \\sqrt{2})$, which expands to $30 - 10\\sqrt{2}$.",
-            "The denominator is a difference of two squares: $(3 + \\sqrt{2})(3 - \\sqrt{2}) = 3^2 - (\\sqrt{2})^2$.",
-            "Calculating the denominator gives $9 - 2 = 7$.",
-            "Finally, we write the expression as a single fraction.",
-            "Final Answer: $$\\dfrac{30 - 10\\sqrt{2}}{7}$$"
-        ],
-        "wrong_options": [
-            {
-                "ans": "$$\\dfrac{30 + 10\\sqrt{2}}{7}$$",
-                "feedback": "You multiplied by the correct terms, but you forgot to change the sign! To create the 'difference of two squares' on the bottom, you must multiply by the conjugate: $(3 - \\sqrt{2})$."
-            },
-            {
-                "ans": "$$\\dfrac{30 - 10\\sqrt{2}}{11}$$",
-                "feedback": "You made an error expanding the denominator. $(3 + \\sqrt{2})(3 - \\sqrt{2})$ expands to $9 - 2$. It looks like you added the 2 instead of subtracting it!"
-            },
-            {
-                "ans": "$$\\dfrac{10(3 - \\sqrt{2})}{5}$$",
-                "feedback": "You expanded the denominator incorrectly. It looks like you added $3$ and $2$ rather than squaring them ($3^2 - 2$). Remember, $(a+b)(a-b) = a^2 - b^2$."
-            }
-        ],
-        "bradley_insight": {
-            "type": "pro-tip",
-            "title": "The Head Teacher's Eye: The Conjugate Rule",
-            "content": "When the denominator contains a sum like $a + \\sqrt{b}$, you must multiply by $a - \\sqrt{b}$ to eliminate the surd. This creates a difference of two squares in the denominator, which will always result in a rational integer. This is a high-level skill frequently found in non-calculator Paper 1 exams."
-        },
-        "payhip_link": "https://payhip.com/b/IVWzJ",
-        "button_text": "Master Number: Download the Full Number Pack"
-    },
-    // 9 January
-    {
+     {
         "id": "001009",
         "date": "9 January 2026",
         "major_area": "Algebra",
@@ -382,44 +226,6 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/wRN86",
         "button_text": "Master Algebra: Download the Full Algebra Pack"
     },
-    // 11 January
-    {
-        "id": "001011",
-        "date": "11 January 2026",
-        "major_area": "Number",
-        "topic": "Estimation & Bounds",
-        "subtopic": "Limits of Accuracy and Bounds",
-        "difficulty": "5/6",
-        "q": "A number, $x$, is $8.4$ when truncated to one decimal place.<br>(a) State the lower bound for the value of $x$.<br>(b) Write down the error interval for $x$.",
-        "steps": [
-            "For part (a), we identify that truncation means 'cutting off' the digits. The smallest possible value $x$ could be is $8.4$ itself.",
-            "For part (b), we determine the upper bound. Since $x$ is truncated to $8.4$, any value less than $8.5$ would still result in $8.4$ when the subsequent digits are removed.",
-            "We combine these into an inequality to show the error interval.",
-            "Final Answer: $$(a)\\ 8.4,\\ (b)\\ 8.4 \\le x < 8.5$$"
-        ],
-        "wrong_options": [
-            {
-                "ans": "$$\\text{(a) 8.35, (b) }8.35 \\le x < 8.45$$",
-                "feedback": "You have calculated the bounds for a number that has been *rounded*! Truncation is different; it simply chops the end off the number. Therefore, $8.49$ truncates to $8.4$, not $8.5$."
-            },
-            {
-                "ans": "$$\\text{(a) 8.4, (b) }8.4 \\le x \\le 8.5$$",
-                "feedback": "You correctly identified the values, but your upper inequality sign is incorrect! If $x$ was exactly $8.5$, it would truncate to $8.5$. Therefore, $x$ must be strictly *less than* $8.5$."
-            },
-            {
-                "ans": "$$\\text{(a) 8.41, (b) }8.41 \\le x < 8.49$$",
-                "feedback": "You have written out the next available digits, but bounds in mathematics consider infinite continuous values (like $8.499999...$). Therefore, the upper limit is exactly $8.5$."
-            }
-        ],
-        "bradley_insight": {
-            "type": "caution",
-            "title": "The Head Teacher's Eye: Truncation vs Rounding",
-            "content": "This is a frequent stumbling block. Unlike rounding, where the lower bound for 8.4 would be 8.35, truncation simply means the original digits are preserved. Always read the question carefully for the word 'truncated' to avoid the rounding trap."
-        },
-        "payhip_link": "https://payhip.com/b/IVWzJ",
-        "button_text": "Master Number: Download the Full Number Pack"
-    },
-    // 12 January
     {
         "id": "001012",
         "date": "12 January 2026",
@@ -458,86 +264,6 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/wRN86",
         "button_text": "Master Algebra: Download the Full Algebra Pack"
     },
-    // 13 January
-    {
-        "id": "001013",
-        "date": "13 January 2026",
-        "major_area": "Geometry & Measures",
-        "topic": "Circle Theorems",
-        "subtopic": "Circle Theorems 1",
-        "difficulty": "5/6",
-        "img": "true",
-        "q": "Points $A, B$ and $C$ lie on the circumference of a circle. $AB$ is the diameter of the circle. $\\angle BAC = 30^\\circ$.<br>(a) State the size of $\\angle ACB$.<br>(b) Calculate the size of $\\angle ABC$.",
-        "steps": [
-            "For part (a), we use the circle theorem which states that the angle subtended at the circumference by a semicircle is always a right angle. Therefore, $\\angle ACB = 90^\\circ$.",
-            "For part (b), we use the fact that the angles in a triangle sum to $180^\\circ$.",
-            "We calculate: $180^\\circ - 90^\\circ - 30^\\circ = 60^\\circ$.",
-            "Final Answer: $$(a)\\ 90^\\circ,\\ (b)\\ 60^\\circ$$"
-        ],
-        "wrong_options": [
-            {
-                "ans": "$$\\text{(a)} 150^\\circ\\text{, (b)} 15^\\circ$$",
-                "feedback": "You assumed the triangle was isosceles because of the circle's radius! However, the line AB passes straight across the whole circle, making it the diameter. The angle opposite the diameter is always a right angle ($90^\\circ$)."
-            },
-            {
-                "ans": "$$\\text{(a)} 60^\\circ\\text{, (b)} 90^\\circ$$",
-                "feedback": "You correctly identified that there must be a $90^\\circ$ angle, but you placed it at vertex B instead of C! The right angle must always be at the circumference, directly opposite the diameter line AB."
-            },
-            {
-                "ans": "$$\\text{(a)} 90^\\circ\\text{, (b)} 150^\\circ$$",
-                "feedback": "You correctly found part (a), but made an arithmetic slip in part (b). Remember, the angles inside a triangle sum to $180^\\circ$, so you must subtract the known angles ($90+30=120$) from 180."
-            }
-        ],
-        "bradley_insight": {
-            "type": "deeper",
-            "title": "The Head Teacher's Eye: Spotting the Diameter",
-            "content": "In circle problems, the word 'diameter' is a mathematical instruction to look for a $90^\\circ$ angle at the circumference. Even if the right-angle symbol is not shown, you can confidently apply Thales' Theorem to solve the triangle."
-        },
-        "payhip_link": "https://payhip.com/b/XAGch",
-        "button_text": "Master Geometry: Download the Full Geometry Pack"
-    },
-    // 14 January
-    {
-        "id": "001014",
-        "date": "14 January 2026",
-        "major_area": "Probability",
-        "topic": "Tree Diagrams",
-        "subtopic": "Probability Tree Diagrams",
-        "difficulty": "6/7",
-        "q": "A box contains 4 red sweets and 6 blue sweets. Two sweets are selected at random without replacement.<br>(a) Find the probability that the first sweet is red and the second sweet is blue.<br>(b) Find the probability that both sweets are of the same colour.",
-        "steps": [
-            "For part (a), the probability the first sweet is red is $\\dfrac{4}{10}$.",
-            "Since the sweet is not replaced, there are now 9 sweets remaining. The probability the second sweet is blue is $\\dfrac{6}{9}$.",
-            "The probability of Red then Blue is $\\dfrac{4}{10} \\times \\dfrac{6}{9} = \\dfrac{24}{90}$.",
-            "For part (b), we must add the probability of Red-Red to the probability of Blue-Blue.",
-            "Probability of Red-Red: $\\dfrac{4}{10} \\times \\dfrac{3}{9} = \\dfrac{12}{90}$.",
-            "Probability of Blue-Blue: $\\dfrac{6}{10} \\times \\dfrac{5}{9} = \\dfrac{30}{90}$.",
-            "Total probability: $\\dfrac{12}{90} + \\dfrac{30}{90} = \\dfrac{42}{90}$. We then simplify the result.",
-            "Final Answer: $$(a)\\ \\dfrac{4}{15},\\ (b)\\ \\dfrac{7}{15}$$"
-        ],
-        "wrong_options": [
-            {
-                "ans": "$$\\text{(a)} \\dfrac{6}{25}\\text{, (b)} \\dfrac{13}{25}$$",
-                "feedback": "You calculated the probabilities as if the sweets were *replaced* in the box! Because the question explicitly says 'without replacement', the denominator for the second sweet must decrease to 9."
-            },
-            {
-                "ans": "$$\\text{(a)} \\dfrac{24}{90}\\text{, (b)} \\dfrac{12}{90}$$",
-                "feedback": "You correctly calculated the 'without replacement' probability for Red then Blue, but for part (b) it looks like you only calculated the probability of Red-Red. 'Same colour' also includes Blue-Blue!"
-            },
-            {
-                "ans": "$$\\text{(a)} \\dfrac{10}{19}\\text{, (b)} \\dfrac{42}{100}$$",
-                "feedback": "You added the probabilities along the branches instead of multiplying them! You must always *multiply* across the tree for 'AND' events, and *add* the results together for 'OR' events."
-            }
-        ],
-        "bradley_insight": {
-            "type": "caution",
-            "title": "The Head Teacher's Eye: The Reduced Sample Space",
-            "content": "The phrase 'without replacement' is the most important part of the question. It means your denominator must decrease for the second selection. If you forget to reduce the total from 10 to 9, you will lose every accuracy mark for that question."
-        },
-        "payhip_link": "https://payhip.com/b/XAGch",
-        "button_text": "Master Probability: Download the Full Probability Pack"
-    },
-    // 15 January
     {
         "id": "001015",
         "date": "15 January 2026",
@@ -576,123 +302,6 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/wRN86",
         "button_text": "Master Algebra: Download the Full Algebra Pack"
     },
-    // 16 January
-    {
-        "id": "001016",
-        "date": "16 January 2026",
-        "major_area": "Geometry & Measures",
-        "topic": "3D Shapes",
-        "subtopic": "Surface Area and Volume in 3D",
-        "difficulty": "5/6",
-        "q": "A solid cylinder has a radius of $4\\text{ cm}$ and a height of $10\\text{ cm}$.<br>(a) Calculate the volume of the cylinder. Give your answer in terms of $\\pi$.<br>(b) Calculate the total surface area of the cylinder. Give your answer in terms of $\\pi$.",
-        "steps": [
-            "For part (a), we use the volume formula $V = \\pi r^2 h$. Substituting the values, we get $V = \\pi \\times 4^2 \\times 10$.",
-            "Calculation: $V = \\pi \\times 16 \\times 10 = 160\\pi$.",
-            "For part (b), the total surface area consists of two circular bases and the curved surface: $SA = 2\\pi r^2 + 2\\pi r h$.",
-            "Substituting the values: $SA = 2\\pi(4^2) + 2\\pi(4)(10) = 32\\pi + 80\\pi$.",
-            "Summing these gives the total surface area.",
-            "Final Answer: $$(a)\\ 160\\pi\\text{ cm}^3,\\ (b)\\ 112\\pi\\text{ cm}^2$$"
-        ],
-        "wrong_options": [
-            {
-                "ans": "$$\\text{(a) }160\\pi\\text{, (b) }80\\pi$$",
-                "feedback": "You calculated the volume perfectly, but for part (b) you only found the curved surface area! The question asks for the TOTAL surface area of a solid cylinder, which means you must add the areas of the two circular ends."
-            },
-            {
-                "ans": "$$\\text{(a) }40\\pi\\text{, (b) }112\\pi$$",
-                "feedback": "It looks like you used $2\\pi r h$ instead of $\\pi r^2 h$ for the volume! Remember, the volume is the area of the base (a circle) multiplied by the height."
-            },
-            {
-                "ans": "$$\\text{(a) }160\\pi\\text{, (b) }96\\pi$$",
-                "feedback": "You remembered to add the circular ends in part (b), but you only added ONE of them! A solid cylinder has a top and a bottom, so you must add $2\\pi r^2$."
-            }
-        ],
-        "bradley_insight": {
-            "type": "pro-tip",
-            "title": "The Head Teacher's Eye: Answers in terms of Pi",
-            "content": "When a question asks for an answer 'in terms of $\\pi$', it is usually a non-calculator problem. Do not attempt to use $3.14$; simply treat $\\pi$ as an algebraic variable throughout your calculation to keep the result exact."
-        },
-        "payhip_link": "https://payhip.com/b/XAGch",
-        "button_text": "Master Geometry: Download the Full Geometry Pack"
-    },
-    // 17 January
-    {
-        "id": "001017",
-        "date": "17 January 2026",
-        "major_area": "Ratio, Proportion & Rates of Change",
-        "topic": "Percentage Change",
-        "subtopic": "Percentage Change and Interest",
-        "difficulty": "4/5",
-        "q": "A car is purchased for $£8000$. One year later, its value has dropped to $£6000$.<br>(a) Calculate the percentage decrease in the value of the car.<br>(b) If the value decreases by a further $10\\%$ in the second year, calculate its value at the end of year 2.",
-        "steps": [
-            "For part (a), we find the actual decrease: $£8000 - £6000 = £2000$.",
-            "We use the formula: $\\dfrac{\\text{Change}}{\\text{Original}} \\times 100 = \\dfrac{2000}{8000} \\times 100$.",
-            "Simplifying the fraction gives $\\dfrac{1}{4} \\times 100 = 25\\%$.",
-            "For part (b), a $10\\%$ decrease on $£6000$ is calculated using the multiplier $0.9$: $£6000 \\times 0.9 = £5400$.",
-            "Final Answer: $$(a)\\ 25\\%,\\ (b)\\ £5,400$$"
-        ],
-        "wrong_options": [
-            {
-                "ans": "$$\\text{(a) }33.3\\%,\text{, (b)£5,400}$$",
-                "feedback": "You calculated the percentage decrease by dividing by the NEW price (£6000) instead of the ORIGINAL price (£8000). Percentage change is always Change / Original!"
-            },
-            {
-                "ans": "$$\\text{(a) }25\\%\\text{, (b)£5,200}$$",
-                "feedback": "In part (b), it looks like you took another 10% off the *original* £8000 price instead of the £6000 price. Compound depreciation is always calculated using the current value."
-            },
-            {
-                "ans": "$$\\text{(a) }75\\%,\text{, (b)£5,400}$$",
-                "feedback": "You calculated what percentage the new price *is* of the original price (75%), rather than calculating the percentage *decrease* (25%). Read the instruction carefully!"
-            }
-        ],
-        "bradley_insight": {
-            "type": "caution",
-            "title": "The Head Teacher's Eye: The 'Original' Rule",
-            "content": "Always remember that the denominator in a percentage change calculation must be the <strong>original</strong> value, not the new one. Using $£6000$ as the base is a very common error."
-        },
-        "payhip_link": "https://payhip.com/b/IVWzJ",
-        "button_text": "Master Number & Ratio: Download the Full Number Pack"
-    },
-    // 18 January
-    {
-        "id": "001018",
-        "date": "18 January 2026",
-        "major_area": "Geometry & Measures",
-        "topic": "Vectors",
-        "subtopic": "Vectors in 2D",
-        "difficulty": "6/7",
-        "q": "The vector $\\vec{AB} = \\begin{pmatrix} 3 \\\\ -4 \\end{pmatrix}$ and the vector $\\vec{AC} = \\begin{pmatrix} 7 \\\\ 2 \\end{pmatrix}$.<br>(a) Calculate the magnitude of the vector $\\vec{AB}$, denoted by $|\\vec{AB}|$.<br>(b) Find the column vector $\\vec{BC}$.",
-        "steps": [
-            "For part (a), we use Pythagoras' theorem to find the magnitude: $|\\vec{AB}| = \\sqrt{x^2 + y^2}$.",
-            "Calculation: $\\sqrt{3^2 + (-4)^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5$.",
-            "For part (b), we use the vector path $\\vec{BC} = \\vec{BA} + \\vec{AC}$.",
-            "The vector $\\vec{BA}$ is the negative of $\\vec{AB}$, so $\\vec{BA} = \\begin{pmatrix} -3 \\\\ 4 \\end{pmatrix}$.",
-            "We add the vectors: $\\begin{pmatrix} -3 \\\\ 4 \\end{pmatrix} + \\begin{pmatrix} 7 \\\\ 2 \\end{pmatrix} = \\begin{pmatrix} 4 \\\\ 6 \\end{pmatrix}$.",
-            "Final Answer: $$(a)\\ 5,\\ (b)\\ \\begin{pmatrix} 4 \\\\ 6 \\end{pmatrix}$$"
-        ],
-        "wrong_options": [
-            {
-            "ans": "$$\\text{(a) }5\\text{, (b) }\\begin{pmatrix} 10 \\\\ -2 \\end{pmatrix}$$",
-                "feedback": "You found the magnitude perfectly, but for part (b) you just added $\\vec{AB}$ and $\\vec{AC}$ together! Remember, to go from B to C, you must go 'backwards' along AB first, meaning you must flip its signs."
-            },
-            {
-                "ans": "$$\\text{(a) }-1\\text{, (b) }\\begin{pmatrix} 4 \\\\ 6 \\end{pmatrix}$$",
-                "feedback": "You found the path correctly, but you made a mistake with Pythagoras in part (a). A magnitude (length) can never be negative. Remember that $(-4)^2$ is positive 16, not -16!"
-            },
-            {
-                "ans": "$$\\text{(a) }5\\text{, (b) }\\begin{pmatrix} -4 \\\\ -6 \\end{pmatrix}$$",
-                "feedback": "You subtracted the vectors in the wrong order! Finding $\\vec{AB} - \\vec{AC}$ gives the path for $\\vec{CB}$. Since you want $\\vec{BC}$, you must start at B and move to A."
-            }
-        ],
-        "bradley_insight": {
-            "type": "pro-tip",
-            "title": "The Head Teacher's Eye: Vector Paths",
-            "content": "To find a missing vector like $\\vec{BC}$, always look for a 'common' point (in this case, $A$). Think of it as travelling from $B$ to $A$ and then $A$ to $C$. Remember to flip the signs of your column vector when you reverse its direction!"
-        },
-        "payhip_link": "https://payhip.com/b/XAGch",
-        "button_text": "Master Geometry: Download the Full Geometry Pack"
-    },
-   // 19 January
     {
         "id": "001019",
         "date": "19 January 2026",
@@ -730,86 +339,6 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/wRN86",
         "button_text": "Master Algebra: Download the Full Algebra Pack"
     },
-    // 20 January
-    {
-        "id": "001020",
-        "date": "20 January 2026",
-        "major_area": "Ratio, Proportion & Rates of Change",
-        "topic": "Direct & Inverse Proportion",
-        "subtopic": "Direct and Inverse Proportion",
-        "difficulty": "6/7",
-        "q": "$y$ is directly proportional to $x^2$. When $x = 2, y = 20$.<br>(a) Find an equation for $y$ in terms of $x$.<br>(b) Calculate the value of $y$ when $x = 3$.<br>(c) Find the positive value of $x$ when $y = 80$.",
-        "steps": [
-            "For part (a), we establish the relationship $y = kx^2$. Substituting $x=2$ and $y=20$: $20 = k(2^2) \\implies 20 = 4k$.",
-            "Solving for $k$ gives $k = 5$. The equation is $y = 5x^2$.",
-            "For part (b), we substitute $x = 3$ into the equation: $y = 5(3^2) = 5(9) = 45$.",
-            "For part (c), we set $y = 80$: $80 = 5x^2 \\implies x^2 = 16$.",
-            "Taking the square root gives the positive value $x = 4$.",
-            "Final Answer: $$(a)\\ y = 5x^2,\\ (b)\\ 45,\\ (c)\\ 4$$"
-        ],
-        "wrong_options": [
-            {
-                "ans": "$$\\text{(a) }y = 10x\\text{, (b) 30, (c) 8}$$",
-                "feedback": "You calculated the constant $k$ as if $y$ was directly proportional to $x$, not $x^2$! You must square the $x$-value ($2^2=4$) before dividing 20."
-            },
-            {
-                "ans": "$$\\text{(a) }y = 5x^2\\text{, (b) 15, (c) 16}$$",
-                "feedback": "In part (b), you forgot to square the 3 before multiplying! And in part (c), you found $x^2=16$ but forgot to take the square root to find $x$."
-            },
-            {
-                "ans": "$$\\text{(a) }y = 5x^2\\text{, (b) 225, (c) 4}$$",
-                "feedback": "In part (b), it looks like you multiplied $5$ by $3$ to get $15$, and then squared the $15$! Due to BIDMAS, you must square the $x$-value first, and then multiply by $k$."
-            }
-        ],
-        "bradley_insight": {
-            "type": "pro-tip",
-            "title": "The Head Teacher's Eye: Finding K first",
-            "content": "In proportion questions, finding the constant $k$ is your 'anchor'. Once you have the formula, the rest of the question becomes a simple substitution exercise. Always write out your full formula before attempting parts (b) or (c)."
-        },
-        "payhip_link": "https://payhip.com/b/IVWzJ",
-        "button_text": "Master Ratio: Download the Full Number & Ratio Pack"
-    },
-    // 21 January
-    {
-        "id": "001021",
-        "date": "21 January 2026",
-        "major_area": "Number",
-        "topic": "Surds",
-        "subtopic": "Surds",
-        "difficulty": "7/8",
-        "q": "(a) Simplify fully: $\\sqrt{75} + \\sqrt{12}$.<br>(b) Show that $\\dfrac{1}{\\sqrt{75} + \\sqrt{12}}$ can be written as $\\dfrac{\\sqrt{3}}{21}$.",
-        "steps": [
-            "For part (a), we simplify each surd by finding the largest square factor: $\\sqrt{75} = \\sqrt{25 \\times 3} = 5\\sqrt{3}$.",
-            "Similarly, $\\sqrt{12} = \\sqrt{4 \\times 3} = 2\\sqrt{3}$.",
-            "Adding them gives $5\\sqrt{3} + 2\\sqrt{3} = 7\\sqrt{3}$.",
-            "For part (b), we use our result from part (a): $\\dfrac{1}{7\\sqrt{3}}$.",
-            "We rationalise the denominator by multiplying top and bottom by $\\sqrt{3}$: $\\dfrac{1 \\times \\sqrt{3}}{7\\sqrt{3} \\times \\sqrt{3}}$.",
-            "This gives $\\dfrac{\\sqrt{3}}{7 \\times 3} = \\dfrac{\\sqrt{3}}{21}$.",
-            "Final Answer: $$(a)\\ 7\\sqrt{3},\\ (b)\\ \\text{Shown}$$"
-        ],
-        "wrong_options": [
-            {
-                "ans": "$$\\text{(a) }\\sqrt{87}\\text{, (b) Shown}$$",
-                "feedback": "You cannot simply add the numbers inside the square roots together! You must simplify each surd independently until they share the same 'root' before you can combine them."
-            },
-            {
-                "ans": "$$\\text{(a) }7\\sqrt{6}\\text{, (b) Shown}$$",
-                "feedback": "It looks like you found the coefficients perfectly (5 + 2 = 7), but you added the roots together too ($\\sqrt{3} + \\sqrt{3} = \\sqrt{6}$). Surds act like algebra: $5x + 2x = 7x$, not $7x^2$."
-            },
-            {
-                "ans": "$$\\text{(a) }7\\sqrt{3}\\text{, (b) Cannot be shown}$$",
-                "feedback": "You correctly simplified part (a), but it seems you struggled with the rationalisation in part (b). Remember to multiply the top and bottom of the fraction by $\\sqrt{3}$ to remove the surd from the denominator."
-            }
-        ],
-        "bradley_insight": {
-            "type": "pro-tip",
-            "title": "The Head Teacher's Eye: Surd Addition",
-            "content": "You can only add surds if the number under the square root is the same. I compare this to 'collecting like terms' in algebra. Once you've simplified both terms to multiples of $\\sqrt{3}$, the addition becomes trivial."
-        },
-        "payhip_link": "https://payhip.com/b/IVWzJ",
-        "button_text": "Master Number: Download the Full Number Pack"
-    },
-    // 22 January
     {
         "id": "001022",
         "date": "22 January 2026",
@@ -848,45 +377,6 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/wRN86",
         "button_text": "Master Algebra: Download the Full Algebra Pack"
     },
-    // 23 January
-    {
-        "id": "001023",
-        "date": "23 January 2026",
-        "major_area": "Ratio, Proportion & Rates of Change",
-        "topic": "Compound Measures",
-        "subtopic": "Compound Units: Speed, Density, Pressure",
-        "difficulty": "5/6",
-        "q": "A force of $100\\text{ N}$ acts on a surface with an area of $20\\text{ cm}^2$.<br>(a) Calculate the pressure exerted on the surface.<br>(b) If the same force is applied to a larger surface area, describe what happens to the pressure.",
-        "steps": [
-            "For part (a), we use the standard formula for pressure: $\\text{Pressure} = \\text{Force} \\div \\text{Area}$.",
-            "Substituting the given values: $100\\text{ N} \\div 20\\text{ cm}^2 = 5\\text{ N/cm}^2$.",
-            "For part (b), we consider the mathematical relationship. Since pressure is inversely proportional to area (when force is constant), increasing the area will distribute the force over a larger space.",
-            "Therefore, the pressure will decrease.",
-            "Final Answer: $$(a)\\ 5\\text{ N/cm}^2,\\ (b)\\ \\text{The pressure decreases}$$"
-        ],
-        "wrong_options": [
-            {
-                "ans": "$$\\text{(a) }2000 N/cm^2\\text{, (b) The pressure increases}$$",
-                "feedback": "You multiplied the force and the area together! Remember the formula triangle: Pressure = Force $\\div$ Area."
-            },
-            {
-                "ans": "$$\\text{(a) }5 N/cm^2\\text{, (b) The pressure increases}$$",
-                "feedback": "You calculated the pressure correctly, but your logic in part (b) is flawed. If you spread the same amount of force over a much larger area, the pressure on any specific spot will drop."
-            },
-            {
-                "ans": "$$\\text{(a) }0.2 N/cm^2\\text{, (b) The pressure decreases}$$",
-                "feedback": "You divided the numbers in the wrong order (Area $\\div$ Force). If you are unsure, look at the units in the question: $\\text{N/cm}^2$ literally means Newtons divided by centimeters squared!"
-            }
-        ],
-        "bradley_insight": {
-            "type": "deeper",
-            "title": "The Head Teacher's Eye: Direct and Inverse Links",
-            "content": "Compound measures like pressure are essentially real-world applications of proportion. Pressure is directly proportional to force but inversely proportional to area. Understanding these relationships allows you to predict results before you even pick up a calculator."
-        },
-        "payhip_link": "https://payhip.com/b/IVWzJ",
-        "button_text": "Master Ratio: Download the Full Number & Ratio Pack"
-    },
-    // 24 January
     {
         "id": "001024",
         "date": "24 January 2026",
@@ -925,46 +415,6 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/wRN86",
         "button_text": "Master Algebra: Download the Full Algebra Pack"
     },
-    // 25 January
-    {
-        "id": "001025",
-        "date": "25 January 2026",
-        "major_area": "Geometry & Measures",
-        "topic": "Vectors",
-        "subtopic": "Vector Geometry",
-        "difficulty": "6/7",
-        "img": "true",
-        "q": "In the diagram, $M$ is the midpoint of the line segment $AB$. The vector $\\overrightarrow{OA} = \\mathbf{a}$ and the vector $\\overrightarrow{OB} = \\mathbf{b}$.<br>Find the vector $\\overrightarrow{OM}$ in terms of $\\mathbf{a}$ and $\\mathbf{b}$, giving your answer in its simplest form.",
-        "steps": [
-            "We first find the vector path for $\\overrightarrow{AB}$ by travelling from $A$ to $O$ and then from $O$ to $B$: $\\overrightarrow{AB} = -\\mathbf{a} + \\mathbf{b}$.",
-            "Since $M$ is the midpoint, the vector $\\overrightarrow{AM}$ is equal to one-half of $\\overrightarrow{AB}$, which is $\\dfrac{1}{2}(\\mathbf{b} - \\mathbf{a})$.",
-            "To find $\\overrightarrow{OM}$, we follow the path from $O$ to $A$ and then from $A$ to $M$: $\\overrightarrow{OM} = \\mathbf{a} + \\dfrac{1}{2}(\\mathbf{b} - \\mathbf{a})$.",
-            "Expanding and collecting like terms: $\\mathbf{a} + \\dfrac{1}{2}\\mathbf{b} - \\dfrac{1}{2}\\mathbf{a} = \\dfrac{1}{2}\\mathbf{a} + \\dfrac{1}{2}\\mathbf{b}$.",
-            "Final Answer: $$\\dfrac{1}{2}(\\mathbf{a} + \\mathbf{b})$$"
-        ],
-        "wrong_options": [
-            {
-                "ans": "$$\\dfrac{1}{2}(\\mathbf{b} - \\mathbf{a})$$",
-                "feedback": "This is the vector $\\overrightarrow{AM}$, not $\\overrightarrow{OM}$! You found the journey from A to the midpoint, but the question asks for the position vector starting from the origin $O$."
-            },
-            {
-                "ans": "$$\\mathbf{a} + \\mathbf{b}$$",
-                "feedback": "You added the two vectors together, which would take you to the far corner of a parallelogram! To find the midpoint, you must use the path $\\overrightarrow{OA} + \\overrightarrow{AM}$."
-            },
-            {
-                "ans": "$$\\dfrac{1}{2}(\\mathbf{a} - \\mathbf{b})$$",
-                "feedback": "You made a sign error when finding the path $\\overrightarrow{AB}$. Travelling from A to O goes against the arrow, so it must be $-\\mathbf{a}$, not positive $\\mathbf{a}$."
-            }
-        ],
-        "bradley_insight": {
-            "type": "pro-tip",
-            "title": "The Head Teacher's Eye: The Midpoint Formula",
-            "content": "This result is a formal proof of the midpoint vector. I encourage my students to notice that the vector to the midpoint is simply the average of the vectors to the two endpoints. Remembering this pattern is a great way to verify your answer in more complex vector geometry problems."
-        },
-        "payhip_link": "https://payhip.com/b/XAGch",
-        "button_text": "Master Geometry: Download the Full Geometry Pack"
-    },
-    // 26 January
     {
         "id": "001026",
         "date": "26 January 2026",
@@ -1005,49 +455,6 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/wRN86",
         "button_text": "Master Algebra: Download the Full Algebra Pack"
     },
-    // 27 January
-    {
-        "id": "001027",
-        "date": "27 January 2026",
-        "major_area": "Geometry & Measures",
-        "topic": "Trigonometry",
-        "subtopic": "Sine Rule",
-        "difficulty": "6/7",
-        "img": "true",
-        "q": "A triangle has two sides of length $6\\text{ cm}$ and $8\\text{ cm}$. The angle between these two sides is $30^\\circ$.<br>(a) Calculate the area of the triangle.<br>(b) Use the Cosine Rule to calculate the length of the third side, giving your answer to 3 significant figures.",
-        "steps": [
-            "For part (a), we use the area formula for a non-right-angled triangle: $\\text{Area} = \\dfrac{1}{2}ab\\sin C$.",
-            "Substituting the values: $\\text{Area} = \\dfrac{1}{2} \\times 6 \\times 8 \\times \\sin(30^\\circ)$.",
-            "Since $\\sin(30^\\circ) = 0.5$, we calculate $24 \\times 0.5 = 12\\text{ cm}^2$.",
-            "For part (b), we apply the Cosine Rule: $c^2 = a^2 + b^2 - 2ab\\cos C$.",
-            "Substituting the values: $c^2 = 6^2 + 8^2 - 2(6)(8)\\cos(30^\\circ)$.",
-            "Calculation: $c^2 = 36 + 64 - 96(0.866) = 100 - 83.136 = 16.864$.",
-            "Taking the square root gives the final length.",
-            "Final Answer: $$(a)\\ 12\\text{ cm}^2,\\ (b)\\ 4.11\\text{ cm}$$"
-        ],
-        "wrong_options": [
-            {
-                "ans": "$$\\text{(a) }24\\text{ cm}^2\\text{, (b) }4.11\\text{ cm}$$",
-                "feedback": "You calculated part (b) perfectly, but for part (a) you forgot the $\\frac{1}{2}$ in the area formula! The formula is $\\frac{1}{2}ab\\sin(C)$, not just $ab\\sin(C)$."
-            },
-            {
-                "ans": "$$\\text{(a) }12\\text{ cm}^2\\text{, (b) }16.9\\text{ cm}$$",
-                "feedback": "You successfully applied the Cosine Rule and calculated $c^2 = 16.864$, but you forgot the final step! You must take the square root to find the actual length of the side $c$."
-            },
-            {
-                "ans": "$$\\text{(a) }12\\text{ cm}^2\\text{, (b) }13.5\\text{ cm}$$",
-                "feedback": "You made a sign error in the Cosine Rule. The formula is $a^2 + b^2 - 2ab\\cos(C)$. It looks like you added the final term instead of subtracting it!"
-            }
-        ],
-        "bradley_insight": {
-            "type": "pro-tip",
-            "title": "The Head Teacher's Eye: SAS Configuration",
-            "content": "Whenever you are presented with 'Side-Angle-Side' (SAS), you should immediately reach for the Sine Area formula and the Cosine Rule. They are the most efficient tools for unlocking any triangle where you don't have a right angle."
-        },
-        "payhip_link": "https://payhip.com/b/XAGch",
-        "button_text": "Master Geometry: Download the Full Geometry Pack"
-    },
-    // 28 January
     {
         "id": "001028",
         "date": "28 January 2026",
@@ -1087,122 +494,817 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/wRN86",
         "button_text": "Master Algebra: Download the Full Algebra Pack"
     },
-  // 29 Jan
-    {
-        "id": "002006",
-        "date": "29 Jan 2026",
-        "major_area": "Probability",
-        "topic": "Tree Diagrams",
-        "subtopic": "Probability Tree Diagrams",
-        "difficulty": "6/7",
-        "q": "A bag contains 3 Red and 7 Blue counters. Two counters are picked at random without replacement. Find the probability that both counters are the same colour.",
-        "img": "",
+          {
+        "id": "002010",
+        "date": "2 February 2026",
+        "major_area": "Algebra",
+        "topic": "Quadratic Equations",
+        "subtopic": "Completing the Square",
+        "difficulty": "8/9",
+        "q": "(a) Write $3x^2 - 6x + 1$ in the form $a(x + b)^2 + c$.<br>(b) State the coordinates of the minimum point of the curve $y = 3x^2 - 6x + 1$.",
         "steps": [
-            "We first calculate the probability of picking two Red counters: $P(RR) = \\dfrac{3}{10} \\times \\dfrac{2}{9} = \\dfrac{6}{90}$.",
-            "Next, we calculate the probability of picking two Blue counters: $P(BB) = \\dfrac{7}{10} \\times \\dfrac{6}{9} = \\dfrac{42}{90}$.",
-            "To find the total probability of 'same colour', we sum these two mutually exclusive outcomes: $\\dfrac{6}{90} + \\dfrac{42}{90} = \\dfrac{48}{90}$.",
-            "Finally, we simplify the fraction by dividing both the numerator and denominator by 6.",
-            "Final Answer: $$\\dfrac{8}{15}$$"
+            "For part (a), we first factorise the coefficient of $x^2$ out of the first two terms: $3(x^2 - 2x) + 1$.",
+            "Next, we complete the square inside the bracket: $x^2 - 2x = (x - 1)^2 - 1$.",
+            "Substituting this back into the expression: $3[(x - 1)^2 - 1] + 1$.",
+            "Distributing the 3 gives $3(x - 1)^2 - 3 + 1$, which simplifies to $3(x - 1)^2 - 2$.",
+            "For part (b), the minimum point of $y = a(x + b)^2 + c$ is located at $(-b, c)$.",
+            "Substituting our values, the minimum point is $(1, -2)$.",
+            "Final Answer: $$\\text{(a) } 3(x - 1)^2 - 2, \\text{ (b) } (1, -2)$$"
         ],
         "wrong_options": [
             {
-                "ans": "$$\\dfrac{58}{100}$$",
-                "feedback": "You calculated the probabilities as if the counters were *replaced*! Because it is 'without replacement', the denominator for the second pick must decrease to 9."
+                "ans": "$$\\text{(a) } 3(x - 1)^2 - 1, \\text{ (b) } (1, -1)$$",
+                "feedback": "You completed the square correctly inside the bracket, but forgot to multiply your $-1$ by the $3$ sitting outside the bracket! The $-1$ becomes a $-3$ before adding the $+1$."
             },
             {
-                "ans": "$$\\dfrac{6}{90}$$",
-                "feedback": "It looks like you only calculated the probability of picking Red-Red. 'Same colour' means you must also calculate Blue-Blue and add them together!"
+                "ans": "$$\\text{(a) } 3(x - 1)^2 - 2, \\text{ (b) } (-1, -2)$$",
+                "feedback": "You completed the square perfectly, but you forgot to invert the sign of the $x$-coordinate for the turning point. The coordinate is the value that makes the bracket equal to zero."
             },
             {
-                "ans": "$$\\dfrac{18}{90}$$",
-                "feedback": "You added the probabilities along the branches instead of multiplying them! You must always *multiply* across the tree for 'AND' events, and *add* the results for 'OR' events."
+                "ans": "$$\\text{(a) } (3x - 1)^2 - 2, \\text{ (b) } (1, -2)$$",
+                "feedback": "You kept the 3 attached to the $x$ inside the bracket! The correct format requires factorising the $a$ entirely *outside* the completed square: $a(x+b)^2+c$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Factoring First",
+            "content": "Completing the square when the coefficient of $x^2$ is not 1 is a common Grade 9 discriminator. Always factor out the '3' first. If you try to complete the square without this step, the algebra becomes needlessly complex and prone to error."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    },
+    {
+        "id": "002014",
+        "date": "6 February 2026",
+        "major_area": "Algebra",
+        "topic": "Simultaneous Equations",
+        "subtopic": "Simultaneous Equations Non-Linear",
+        "difficulty": "7/8",
+        "q": "Solve the following equations simultaneously to find the coordinates of the points of intersection:<br>$y = x^2$<br>$y = 2x + 3$",
+        "steps": [
+            "We begin by equating the two expressions for $y$: $x^2 = 2x + 3$.",
+            "Rearranging the equation into a quadratic form: $x^2 - 2x - 3 = 0$.",
+            "We factorise the quadratic to find the $x$-values: $(x - 3)(x + 1) = 0$.",
+            "This gives $x = 3$ and $x = -1$.",
+            "We substitute these values into $y = x^2$ to find the corresponding $y$-coordinates: if $x = 3, y = 9$; if $x = -1, y = 1$.",
+            "Final Answer: $$(3, 9) \\text{ and } (-1, 1)$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$x = 3, x = -1$$",
+                "feedback": "You found the correct $x$-values, but you didn't finish the question! When asked for coordinates or solving simultaneous equations, you must always substitute back in to find the $y$-values."
+            },
+            {
+                "ans": "$$(3, 9) \\text{ and } (1, 1)$$",
+                "feedback": "You correctly factorised to $(x-3)(x+1)$, but you forgot to invert the $+1$ sign to get $x = -1$. Because $(-1)^2$ is also 1, this error can sometimes be hidden in the $y$-value check!"
+            },
+            {
+                "ans": "$$(3, 9) \\text{ and } (-1, -1)$$",
+                "feedback": "You calculated $y$ by substituting into $y = x^2$, but you wrote $(-1)^2 = -1$. Remember, a negative number squared is always a positive result!"
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Intersection Logic",
+            "content": "Algebraic simultaneous equations are the numerical way to find where two lines cross. Whenever you see a 'line' and a 'curve', you should expect two pairs of solutions, representing the two distinct points of intersection on the graph."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    },    
+    {
+        "id": "002017",
+        "date": "9 February 2026",
+        "major_area": "Algebra",
+        "topic": "Trigonometric Graphs",
+        "subtopic": "Solving Trig Equations Graphically",
+        "difficulty": "6/7",
+        "q": "(a) State the maximum value of the function $y = 3\\sin(x)$.<br>(b) State the coordinates of the first maximum point of the graph for $x \\ge 0^\\circ$.",
+        "steps": [
+            "For part (a), we recall that the standard sine function, $\\sin(x)$, oscillates between $-1$ and $1$.",
+            "The coefficient $3$ represents the amplitude of the wave, so the maximum value is $3 \\times 1 = 3$.",
+            "For part (b), a standard sine wave reaches its first maximum at $90^\\circ$.",
+            "The $y$-coordinate at this point is the maximum value we found in part (a).",
+            "Final Answer: $$\\text{(a) } 3, \\text{ (b) } (90^\\circ, 3)$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) } 3, \\text{ (b) } (180^\\circ, 3)$$",
+                "feedback": "You got the amplitude right, but $180^\\circ$ is where the sine graph crosses the $x$-axis! A standard sine wave always hits its first peak at $90^\\circ$."
+            },
+            {
+                "ans": "$$\\text{(a) } 3, \\text{ (b) } (0^\\circ, 3)$$",
+                "feedback": "You're thinking of the Cosine graph! The graph of $y = \\cos(x)$ starts at its peak at $0^\\circ$. The Sine graph starts at $0$ and goes up."
+            },
+            {
+                "ans": "$$\\text{(a) } 1, \\text{ (b) } (90^\\circ, 1)$$",
+                "feedback": "You ignored the number $3$ in front of the function! A normal sine wave has a max of 1, but multiplying the function by 3 stretches it vertically (an amplitude of 3)."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Amplitude and Period",
+            "content": "In the form $y = a\\sin(bx)$, the value of '$a$' always dictates the amplitude (the height from the centre). While the wave's height changes, notice that its horizontal position (the $x$-coordinate) remains unchanged unless there is a horizontal transformation inside the bracket."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    },
+    {
+        "id": "002019",
+        "date": "11 February 2026",
+        "major_area": "Algebra",
+        "topic": "Graphs",
+        "subtopic": "Solving Equations Graphically",
+        "difficulty": "6/7",
+        "q": "(a) Describe fully the single transformation that maps the graph of $y = f(x)$ onto the graph of $y = f(x - 2)$.<br>(b) State the transformation that maps $y = f(x)$ onto $y = -f(x)$.",
+        "steps": [
+            "For part (a), we identify that the transformation is inside the function brackets, which affects the $x$-coordinates.",
+            "A subtraction inside the bracket represents a horizontal translation in the <strong>opposite</strong> direction to the sign.",
+            "Therefore, the transformation is a translation by 2 units to the right.",
+            "In formal vector notation, this is $\\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix}$.",
+            "For part (b), an external negative sign reflects all $y$-values across the $x$-axis.",
+            "Final Answer: $$\\text{(a) Translation by } \\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix}, \\text{ (b) Reflection in the } x\\text{-axis}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) Translation by } \\begin{pmatrix} -2 \\\\ 0 \\end{pmatrix}, \\text{ (b) Reflection in the } x\\text{-axis}$$",
+                "feedback": "A very common error! Changes inside the bracket $f(x-a)$ shift the graph in the OPPOSITE direction to the sign. A minus 2 shifts it 2 units to the right (positive $x$ direction)."
+            },
+            {
+                "ans": "$$\\text{(a) Translation by } \\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix}, \\text{ (b) Reflection in the } y\\text{-axis}$$",
+                "feedback": "You translated correctly, but a negative sign OUTSIDE the function ($-f(x)$) negates the $y$-values, which flips the graph upside down across the $x$-axis! A reflection in the $y$-axis would be written as $f(-x)$."
+            },
+            {
+                "ans": "$$\\text{(a) Translation by } \\begin{pmatrix} 0 \\\\ -2 \\end{pmatrix}, \\text{ (b) Reflection in the } x\\text{-axis}$$",
+                "feedback": "Transformations inside the bracket only affect the $x$-axis (horizontal movement). A vertical translation of -2 would be written outside the bracket as $f(x) - 2$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: The 'Inside-Opposite' Rule",
+            "content": "I always tell my students: 'Inside the bracket, do the opposite; outside the bracket, do exactly what it says.' This simple rule will help you navigate almost every transformation question in the Higher Tier syllabus."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    },
+    // 12 February
+    {
+        "id": "002020",
+        "date": "12 February 2026",
+        "major_area": "Algebra",
+        "topic": "Sequences",
+        "subtopic": "Sequencies",
+        "difficulty": "5/6",
+        "q": "The $n^{th}$ term of a sequence is given by the expression $2n^2 + 1$.<br>(a) Find the $3^{rd}$ term of this sequence.<br>(b) Show that $51$ is a term in this sequence.",
+        "steps": [
+            "For part (a), we substitute $n = 3$ into the $n^{th}$ term expression: $2(3^2) + 1$.",
+            "Calculation: $2(9) + 1 = 19$.",
+            "For part (b), we set the expression equal to 51 and solve for $n$: $2n^2 + 1 = 51$.",
+            "Subtracting 1 gives $2n^2 = 50$, then dividing by 2 gives $n^2 = 25$.",
+            "Taking the square root gives $n = 5$. Since 5 is a positive integer, 51 is the $5^{th}$ term of the sequence.",
+            "Final Answer: $$\\text{(a) } 19, \\text{ (b) 5th term (} n=5 \\text{)}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) } 37, \\text{ (b) } n=5$$",
+                "feedback": "In part (a), you calculated $(2 \\times 3)^2 + 1 = 37$. Remember BIDMAS! You must square the $n$ value ($3^2 = 9$) before you multiply by the 2."
+            },
+            {
+                "ans": "$$\\text{(a) } 19, \\text{ (b) Yes}$$",
+                "feedback": "You cannot just write 'Yes'! In an exam, 'Show that' means you must provide mathematical proof. You must write out the algebra to prove that $n = 5$."
+            },
+            {
+                "ans": "$$\\text{(a) } 13, \\text{ (b) } n=25$$",
+                "feedback": "In part (a), it looks like you multiplied $2 \\times 3 \\times 2 + 1$. And in part (b), you found $n^2 = 25$ but forgot to take the square root to find the actual term position!"
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Validating terms",
+            "content": "To prove a value is part of a sequence, you must solve for $n$ and find a positive integer result. If your value of $n$ is a fraction or a decimal, the number cannot be a term in that sequence, as $n$ represents a physical position (1st, 2nd, 3rd...)."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    },
+    {
+        "id": "002022",
+        "date": "14 February 2026",
+        "major_area": "Algebra",
+        "topic": "Graphs",
+        "subtopic": "Equation of a Circle",
+        "difficulty": "6/7",
+        "q": "(a) Write down the equation of a circle with centre $(0, 0)$ and a radius of $5$.<br>(b) Show by calculation that the point $(3, 4)$ lies on the circumference of this circle.",
+        "steps": [
+            "For part (a), we use the general equation for a circle centered at the origin: $x^2 + y^2 = r^2$.",
+            "Substituting $r = 5$, we get $x^2 + y^2 = 5^2$, which simplifies to $x^2 + y^2 = 25$.",
+            "For part (b), a point lies on the circumference if its coordinates satisfy the equation.",
+            "We substitute $x = 3$ and $y = 4$ into the equation: $3^2 + 4^2$.",
+            "Calculation: $9 + 16 = 25$. Since the result equals $r^2$, the point lies on the circle.",
+            "Final Answer: $$\\text{(a) } x^2 + y^2 = 25, \\text{ (b) Shown}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) } x^2 + y^2 = 5, \\text{ (b) Shown}$$",
+                "feedback": "You forgot to square the radius! The standard equation is $x^2 + y^2 = r^2$. If the radius is 5, the number on the right must be 25."
+            },
+            {
+                "ans": "$$\\text{(a) } x + y = 25, \\text{ (b) Not Shown}$$",
+                "feedback": "The equation of a circle must have squared terms ($x^2 + y^2$). Without the squares, you have just written the equation for a straight line!"
+            },
+            {
+                "ans": "$$\\text{(a) } x^2 + y^2 = 10, \\text{ (b) Shown}$$",
+                "feedback": "You multiplied the radius by 2 instead of squaring it! Remember, $r^2$ means $5 \\times 5$, not $5 \\times 2$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Circular Pythagoras",
+            "content": "The equation of a circle is simply Pythagoras' Theorem in disguise. For any point $(x, y)$, the values represent the sides of a right-angled triangle, and '$r$' represents the hypotenuse. Understanding this link makes circle geometry much more intuitive."
+        },
+        "payhip_link": "https://payhip.com/b/XAGch",
+        "button_text": "Master Geometry: Download the Full Geometry Pack"
+    },
+     {
+        "id": "002027",
+        "date": "19 February 2026",
+        "major_area": "Algebra",
+        "topic": "Algebraic Fractions",
+        "subtopic": "Algebraic Fractions 2",
+        "difficulty": "7/8",
+        "q": "Simplify fully: $$\\dfrac{x^2 - 9}{x^2 + 5x + 6}$$",
+        "steps": [
+            "We begin by factorising the numerator using the 'difference of two squares' identity: $x^2 - 9 = (x - 3)(x + 3)$.",
+            "Next, we factorise the quadratic denominator by finding two numbers that multiply to $+6$ and add to $+5$. These are $+2$ and $+3$.",
+            "The denominator becomes $(x + 2)(x + 3)$.",
+            "We identify $(x + 3)$ as a common factor in both the numerator and the denominator and cancel it.",
+            "Final Answer: $$\\dfrac{x - 3}{x + 2}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\dfrac{-9}{5x + 6}$$",
+                "feedback": "You tried to cancel out the $x^2$ terms! You cannot cross out individual parts of an algebraic fraction if they are separated by plus or minus signs. You must factorise the top and bottom into brackets first."
+            },
+            {
+                "ans": "$$\\dfrac{x - 3}{x - 2}$$",
+                "feedback": "You factorised the numerator correctly, but made a sign error on the denominator! The factors of $+6$ that add to $+5$ are $+2$ and $+3$, not $-2$ and $-3$."
+            },
+            {
+                "ans": "$$\\dfrac{x + 3}{x + 2}$$",
+                "feedback": "It looks like you cancelled the wrong bracket! The numerator factorises to $(x-3)(x+3)$. Since the denominator has an $(x+3)$, those are the brackets that cancel out, leaving the $(x-3)$ on top."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: The Hint in the Structure",
+            "content": "When asked to 'simplify fully' an algebraic fraction, it is almost certain that one of the factors in the numerator will match a factor in the denominator. If you find one easily (like the difference of squares), use it as a guide to help you factorise the harder part."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    },
+    {
+        "id": "002030",
+        "date": "22 February 2026",
+        "major_area": "Algebra",
+        "topic": "Indices Laws",
+        "subtopic": "Indices",
+        "difficulty": "6/7",
+        "q": "(a) Evaluate $16^{\\frac{3}{2}}$.<br>(b) Evaluate $16^{-\\frac{3}{2}}$.",
+        "steps": [
+            "For part (a), the denominator of the index represents the square root: $\\sqrt{16} = 4$.",
+            "We then apply the numerator of the index, which is the cube: $4^3 = 64$.",
+            "For part (b), a negative index indicates the reciprocal of the base.",
+            "Using the result from part (a), we take the reciprocal of 64.",
+            "Final Answer: $$\\text{(a) } 64, \\text{ (b) } \\dfrac{1}{64}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) } 24, \\text{ (b) } -24$$",
+                "feedback": "You multiplied 16 by $\\frac{3}{2}$. A fractional index is not a multiplication! The denominator tells you the root (square root), and the numerator tells you the power (cube)."
+            },
+            {
+                "ans": "$$\\text{(a) } 4096, \\text{ (b) } \\dfrac{1}{4096}$$",
+                "feedback": "It looks like you cubed 16 to get 4096, but forgot to take the square root afterwards! Always apply the root (denominator) first to keep the numbers manageable."
+            },
+            {
+                "ans": "$$\\text{(a) } 64, \\text{ (b) } -64$$",
+                "feedback": "You nailed part (a), but made a crucial error in part (b). A negative index does NOT make the answer negative! It means you must find the reciprocal (1 over the number)."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: The 'Root First' Rule",
+            "content": "When evaluating fractional indices, always perform the root (the denominator) before the power (the numerator). Finding the square root of 16 is simple; trying to find the square root of $16^3$ ($4096$) is a much more difficult mental task."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    },
+     {
+        "id": "002035",
+        "date": "27 February 2026",
+        "major_area": "Algebra",
+        "topic": "Inequalities",
+        "subtopic": "Linear Inequalities in two Variables",
+        "difficulty": "7/8",
+        "img": "true",
+        "q": "A region $R$ is defined by the inequalities $y > x$ and $x + y < 4$.<br>(a) Determine if the coordinate point $(1, 1)$ lies within the region $R$.<br>(b) State a coordinate point with integer values that lies strictly inside region $R$.",
+        "steps": [
+            "For part (a), a point lies in the region only if it satisfies <strong>both</strong> inequalities strictly.",
+            "Testing $(1, 1)$ in $y > x$: $1 > 1$ is false (it is equal). Therefore, the point lies on the boundary, not inside the region.",
+            "For part (b), we choose a point where the $y$-value is greater than the $x$-value, and the sum is less than 4.",
+            "Testing $(1, 2)$: $2 > 1$ is true, and $1 + 2 = 3$, which is less than 4. This point satisfies both.",
+            "Final Answer: $$\\text{(a) No}, \\text{ (b) } (1, 2)$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$\\text{(a) Yes}, \\text{ (b) } (1, 1)$$",
+                "feedback": "You assumed that because $(1, 1)$ is on the line $y=x$, it is in the region! The symbol $>$ means strictly greater than. If it was $\\ge$, you would be correct."
+            },
+            {
+                "ans": "$$\\text{(a) No}, \\text{ (b) } (2, 1)$$",
+                "feedback": "Your point $(2, 1)$ has $x=2$ and $y=1$. This fails the first inequality ($y > x$) because $1$ is not greater than $2$!"
+            },
+            {
+                "ans": "$$\\text{(a) Yes}, \\text{ (b) } (2, 2)$$",
+                "feedback": "The point $(2, 2)$ fails both inequalities! $2$ is not strictly greater than $2$, and $2+2=4$, which is not strictly less than $4$."
             }
         ],
         "bradley_insight": {
             "type": "caution",
-            "title": "The Head Teacher's Eye: Reducing the Total",
-            "content": "In 'without replacement' problems, the most common error is forgetting to reduce the denominator for the second pick. Once one counter is removed, there are only 9 left in the bag. Always double-check your second fraction before multiplying."
+            "title": "The Head Teacher's Eye: Strict Inequalities",
+            "content": "Pay close attention to the symbols. The 'greater than' symbol ($>$) means the region does <strong>not</strong> include the line itself. On a graph, this is represented by a dashed line. Points lying on that dashed line are not part of the solution set."
         },
-        "payhip_link": "https://payhip.com/b/XAGch",
-        "button_text": "Master Probability: Download the Full Pack"
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
     },
-    // 30 Jan
+    // 28 February
     {
-        "id": "002007",
-        "date": "30 Jan 2026",
-        "major_area": "Number",
-        "topic": "Estimation & Bounds",
-        "subtopic": "Limits of Accuracy and Bounds",
+        "id": "002036",
+        "date": "28 February 2026",
+        "major_area": "Algebra",
+        "topic": "Indices Laws",
+        "subtopic": "Indices",
         "difficulty": "6/7",
-        "q": "The values $x = 10$ and $y = 5$ are both rounded to 1 significant figure. Calculate the maximum possible value (Upper Bound) of $x - y$.",
-        "img": "",
+        "q": "(a) Solve the equation $3^{2x} = 27$.<br>(b) Find the value of $y$ for which $3^{y} = \\dfrac{1}{27}$.",
         "steps": [
-            "For $x=10$ rounded to 1 s.f., the range is between 5 and 15. Therefore, the Upper Bound ($UB_x$) is 15.",
-            "For $y=5$ rounded to 1 s.f., the range is between 4.5 and 5.5. Therefore, the Lower Bound ($LB_y$) is 4.5.",
-            "To maximise the result of a subtraction, we must use the largest possible value for the first number and the smallest possible value for the second: $UB_x - LB_y$.",
-            "Calculation: $15 - 4.5 = 10.5$.",
-            "Final Answer: $$10.5$$"
+            "For part (a), we first express 27 as a power of 3: $27 = 3^3$.",
+            "Since the bases are now equal, we can equate the indices: $2x = 3$.",
+            "Solving for $x$: $x = 1.5$.",
+            "For part (b), we express $\\dfrac{1}{27}$ as a power of 3.",
+            "We know $27 = 3^3$, so the reciprocal $\\dfrac{1}{27} = 3^{-3}$.",
+            "Therefore, $y = -3$.",
+            "Final Answer: $$\\text{(a) } 1.5, \\text{ (b) } -3$$"
         ],
         "wrong_options": [
             {
-                "ans": "$$9.5$$",
-                "feedback": "You subtracted the Upper Bound of $y$ ($5.5$) from the Upper Bound of $x$ ($15$). To maximise a subtraction, you must subtract the *smallest* possible value ($LB_y$) from the largest possible value ($UB_x$)."
+                "ans": "$$\\text{(a) } 3, \\text{ (b) } \\dfrac{1}{3}$$",
+                "feedback": "For part (a), you found that $2x = 3$, but forgot to divide by 2! For part (b), a fraction like $\\frac{1}{27}$ is created by a *negative* index, not a fractional index."
             },
             {
-                "ans": "$$5.5$$",
-                "feedback": "You used the Lower Bounds for both numbers ($5 - 4.5$)! This actually gives you the *minimum* possible value. To find the maximum difference, you need $UB_x - LB_y$."
+                "ans": "$$\\text{(a) } 9, \\text{ (b) } -9$$",
+                "feedback": "It looks like you divided 27 by 3 to get 9! Indices represent powers ($3 \\times 3 \\times 3 = 27$), not multiplication ($3 \\times 9 = 27$)."
             },
             {
-                "ans": "$$20.5$$",
-                "feedback": "You added the Upper Bound of $x$ and the Upper Bound of $y$! The question asks for the maximum value of $x - y$, which is a subtraction."
+                "ans": "$$\\text{(a) } 1.5, \\text{ (b) } 3$$",
+                "feedback": "You nailed part (a), but missed the negative sign in part (b). $3^3 = 27$, but because the 27 is on the denominator of a fraction, the index must be negative ($-3$)."
             }
         ],
         "bradley_insight": {
             "type": "pro-tip",
-            "title": "The Head Teacher's Eye: Subtraction Bounds",
-            "content": "Maximising a subtraction is counter-intuitive for many students. To get the largest possible 'gap', you must start as high as you can ($UB$) and take away as little as you can ($LB$). Many candidates incorrectly use the Upper Bound for both, which results in a smaller difference."
+            "title": "The Head Teacher's Eye: Equalising the Base",
+            "content": "The 'secret' to solving index equations is finding a common base. Once you have transformed both sides into powers of 3, the algebra becomes a simple linear equation. Mastery of this technique is vital for the more complex exponential questions in Paper 2."
         },
-        "payhip_link": "https://payhip.com/b/IVWzJ",
-        "button_text": "Master Number: Download the Full Number Pack"
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
     },
-    // 31 Jan
-    {
-        "id": "002008",
-        "date": "31 Jan 2026",
-        "major_area": "Geometry & Measures",
-        "topic": "Coordinates",
-        "subtopic": "Equation of a Circle",
-        "difficulty": "8/9",
-        "img": "true",
-        "q": "Find the gradient of the tangent to the circle $x^2 + y^2 = 25$ at the coordinate point $(3, 4)$.",
+          {
+        "id": "002039",
+        "date": "3 March 2026",
+        "major_area": "Algebra",
+        "topic": "Expanding Brackets",
+        "subtopic": "Expanding Brackets",
+        "difficulty": "6/7",
+        "q": "(a) Expand and simplify $(x + 4)(x - 1)(x + 2)$.<br>(b) State the coefficient of the $x$ term in the resulting expression.",
         "steps": [
-            "We first identify the gradient of the radius from the origin $(0, 0)$ to the point $(3, 4)$.",
-            "Using the gradient formula: $m = \\dfrac{y_2 - y_1}{x_2 - x_1} = \\dfrac{4 - 0}{3 - 0} = \\dfrac{4}{3}$.",
-            "A geometric property of circles is that the tangent is always perpendicular to the radius at the point of contact.",
-            "The gradient of the tangent is the negative reciprocal of the radius gradient.",
-            "Calculation: $-\\dfrac{1}{4/3} = -\\dfrac{3}{4}$.",
-            "Final Answer: $$-\\dfrac{3}{4}$$"
+            "For part (a), we first expand the first two brackets: $(x + 4)(x - 1) = x^2 - x + 4x - 4 = x^2 + 3x - 4$.",
+            "Next, we multiply this resulting quadratic by the final bracket: $(x^2 + 3x - 4)(x + 2)$.",
+            "Distributing the terms: $x(x^2 + 3x - 4) + 2(x^2 + 3x - 4) = x^3 + 3x^2 - 4x + 2x^2 + 6x - 8$.",
+            "Collecting like terms: $x^3 + 5x^2 + 2x - 8$.",
+            "For part (b), the coefficient is the numerical value multiplying the $x$ term.",
+            "Final Answer: $$\\text{(a) } x^3 + 5x^2 + 2x - 8, \\text{ (b) } 2$$"
         ],
         "wrong_options": [
             {
-                "ans": "$$\\dfrac{4}{3}$$",
-                "feedback": "You successfully found the gradient of the radius, but the question asked for the gradient of the *tangent*. The tangent is always perpendicular to the radius!"
+                "ans": "$$\\text{(a) } x^3 + 5x^2 + 2x + 8, \\text{ (b) } 2$$",
+                "feedback": "You made a sign error on the final constant! The first two brackets give a $-4$. Multiplying $-4$ by the $+2$ in the final bracket must result in a negative 8."
             },
             {
-                "ans": "$$-\\dfrac{4}{3}$$",
-                "feedback": "You remembered to make the gradient negative, but you forgot to find the reciprocal (flip the fraction)! Perpendicular gradients follow the rule $m_1 \\times m_2 = -1$."
+                "ans": "$$\\text{(a) } x^3 + 5x^2 + 10x - 8, \\text{ (b) } 10$$",
+                "feedback": "When distributing the final bracket, you likely added the $x$ terms incorrectly. $-4x + 6x = +2x$. It looks like you added $4x$ and $6x$ instead."
             },
             {
-                "ans": "$$\\dfrac{3}{4}$$",
-                "feedback": "You calculated the gradient of the radius upside down as 'change in $x$' over 'change in $y$'. Gradient is always rise over run ($y$ over $x$)."
+                "ans": "$$\\text{(a) } x^3 - 8, \\text{ (b) } 0$$",
+                "feedback": "You cannot simply multiply the first terms ($x \\times x \\times x$) and the last terms ($4 \\times -1 \\times 2$)! You must fully expand the expression to find the $x^2$ and $x$ components."
             }
         ],
         "bradley_insight": {
             "type": "pro-tip",
-            "title": "The Head Teacher's Eye: Tangent Perpendicularity",
-            "content": "This is a classic high-tier coordinate geometry question. You aren't given the line for the tangent, so you must use the radius as your 'anchor'. Just remember: Radius $\\perp$ Tangent. Once you have the radius gradient, the negative reciprocal gives you the tangent gradient immediately."
+            "title": "The Head Teacher's Eye: Systematic Expansion",
+            "content": "When expanding triple brackets, always deal with two at a time and simplify the result before introducing the third. This reduces the number of simultaneous terms you are managing and significantly lowers the risk of sign errors."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    },
+    {
+        "id": "002042",
+        "date": "6 March 2026",
+        "major_area": "Algebra",
+        "topic": "Simultaneous Equations",
+        "subtopic": "Simultaneous Equations Non-Linear",
+        "difficulty": "8/9",
+        "q": "Solve the simultaneous equations to find the coordinates of the points of intersection:<br>$y = 2x + 1$<br>$x^2 + y^2 = 13$",
+        "steps": [
+            "We use the substitution method by replacing $y$ in the second equation with the expression from the first: $x^2 + (2x + 1)^2 = 13$.",
+            "Expanding the bracket: $x^2 + (4x^2 + 4x + 1) = 13$.",
+            "Simplifying and setting to zero: $5x^2 + 4x - 12 = 0$.",
+            "Using the quadratic formula or factorising: $(5x - 6)(x + 2) = 0$.",
+            "This gives $x = 1.2$ and $x = -2$.",
+            "Substituting $x = 1.2$ into $y = 2x + 1$: $y = 2(1.2) + 1 = 3.4$.",
+            "Substituting $x = -2$ into $y = 2x + 1$: $y = 2(-2) + 1 = -3$.",
+            "Final Answer: $$\\text{(a) } (1.2, 3.4) \\text{ and } (-2, -3)$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(1.5, 4) \\text{ and } (-2.4, -3.8)$$",
+                "feedback": "You expanded $(2x+1)^2$ as $4x^2+1$ and completely forgot the middle term ($+4x$)! You must always write the bracket out twice and use FOIL."
+            },
+            {
+                "ans": "$$x = 1.2, x = -2$$",
+                "feedback": "You solved the quadratic perfectly, but stopped halfway! The question asks for 'coordinates of intersection'. You must substitute your $x$ values back into the linear equation to find the $y$ values."
+            },
+            {
+                "ans": "$$(-1.2, -1.4) \\text{ and } (2, 5)$$",
+                "feedback": "You factorised perfectly to $(5x-6)(x+2)=0$, but you made a sign error when solving the brackets. Remember, if $(x+2)=0$, then $x=-2$!"
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: The Substitution Mandate",
+            "content": "When one equation is linear and the other is quadratic, 'elimination' is impossible. Substitution is your only formal path. Always substitute the linear expression into the quadratic one, and remember to expand your binomial brackets $(2x+1)^2$ fully; missing that middle term will derail the entire problem."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    },
+     {
+        "id": "002046",
+        "date": "10 March 2026",
+        "major_area": "Algebra",
+        "topic": "Factorising",
+        "subtopic": "Quadratics Equations Factorising",
+        "difficulty": "7/8",
+        "q": "(a) Factorise fully $2x^2 - 7x + 6$.<br>(b) Hence, solve the equation $2x^2 - 7x + 6 = 0$.",
+        "steps": [
+            "For part (a), we look for two numbers that multiply to $ac$ ($2 \\times 6 = 12$) and add to $b$ ($-7$).",
+            "The numbers are $-3$ and $-4$.",
+            "We split the middle term: $2x^2 - 4x - 3x + 6$.",
+            "Factorising by grouping: $2x(x - 2) - 3(x - 2)$.",
+            "This yields the two brackets $(2x - 3)(x - 2)$.",
+            "For part (b), we set each factor to zero: $2x - 3 = 0 \\implies x = 1.5$; $x - 2 = 0 \\implies x = 2$.",
+            "Final Answer: $$(a)\\ (2x - 3)(x - 2),\\ (b)\\ x = 1.5, x = 2$$"
+        ],
+        "wrong_options": [
+    {
+        "ans": "$$(2x + 3)(x - 2),\\ x = -1.5,\\ x = 2$$",
+        "feedback": "You found numbers that multiply to 12 but got the signs wrong. This changes the roots completely."
+    },
+    {
+        "ans": "$$(2x - 3)(x + 2),\\ x = 1.5,\\ x = -2$$",
+        "feedback": "You factorised incorrectly — the middle term would be $+x$, not $-7x$. The incorrect factorisation leads to the wrong second root."
+    },
+    {
+        "ans": "$$2(x - 3)(x - 2),\\ x = 3,\\ x = 2$$",
+        "feedback": "You pulled out a factor of 2 incorrectly. Expanding your brackets does not give the original quadratic."
+    }
+],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: The AC Method",
+            "content": "When the coefficient of $x^2$ is greater than 1, 'trial and error' factorisation is risky. I strongly recommend the 'AC method' (splitting the middle term). It is a systematic process that works every time and provides a clear audit trail for the examiner to award method marks."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    },
+    {
+        "id": "002050",
+        "date": "14 March 2026",
+        "major_area": "Algebra",
+        "topic": "Inequalities",
+        "subtopic": "Linear inequalities in One Variable",
+        "difficulty": "5/6",
+        "q": "(a) Solve the inequality $5x - 3 > 3x + 11$.<br>(b) List all the integer values of $n$ such that $-2 < n \\le 3$.",
+        "steps": [
+            "For part (a), we treat the inequality like an equation. Subtract $3x$ from both sides: $2x - 3 > 11$.",
+            "Add 3 to both sides: $2x > 14$.",
+            "Divide by 2: $x > 7$.",
+            "For part (b), we look for whole numbers that are strictly greater than $-2$ and less than or equal to 3.",
+            "The values are $-1, 0, 1, 2, 3$.",
+            "Final Answer: $$(a)\\ x > 7,\\ (b)\\ -1, 0, 1, 2, 3$$"
+        ],
+        "wrong_options": [
+    {
+        "ans": "$$x > 4,\\ -2, -1, 0, 1, 2, 3$$",
+        "feedback": "You subtracted 3 incorrectly when solving the inequality. Also, $-2$ should not be included because the inequality is strict."
+    },
+    {
+        "ans": "$$x > 7,\\ -1, 0, 1, 2$$",
+        "feedback": "Part (a) is correct, but you missed the value $3$ in part (b). The symbol $\\le 3$ means 3 must be included."
+    },
+    {
+        "ans": "$$x > 14,\\ 0, 1, 2, 3$$",
+        "feedback": "You divided by 2 incorrectly in part (a). In part (b), you forgot that the values must be greater than $-2$, so $-1$ should be included."
+    }
+],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Inclusion Symbols",
+            "content": "The most common loss of marks here is including '$-2$' or omitting '$3$'. Look closely at the symbol: the bar underneath ($\le$) means the number is included, while the strict inequality ($<$) means the number is not part of the set."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    },
+    {
+        "id": "002054",
+        "date": "18 March 2026",
+        "major_area": "Algebra",
+        "topic": "Turning Points",
+        "subtopic": "Completing the Square",
+        "difficulty": "7/8",
+        "q": "(a) Write $x^2 + 6x + 5$ in the form $(x + a)^2 + b$.<br>(b) State the coordinates of the turning point of the graph of $y = x^2 + 6x + 5$.",
+        "steps": [
+            "For part (a), we take half of the coefficient of $x$: $6 \\div 2 = 3$.",
+            "We write $(x + 3)^2$ and subtract the square of this value: $(x + 3)^2 - 3^2 + 5$.",
+            "Simplifying the constants: $(x + 3)^2 - 9 + 5 = (x + 3)^2 - 4$.",
+            "For part (b), the turning point of $y = (x + p)^2 + q$ is at $(-p, q)$.",
+            "Substituting our values, the turning point is $(-3, -4)$.",
+            "Final Answer: $$(a)\\ (x + 3)^2 - 4,\\ (b)\\ (-3, -4)$$"
+        ],
+        "wrong_options": [
+    {
+        "ans": "$$(x + 3)^2 + 5,\\ (-3, 5)$$",
+        "feedback": "You forgot to subtract the square of 3 when completing the square. This changes the constant term and the turning point."
+    },
+    {
+        "ans": "$$(x + 6)^2 - 31,\\ (-6, -31)$$",
+        "feedback": "You halved the coefficient incorrectly. Half of 6 is 3, not 6."
+    },
+    {
+        "ans": "$$(x - 3)^2 - 4,\\ (3, -4)$$",
+        "feedback": "You changed the sign inside the bracket. The expression $(x+3)^2$ gives a turning point at $(-3, -4)$, not $(3, -4)$."
+    }
+],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: The Turning Point Sign",
+            "content": "A frequent error is giving the turning point as $(3, -4)$. Remember that to make the squared bracket equal zero, $x$ must be the negative of the value inside the bracket. This represents a horizontal translation of the graph of $y = x^2$ by 3 units to the left."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    },
+    // 19 March
+    {
+        "id": "002055",
+        "date": "19 March 2026",
+        "major_area": "Algebra",
+        "topic": "Algebraic Fractions",
+        "subtopic": "Algebraic Fractions 2",
+        "difficulty": "7/8",
+        "q": "Simplify fully the expression: $$\\dfrac{2x^2 - 8}{4x^2+8x}$$",
+        "steps": [
+            "First, we factorise the numerator. We factor out the common factor 2: $2(x^2 - 4)$.",
+            "Next, we recognise the difference of two squares in the bracket: $2(x - 2)(x + 2)$.",
+            "Now, we factorise the denominator by taking out the common factor $4x$: $4x(x + 2)$.",
+            "We cancel the common factor of $(x + 2)$ from both the numerator and denominator.",
+            "Finally, we simplify the coefficients $\\dfrac{2}{4x} = \\dfrac{1}{2x}$.",
+            "The remaining factor in the numerator is $(x - 2)$.",
+            "Final Answer: $$\\dfrac{x - 2}{2x}$$"
+        ],
+        "wrong_options": [
+    {
+        "ans": "$$\\dfrac{2(x-2)}{4x}$$",
+        "feedback": "You cancelled the $(x+2)$ correctly but forgot that the numerator was $2(x-2)$, not just $(x-2)$. You must simplify the coefficients as well."
+    },
+    {
+        "ans": "$$\\dfrac{x^2-4}{2x(x+2)}$$",
+        "feedback": "You factorised the numerator but didn’t factorise the denominator fully. The denominator must be written as $4x(x+2)$ before cancelling."
+    },
+    {
+        "ans": "$$\\dfrac{x+2}{2x}$$",
+        "feedback": "You cancelled the wrong bracket. The numerator is $2(x-2)(x+2)$, so the $(x+2)$ cancels, leaving $(x-2)$, not $(x+2)$."
+    }
+],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Nested Factorisation",
+            "content": "This problem requires two levels of factorisation in the numerator: first a common factor, then the difference of two squares. Always look for that squared term subtraction ($x^2 - a^2$); it is the most common hidden structure in algebraic fraction questions."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    },
+    {
+        "id": "002058",
+        "date": "22 March 2026",
+        "major_area": "Algebra",
+        "topic": "Numerical Methods",
+        "subtopic": "General Iterative Processes",
+        "difficulty": "7/8",
+        "q": "The equation $x^3 + x - 1 = 0$ has a solution between $x = 0$ and $x = 1$.<br>(a) Show that the equation can be rearranged to give $x = \\sqrt[3]{1 - x}$.<br>(b) Using the iterative formula $x_{n+1} = \\sqrt[3]{1 - x_n}$ and starting with $x_1 = 0.5$, calculate the values of $x_2$ and $x_3$. Give your answer for $x_3$ to 3 decimal places.",
+        "steps": [
+            "For part (a), we begin with $x^3 + x - 1 = 0$.",
+            "We isolate the $x^3$ term by adding 1 and subtracting $x$ from both sides: $x^3 = 1 - x$.",
+            "Taking the cube root of both sides yields $x = \\sqrt[3]{1 - x}$, as required.",
+            "For part (b), we substitute $x_1 = 0.5$ into the formula: $x_2 = \\sqrt[3]{1 - 0.5} = \\sqrt[3]{0.5}$.",
+            "Calculation: $x_2 \\approx 0.79370...$.",
+            "We now substitute $x_2$ back into the formula: $x_3 = \\sqrt[3]{1 - 0.79370...}$.",
+            "Calculation: $x_3 = \\sqrt[3]{0.20629...} \\approx 0.59079...$.",
+            "Rounding to 3 decimal places gives 0.591.",
+            "Final Answer: $$(a)\\ \\text{Shown},\\ (b)\\ x_2 = 0.794, x_3 = 0.591$$"
+        ],
+        "wrong_options": [
+    {
+        "ans": "$$x_2 = 0.5,\\ x_3 = 0.5$$",
+        "feedback": "You reused the starting value instead of applying the iteration. Each new value must be substituted back into the formula."
+    },
+    {
+        "ans": "$$x_2 = 0.794,\\ x_3 = 0.794$$",
+        "feedback": "You calculated $x_2$ correctly but forgot to use it to find $x_3$. Iteration requires repeated substitution."
+    },
+    {
+        "ans": "$$x_2 = 0.63,\\ x_3 = 0.86$$",
+        "feedback": "You used square roots instead of cube roots. The formula uses a cube root: $x_{n+1} = \\sqrt[3]{1 - x_n}$."
+    }
+],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Iteration Efficiency",
+            "content": "On your calculator, type '0.5' and press '='. Then type the cube root of '(1 - ANS)'. Each time you press '=', the calculator will automatically perform the next iteration. This technique eliminates rounding errors and ensures your final answer is perfectly accurate."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    },
+    {
+        "id": "002060",
+        "date": "24 March 2026",
+        "major_area": "Algebra",
+        "topic": "Functions",
+        "subtopic": "Composite Functions",
+        "difficulty": "7/8",
+        "q": "The functions $f$ and $g$ are defined as $f(x) = 3x - 2$ and $g(x) = x^2$.<br>(a) Find an expression for $fg(x)$.<br>(b) Find an expression for $gf(x)$.<br>(c) Solve the equation $gf(x) = 1$.",
+        "steps": [
+            "For part (a), $fg(x)$ means we substitute the function $g$ into the function $f$: $f(x^2) = 3(x^2) - 2 = 3x^2 - 2$.",
+            "For part (b), $gf(x)$ means we substitute the function $f$ into the function $g$: $g(3x - 2) = (3x - 2)^2$.",
+            "Expanding the bracket: $(3x - 2)(3x - 2) = 9x^2 - 6x - 6x + 4 = 9x^2 - 12x + 4$.",
+            "For part (c), we set $gf(x) = 1$: $(3x - 2)^2 = 1$.",
+            "Taking the square root of both sides: $3x - 2 = 1$ or $3x - 2 = -1$.",
+            "Solving the first case: $3x = 3 \\implies x = 1$.",
+            "Solving the second case: $3x = 1 \\implies x = \\dfrac{1}{3}$.",
+            "Final Answer: $$(a)\\ 3x^2 - 2,\\ (b)\\ 9x^2 - 12x + 4,\\ (c)\\ x = 1, x = \\dfrac{1}{3}$$"
+        ],
+        "wrong_options": [
+    {
+        "ans": "$$fg(x) = 3x - 2,\\ gf(x) = 9x - 2,\\ x = 1$$",
+        "feedback": "You substituted incorrectly. $fg(x)$ means substitute $g(x)$ into $f$, not the other way around."
+    },
+    {
+        "ans": "$$fg(x) = 3x^2 - 2,\\ gf(x) = 9x^2 - 12x + 4,\\ x = -1$$",
+        "feedback": "Parts (a) and (b) are correct, but you solved $(3x - 2)^2 = 1$ incorrectly. Both positive and negative square roots must be considered."
+    },
+    {
+        "ans": "$$fg(x) = 3x^2 - 2,\\ gf(x) = (3x - 2),\\ x = \\dfrac{1}{3}$$",
+        "feedback": "You forgot to square the bracket in $gf(x)$. $g(x)$ squares its input, so $(3x - 2)$ must be squared."
+    }
+],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Function Order",
+            "content": "The order of operations is vital in composite functions. $fg(x)$ is not the same as $gf(x)$. In part (c), many students forget the negative square root. Remember that both $1^2$ and $(-1)^2$ equal 1; missing the second solution could cost you two marks."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    },
+    {
+        "id": "002064",
+        "date": "28 March 2026",
+        "major_area": "Algebra",
+        "topic": "Algebraic Proof",
+        "subtopic": "Algebraic Proof",
+        "difficulty": "8/9",
+        "q": "Prove algebraically that the square of any odd number is always one more than a multiple of 4.",
+        "steps": [
+            "We define any odd number as $2n + 1$, where $n$ is an integer.",
+            "We square this expression: $(2n + 1)^2$.",
+            "Expanding the bracket: $(2n + 1)(2n + 1) = 4n^2 + 4n + 1$.",
+            "We factorise the first two terms by taking out a factor of 4: $4(n^2 + n) + 1$.",
+            "Since $n$ is an integer, $n^2 + n$ is also an integer. Let this be $k$.",
+            "The expression is now in the form $4k + 1$, which is one more than a multiple of 4.",
+            "Final Answer: $$4(n^2 + n) + 1 \\text{ is one more than a multiple of 4}$$"
+        ],
+        "wrong_options": [
+    {
+        "ans": "$$(2n+1)^2 = 4n^2 + 1,\\ \\text{so it is odd}$$",
+        "feedback": "You forgot the middle term $4n$. Without it, the expression cannot be written in the form $4k+1$."
+    },
+    {
+        "ans": "$$(2n-1)^2 = 4n^2 - 4n + 1,\\ \\text{so it is even}$$",
+        "feedback": "You used a valid odd number form, but concluded it was even. The expression is $4k+1$, which is odd, not even."
+    },
+    {
+        "ans": "$$(2n+1)^2 = 2(2n^2 + 2n + 1)$$",
+        "feedback": "You factored out a 2 incorrectly. The expression cannot be written as $2(\text{integer})$ because it is always odd."
+    }
+],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Defining integers",
+            "content": "In an algebraic proof, you must define your terms. Simply writing $(2n+1)^2$ is not enough; you should state that $n$ is an integer. The final step—factorising out the specific number mentioned in the question (in this case, 4)—is what completes the logical chain for the examiner."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
+    },
+    // 29 March
+    {
+        "id": "002065",
+        "date": "29 March 2026",
+        "major_area": "Algebra",
+        "topic": "Circle Equations",
+        "subtopic": "Equation of a Circle",
+        "difficulty": "7/8",
+        "q": "(a) Find the equation of the circle with centre $(2, -3)$ and radius $5$.<br>(b) Show by calculation that the point $(5, 1)$ lies on the circumference of this circle.",
+        "steps": [
+            "For part (a), we use the general equation $(x - a)^2 + (y - b)^2 = r^2$, where $(a, b)$ is the centre.",
+            "Substituting $a = 2$, $b = -3$, and $r = 5$: $(x - 2)^2 + (y - (-3))^2 = 5^2$.",
+            "Simplifying gives $(x - 2)^2 + (y + 3)^2 = 25$.",
+            "For part (b), we substitute $x = 5$ and $y = 1$ into our equation.",
+            "Calculation: $(5 - 2)^2 + (1 + 3)^2 = 3^2 + 4^2$.",
+            "Simplifying: $9 + 16 = 25$.",
+            "Since the result equals $r^2$, the point satisfies the equation and lies on the circumference.",
+            "Final Answer: $$(a)\\ (x - 2)^2 + (y + 3)^2 = 25,\\ (b)\\ \\text{Shown}$$"
+        ],
+        "wrong_options": [
+    {
+        "ans": "$$(x + 2)^2 + (y - 3)^2 = 25,\\ \\text{Not shown}$$",
+        "feedback": "You changed both signs incorrectly. Remember: $(x - a)$ and $(y - b)$ use the centre $(a, b)$ exactly as given."
+    },
+    {
+        "ans": "$$(x - 2)^2 + (y + 3)^2 = 25,\\ 9 + 4 = 13$$",
+        "feedback": "Part (a) is correct, but you substituted the point incorrectly. $(1+3)^2$ should be $16$, not $4$."
+    },
+    {
+        "ans": "$$(x - 2)^2 + (y - 3)^2 = 25,\\ 9 + 16 = 25$$",
+        "feedback": "You used the wrong sign for the $y$‑coordinate in the equation. The centre is $(2, -3)$, so the equation must use $(y + 3)$."
+    }
+],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Coordinate Sign Trap",
+            "content": "Be extremely careful when the centre coordinate is negative. Subtracting a negative value, $(y - (-3))$, becomes $(y + 3)$. It is a very common error for students to leave the sign as negative, which would describe a completely different circle."
         },
         "payhip_link": "https://payhip.com/b/XAGch",
         "button_text": "Master Geometry: Download the Full Geometry Pack"
+    },
+     {
+        "id": "002067",
+        "date": "31 March 2026",
+        "major_area": "Algebra",
+        "topic": "Algebraic Proof",
+        "subtopic": "Algebraic Proof",
+        "difficulty": "8/9",
+        "q": "Prove algebraically that for any integer $n$, the expression $n^2 - n$ is always an even number.",
+        "steps": [
+            "We begin by factorising the expression: $n^2 - n = n(n - 1)$.",
+            "We observe that $n$ and $(n - 1)$ are consecutive integers.",
+            "In any pair of consecutive integers, one of the numbers must be even and the other must be odd.",
+            "The product of an even number and an odd number is always an even number.",
+            "Therefore, $n(n - 1)$ is always even for all integer values of $n$.",
+            "Final Answer: $$n(n-1) \\text{ is always even}$$"
+        ],
+        "wrong_options": [
+    {
+        "ans": "$$n(n-1) = n^2 - 1,\\ \\text{always even}$$",
+        "feedback": "You expanded incorrectly. $n(n-1)$ expands to $n^2 - n$, not $n^2 - 1$."
+    },
+    {
+        "ans": "$$n(n-1) = 2k + 1$$",
+        "feedback": "You concluded the expression is odd. One of the consecutive integers is always even, so the product must be even."
+    },
+    {
+        "ans": "$$n(n-1) = 2n^2 - 2n$$",
+        "feedback": "You multiplied the entire expression by 2 unnecessarily. The goal is to show the expression itself is even, not $2$ times the expression."
+    }
+],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Logic vs Expansion",
+            "content": "Sometimes the most elegant proof doesn't involve complex expansion but clever factorisation. By showing the expression is a product of consecutive integers, you provide a universal logical proof that applies to all cases without needing to test numbers individually."
+        },
+        "payhip_link": "https://payhip.com/b/wRN86",
+        "button_text": "Master Algebra: Download the Full Algebra Pack"
     }
 ];
