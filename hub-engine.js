@@ -13,12 +13,12 @@ const BradleyHub = {
         isTeacherMode: false
     },
     //DAILY SCORE
-     getDailyScore() {
-        let stats = JSON.parse(localStorage.getItem('bradley_stats') || '{"todayRight": 0, "todayAttempted": 0, "lastDate": ""}');
-        const today = new Date().toISOString().split('T')[0];
-        if (stats.lastDate !== today) return 0;
-        return stats.todayRight;
-    },
+     //getDailyScore() {
+      //  let stats = JSON.parse(localStorage.getItem('bradley_stats') || '{"todayRight": 0, "todayAttempted": 0, "lastDate": ""}');
+      // const today = new Date().toISOString().split('T')[0];
+       // if (stats.lastDate !== today) return 0;
+      //  return stats.todayRight;
+   // },
     // AUTOMATIC WORKSHEET LOOKUP DIRECTORY (Separated by Tier)
     worksheetDirectory: {
         gcse: {
@@ -406,7 +406,7 @@ const BradleyHub = {
                     <h3 style="margin: 0 0 10px 0; color: var(--brand-purple-dark);">Your Revision Rank: ${rank}</h3>
                     ${progressHTML}
                     ${premiumStatus}
-                    <span><p>Correct today: ${BradleyHub.getDailyScore()}</p></span>
+                    <!-- <p>Correct today: ${BradleyHub.getDailyScore()}</p> -->
                 </div>
 
                 <h3 style="color: var(--brand-purple);">Step 1: Choose an Area</h3>
