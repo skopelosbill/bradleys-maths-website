@@ -18,7 +18,7 @@ const BradleyHub = {
         const today = new Date().toISOString().split('T')[0];
         if (stats.lastDate !== today) return 0;
         return stats.todayRight;
-    }
+    },
     // AUTOMATIC WORKSHEET LOOKUP DIRECTORY (Separated by Tier)
     worksheetDirectory: {
         gcse: {
