@@ -1,5 +1,5 @@
 // hub-engine.js - Bradley Gold Standard Unified Engine (Monday Realignment)
-const BradleyHub = {
+const BraadleyHub = {
     state: {
         tier: localStorage.getItem('bradley_tier') || 'gcse',
         seenIds: JSON.parse(localStorage.getItem('bradley_seen_ids') || '[]'),
