@@ -1,22 +1,23 @@
-// sw.js - Bradley's Maths Hub Service Worker
-const CACHE_NAME = 'bradleys-maths-hub-v1';
+// sw.js - Bradley's Maths Service Worker
+const CACHE_NAME = 'bradleys-maths-v1';
 
-// Install: Skip waiting to activate immediately
+// Install event
 self.addEventListener('install', event => {
+    console.log('Service Worker installed.');
     self.skipWaiting();
 });
 
-// Fetch: Always check the cache first. 
-// If it's not there, fetch it from the network and save it.
+// Activate event
+self.addEventListener('activate', event => {
+    console.log('Service Worker activated.');
+});
+
+// Fetch event (Bypasses caching so you don't get stuck with old code!)
 self.addEventListener('fetch', event => {
     event.respondWith(
-        caches.open(CACHE_NAME).then(cache => {
-            return cache.match(event.request).then(response => {
-                return response || fetch(event.request).then(networkResponse => {
-                    cache.put(event.request, networkResponse.clone());
-                    return networkResponse;
-                });
-            });
+        fetch(event.request).catch(() => {
+            console.log('Offline mode triggered.');
+            // You can add a custom offline HTML page here later if you want!
         })
     );
 });

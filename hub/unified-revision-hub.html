@@ -23,9 +23,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- PWA App Links -->
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#5C2092">
-    <link rel="apple-touch-icon" href="/images/app-icon-192.png">
+    <link rel="apple-touch-icon" href="images/app-icon-192.png">
 
     <!-- DEFAULTS (will be replaced by overrides if present) -->
     <title>Bradley's Maths</title>
@@ -43,7 +43,7 @@
     <meta property="og:image" content="">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="styles.css">
 
     <!-- MathJax -->
     <script>
@@ -166,7 +166,7 @@
     </main>
 
     <!-- Hub engine -->
-    <script src="/hub-engine.js"></script>
+    <script src="hub-engine.js"></script>
 
     <!-- Hub wiring -->
     <!-- Hub wiring (Gateway Redirects) -->
@@ -193,7 +193,7 @@
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js').then(reg => {
+          navigator.serviceWorker.register('sw.js').then(reg => {
             console.log('App ready for download!', reg.scope);
           }).catch(err => {
             console.error('App download registration failed:', err);

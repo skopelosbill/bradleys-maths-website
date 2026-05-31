@@ -19,13 +19,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // --- 2. SELECTION LOGIC ---
     // Pulls from the monthly file loaded via the HTML script tag
-    
     const todaysProblem = problemBank[dayNumeric - 1];
     
     if (!todaysProblem) {
         console.error("Problem not found for today's date in the bank.");
         return;
-    } 
+    }
 
     // --- 3. AUTOMATIC IMAGE PATH ---
     // Determines tier based on URL and builds path: images/04/g_26.png
