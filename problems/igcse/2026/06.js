@@ -6,7 +6,7 @@ const problemBank = [
         "major_area": "Number",
         "topic": "Sets",
         "subtopic": "Sets and Venn Diagrams",
-        "difficulty": "B/C",
+        "difficulty": "6/7",
         "img": "true",
         "q": "In a group of 50 students, 30 study History ($H$) and 26 study Geography ($G$). There are 8 students who study neither subject.<br>(a) Use this information to complete the Venn diagram.<br>(b) Find the value of $n(H \\cap G)$.<br>(c) A student is chosen at random. Given that the student studies Geography, calculate the probability that they also study History.",
         "steps": [
@@ -19,20 +19,6 @@ const problemBank = [
             "Out of these 26, the number who also study History is 14. Therefore, the probability is $\\dfrac{14}{26}$, which simplifies to $\\dfrac{7}{13}$.",
             "Final Answer: $$(b)\\ 14,\\ (c)\\ \\dfrac{7}{13}$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$(b)\\ 10,\\ (c)\\ \\dfrac{5}{13}$$",
-        "feedback": "You miscalculated the intersection and then used that incorrect value in the conditional probability."
-    },
-    {
-        "ans": "$$(b)\\ 4,\\ (c)\\ \\dfrac{2}{13}$$",
-        "feedback": "You used $30 + 26 - 50$ without accounting for the 8 students who study neither subject."
-    },
-    {
-        "ans": "$$(b)\\ 14,\\ (c)\\ \\dfrac{14}{50}$$",
-        "feedback": "You used the total of 50 as the denominator instead of restricting to the Geography group for the conditional probability."
-    }
-],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: The 'Given That' Trap",
@@ -48,7 +34,7 @@ const problemBank = [
         "major_area": "Algebra",
         "topic": "Differentiation",
         "subtopic": "Stationary Points",
-        "difficulty": "A/A*",
+        "difficulty": "8/9",
         "q": "A particle moves in a straight line such that its displacement, $s$ metres, from a fixed point $O$ after $t$ seconds is given by $s = t^3 - 6t^2 + 9t + 2$.<br>(a) Find an expression for the velocity, $v$, of the particle in terms of $t$.<br>(b) Find the times when the particle is instantaneously at rest.<br>(c) Calculate the acceleration of the particle when $t = 4$.",
         "steps": [
             "For part (a), velocity is the rate of change of displacement. We differentiate $s$ with respect to $t$: $v = \\dfrac{ds}{dt} = 3t^2 - 12t + 9$.",
@@ -59,20 +45,6 @@ const problemBank = [
             "We substitute $t = 4$ into the acceleration formula: $a = 6(4) - 12 = 24 - 12 = 12\\text{ m/s}^2$.",
             "Final Answer: $$(a)\\ v = 3t^2 - 12t + 9,\\ (b)\\ t = 1, t = 3,\\ (c)\\ 12\\text{ m/s}^2$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$(a)\\ v = 3t^2 - 6t + 9,\\ (b)\\ t = 1, t = 3,\\ (c)\\ 12\\text{ m/s}^2$$",
-        "feedback": "You differentiated $-6t^2$ incorrectly, giving $-6t$ instead of $-12t$, but then used the correct roots and acceleration."
-    },
-    {
-        "ans": "$$(a)\\ v = 3t^2 - 12t + 9,\\ (b)\\ t = -1, t = -3,\\ (c)\\ 12\\text{ m/s}^2$$",
-        "feedback": "You solved $(t - 1)(t - 3) = 0$ as if the roots were negative instead of positive."
-    },
-    {
-        "ans": "$$(a)\\ v = 3t^2 - 12t + 9,\\ (b)\\ t = 1, t = 3,\\ (c)\\ 6\\text{ m/s}^2$$",
-        "feedback": "You substituted $t = 3$ instead of $t = 4$ into $a = 6t - 12$ when finding the acceleration."
-    }
-],
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Kinematics via Calculus",
@@ -88,7 +60,7 @@ const problemBank = [
         "major_area": "Geometry",
         "topic": "Coordinate Geometry",
         "subtopic": "Parallel and Perpendicular Lines, Mixed Problems",
-        "difficulty": "B",
+        "difficulty": "7/8",
         "q": "The points $A(3, -2)$ and $B(7, 6)$ are joined by a straight line segment.<br>(a) Find the coordinates of the midpoint of $AB$.<br>(b) Find the equation of the perpendicular bisector of $AB$. Give your answer in the form $y = mx + c$.<br>(c) Determine algebraically whether the point $(-3, 6)$ lies on this perpendicular bisector.",
         "steps": [
             "For part (a), the midpoint is the average of the coordinates: $\\left(\\dfrac{3+7}{2}, \\dfrac{-2+6}{2}\\right) = (5, 2)$.",
@@ -100,20 +72,6 @@ const problemBank = [
             "Calculation: $y = -0.5(-3) + 4.5 = 1.5 + 4.5 = 6$. Because the values match, the point does lie on the line.",
             "Final Answer: $$(a)\\ (5, 2),\\ (b)\\ y = -0.5x + 4.5,\\ (c)\\ \\text{Yes, shown algebraically}$$"
         ],
-       "wrong_options": [
-    {
-        "ans": "$$(a)\\ (5, 4),\\ (b)\\ y = -0.5x + 4.5,\\ (c)\\ \\text{Yes, shown algebraically}$$",
-        "feedback": "You averaged the $y$‑coordinates incorrectly: $(-2 + 6)/2$ should be 2, not 4."
-    },
-    {
-        "ans": "$$(a)\\ (5, 2),\\ (b)\\ y = 2x + 4.5,\\ (c)\\ \\text{No, shown algebraically}$$",
-        "feedback": "You used the gradient of $AB$ instead of the negative reciprocal for the perpendicular bisector, which then makes the point test fail."
-    },
-    {
-        "ans": "$$(a)\\ (5, 2),\\ (b)\\ y = -0.5x + 4.5,\\ (c)\\ \\text{No, shown algebraically}$$",
-        "feedback": "You substituted $x = -3$ incorrectly into the line equation; it actually gives $y = 6$, so the point does lie on the line."
-    }
-],      
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Algebraic Verification",
@@ -129,7 +87,7 @@ const problemBank = [
         "major_area": "Trigonometry",
         "topic": "3D Geometry",
         "subtopic": "Pythagoras and Trigonometry in 3D",
-        "difficulty": "A/A*",
+        "difficulty": "8/9",
         "img": "true",
         "q": "The diagram shows a right pyramid with a square base $ABCD$ of side length $10\\text{ cm}$. The vertex $V$ is directly above the centre of the base, $X$. The length of each slant edge (e.g., $VA$) is $13\\text{ cm}$.<br>(a) Calculate the length of the diagonal $AC$.<br>(b) Calculate the vertical height of the pyramid, $VX$.<br>(c) Calculate the angle that the slant edge $VA$ makes with the base $ABCD$.",
         "steps": [
@@ -142,21 +100,6 @@ const problemBank = [
             "Using the inverse cosine function: $VAX = \\cos^{-1}\\left(\\dfrac{7.071}{13}\\right) \\approx 57.04...^\\circ$.",
             "Final Answer: $$(a)\\ 14.1\\text{ cm},\\ (b)\\ 10.9\\text{ cm},\\ (c)\\ 57.0^\\circ$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$(a)\\ 20.0\\text{ cm},\\ (b)\\ 10.9\\text{ cm},\\ (c)\\ 57.0^\\circ$$",
-        "feedback": "You added the sides of the square instead of using Pythagoras to find the diagonal $AC$."
-    },
-    {
-        "ans": "$$(a)\\ 14.1\\text{ cm},\\ (b)\\ 13.0\\text{ cm},\\ (c)\\ 57.0^\\circ$$",
-        "feedback": "You treated the slant edge as the vertical height, forgetting that $VA$ is the hypotenuse of triangle $VXA$."
-    },
-    {
-        "ans": "$$(a)\\ 14.1\\text{ cm},\\ (b)\\ 10.9\\text{ cm},\\ (c)\\ 33.0^\\circ$$",
-        "feedback": "You used the wrong trigonometric ratio for angle $VAX$, effectively finding the complement of the required angle."
-    }
-],
-
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Extracting the 2D Triangle",
@@ -172,7 +115,7 @@ const problemBank = [
         "major_area": "Algebra",
         "topic": "Linear Equations",
         "subtopic": "Fractional Linear Equations",
-        "difficulty": "B/C",
+        "difficulty": "6/7",
         "q": "Solve the following fractional equation: $$\\dfrac{2x + 1}{3} - \\dfrac{x - 4}{5} = 2$$<br>Show clear algebraic working for every step.",
         "steps": [
             "We must first eliminate the denominators. The lowest common multiple of 3 and 5 is 15. We multiply every single term in the entire equation by 15.",
@@ -183,20 +126,6 @@ const problemBank = [
             "Subtracting 17 from both sides gives $7x = 13$. Dividing by 7 gives the final fractional value for $x$.",
             "Final Answer: $$x = \\dfrac{13}{7} \\text{ (or } 1\\dfrac{6}{7})$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$x = \\dfrac{17}{7} \\text{ (or } 2\\dfrac{3}{7})$$",
-        "feedback": "You added 17 instead of subtracting it when isolating $7x$ from $7x + 17 = 30$."
-    },
-    {
-        "ans": "$$x = \\dfrac{13}{21}$$",
-        "feedback": "You multiplied only the fractions by 15 and forgot to multiply the constant term on the right‑hand side."
-    },
-    {
-        "ans": "$$x = -\\dfrac{13}{7} \\text{ (or } -1\\dfrac{6}{7})$$",
-        "feedback": "You expanded $-3(x - 4)$ incorrectly, turning $-3(-4)$ into $-12$ instead of $+12$, which flips the sign of the solution."
-    }
-],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: The Invisible Bracket",
@@ -212,7 +141,7 @@ const problemBank = [
         "major_area": "Number",
         "topic": "Percentages",
         "subtopic": "Reverse Percentages",
-        "difficulty": "B/C",
+        "difficulty": "7/8",
         "q": "A company's annual profit increased by $15\\%$ in 2024 and then decreased by $8\\%$ in 2025. The final profit at the end of 2025 was $\\$2,539,200$.<br>(a) Calculate the exact profit at the start of 2024.<br>(b) Calculate the overall percentage change over the two-year period.",
         "steps": [
             "For part (a), we establish our decimal multipliers. A $15\\%$ increase is $1.15$, and an $8\\%$ decrease is $0.92$.",
@@ -223,20 +152,6 @@ const problemBank = [
             "Because $1.058$ is greater than $1$, it represents an overall increase. The decimal component $0.058$ equates to $5.8\\%$.",
             "Final Answer: $$(a)\\ \\$2,400,000,\\ (b)\\ 5.8\\% \\text{ increase}$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$(a)\\ \\$2,200,000,\\ (b)\\ 5.8\\% \\text{ increase}$$",
-        "feedback": "You attempted to undo the percentage changes by simple subtraction instead of dividing by the combined multiplier $1.15 \\times 0.92$."
-    },
-    {
-        "ans": "$$(a)\\ \\$2,760,000,\\ (b)\\ 8\\% \\text{ decrease}$$",
-        "feedback": "You reversed only the 8% change and ignored the 15% increase, then mis‑interpreted the overall effect as a decrease."
-    },
-    {
-        "ans": "$$(a)\\ \\$2,400,000,\\ (b)\\ 15\\% \\text{ increase}$$",
-        "feedback": "You focused only on the first year’s change and ignored the 8% decrease in the second year when describing the overall percentage change."
-    }
-],      
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Multiplier Chains",
@@ -252,7 +167,7 @@ const problemBank = [
         "major_area": "Number",
         "topic": "Estimation & Bounds",
         "subtopic": "Limits of Accuracy",
-        "difficulty": "A",
+        "difficulty": "8/9",
         "q": "The distance from Earth to a star is $4.5 \\times 10^{12}\\text{ km}$, correct to 2 significant figures.<br>The speed of light is $3.0 \\times 10^5\\text{ km/s}$, correct to 2 significant figures.<br>Calculate the upper bound for the time taken for light to travel from the star to Earth.<br>Give your answer in seconds, in standard form correct to 3 significant figures.",
         "steps": [
             "We first establish the bounds for the distance. It is rounded to the nearest $0.1 \\times 10^{12}$, so the error margin is $\\pm 0.05 \\times 10^{12}$.",
@@ -264,20 +179,6 @@ const problemBank = [
             "Converting to standard form and rounding to 3 significant figures gives $1.54 \\times 10^7$.",
             "Final Answer: $$1.54 \\times 10^7\\text{ seconds}$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$1.50 \\times 10^7\\text{ seconds}$$",
-        "feedback": "You used the rounded values $4.5$ and $3.0$ instead of the upper and lower bounds $4.55$ and $2.95$."
-    },
-    {
-        "ans": "$$1.54 \\times 10^8\\text{ seconds}$$",
-        "feedback": "You divided the powers of 10 incorrectly. $10^{12} \\div 10^5$ should give $10^7$, not $10^8$."
-    },
-    {
-        "ans": "$$1.45 \\times 10^7\\text{ seconds}$$",
-        "feedback": "You used the lower bound for distance and the upper bound for speed, which gives the *minimum* time, not the upper bound."
-    }
-],      
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Bounds in Standard Form",
@@ -293,7 +194,7 @@ const problemBank = [
         "major_area": "Algebra",
         "topic": "Algebraic Fractions",
         "subtopic": "Algebraic Fractions 2",
-        "difficulty": "A",
+        "difficulty": "8/9",
         "q": "Solve the equation: $$\\dfrac{4}{x - 1} - \\dfrac{3}{x + 2} = 1$$<br>Show all your working and give your answers in exact surd form.",
         "steps": [
             "We must clear the fractions by multiplying every term by the common denominator, $(x - 1)(x + 2)$.",
@@ -306,21 +207,6 @@ const problemBank = [
             "Taking the square root gives two exact solutions.",
             "Final Answer: $$x = \\sqrt{13} \\text{ and } x = -\\sqrt{13}$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$x = \\sqrt{11} \\text{ and } x = -\\sqrt{11}$$",
-        "feedback": "You formed $x^2 = 11$ instead of $x^2 = 13$ by mis‑handling the constants when rearranging."
-    },
-    {
-        "ans": "$$x = 13 \\text{ and } x = -13$$",
-        "feedback": "You forgot to take the square root when solving $x^2 = 13$, treating it as a linear equation."
-    },
-    {
-        "ans": "$$x = \\sqrt{15} \\text{ and } x = -\\sqrt{15}$$",
-        "feedback": "An expansion error in $(x - 1)(x + 2)$ led you to $x^2 - 15 = 0$ instead of $x^2 - 13 = 0$."
-    }
-],
-      
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Exact Surd Form",
@@ -336,7 +222,7 @@ const problemBank = [
         "major_area": "Vectors",
         "topic": "Vectors",
         "subtopic": "Vector Geometry",
-        "difficulty": "A/B",
+        "difficulty": "7/8",
         "img": "true",
         "q": "$OABC$ is a parallelogram. $\\overrightarrow{OA} = \\mathbf{a}$ and $\\overrightarrow{OC} = \\mathbf{c}$.<br>$M$ is the midpoint of $AB$.<br>$N$ is a point on $CB$ such that $CN : NB = 1 : 2$.<br>(a) Find the vector $\\overrightarrow{OM}$ in terms of $\\mathbf{a}$ and $\\mathbf{c}$.<br>(b) Find the vector $\\overrightarrow{MN}$ in terms of $\\mathbf{a}$ and $\\mathbf{c}$. Give your answer in its simplest form.",
         "steps": [
@@ -349,21 +235,6 @@ const problemBank = [
             "Adding the components together gives $\\overrightarrow{MN} = \\dfrac{1}{2}\\mathbf{c} - \\dfrac{2}{3}\\mathbf{a}$.",
             "Final Answer: $$(a)\\ \\mathbf{a} + \\dfrac{1}{2}\\mathbf{c},\\ (b)\\ \\dfrac{1}{2}\\mathbf{c} - \\dfrac{2}{3}\\mathbf{a}$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$(a)\\ \\mathbf{a} + \\mathbf{c},\\ (b)\\ \\dfrac{1}{2}\\mathbf{c} - \\dfrac{2}{3}\\mathbf{a}$$",
-        "feedback": "You treated $M$ as the endpoint of $AB$ instead of the midpoint, forgetting to halve $\\mathbf{c}$."
-    },
-    {
-        "ans": "$$(a)\\ \\mathbf{a} + \\dfrac{1}{2}\\mathbf{c},\\ (b)\\ \\dfrac{1}{2}\\mathbf{c} + \\dfrac{2}{3}\\mathbf{a}$$",
-        "feedback": "You used $+\\dfrac{2}{3}\\mathbf{a}$ for $\\overrightarrow{BN}$, ignoring that the direction from $B$ to $N$ is opposite to $\\mathbf{a}$."
-    },
-    {
-        "ans": "$$(a)\\ \\dfrac{1}{2}\\mathbf{a} + \\dfrac{1}{2}\\mathbf{c},\\ (b)\\ \\dfrac{1}{2}\\mathbf{c} - \\dfrac{1}{3}\\mathbf{a}$$",
-        "feedback": "You split both $OA$ and $AB$ in half and then used a $1:2$ ratio incorrectly when forming $\\overrightarrow{BN}$."
-    }
-],
-        
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Direction is Everything",
@@ -379,7 +250,7 @@ const problemBank = [
         "major_area": "Geometry",
         "topic": "Similarity",
         "subtopic": "Solids and the Linear, Area, Volume Relationship",
-        "difficulty": "A/A*",
+        "difficulty": "8/9",
         "q": "Two mathematically similar metal statues are made from the exact same alloy.<br>The mass of the smaller statue is $400\\text{ g}$. The mass of the larger statue is $1350\\text{ g}$.<br>The base area of the smaller statue is $48\\text{ cm}^2$.<br>Calculate the base area of the larger statue.",
         "steps": [
             "Because the statues are made of the same alloy (identical density), the ratio of their masses is exactly equal to the ratio of their volumes.",
@@ -389,20 +260,6 @@ const problemBank = [
             "Finally, we multiply the base area of the smaller statue by the area scale factor: $48 \\times 2.25 = 108$.",
             "Final Answer: $$108\\text{ cm}^2$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$162\\text{ cm}^2$$",
-        "feedback": "You applied the volume scale factor $\\dfrac{27}{8}$ directly to the area instead of using the area scale factor $k^2$."
-    },
-    {
-        "ans": "$$72\\text{ cm}^2$$",
-        "feedback": "You used the linear scale factor $1.5$ instead of squaring it. Area must scale by $1.5^2 = 2.25$."
-    },
-    {
-        "ans": "$$96\\text{ cm}^2$$",
-        "feedback": "You mis‑applied the ratio arithmetically, effectively subtracting instead of multiplying by the correct area scale factor."
-    }
-],        
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Mass implies Volume",
@@ -431,20 +288,6 @@ const problemBank = [
             "Calculation: $h^2 = 144 - 25 = 119$. Taking the square root gives the exact height.",
             "Final Answer: $$(a)\\ 5\\text{ cm},\\ (b)\\ \\sqrt{119}\\text{ cm}$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$(a)\\ 10\\text{ cm},\\ (b)\\ \\sqrt{119}\\text{ cm}$$",
-        "feedback": "You treated the arc length as the diameter of the base instead of the full circumference when solving for $r$."
-    },
-    {
-        "ans": "$$(a)\\ 5\\text{ cm},\\ (b)\\ 12\\text{ cm}$$",
-        "feedback": "You took the slant height as the vertical height, forgetting that $l$ is the hypotenuse in the right‑angled triangle."
-    },
-    {
-        "ans": "$$(a)\\ 5\\text{ cm},\\ (b)\\ 13\\text{ cm}$$",
-        "feedback": "You used $h^2 = 12^2 + 5^2$ instead of $h^2 = 12^2 - 5^2$, adding the squares instead of subtracting."
-    }
-],      
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Folding Geometry",
@@ -460,7 +303,7 @@ const problemBank = [
         "major_area": "Algebra",
         "topic": "Sequences",
         "subtopic": "Sequences",
-        "difficulty": "A/B",
+        "difficulty": "7/8",
         "q": "The first four terms of a sequence are $5, 14, 27, 44...$<br>(a) Find an expression, in terms of $n$, for the $n^{\\text{th}}$ term of this sequence.<br>(b) Is 300 a term in this sequence? Show working to justify your answer.",
         "steps": [
             "For part (a), we find the first differences between the terms: $9, 13, 17$.",
@@ -475,20 +318,6 @@ const problemBank = [
             "Since $\\sqrt{2409}$ is not an integer (it is approx $49.08$), $n$ will not be a whole number. Therefore, 300 is not a term.",
             "Final Answer: $$(a)\\ 2n^2 + 3n,\\ (b)\\ \\text{No, } n \\text{ is not an integer}$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$(a)\\ 2n^2 + 4n,\\ (b)\\ \\text{No, } n \\text{ is not an integer}$$",
-        "feedback": "You mis‑read the linear remainder sequence as $4n$ instead of $3n$ when subtracting $2n^2$ from the original terms."
-    },
-    {
-        "ans": "$$(a)\\ 2n^2 + 3n,\\ (b)\\ \\text{Yes, } n = 10$$",
-        "feedback": "You solved $2n^2 + 3n = 300$ incorrectly. Substituting $n = 10$ gives 230, not 300."
-    },
-    {
-        "ans": "$$(a)\\ 2n^2 + 3n,\\ (b)\\ \\text{Yes, } n = \\dfrac{-3 + 49}{4}$$",
-        "feedback": "You ignored that $n$ must be an integer. A non‑integer solution means 300 cannot be a term of the sequence."
-    }
-],      
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Quadratic Proofs",
@@ -504,7 +333,7 @@ const problemBank = [
         "major_area": "Statistics",
         "topic": "Histograms",
         "subtopic": "Histograms",
-        "difficulty": "A",
+        "difficulty": "8/9",
         "img": "true",
         "q": "The histogram shows information about the mass, $m$ grams, of 120 tomatoes. The bar for $70 < m \\le 100$ has not been drawn.<br><br><table style='border-collapse:collapse;width:100%;text-align:center;' border='1'><tr><th style='padding:6px;'>Mass ($m$ grams)</th><th style='padding:6px;'>Frequency</th></tr><tr><td style='padding:6px;'>$0 < m \\le 40$</td><td style='padding:6px;'>30</td></tr><tr><td style='padding:6px;'>$40 < m \\le 50$</td><td style='padding:6px;'></td></tr><tr><td style='padding:6px;'>$50 < m \\le 70$</td><td style='padding:6px;'></td></tr><tr><td style='padding:6px;'>$70 < m \\le 100$</td><td style='padding:6px;'></td></tr></table><br>(a) Use the histogram to calculate the missing frequencies for the table.<br>(b) Calculate the frequency density for the final class ($70 < m \\le 100$).<br>(c) State the height of the bar that needs to be drawn to complete the histogram.",
         "steps": [
@@ -518,20 +347,6 @@ const problemBank = [
             "For part (c), in a standard histogram, the height of the bar is exactly equal to the Frequency Density.",
             "Final Answer: $$(a)\\ 36, 30, 24,\\ (b)\\ 0.8,\\ (c)\\ 0.8 \\text{ units}$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$(a)\\ 30, 36, 54,\\ (b)\\ 0.8,\\ (c)\\ 0.8 \\text{ units}$$",
-        "feedback": "You did not use the total frequency of 120 to find the final class. The last frequency must be 24, not 54."
-    },
-    {
-        "ans": "$$(a)\\ 36, 30, 24,\\ (b)\\ 1.2,\\ (c)\\ 1.2 \\text{ units}$$",
-        "feedback": "You divided the final frequency by the wrong class width. The width of $70 < m \\le 100$ is 30, not 20."
-    },
-    {
-        "ans": "$$(a)\\ 36, 30, 24,\\ (b)\\ 0.8,\\ (c)\\ 24 \\text{ units}$$",
-        "feedback": "You used the frequency instead of the frequency density for the bar height. Histogram bar height is always the frequency density."
-    }
-],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Missing Bars",
@@ -547,7 +362,7 @@ const problemBank = [
         "major_area": "Algebra",
         "topic": "Simultaneous Equations",
         "subtopic": "Simultaneous Equations (Linear – Quadratic)",
-        "difficulty": "A/A*",
+        "difficulty": "8/9",
         "q": "Solve the simultaneous equations:<br>$y = 2x + 1$<br>$x^2 + y^2 = 29$<br>Show clear algebraic working.",
         "steps": [
             "We substitute the linear expression for $y$ into the quadratic equation: $x^2 + (2x + 1)^2 = 29$.",
@@ -561,20 +376,6 @@ const problemBank = [
             "When $x = 2, y = 2(2) + 1 = 5$. When $x = -2.8, y = 2(-2.8) + 1 = -4.6$.",
             "Final Answer: $$(2, 5) \\text{ and } (-2.8, -4.6)$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$(2, 5) \\text{ and } (-2.8, 4.6)$$",
-        "feedback": "You substituted $x = -2.8$ incorrectly into $y = 2x + 1$, forgetting that $2(-2.8) + 1$ is negative."
-    },
-    {
-        "ans": "$$(2, -5) \\text{ and } (-2.8, -4.6)$$",
-        "feedback": "You substituted $x = 2$ incorrectly, using $y = -2x + 1$ instead of $y = 2x + 1$."
-    },
-    {
-        "ans": "$$(2, 5) \\text{ and } (-2, -3)$$",
-        "feedback": "You solved the quadratic incorrectly, replacing the exact root $-14/5$ with an approximate integer."
-    }
-],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Squaring the Bracket",
@@ -590,7 +391,7 @@ const problemBank = [
         "major_area": "Algebra",
         "topic": "Functions",
         "subtopic": "Inverse Functions",
-        "difficulty": "A/A*",
+        "difficulty": "8/9",
         "q": "A function is defined as $f(x) = \\dfrac{3x + 2}{x - 3}$, where $x \\neq 3$.<br>(a) Find an expression for $f^{-1}(x)$.<br>(b) State the mathematical name given to a function where $f(x) = f^{-1}(x)$.",
         "steps": [
             "For part (a), we set $y = \\dfrac{3x + 2}{x - 3}$.",
@@ -603,20 +404,6 @@ const problemBank = [
             "For part (b), because the inverse function is exactly identical to the original function, it is its own inverse.",
             "Final Answer: $$(a)\\ f^{-1}(x) = \\dfrac{3x + 2}{x - 3},\\ (b)\\ \\text{Self-inverse function}$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$(a)\\ f^{-1}(x) = \\dfrac{x - 3}{3x + 2},\\ (b)\\ \text{Self-inverse function}$$",
-        "feedback": "You inverted the fraction instead of rearranging the equation algebraically."
-    },
-    {
-        "ans": "$$(a)\\ f^{-1}(x) = \\dfrac{3x - 2}{x + 3},\\ (b)\\ \text{Self-inverse function}$$",
-        "feedback": "You changed signs during rearrangement, producing a function that is not the inverse."
-    },
-    {
-        "ans": "$$(a)\\ f^{-1}(x) = \\dfrac{3x + 2}{x - 3},\\ (b)\\ \text{Identity function}$$",
-        "feedback": "A self-inverse function is not the same as an identity function; the identity function is $f(x)=x$."
-    }
-],
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Self-Inverse Functions",
@@ -632,7 +419,7 @@ const problemBank = [
         "major_area": "Probability",
         "topic": "Probability",
         "subtopic": "Conditional Probability",
-        "difficulty": "A/B",
+        "difficulty": "7/8",
         "img": "true",
         "q": "100 students were asked whether they prefer Tea or Coffee.<br>The partially completed two-way table shows some information about their choices.<br>(a) Complete the two-way table.<br>(b) A student is chosen at random. Calculate the probability that the student is a female who prefers Coffee.<br>(c) Given that a randomly chosen student prefers Tea, calculate the probability that the student is male.",
         "steps": [
@@ -649,20 +436,6 @@ const problemBank = [
             "Simplifying the fraction gives $\\dfrac{3}{7}$.",
             "Final Answer: $$(b)\\ \\dfrac{7}{20},\\ (c)\\ \\dfrac{3}{7}$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$(b)\\ \\dfrac{35}{100},\\ (c)\\ \\dfrac{3}{7}$$",
-        "feedback": "You did not simplify the fraction for part (b). Cambridge expects simplified form unless stated otherwise."
-    },
-    {
-        "ans": "$$(b)\\ \\dfrac{7}{20},\\ (c)\\ \\dfrac{15}{100}$$",
-        "feedback": "You9 used the total of 100 instead of conditioning on the Tea column for part (c)."
-    },
-    {
-        "ans": "$$(b)\\ \\dfrac{7}{20},\\ (c)\\ \dfrac{15}{35}$$",
-        "feedback": "You did not simplify the conditional probability in part (c)."
-    }
-],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Table Conditioning",
@@ -677,7 +450,7 @@ const problemBank = [
         "major_area": "Trigonometry",
         "topic": "Trigonometry",
         "subtopic": "The Cosine Rule",
-        "difficulty": "A/A*",
+        "difficulty": "8/9",
         "img": "true",
         "q": "The points $A, B, C$, and $D$ lie on a circle to form a cyclic quadrilateral.<br>$AB = 8\\text{ cm}$, $BC = 6\\text{ cm}$, and angle $ABC = 110^\\circ$.<br>(a) Calculate the length of the diagonal $AC$.<br>(b) Calculate the size of angle $ADC$.<br>(c) Given that angle $CAD = 35^\\circ$, calculate the length of $CD$.",
         "steps": [
@@ -690,21 +463,6 @@ const problemBank = [
             "Calculation: $CD = \\dfrac{11.525... \\times \\sin(35^\\circ)}{\\sin(70^\\circ)} \\approx 7.035...\\text{ cm}$.",
             "Final Answer: $$(a)\\ 11.5\\text{ cm},\\ (b)\\ 70^\\circ,\\ (c)\\ 7.04\\text{ cm}$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$(a)\\ 10.0\\text{ cm},\\ (b)\\ 70^\circ,\\ (c)\\ 7.04\\text{ cm}$$",
-        "feedback": "You used the Sine Rule instead of the Cosine Rule in part (a), which underestimates the diagonal."
-    },
-    {
-        "ans": "$$(a)\\ 11.5\\text{ cm},\\ (b)\\ 110^\circ,\\ (c)\\ 7.04\\text{ cm}$$",
-        "feedback": "You forgot that opposite angles in a cyclic quadrilateral sum to 180°, not equal each other."
-    },
-    {
-        "ans": "$$(a)\\ 11.5\\text{ cm},\\ (b)\\ 70^\circ,\\ (c)\\ 6.0\\text{ cm}$$",
-        "feedback": "You used rounded values for AC too early, reducing accuracy in the Sine Rule calculation."
-    }
-],
-
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Bridging Triangles",
@@ -732,20 +490,6 @@ const problemBank = [
             "Calculation: $182498 \\times 1.21665... = 222037.2...$ people.",
             "Final Answer: $$(a)\\ 4.0\\%,\\ (b)\\ 222,037$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$(a)\\ 0.8\\%,\\ (b)\\ 222,037$$",
-        "feedback": "You divided the growth factor by 5 instead of taking the 5th root when solving for the annual rate."
-    },
-    {
-        "ans": "$$(a)\\ 4.0\\%,\\ (b)\\ 210,000$$",
-        "feedback": "You used simple interest instead of compound growth for the 5-year prediction."
-    },
-    {
-        "ans": "$$(a)\\ 20\\%,\\ (b)\\ 222,037$$",
-        "feedback": "You multiplied the total growth (21.7%) by 5, misunderstanding how exponential growth accumulates."
-    }
-],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Roots for Rates",
@@ -761,7 +505,7 @@ const problemBank = [
         "major_area": "Number",
         "topic": "Financial Maths",
         "subtopic": "Percentage Change and Interest",
-        "difficulty": "A",
+        "difficulty": "8/9",
         "q": "Elias invests $\\$12,000$ in a high-yield account that pays compound interest at a rate of $4.2\\%$ per year.<br>At the end of 5 years, he withdraws the entire amount and pays a $1.5\\%$ withdrawal tax on the total balance.<br>(a) Calculate the total amount Elias has after the tax is deducted.<br>(b) Calculate the overall percentage profit he made on his initial $\\$12,000$ investment, giving your answer to 1 decimal place.",
         "steps": [
             "For part (a), we first calculate the value of the investment before tax. The growth multiplier is $1.042$.",
@@ -774,20 +518,6 @@ const problemBank = [
             "Rounding to 1 decimal place gives $21.0\\%$.",
             "Final Answer: $$(a)\\ \\$14519.65,\\ (b)\\ 21.0\\%$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$(a)\\ \\$14740.76,\\ (b)\\ 21.0\\%$$",
-        "feedback": "You forgot to apply the 1.5\\% withdrawal tax and used the pre‑tax balance as the final amount."
-    },
-    {
-        "ans": "$$(a)\\ \\$14519.65,\\ (b)\\ 17.0\\%$$",
-        "feedback": "You used simple interest instead of compound interest when calculating the percentage profit."
-    },
-    {
-        "ans": "$$(a)\\ \\$14000.00,\\ (b)\\ 16.7\\%$$",
-        "feedback": "You applied the 1.5\\% tax to the original investment instead of the final balance."
-    }
-],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Chain Multipliers",
@@ -803,7 +533,7 @@ const problemBank = [
         "major_area": "Algebra",
         "topic": "Changing the Subject of a Formula",
         "subtopic": "Changing the Subject of a Formula",
-        "difficulty": "A/A*",
+        "difficulty": "8/9",
         "q": "Rearrange the formula to make $x$ the subject:<br>$$y = \\dfrac{3x^2 - 5}{2x^2 + w}$$<br>Show all of your algebraic steps clearly.",
         "steps": [
             "We begin by multiplying both sides by the denominator to clear the fraction: $y(2x^2 + w) = 3x^2 - 5$.",
@@ -815,20 +545,6 @@ const problemBank = [
             "Finally, we take the square root of both sides. Because we are taking a square root algebraically, we must include the $\\pm$ symbol.",
             "Final Answer: $$x = \\pm\\sqrt{\\dfrac{wy + 5}{3 - 2y}}$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$x = \\pm\\sqrt{\\dfrac{3 - 2y}{wy + 5}}$$",
-        "feedback": "You inverted the fraction when isolating \\(x^2\\), which reverses the relationship."
-    },
-    {
-        "ans": "$$x = \\sqrt{\\dfrac{wy + 5}{3 - 2y}}$$",
-        "feedback": "You omitted the \\(\\pm\\) symbol, which is required when taking the square root algebraically."
-    },
-    {
-        "ans": "$$x = \\pm\\sqrt{\\dfrac{wy - 5}{3 - 2y}}$$",
-        "feedback": "You incorrectly moved the constant term, changing \\(+5\\) into \\(-5\\)."
-    }
-],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: The Factorising Step",
@@ -859,20 +575,6 @@ const problemBank = [
             "The largest angle is angle $B$.",
             "Final Answer: $$(a)\\ 5x + 2y = 90 \\text{ and } x + y = 30,\\ (b)\\ x = 10, y = 20,\\ (c)\\ 110^\\circ$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$(a)\\ 5x + 2y = 90 \\text{ and } x - y = 30,\\ (b)\\ x = 60, y = 30,\\ (c)\\ 110^\\circ$$",
-        "feedback": "You formed the second equation incorrectly by subtracting the angles instead of adding them to 180^\\circ."
-    },
-    {
-        "ans": "$$(a)\\ 10x + 4y = 180 \\text{ and } 6x + 6y = 180,\\ (b)\\ x = 9, y = 21,\\ (c)\\ 110^\\circ$$",
-        "feedback": "You did not simplify the simultaneous equations, which led to incorrect substituted values."
-    },
-    {
-        "ans": "$$(a)\\ 5x + 2y = 90 \\text{ and } x + y = 30,\\ (b)\\ x = 10, y = 20,\\ (c)\\ 100^\\circ$$",
-        "feedback": "You substituted the correct values of \\(x\\) and \\(y\\) but mis‑evaluated the angle expressions."
-    }
-],
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: Cross-Topic Synthesis",
@@ -888,7 +590,7 @@ const problemBank = [
         "major_area": "Mensuration",
         "topic": "Arcs and Sectors",
         "subtopic": "Arcs and Sectors",
-        "difficulty": "B/A",
+        "difficulty": "8/9",
         "img": "true",
         "q": "The diagram shows a sector of a circle with centre $O$ and radius $12\\text{ cm}$. The angle of the sector is $150^\\circ$.<br>A chord joins the two ends of the arc, splitting the sector into a triangle and a shaded segment.<br>(a) Calculate the exact area of the entire sector in terms of $\\pi$.<br>(b) Calculate the area of the shaded segment. Give your answer to 3 significant figures.",
         "steps": [
@@ -901,20 +603,6 @@ const problemBank = [
             "Using a calculator: $188.495... - 36 = 152.495...\\text{ cm}^2$.",
             "Final Answer: $$(a)\\ 60\\pi\\text{ cm}^2,\\ (b)\\ 152\\text{ cm}^2$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$(a)\\ 72\\pi\\text{ cm}^2,\\ (b)\\ 152\\text{ cm}^2$$",
-        "feedback": "You used the full circle area formula instead of the sector fraction when calculating part (a)."
-    },
-    {
-        "ans": "$$(a)\\ 60\\pi\\text{ cm}^2,\\ (b)\\ 180\\text{ cm}^2$$",
-        "feedback": "You used the wrong sine value for 150^\\circ when calculating the triangle area."
-    },
-    {
-        "ans": "$$(a)\\ 60\\pi\\text{ cm}^2,\\ (b)\\ 140\\text{ cm}^2$$",
-        "feedback": "You rounded the intermediate values too early, reducing the final segment area."
-    }
-],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Segment Formula",
@@ -930,7 +618,7 @@ const problemBank = [
         "major_area": "Transformations",
         "topic": "Transformations",
         "subtopic": "Transformations",
-        "difficulty": "A/B",
+        "difficulty": "8/9",
         "img": "true",
         "q": "Triangle $A$ has vertices at $(2, 2)$, $(6, 2)$ and $(2, 6)$.<br>Triangle $A$ is mapped onto Triangle $B$ by an enlargement with scale factor $-0.5$ and centre of enlargement $(4, 4)$.<br>(a) Calculate the coordinates of the vertices of Triangle $B$.<br>(b) Describe fully the single transformation that maps Triangle $B$ back onto Triangle $A$.",
         "steps": [
@@ -941,21 +629,6 @@ const problemBank = [
             "For part (b), the reverse transformation must undo the scale factor. The reciprocal of $-0.5$ is $-2$. The centre of enlargement remains the exact same.",
             "Final Answer: $$(a)\\ (5, 5), (3, 5), (5, 3),\\ (b)\\ \\text{Enlargement, Scale Factor } -2\\text{, Centre } (4, 4)$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$(a)\\ (3, 3), (5, 3), (3, 5),\\ (b)\\ \\text{Enlargement, Scale Factor } -2\\text{, Centre } (4, 4)$$",
-        "feedback": "You applied the scale factor to the coordinates directly instead of using vectors from the centre."
-    },
-    {
-        "ans": "$$(a)\\ (5, 5), (3, 5), (5, 3),\\ (b)\\ \\text{Enlargement, Scale Factor } 2\\text{, Centre } (4, 4)$$",
-        "feedback": "You omitted the negative sign in the reverse transformation, which changes the orientation."
-    },
-    {
-        "ans": "$$(a)\\ (6, 6), (2, 6), (6, 2),\\ (b)\\ \\text{Enlargement, Scale Factor } -2\\text{, Centre } (4, 4)$$",
-        "feedback": "You doubled the vectors instead of halving them before applying the negative scale factor."
-    }
-],
-
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Negative Scale Factors",
@@ -971,7 +644,7 @@ const problemBank = [
         "major_area": "Number",
         "topic": "Estimation & Bounds",
         "subtopic": "Limits of Accuracy",
-        "difficulty": "B/A",
+        "difficulty": "8/9",
         "q": "A car travels a distance of $340\\text{ km}$, measured correct to the nearest $10\\text{ km}$.<br>It uses $28\\text{ litres}$ of fuel, measured correct to the nearest litre.<br>Calculate the lower bound for the fuel consumption of the car, measured in kilometres per litre ($\\text{km/l}$).<br>Give your answer to 2 decimal places.",
         "steps": [
             "We first establish the bounds for both measurements.",
@@ -983,20 +656,6 @@ const problemBank = [
             "Rounding the result to 2 decimal places gives $11.75$.",
             "Final Answer: $$11.75\\text{ km/l}$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$12.36\\text{ km/l}$$",
-        "feedback": "You used the upper bound for distance and the lower bound for fuel, giving the *maximum* consumption instead of the minimum."
-    },
-    {
-        "ans": "$$11.40\\text{ km/l}$$",
-        "feedback": "You divided the lower bound distance by the lower bound fuel, which does not produce the minimum possible value."
-    },
-    {
-        "ans": "$$10.96\\text{ km/l}$$",
-        "feedback": "You used the upper bound fuel correctly but paired it with the wrong distance bound."
-    }
-],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Division Bounds",
@@ -1012,7 +671,7 @@ const problemBank = [
         "major_area": "Statistics",
         "topic": "Data Handling",
         "subtopic": "Cumulative Frequency Diagrams",
-        "difficulty": "B/C",
+        "difficulty": "6/7",
         "img": "true",
         "q": "The cumulative frequency graph shows information about the heights, $h\\text{ cm}$, of 80 plants.<br>Use the graph to find an estimate for:<br>(a) the median height.<br>(b) the interquartile range.<br>(c) the number of plants with a height greater than $45\\text{ cm}$.",
         "steps": [
@@ -1025,20 +684,6 @@ const problemBank = [
             "This means 54 plants are $45\\text{ cm}$ or <strong>shorter</strong>. The number of plants <em>taller</em> than $45\\text{ cm}$ is $80 - 55 = 25$.",
             "Final Answer: $$(a)\\ 40\\text{ cm},\\ (b)\\ 13\\text{ cm},\\ (c)\\ 25$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$(a)\\ 38\\text{ cm},\\ (b)\\ 13\\text{ cm},\\ (c)\\ 25$$",
-        "feedback": "You misread the median by taking the value at 35 instead of 40 on the cumulative frequency axis."
-    },
-    {
-        "ans": "$$(a)\\ 40\\text{ cm},\\ (b)\\ 10\\text{ cm},\\ (c)\\ 25$$",
-        "feedback": "You used the wrong quartile positions, taking 30 and 50 instead of 20 and 60."
-    },
-    {
-        "ans": "$$(a)\\ 40\\text{ cm},\\ (b)\\ 13\\text{ cm},\\ (c)\\ 30$$",
-        "feedback": "You subtracted the cumulative frequency from 80 incorrectly when finding the number taller than 45\\text{ cm}."
-    }
-],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: 'Greater Than' Trap",
@@ -1054,7 +699,7 @@ const problemBank = [
         "major_area": "Algebra",
         "topic": "Indices",
         "subtopic": "Indices II",
-        "difficulty": "A",
+        "difficulty": "8/9",
         "q": "Find the value of $x$ in the equation: $$4^{2x+1} \\times 8^{x-1} = 32$$<br>Show all your algebraic working.",
         "steps": [
             "We must express every term in the equation using the same base number. The numbers 4, 8, and 32 are all powers of 2.",
@@ -1066,20 +711,6 @@ const problemBank = [
             "Adding 1 gives $7x = 6$. Dividing by 7 yields the final value for $x$.",
             "Final Answer: $$x = \\dfrac{6}{7}$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$x = \\dfrac{5}{7}$$",
-        "feedback": "You incorrectly simplified the combined index, using $7x - 2$ instead of $7x - 1$."
-    },
-    {
-        "ans": "$$x = \\dfrac{6}{5}$$",
-        "feedback": "You equated the powers incorrectly, solving $7x = 5$ instead of $7x - 1 = 5$."
-    },
-    {
-        "ans": "$$x = \\dfrac{1}{7}$$",
-        "feedback": "You dropped the constant term entirely when equating the indices."
-    }
-],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Base Equality",
@@ -1095,7 +726,7 @@ const problemBank = [
         "major_area": "Geometry",
         "topic": "Angles",
         "subtopic": "Polygons and Circles",
-        "difficulty": "B/A",
+        "difficulty": "7/8",
         "q": "The interior angle of a regular polygon is $144^\\circ$ larger than its exterior angle.<br>Calculate the number of sides the polygon has.",
         "steps": [
             "We know two fundamental rules about the angles of any regular polygon: Interior + Exterior = $180^\\circ$.",
@@ -1107,20 +738,6 @@ const problemBank = [
             "To find the number of sides, we divide $360^\\circ$ by the exterior angle: $360 \\div 18 = 20$.",
             "Final Answer: $$20\\text{ sides}$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$16\\text{ sides}$$",
-        "feedback": "You used $x + 144 = 160$ instead of $180$, reducing the exterior angle incorrectly."
-    },
-    {
-        "ans": "$$18\\text{ sides}$$",
-        "feedback": "You used $360 \\div 20$ instead of $360 \\div 18$ when interpreting the exterior angle."
-    },
-    {
-        "ans": "$$24\\text{ sides}$$",
-        "feedback": "You mis-solved the linear equation, treating $2x + 144 = 200$ instead of $180$."
-    }
-],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Algebraic Geometry",
@@ -1136,7 +753,7 @@ const problemBank = [
         "major_area": "Mensuration",
         "topic": "3D Shapes",
         "subtopic": "3D Compound Shapes",
-        "difficulty": "A/A*",
+        "difficulty": "8/9",
         "img": "true",
         "q": "A solid toy is made by attaching a solid hemisphere to the flat base of a solid right circular cone.<br>The cone and the hemisphere share a common radius of $3\\text{ cm}$.<br>The slant height of the cone is $8\\text{ cm}$.<br>Calculate the total surface area of the toy. Give your answer exactly, in terms of $\\pi$.",
         "steps": [
@@ -1149,20 +766,6 @@ const problemBank = [
             "Calculation: $24\\pi + 18\\pi = 42\\pi$.",
             "Final Answer: $$42\\pi\\text{ cm}^2$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$48\\pi\\text{ cm}^2$$",
-        "feedback": "You used the full sphere surface area formula instead of the hemisphere formula."
-    },
-    {
-        "ans": "$$30\\pi\\text{ cm}^2$$",
-        "feedback": "You subtracted the hemisphere area from the cone area instead of adding them."
-    },
-    {
-        "ans": "$$36\\pi\\text{ cm}^2$$",
-        "feedback": "You used the radius incorrectly when calculating the curved surface area of the cone."
-    }
-],
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Internal Faces",
@@ -1190,20 +793,6 @@ const problemBank = [
             "The bracket is $(x - 3)$, meaning the $x$-coordinate is $+3$. The constant is $+5$, meaning the $y$-coordinate is $5$.",
             "Final Answer: $$(a)\\ 2(x - 3)^2 + 5,\\ (b)\\ (3, 5)$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$(a)\\ 2(x - 3)^2 + 9,\\ (b)\\ (3, 9)$$",
-        "feedback": "You forgot to multiply the completed-square constant by 2 when expanding the bracket."
-    },
-    {
-        "ans": "$$(a)\\ 2(x - 6)^2 + 5,\\ (b)\\ (6, 5)$$",
-        "feedback": "You halved the coefficient incorrectly, using $-6$ instead of $-3$ inside the bracket."
-    },
-    {
-        "ans": "$$(a)\\ 2(x - 3)^2 - 5,\\ (b)\\ (3, -5)$$",
-        "feedback": "You subtracted instead of adding the constant after expansion."
-    }
-],
         "bradley_insight": {
             "type": "pro-tip",
             "title": "The Head Teacher's Eye: Non-Monic Completion",
@@ -1219,7 +808,7 @@ const problemBank = [
         "major_area": "Number",
         "topic": "Mixed Applications",
         "subtopic": "Fractions, Decimals, Percentages",
-        "difficulty": "B/A",
+        "difficulty": "8/9",
         "q": "A sum of $\\$12,000$ is shared between Alice, Bob and Charlie.<br>Alice receives $\\dfrac{2}{5}$ of the money.<br>The remainder is shared between Bob and Charlie in the ratio $5 : 4$.<br>Bob invests his entire share in an account paying $3.2\\%$ per year compound interest.<br>Calculate the total value of Bob's investment after 4 years. Give your answer to the nearest dollar.",
         "steps": [
             "First, calculate Alice's share: $\\dfrac{2}{5} \\times 12000 = \\$4800$.",
@@ -1233,20 +822,6 @@ const problemBank = [
             "Rounding to the nearest dollar gives $\\$4537$.",
             "Final Answer: $$\\$4537$$"
         ],
-        "wrong_options": [
-    {
-        "ans": "$$\\$4400$$",
-        "feedback": "You used simple interest instead of compound interest for the 4-year investment."
-    },
-    {
-        "ans": "$$\\$4800$$",
-        "feedback": "You treated Bob’s share as the same as Alice’s, ignoring the 5:4 ratio."
-    },
-    {
-        "ans": "$$\\$4600$$",
-        "feedback": "You rounded the compound interest multiplier too early, inflating the final value."
-    }
-],
         "bradley_insight": {
             "type": "deeper",
             "title": "The Head Teacher's Eye: The Fractional Shortcut",
@@ -1255,4 +830,4 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/Ebcut",
         "button_text": "Master IGCSE Number: Download the Extended Pack"
     }
-];
+]
