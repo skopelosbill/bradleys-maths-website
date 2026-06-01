@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlock Access</title>
+
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            background: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .unlock-box {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 380px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        input {
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+
+        button {
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 1rem;
+            background: #0057b7;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        button:hover {
+            background: #004a9c;
+        }
+
+        #status {
+            margin-top: 1rem;
+            font-size: 0.95rem;
+            min-height: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="unlock-box">
+        <h1>Enter Your License Key</h1>
+
+        <input id="license-input" type="text" placeholder="XXXXX-XXXXX-XXXXX">
+        <button id="unlock-btn">Unlock</button>
+
+        <div id="status"></div>
+    </div>
+
+    <script type="module" src="./unlock.js"></script>
+
+</body>
+</html>
