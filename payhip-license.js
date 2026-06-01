@@ -5,13 +5,15 @@ const PRODUCT_SECRET_KEY = "prod_sk_6lZQc_58f13caab190d340f456c20f21d87ce205ea78
 
 export async function verifyLicenseKey(licenseKey) {
     try {
-        const url = `${PAYHIP_VERIFY_URL}?license_key=${encodeURIComponent(licenseKey)}`;
-
-        const response = await fetch(url, {
-            method: "GET",
+        const response = await fetch(PAYHIP_VERIFY_URL, {
+            method: "POST",
             headers: {
-                "product-secret-key": PRODUCT_SECRET_KEY
-            }
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                product_secret_key: PRODUCT_SECRET_KEY,
+                license_key: licenseKey
+            })
         });
 
         const result = await response.json();
@@ -38,10 +40,12 @@ export async function increaseLicenseUsage(licenseKey) {
         const response = await fetch(PAYHIP_USAGE_URL, {
             method: "PUT",
             headers: {
-                "Content-Type": "application/x-www-form-urlencoded",
-                "product-secret-key": PRODUCT_SECRET_KEY
+                "Content-Type": "application/json"
             },
-            body: `license_key=${encodeURIComponent(licenseKey)}`
+            body: JSON.stringify({
+                product_secret_key: PRODUCT_SECRET_KEY,
+                license_key: licenseKey
+            })
         });
 
         const result = await response.json();
