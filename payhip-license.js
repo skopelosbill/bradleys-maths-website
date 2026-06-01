@@ -1,7 +1,7 @@
 const PAYHIP_VERIFY_URL = "https://payhip.com/api/v2/license/verify";
 const PAYHIP_USAGE_URL  = "https://payhip.com/api/v2/license/usage";
 
-const PRODUCT_SECRET_KEY = "prod_sk_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const PRODUCT_SECRET_KEY = "prod_sk_6lZQc_58f13caab190d340f456c20f21d87ce205ea785b";
 
 export async function verifyLicenseKey(licenseKey) {
     try {
