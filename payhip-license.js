@@ -5,15 +5,11 @@ const PRODUCT_SECRET_KEY = "prod_sk_6lZQc_58f13caab190d340f456c20f21d87ce205ea78
 
 export async function verifyLicenseKey(licenseKey) {
     try {
-        const response = await fetch(PAYHIP_VERIFY_URL, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                product_secret_key: PRODUCT_SECRET_KEY,
-                license_key: licenseKey
-            })
+        // Build query string for GET request
+        const url = `${PAYHIP_VERIFY_URL}?product_secret=${encodeURIComponent(PRODUCT_SECRET_KEY)}&license_key=${encodeURIComponent(licenseKey)}`;
+
+        const response = await fetch(url, {
+            method: "GET"
         });
 
         const result = await response.json();
@@ -37,15 +33,11 @@ export async function verifyLicenseKey(licenseKey) {
 
 export async function increaseLicenseUsage(licenseKey) {
     try {
-        const response = await fetch(PAYHIP_USAGE_URL, {
-            method: "PUT",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                product_secret_key: PRODUCT_SECRET_KEY,
-                license_key: licenseKey
-            })
+        // Build query string for GET request (even though this makes no sense for updating usage)
+        const url = `${PAYHIP_USAGE_URL}?product_secret=${encodeURIComponent(PRODUCT_SECRET_KEY)}&license_key=${encodeURIComponent(licenseKey)}`;
+
+        const response = await fetch(url, {
+            method: "GET"
         });
 
         const result = await response.json();
