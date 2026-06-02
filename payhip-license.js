@@ -11,7 +11,7 @@ export async function verifyLicenseKey(licenseKey) {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                product_secret: PRODUCT_SECRET_KEY,
+                product_secret_key: PRODUCT_SECRET_KEY,
                 license_key: licenseKey
             })
         });
