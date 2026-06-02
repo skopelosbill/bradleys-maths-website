@@ -1,4 +1,8 @@
+localStorage.clear();
+
+
 import { verifyLicenseKey, increaseLicenseUsage } from "./payhip-license.js";
+
 
 document.getElementById("unlock-btn").addEventListener("click", async () => {
     const key = document.getElementById("license-input").value.trim();
