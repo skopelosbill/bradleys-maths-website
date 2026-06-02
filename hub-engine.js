@@ -454,7 +454,7 @@ const BradleyHub = {
                 </p>
                 
                 <!-- UPDATE THIS LINK WITH YOUR NEW £9.99 PAYHIP PRODUCT -->
-                <a href="https://payhip.com/b/7mDNy" target="_blank" class="btn btn-purple" style="font-size: 1.2rem; padding: 15px 30px; display: inline-block; margin-bottom: 25px; background: linear-gradient(135deg, var(--brand-purple), var(--brand-purple-dark)); color: white; text-decoration: none; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                <a href="https://payhip.com/b/6lZQc" target="_blank" class="btn btn-purple" style="font-size: 1.2rem; padding: 15px 30px; display: inline-block; margin-bottom: 25px; background: linear-gradient(135deg, var(--brand-purple), var(--brand-purple-dark)); color: white; text-decoration: none; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
                     Unlock the Full Database for £9.99
                 </a>
                 
