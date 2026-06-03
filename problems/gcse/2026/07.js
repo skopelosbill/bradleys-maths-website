@@ -230,7 +230,7 @@ const problemBank = [
         "major_area": "Algebra",
         "topic": "Simultaneous Linear Equations",
         "subtopic": "Simultaneous Linear Equations",
-        "difficulty": "5/6",
+        "difficulty": "6/7",
         "q": "A local school is organising a theatre trip. For the first group, the school buys 5 adult tickets and 12 student tickets for a total cost of £174.<br>For the second group, the school buys 4 adult tickets and 9 student tickets for a total cost of £133.50.<br>(a) Formulate a pair of simultaneous equations to represent this information.<br>(b) Solve your equations to find the cost of a single adult ticket and a single student ticket.",
         "steps": [
             "For part (a), we define our variables. Let $a$ represent the cost of an adult ticket in pounds, and let $s$ represent the cost of a student ticket in pounds.",
@@ -247,19 +247,19 @@ const problemBank = [
             "Evaluating the multiplication gives $5a + 114 = 174$. Subtracting 114 from both sides results in $5a = 60$.",
             "Dividing both sides of the equation by 5 gives the cost of an adult ticket: $a = 12$.",
             "This indicates that adult tickets cost £12.00 each and student tickets cost £9.50 each.",
-            "Final Answer: $$(a)\ 5a + 12s = 174,\\ 4a + 9s = 133.50,\\ (b)\ a = 12.00,\\ s = 9.50$$"
+            "Final Answer: $$(a)\\ 5a + 12s = 174,\\ 4a + 9s = 133.50,\\ (b)\\ a =\\text{ £}12.00,\\ s =\\text{ £}9.50$$"
         ],
         "wrong_options": [
             {
-                "ans": "$$(a)\ 5a + 12s = 174,\\ 4a + 9s = 133.50,\\ (b)\ a = 0.60,\\ s = 14.25$$",
+                "ans": "$$(a)\\ 5a + 12s = 174,\\ 4a + 9s = 133.50,\\ (b)\\ a =\\text{ £}0.60,\\ s =\\text{ £}14.25$$",
                 "feedback": "You made an arithmetic subtraction error when eliminating $a$. Be careful to subtract both sides of the modified equations accurately."
             },
             {
-                "ans": "$$(a)\ 12a + 5s = 174,\\ 9a + 4s = 133.50,\\ (b)\ a = 9.50,\\ s = 12.00$$",
+                "ans": "$$(a)\\ 12a + 5s = 174,\\ 9a + 4s = 133.50,\\ (b)\\ a =\\text{ £}9.50,\\ s\\text{ £}= 12.00$$",
                 "feedback": "You formulated the equations with reversed coefficients, incorrectly linking adult prices to student quantities and vice versa."
             },
             {
-                "ans": "$$(a)\ 5a + 12s = 174,\\ 4a + 9s = 133.50,\\ (b)\ a = 9.50,\\ s = 12.00$$",
+                "ans": "$$(a)\\ 5a + 12s = 174,\\ 4a + 9s = 133.50,\\ (b)\\ a =\\text{ £}9.50,\\ s =\\text{ £}12.00$$",
                 "feedback": "You calculated the correct numerical values of 11 and 11.50, but you reversed the identities of the adult and student tickets in your final statement."
             }
         ],
@@ -277,7 +277,7 @@ const problemBank = [
         "major_area": "Geometry",
         "topic": "Similarity in 2D",
         "subtopic": "Similarity in 2D",
-        "difficulty": "6/7",
+        "difficulty": "7/8",
         "img": "true",
         "q": "Two structurally similar plastic storage trays have similar cross-sections as shown in the diagram. The smaller tray has a base length of $24\\text{ cm}$ and a cross-sectional area of $180\\text{ cm}^2$. The larger tray has a base length of $36\\text{ cm}$.<br>(a) Determine the scale factor of enlargement, $k$, from the smaller tray to the larger tray, and use it to calculate the cross-sectional area of the larger tray.<br>(b) Given that the volume of the smaller tray is $1.8\\text{ litres}$, calculate the volume of the larger tray in litres.",
         "steps": [
@@ -365,7 +365,7 @@ const problemBank = [
         "subtopic": "Cosine Rule",
         "difficulty": "7/8",
         "img": "true",
-        "q": "A sailing race course is in the shape of a triangle $ABC$ on open water. The distance from buoy $A$ to buoy $B$ is $4.2\\text{ km}$ and the distance from buoy $B$ to buoy $C$ is $6.5\\text{ km}$. The internal angle $ABC$ is $112^\\circ$.<br>(a) Calculate the direct distance between buoy $A$ and buoy $C$. Give your answer in kilometres correct to 3 significant figures.<br>(b) Calculate the total area enclosed by the race course. Give your answer in square kilometres correct to 2 decimal places.",
+        "q": "A sailing race course is in the shape of a triangle $ABC$ on open water. The distance from buoy $A$ to buoy $B$ is $4.2\\text{ km}$ and the distance from buoy $B$ to buoy $C$ is $6.5\\text{ km.}$ The internal angle $ABC$ is $112^\\circ$.<br>(a) Calculate the direct distance between buoy $A$ and buoy $C$. Give your answer in kilometres correct to 3 significant figures.<br>(b) Calculate the total area enclosed by the race course. Give your answer in square kilometres correct to 2 decimal places.",
         "steps": [
             "For part (a), we use the Cosine Rule to find the unknown side $AC$, which lies opposite the given angle $B$. The formula is $b^2 = a^2 + c^2 - 2ac \\cos(B)$.",
             "We identify the known lengths: $a = 6.5\\text{ km}$ (opposite vertex $A$) and $c = 4.2\\text{ km}$ (opposite vertex $C$).",
@@ -464,19 +464,19 @@ const problemBank = [
             "In the second year, the value depreciates by $8\\%$, meaning it retains $92\\%$ of its first-year value. The value at the end of the second year is calculated as $20400 \\times 0.92 = £18768$.",
             "In the third year, the value depreciates by another $8\\%$, retaining $92\\%$ of its second-year value. The value at the end of the third year is calculated as $18768 \\times 0.92 = £17266.56$.",
             "The final value of the van at the end of 3 years is therefore £17266.56.",
-            "Final Answer: $$(a)\\ \\pounds 9342.73,\\ (b)\\ \\pounds 17266.56$$"
+            "Final Answer: $$(a)\\  £9342.73,\\ (b)\\  £17266.56$$"
         ],
         "wrong_options": [
             {
-                "ans": "$$(a)\\ \\pounds 9316.00,\\ (b)\\ \\pounds 16560.00$$",
+                "ans": "$$(a)\\ £9316.00,\\ (b)\\ \£16560.00$$",
                 "feedback": "You calculated simple interest instead of compound interest for part (a). For part (b), you added the depreciation percentages together ($15\\% + 8\\% + 8\\% = 31\\%$) and subtracted this flat percentage from the original value, which ignores the compounding effect of depreciation."
             },
             {
-                "ans": "$$(a)\\ \\pounds 9342.73,\\ (b)\\ \\pounds 16560.00$$",
+                "ans": "$$(a)\\ £9342.73,\\ (b)\\ £16560.00$$",
                 "feedback": "Your interest calculation is correct, but you treated the depreciation as a flat percentage decrease of $31\\%$ instead of applying the percentage reductions sequentially year-by-year."
             },
             {
-                "ans": "$$(a)\\ \\pounds 9342.73,\\ (b)\\ \\pounds 18688.51$$",
+                "ans": "$$(a)\\ £9342.73,\\ (b)\\ £18688.51$$",
                 "feedback": "Your interest calculation is correct, but you depreciated the van by $8\\%$ in all three years, forgetting that the first year had a higher depreciation rate of $15\\%$. Check your year-by-year multipliers."
             }
         ],
