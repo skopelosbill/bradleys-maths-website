@@ -895,7 +895,7 @@ const problemBank = [
             "Dividing by 2.5 gives: $x = -0.2$.",
             "We substitute $x = -0.2$ back into the equation of $L_1$ to find $y$: $y = 2(-0.2) + 1 = -0.4 + 1 = 0.6$.",
             "The point of intersection is $(-0.2, 0.6)$.",
-            "Final Answer: $$(a)\\ y = 2x + 1,\\ (b)\\ y = -0.5x + 0.5,\\ (c)\\ (-0.2, 0.6)$$$"
+            "Final Answer: $$(a)\\ y = 2x + 1,\\ (b)\\ y = -0.5x + 0.5,\\ (c)\\ (-0.2, 0.6)$$"
         ],
         "wrong_options": [
             {
@@ -938,7 +938,7 @@ const problemBank = [
             "First, we compare the medians. Class B has a higher median score than Class A ($30 > 28$), which shows that Class B generally achieved higher scores on the test.",
             "Second, we compare the spreads using the IQR. The IQR for Class B is $38 - 22 = 16$.",
             "Since Class B has a lower IQR than Class A ($16 < 18$), Class B's test scores are more consistent and less spread out.",
-            "Final Answer: $$(a)\\ \\text{Median: } 28,\\ \\text{LQ: } 18,\\ \\text{IQR: } 18,\\ (b)\\ \\text{Class B has a higher median (30 vs 28) and a more consistent score spread (IQR 16 vs 18)}$$$"
+            "Final Answer: $$(a)\\ \\text{Median: } 28,\\ \\text{LQ: } 18,\\ \\text{IQR: } 18,\\ <br>(b)\\ \\text{Class B has a higher median (30 vs 28) and a more consistent score spread (IQR 16 vs 18)}$$"
         ],
         "wrong_options": [
             {
