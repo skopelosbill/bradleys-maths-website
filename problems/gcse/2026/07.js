@@ -660,7 +660,219 @@ const problemBank = [
         },
         "payhip_link": "https://payhip.com/b/wm0xL",
         "button_text": "Master GCSE Geometry: Download the Pack"
+    },
+    {
+        "id": "002197",
+        "date": "16 July 2026",
+        "major_area": "Geometry",
+        "topic": "Scale Drawings and Bearings",
+        "subtopic": "Scale Drawings and Bearings",
+        "difficulty": "5/6",
+        "img": "true",
+        "q": "A ship leaves Port $P$ and sails $18\\text{ km}$ on a bearing of $054^\\circ$ to Port $Q$. The ship then changes course at $Q$ and sails $25\\text{ km}$ on a bearing of $144^\\circ$ to Port $R$.<br>(a) Show that the angle $PQR$ is exactly $90^\\circ$.<br>(b) Calculate the direct distance from Port $P$ to Port $R$, and find the bearing of $R$ from $P$. Give your answers correct to 3 significant figures.",
+        "steps": [
+            "For part (a), we draw North lines at both $P$ and $Q$. The North lines are parallel to each other.",
+            "The bearing of Port $Q$ from Port $P$ is $054^\\circ$. The back bearing of $P$ from $Q$ is calculated as $054^\\circ + 180^\\circ = 234^\\circ$.",
+            "The bearing of Port $R$ from Port $Q$ is given as $144^\\circ$.",
+            "To find the angle $PQR$, we calculate the difference between the back bearing of $P$ and the forward bearing of $R$ from point $Q$.",
+            "This gives the calculation: $\\text{angle } PQR = 234^\\circ - 144^\\circ = 90^\\circ$, completing the proof.",
+            "For part (b), since angle $PQR = 90^\\circ$, triangle $PQR$ is a right-angled triangle.",
+            "We can apply Pythagoras' theorem to calculate the direct distance $PR$: $PR = \\sqrt{PQ^2 + QR^2} = \\sqrt{18^2 + 25^2}$.",
+            "Evaluating the squares gives $PR = \\sqrt{324 + 625} = \\sqrt{949} \\approx 30.8058\\text{ km}$. Correct to 3 significant figures, the distance is $30.8\\text{ km}$.",
+            "To find the bearing of $R$ from $P$, we first find the internal angle $QPR$ using trigonometry: $\\tan(QPR) = \\dfrac{\\text{Opposite}}{\\text{Adjacent}} = \\dfrac{QR}{PQ} = \\dfrac{25}{18}$.",
+            "Evaluating this yields $\\tan(QPR) \\approx 1.38889$. Taking the inverse tangent gives the angle $QPR \\approx 54.246^\\circ$.",
+            "The bearing of $R$ from $P$ is found by adding the internal angle $QPR$ to the initial bearing of $Q$ from $P$ ($054^\\circ$).",
+            "This gives the calculation: $54^\\circ + 54.246^\\circ = 108.246^\\circ$. Correct to 3 significant figures, the bearing is $108^\\circ$.",
+            "Final Answer: $$(a)\\ \\text{Proof completed},\\ (b)\\ \\text{Distance: } 30.8\\text{ km, Bearing: } 108^\\circ$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ \\text{Proof completed},\\ (b)\\ \\text{Distance: } 43.0\\text{ km, Bearing: } 108^\\circ$$",
+                "feedback": "You added the lengths of the two journeys ($18 + 25$) directly instead of using Pythagoras' theorem to find the hypotenuse of the right-angled triangle."
+            },
+            {
+                "ans": "$$(a)\\ \\text{Proof completed},\\ (b)\\ \\text{Distance: } 30.8\\text{ km, Bearing: } 359.8^\\circ$$",
+                "feedback": "You subtracted the internal angle $QPR$ from the bearing of $054^\\circ$ instead of adding it. Since Port $R$ is clockwise from the path $PQ$, the angle must be added."
+            },
+            {
+                "ans": "$$(a)\\ \\text{Proof completed},\\ (b)\\ \\text{Distance: } 30.8\\text{ km, Bearing: } 054.2^\\circ$$",
+                "feedback": "You calculated the internal angle $QPR$ correctly, but you forgot to add the initial bearing of $054^\\circ$ from $P$ to $Q$ to find the overall bearing from the North line."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Parallel Lines in Bearings",
+            "content": "When dealing with bearings, always sketch a vertical North line at every single point where a change of direction occurs. This allows you to apply parallel line geometry—specifically co-interior and alternate angles—to unlock hidden angles and establish right angles without having to guess."
+        },
+        "payhip_link": "https://payhip.com/b/iW9eY",
+        "button_text": "Master GCSE Geometry: Download the Pack"
+    },
+    {
+        "id": "002198",
+        "date": "17 July 2026",
+        "major_area": "Algebra",
+        "topic": "Functions: Domain and Range",
+        "subtopic": "Functions: Domain and Range",
+        "difficulty": "7/8",
+        "q": "The temperature $T$ of a chemical reaction, in degrees Celsius, is modelled by the function $f(x) = \\dfrac{120}{2x - 5}$ for the domain $3 \\le x \\le 10$, where $x$ represents the time in minutes from the start of the reaction.<br>(a) Explain why the value $x = 2.5$ is excluded if the function were defined for all real numbers.<br>(b) Find the range of the function $f(x)$ for the given domain $3 \\le x \\le 10$.",
+        "steps": [
+            "For part (a), we examine the denominator of the algebraic fraction: $2x - 5$.",
+            "If we substitute $x = 2.5$ into this expression, we get $2(2.5) - 5 = 5 - 5 = 0$.",
+            "In mathematics, division by zero is undefined. Therefore, $x = 2.5$ must be excluded from the domain of the function.",
+            "For part (b), we evaluate the function at the boundaries of the domain since the function $f(x)$ decreases continuously without any breaks in the interval $3 \\le x \\le 10$.",
+            "At the lower boundary, $x = 3$: $f(3) = \\dfrac{120}{2(3) - 5} = \\dfrac{120}{1} = 120$.",
+            "At the upper boundary, $x = 10$: $f(10) = \\dfrac{120}{2(10) - 5} = \\dfrac{120}{15} = 8$.",
+            "Since the function decreases smoothly from 120 to 8 as $x$ increases from 3 to 10, the range of the function includes all values between these two limits.",
+            "We express this range as an inequality: $8 \\le f(x) \\le 120$.",
+            "Final Answer: $$(a)\\ \\text{Excludes division by zero},\\ (b)\\ 8 \\le f(x) \\le 120$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ \\text{Excludes division by zero},\\ (b)\\ 3 \\le f(x) \\le 10$$",
+                "feedback": "You stated the boundaries of the domain instead of finding the output values of the function. Range refers to the set of outputs ($f(x)$), not the inputs ($x$)."
+            },
+            {
+                "ans": "$$(a)\\ \\text{Excludes division by zero},\\ (b)\\ 12 \\le f(x) \\le 120$$",
+                "feedback": "You calculated the upper limit of the range correctly, but you made an arithmetic error when evaluating $f(10)$, resulting in an incorrect lower limit of 12."
+            },
+            {
+                "ans": "$$(a)\\ \\text{Excludes division by zero},\\ (b)\\ 8 \\le x \\le 120$$",
+                "feedback": "You calculated the numerical boundaries correctly, but you used the variable $x$ in your range inequality. Range must always be defined in terms of $f(x)$ or $y$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Domain vs Range",
+            "content": "Keep a clear distinction between input and output variables. Domain refers strictly to the allowable inputs and uses the horizontal variable ($x$). Range refers strictly to the resulting outputs and must be written using $f(x)$ or $y$. Writing $8 \\le x \\le 120$ in your final answer is a common slip that will cost you the final mark."
+        },
+        "payhip_link": "https://payhip.com/b/F9KRd",
+        "button_text": "Master GCSE Algebra: Download the Pack"
+    },
+    {
+        "id": "002199",
+        "date": "18 July 2026",
+        "major_area": "Number",
+        "topic": "Prime Numbers HCF LCM",
+        "subtopic": "Prime Numbers HCF LCM",
+        "difficulty": "4/5",
+        "q": "Two local bus services, Route A and Route B, both depart from the central station at 06:00. Route A buses depart every 24 minutes, and Route B buses depart every 36 minutes.<br>(a) Find the Lowest Common Multiple (LCM) of 24 and 36 using prime factor decomposition.<br>(b) At what time will the buses from Route A and Route B next depart the central station at the same time?",
+        "steps": [
+            "For part (a), we find the prime factor decomposition of both numbers.",
+            "For 24: $24 = 2 \\times 12 = 2 \\times 2 \\times 6 = 2 \\times 2 \\times 2 \\times 3 = 2^3 \\times 3$.",
+            "For 36: $36 = 2 \\times 18 = 2 \\times 2 \\times 9 = 2 \\times 2 \\times 3 \\times 3 = 2^2 \\times 3^2$.",
+            "To find the Lowest Common Multiple (LCM), we take the highest power of each prime factor present in either decomposition.",
+            "This gives: $\\text{LCM} = 2^3 \\times 3^2 = 8 \\times 9 = 72$.",
+            "For part (b), the LCM tells us that both buses will depart at the same time again after exactly 72 minutes.",
+            "We convert 72 minutes into hours and minutes: $72\\text{ minutes} = 1\\text{ hour and } 12\\text{ minutes}$.",
+            "Adding 1 hour and 12 minutes to the initial departure time of 06:00 gives the next simultaneous departure time as 07:12.",
+            "Final Answer: $$(a)\\ 72,\\ (b)\\ 07:12$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ 12,\\ (b)\\ 06:12$$",
+                "feedback": "You calculated the Highest Common Factor (HCF) of 12 instead of the Lowest Common Multiple (LCM). LCM is required to find the next overlapping occurrence in a schedule."
+            },
+            {
+                "ans": "$$(a)\\ 864,\\ (b)\\ 20:24$$",
+                "feedback": "You multiplied 24 and 36 together directly. While 864 is a common multiple, it is not the lowest common multiple, which is required to find the *next* departure."
+            },
+            {
+                "ans": "$$(a)\\ 144,\\ (b)\\ 08:24$$",
+                "feedback": "You calculated a common multiple of 144 instead of the lowest common multiple, resulting in a departure time that is further in the future than necessary."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Scheduling and Multiples",
+            "content": "Any scheduling or synchronization question involving repeating time intervals is fundamentally an LCM problem. Always find the Lowest Common Multiple of the intervals first, then add that duration to the initial starting time to find the correct point on the clock."
+        },
+        "payhip_link": "https://payhip.com/b/ul4LH",
+        "button_text": "Master GCSE Number: Download the Pack"
+    },
+    {
+        "id": "002200",
+        "date": "19 July 2026",
+        "major_area": "Geometry",
+        "topic": "Perimeter and Area in 2D",
+        "subtopic": "Perimeter and Area in 2D",
+        "difficulty": "5/6",
+        "img": "true",
+        "q": "A children's play area is designed in the shape of a rectangle connected to a semicircle as shown in the diagram. The rectangle has a length of $14\\text{ m}$ and a width of $8\\text{ m}$. The diameter of the semicircle is equal to the width of the rectangle.<br>(a) Calculate the total area of the play area. Give your answer in square metres correct to 1 decimal place.<br>(b) Calculate the total perimeter of the play area, excluding the boundary line where the shapes meet. Give your answer in metres correct to 3 significant figures.",
+        "steps": [
+            "For part (a), the total area is the sum of the area of the rectangle and the area of the semicircle.",
+            "The area of the rectangle is calculated as: $\\text{Area}_{\\text{rect}} = \\text{length} \\times \\text{width} = 14 \\times 8 = 112\\text{ m}^2$.",
+            "The diameter of the semicircle is $8\\text{ m}$, so its radius is $r = 4\\text{ m}$.",
+            "The area of the semicircle is: $\\text{Area}_{\\text{semi}} = \\dfrac{1}{2} \\pi r^2 = \\dfrac{1}{2} \\pi (4)^2 = 8\\pi \\approx 25.1327\\text{ m}^2$.",
+            "The total area is: $112 + 25.1327 = 137.1327\\text{ m}^2$. Correct to 1 decimal place, this is $137.1\\text{ m}^2$.",
+            "For part (b), the perimeter consists of three outer sides of the rectangle and the curved boundary of the semicircle.",
+            "The length of the three outer sides of the rectangle is: $14 + 14 + 8 = 36\\text{ m}$.",
+            "The curved boundary of the semicircle is half the circumference of a full circle: $\\text{Circumference}_{\\text{semi}} = \\pi r = 4\\pi \\approx 12.5664\\text{ m}$.",
+            "The total perimeter is: $36 + 12.5664 = 48.5664\\text{ m}$.",
+            "Rounding to 3 significant figures gives the final perimeter as $48.6\\text{ m}$.",
+            "Final Answer: $$(a)\\ 137.1\\text{ m}^2,\\ (b)\\ 48.6\\text{ m}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ 137.1\\text{ m}^2,\\ (b)\\ 56.6\\text{ m}$$",
+                "feedback": "You included the internal boundary line where the shapes meet ($8\\text{ m}$) in your perimeter calculation. Perimeter only measures the outer boundary."
+            },
+            {
+                "ans": "$$(a)\\ 162.3\\text{ m}^2,\\ (b)\\ 61.1\\text{ m}$$",
+                "feedback": "You treated the semicircle as a full circle in both calculations, adding too much area and boundary length."
+            },
+            {
+                "ans": "$$(a)\\ 212.5\\text{ m}^2,\\ (b)\\ 48.6\\text{ m}$$",
+                "feedback": "You incorrectly used the diameter of $8\\text{ m}$ instead of the radius of $4\\text{ m}$ in the semicircle area formula, which doubled the curved area."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Outer Boundaries Only",
+            "content": "A common mistake when finding the perimeter of a composite shape is adding up all the individual perimeters of the component shapes. Remember that the perimeter only counts the outer edge of the combined object; any internal dividing lines where shapes connect must be strictly ignored."
+        },
+        "payhip_link": "https://payhip.com/b/zukBR",
+        "button_text": "Master GCSE Geometry: Download the Pack"
+    },
+    {
+        "id": "002201",
+        "date": "20 July 2026",
+        "major_area": "Probability & Statistics",
+        "topic": "Data Presentation",
+        "subtopic": "Cumulative Frequency Diagrams",
+        "difficulty": "6/7",
+        "q": "The waiting times, $w$ minutes, of 80 patients at a medical clinic were recorded. A cumulative frequency diagram was constructed from the data.<br>(a) From the cumulative frequency diagram, the median waiting time was found to be 24 minutes. Explain what the median represents in this context.<br>(b) The lower quartile is 15 minutes and the upper quartile is 34 minutes. Calculate the Interquartile Range (IQR) and explain why the IQR is often preferred over the full range as a measure of spread.",
+        "steps": [
+            "For part (a), the median represents the middle waiting time of the surveyed patients.",
+            "In this context, it indicates that exactly half ($50\\%$) of the patients waited 24 minutes or less, and the other half waited more than 24 minutes.",
+            "For part (b), we calculate the Interquartile Range (IQR) using the formula: $\\text{IQR} = \\text{Upper Quartile} - \\text{Lower Quartile}$.",
+            "Substituting our values: $\\text{IQR} = 34 - 15 = 19\\text{ minutes}$.",
+            "The IQR is often preferred over the full range as a measure of spread because it focuses strictly on the middle $50\\%$ of the data.",
+            "By doing this, it is not distorted by any extreme values or anomalous data points (outliers) at either end of the distribution.",
+            "Final Answer: $$(a)\\ \\text{The middle waiting time of the patients},\\ (b)\\ 19\\text{ minutes, because it is unaffected by outliers}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ \\text{The average waiting time},\\ (b)\\ 49\\text{ minutes, because it covers more of the data set}$$",
+                "feedback": "You added the quartiles together instead of subtracting them for part (b), and 'average' is too vague for the median—specify the middle 50% split."
+            },
+            {
+                "ans": "$$(a)\\ \\text{The middle waiting time of the patients},\\ (b)\\ 9\\text{ minutes, because it is more precise}$$",
+                "feedback": "You calculated the difference between the median and the lower quartile instead of calculating the distance between the upper and lower quartiles."
+            },
+            {
+                "ans": "$$(a)\\ \\text{The middle waiting time of the patients},\\ (b)\\ 19\\text{ minutes, because it includes all the data points}$$",
+                "feedback": "Your IQR calculation is correct, but your explanation is incorrect. The IQR is preferred precisely because it *excludes* the extreme top and bottom quarters of the data."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Explaining Quartile Spreads",
+            "content": "When explaining why the IQR is used, always use the keyword 'outlier' or 'extreme value'. The full range is highly sensitive to a single anomaly (for example, one patient waiting three hours), whereas the IQR remains stable because it looks only at the core middle bulk of the data."
+        },
+        "payhip_link": "https://payhip.com/b/fmvej",
+        "button_text": "Master GCSE Probability & Statistics: Download the Pack"
     }
+
 
 
 ];
