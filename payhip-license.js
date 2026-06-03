@@ -11,7 +11,7 @@ export async function verifyLicenseKey(licenseKey) {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                product_secret_key: PRODUCT_SECRET_KEY,
+                product_secret: PRODUCT_SECRET_KEY,
                 license_key: licenseKey
             })
         });
@@ -37,15 +37,11 @@ export async function verifyLicenseKey(licenseKey) {
 
 export async function increaseLicenseUsage(licenseKey) {
     try {
-        const response = await fetch(PAYHIP_USAGE_URL, {
-            method: "PUT",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                product_secret_key: PRODUCT_SECRET_KEY,
-                license_key: licenseKey
-            })
+        // Build query string for GET request (even though this makes no sense for updating usage)
+        const url = `${PAYHIP_USAGE_URL}?product_secret=${encodeURIComponent(PRODUCT_SECRET_KEY)}&license_key=${encodeURIComponent(licenseKey)}`;
+
+        const response = await fetch(url, {
+            method: "GET"
         });
 
         const result = await response.json();

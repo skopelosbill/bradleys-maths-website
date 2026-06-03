@@ -1,4 +1,8 @@
+localStorage.clear();
+
+
 import { verifyLicenseKey, increaseLicenseUsage } from "./payhip-license.js";
+
 
 document.getElementById("unlock-btn").addEventListener("click", async () => {
     const key = document.getElementById("license-input").value.trim();
@@ -12,14 +16,14 @@ document.getElementById("unlock-btn").addEventListener("click", async () => {
 
     status.textContent = "Checking key…";
 
-    // 🔥 CHECK FREE KEYS (this is the new block)
+    // 🔥 CHECK FREE KEYS
     const freeKeys = await fetch("free_keys.json").then(r => r.json());
     if (freeKeys.includes(key)) {
         localStorage.setItem("app_unlocked", "true");
+        localStorage.setItem("licenseKey", key);   // ← FIXED
         window.location.href = "unified-revision-hub.html";
         return;
     }
-    // 🔥 END FREE KEYS BLOCK
 
     const result = await verifyLicenseKey(key);
 
@@ -32,7 +36,7 @@ document.getElementById("unlock-btn").addEventListener("click", async () => {
     await increaseLicenseUsage(key);
 
     localStorage.setItem("app_unlocked", "true");
-    localStorage.setItem("license_key", key);
+    localStorage.setItem("licenseKey", key);       // ← FIXED
 
     status.textContent = "License verified. Unlocking…";
     status.style.color = "green";

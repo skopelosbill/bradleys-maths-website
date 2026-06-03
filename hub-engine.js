@@ -886,3 +886,5 @@ const BradleyHub = {
         this.init('audit', newTier);
     }
 };
+ //TEMPORARY: Force paywall for testing
+    BradleyHub.state.freeQuestionsLeft = 0;
