@@ -871,8 +871,234 @@ const problemBank = [
         },
         "payhip_link": "https://payhip.com/b/fmvej",
         "button_text": "Master GCSE Probability & Statistics: Download the Pack"
+    },
+    {
+        "id": "002202",
+        "date": "21 July 2026",
+        "major_area": "Algebra",
+        "topic": "Linear Graphs",
+        "subtopic": "Equations of Linear Graphs",
+        "difficulty": "5/6",
+        "q": "The straight line $L_1$ passes through the points $A(2, 5)$ and $B(6, 13)$.<br>(a) Find the equation of the line $L_1$, giving your answer in the form $y = mx + c$.<br>(b) A second line, $L_2$, is perpendicular to $L_1$ and passes through the point $C(3, -1)$. Find the equation of $L_2$.<br>(c) Find the coordinates of the point of intersection of $L_1$ and $L_2$.",
+        "steps": [
+            "For part (a), we first find the gradient, $m$, of $L_1$ using the gradient formula $m = \\dfrac{y_2 - y_1}{x_2 - x_1}$.",
+            "Substituting the coordinates of $A(2, 5)$ and $B(6, 13)$ gives: $m = \\dfrac{13 - 5}{6 - 2} = \\dfrac{8}{4} = 2$.",
+            "Now, we substitute this gradient and the point $A(2, 5)$ into the equation of a straight line, $y = mx + c$, to find the y-intercept $c$.",
+            "This yields: $5 = 2(2) + c \\implies 5 = 4 + c \\implies c = 1$. The equation of $L_1$ is $y = 2x + 1$.",
+            "For part (b), we use the perpendicular gradient rule: $m_1 \\times m_2 = -1$. Since the gradient of $L_1$ is 2, the gradient of the perpendicular line $L_2$ is $-\\dfrac{1}{2}$.",
+            "We substitute this perpendicular gradient and the point $C(3, -1)$ into the equation $y = mx + c$.",
+            "This yields: $-1 = -\\dfrac{1}{2}(3) + c \\implies -1 = -1.5 + c \\implies c = 0.5$.",
+            "The equation of $L_2$ is $y = -0.5x + 0.5$.",
+            "For part (c), we find the intersection point by setting the two linear equations equal to each other: $2x + 1 = -0.5x + 0.5$.",
+            "Adding $0.5x$ to both sides gives: $2.5x + 1 = 0.5$.",
+            "Subtracting 1 from both sides gives: $2.5x = -0.5$.",
+            "Dividing by 2.5 gives: $x = -0.2$.",
+            "We substitute $x = -0.2$ back into the equation of $L_1$ to find $y$: $y = 2(-0.2) + 1 = -0.4 + 1 = 0.6$.",
+            "The point of intersection is $(-0.2, 0.6)$.",
+            "Final Answer: $$(a)\\ y = 2x + 1,\\ (b)\\ y = -0.5x + 0.5,\\ (c)\\ (-0.2, 0.6)$$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ y = 2x + 1,\\ (b)\\ y = 2x - 7,\\ (c)\\ \\text{No intersection}$$$",
+                "feedback": "For part (b), you used the same gradient of 2 for $L_2$ as $L_1$. Perpendicular lines must have negative reciprocal gradients, which is $-\\dfrac{1}{2}$."
+            },
+            {
+                "ans": "$$(a)\\ y = 0.5x + 4,\\ (b)\\ y = -2x + 5,\\ (c)\\ (0.4, 4.2)$$$",
+                "feedback": "You calculated the gradient of $L_1$ as $\\dfrac{\\text{change in } x}{\\text{change in } y}$ instead of $\\dfrac{\\text{change in } y}{\\text{change in } x}$, reversing your subsequent calculations."
+            },
+            {
+                "ans": "$$(a)\\ y = 2x + 1,\\ (b)\\ y = -0.5x + 0.5,\\ (c)\\ (-0.2, 1.4)$$$",
+                "feedback": "Your linear equations are correct, but you made an arithmetic error when substituting $x = -0.2$ back into the equation to find $y$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Gradient Relationships",
+            "content": "Always remember the difference between parallel and perpendicular lines. Parallel lines share the exact same gradient. Perpendicular lines have gradients that multiply to make $-1$. To find a perpendicular gradient quickly, turn the original gradient into a fraction, flip it upside down, and change the sign."
+        },
+        "payhip_link": "https://payhip.com/b/U8umo",
+        "button_text": "Master GCSE Algebra: Download the Pack"
+    },
+    {
+        "id": "002203",
+        "date": "22 July 2026",
+        "major_area": "Probability & Statistics",
+        "topic": "Data Presentation",
+        "subtopic": "Box and Whisker Plots",
+        "difficulty": "6/7",
+        "img": "true",
+        "q": "The box plot in the diagram shows the distribution of scores achieved by Class A in a mathematics test.<br>(a) Find the median score, the lower quartile, and the interquartile range (IQR) of Class A from the diagram.<br>(b) The test scores of Class B are summarised by the following values: Minimum = 12, Lower Quartile = 22, Median = 30, Upper Quartile = 38, Maximum = 48. Compare the scores of Class A and Class B in two structured ways.",
+        "steps": [
+            "For part (a), we read the key values directly from Class A's box plot.",
+            "The median is represented by the line inside the box, which aligns with 28.",
+            "The lower quartile (LQ) is represented by the left edge of the box, which aligns with 18.",
+            "The upper quartile (UQ) is represented by the right edge of the box, which aligns with 36.",
+            "The interquartile range (IQR) is the difference between the upper and lower quartiles: $\\text{IQR} = 36 - 18 = 18$.",
+            "For part (b), we compare the two distributions by examining their average (median) and their spread (IQR).",
+            "First, we compare the medians. Class B has a higher median score than Class A ($30 > 28$), which shows that Class B generally achieved higher scores on the test.",
+            "Second, we compare the spreads using the IQR. The IQR for Class B is $38 - 22 = 16$.",
+            "Since Class B has a lower IQR than Class A ($16 < 18$), Class B's test scores are more consistent and less spread out.",
+            "Final Answer: $$(a)\\ \\text{Median: } 28,\\ \\text{LQ: } 18,\\ \\text{IQR: } 18,\\ (b)\\ \\text{Class B has a higher median (30 vs 28) and a more consistent score spread (IQR 16 vs 18)}$$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ \\text{Median: } 28,\\ \\text{LQ: } 20,\\ \\text{IQR: } 14,\\ (b)\\ \\text{Class A generally scored higher and is more consistent}$$$",
+                "feedback": "You misread the scale of the box plot for Class A, which led to incorrect quartile values. For part (b), you also reversed the logic of the comparison."
+            },
+            {
+                "ans": "$$(a)\\ \\text{Median: } 28,\\ \\text{LQ: } 18,\\ \\text{IQR: } 18,\\ (b)\\ \\text{Class A generally scored higher and is more consistent}$$$",
+                "feedback": "Your calculations for Class A are correct, but you drew the wrong conclusions in part (b). A higher median indicates higher overall performance, and a lower IQR indicates higher consistency."
+            },
+            {
+                "ans": "$$(a)\\ \\text{Median: } 28,\\ \\text{LQ: } 18,\\ \\text{IQR: } 54,\\ (b)\\ \\text{Class B generally scored higher and is more consistent}$$$",
+                "feedback": "You added the quartiles together ($36 + 18 = 54$) instead of subtracting them to calculate the interquartile range for Class A."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Making Structured Comparisons",
+            "content": "To get full marks on comparison questions, you must compare two specific statistical metrics using comparative adjectives (like 'higher' or 'lower') and contextualise them in terms of 'typical performance' (median) and 'consistency' (IQR). Simply listing the numbers without comparing them will yield zero marks."
+        },
+        "payhip_link": "https://payhip.com/b/L5f6Y",
+        "button_text": "Master GCSE Probability & Statistics: Download the Pack"
+    },
+    {
+        "id": "002204",
+        "date": "23 July 2026",
+        "major_area": "Number",
+        "topic": "Ratio and Proportion",
+        "subtopic": "Direct and Inverse Proportion",
+        "difficulty": "7/8",
+        "q": "The intensity of light, $I$ lux, at a point is inversely proportional to the square of the distance, $d$ metres, from a light bulb.<br>At a distance of $3\\text{ m}$ from the bulb, the intensity of light is $20\\text{ lux}$.<br>(a) Find a formula for $I$ in terms of $d$.<br>(b) Calculate the intensity of light at a distance of $5\\text{ m}$ from the bulb.<br>(c) Calculate the distance from the bulb when the intensity of light is $1.25\\text{ lux}$.",
+        "steps": [
+            "For part (a), we write the statement of inverse proportion as an equation: $I = \\dfrac{k}{d^2}$, where $k$ is the constant of proportionality.",
+            "We substitute the known values $d = 3$ and $I = 20$ into this equation: $20 = \\dfrac{k}{3^2} \\implies 20 = \\dfrac{k}{9}$.",
+            "To solve for $k$, we multiply both sides by 9: $k = 20 \\times 9 = 180$.",
+            "Substituting $k$ back into the proportion equation gives the formula: $I = \\dfrac{180}{d^2}$.",
+            "For part (b), we substitute $d = 5$ into our formula: $I = \\dfrac{180}{5^2}$.",
+            "This simplifies to $I = \\dfrac{180}{25} = 7.2\\text{ lux}$.",
+            "For part (c), we substitute $I = 1.25$ into our formula to solve for $d$: $1.25 = \\dfrac{180}{d^2}$.",
+            "We multiply both sides by $d^2$: $1.25d^2 = 180$.",
+            "We divide both sides by 1.25: $d^2 = \\dfrac{180}{1.25} = 144$.",
+            "Taking the positive square root of both sides gives the distance: $d = \\sqrt{144} = 12\\text{ m}$.",
+            "Final Answer: $$(a)\\ I = \\dfrac{180}{d^2},\\ (b)\\ 7.2\\text{ lux},\\ (c)\\ 12\\text{ m}$$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ I = \\dfrac{60}{d},\\ (b)\\ 12.0\\text{ lux},\\ (c)\\ 48\\text{ m}$$$",
+                "feedback": "You modeled the relationship as inversely proportional to $d$ instead of inversely proportional to the square of $d$ ($d^2$)."
+            },
+            {
+                "ans": "$$(a)\\ I = \\dfrac{180}{d^2},\\ (b)\\ 36.0\\text{ lux},\\ (c)\\ 12\\text{ m}$$$",
+                "feedback": "Your formula and part (c) are correct, but in part (b) you squared the 5 in the denominator but did not divide 180 by it correctly, or you used $5$ instead of $5^2$."
+            },
+            {
+                "ans": "$$(a)\\ I = 2.22d^2,\\ (b)\\ 55.5\\text{ lux},\\ (c)\\ 0.75\\text{ m}$$$",
+                "feedback": "You modeled the relationship as directly proportional to $d^2$ instead of inversely proportional to $d^2$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Reading Key Relationship Words",
+            "content": "Pay extremely close attention to the wording of proportional relationships. 'Inversely proportional to the square' means you must write your variable as $d^2$ in the denominator of the fraction. Forgetting the square, or modeling it as direct proportion, will cause compounding errors throughout parts (b) and (c)."
+        },
+        "payhip_link": "https://payhip.com/b/JYBkq",
+        "button_text": "Master GCSE Ratio & Proportion: Download the Pack"
+    },
+    {
+        "id": "002205",
+        "date": "24 July 2026",
+        "major_area": "Geometry",
+        "topic": "Trigonometry",
+        "subtopic": "Sine Rule",
+        "difficulty": "7/8",
+        "img": "true",
+        "q": "The diagram shows triangle $XYZ$. The length $XY = 12.6\\text{ cm}$, the angle $XYZ = 48^\\circ$, and the angle $XZY = 34^\\circ$.<br>(a) Calculate the length of $XZ$. Give your answer correct to 3 significant figures.<br>(b) Calculate the area of the triangle $XYZ$. Give your answer in square centimetres correct to 1 decimal place.",
+        "steps": [
+            "For part (a), we identify that we are given two angles and one opposite side, which allows us to apply the Sine Rule: $\\dfrac{a}{\\sin(A)} = \\dfrac{b}{\\sin(B)}$.",
+            "We can write this relation for sides $XZ$ and $XY$: $\\dfrac{XZ}{\\sin(XYZ)} = \\dfrac{XY}{\\sin(XZY)}$.",
+            "Substituting our values: $\\dfrac{XZ}{\\sin(48^\\circ)} = \\dfrac{12.6}{\\sin(34^\\circ)}$.",
+            "Rearranging to solve for $XZ$: $XZ = \\dfrac{12.6 \\times \\sin(48^\\circ)}{\\sin(34^\\circ)}$.",
+            "Evaluating using a calculator: $\\sin(48^\\circ) \\approx 0.743145$ and $\\sin(34^\\circ) \\approx 0.559193$.",
+            "This gives: $XZ = \\dfrac{12.6 \\times 0.743145}{0.559193} \\approx 16.745\\text{ cm}$. Rounded to 3 significant figures, $XZ = 16.7\\text{ cm}$.",
+            "For part (b), we find the area using the formula $\\text{Area} = \\dfrac{1}{2}ab \\sin(C)$. This requires two sides and the included angle.",
+            "The included angle between sides $XY$ and $XZ$ is angle $YXZ$.",
+            "The angles in a triangle sum to $180^\\circ$, so angle $YXZ = 180^\\circ - (48^\\circ + 34^\\circ) = 180^\\circ - 82^\\circ = 98^\\circ$.",
+            "Now we apply the area formula using $XY = 12.6\\text{ cm}$, $XZ \\approx 16.745\\text{ cm}$, and angle $YXZ = 98^\\circ$.",
+            "This gives: $\\text{Area} = \\dfrac{1}{2} \\times 12.6 \\times 16.745 \\times \\sin(98^\\circ)$.",
+            "Evaluating using a calculator (where $\\sin(98^\\circ) \\approx 0.990268$): $\\text{Area} \\approx 6.3 \\times 16.745 \\times 0.990268 \\approx 104.468\\text{ cm}^2$.",
+            "Rounding to 1 decimal place gives an area of $104.5\\text{ cm}^2$.",
+            "Final Answer: $$(a)\\ 16.7\\text{ cm},\\ (b)\\ 104.5\\text{ cm}^2$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ 14.1\\text{ cm},\\ (b)\\ 66.2\\text{ cm}^2$$",
+                "feedback": "You used the cosine rule or standard right-angle trigonometry incorrectly, assuming that the triangle contained a right angle."
+            },
+            {
+                "ans": "$$(a)\\ 16.7\\text{ cm},\\ (b)\\ 78.4\\text{ cm}^2$$",
+                "feedback": "Your side length calculation is correct, but you used the angle $48^\\circ$ instead of the correct included angle $98^\\circ$ in your area calculation."
+            },
+            {
+                "ans": "$$(a)\\ 9.48\\text{ cm},\\ (b)\\ 104.5\\text{ cm}^2$$",
+                "feedback": "You multiplied by $\\sin(34^\\circ)$ and divided by $\\sin(48^\\circ)$ in your Sine Rule rearrangement, reversing the fraction."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Finding the Included Angle",
+            "content": "To calculate the area of a non-right-angled triangle, the angle used in the formula $\\dfrac{1}{2}ab \\sin(C)$ must be the included angle—the angle trapped directly between the two sides you are multiplying. Here, that is angle $YXZ$. Always find this angle first by subtracting the other two known angles from $180^\\circ$."
+        },
+        "payhip_link": "https://payhip.com/b/EaYM1",
+        "button_text": "Master GCSE Trigonometry: Download the Pack"
+    },
+    {
+        "id": "002206",
+        "date": "25 July 2026",
+        "major_area": "Number",
+        "topic": "Indices",
+        "subtopic": "Fractional Indices and Roots",
+        "difficulty": "8/9",
+        "q": "(a) Evaluate $64^{-\\frac{2}{3}}$.<br>(b) Simplify completely $(81x^8 y^{-4})^{\\frac{3}{4}}$.<br>(c) Solve the equation $5^{y+1} = 25^{y-2}$.",
+        "steps": [
+            "For part (a), we deal with the negative index first. A negative exponent indicates the reciprocal: $64^{-\\frac{2}{3}} = \\dfrac{1}{64^{\\frac{2}{3}}}$.",
+            "The fractional index $\\dfrac{2}{3}$ represents the square of the cube root. We evaluate this as: $64^{\\frac{2}{3}} = (\\sqrt[3]{64})^2$.",
+            "Since the cube root of 64 is 4, this simplifies to $4^2 = 16$.",
+            "Therefore, $64^{-\\frac{2}{3}} = \\dfrac{1}{16}$.",
+            "For part (b), we apply the fractional index $\\dfrac{3}{4}$ to every term inside the bracket.",
+            "This gives: $(81x^8 y^{-4})^{\\frac{3}{4}} = 81^{\\frac{3}{4}} \\times (x^8)^{\\frac{3}{4}} \\times (y^{-4})^{\\frac{3}{4}}$.",
+            "Evaluating the coefficient: $81^{\\frac{3}{4}} = (\\sqrt[4]{81})^3 = 3^3 = 27$.",
+            "Evaluating the $x$ power using the power of a power rule: $8 \\times \\dfrac{3}{4} = 6$, giving $x^6$.",
+            "Evaluating the $y$ power using the power of a power rule: $-4 \\times \\dfrac{3}{4} = -3$, giving $y^{-3}$ (or $\\dfrac{1}{y^3}$).",
+            "Combining these terms gives: $27x^6 y^{-3}$ (or $\\dfrac{27x^6}{y^3}$).",
+            "For part (c), we express both sides of the equation using the same base.",
+            "Since $25 = 5^2$, we can rewrite the right side as: $(5^2)^{y-2} = 5^{2(y-2)} = 5^{2y-4}$.",
+            "Since the bases are now identical, we can equate the exponents: $y + 1 = 2y - 4$.",
+            "Subtracting $y$ from both sides gives: $1 = y - 4$.",
+            "Adding 4 to both sides gives the solution: $y = 5$.",
+            "Final Answer: $$(a)\\ \\dfrac{1}{16},\\ (b)\\ 27x^6 y^{-3},\\ (c)\\ y = 5$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ -16,\\ (b)\\ 60.75x^6 y^{-3},\\ (c)\\ y = 3$$",
+                "feedback": "For part (a), you treated the negative index as a sign for the entire final value instead of taking the reciprocal. For part (b), you multiplied the coefficient 81 by $\\dfrac{3}{4}$ instead of raising it to the power of $\\dfrac{3}{4}$."
+            },
+            {
+                "ans": "$$(a)\\ \\dfrac{1}{16},\\ (b)\\ 27x^{\\frac{35}{4}} y^{-\\frac{13}{4}},\\ (c)\\ y = 5$$",
+                "feedback": "Your values for (a) and (c) are correct, but in part (b) you added the exponents together instead of multiplying them when applying the power of a power rule."
+            },
+            {
+                "ans": "$$(a)\\ \\dfrac{1}{16},\\ (b)\\ 27x^6 y^{-3},\\ (c)\\ y = -3$$",
+                "feedback": "Your calculations for (a) and (b) are correct, but in part (c) you made a sign error when expanding $2(y - 2)$, writing it as $2y - 2$ instead of $2y - 4$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Fractional Exponent Ordering",
+            "content": "When evaluating fractional exponents like $81^{\\frac{3}{4}}$, always perform the root calculation *before* raising it to the power. Finding the fourth root of 81 first ($\\sqrt[4]{81} = 3$) and then cubing it ($3^3 = 27$) is significantly easier to compute mentally than trying to calculate the cube of 81 first."
+        },
+        "payhip_link": "https://payhip.com/b/iU6Nj",
+        "button_text": "Master GCSE Algebra: Download the Pack"
     }
-
-
 
 ];
