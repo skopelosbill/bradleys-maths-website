@@ -1287,51 +1287,52 @@ const problemBank = [
         "button_text": "Master 3D Pythagoras: Download the Pack"
     },
     {
-        "id": "002211",
-        "date": "30 July 2026",
-        "major_area": "Probability & Statistics",
-        "topic": "Probability",
-        "subtopic": "Conditional Probability",
-        "difficulty": "5/6",
-        "q": "A youth club has 100 members. Every member is asked about their favourite sport. The results are summarised as follows:<br>- Of the 55 boys, 32 choose football, 12 choose tennis, and 11 choose athletics.<br>- Of the 45 girls, 18 choose football, 22 choose tennis, and 5 choose athletics.<br>(a) Construct a two-way table to fully represent this information.<br>(b) A member of the youth club is chosen at random. Calculate the probability that this member chooses tennis.<br>(c) A girl is chosen at random from the club. Calculate the probability that she chooses football.",
-        "steps": [
-            "For part (a), we construct a two-way table with rows representing gender (Boys, Girls) and columns representing their favourite sport (Football, Tennis, Athletics), including a total column and row.",
-            "Row 1 (Boys): 32 Football, 12 Tennis, 11 Athletics. Total Boys = $32 + 12 + 11 = 55$.",
-            "Row 2 (Girls): 18 Football, 22 Tennis, 5 Athletics. Total Girls = $18 + 22 + 5 = 45$.",
-            "Column Totals: Football $= 32 + 18 = 50$, Tennis $= 12 + 22 = 34$, Athletics $= 11 + 5 = 16$.",
-            "The overall total is $55 + 45 = 100$, confirming our columns and rows match perfectly.",
-            "For part (b), we find the probability of a randomly chosen member choosing tennis.",
-            "The total number of members in the sample space is 100. The total number of members who choose tennis is 34.",
-            "This gives the probability: $\\text{P}(\\text{Tennis}) = \\dfrac{34}{100}$. Simplifying the fraction by dividing the numerator and denominator by 2 yields $\\dfrac{17}{50}$ (or $0.34$).",
-            "For part (c), we are given the condition that the chosen member is a girl. This completely restricts our sample space to the 45 girls.",
-            "The number of girls who choose football is 18.",
-            "The conditional probability is calculated by dividing the number of girls who choose football by the total number of girls: $\\text{P}(\\text{Football} | \\text{Girl}) = \\dfrac{18}{45}$.",
-            "Simplifying the fraction $\\dfrac{18}{45}$ by dividing the numerator and denominator by their greatest common divisor, 9, yields $\\dfrac{2}{5}$ (or $0.4$).",
-            "Final Answer: $$(a)\\ \\text{Two-way table constructed}$$<br>$$(b)\\ \\dfrac{17}{50}$$<br>$$(c)\\ \\dfrac{2}{5}$$"
-        ],
-        "wrong_options": [
-            {
-                "ans": "$$(a)\\ \\text{Two-way table constructed}$$<br>$$(b)\\ \\dfrac{17}{50}$$<br>$$(c)\\ \\dfrac{9}{50}$$",
-                "feedback": "For part (c), you divided the number of girls who choose football (18) by the entire club membership of 100 instead of restricting your denominator to the 45 girls."
-            },
-            {
-                "ans": "$$(a)\\ \\text{Two-way table constructed}$$<br>$$(b)\\ \\dfrac{12}{50}$$<br>$$(c)\\ \\dfrac{2}{5}$$",
-                "feedback": "For part (b), you used the number of boys who choose tennis (12) as your numerator instead of the overall total of 34 tennis players."
-            },
-            {
-                "ans": "$$(a)\\ \\text{Two-way table constructed}$$<br>$$(b)\\ \\dfrac{17}{50}$$<br>$$(c)\\ \\dfrac{9}{25}$$",
-                "feedback": "For part (c), you used the total number of football players (50) as your denominator instead of restricting it to the 45 girls."
-            }
-        ],
-        "bradley_insight": {
-            "type": "pro-tip",
-            "title": "The Head Teacher's Eye: Spotting Restricted Denominators",
-            "content": "On two-way table questions, always look for the keyword 'Given that...' or 'A [specific group] is chosen...'. In part (c), because we are told a girl is chosen, we ignore all the boys and the column totals. The denominator of your probability must be 45, not 100."
+    "id": "002211",
+    "date": "30 July 2026",
+    "major_area": "Probability & Statistics",
+    "topic": "Probability",
+    "subtopic": "Conditional Probability",
+    "difficulty": "5/6",
+    "q": "A youth club has 100 members. Every member is asked about their favourite sport. The results are summarised as follows:<br>- Of the 55 boys, 32 choose football, 12 choose tennis, and 11 choose athletics.<br>- Of the 45 girls, 18 choose football, 22 choose tennis, and 5 choose athletics.<br>(a) Construct a two-way table to fully represent this information.<br>(b) A member of the youth club is chosen at random. Calculate the probability that this member chooses tennis.<br>(c) A girl is chosen at random from the club. Calculate the probability that she chooses football.",
+    "steps": [
+        "For part (a), we construct a two-way table with rows representing gender (Boys, Girls) and columns representing their favourite sport (Football, Tennis, Athletics), including a total column and row.",
+        "We fill in the given data and calculate the missing column and row totals to produce the completed table:<br><br><table border='1' style='border-collapse: collapse; text-align: center; margin: 10px 0; width: 100%; max-width: 500px;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px;'></th><th style='padding: 8px;'>Football</th><th style='padding: 8px;'>Tennis</th><th style='padding: 8px;'>Athletics</th><th style='padding: 8px;'>Total</th></tr></thead><tbody><tr><td style='padding: 8px; font-weight: bold;'>Boys</td><td style='padding: 8px;'>32</td><td style='padding: 8px;'>12</td><td style='padding: 8px;'>11</td><td style='padding: 8px; font-weight: bold;'>55</td></tr><tr><td style='padding: 8px; font-weight: bold;'>Girls</td><td style='padding: 8px;'>18</td><td style='padding: 8px;'>22</td><td style='padding: 8px;'>5</td><td style='padding: 8px; font-weight: bold;'>45</td></tr><tr style='font-weight: bold; background-color: #f9f9f9;'><td style='padding: 8px;'>Total</td><td style='padding: 8px;'>50</td><td style='padding: 8px;'>34</td><td style='padding: 8px;'>16</td><td style='padding: 8px;'>100</td></tr></tbody></table>",
+        "Row 1 (Boys): 32 Football, 12 Tennis, 11 Athletics. Total Boys = $32 + 12 + 11 = 55$.",
+        "Row 2 (Girls): 18 Football, 22 Tennis, 5 Athletics. Total Girls = $18 + 22 + 5 = 45$.",
+        "Column Totals: Football $= 32 + 18 = 50$, Tennis $= 12 + 22 = 34$, Athletics $= 11 + 5 = 16$.",
+        "The overall total is $55 + 45 = 100$, confirming our columns and rows match perfectly.",
+        "For part (b), we find the probability of a randomly chosen member choosing tennis.",
+        "The total number of members in the sample space is 100. The total number of members who choose tennis is 34.",
+        "This gives the probability: $\\text{P}(\\text{Tennis}) = \\dfrac{34}{100}$. Simplifying the fraction by dividing the numerator and denominator by 2 yields $\\dfrac{17}{50}$ (or $0.34$).",
+        "For part (c), we are given the condition that the chosen member is a girl. This completely restricts our sample space to the 45 girls.",
+        "The number of girls who choose football is 18.",
+        "The conditional probability is calculated by dividing the number of girls who choose football by the total number of girls: $\\text{P}(\\text{Football} | \\text{Girl}) = \\dfrac{18}{45}$.",
+        "Simplifying the fraction $\\dfrac{18}{45}$ by dividing the numerator and denominator by their greatest common divisor, 9, yields $\\dfrac{2}{5}$ (or $0.4$).",
+        "Final Answer: $$(a)\\ \\text{Two-way table constructed}$$<br>$$(b)\\ \\dfrac{17}{50}$$<br>$$(c)\\ \\dfrac{2}{5}$$"
+    ],
+    "wrong_options": [
+        {
+            "ans": "$$(a)\\ \\text{Two-way table constructed}$$<br>$$(b)\\ \\dfrac{17}{50}$$<br>$$(c)\\ \\dfrac{9}{50}$$",
+            "feedback": "For part (c), you divided the number of girls who choose football (18) by the entire club membership of 100 instead of restricting your denominator to the 45 girls."
         },
-        "payhip_link": "https://payhip.com/b/csAoM",
-        "button_text": "Master GCSE Probability: Download the Pack"
+        {
+            "ans": "$$(a)\\ \\text{Two-way table constructed}$$<br>$$(b)\\ \\dfrac{12}{50}$$<br>$$(c)\\ \\dfrac{2}{5}$$",
+            "feedback": "For part (b), you used the number of boys who choose tennis (12) as your numerator instead of the overall total of 34 tennis players."
+        },
+        {
+            "ans": "$$(a)\\ \\text{Two-way table constructed}$$<br>$$(b)\\ \\dfrac{17}{50}$$<br>$$(c)\\ \\dfrac{9}{25}$$",
+            "feedback": "For part (c), you used the total number of football players (50) as your denominator instead of restricting it to the 45 girls."
+        }
+    ],
+    "bradley_insight": {
+        "type": "pro-tip",
+        "title": "The Head Teacher's Eye: Spotting Restricted Denominators",
+        "content": "On two-way table questions, always look for the keyword 'Given that...' or 'A [specific group] is chosen...'. In part (c), because we are told a girl is chosen, we ignore all the boys and the column totals. The denominator of your probability must be 45, not 100."
     },
-    {
+    "payhip_link": "https://payhip.com/b/csAoM",
+    "button_text": "Master GCSE Probability: Download the Pack"
+},
+       {
         "id": "002212",
         "date": "31 July 2026",
         "major_area": "Algebra",
