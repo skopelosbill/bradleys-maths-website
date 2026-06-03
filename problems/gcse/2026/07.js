@@ -224,7 +224,6 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/8EhLZ",
         "button_text": "Master GCSE Probability & Statistics: Download the Pack"
     },
-    [
     {
         "id": "002187",
         "date": "6 July 2026",
@@ -446,9 +445,7 @@ const problemBank = [
         },
         "payhip_link": "https://payhip.com/b/oW2c1",
         "button_text": "Master GCSE Probability & Statistics: Download the Pack"
-        }
-    ],
-    [
+        },
     {
         "id": "002192",
         "date": "11 July 2026",
@@ -664,6 +661,6 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/wm0xL",
         "button_text": "Master GCSE Geometry: Download the Pack"
     }
-]
 
-    ];
+
+];
