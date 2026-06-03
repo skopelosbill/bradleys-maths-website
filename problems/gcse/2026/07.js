@@ -1286,48 +1286,50 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/9dSh3",
         "button_text": "Master 3D Pythagoras: Download the Pack"
     },
+    [
     {
         "id": "002211",
         "date": "30 July 2026",
         "major_area": "Probability & Statistics",
         "topic": "Probability",
         "subtopic": "Conditional Probability",
-        "difficulty": "8/9",
-        "q": "In a factory, Machine $X$ and Machine $Y$ produce identical metal bolts. Machine $X$ produces $60\\%$ of the total bolts, and Machine $Y$ produces the remaining $40\\%$.<br>Of the bolts produced by Machine $X$, $2\\%$ are defective. Of the bolts produced by Machine $Y$, $3\\%$ are defective.<br>(a) Calculate the probability that a randomly selected bolt from the warehouse is defective.<br>(b) A bolt is chosen at random and found to be defective. Calculate the probability that this bolt was manufactured by Machine $X$.<br>(c) Describe how the probability in part (b) changes if Machine $X$ increases its output to $70\\%$ of the total production (while retaining the same defective rates).",
+        "difficulty": "5/6",
+        "q": "A youth club has 100 members. Every member is asked about their favourite sport. The results are summarised as follows:<br>- Of the 55 boys, 32 choose football, 12 choose tennis, and 11 choose athletics.<br>- Of the 45 girls, 18 choose football, 22 choose tennis, and 5 choose athletics.<br>(a) Construct a two-way table to fully represent this information.<br>(b) A member of the youth club is chosen at random. Calculate the probability that this member chooses tennis.<br>(c) A girl is chosen at random from the club. Calculate the probability that she chooses football.",
         "steps": [
-            "For part (a), we find the total probability of selecting a defective bolt, denoted $\\text{P}(D)$.",
-            "A defective bolt can come from Machine $X$ or Machine $Y$. We construct the probability equation: $\\text{P}(D) = \\text{P}(X \\cap D) + \\text{P}(Y \\cap D)$.",
-            "Substituting the given rates: $\\text{P}(D) = (0.60 \\times 0.02) + (0.40 \\times 0.03)$.",
-            "Evaluating these products gives: $\\text{P}(D) = 0.012 + 0.012 = 0.024$.",
-            "For part (b), we calculate the conditional probability that the bolt is from Machine $X$ given that it is defective, denoted $\\text{P}(X | D)$.",
-            "Using Bayes' formula: $\\text{P}(X | D) = \\dfrac{\\text{P}(X \\cap D)}{\\text{P}(D)}$.",
-            "Substituting our values: $\\text{P}(X | D) = \\dfrac{0.012}{0.024} = 0.5$. This indicates there is a $50\\%$ chance the defective bolt is from Machine $X$.",
-            "For part (c), we adjust our production percentages so that Machine $X$ produces $70\\%$ ($0.70$) and Machine $Y$ produces the remaining $30\\%$ ($0.30$).",
-            "The new total probability of a defective bolt is: $\\text{P}(D_{\\text{new}}) = (0.70 \\times 0.02) + (0.30 \\times 0.03) = 0.014 + 0.009 = 0.023$.",
-            "The new conditional probability that a defective bolt came from Machine $X$ is: $\\text{P}(X | D_{\\text{new}}) = \\dfrac{0.014}{0.023} = \\dfrac{14}{23} \\approx 0.6087$.",
-            "This shows that the conditional probability increases from $0.5$ to approximately $0.609$, meaning that since Machine $X$ now produces a larger share of all bolts, a larger share of the defective pool will originate from it.",
-            "Final Answer: $$(a)\\ 0.024$$<br>$$(b)\\ 0.5$$<br>$$(c)\\ \\text{The conditional probability increases to } \\dfrac{14}{23} \\approx 0.609$$"
+            "For part (a), we construct a two-way table with rows representing gender (Boys, Girls) and columns representing their favourite sport (Football, Tennis, Athletics), including a total column and row.",
+            "Row 1 (Boys): 32 Football, 12 Tennis, 11 Athletics. Total Boys = $32 + 12 + 11 = 55$.",
+            "Row 2 (Girls): 18 Football, 22 Tennis, 5 Athletics. Total Girls = $18 + 22 + 5 = 45$.",
+            "Column Totals: Football $= 32 + 18 = 50$, Tennis $= 12 + 22 = 34$, Athletics $= 11 + 5 = 16$.",
+            "The overall total is $55 + 45 = 100$, confirming our columns and rows match perfectly.",
+            "For part (b), we find the probability of a randomly chosen member choosing tennis.",
+            "The total number of members in the sample space is 100. The total number of members who choose tennis is 34.",
+            "This gives the probability: $\\text{P}(\\text{Tennis}) = \\dfrac{34}{100}$. Simplifying the fraction by dividing the numerator and denominator by 2 yields $\\dfrac{17}{50}$ (or $0.34$).",
+            "For part (c), we are given the condition that the chosen member is a girl. This completely restricts our sample space to the 45 girls.",
+            "The number of girls who choose football is 18.",
+            "The conditional probability is calculated by dividing the number of girls who choose football by the total number of girls: $\\text{P}(\\text{Football} | \\text{Girl}) = \\dfrac{18}{45}$.",
+            "Simplifying the fraction $\\dfrac{18}{45}$ by dividing the numerator and denominator by their greatest common divisor, 9, yields $\\dfrac{2}{5}$ (or $0.4$).",
+            "Final Answer: $$(a)\\ \\text{Two-way table constructed}$$<br>$$(b)\\ \\dfrac{17}{50}$$<br>$$(c)\\ \\dfrac{2}{5}$$"
         ],
         "wrong_options": [
             {
-                "ans": "$$(a)\\ 0.050$$<br>$$(b)\\ 0.4$$<br>$$(c)\\ \\text{The probability decreases to } 0.35$$",
-                "feedback": "You added the raw defective percentages ($2\\% + 3\\% = 5\\%$) directly in part (a). Defective rates must be weighted by the relative output of each machine."
+                "ans": "$$(a)\\ \\text{Two-way table constructed}$$<br>$$(b)\\ \\dfrac{17}{50}$$<br>$$(c)\\ \\dfrac{9}{50}$$",
+                "feedback": "For part (c), you divided the number of girls who choose football (18) by the entire club membership of 100 instead of restricting your denominator to the 45 girls."
             },
             {
-                "ans": "$$(a)\\ 0.024$$<br>$$(b)\\ 0.6$$<br>$$(c)\\ \\text{The probability remains unchanged at } 0.6$$",
-                "feedback": "For part (b), you equated the conditional probability to the raw output share of Machine $X$ ($60\\%$) instead of dividing the joint probability by the total defective rate."
+                "ans": "$$(a)\\ \\text{Two-way table constructed}$$<br>$$(b)\\ \\dfrac{12}{50}$$<br>$$(c)\\ \\dfrac{2}{5}$$",
+                "feedback": "For part (b), you used the number of boys who choose tennis (12) as your numerator instead of the overall total of 34 tennis players."
             },
             {
-                "ans": "$$(a)\\ 0.024$$<br>$$(b)\\ 0.5$$<br>$$(c)\\ \\text{The probability decreases to } 0.450$$",
-                "feedback": "Your calculations for parts (a) and (b) are correct, but in part (c) you concluded that the probability would decrease instead of increase when Machine $X$'s output increased."
+                "ans": "$$(a)\\ \\text{Two-way table constructed}$$<br>$$(b)\\ \\dfrac{17}{50}$$<br>$$(c)\\ \\dfrac{9}{25}$$",
+                "feedback": "For part (c), you used the total number of football players (50) as your denominator instead of restricting it to the 45 girls."
             }
         ],
         "bradley_insight": {
-            "type": "deeper",
-            "title": "The Head Teacher's Eye: Weighting Probabilities",
-            "content": "A very common error is confusing conditional probabilities with raw probabilities. Although Machine $Y$ has a higher defect rate ($3\\% > 2\\%$) than Machine $X$, Machine $X$ produces so many more total bolts that a randomly selected defective bolt is equally likely ($50\\%$) to have come from either machine. Always weight defect rates by production shares."
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Spotting Restricted Denominators",
+            "content": "On two-way table questions, always look for the keyword 'Given that...' or 'A [specific group] is chosen...'. In part (c), because we are told a girl is chosen, we ignore all the boys and the column totals. The denominator of your probability must be 45, not 100."
         },
-        "payhip_link": "https://payhip.com/b/MoE4j",
+        "payhip_link": "https://payhip.com/b/csAoM",
         "button_text": "Master GCSE Probability: Download the Pack"
     },
     {
@@ -1338,43 +1340,44 @@ const problemBank = [
         "subtopic": "Sketching Graphs",
         "difficulty": "7/8/9",
         "img": "true",
-        "q": "The diagram shows three sketched functions, labelled (1), (2), and (3), on separate coordinate axes.<br>(a) Match each numbered sketch to its correct equation from the following list:<br>$$y = 3^x,\\ \\ \\ y = \\dfrac{1}{x},\\ \\ \\ y = x^3 - 4x$$<br>(b) State the coordinates of all points of intersection of the cubic curve $y = x^3 - 4x$ with the coordinate axes.<br>(c) Describe what happens to the value of $y$ on the reciprocal curve $y = \\dfrac{1}{x}$ as $x$ approaches positive infinity. Explain this in terms of asymptotes.",
+        "q": "The diagram shows three sketched functions, labelled (1), (2), and (3), on separate coordinate axes.<br>(a) Match each numbered sketch to its correct equation from the following list:<br>$$y = 3^x,\\ \\ \\ y = \\dfrac{1}{x},\\ \\ \\ y = x^3 - 4x$$<br>(b) State the coordinates of all points of intersection of the cubic curve $y = x^3 - 4x$ with the coordinate axes.<br>(c) Describe what happens to the value of $y$ on the reciprocal curve $y = \\dfrac{1}{x}$ as the value of $x$ becomes very large. Explain why the curve never touches the horizontal axis.",
         "steps": [
             "For part (a), we analyze the shape and behavior of each sketch to identify its equation.",
-            "Sketch (1) is an exponential curve. It lies entirely above the x-axis, passes through the y-axis at $(0,1)$, and increases rapidly as $x$ increases. This matches the equation $y = 3^x$.",
-            "Sketch (2) consists of two curves in opposite quadrants (first and third quadrants) that approach both the x-axis and the y-axis but never touch them. This matches the reciprocal equation $y = \\dfrac{1}{x}$.",
-            "Sketch (3) is a classic cubic curve showing a smooth S-shape that crosses the x-axis at three separate points. This matches the equation $y = x^3 - 4x$.",
+            "Sketch (1) is an exponential curve. It lies entirely above the horizontal axis, passes through the vertical axis at $(0,1)$, and increases rapidly as $x$ increases. This matches the equation $y = 3^x$.",
+            "Sketch (2) consists of two curves in opposite quadrants (first and third quadrants) that approach both the horizontal and vertical axes but never touch them. This matches the reciprocal equation $y = \\dfrac{1}{x}$.",
+            "Sketch (3) is a classic cubic curve showing a smooth S-shape that crosses the horizontal axis at three separate points. This matches the equation $y = x^3 - 4x$.",
             "For part (b), we find the intercepts of $y = x^3 - 4x$ with both coordinate axes.",
-            "To find the y-intercept, we substitute $x = 0$ into the equation: $y = 0^3 - 4(0) = 0$. This gives the coordinate $(0,0)$.",
-            "To find the x-intercepts, we set $y = 0$ and solve the cubic equation: $x^3 - 4x = 0$.",
-            "We factorise the expression: $x(x^2 - 4) = 0$. This further factorises to: $x(x - 2)(x + 2) = 0$.",
+            "To find the vertical intercept (y-intercept), we substitute $x = 0$ into the equation: $y = 0^3 - 4(0) = 0$. This gives the coordinate $(0,0)$.",
+            "To find the horizontal intercepts (x-intercepts), we set $y = 0$ and solve the cubic equation: $x^3 - 4x = 0$.",
+            "We factorise the expression: $x(x^2 - 4) = 0$. This further factorises using the difference of two squares: $x(x - 2)(x + 2) = 0$.",
             "The roots of this equation are $x = 0$, $x = 2$, and $x = -2$. This gives three coordinate pairs: $(0,0)$, $(2,0)$, and $(-2,0)$.",
-            "For part (c), as $x$ increases toward positive infinity ($x \\to \\infty$), the denominator of the fraction $y = \\dfrac{1}{x}$ grows infinitely large.",
-            "This causes the overall value of $y$ to shrink closer and closer to $0$, though it will always remain strictly positive.",
-            "The curve approaches the horizontal line $y = 0$ (the x-axis) but never touches it. Therefore, the line $y = 0$ acts as a horizontal asymptote for the function.",
-            "Final Answer: $$(a)\\ 1: y = 3^x,\\ 2: y = \\dfrac{1}{x},\\ 3: y = x^3 - 4x$$<br>$$(b)\\ (0,0),\\ (2,0),\\ (-2,0)$$<br>$$(c)\\ y \\text{ approaches } 0 \\text{ as } x \\to \\infty \\text{ (horizontal asymptote is } y=0\\text{)}$$"
+            "For part (c), as the value of $x$ becomes very large, the denominator of the fraction $y = \\dfrac{1}{x}$ grows infinitely large.",
+            "This causes the overall value of $y$ to get smaller and closer and closer to $0$ (for example, if $x = 1000$, then $y = 0.001$).",
+            "The curve never touches the horizontal axis because we cannot divide $1$ by any finite number to get an answer of exactly $0$. The division will always result in a positive value, no matter how small, so $y$ never reaches $0$.",
+            "Final Answer: $$(a)\\ 1: y = 3^x,\\ 2: y = \\dfrac{1}{x},\\ 3: y = x^3 - 4x$$<br>$$(b)\\ (0,0),\\ (2,0),\\ (-2,0)$$<br>$$(c)\\ y \\text{ gets closer to } 0 \\text{ but never touches the axis because } 1 \\div x \\neq 0$$"
         ],
         "wrong_options": [
             {
-                "ans": "$$(a)\\ 1: y = \\dfrac{1}{x},\\ 2: y = 3^x,\\ 3: y = x^3 - 4x$$<br>$$(b)\\ (0,0),\\ (2,0),\\ (-2,0)$$<br>$$(c)\\ y \\text{ approaches } \\infty \\text{ as } x \\to \\infty \\text{ (vertical asymptote is } x=0\\text{)}$$",
+                "ans": "$$(a)\\ 1: y = \\dfrac{1}{x},\\ 2: y = 3^x,\\ 3: y = x^3 - 4x$$<br>$$(b)\\ (0,0),\\ (2,0),\\ (-2,0)$$<br>$$(c)\\ y \\text{ gets infinitely large and moves away from the axis}$$",
                 "feedback": "You mismatched the exponential and reciprocal graphs in part (a). An exponential graph increases continuously, whereas a reciprocal graph decreases as $x$ increases."
             },
             {
-                "ans": "$$(a)\\ 1: y = 3^x,\\ 2: y = \\dfrac{1}{x},\\ 3: y = x^3 - 4x$$<br>$$(b)\\ (0,0),\\ (4,0),\\ (-4,0)$$<br>$$(c)\\ y \\text{ approaches } 0 \\text{ as } x \\to \\infty \\text{ (horizontal asymptote is } y=0\\text{)}$$",
-                "feedback": "Your graph matching and asymptote descriptions are correct, but you factorised $x^2 - 4 = 0$ incorrectly in part (b), stating the roots as $\\pm 4$ instead of $\\pm 2$."
+                "ans": "$$(a)\\ 1: y = 3^x,\\ 2: y = \\dfrac{1}{x},\\ 3: y = x^3 - 4x$$<br>$$(b)\\ (0,0),\\ (4,0),\\ (-4,0)$$<br>$$(c)\\ y \\text{ gets closer to } 0 \\text{ but never touches the axis because } 1 \\div x \\neq 0$$",
+                "feedback": "Your graph matching and reciprocal explanations are correct, but you factorised $x^2 - 4 = 0$ incorrectly in part (b), stating the roots as $\\pm 4$ instead of $\\pm 2$."
             },
             {
-                "ans": "$$(a)\\ 1: y = 3^x,\\ 2: y = \\dfrac{1}{x},\\ 3: y = x^3 - 4x$$<br>$$(b)\\ (2,0),\\ (-2,0)$$<br>$$(c)\\ y \\text{ approaches } 1 \\text{ as } x \\to \\infty \\text{ (horizontal asymptote is } y=1\\text{)}$$",
-                "feedback": "In part (b), you forgot to include the origin $(0,0)$ as one of your coordinates. When factorising $x^3-4x$, the leading $x$ factor yields the root $x=0$."
+                "ans": "$$(a)\\ 1: y = 3^x,\\ 2: y = \\dfrac{1}{x},\\ 3: y = x^3 - 4x$$<br>$$(b)\\ (2,0),\\ (-2,0)$$<br>$$(c)\\ y \\text{ reaches exactly } 0 \\text{ when } x \\text{ is extremely large}$$",
+                "feedback": "In part (b), you forgot to include the origin $(0,0)$ as one of your coordinates. For part (c), remember that a reciprocal curve never actually touches the horizontal axis."
             }
         ],
         "bradley_insight": {
             "type": "pro-tip",
-            "title": "The Head Teacher's Eye: Spotting Asymptotes",
-            "content": "An asymptote is a line that a curve approaches infinitely closely but never actually intersects. When sketching reciprocal functions like $y = \\dfrac{1}{x}$, make sure your curves curve smoothly away from both axes to show they are approaching the horizontal asymptote ($y=0$) and vertical asymptote ($x=0$) without touching them."
+            "title": "The Head Teacher's Eye: Understanding Reciprocal Trends",
+            "content": "When explaining why reciprocal curves like $y = \\dfrac{1}{x}$ never touch the horizontal axis, focus on the algebra of division. You can divide 1 into as many tiny pieces as you like, but you can never have 'zero pieces'. This boundary line represents an asymptote—a line the graph gets closer to but never meets."
         },
         "payhip_link": "https://payhip.com/b/t8xQq",
         "button_text": "Master Graph Sketches: Download the Pack"
     }
+]
 
 ];
