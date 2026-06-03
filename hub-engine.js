@@ -12,6 +12,8 @@ const BradleyHub = {
         currentGroup: null, 
         isTeacherMode: false
     },
+    //TEMPORARY: Force paywall for testing
+    BradleyHub.state.freeQuestionsLeft = 0;
     // AUTOMATIC WORKSHEET LOOKUP DIRECTORY (Separated by Tier)
     worksheetDirectory: {
         gcse: {
