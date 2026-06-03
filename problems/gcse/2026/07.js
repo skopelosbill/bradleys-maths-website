@@ -938,7 +938,7 @@ const problemBank = [
             "First, we compare the medians. Class B has a higher median score than Class A ($30 > 28$), which shows that Class B generally achieved higher scores on the test.",
             "Second, we compare the spreads using the IQR. The IQR for Class B is $38 - 22 = 16$.",
             "Since Class B has a lower IQR than Class A ($16 < 18$), Class B's test scores are more consistent and less spread out.",
-            "Final Answer: $$(a)\\ \\text{Median: } 28,\\ \\text{LQ: } 18,\\ \\text{IQR: } 18,\\ <br>(b)\\ \\text{Class B has a higher median (30 vs 28) and a more consistent score spread (IQR 16 vs 18)}$$"
+            "Final Answer: $$(a)\\ \\text{Median: } 28,\\ \\text{LQ: } 18,\\ \\text{IQR: } 18,$$<br>$$(b)\\ \\text{Class B has a higher median (30 vs 28) and a more consistent score spread (IQR 16 vs 18)}$$"
         ],
         "wrong_options": [
             {
