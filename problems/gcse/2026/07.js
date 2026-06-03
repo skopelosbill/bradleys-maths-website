@@ -1286,7 +1286,6 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/9dSh3",
         "button_text": "Master 3D Pythagoras: Download the Pack"
     },
-    [
     {
         "id": "002211",
         "date": "30 July 2026",
@@ -1378,6 +1377,5 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/t8xQq",
         "button_text": "Master Graph Sketches: Download the Pack"
     }
-]
 
 ];
