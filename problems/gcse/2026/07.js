@@ -1099,6 +1099,282 @@ const problemBank = [
         },
         "payhip_link": "https://payhip.com/b/iU6Nj",
         "button_text": "Master GCSE Algebra: Download the Pack"
+    },
+    {
+        "id": "002207",
+        "date": "26 July 2026",
+        "major_area": "Algebra",
+        "topic": "Numerical Methods",
+        "subtopic": "Iteration",
+        "difficulty": "8/9",
+        "q": "The equation $x^3 - 5x - 3 = 0$ has a single positive root.<br>(a) Show that this positive root lies in the interval $2 < x < 3$.<br>(b) Rearrange the equation $x^3 - 5x - 3 = 0$ to find the iterative formula $x_{n+1} = \\sqrt{5 + \\dfrac{3}{x_n}}$.<br>(c) Starting with the initial value $x_0 = 2.4$, use the iterative formula three times to find the values of $x_1$, $x_2$, and $x_3$. Give your value of $x_3$ correct to 3 decimal places.",
+        "steps": [
+            "For part (a), we define the function $f(x) = x^3 - 5x - 3$ and evaluate it at the boundaries of the interval.",
+            "Substituting $x = 2$ gives: $f(2) = 2^3 - 5(2) - 3 = 8 - 10 - 3 = -5$.",
+            "Substituting $x = 3$ gives: $f(3) = 3^3 - 5(3) - 3 = 27 - 15 - 3 = 9$.",
+            "Since $f(2)$ is negative ($-5$) and $f(3)$ is positive ($9$), there is a change of sign over the interval.",
+            "Because the function is continuous, this change of sign proves that a root must lie in the interval $2 < x < 3$.",
+            "For part (b), we rearrange $x^3 - 5x - 3 = 0$ to express $x$ in terms of itself.",
+            "We isolate the cubic term: $x^3 = 5x + 3$.",
+            "We divide both sides of the equation by $x$ to lower the power: $x^2 = 5 + \\dfrac{3}{x}$.",
+            "Taking the positive square root of both sides gives: $x = \\sqrt{5 + \\dfrac{3}{x}}$.",
+            "Writing this in iterative notation yields the required formula: $x_{n+1} = \\sqrt{5 + \\dfrac{3}{x_n}}$, completing the rearrangement.",
+            "For part (c), we substitute $x_0 = 2.4$ into our iterative formula to find $x_1$: $x_1 = \\sqrt{5 + \\dfrac{3}{2.4}} = \\sqrt{5 + 1.25} = \\sqrt{6.25} = 2.5$.",
+            "Next, we substitute $x_1 = 2.5$ into the formula to find $x_2$: $x_2 = \\sqrt{5 + \\dfrac{3}{2.5}} = \\sqrt{5 + 1.2} = \\sqrt{6.2} \\approx 2.48998$. Correct to 3 decimal places, this is $2.490$.",
+            "Finally, we substitute the unrounded value of $x_2 \\approx 2.48998$ into the formula to find $x_3$: $x_3 = \\sqrt{5 + \\dfrac{3}{2.48998}} \\approx \\sqrt{5 + 1.20483} = \\sqrt{6.20483} \\approx 2.49095$.",
+            "Rounding this value to 3 decimal places gives $2.491$.",
+            "Final Answer: $$(a)\\ f(2) = -5,\\ f(3) = 9 \\text{ (sign change proving root)}$$<br>$$(b)\\ \\text{Rearrangement completed}$$<br>$$(c)\\ x_1 = 2.500,\\ x_2 = 2.490,\\ x_3 = 2.491$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ f(2) = -5,\\ f(3) = 9 \\text{ (sign change proving root)}$$<br>$$(b)\\ \\text{Rearrangement completed}$$<br>$$(c)\\ x_1 = 2.500,\\ x_2 = 2.500,\\ x_3 = 2.500$$",
+                "feedback": "You did not update the value of $x_n$ at each step of the iteration, simply calculating the first value of $2.5$ repeatedly."
+            },
+            {
+                "ans": "$$(a)\\ f(2) = -5,\\ f(3) = 9 \\text{ (sign change proving root)}$$<br>$$(b)\\ \\text{Rearrangement completed}$$<br>$$(c)\\ x_1 = 2.500,\\ x_2 = 2.490,\\ x_3 = 2.490$$",
+                "feedback": "You rounded $x_3$ incorrectly. The unrounded value is $2.49095...$, which must round up to $2.491$ due to the 9 in the fourth decimal place."
+            },
+            {
+                "ans": "$$(a)\\ f(2) = -1,\\ f(3) = 15 \\text{ (incorrect values)}$$<br>$$(b)\\ \\text{Rearrangement completed}$$<br>$$(c)\\ x_1 = 2.500,\\ x_2 = 2.490,\\ x_3 = 2.491$$",
+                "feedback": "Your iterative steps are correct, but you made arithmetic errors when evaluating the function boundary values in part (a)."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Iterating on Your Calculator",
+            "content": "To save time and avoid transcription errors on iteration questions, use the ANS key on your scientific calculator. Type '2.4' and press '=', then type 'sqrt(5 + 3/ANS)'. Each subsequent press of the '=' key will instantly compute $x_1$, $x_2$, and $x_3$ with full internal precision."
+        },
+        "payhip_link": "https://payhip.com/b/IoYTp",
+        "button_text": "Master GCSE Algebra: Download the Pack"
+    },
+    {
+        "id": "002208",
+        "date": "27 July 2026",
+        "major_area": "Geometry",
+        "topic": "Circle Geometry",
+        "subtopic": "Circle Theorem Proofs",
+        "difficulty": "8/9",
+        "img": "true",
+        "q": "The diagram shows a circle with centre $O$. Points $A$ and $B$ lie on the circumference, and point $C$ lies on the major arc $AB$. The straight line $CD$ passes through the centre $O$.<br>(a) Prove that angle $AOD = 2 \\times \\text{angle } ACO$.<br>(b) Complete the algebraic proof to show that the angle subtended by the arc $AB$ at the centre of the circle is twice the angle subtended at the circumference.",
+        "steps": [
+            "For part (a), we consider the triangle $AOC$. Since $OA$ and $OC$ are both radii of the same circle, $OA = OC$.",
+            "This makes triangle $AOC$ an isosceles triangle. Since the angles opposite the equal sides in an isosceles triangle are equal, we can define angle $OAC = \\text{angle } ACO = x$.",
+            "The sum of angles in a triangle is $180^\\circ$. Therefore, angle $AOC = 180^\\circ - 2x$.",
+            "Since $CD$ is a straight diameter line passing through the centre $O$, the adjacent angles on a straight line must sum to $180^\\circ$.",
+            "This gives: angle $AOD = 180^\\circ - \\text{angle } AOC = 180^\\circ - (180^\\circ - 2x) = 2x$.",
+            "Since angle $ACO = x$ and angle $AOD = 2x$, we have proved that angle $AOD = 2 \\times \\text{angle } ACO$.",
+            "For part (b), we apply the exact same geometric logic to the right side of the circle to analyse triangle $BOC$.",
+            "Since $OB = OC$ (both are radii), triangle $BOC$ is also an isosceles triangle. We can define angle $OBC = \\text{angle } BCO = y$.",
+            "Following the same steps as in part (a), the exterior angle at the centre is: angle $BOD = 2y$.",
+            "The total angle subtended at the circumference is: angle $ACB = \\text{angle } ACO + \\text{angle } BCO = x + y$.",
+            "The total angle subtended at the centre is: angle $AOB = \\text{angle } AOD + \\text{angle } BOD = 2x + 2y = 2(x + y)$.",
+            "Since angle $AOB = 2(x + y)$ and angle $ACB = x + y$, this proves that angle $AOB = 2 \\times \\text{angle } ACB$, completing the proof.",
+            "Final Answer: $$(a)\\ \\text{Proof that angle } AOD = 2x \\text{ completed}$$<br>$$(b)\\ \\text{Proof that angle } AOB = 2(x+y) \\text{ completed}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ \\text{Proof based on tangent rules completed}$$<br>$$(b)\\ \\text{Proof that angle } AOB = 2(x+y) \\text{ completed}$$",
+                "feedback": "Your proof for part (a) incorrectly cited tangent-radius perpendicular properties. The straight line $CD$ is a diameter, not a tangent line."
+            },
+            {
+                "ans": "$$(a)\\ \\text{Proof that angle } AOD = 2x \\text{ completed}$$<br>$$(b)\\ \\text{Proof based on cyclic quadrilateral properties completed}$$",
+                "feedback": "Your proof for part (b) cited opposite angles in a cyclic quadrilateral. This is incorrect because the centre point $O$ does not lie on the circumference."
+            },
+            {
+                "ans": "$$(a)\\ \\text{Proof that angle } AOD = x^2 \\text{ completed}$$<br>$$(b)\\ \\text{Proof based on angle ratio errors completed}$$",
+                "feedback": "You modeled the relationship as a square power rather than a linear multiplication of two, which violates the angles subtended theorem."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Structuring Circle Proofs",
+            "content": "Circle theorem proofs are highly structured. The critical step is drawing the diameter line through the centre from the circumference point. This splits the shape into two distinct isosceles triangles, allowing you to use the exterior angle theorem of triangles to easily construct the final $2(x+y)$ relationship."
+        },
+        "payhip_link": "https://payhip.com/b/1rJUj",
+        "button_text": "Master Circle Theorems: Download the Proofs Pack"
+    },
+    {
+        "id": "002209",
+        "date": "28 July 2026",
+        "major_area": "Number",
+        "topic": "Bounds",
+        "subtopic": "Limits of Accuracy and Bounds",
+        "difficulty": "7/8",
+        "q": "A solid metal block has a mass of $6.2\\text{ kg}$, correct to 1 decimal place. The volume of the block is $740\\text{ cm}^3$, correct to the nearest $10\\text{ cm}^3$.<br>(a) Write down the lower bound and upper bound for both the mass and the volume.<br>(b) Calculate the upper bound for the density of the metal in grams per cubic centimetre ($\\text{g/cm}^3$). Give your answer correct to 3 significant figures.<br>(c) Calculate the lower bound for the density of the metal in grams per cubic centimetre ($\\text{g/cm}^3$). Give your answer correct to 3 significant figures.",
+        "steps": [
+            "For part (a), we find the bounds of our initial measurements.",
+            "The mass $M = 6.2\\text{ kg}$ is recorded to the nearest $0.1\\text{ kg}$. Halving this accuracy gives a boundary offset of $0.05\\text{ kg}$.",
+            "The lower bound of mass is $6.2 - 0.05 = 6.15\\text{ kg}$ and the upper bound is $6.2 + 0.05 = 6.25\\text{ kg}$.",
+            "The volume $V = 740\\text{ cm}^3$ is recorded to the nearest $10\\text{ cm}^3$. Halving this accuracy gives a boundary offset of $5\\text{ cm}^3$.",
+            "The lower bound of volume is $740 - 5 = 735\\text{ cm}^3$ and the upper bound is $740 + 5 = 745\\text{ cm}^3$.",
+            "For part (b), we must find the maximum possible density. Since density is defined as $\\text{Density} = \\dfrac{\\text{Mass}}{\\text{Volume}}$, we must divide the upper bound of mass by the lower bound of volume.",
+            "Note that the question asks for density in $\\text{g/cm}^3$. We convert our mass bounds from kilograms to grams by multiplying by 1000: $\\text{Mass}_{\\text{UB}} = 6.25\\text{ kg} = 6250\\text{ g}$.",
+            "Calculating the upper bound of density: $\\text{Density}_{\\text{UB}} = \\dfrac{6250\\text{ g}}{735\\text{ cm}^3} \\approx 8.5034\\text{ g/cm}^3$.",
+            "Rounding this value to 3 significant figures gives $8.50\\text{ g/cm}^3$.",
+            "For part (c), we find the minimum possible density by dividing the lower bound of mass by the upper bound of volume.",
+            "We convert the lower bound of mass to grams: $\\text{Mass}_{\\text{LB}} = 6.15\\text{ kg} = 6150\\text{ g}$.",
+            "Calculating the lower bound of density: $\\text{Density}_{\\text{LB}} = \\dfrac{6150\\text{ g}}{745\\text{ cm}^3} \\approx 8.2550\\text{ g/cm}^3$.",
+            "Rounding this value to 3 significant figures gives $8.26\\text{ g/cm}^3$.",
+            "Final Answer: $$(a)\\ 6.15 \\le M < 6.25\\text{ kg},\\ 735 \\le V < 745\\text{ cm}^3$$<br>$$(b)\\ 8.50\\text{ g/cm}^3$$<br>$$(c)\\ 8.26\\text{ g/cm}^3$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ 6.15 \\le M < 6.25\\text{ kg},\\ 735 \\le V < 745\\text{ cm}^3$$<br>$$(b)\\ 0.00850\\text{ g/cm}^3$$<br>$$(c)\\ 0.00826\\text{ g/cm}^3$$",
+                "feedback": "You forgot to convert your mass from kilograms to grams. This caused a scale factor error of 1000 in both of your density calculations."
+            },
+            {
+                "ans": "$$(a)\\ 6.15 \\le M < 6.25\\text{ kg},\\ 735 \\le V < 745\\text{ cm}^3$$<br>$$(b)\\ 8.39\\text{ g/cm}^3$$<br>$$(c)\\ 8.39\\text{ g/cm}^3$$",
+                "feedback": "You used the standard recorded measurements of $6.2\\text{ kg}$ ($6200\\text{ g}$) and $740\\text{ cm}^3$ directly to calculate density, instead of using the upper and lower bounds."
+            },
+            {
+                "ans": "$$(a)\\ 6.15 \\le M < 6.25\\text{ kg},\\ 735 \\le V < 745\\text{ cm}^3$$<br>$$(b)\\ 8.38\\text{ g/cm}^3$$<br>$$(c)\\ 8.38\\text{ g/cm}^3$$",
+                "feedback": "You calculated the upper and lower bounds of density by dividing the upper mass by the upper volume, and the lower mass by the lower volume. To find extreme values of a division, you must mix upper and lower bounds."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Dual Units and Scaling",
+            "content": "This question contains two major traps. First, you must identify that the mass is given in kg but the density must be calculated in g/cm³. Always convert your units *before* you calculate the bounds. Second, remember that to minimise a fraction, you divide the smallest numerator by the largest denominator."
+        },
+        "payhip_link": "https://payhip.com/b/qYp8g",
+        "button_text": "Master GCSE Bounds: Download the Pack"
+    },
+    {
+        "id": "002210",
+        "date": "29 July 2026",
+        "major_area": "Geometry",
+        "topic": "Pythagoras Theorem",
+        "subtopic": "Pythagoras Theorem",
+        "difficulty": "7/8",
+        "img": "true",
+        "q": "The diagram shows a 3D cuboid with vertices $A$, $B$, $C$, $D$, $E$, $F$, $G$, and $H$. The dimensions of the cuboid are $AB = 12\\text{ cm}$, $BC = 5\\text{ cm}$, and $CG = 8\\text{ cm}$.<br>(a) Calculate the length of the base diagonal $AC$.<br>(b) Calculate the length of the 3D diagonal $AG$. Give your answer correct to 3 significant figures.<br>(c) Calculate the size of the angle that the 3D diagonal $AG$ makes with the horizontal base $ABCD$. Give your answer correct to 1 decimal place.",
+        "steps": [
+            "For part (a), the base of the cuboid is a rectangle $ABCD$ with a right angle at $B$. Triangle $ABC$ is therefore a right-angled triangle.",
+            "We apply Pythagoras' theorem to find the hypotenuse $AC$: $AC^2 = AB^2 + BC^2 = 12^2 + 5^2$.",
+            "Evaluating the squares gives $AC^2 = 144 + 25 = 169$.",
+            "Taking the square root of both sides gives: $AC = \\sqrt{169} = 13\\text{ cm}$.",
+            "For part (b), we consider the vertical right-angled triangle $ACG$, where the vertical edge $CG$ is perpendicular to the horizontal diagonal $AC$.",
+            "We apply Pythagoras' theorem to find the 3D diagonal $AG$: $AG^2 = AC^2 + CG^2 = 13^2 + 8^2$.",
+            "Evaluating the squares gives $AG^2 = 169 + 64 = 233$.",
+            "Taking the square root of both sides gives: $AG = \\sqrt{233} \\approx 15.264\\text{ cm}$. Rounded to 3 significant figures, $AG = 15.3\\text{ cm}$.",
+            "For part (c), the angle $\\theta$ that the diagonal $AG$ makes with the horizontal base is the internal angle $CAG$ in the right-angled triangle $ACG$.",
+            "We use the tangent trigonometric ratio: $\\tan(\\theta) = \\dfrac{\\text{Opposite}}{\\text{Adjacent}} = \\dfrac{CG}{AC} = \\dfrac{8}{13}$.",
+            "Evaluating this fraction gives $\\tan(\\theta) \\approx 0.61538$.",
+            "Taking the inverse tangent yields: $\\theta = \\arctan(0.61538) \\approx 31.608^\\circ$.",
+            "Rounding this angle to 1 decimal place gives $31.6^\\circ$.",
+            "Final Answer: $$(a)\\ 13\\text{ cm}$$<br>$$(b)\\ 15.3\\text{ cm}$$<br>$$(c)\\ 31.6^\\circ$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ 13\\text{ cm}$$<br>$$(b)\\ 15.0\\text{ cm}$$<br>$$(c)\\ 31.6^\\circ$$",
+                "feedback": "Your base diagonal calculation is correct, but in part (b) you subtracted $CG^2$ from $AC^2$ under the square root instead of adding them to find the hypotenuse."
+            },
+            {
+                "ans": "$$(a)\\ 13\\text{ cm}$$<br>$$(b)\\ 15.3\\text{ cm}$$<br>$$(c)\\ 31.0^\\circ$$",
+                "feedback": "Your diagonal lengths are correct, but you used premature rounding in your trigonometric calculation, or you used the sine ratio with a rounded hypotenuse value."
+            },
+            {
+                "ans": "$$(a)\\ 17\\text{ cm}$$<br>$$(b)\\ 18.8\\text{ cm}$$<br>$$(c)\\ 25.2^\\circ$$",
+                "feedback": "You added the dimensions $12 + 5 = 17$ directly in part (a) to find $AC$ instead of applying Pythagoras' theorem."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Navigating 3D Pythagoras",
+            "content": "To solve any 3D space diagonal problem, remember the generalised version of Pythagoras' theorem: $d^2 = x^2 + y^2 + z^2$, where $x$, $y$, and $z$ are the three dimensions of the cuboid. Substituting directly gives $AG = \\sqrt{12^2 + 5^2 + 8^2} = \\sqrt{233}$, which bypasses the need for multi-step rounding errors."
+        },
+        "payhip_link": "https://payhip.com/b/9dSh3",
+        "button_text": "Master 3D Pythagoras: Download the Pack"
+    },
+    {
+        "id": "002211",
+        "date": "30 July 2026",
+        "major_area": "Probability & Statistics",
+        "topic": "Probability",
+        "subtopic": "Conditional Probability",
+        "difficulty": "8/9",
+        "q": "In a factory, Machine $X$ and Machine $Y$ produce identical metal bolts. Machine $X$ produces $60\\%$ of the total bolts, and Machine $Y$ produces the remaining $40\\%$.<br>Of the bolts produced by Machine $X$, $2\\%$ are defective. Of the bolts produced by Machine $Y$, $3\\%$ are defective.<br>(a) Calculate the probability that a randomly selected bolt from the warehouse is defective.<br>(b) A bolt is chosen at random and found to be defective. Calculate the probability that this bolt was manufactured by Machine $X$.<br>(c) Describe how the probability in part (b) changes if Machine $X$ increases its output to $70\\%$ of the total production (while retaining the same defective rates).",
+        "steps": [
+            "For part (a), we find the total probability of selecting a defective bolt, denoted $\\text{P}(D)$.",
+            "A defective bolt can come from Machine $X$ or Machine $Y$. We construct the probability equation: $\\text{P}(D) = \\text{P}(X \\cap D) + \\text{P}(Y \\cap D)$.",
+            "Substituting the given rates: $\\text{P}(D) = (0.60 \\times 0.02) + (0.40 \\times 0.03)$.",
+            "Evaluating these products gives: $\\text{P}(D) = 0.012 + 0.012 = 0.024$.",
+            "For part (b), we calculate the conditional probability that the bolt is from Machine $X$ given that it is defective, denoted $\\text{P}(X | D)$.",
+            "Using Bayes' formula: $\\text{P}(X | D) = \\dfrac{\\text{P}(X \\cap D)}{\\text{P}(D)}$.",
+            "Substituting our values: $\\text{P}(X | D) = \\dfrac{0.012}{0.024} = 0.5$. This indicates there is a $50\\%$ chance the defective bolt is from Machine $X$.",
+            "For part (c), we adjust our production percentages so that Machine $X$ produces $70\\%$ ($0.70$) and Machine $Y$ produces the remaining $30\\%$ ($0.30$).",
+            "The new total probability of a defective bolt is: $\\text{P}(D_{\\text{new}}) = (0.70 \\times 0.02) + (0.30 \\times 0.03) = 0.014 + 0.009 = 0.023$.",
+            "The new conditional probability that a defective bolt came from Machine $X$ is: $\\text{P}(X | D_{\\text{new}}) = \\dfrac{0.014}{0.023} = \\dfrac{14}{23} \\approx 0.6087$.",
+            "This shows that the conditional probability increases from $0.5$ to approximately $0.609$, meaning that since Machine $X$ now produces a larger share of all bolts, a larger share of the defective pool will originate from it.",
+            "Final Answer: $$(a)\\ 0.024$$<br>$$(b)\\ 0.5$$<br>$$(c)\\ \\text{The conditional probability increases to } \\dfrac{14}{23} \\approx 0.609$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ 0.050$$<br>$$(b)\\ 0.4$$<br>$$(c)\\ \\text{The probability decreases to } 0.35$$",
+                "feedback": "You added the raw defective percentages ($2\\% + 3\\% = 5\\%$) directly in part (a). Defective rates must be weighted by the relative output of each machine."
+            },
+            {
+                "ans": "$$(a)\\ 0.024$$<br>$$(b)\\ 0.6$$<br>$$(c)\\ \\text{The probability remains unchanged at } 0.6$$",
+                "feedback": "For part (b), you equated the conditional probability to the raw output share of Machine $X$ ($60\\%$) instead of dividing the joint probability by the total defective rate."
+            },
+            {
+                "ans": "$$(a)\\ 0.024$$<br>$$(b)\\ 0.5$$<br>$$(c)\\ \\text{The probability decreases to } 0.450$$",
+                "feedback": "Your calculations for parts (a) and (b) are correct, but in part (c) you concluded that the probability would decrease instead of increase when Machine $X$'s output increased."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Weighting Probabilities",
+            "content": "A very common error is confusing conditional probabilities with raw probabilities. Although Machine $Y$ has a higher defect rate ($3\\% > 2\\%$) than Machine $X$, Machine $X$ produces so many more total bolts that a randomly selected defective bolt is equally likely ($50\\%$) to have come from either machine. Always weight defect rates by production shares."
+        },
+        "payhip_link": "https://payhip.com/b/MoE4j",
+        "button_text": "Master GCSE Probability: Download the Pack"
+    },
+    {
+        "id": "002212",
+        "date": "31 July 2026",
+        "major_area": "Algebra",
+        "topic": "Graphs of Equations and Functions",
+        "subtopic": "Sketching Graphs",
+        "difficulty": "7/8/9",
+        "img": "true",
+        "q": "The diagram shows three sketched functions, labelled (1), (2), and (3), on separate coordinate axes.<br>(a) Match each numbered sketch to its correct equation from the following list:<br>$$y = 3^x,\\ \\ \\ y = \\dfrac{1}{x},\\ \\ \\ y = x^3 - 4x$$<br>(b) State the coordinates of all points of intersection of the cubic curve $y = x^3 - 4x$ with the coordinate axes.<br>(c) Describe what happens to the value of $y$ on the reciprocal curve $y = \\dfrac{1}{x}$ as $x$ approaches positive infinity. Explain this in terms of asymptotes.",
+        "steps": [
+            "For part (a), we analyze the shape and behavior of each sketch to identify its equation.",
+            "Sketch (1) is an exponential curve. It lies entirely above the x-axis, passes through the y-axis at $(0,1)$, and increases rapidly as $x$ increases. This matches the equation $y = 3^x$.",
+            "Sketch (2) consists of two curves in opposite quadrants (first and third quadrants) that approach both the x-axis and the y-axis but never touch them. This matches the reciprocal equation $y = \\dfrac{1}{x}$.",
+            "Sketch (3) is a classic cubic curve showing a smooth S-shape that crosses the x-axis at three separate points. This matches the equation $y = x^3 - 4x$.",
+            "For part (b), we find the intercepts of $y = x^3 - 4x$ with both coordinate axes.",
+            "To find the y-intercept, we substitute $x = 0$ into the equation: $y = 0^3 - 4(0) = 0$. This gives the coordinate $(0,0)$.",
+            "To find the x-intercepts, we set $y = 0$ and solve the cubic equation: $x^3 - 4x = 0$.",
+            "We factorise the expression: $x(x^2 - 4) = 0$. This further factorises to: $x(x - 2)(x + 2) = 0$.",
+            "The roots of this equation are $x = 0$, $x = 2$, and $x = -2$. This gives three coordinate pairs: $(0,0)$, $(2,0)$, and $(-2,0)$.",
+            "For part (c), as $x$ increases toward positive infinity ($x \\to \\infty$), the denominator of the fraction $y = \\dfrac{1}{x}$ grows infinitely large.",
+            "This causes the overall value of $y$ to shrink closer and closer to $0$, though it will always remain strictly positive.",
+            "The curve approaches the horizontal line $y = 0$ (the x-axis) but never touches it. Therefore, the line $y = 0$ acts as a horizontal asymptote for the function.",
+            "Final Answer: $$(a)\\ 1: y = 3^x,\\ 2: y = \\dfrac{1}{x},\\ 3: y = x^3 - 4x$$<br>$$(b)\\ (0,0),\\ (2,0),\\ (-2,0)$$<br>$$(c)\\ y \\text{ approaches } 0 \\text{ as } x \\to \\infty \\text{ (horizontal asymptote is } y=0\\text{)}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ 1: y = \\dfrac{1}{x},\\ 2: y = 3^x,\\ 3: y = x^3 - 4x$$<br>$$(b)\\ (0,0),\\ (2,0),\\ (-2,0)$$<br>$$(c)\\ y \\text{ approaches } \\infty \\text{ as } x \\to \\infty \\text{ (vertical asymptote is } x=0\\text{)}$$",
+                "feedback": "You mismatched the exponential and reciprocal graphs in part (a). An exponential graph increases continuously, whereas a reciprocal graph decreases as $x$ increases."
+            },
+            {
+                "ans": "$$(a)\\ 1: y = 3^x,\\ 2: y = \\dfrac{1}{x},\\ 3: y = x^3 - 4x$$<br>$$(b)\\ (0,0),\\ (4,0),\\ (-4,0)$$<br>$$(c)\\ y \\text{ approaches } 0 \\text{ as } x \\to \\infty \\text{ (horizontal asymptote is } y=0\\text{)}$$",
+                "feedback": "Your graph matching and asymptote descriptions are correct, but you factorised $x^2 - 4 = 0$ incorrectly in part (b), stating the roots as $\\pm 4$ instead of $\\pm 2$."
+            },
+            {
+                "ans": "$$(a)\\ 1: y = 3^x,\\ 2: y = \\dfrac{1}{x},\\ 3: y = x^3 - 4x$$<br>$$(b)\\ (2,0),\\ (-2,0)$$<br>$$(c)\\ y \\text{ approaches } 1 \\text{ as } x \\to \\infty \\text{ (horizontal asymptote is } y=1\\text{)}$$",
+                "feedback": "In part (b), you forgot to include the origin $(0,0)$ as one of your coordinates. When factorising $x^3-4x$, the leading $x$ factor yields the root $x=0$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Spotting Asymptotes",
+            "content": "An asymptote is a line that a curve approaches infinitely closely but never actually intersects. When sketching reciprocal functions like $y = \\dfrac{1}{x}$, make sure your curves curve smoothly away from both axes to show they are approaching the horizontal asymptote ($y=0$) and vertical asymptote ($x=0$) without touching them."
+        },
+        "payhip_link": "https://payhip.com/b/t8xQq",
+        "button_text": "Master Graph Sketches: Download the Pack"
     }
 
 ];
