@@ -14,7 +14,7 @@ const problemBank = [
             "Part (a) Answer: $(3x - 5)(2x - 3)$.",
             "(b) Recognise that $19x - 6x^2 - 15$ is $-1(6x^2 - 19x + 15)$.",
             "Multiply one bracket by $-1$: $(5 - 3x)(2x - 3)$.",
-            "Final Answer: $$(5 - 3x)(2x - 3)$$"
+            "Final Answer: $$(a)\\ (3x - 5)(2x - 3), (b)\\ (5 - 3x)(2x - 3)$$"
         ],
         "wrong_options": [
             {
