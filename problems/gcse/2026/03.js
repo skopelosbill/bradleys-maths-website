@@ -498,19 +498,19 @@ const problemBank = [
             "For part (b), we identify that the value of 100 hours lies far outside the range of the given data.",
             "Using a line of best fit to predict values outside the range is known as extrapolation.",
             "This is unreliable because the positive trend may not continue indefinitely (for example, scores cannot exceed $100\\%$).",
-            "Final Answer: $$(a)\\ \\text{As study hours increase, scores increase},\\ (b)\\ \\text{Extrapolation is unreliable}$$"
+            "Final Answer: $$(a)\\ \\text{As study hours increase, scores increase}$$<br>$$\\ (b)\\ \\text{Extrapolation is unreliable}$$"
         ],
         "wrong_options": [
     {
-        "ans": "$$(a)\\ \\text{As } x \\text{ increases, } y \\text{ decreases},\\ (b)\\ \\text{Extrapolation is unreliable}$$",
+        "ans": "$$(a)\\ \\text{As } x \\text{ increases, } y \\text{ decreases}$$<br>$$(b)\\ \\text{Extrapolation is unreliable}$$",
         "feedback": "You’ve described a negative correlation. The graph shows a strong positive correlation, meaning both variables increase together."
     },
     {
-        "ans": "$$(a)\\ \\text{As study hours increase, scores increase},\\ (b)\\ \\text{A line of best fit will always work, even for } 100 \\text{ hours}$$",
+        "ans": "$$(a)\\ \\text{As study hours increase, scores increase}$$<br>$$(b)\\ \\text{A line of best fit will always work, even for } 100 \\text{ hours}$$",
         "feedback": "Predicting far outside the data range (0–20 hours) is unreliable because the trend may not continue."
     },
     {
-        "ans": "$$(a)\\ \\text{The relationship is perfect and }\\ (b)\\ y = x$$",
+        "ans": "$$(a)\\ \\text{The relationship is perfect and }$$<br>$$(b)\\ y = x$$",
         "feedback": "A strong correlation does not mean a perfect one. The points won’t lie exactly on a straight line, and the relationship isn’t necessarily }y=x\\text{.}"
     }
 ],
