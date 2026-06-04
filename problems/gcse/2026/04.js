@@ -1063,16 +1063,16 @@ const problemBank = [
         ],
         "wrong_options": [
     {
-        "ans": "$$(a)\\ r = \sqrt{24}$$",
+        "ans": "$$(a)\\ r = \\sqrt{24},\\ (b)\\ 8\\pi$$",
         "feedback": "You forgot the $\\frac{1}{6}$ factor from the $60^\circ$ angle. The area is not $\\pi r^2 = 24\\pi$."
     },
     {
-        "ans": "$$(b)\\ \text{Arc length} = 12\pi$$",
+        "ans": "$$(a)\\ r=12,\\ (b)\\ \text{Arc length} = 12\pi$$",
         "feedback": "You calculated the full circumference instead of the fraction for a $60^\circ$ sector."
     },
     {
-        "ans": "$$(b)\\ \text{Arc length} = 2\pi$$",
-        "feedback": "You used $r=6$ instead of $r=12$. The radius must be found from part (a)."
+        "ans": "$$(a)\\ r=6,\\ (b)\\ \text{Arc length} = 2\pi$$",
+        "feedback": "You divided your answer in part (a) by two but you had found the radius not the diameter."
     }
 ],
         "bradley_insight": {
