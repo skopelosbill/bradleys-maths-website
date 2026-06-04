@@ -1,3 +1,4 @@
+alert("unlock.js LOADED");
 
 
 document.getElementById("unlock-btn").addEventListener("click", async () => {
