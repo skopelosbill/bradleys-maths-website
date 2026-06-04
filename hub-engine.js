@@ -461,8 +461,7 @@ checkPremiumAccess() {
     // User is unlocked → allow access
     this.state.isPremium = true;
     return true;
-}
-
+},
  serveArena(groupId, targetDifficulty = 'all') {
         this.state.currentGroup = groupId;
         // --- NEW: PAYWALL INTERCEPTOR ---
