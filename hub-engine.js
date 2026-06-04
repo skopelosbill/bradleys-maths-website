@@ -303,21 +303,25 @@ const BradleyHub = {
             ];
         }
     },
+async init(mode, tier) {
 
-    async init(mode, tier) {
-        this.state.isTeacherMode = (mode === 'audit');
-        this.state.tier = tier || this.state.tier;
-        localStorage.setItem('bradley_tier', this.state.tier);
+    // 🔐 NEW: Block access unless unlocked
+    if (!this.checkPremiumAccess()) return;
 
-        if (this.state.isTeacherMode) {
-            const picker = document.getElementById('month-picker');
-            await this.loadMonthData(picker ? picker.value : '04');
-            this.renderAuditList(); 
-        } else {
-            await this.loadAllActiveMonths();
-            this.renderMenu();
-        }
-    },
+    this.state.isTeacherMode = (mode === 'audit');
+    this.state.tier = tier || this.state.tier;
+    localStorage.setItem('bradley_tier', this.state.tier);
+
+    if (this.state.isTeacherMode) {
+        const picker = document.getElementById('month-picker');
+        await this.loadMonthData(picker ? picker.value : '04');
+        this.renderAuditList(); 
+    } else {
+        await this.loadAllActiveMonths();
+        this.renderMenu();
+    }
+},
+
 
     // --- DATA LOADING ---
     async loadAllActiveMonths() {
@@ -444,56 +448,21 @@ const BradleyHub = {
             </div>
         `;
     },
-// --- PAYWALL & UNLOCK LOGIC ---
-    renderPaywall() {
-        document.getElementById('hub-stage').innerHTML = `
-            <div class="info-panel" style="background: white; border: 3px solid #d9534f; text-align: center; box-shadow: 0 8px 15px rgba(0,0,0,0.1); padding: 30px; border-radius: 12px;">
-                <h2 style="color: #d9534f; font-size: 2.2rem; margin-bottom: 10px;">Free Trial Complete!</h2>
-                <p style="font-size: 1.1rem; color: #555; margin-bottom: 25px; line-height: 1.6;">
-                    You have answered all 20 free questions.<br>To continue your revision, keep ranking up, and access all 360+ exam-standard questions, unlock Premium today.
-                </p>
-                
-                <!-- UPDATE THIS LINK WITH YOUR NEW £9.99 PAYHIP PRODUCT -->
-                <a href="https://payhip.com/b/6lZQc" target="_blank" class="btn btn-purple" style="font-size: 1.2rem; padding: 15px 30px; display: inline-block; margin-bottom: 25px; background: linear-gradient(135deg, var(--brand-purple), var(--brand-purple-dark)); color: white; text-decoration: none; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
-                    Unlock the Full Database for £9.99
-                </a>
-                
-                <hr style="border: 0; height: 1px; background: #eee; margin-bottom: 20px;">
-                
-                <p style="font-size: 0.95rem; color: #666; margin-bottom: 10px;">Already purchased? Check your email receipt for your Secret Access Code.</p>
-                
-                <div style="margin-top: 10px; padding: 20px; background: #f8f9fa; border-radius: 8px; display: inline-block; border: 1px solid #ddd;">
-                    <input type="text" id="access-code-input" placeholder="Enter Access Code" style="padding: 10px; font-size: 1rem; border: 1px solid #ccc; border-radius: 4px; width: 220px; text-transform: uppercase;">
-                    <button class="btn" style="background: var(--brand-green); color: white; padding: 10px 20px; font-size: 1rem; border: none; border-radius: 4px; cursor: pointer; margin-left: 10px; font-weight: bold;" onclick="BradleyHub.checkPasscode()">Unlock</button>
-                    <div id="passcode-feedback" style="color: #d9534f; margin-top: 10px; font-weight: bold; display: none;">Invalid Code. Please try again or check your receipt.</div>
-                </div>
+    // --- PREMIUM ACCESS CHECK ---
+checkPremiumAccess() {
+    const unlocked = localStorage.getItem('app_unlocked') === 'true';
 
-                <div style="margin-top: 30px;">
-                    <button class="btn" style="background: white; color: var(--text-muted); border: 1px solid #ccc;" onclick="BradleyHub.renderMenu()">← Back to Main Menu</button>
-                </div>
-            </div>
-        `;
-    },
+    if (!unlocked) {
+        // User is not unlocked → send them to unlock page
+        window.location.href = "unlock.html";
+        return false;
+    }
 
-    checkPasscode() {
-        const input = document.getElementById('access-code-input').value.trim().toUpperCase();
-        const feedback = document.getElementById('passcode-feedback');
-        
-        // THE SECRET CODE
-        if (input === 'BRADLEY-ELITE-2026') {
-            this.state.isPremium = true;
-            localStorage.setItem('bradley_premium', 'true');
-            
-            // Give them back an infinite supply just in case!
-            this.state.freeQuestionsLeft = 9999; 
-            localStorage.setItem('bradley_free_left', '9999');
-            
-            // Reload the menu to show off their new unlocked status!
-            this.renderMenu(); 
-        } else {
-            feedback.style.display = 'block';
-        }
-    },
+    // User is unlocked → allow access
+    this.state.isPremium = true;
+    return true;
+}
+
  serveArena(groupId, targetDifficulty = 'all') {
         this.state.currentGroup = groupId;
         // --- NEW: PAYWALL INTERCEPTOR ---
