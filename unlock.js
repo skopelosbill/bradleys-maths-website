@@ -2,7 +2,7 @@ alert("unlock.js LOADED");
 
 
 document.getElementById("unlock-btn").addEventListener("click", async () => {
-    const key = document.getElementById("license-input").value.trim().toUpperCase();
+    const key = document.getElementById("license-input").value.trim();
     const status = document.getElementById("status");
 
     // 🔥 MASTER OVERRIDE
