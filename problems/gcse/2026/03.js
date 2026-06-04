@@ -350,7 +350,7 @@ const problemBank = [
         "feedback": "Part (a) is correct, but in part (b) you added instead of subtracting. Opposite angles in a cyclic quadrilateral must sum to $180^\\circ$."
     },
     {
-        "ans": "$$220^\\circ,\\ 125^\\circ$$",
+        "ans": "$$(a)\\220^\\circ,\\ (b)\\ 125^\\circ$$",
         "feedback": "You doubled the centre angle in part (a), which reverses the theorem. The centre angle is the larger one — the circumference angle is half of it."
     }
 ],
@@ -382,15 +382,15 @@ const problemBank = [
         ],
         "wrong_options": [
     {
-        "ans": "$$(2x + 3)(x - 2),\\ x = -1.5,\\ x = 2$$",
+        "ans": "$$(a)\\ (2x + 3)(x - 2),\\ x = -1.5,\\ (b)\\ x = 2$$",
         "feedback": "You found numbers that multiply to 12 but got the signs wrong. This changes the roots completely."
     },
     {
-        "ans": "$$(2x - 3)(x + 2),\\ x = 1.5,\\ x = -2$$",
+        "ans": "$$(a)\\ (2x - 3)(x + 2),\\ x = 1.5,\\ (b)\\ x = -2$$",
         "feedback": "You factorised incorrectly — the middle term would be $+x$, not $-7x$. The incorrect factorisation leads to the wrong second root."
     },
     {
-        "ans": "$$2(x - 3)(x - 2),\\ x = 3,\\ x = 2$$",
+        "ans": "$$(a)\\ 2(x - 3)(x - 2),\\ x = 3,\\ (b)\\ x = 2$$",
         "feedback": "You pulled out a factor of 2 incorrectly. Expanding your brackets does not give the original quadratic."
     }
 ],
@@ -423,15 +423,15 @@ const problemBank = [
         ],
         "wrong_options": [
     {
-        "ans": "$$80\\pi\\text{ cm}^3,\\ 96\\pi\\text{ cm}^2$$",
+        "ans": "$$(a)\\ 80\\pi\\text{ cm}^3,\\ (b)\\ 96\\pi\\text{ cm}^2$$",
         "feedback": "You used $r$ instead of $r^2$ in the volume formula. In the surface area, you missed one of the circular ends."
     },
     {
-        "ans": "$$160\\pi\\text{ cm}^3,\\ 64\\pi\\text{ cm}^2$$",
+        "ans": "$$(a)\\ 160\\pi\\text{ cm}^3,\\ (b)\\ 64\\pi\\text{ cm}^2$$",
         "feedback": "The volume is correct, but for surface area you only calculated the two circular ends and forgot the curved surface."
     },
     {
-        "ans": "$$320\\pi\\text{ cm}^3,\\ 112\\pi\\text{ cm}^2$$",
+        "ans": "$$(a)\\ 320\\pi\\text{ cm}^3,\\ (b)\\ 112\\pi\\text{ cm}^2$$",
         "feedback": "You doubled the height when calculating the volume. The formula is $\\pi r^2 h$, not $2h$."
     }
 ],
@@ -463,15 +463,15 @@ const problemBank = [
         ],
         "wrong_options": [
     {
-        "ans": "$$£36,\\ 3 : 5$$",
+        "ans": "$$(a)\\ £36,\\ (b)\\ 3 : 5$$",
         "feedback": "You gave Alan’s share instead of Barbara’s in part (a). In part (b), you added £12 to Barbara but forgot to subtract it from Alan."
     },
     {
-        "ans": "$$£48,\\ 4 : 7$$",
+        "ans": "$$(a)\\ £48,\\ (b)\\ 4 : 7$$",
         "feedback": "Part (a) is correct, but in part (b) you added the £12 to both people. A transfer means one loses money and the other gains it."
     },
     {
-        "ans": "$$£40,\\ 1 : 3$$",
+        "ans": "$$(a)\\ £40,\\ (b)\\ 1 : 3$$",
         "feedback": "You recalculated the ratio as if the £12 was shared in the original 3:4 ratio. The transfer changes the ratio completely — it is not a new sharing question."
     }
 ],
@@ -498,20 +498,20 @@ const problemBank = [
             "For part (b), we identify that the value of 100 hours lies far outside the range of the given data.",
             "Using a line of best fit to predict values outside the range is known as extrapolation.",
             "This is unreliable because the positive trend may not continue indefinitely (for example, scores cannot exceed $100\\%$).",
-            "Final Answer: $$(a)\\ \text{As study hours increase, scores increase},\\ (b)\\ \text{Extrapolation is unreliable}$$"
+            "Final Answer: $$(a)\\ \\text{As study hours increase, scores increase},\\ (b)\\ \\text{Extrapolation is unreliable}$$"
         ],
         "wrong_options": [
     {
-        "ans": "$$\\text{As } x \\text{ increases, } y \\text{ decreases}$$",
+        "ans": "$$(a)\\ \\text{As } x \\text{ increases, } y \\text{ decreases},\\ (b)\\ \\text{Extrapolation is unreliable}$$",
         "feedback": "You’ve described a negative correlation. The graph shows a strong positive correlation, meaning both variables increase together."
     },
     {
-        "ans": "$$\\text{A line of best fit will always work, even for } 100 \\text{ hours}$$",
-        "feedback": "This ignores extrapolation. Predicting far outside the data range (0–20 hours) is unreliable because the trend may not continue."
+        "ans": "$$(a)\\ \\text{As study hours increase, scores increase},\\ (b)\\ \\text{A line of best fit will always work, even for } 100 \\text{ hours}$$",
+        "feedback": "Predicting far outside the data range (0–20 hours) is unreliable because the trend may not continue."
     },
     {
-        "ans": "$$\\text{The relationship is perfect and } y = x$$",
-        "feedback": "A strong correlation does not mean a perfect one. The points won’t lie exactly on a straight line, and the relationship isn’t necessarily }y=x\\text{."
+        "ans": "$$(a)\\ \\text{The relationship is perfect and }\\ (b)\\ y = x$$",
+        "feedback": "A strong correlation does not mean a perfect one. The points won’t lie exactly on a straight line, and the relationship isn’t necessarily }y=x\\text{.}"
     }
 ],
         "bradley_insight": {
@@ -541,15 +541,15 @@ const problemBank = [
         ],
         "wrong_options": [
     {
-        "ans": "$$x > 4,\\ -2, -1, 0, 1, 2, 3$$",
+        "ans": "$$(a)\\ x > 4,\\ (b)\\ -2, -1, 0, 1, 2, 3$$",
         "feedback": "You subtracted 3 incorrectly when solving the inequality. Also, $-2$ should not be included because the inequality is strict."
     },
     {
-        "ans": "$$x > 7,\\ -1, 0, 1, 2$$",
+        "ans": "$$(a)\\ x > 7,\\ (b)\\ -1, 0, 1, 2$$",
         "feedback": "Part (a) is correct, but you missed the value $3$ in part (b). The symbol $\\le 3$ means 3 must be included."
     },
     {
-        "ans": "$$x > 14,\\ 0, 1, 2, 3$$",
+        "ans": "$$(a)\\ x > 14,\\ (b)\\ 0, 1, 2, 3$$",
         "feedback": "You divided by 2 incorrectly in part (a). In part (b), you forgot that the values must be greater than $-2$, so $-1$ should be included."
     }
 ],
@@ -582,15 +582,15 @@ const problemBank = [
         ],
         "wrong_options": [
     {
-        "ans": "$$(3, 3), (5, 3), (4, 6),\\ \\begin{pmatrix} 4 \\\\ -1 \\end{pmatrix}$$",
+        "ans": "$$(a)\\ (3, 3), (5, 3), (4, 6),\\ (b)\\ \\begin{pmatrix} 4 \\\\ -1 \\end{pmatrix}$$",
         "feedback": "You added the vector the wrong way around: you added $-1$ to the $x$‑coordinates and $4$ to the $y$‑coordinates."
     },
     {
-        "ans": "$$(5, 1), (7, 1), (6, 4),\\ \\begin{pmatrix} 4 \\\\ -1 \\end{pmatrix}$$",
+        "ans": "$$(a)\\ (5, 1), (7, 1), (6, 4),\\ (b)\\ \\begin{pmatrix} 4 \\\\ -1 \\end{pmatrix}$$",
         "feedback": "Part (a) is correct, but the vector in part (b) should be the *negative* of the original translation to reverse it."
     },
     {
-        "ans": "$$(5, 3), (7, 3), (6, 6),\\ \\begin{pmatrix} -4 \\\\ -1 \\end{pmatrix}$$",
+        "ans": "$$(a)\\ (5, 3), (7, 3), (6, 6),\\ (b)\\ \\begin{pmatrix} -4 \\\\ -1 \\end{pmatrix}$$",
         "feedback": "You added 4 to both coordinates instead of only to the $x$‑values. The $y$‑coordinates should decrease by 1."
     }
 ],
@@ -623,15 +623,15 @@ const problemBank = [
         ],
         "wrong_options": [
     {
-        "ans": "$$\\dfrac{6}{25},\\ \\dfrac{19}{25}$$",
+        "ans": "$$(a)\\ \\dfrac{6}{25},\\ (b)\\ \\dfrac{19}{25}$$",
         "feedback": "You treated the second pick as if the counters were replaced. The denominators must change because the counters are not put back."
     },
     {
-        "ans": "$$\\dfrac{1}{2},\\ \\dfrac{1}{2}$$",
+        "ans": "$$(a)\\ \\dfrac{1}{2},\\ (b)\\ \\dfrac{1}{2}$$",
         "feedback": "You assumed the events were equally likely. The bag has more red counters than blue, so the probabilities are not 50–50."
     },
     {
-        "ans": "$$\\dfrac{8}{20},\\ \\dfrac{8}{20}$$",
+        "ans": "$$(a)\\ \\dfrac{8}{20},\\ (b)\\ \\dfrac{8}{20}$$",
         "feedback": "You repeated the same probability for both parts. Part (b) is the complement of part (a), so the two answers must add to 1."
     }
 ],
@@ -664,15 +664,15 @@ const problemBank = [
         ],
         "wrong_options": [
     {
-        "ans": "$$8.4\\text{ cm},\\ 44.00\\text{ cm}^2$$",
+        "ans": "$$(a)\\ 8.4\\text{ cm},\\ (b)\\ 44.00\\text{ cm}^2$$",
         "feedback": "You used the rounded measurement instead of the lower bound. Bounds require adjusting by half the degree of accuracy."
     },
     {
-        "ans": "$$8.3\\text{ cm},\\ 43.89\\text{ cm}^2$$",
+        "ans": "$$(a)\\ 8.3\\text{ cm},\\ (b)\\ 43.89\\text{ cm}^2$$",
         "feedback": "You rounded the lower bound too aggressively. The correct lower bound is $8.35\\text{ cm}$ because the accuracy is to the nearest $0.1$."
     },
     {
-        "ans": "$$8.35\\text{ cm},\\ 44.25\\text{ cm}^2$$",
+        "ans": "$$(a)\\ 8.35\\text{ cm},\\ (b)\\ 44.25\\text{ cm}^2$$",
         "feedback": "Part (a) is correct, but for part (b) you must use the *upper* bounds of both dimensions to maximise the area."
     }
 ],
@@ -704,15 +704,15 @@ const problemBank = [
         ],
         "wrong_options": [
     {
-        "ans": "$$(x + 3)^2 + 5,\\ (-3, 5)$$",
+        "ans": "$$(a)\\ (x + 3)^2 + 5,\\ (b)\\ (-3, 5)$$",
         "feedback": "You forgot to subtract the square of 3 when completing the square. This changes the constant term and the turning point."
     },
     {
-        "ans": "$$(x + 6)^2 - 31,\\ (-6, -31)$$",
+        "ans": "$$(a)\\ (x + 6)^2 - 31,\\ (b)\\ (-6, -31)$$",
         "feedback": "You halved the coefficient incorrectly. Half of 6 is 3, not 6."
     },
     {
-        "ans": "$$(x - 3)^2 - 4,\\ (3, -4)$$",
+        "ans": "$$(a)\\ (x - 3)^2 - 4,\\ (b)\\ (3, -4)$$",
         "feedback": "You changed the sign inside the bracket. The expression $(x+3)^2$ gives a turning point at $(-3, -4)$, not $(3, -4)$."
     }
 ],
@@ -782,19 +782,19 @@ const problemBank = [
             "For part (b), we find the square root of 193.",
             "Calculation: $\\sqrt{193} \\approx 13.892...$.",
             "Rounding to 1 decimal place gives $13.9\\text{ cm}$.",
-            "Final Answer: $$(a)\\ 193,\\ (b)\\ 13.9\\text{ cm}$$"
+            "Final Answer: $$(a)\\ BC^2 = 193,\\ (b)\\ BC = 13.9\\text{ cm}$$"
         ],
         "wrong_options": [
     {
-        "ans": "$$BC^2 = 81 + 49 - 126(0.5),\\ BC = 5.7\\text{ cm}$$",
+        "ans": "$$(a)\\ BC^2 = 81 + 49 - 126(0.5),\\ (b)\\ BC = 5.7\\text{ cm}$$",
         "feedback": "You used $\\cos(120^\\circ)=0.5$ instead of $-0.5$. Obtuse angles always have negative cosine values."
     },
     {
-        "ans": "$$BC^2 = 193,\\ BC = 14\\text{ cm}$$",
+        "ans": "$$(a)\\ BC^2 = 193,\\ (b)\\ BC = 14\\text{ cm}$$",
         "feedback": "Part (a) is correct, but you rounded $\\sqrt{193}$ incorrectly. It is approximately $13.9$, not $14$."
     },
     {
-        "ans": "$$BC^2 = 130 - 63 = 67,\\ BC = 8.2\\text{ cm}$$",
+        "ans": "$$(a)\\ BC^2 = 130 - 63 = 67,\\ (b)\\ BC = 8.2\\text{ cm}$$",
         "feedback": "You subtracted the final term instead of adding it. The double negative in the Cosine Rule becomes a plus."
     }
 ],
@@ -823,7 +823,7 @@ const problemBank = [
             "$Q_3$ is at $\\dfrac{3}{4} \\times 80 = 60$.",
             "For part (b), the $IQR$ is the difference between the upper and lower quartiles.",
             "Calculation: $71 - 52 = 19\\text{ kg}$.",
-            "Final Answer: $$(a)\\ Q_1: 20, M: 40, Q_3: 60,\\ (b)\\ 19\\text{ kg}$$"
+            "Final Answer: $$(a)\\ Q_1: 20, M: 40, Q_3: 60,\\ (b)\\ IQR = 19\\text{ kg}$$"
         ],
         "bradley_insight": {
             "type": "pro-tip",
@@ -832,15 +832,15 @@ const problemBank = [
         },
         "wrong_options": [
     {
-        "ans": "$$Q_1: 40,\\ M: 20,\\ Q_3: 60,\\ IQR = 9\\text{ kg}$$",
+        "ans": "$$(a)\\ Q_1: 40,\\ M: 20,\\ Q_3: 60,\\ (b)\\ IQR = 9\\text{ kg}$$",
         "feedback": "You swapped the positions of $Q_1$ and the median. Quartiles must be at 20, 40, and 60 for a total of 80 students."
     },
     {
-        "ans": "$$Q_1: 20,\\ M: 40,\\ Q_3: 60,\\ IQR = 29\\text{ kg}$$",
+        "ans": "$$(a)\\ Q_1: 20,\\ M: 40,\\ Q_3: 60,\\ (b)\\ IQR = 29\\text{ kg}$$",
         "feedback": "Part (a) is correct, but you added the quartiles instead of subtracting them. The IQR is $Q_3 - Q_1$."
     },
     {
-        "ans": "$$Q_1: 10,\\ M: 40,\\ Q_3: 70,\\ IQR = 18\\text{ kg}$$",
+        "ans": "$$(a)\\ Q_1: 10,\\ M: 40,\\ Q_3: 70,\\ (b)\\ IQR = 18\\text{ kg}$$",
         "feedback": "You used incorrect cumulative frequency positions. Quartiles divide the total frequency into four equal parts: 20, 40, and 60."
     }
 ],
@@ -865,19 +865,19 @@ const problemBank = [
             "We now substitute $x_2$ back into the formula: $x_3 = \\sqrt[3]{1 - 0.79370...}$.",
             "Calculation: $x_3 = \\sqrt[3]{0.20629...} \\approx 0.59079...$.",
             "Rounding to 3 decimal places gives 0.591.",
-            "Final Answer: $$(a)\\ \\text{Shown},\\ (b)\\ x_2 = 0.794, x_3 = 0.591$$"
+            "Final Answer: $$(b)\\ x_2 = 0.794, x_3 = 0.591$$"
         ],
         "wrong_options": [
     {
-        "ans": "$$x_2 = 0.5,\\ x_3 = 0.5$$",
+        "ans": "$$(b)\\ x_2 = 0.5,\\ x_3 = 0.5$$",
         "feedback": "You reused the starting value instead of applying the iteration. Each new value must be substituted back into the formula."
     },
     {
-        "ans": "$$x_2 = 0.794,\\ x_3 = 0.794$$",
+        "ans": "$$(b)\\ x_2 = 0.794,\\ x_3 = 0.794$$",
         "feedback": "You calculated $x_2$ correctly but forgot to use it to find $x_3$. Iteration requires repeated substitution."
     },
     {
-        "ans": "$$x_2 = 0.63,\\ x_3 = 0.86$$",
+        "ans": "$$(b)\\ x_2 = 0.63,\\ x_3 = 0.86$$",
         "feedback": "You used square roots instead of cube roots. The formula uses a cube root: $x_{n+1} = \\sqrt[3]{1 - x_n}$."
     }
 ],
@@ -910,15 +910,15 @@ const problemBank = [
         ],
         "wrong_options": [
     {
-        "ans": "$$3 : 4,\\ 96\\text{ cm}^3$$",
+        "ans": "$$(a)\\ 3 : 4,\\ (b)\\ 96\\text{ cm}^3$$",
         "feedback": "You used the area scale factor instead of the volume scale factor. Volume scales with $k^3$, not $k^2$."
     },
     {
-        "ans": "$$4 : 3,\\ 128\\text{ cm}^3$$",
+        "ans": "$$(a)\\ 4 : 3,\\ (b)\\ 128\\text{ cm}^3$$",
         "feedback": "You reversed the height ratio. The smaller cone corresponds to the smaller height, so the ratio must be $3 : 4$."
     },
     {
-        "ans": "$$3 : 4,\\ 216\\text{ cm}^3$$",
+        "ans": "$$(a)\\ 3 : 4,\\ (b)\\ 216\\text{ cm}^3$$",
         "feedback": "You multiplied by $k^3$ incorrectly. The volume scale factor is $\\dfrac{64}{27}$, not $8$."
     }
 ],
@@ -947,19 +947,19 @@ const problemBank = [
             "Taking the square root of both sides: $3x - 2 = 1$ or $3x - 2 = -1$.",
             "Solving the first case: $3x = 3 \\implies x = 1$.",
             "Solving the second case: $3x = 1 \\implies x = \\dfrac{1}{3}$.",
-            "Final Answer: $$(a)\\ 3x^2 - 2,\\ (b)\\ 9x^2 - 12x + 4,\\ (c)\\ x = 1, x = \\dfrac{1}{3}$$"
+            "Final Answer: $$(a)\\ fg(x) = 3x^2 - 2,\\ (b)\\ gf(x) = 9x^2 - 12x + 4,\\ (c)\\ x = 1, x = \\dfrac{1}{3}$$"
         ],
         "wrong_options": [
     {
-        "ans": "$$fg(x) = 3x - 2,\\ gf(x) = 9x - 2,\\ x = 1$$",
+        "ans": "$$(a)\\ fg(x) = 3x - 2,\\ (b)\\ gf(x) = 9x - 2,\\ (c)\\ x = 1$$",
         "feedback": "You substituted incorrectly. $fg(x)$ means substitute $g(x)$ into $f$, not the other way around."
     },
     {
-        "ans": "$$fg(x) = 3x^2 - 2,\\ gf(x) = 9x^2 - 12x + 4,\\ x = -1$$",
+        "ans": "$$(a)\\ fg(x) = 3x^2 - 2,\\ (b)\\ gf(x) = 9x^2 - 12x + 4,\\ (c)\\ x = -1$$",
         "feedback": "Parts (a) and (b) are correct, but you solved $(3x - 2)^2 = 1$ incorrectly. Both positive and negative square roots must be considered."
     },
     {
-        "ans": "$$fg(x) = 3x^2 - 2,\\ gf(x) = (3x - 2),\\ x = \\dfrac{1}{3}$$",
+        "ans": "$$(a)\\ fg(x) = 3x^2 - 2,\\ (b)\\ gf(x) = (3x - 2),\\ (c)\\ x = \\dfrac{1}{3}$$",
         "feedback": "You forgot to square the bracket in $gf(x)$. $g(x)$ squares its input, so $(3x - 2)$ must be squared."
     }
 ],
@@ -987,19 +987,19 @@ const problemBank = [
             "For part (b), we use the property of parallel lines ($AB$ and $DC$).",
             "Angles $ABC$ and $BCD$ are co-interior (supplementary) because they lie between parallel lines.",
             "Calculation: Angle $BCD = 180^\\circ - 78^\\circ = 102^\\circ$.",
-            "Final Answer: $$(a)\\ 102^\\circ\\text{ (Opposite angles in a cyclic quadrilateral sum to } 180^\\circ),\\ (b)\\ 102^\\circ$$"
+            "Final Answer: $$(a)\\ 102^\\circ,\\ (b)\\ 102^\\circ$$"
         ],
         "wrong_options": [
     {
-        "ans": "$$102^\\circ,\\ 78^\\circ$$",
+        "ans": "$$(a)\\ 102^\\circ,\\ (b)\\ 78^\\circ$$",
         "feedback": "You correctly used opposite angles for part (a), but in part (b) you treated the angles as corresponding rather than co‑interior. Because the lines are parallel, the angles must add to $180^\\circ$."
     },
     {
-        "ans": "$$78^\\circ,\\ 102^\\circ$$",
+        "ans": "$$(a)\\ 78^\\circ,\\ (b)\\ 102^\\circ$$",
         "feedback": "You reused the given angle for part (a). Opposite angles in a cyclic quadrilateral must sum to $180^\\circ$, so the angle cannot stay the same."
     },
     {
-        "ans": "$$102^\\circ,\\ 90^\\circ$$",
+        "ans": "$$(a)\\ 102^\\circ,\\ (b)\\ 90^\\circ$$",
         "feedback": "Part (a) is correct, but in part (b) you used alternate angles instead of co‑interior angles. Because the lines are parallel, the angles must be supplementary."
     }
 ],
@@ -1031,15 +1031,15 @@ const problemBank = [
         ],
         "wrong_options": [
     {
-        "ans": "$$\\sqrt{65},\\ 13$$",
+        "ans": "$$(a)\\ \\sqrt{65},\\ (b)\\ 13$$",
         "feedback": "You added the numbers under the square roots directly. Surds can only be added when simplified to like terms."
     },
     {
-        "ans": "$$5\\sqrt{5},\\ \\sqrt{5}$$",
+        "ans": "$$5(a)\\ \\sqrt{5},\\ (b)\\ \\sqrt{5}$$",
         "feedback": "Part (a) is correct, but in part (b) you divided the coefficients instead of cancelling the surds. $\\sqrt{5}$ cancels completely."
     },
     {
-        "ans": "$$\\sqrt{20} + \\sqrt{45},\\ 5\\sqrt{\\frac{5}{5}}$$",
+        "ans": "$$\\(a)\\ sqrt{20} + \\sqrt{45},\\ (b)\\ 5\\sqrt{\\frac{5}{5}}$$",
         "feedback": "You didn’t simplify the surds before dividing. Always simplify first to reveal the common factor."
     }
 ],
@@ -1070,15 +1070,15 @@ const problemBank = [
         ],
         "wrong_options": [
     {
-        "ans": "$$\\dfrac{4}{7} \\times \\dfrac{4}{7} = \\dfrac{16}{49},\\ \\dfrac{33}{49}$$",
+        "ans": "$$(a)\\ \\dfrac{16}{49},\\ (b)\\ \\dfrac{33}{49}$$",
         "feedback": "You treated the second pick as if the counters were replaced. The denominator must decrease after the first pick."
     },
     {
-        "ans": "$$\\dfrac{2}{7},\\ \\dfrac{2}{7}$$",
+        "ans": "$$(a)\\ \\dfrac{2}{7},\\ (b)\\ \\dfrac{2}{7}$$",
         "feedback": "You repeated the probability of both red for part (b). 'At least one blue' is the complement of 'both red'."
     },
     {
-        "ans": "$$\\dfrac{12}{42},\\ \\dfrac{30}{42}$$",
+        "ans": "$$(a)\\ \\dfrac{12}{42},\\ (b)\\ \\dfrac{30}{42}$$",
         "feedback": "You used the unsimplified fraction for part (a) and then subtracted incorrectly. The complement must be $1 - P(RR)$."
     }
 ],
@@ -1147,11 +1147,11 @@ const problemBank = [
             "Calculation: $(5 - 2)^2 + (1 + 3)^2 = 3^2 + 4^2$.",
             "Simplifying: $9 + 16 = 25$.",
             "Since the result equals $r^2$, the point satisfies the equation and lies on the circumference.",
-            "Final Answer: $$(a)\\ (x - 2)^2 + (y + 3)^2 = 25,\\ (b)\\ \\text{Shown}$$"
+            "Final Answer: $$(a)\\ (x - 2)^2 + (y + 3)^2 = 25$$"
         ],
         "wrong_options": [
     {
-        "ans": "$$(x + 2)^2 + (y - 3)^2 = 25,\\ \\text{Not shown}$$",
+        "ans": "$$(x + 2)^2 + (y - 3)^2 = 25$$",
         "feedback": "You changed both signs incorrectly. Remember: $(x - a)$ and $(y - b)$ use the centre $(a, b)$ exactly as given."
     },
     {
@@ -1192,15 +1192,15 @@ const problemBank = [
         ],
         "wrong_options": [
     {
-        "ans": "$$(2, 2), (4, 2), (2, 6),\\ \\text{Reflected but not rotated}$$",
+        "ans": "$$(a)\\ (2, 2), (4, 2), (2, 6),\\ (b)\\ \\text{Reflected but not rotated}$$",
         "feedback": "You used a positive scale factor instead of a negative one. A negative scale factor reverses the direction of the coordinates."
     },
     {
-        "ans": "$$(-2, -2), (-4, -2), (-2, -6),\\ \\text{Same orientation}$$",
+        "ans": "$$(a)\\ (-2, -2), (-4, -2), (-2, -6),\\ (b)\\ \\text{Same orientation}$$",
         "feedback": "Part (a) is correct, but a negative enlargement always flips the shape, creating a $180^\\circ$ rotation."
     },
     {
-        "ans": "$$(-1, -1), (-2, -1), (-1, -3),\\ \\text{Opposite side only}$$",
+        "ans": "$$(a)\\ (-1, -1), (-2, -1), (-1, -3),\\ (b)\\ \\text{Opposite side only}$$",
         "feedback": "You halved the scale factor instead of multiplying by $-2$. The coordinates must be scaled by the full factor."
     }
 ],
