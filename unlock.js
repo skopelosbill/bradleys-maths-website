@@ -1,4 +1,4 @@
-localStorage.clear();
+
 
 document.getElementById("unlock-btn").addEventListener("click", async () => {
     const key = document.getElementById("license-input").value.trim().toUpperCase();
