@@ -855,4 +855,4 @@ checkPremiumAccess() {
     }
 };
  //TEMPORARY: Force paywall for testing
-    BradleyHub.state.freeQuestionsLeft = 0;
+  //  BradleyHub.state.freeQuestionsLeft = 0;
