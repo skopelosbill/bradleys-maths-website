@@ -1,23 +1,85 @@
-// sw.js - Bradley's Maths Service Worker
-const CACHE_NAME = 'bradleys-maths-v1';
+// sw.js – Bradley's Maths PWA Service Worker
+const CACHE_NAME = 'bradleys-maths-v2';
 
-// Install event
+// Files that must always be available offline
+const APP_SHELL = [
+    '/',                // index.html
+    '/index.html',
+    '/hub.html',
+    '/unlock.html',
+    '/style.css',
+    '/hub-engine.js',
+    '/engine.js',
+    '/manifest.json',
+    '/images/app-icon-512.png',
+    '/offline.html'
+];
+
+// Install: cache the app shell
 self.addEventListener('install', event => {
-    console.log('Service Worker installed.');
+    event.waitUntil(
+        caches.open(CACHE_NAME).then(cache => {
+            return cache.addAll(APP_SHELL);
+        })
+    );
     self.skipWaiting();
 });
 
-// Activate event
+// Activate: clean old caches
 self.addEventListener('activate', event => {
-    console.log('Service Worker activated.');
+    event.waitUntil(
+        caches.keys().then(keys =>
+            Promise.all(
+                keys.map(key => {
+                    if (key !== CACHE_NAME) return caches.delete(key);
+                })
+            )
+        )
+    );
+    self.clients.claim();
 });
 
-// Fetch event (Bypasses caching so you don't get stuck with old code!)
+// Fetch handler
 self.addEventListener('fetch', event => {
+    const req = event.request;
+    const url = new URL(req.url);
+
+    // 1. App shell → cache first
+    if (APP_SHELL.includes(url.pathname)) {
+        event.respondWith(
+            caches.match(req).then(cached => {
+                return cached || fetch(req).then(res => {
+                    return caches.open(CACHE_NAME).then(cache => {
+                        cache.put(req, res.clone());
+                        return res;
+                    });
+                });
+            })
+        );
+        return;
+    }
+
+    // 2. Question files → network first, fallback to cache
+    if (url.pathname.includes('/problems/')) {
+        event.respondWith(
+            fetch(req)
+                .then(res => {
+                    return caches.open(CACHE_NAME).then(cache => {
+                        cache.put(req, res.clone());
+                        return res;
+                    });
+                })
+                .catch(() => caches.match(req))
+        );
+        return;
+    }
+
+    // 3. Everything else → network first, fallback to offline page
     event.respondWith(
-        fetch(event.request).catch(() => {
-            console.log('Offline mode triggered.');
-            // You can add a custom offline HTML page here later if you want!
+        fetch(req).catch(() => {
+            return caches.match(req).then(cached => {
+                return cached || caches.match('/offline.html');
+            });
         })
     );
 });
