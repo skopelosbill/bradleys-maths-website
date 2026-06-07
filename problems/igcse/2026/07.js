@@ -420,6 +420,222 @@ const problemBank = [
         },
         "payhip_link": "https://payhip.com/b/9dSh3",
         "button_text": "Master IGCSE Geometry: Download the Pack"
+    },
+    {
+        "id": "003192",
+        "date": "11 July 2026",
+        "major_area": "Geometry",
+        "topic": "Trigonometry",
+        "subtopic": "Exact Trigonometric values",
+        "difficulty": "5/6",
+        "img": "true",
+        "q": "The diagram shows a right-angled triangle $ABC$ and an adjacent right-angled triangle $ACD$. Angle $ABC = 90^\\circ$, angle $ACB = 45^\\circ$, angle $ACD = 90^\\circ$, angle $ADC = 30^\\circ$, and $BC = 8\\text{ cm}$.<br>(a) Find the exact length of the hypotenuse $AC$ of triangle $ABC$. Give your answer in the form $a\\sqrt{b}\\text{ cm}$, where $a$ and $b$ are integers.<br>(b) Calculate the exact length of the side $AD$ of triangle $ACD$. Give your answer in the form $c\\sqrt{d}\\text{ cm}$, where $c$ and $d$ are integers.",
+        "steps": [
+            "For part (a), we consider the right-angled triangle $ABC$, where the right angle is at $B$.",
+            "We use the cosine trigonometric ratio: $\\cos(\\theta) = \\dfrac{\\text{Adjacent}}{\\text{Hypotenuse}}$. This gives us: $\\cos(45^\\circ) = \\dfrac{BC}{AC} = \\dfrac{8}{AC}$.",
+            "We substitute the exact trigonometric value $\\cos(45^\\circ) = \\dfrac{\\sqrt{2}}{2}$ into the equation: $\\dfrac{\\sqrt{2}}{2} = \\dfrac{8}{AC}$.",
+            "To solve for $AC$, we cross-multiply: $AC\\sqrt{2} = 16 \\implies AC = \\dfrac{16}{\\sqrt{2}}$.",
+            "We rationalise the denominator by multiplying the numerator and the denominator by $\\sqrt{2}$: $AC = \\dfrac{16\\sqrt{2}}{2} = 8\\sqrt{2}\\text{ cm}$.",
+            "For part (b), we consider the right-angled triangle $ACD$, where the right angle is at $C$ and the hypotenuse is $AD$.",
+            "We use the sine trigonometric ratio: $\\sin(\\theta) = \\dfrac{\\text{Opposite}}{\\text{Hypotenuse}}$. This gives us: $\\sin(30^\\circ) = \\dfrac{AC}{AD}$.",
+            "We substitute our known exact value of $AC = 8\\sqrt{2}$ and the exact trigonometric value $\\sin(30^\\circ) = \\dfrac{1}{2}$ into the equation: $\\dfrac{1}{2} = \\dfrac{8\\sqrt{2}}{AD}$.",
+            "To solve for $AD$, we cross-multiply, which yields: $AD = 2 \\times 8\\sqrt{2} = 16\\sqrt{2}\\text{ cm}$.",
+            "Final Answer: $$(a)\\ 8\\sqrt{2}\\text{ cm}\\ (b)\\ 16\\sqrt{2}\\text{ cm}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ 16\\text{ cm}\\ (b)\\ 32\\text{ cm}$$",
+                "feedback": "You used the incorrect exact value of $\\cos(45^\\circ) = \\dfrac{1}{2}$ instead of $\\dfrac{\\sqrt{2}}{2}$ when calculating the length of $AC$."
+            },
+            {
+                "ans": "$$(a)\\ 8\\sqrt{2}\\text{ cm}\\ (b)\\ 4\\sqrt{2}\\text{ cm}$$",
+                "feedback": "You multiplied by $\\sin(30^\\circ)$ instead of dividing in part (b), which scaled the hypotenuse down instead of making it longer."
+            },
+            {
+                "ans": "$$(a)\\ \\dfrac{16}{\\sqrt{2}}\\text{ cm}\\ (b)\\ \\dfrac{32}{\\sqrt{2}}\\text{ cm}$$",
+                "feedback": "Your working is mathematically correct, but you forgot to rationalise the denominators to simplify your final surd representations as required by the format."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Rationalising Denominators",
+            "content": "Whenever you divide an integer by a root (such as $\\dfrac{16}{\\sqrt{2}}$), you can quickly rationalise the fraction mentally. Halve the numerator and multiply it by the root on the bottom: $\\dfrac{16}{2} \\times \\sqrt{2} = 8\\sqrt{2}$. This instant trick is a massive time-saver on non-calculator papers."
+        },
+        "payhip_link": "https://payhip.com/b/GToVZ",
+        "button_text": "Master IGCSE Trigonometry: Download the Pack"
+    },
+    {
+        "id": "003193",
+        "date": "12 July 2026",
+        "major_area": "Algebra",
+        "topic": "Numerical Methods",
+        "subtopic": "Iteration",
+        "difficulty": "7/8",
+        "q": "The depth of water, $h$ metres, in a shipping channel is modelled by the equation $h^3 - 6h + 4 = 0$.<br>(a) Show that a root of this equation lies between $h = 0.5$ and $h = 1.0$.<br>(b) Using the iterative formula $h_{n+1} = \\dfrac{h_n^3 + 4}{6}$ and starting with $h_0 = 0.7$, calculate the values of $h_1$ and $h_2$. Give your answers correct to 4 decimal places.",
+        "steps": [
+            "For part (a), we define our function as $f(h) = h^3 - 6h + 4$.",
+            "We substitute the lower boundary $h = 0.5$ into the function: $f(0.5) = (0.5)^3 - 6(0.5) + 4 = 0.125 - 3 + 4 = 1.125$.",
+            "We substitute the upper boundary $h = 1.0$ into the function: $f(1.0) = (1.0)^3 - 6(1.0) + 4 = 1 - 6 + 4 = -1$.",
+            "Since $f(0.5)$ is positive ($1.125$) and $f(1.0)$ is negative ($-1$), there is a change of sign over the interval.",
+            "Because the polynomial function is continuous, this sign change proves that a root must lie in the interval $0.5 < h < 1.0$.",
+            "For part (b), we substitute our initial value $h_0 = 0.7$ into the iterative formula to calculate $h_1$: $h_1 = \\dfrac{(0.7)^3 + 4}{6}$.",
+            "Evaluating the cube: $(0.7)^3 = 0.343$. This gives: $h_1 = \\dfrac{0.343 + 4}{6} = \\dfrac{4.343}{6} \\approx 0.723833$.",
+            "Rounding to 4 decimal places gives $h_1 = 0.7238$.",
+            "Next, we use our unrounded value of $h_1 \\approx 0.723833$ in the iterative formula to calculate $h_2$: $h_2 = \\dfrac{(0.723833)^3 + 4}{6}$.",
+            "Evaluating the cube using a calculator: $(0.723833)^3 \\approx 0.379237$. This gives: $h_2 = \\dfrac{0.379237 + 4}{6} = \\dfrac{4.379237}{6} \\approx 0.729873$.",
+            "Rounding to 4 decimal places gives $h_2 = 0.7299$.",
+            "Final Answer: $$(a)\\ f(0.5) = 1.125,\\ f(1) = -1\\ (b)\\ h_1 = 0.7238,\\ h_2 = 0.7299$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ f(0.5) = 1.125,\\ f(1) = -1\\ (b)\\ h_1 = 0.7238,\\ h_2 = 0.7297$$",
+                "feedback": "You used the rounded value of $h_1 = 0.7238$ to calculate $h_2$, which introduced a premature rounding error in your fourth decimal place."
+            },
+            {
+                "ans": "$$(a)\\ f(0.5) = 1.125,\\ f(1) = -1\\ (b)\\ h_1 = 1.0167,\\ h_2 = 1.1750$$",
+                "feedback": "You multiplied $h_n$ by 3 instead of cubing it ($h_n^3$) when calculating your iterations."
+            },
+            {
+                "ans": "$$(a)\\ f(0.5) = -1.125,\\ f(1) = 1\\ (b)\\ h_1 = 0.7238,\\ h_2 = 0.7299$$",
+                "feedback": "Your iterative calculations are correct, but you evaluated the boundary values of the function incorrectly in part (a)."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: The Sign Change Rule",
+            "content": "The sign-change method relies on the continuous nature of polynomial curves. If a function's output switches from positive to negative over an interval, the curve must cross the horizontal axis ($y=0$) at some point between those coordinates, mathematically demonstrating that a root exists."
+        },
+        "payhip_link": "https://payhip.com/b/IoYTp",
+        "button_text": "Master IGCSE Algebra: Download the Pack"
+    },
+    {
+        "id": "003194",
+        "date": "13 July 2026",
+        "major_area": "Number",
+        "topic": "Rounding, Estimation and Accuracy",
+        "subtopic": "Rounding, Estimation and Error Intervals",
+        "difficulty": "5/6",
+        "q": "A standard shipping carton is recorded as having a mass of $w = 14.8\\text{ kg}$, correct to 1 decimal place.<br>(a) Write down the error interval for the mass $w$ of a single carton using inequalities.<br>(b) A pallet contains exactly 45 of these identical cartons. Calculate the error interval for the total mass, $W$, of the cartons on the pallet.",
+        "steps": [
+            "For part (a), the mass $w = 14.8\\text{ kg}$ is recorded to 1 decimal place. The unit of accuracy is therefore $0.1\\text{ kg}$.",
+            "We find the boundary offset by halving this unit of accuracy: $0.1 \\div 2 = 0.05\\text{ kg}$.",
+            "To find the lower bound, we subtract this offset from our recorded mass: $14.8 - 0.05 = 14.75\\text{ kg}$.",
+            "To find the upper bound, we add this offset to our recorded mass: $14.8 + 0.05 = 14.85\\text{ kg}$.",
+            "This gives the error interval for a single carton as: $14.75 \\le w < 14.85\\text{ kg}$.",
+            "For part (b), we calculate the total bounds of the pallet by multiplying the individual carton bounds by the total quantity of 45.",
+            "The lower bound of the total mass $W$ is: $45 \\times 14.75 = 663.75\\text{ kg}$.",
+            "The upper bound of the total mass $W$ is: $45 \\times 14.85 = 668.25\\text{ kg}$.",
+            "This gives the error interval for the entire pallet as: $663.75 \\le W < 668.25\\text{ kg}$.",
+            "Final Answer: $$(a)\\ 14.75 \\le w < 14.85\\text{ kg}\\ (b)\\ 663.75 \\le W < 668.25\\text{ kg}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ 14.5 \\le w < 15.5\\text{ kg}\\ (b)\\ 652.50 \\le W < 697.50\\text{ kg}$$",
+                "feedback": "You treated the mass as if it were rounded to the nearest whole kilogram instead of the nearest $0.1\\text{ kg}$."
+            },
+            {
+                "ans": "$$(a)\\ 14.75 \\le w \\le 14.85\\text{ kg}\\ (b)\\ 663.75 \\le W \\le 668.25\\text{ kg}$$",
+                "feedback": "You used the inclusive inequality symbol ($\\le$) for your upper bound. Upper bounds in error intervals must be strictly exclusive ($<$)."
+            },
+            {
+                "ans": "$$(a)\\ 14.75 \\le w < 14.85\\text{ kg}\\ (b)\\ 0.33 \\le W < 0.33\\text{ kg}$$",
+                "feedback": "You divided the boundaries of the single carton by 45 instead of multiplying them to find the total combined mass of the pallet."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Upper Bound Inequality Symbols",
+            "content": "When writing an error interval, the lower bound always uses the inclusive 'greater than or equal to' symbol ($\\le$), but the upper bound must use the exclusive 'less than' symbol ($<$). This is because any weight exactly equal to $14.85\\text{ kg}$ would round up to $14.9\\text{ kg}$ rather than down to $14.8\\text{ kg}$."
+        },
+        "payhip_link": "https://payhip.com/b/eg8sA",
+        "button_text": "Master IGCSE Number: Download the Pack"
+    },
+    {
+        "id": "003195",
+        "date": "14 July 2026",
+        "major_area": "Geometry",
+        "topic": "Mensuration",
+        "subtopic": "Arcs and Sectors",
+        "difficulty": "6/7",
+        "img": "true",
+        "q": "A lawn sprinkler sprays water over a sector $OAB$ of a circle with centre $O$ and radius $12\\text{ m}$ as shown in the diagram. The angle of the sector $AOB$ is $135^\\circ$.<br>(a) Calculate the total area watered by the sprinkler. Give your answer in terms of $\\pi$ in its simplest form.<br>(b) Calculate the total perimeter of the sector $OAB$. Give your answer in the form $a + b\\pi$, where $a$ and $b$ are integers.",
+        "steps": [
+            "For part (a), the formula for the area of a sector of a circle is: $\\text{Area} = \\dfrac{\\theta}{360^\\circ} \\times \\pi r^2$.",
+            "Substituting our angle $\\theta = 135^\\circ$ and radius $r = 12\\text{ m}$ gives: $\\text{Area} = \\dfrac{135}{360} \\times \\pi \\times 12^2$.",
+            "We simplify the fraction: $\\dfrac{135}{360} = \\dfrac{3}{8}$.",
+            "Substituting this back into our calculation: $\\text{Area} = \\dfrac{3}{8} \\times 144\\pi = 3 \\times 18\\pi = 54\\pi\\text{ m}^2$.",
+            "For part (b), the perimeter of a sector consists of the curved arc length $AB$ plus the two straight boundary radii, $OA$ and $OB$.",
+            "The formula for the arc length of a sector is: $\\text{Arc Length} = \\dfrac{\\theta}{360^\\circ} \\times 2\\pi r$.",
+            "Substituting our values gives: $\\text{Arc Length} = \\dfrac{135}{360} \\times 2\\pi \\times 12 = \\dfrac{3}{8} \\times 24\\pi = 9\\pi\\text{ m}$.",
+            "The total perimeter is the sum of this curved arc length and the two straight radii of $12\\text{ m}$: $\\text{Perimeter} = 9\\pi + 12 + 12 = 24 + 9\\pi\\text{ m}$.",
+            "Final Answer: $$(a)\\ 54\\pi\\text{ m}^2\\ (b)\\ 24 + 9\\pi\\text{ m}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ 54\\pi\\text{ m}^2\\ (b)\\ 9\\pi\\text{ m}$$",
+                "feedback": "You calculated only the curved arc length of the sector in part (b), forgetting to add the two straight boundary radii ($2r$) to find the total perimeter."
+            },
+            {
+                "ans": "$$(a)\\ 216\\pi\\text{ m}^2\\ (b)\\ 24 + 9\\pi\\text{ m}$$",
+                "feedback": "You used the diameter of $24\\text{ m}$ instead of the radius of $12\\text{ m}$ in your sector area calculation."
+            },
+            {
+                "ans": "$$(a)\\ 48\\pi\\text{ m}^2\\ (b)\\ 24 + 8\\pi\\text{ m}$$",
+                "feedback": "You simplified the fraction $\\dfrac{135}{360}$ incorrectly as $\\dfrac{1}{3}$ instead of $\\dfrac{3}{8}$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Arc Length vs Sector Perimeter",
+            "content": "Do not confuse arc length with sector perimeter. The arc length only represents the curved portion of the boundary. To find the total perimeter of a sector, you must always add the two straight enclosing radii ($2r$) back to your calculated arc length."
+        },
+        "payhip_link": "https://payhip.com/b/fiURV",
+        "button_text": "Master IGCSE Geometry: Download the Pack"
+    },
+    {
+        "id": "003196",
+        "date": "15 July 2026",
+        "major_area": "Probability & Statistics",
+        "topic": "Probability",
+        "subtopic": "Probability of Combined Events",
+        "difficulty": "6/7",
+        "q": "A drawer contains 8 striped shirts and 6 plain shirts. Two shirts are selected at random from the drawer, one after another, without replacement.<br>(a) Find the probability that both selected shirts are plain.<br>(b) Calculate the probability that the two selected shirts are of different designs.",
+        "steps": [
+            "For part (a), the total number of shirts in the drawer is $8 + 6 = 14$ shirts.",
+            "The probability of selecting a plain shirt on the first draw is: $\\text{P}(\\text{Plain}_1) = \\dfrac{6}{14} = \\dfrac{3}{7}$.",
+            "Since the selection is made without replacement, only 13 shirts remain in the drawer for the second draw, of which 5 are plain.",
+            "The probability of selecting a second plain shirt is: $\\text{P}(\\text{Plain}_2) = \\dfrac{5}{13}$.",
+            "The probability of both shirts being plain is the product of these sequential probabilities: $\\text{P}(\\text{Both Plain}) = \\dfrac{6}{14} \\times \\dfrac{5}{13} = \\dfrac{30}{182}$.",
+            "Simplifying the fraction by dividing the numerator and denominator by 2 yields: $\\dfrac{15}{91}$.",
+            "For part (b), there are two different ways to select shirts of different designs: (Striped then Plain) or (Plain then Striped).",
+            "We calculate the probability of the first combination (Striped then Plain): $\\text{P}(\\text{S, P}) = \\dfrac{8}{14} \\times \\dfrac{6}{13} = \\dfrac{48}{182}$.",
+            "We calculate the probability of the second combination (Plain then Striped): $\\text{P}(\\text{P, S}) = \\dfrac{6}{14} \\times \\dfrac{8}{13} = \\dfrac{48}{182}$.",
+            "To find the total probability of selecting different designs, we add these two probabilities together: $\\text{P}(\\text{Different}) = \\dfrac{48}{182} + \\dfrac{48}{182} = \\dfrac{96}{182}$.",
+            "Simplifying this fraction by dividing the numerator and denominator by 2 yields: $\\dfrac{48}{91}$.",
+            "Final Answer: $$(a)\\ \\dfrac{15}{91}\\ (b)\\ \\dfrac{48}{91}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ \\dfrac{9}{49}\\ (b)\\ \\dfrac{24}{49}$$",
+                "feedback": "You assumed that the shirts were replaced after each selection. This indicates you completed your calculations using 'with replacement' rules."
+            },
+            {
+                "ans": "$$(a)\\ \\dfrac{15}{91}\\ (b)\\ \\dfrac{24}{91}$$",
+                "feedback": "You calculated the probability of only one specific order (Striped then Plain) in part (b), forgetting that you must double this to account for the alternative order (Plain then Striped)."
+            },
+            {
+                "ans": "$$(a)\\ \\dfrac{11}{27}\\ (b)\\ \\dfrac{14}{27}$$",
+                "feedback": "You added the denominators when multiplying your fractions or made an arithmetic error when expanding your joint paths."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Order in Combined Events",
+            "content": "When a probability question asks for 'different designs', remember that order matters. Getting a striped shirt first and a plain shirt second (SP) is a completely separate branch on a tree diagram from getting a plain shirt first and a striped shirt second (PS). You must calculate both paths and add them together."
+        },
+        "payhip_link": "https://payhip.com/b/FGC0u",
+        "button_text": "Master IGCSE Probability: Download the Pack"
     }
+
 
 ]
