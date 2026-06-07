@@ -1088,48 +1088,48 @@ const problemBank = [
         "button_text": "Master IGCSE Algebra: Download the Pack"
     },
     {
-        "id": "003207",
-        "date": "26 July 2026",
-        "major_area": "Algebra",
-        "topic": "Quadratic Equations",
-        "subtopic": "Completing the Square",
-        "difficulty": "A/B",
-        "q": "The curve $y = 2x^2 - 12x + 5$ represents the path of a model rocket.<br>(a) Express the quadratic equation $2x^2 - 12x + 5$ in the form $a(x - b)^2 + c$, where $a$, $b$, and $c$ are integers.<br>(b) Write down the coordinates of the turning point of the curve.",
-        "steps": [
-            "For part (a), we begin by factoring out the coefficient of $x^2$, which is 2, from the first two terms of the expression: $2(x^2 - 6x) + 5$.",
-            "Next, we complete the square for the quadratic expression inside the bracket, $x^2 - 6x$.",
-            "We halve the coefficient of $x$ (which is $-6$) to get $-3$, giving the squared term: $(x - 3)^2$.",
-            "To keep the expression equal, we subtract the square of this value inside the bracket: $x^2 - 6x = (x - 3)^2 - 3^2 = (x - 3)^2 - 9$.",
-            "Substituting this completed square back into our factored expression: $2[(x - 3)^2 - 9] + 5$.",
-            "We expand the outer bracket by multiplying both terms by 2: $2(x - 3)^2 - 18 + 5$.",
-            "Simplifying the constant terms: $2(x - 3)^2 - 13$, which is in the required form where $a = 2$, $b = 3$, and $c = -13$.",
-            "For part (b), the turning point of a curve in the form $y = a(x - b)^2 + c$ occurs at the coordinates $(b, c)$.",
-            "Since the expression is $2(x - 3)^2 - 13$, the minimum value of $y$ is $-13$, which occurs when the squared term is zero, meaning $x - 3 = 0 \\implies x = 3$.",
-            "The coordinates of the turning point are therefore $(3, -13)$.",
-            "Final Answer: $$(a)\\ 2(x - 3)^2 - 13\\ (b)\\ (3, -13)$$"
-        ],
-        "wrong_options": [
-            {
-                "ans": "$$(a)\\ 2(x - 3)^2 - 13\\ (b)\\ (-3, -13)$$",
-                "feedback": "You gave the incorrect sign for your x-coordinate. In the completed square form $(x-b)^2$, the turning point occurs at positive $b$."
-            },
-            {
-                "ans": "$$(a)\\ 2(x - 6)^2 - 31\\ (b)\\ (6, -31)$$",
-                "feedback": "You forgot to factor out the coefficient of 2 before halving your linear term, subtracting the incorrect squared constant."
-            },
-            {
-                "ans": "$$(a)\\ 2(x - 3)^2 - 4\\ (b)\\ (3, -4)$$",
-                "feedback": "You forgot to multiply the subtracted constant $-9$ by the factored coefficient of 2 before adding the $+5$ at the end of your expansion."
-            }
-        ],
-        "bradley_insight": {
-            "type": "caution",
-            "title": "The Head Teacher's Eye: Coefficient Distribution",
-            "content": "The most common error when completing the square with an $x^2$ coefficient is forgetting to distribute that coefficient to your subtracted constant. When expanding $2[(x-3)^2 - 9] + 5$, make sure you multiply the $-9$ by 2 to get $-18$ before adding 5."
+    "id": "003207",
+    "date": "26 July 2026",
+    "major_area": "Algebra",
+    "topic": "Quadratic Equations",
+    "subtopic": "Completing the Square",
+    "difficulty": "A/B",
+    "q": "The curve $y = -2x^2 + 12x + 5$ represents the flight path of a model rocket, where $y$ is the height in metres and $x$ is the horizontal distance in metres.<br>(a) Express the quadratic equation $-2x^2 + 12x + 5$ in the form $a(x - b)^2 + c$, where $a$, $b$, and $c$ are integers.<br>(b) Write down the coordinates of the turning point of the curve, representing the maximum height of the rocket.",
+    "steps": [
+        "For part (a), we begin by factoring out the coefficient of $x^2$, which is $-2$, from the first two terms of the expression: $-2(x^2 - 6x) + 5$.",
+        "Next, we complete the square for the quadratic expression inside the bracket, $x^2 - 6x$.",
+        "We halve the coefficient of $x$ (which is $-6$) to get $-3$, giving the squared term: $(x - 3)^2$.",
+        "To keep the expression equal, we subtract the square of this value inside the bracket: $x^2 - 6x = (x - 3)^2 - 3^2 = (x - 3)^2 - 9$.",
+        "Substituting this completed square back into our factored expression: $-2[(x - 3)^2 - 9] + 5$.",
+        "We expand the outer bracket by multiplying both terms by $-2$, noting that multiplying two negative numbers yields a positive: $-2(x - 3)^2 + 18 + 5$.",
+        "Simplifying the constant terms: $-2(x - 3)^2 + 23$, which is in the required form where $a = -2$, $b = 3$, and $c = 23$.",
+        "For part (b), the turning point of a curve in the form $y = a(x - b)^2 + c$ occurs at the coordinates $(b, c)$.",
+        "Since the expression is $-2(x - 3)^2 + 23$, the maximum value of $y$ is $23$, which occurs when the squared term is zero, meaning $x - 3 = 0 \\implies x = 3$.",
+        "The coordinates of the turning point (the maximum height) are therefore $(3, 23)$.",
+        "Final Answer: $$(a)\\ -2(x - 3)^2 + 23\\ (b)\\ (3, 23)$$"
+    ],
+    "wrong_options": [
+        {
+            "ans": "$$-2(x - 3)^2 + 23\\ (b)\\ (-3, 23)$$",
+            "feedback": "You gave the incorrect sign for your x-coordinate. In the completed square form $(x-b)^2$, the turning point occurs at positive $b$."
         },
-        "payhip_link": "https://payhip.com/b/miLap",
-        "button_text": "Master IGCSE Algebra: Download the Pack"
+        {
+            "ans": "$$-2(x - 6)^2 + 77\\ (b)\\ (6, 77)$$",
+            "feedback": "You forgot to factor out the coefficient of $-2$ before halving your linear term, subtracting the incorrect squared constant."
+        },
+        {
+            "ans": "$$-2(x - 3)^2 + 13\\ (b)\\ (3, 13)$$",
+            "feedback": "You made a sign error when expanding your bracket, subtracting 18 from 5 instead of adding 18 to 5."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Sign Changes in Expansion",
+        "content": "A very common slip in this style of question is sign management. When expanding $-2[(x-3)^2 - 9] + 5$, you must multiply $-2$ by $-9$, which results in $+18$. Forgetting that the product of two negatives is positive is a frequent source of lost marks."
     },
+    "payhip_link": "https://payhip.com/b/miLap",
+    "button_text": "Master IGCSE Algebra: Download the Pack"
+}
     {
         "id": "003208",
         "date": "27 July 2026",
