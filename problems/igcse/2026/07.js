@@ -209,5 +209,217 @@ const problemBank = [
         },
         "payhip_link": "https://payhip.com/b/oW2c1",
         "button_text": "Master IGCSE Probability: Download the Pack"
+    },
+    {
+        "id": "003187",
+        "date": "6 July 2026",
+        "major_area": "Algebra",
+        "topic": "Formulas",
+        "subtopic": "Changing the Subject of a Formula",
+        "difficulty": "6/7",
+        "q": "The time period, $T$, of a physical pendulum is given by the formula $T = 2\\pi\\sqrt{\\dfrac{L - x}{g}}$.<br>(a) Rearrange the formula to make the length, $L$, the subject.<br>(b) Calculate the value of $L$ when $T = 3.1$, $g = 9.81$, $x = 0.4$, and $\\pi \\approx 3.142$. Give your answer correct to 3 significant figures.",
+        "steps": [
+            "For part (a), we isolate the square root term by dividing both sides of the equation by $2\\pi$: $\\dfrac{T}{2\\pi} = \\sqrt{\\dfrac{L - x}{g}}$.",
+            "We square both sides of the equation to eliminate the square root, remembering to square both terms in the denominator on the left side: $\\dfrac{T^2}{4\\pi^2} = \\dfrac{L - x}{g}$.",
+            "Next, we multiply both sides of the equation by $g$ to clear the denominator: $\\dfrac{g T^2}{4\\pi^2} = L - x$.",
+            "To isolate $L$, we add $x$ to both sides of the equation, yielding: $L = \\dfrac{g T^2}{4\\pi^2} + x$.",
+            "For part (b), we substitute the given numerical values into our rearranged formula: $L = \\dfrac{9.81 \\times (3.1)^2}{4 \\times (3.142)^2} + 0.4$.",
+            "Evaluating the squared terms: $(3.1)^2 = 9.61$ and $(3.142)^2 \\approx 9.8722$.",
+            "Substituting these back into the calculation: $L = \\dfrac{9.81 \\times 9.61}{4 \\times 9.8722} + 0.4 = \\dfrac{94.2741}{39.4888} + 0.4$.",
+            "Evaluating the division: $\\dfrac{94.2741}{39.4888} \\approx 2.3874$.",
+            "Adding $0.4$ to this result: $L = 2.3874 + 0.4 = 2.7874\\text{ m}$.",
+            "Rounding to 3 significant figures gives the final value of $L$ as $2.79$.",
+            "Final Answer: $$(a)\\ L = \\dfrac{g T^2}{4\\pi^2} + x\\ (b)\\ 2.79$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ L = \\dfrac{g T^2}{2\\pi} + x\\ (b)\\ 15.4$$",
+                "feedback": "When squaring both sides of the equation in part (a), you forgot to square the coefficient $2\\pi$, keeping it as $2\\pi$ instead of $4\\pi^2$."
+            },
+            {
+                "ans": "$$(a)\\ L = \\dfrac{g T^2}{4\\pi^2} + x\\ (b)\\ 7.90$$",
+                "feedback": "Your algebraic rearrangement is correct, but you forgot to square the value of $\\pi$ in the denominator when calculating your answer for part (b)."
+            },
+            {
+                "ans": "$$(a)\\ L = \\dfrac{g T^2}{4\\pi^2} - x\\ (b)\\ 1.99$$",
+                "feedback": "You subtracted $x$ from both sides at the final step of your rearrangement instead of adding it, which inverted the final operation."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Squaring External Coefficients",
+            "content": "When squaring both sides of an equation to clear a square root, remember that any coefficient outside the root must also be squared. In this formula, the leading $2\\pi$ must become $4\\pi^2$. Forgetting to square the numerical constant or the variable $\\pi$ is one of the most common algebraic errors in exams."
+        },
+        "payhip_link": "https://payhip.com/b/9r34U",
+        "button_text": "Master IGCSE Algebra: Download the Pack"
+    },
+    {
+        "id": "003188",
+        "date": "7 July 2026",
+        "major_area": "Geometry",
+        "topic": "Similarity in 3D",
+        "subtopic": "Similarity in 3D",
+        "difficulty": "7/8",
+        "img": "true",
+        "q": "The diagram shows two mathematically similar cylindrical metal tins, $P$ and $Q$, made of the same sheet metal. Tin $P$ has a diameter of $12\\text{ cm}$ and a mass of $450\\text{ g}$. Tin $Q$ has a diameter of $18\\text{ cm}$.<br>(a) Find the linear scale factor of enlargement from Tin $P$ to Tin $Q$.<br>(b) Calculate the mass of Tin $Q$. Give your answer in kilograms.",
+        "steps": [
+            "For part (a), we find the linear scale factor of enlargement, $k$, by dividing the diameter of the larger tin by the diameter of the smaller tin.",
+            "This is calculated as: $k = \\dfrac{18}{12} = 1.5$.",
+            "For part (b), since the two tins are mathematically similar and made of the same metal, their masses are directly proportional to their volumes.",
+            "The volume scale factor is the cube of the linear scale factor: $k^3 = (1.5)^3 = 3.375$.",
+            "To calculate the mass of Tin $Q$, we multiply the mass of Tin $P$ by this volume scale factor: $\\text{Mass of } Q = 450 \\times 3.375 = 1518.75\\text{ g}$.",
+            "The question asks for the final answer in kilograms. We convert our mass by dividing by 1000: $1518.75 \\div 1000 = 1.51875\\text{ kg}$.",
+            "Rounding to 3 significant figures gives the mass of Tin $Q$ as $1.52\\text{ kg}$.",
+            "Final Answer: $$(a)\\ 1.5\\ (b)\\ 1.52\\text{ kg}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ 1.5\\ (b)\\ 0.675\\text{ kg}$$",
+                "feedback": "You multiplied the mass of Tin $P$ by the linear scale factor of $1.5$ instead of the volume scale factor of $3.375$."
+            },
+            {
+                "ans": "$$(a)\\ 1.5\\ (b)\\ 1520\\text{ kg}$$",
+                "feedback": "Your volumetric calculation is correct, but you forgot to convert your final answer from grams to kilograms."
+            },
+            {
+                "ans": "$$(a)\\ 1.5\\ (b)\\ 1.01\\text{ kg}$$",
+                "feedback": "You scaled the mass of the tin using the area scale factor of $k^2 = 2.25$ instead of the volume scale factor of $k^3 = 3.375$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Mass Scales with Volume",
+            "content": "Always identify the dimensional property you are scaling. Lengths scale by $k$, areas scale by $k^2$, and volumes scale by $k^3$. Because mass is directly proportional to volume (assuming uniform density), any similarity question involving mass must use the cubic scale factor ($k^3$)."
+        },
+        "payhip_link": "https://payhip.com/b/iBzE5",
+        "button_text": "Master IGCSE Geometry: Download the Pack"
+    },
+    {
+        "id": "003189",
+        "date": "8 July 2026",
+        "major_area": "Number",
+        "topic": "Standard Form",
+        "subtopic": "Standard Form",
+        "difficulty": "5/6",
+        "q": "A rectangular microchip component has a length of $3.5 \\times 10^{-5}\\text{ m}$ and a width of $2.4 \\times 10^{-6}\\text{ m}$.<br>(a) Calculate the total perimeter of the component. Give your answer in standard form.<br>(b) Calculate the total surface area of the component. Give your answer in standard form.",
+        "steps": [
+            "For part (a), the formula for the perimeter of a rectangle is: $\\text{Perimeter} = 2 \\times (\\text{length} + \\text{width})$.",
+            "We write the sum of the dimensions: $(3.5 \\times 10^{-5}) + (2.4 \\times 10^{-6})$.",
+            "To add numbers in standard form, we must adjust them to share the same power of 10. We rewrite $3.5 \\times 10^{-5}$ as $35 \\times 10^{-6}$.",
+            "Now we add the coefficients: $(35 + 2.4) \\times 10^{-6} = 37.4 \\times 10^{-6}$.",
+            "We multiply this sum by 2 to find the total perimeter: $2 \\times (37.4 \\times 10^{-6}) = 74.8 \\times 10^{-6}$.",
+            "We convert this product back into correct standard form notation: $7.48 \\times 10^{-5}\\text{ m}$.",
+            "For part (b), the formula for the area of a rectangle is: $\\text{Area} = \\text{length} \\times \\text{width}$.",
+            "We multiply the dimensions: $(3.5 \\times 10^{-5}) \\times (2.4 \\times 10^{-6})$.",
+            "We multiply the coefficients: $3.5 \\times 2.4 = 8.4$.",
+            "We add the indices for the base 10 terms: $-5 + (-6) = -11$.",
+            "Combining these values gives the final area as $8.4 \\times 10^{-11}\\text{ m}^2$.",
+            "Final Answer: $$(a)\\ 7.48 \\times 10^{-5}\\text{ m}\\ (b)\\ 8.4 \\times 10^{-11}\\text{ m}^2$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ 3.74 \\times 10^{-5}\\text{ m}\\ (b)\\ 8.4 \\times 10^{-11}\\text{ m}^2$$",
+                "feedback": "You calculated the sum of the length and width correctly, but you forgot to multiply by 2 to find the total perimeter of the rectangle."
+            },
+            {
+                "ans": "$$(a)\\ 1.18 \\times 10^{-4}\\text{ m}\\ (b)\\ 8.4 \\times 10^{-11}\\text{ m}^2$$",
+                "feedback": "You added the coefficients directly ($3.5 + 2.4 = 5.9$) without adjusting the powers of 10 to match first, which caused a scale error in your perimeter."
+            },
+            {
+                "ans": "$$(a)\\ 7.48 \\times 10^{-5}\\text{ m}\\ (b)\\ 8.4 \\times 10^{30}\\text{ m}^2$$",
+                "feedback": "For part (b), you multiplied the indices of the base 10 terms ($(-5) \\times (-6) = 30$) instead of adding them together."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Standard Form Addition",
+            "content": "When adding or subtracting small numbers in standard form, writing them using the more negative power of 10 is the safest strategy. Converting $3.5 \\times 10^{-5}$ into $35 \\times 10^{-6}$ allows you to complete the addition as a simple, error-free decimal sum ($35 + 2.4$)."
+        },
+        "payhip_link": "https://payhip.com/b/ZAkTu",
+        "button_text": "Master IGCSE Number: Download the Pack"
+    },
+    {
+        "id": "003190",
+        "date": "9 July 2026",
+        "major_area": "Probability & Statistics",
+        "topic": "Histograms",
+        "subtopic": "Histograms",
+        "difficulty": "7/8",
+        "q": "The masses of 200 bags checked onto a flight were recorded. The class interval $20 < m \\le 25\\text{ kg}$ has a frequency of 75 and is represented by a bar of height $15\\text{ cm}$ on the grid.<br>(a) Find the frequency density of this class interval.<br>(b) The class interval $25 < m \\le 35\\text{ kg}$ is represented by a bar of height $6\\text{ cm}$ on the same grid. Calculate the frequency of bags in this interval.",
+        "steps": [
+            "For part (a), the class width of the interval $20 < m \\le 25$ is: $25 - 20 = 5\\text{ kg}$.",
+            "The formula for frequency density is: $\\text{Frequency Density} = \\dfrac{\\text{Frequency}}{\\text{Class Width}}$.",
+            "Substituting our values: $\\text{Frequency Density} = \\dfrac{75}{5} = 15$. This matches the bar height of $15\\text{ cm}$ on the grid.",
+            "For part (b), we rearrange the frequency density formula to solve for the frequency: $\\text{Frequency} = \\text{Frequency Density} \\times \\text{Class Width}$.",
+            "The height of the bar is $6\\text{ cm}$, which means the frequency density for this second interval is 6.",
+            "We calculate the class width of this second interval: $35 - 25 = 10\\text{ kg}$.",
+            "Substituting these values into our rearranged equation: $\\text{Frequency} = 6 \\times 10 = 60\\text{ bags}$.",
+            "Final Answer: $$(a)\\ 15\\ (b)\\ 60\\text{ bags}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ 15\\ (b)\\ 0.6\\text{ bags}$$",
+                "feedback": "You divided the frequency density by the class width ($6 \\div 10 = 0.6$) instead of multiplying them to find the frequency."
+            },
+            {
+                "ans": "$$(a)\\ 15\\ (b)\\ 30\\text{ bags}$$",
+                "feedback": "You assumed that the second class interval had the same class width of $5$ as the first interval, instead of calculating the correct class width of $10$."
+            },
+            {
+                "ans": "$$(a)\\ 0.067\\ (b)\\ 60\\text{ bags}$$",
+                "feedback": "You calculated the frequency density incorrectly in part (a) by dividing the class width by the frequency instead of dividing the frequency by the class width."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Variable Class Widths",
+            "content": "The single most common mistake in histogram questions is assuming all bars have the same width, as they do in bar charts. In histograms, the width of each bar represents the class interval. Always check the width of *each* interval independently before calculating your frequencies."
+        },
+        "payhip_link": "https://payhip.com/b/ND5E9",
+        "button_text": "Master IGCSE Statistics: Download the Pack"
+    },
+    {
+        "id": "003191",
+        "date": "10 July 2026",
+        "major_area": "Geometry",
+        "topic": "Pythagoras Theorem",
+        "subtopic": "Pythagoras Theorem",
+        "difficulty": "7/8",
+        "img": "true",
+        "q": "A greenhouse is built in the shape of a right square-based pyramid $VABCD$ as shown in the diagram. The base $ABCD$ is a square of side length $6\\text{ m}$. The vertical height $VO$ from the centre of the base $O$ to the apex $V$ is $4\\text{ m}$.<br>(a) Calculate the length of the diagonal $AC$ on the square base. Give your answer correct to 3 significant figures.<br>(b) Calculate the slant height $VA$ of the pyramid. Give your answer correct to 3 significant figures.",
+        "steps": [
+            "For part (a), the base is a square, so angle $ADC = 90^\\circ$. This forms a right-angled triangle $ADC$ with sides $AD = 6\\text{ m}$ and $DC = 6\\text{ m}$.",
+            "By Pythagoras' theorem, the base diagonal $AC$ is: $AC^2 = AD^2 + DC^2 = 6^2 + 6^2 = 36 + 36 = 72$.",
+            "Taking the square root of both sides gives: $AC = \\sqrt{72} \\approx 8.4853\\text{ m}$. Rounded to 3 significant figures, $AC = 8.49\\text{ m}$.",
+            "For part (b), we construct a vertical right-angled triangle $VOA$ inside the pyramid to find the slant height $VA$.",
+            "The base segment $AO$ is half the length of the base diagonal $AC$: $AO = \\dfrac{\\sqrt{72}}{2} = \\sqrt{18}\\text{ m}$.",
+            "In the right-angled triangle $VOA$, the vertical height $VO = 4\\text{ m}$ and the base segment $AO = \\sqrt{18}\\text{ m}$.",
+            "By Pythagoras' theorem, the slant height $VA$ is: $VA^2 = VO^2 + AO^2 = 4^2 + (\\sqrt{18})^2 = 16 + 18 = 34$.",
+            "Taking the square root of both sides: $VA = \\sqrt{34} \\approx 5.8309\\text{ m}$.",
+            "Rounding to 3 significant figures gives the slant height $VA$ as $5.83\\text{ m}$.",
+            "Final Answer: $$(a)\\ 8.49\\text{ m}\\ (b)\\ 5.83\\text{ m}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ 8.49\\text{ m}\\ (b)\\ 9.38\\text{ m}$$",
+                "feedback": "You used the entire base diagonal $AC$ ($8.49\\text{ m}$) as the base of your vertical triangle instead of halving it to find the segment $AO$."
+            },
+            {
+                "ans": "$$(a)\\ 8.49\\text{ m}\\ (b)\\ 7.21\\text{ m}$$",
+                "feedback": "You calculated the hypotenuse of a right-angled triangle with base 6 and height 4, which does not correctly represent the internal diagonal geometry of the pyramid."
+            },
+            {
+                "ans": "$$(a)\\ 8.49\\text{ m}\\ (b)\\ 34.0\\text{ m}$$",
+                "feedback": "You calculated $VA^2$ correctly, but you forgot to perform the final step of taking the square root to find the actual slant height $VA$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Internal Pyramid Triangles",
+            "content": "To calculate a slant height on a pyramid, you must construct a right-angled triangle using the vertical height $VO$, the diagonal segment from a corner to the centre $AO$, and the slant edge $VA$. Keep $AO$ in its exact surd form ($AO^2 = 18$) to prevent rounding errors when adding it to $VO^2$ to find $VA^2$."
+        },
+        "payhip_link": "https://payhip.com/b/9dSh3",
+        "button_text": "Master IGCSE Geometry: Download the Pack"
     }
+
 ]
