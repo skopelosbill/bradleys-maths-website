@@ -1129,53 +1129,53 @@ const problemBank = [
     },
     "payhip_link": "https://payhip.com/b/miLap",
     "button_text": "Master IGCSE Algebra: Download the Pack"
-}
+},
     {
-        "id": "003208",
-        "date": "27 July 2026",
-        "major_area": "Geometry",
-        "topic": "Circle Geometry",
-        "subtopic": "Circle Theorem Proofs",
-        "difficulty": "A/A*",
-        "img": "true",
-        "q": "The diagram shows a circle with centre $O$. Points $A$ and $B$ lie on the circumference, and point $C$ lies on the major arc $AB$. The straight line $CD$ passes through the centre $O$.<br>(a) Prove that angle $AOD = 2 \\times \\text{angle } ACO$.<br>(b) Complete the algebraic proof to show that the angle subtended by the arc $AB$ at the centre of the circle is twice the angle subtended at the circumference.",
-        "steps": [
-            "For part (a), we consider the triangle $AOC$. Since $OA$ and $OC$ are both radii of the same circle, $OA = OC$.",
-            "This makes triangle $AOC$ an isosceles triangle. Since the angles opposite the equal sides in an isosceles triangle are equal, we can define angle $OAC = \\text{angle } ACO = x$.",
-            "The sum of angles in a triangle is $180^\\circ$. Therefore, angle $AOC = 180^\\circ - 2x$.",
-            "Since $CD$ is a straight diameter line passing through the centre $O$, the adjacent angles on a straight line must sum to $180^\\circ$.",
-            "This gives: angle $AOD = 180^\\circ - \\text{angle } AOC = 180^\\circ - (180^\\circ - 2x) = 2x$.",
-            "Since angle $ACO = x$ and angle $AOD = 2x$, we have proved that angle $AOD = 2 \\times \\text{angle } ACO$.",
-            "For part (b), we apply the exact same geometric logic to the right side of the circle to analyse triangle $BOC$.",
-            "Since $OB = OC$ (both are radii), triangle $BOC$ is also an isosceles triangle. We can define angle $OBC = \\text{angle } BCO = y$.",
-            "Following the same steps as in part (a), the exterior angle at the centre is: angle $BOD = 2y$.",
-            "The total angle subtended at the circumference is: angle $ACB = \\text{angle } ACO + \\text{angle } BCO = x + y$.",
-            "The total angle subtended at the centre is: angle $AOB = \\text{angle } AOD + \\text{angle } BOD = 2x + 2y = 2(x + y)$.",
-            "Since angle $AOB = 2(x + y)$ and angle $ACB = x + y$, this proves that angle $AOB = 2 \\times \\text{angle } ACB$, completing the proof.",
-            "Final Answer: $$(a)\\ \\text{Proof that angle } AOD = 2x \\text{ completed}$$<br>$$(b)\\ \\text{Proof that angle } AOB = 2(x+y) \\text{ completed}$$"
-        ],
-        "wrong_options": [
-            {
-                "ans": "$$(a)\\ \\text{Proof based on tangent rules completed}$$<br>$$(b)\\ \\text{Proof that angle } AOB = 2(x+y) \\text{ completed}$$",
-                "feedback": "Your proof for part (a) incorrectly cited tangent-radius perpendicular properties. The straight line $CD$ is a diameter, not a tangent line."
-            },
-            {
-                "ans": "$$(a)\\ \\text{Proof that angle } AOD = 2x \\text{ completed}$$<br>$$(b)\\ \\text{Proof based on cyclic quadrilateral properties completed}$$",
-                "feedback": "Your proof for part (b) cited opposite angles in a cyclic quadrilateral. This is incorrect because the centre point $O$ does not lie on the circumference."
-            },
-            {
-                "ans": "$$(a)\\ \\text{Proof that angle } AOD = x^2 \\text{ completed}$$<br>$$(b)\\ \\text{Proof based on angle ratio errors completed}$$",
-                "feedback": "You modeled the relationship as a square power rather than a linear multiplication of two, which violates the angles subtended theorem."
-            }
-        ],
-        "bradley_insight": {
-            "type": "deeper",
-            "title": "The Head Teacher's Eye: Structuring Circle Proofs",
-            "content": "Circle theorem proofs are highly structured. The critical step is drawing the diameter line through the centre from the circumference point. This splits the shape into two distinct isosceles triangles, allowing you to use the exterior angle theorem of triangles to easily construct the final $2(x+y)$ relationship."
+    "id": "003208",
+    "date": "27 July 2026",
+    "major_area": "Geometry",
+    "topic": "Circle Geometry",
+    "subtopic": "Circle Theorems 2",
+    "difficulty": "A/A*",
+    "img": "true",
+    "q": "The diagram shows a circle with centre $O$. $A$, $B$, $C$, and $D$ are points on the circumference. $AC$ is a diameter of the circle, and the line $TA$ is a tangent to the circle at point $A$. The tangent angle $TAB = 56^\\circ$ and angle $ACD = 38^\\circ$.<br>(a) Find the size of angle $ACB$. State the geometric reason for your answer.<br>(b) Calculate the size of angle $CAD$. State the geometric reasons for your calculations.",
+    "steps": [
+        "For part (a), we identify that $TA$ is a tangent to the circle at point $A$, and $AB$ is a chord.",
+        "The angle between the tangent $TA$ and the chord $AB$ is given as angle $TAB = 56^\\circ$.",
+        "According to the alternate segment theorem, the angle between a tangent and a chord through the point of contact is equal to the angle subtended by the chord in the alternate segment.",
+        "The angle subtended by the chord $AB$ in the alternate segment is angle $ACB$.",
+        "Therefore, angle $ACB = 56^\\circ$. Our geometric reason is: 'The Alternate Segment Theorem'.",
+        "For part (b), we observe that the chord $AC$ is a diameter of the circle.",
+        "According to the circle theorem, the angle subtended by a diameter at the circumference is always a right angle.",
+        "In the triangle $ADC$, this means the angle $ADC = 90^\\circ$. Our geometric reason is: 'The angle in a semicircle is a right angle'.",
+        "We are given that angle $ACD = 38^\\circ$ inside the triangle $ADC$.",
+        "Since the angles in any triangle must sum to $180^\\circ$, we can find the remaining angle $CAD$.",
+        "We calculate this as: $\\text{angle } CAD = 180^\\circ - (90^\\circ + 38^\\circ) = 180^\\circ - 128^\\circ = 52^\\circ$.",
+        "Our geometric reason is: 'The sum of angles in a triangle is 180 degrees'.",
+        "Final Answer: $$(a)\\ 56^\\circ\\ (b)\\ 52^\\circ$$"
+    ],
+    "wrong_options": [
+        {
+            "ans": "$$(a)\\ 56^\\circ\\ (b)\\ 38^\\circ$$",
+            "feedback": "For part (b), you assumed that triangle $ADC$ is isosceles and that angle $CAD$ is equal to angle $ACD$ ($38^\\circ$), which is not supported by any circle theorem."
         },
-        "payhip_link": "https://payhip.com/b/1rJUj",
-        "button_text": "Master Circle Theorems: Download the Proofs Pack"
+        {
+            "ans": "$$(a)\\ 34^\\circ\\ (b)\\ 52^\\circ$$",
+            "feedback": "For part (a), you used the tangent-radius perpendicular rule incorrectly, subtracting $56^\\circ$ from $90^\\circ$ instead of applying the alternate segment theorem."
+        },
+        {
+            "ans": "$$(a)\\ 56^\\circ\\ (b)\\ 90^\\circ$$",
+            "feedback": "You calculated the angle $ADC$ correctly as $90^\\circ$, but you forgot to perform the final subtraction to find the required angle $CAD$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Explicit worked Reasons",
+        "content": "Even though Cambridge does not expect you to algebraically prove circle theorems, they strictly require you to state the name of each theorem you use during multi-step angle calculations. Standard phrases like 'angle in a semicircle is 90 degrees' and 'alternate segment theorem' are necessary to secure full reasoning marks."
     },
+    "payhip_link": "https://payhip.com/b/wm0xL",
+    "button_text": "Master IGCSE Circle Geometry: Download the Pack"
+},
     {
         "id": "003209",
         "date": "28 July 2026",
@@ -1262,49 +1262,50 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/QsiXK",
         "button_text": "Master IGCSE 3D Trigonometry: Download the Pack"
     },
-    {
-        "id": "003211",
-        "date": "30 July 2026",
-        "major_area": "Probability & Statistics",
-        "topic": "Probability",
-        "subtopic": "Conditional Probability",
-        "difficulty": "B/C",
-        "q": "A leisure centre surveys 80 participants about their preferred exercise class. The results are summarised below:<br>- Of the 45 adults surveyed, 25 choose swimming and 20 choose running.<br>- Of the 35 children surveyed, 15 choose swimming and 20 choose running.<br>(a) Construct a two-way table to fully represent this information.<br>(b) A participant is selected at random. Given that this participant is an adult, calculate the probability that they choose swimming.",
-        "steps": [
-            "For part (a), we construct a two-way table with rows representing age groups (Adults, Children) and columns representing their class choice (Swimming, Running), along with total columns and rows.",
-            "Row 1 (Adults): 25 Swimming, 20 Running. Total Adults = $25 + 20 = 45$.",
-            "Row 2 (Children): 15 Swimming, 20 Running. Total Children = $15 + 20 = 35$.",
-            "Column Totals: Swimming $= 25 + 15 = 40$ and Running $= 20 + 20 = 40$.",
-            "The overall combined total is $45 + 35 = 80$, which matches our survey pool and completes the table.",
-            "For part (b), we are given the condition that the chosen participant is an adult.",
-            "This restricts our sample space from the total of 80 participants to only the 45 adults.",
-            "The number of adults who choose swimming is 25.",
-            "This gives the conditional probability as: $\\text{P}(\\text{Swimming} | \\text{Adult}) = \\dfrac{25}{45}$.",
-            "We simplify the fraction by dividing the numerator and denominator by 5, which yields: $\\dfrac{5}{9}$.",
-            "Final Answer: $$(a)\\ \\text{Two-way table constructed}\\ (b)\\ \\dfrac{5}{9}$$"
-        ],
-        "wrong_options": [
-            {
-                "ans": "$$(a)\\ \\text{Two-way table constructed}\\ (b)\\ \\dfrac{5}{16}$$",
-                "feedback": "You calculated the probability using the entire survey pool of 80 as your denominator instead of restricting it to the 45 adults."
-            },
-            {
-                "ans": "$$(a)\\ \\text{Two-way table constructed}\\ (b)\\ \\dfrac{5}{8}$$",
-                "feedback": "You used the total number of swimming participants (40) as your denominator instead of restricting it to the 45 adults."
-            },
-            {
-                "ans": "$$(a)\\ \\text{Two-way table constructed}\\ (b)\\ \\dfrac{4}{9}$$",
-                "feedback": "You calculated the probability that the adult chooses running (20/45) instead of swimming."
-            }
-        ],
-        "bradley_insight": {
-            "type": "caution",
-            "title": "The Head Teacher's Eye: Subgroup Conditioning",
-            "content": "On two-way tables, conditional probability queries starting with 'Given that...' require you to limit your sample size. For part (b), the condition is that the participant is an adult, so your denominator must be the sum of all elements inside the adult row (45), not the overall total of 80."
+   {
+    "id": "003211",
+    "date": "30 July 2026",
+    "major_area": "Probability & Statistics",
+    "topic": "Probability",
+    "subtopic": "Conditional Probability",
+    "difficulty": "B/C",
+    "q": "A leisure centre surveys 80 participants about their preferred exercise class. The results are summarised below:<br>- Of the 45 adults surveyed, 25 choose swimming and 20 choose running.<br>- Of the 35 children surveyed, 15 choose swimming and 20 choose running.<br>(a) Construct a two-way table to fully represent this information.<br>(b) A participant is selected at random. Given that this participant is an adult, calculate the probability that they choose swimming.",
+    "steps": [
+        "For part (a), we construct a two-way table with rows representing age groups (Adults, Children) and columns representing their class choice (Swimming, Running), along with total columns and rows.",
+        "We fill in the given data and calculate the missing totals to produce the completed model table:<br><br><table border='1' style='border-collapse: collapse; text-align: center; margin: 10px 0; width: 100%; max-width: 500px;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px;'></th><th style='padding: 8px;'>Swimming</th><th style='padding: 8px;'>Running</th><th style='padding: 8px;'>Total</th></tr></thead><tbody><tr><td style='padding: 8px; font-weight: bold;'>Adults</td><td style='padding: 8px;'>25</td><td style='padding: 8px;'>20</td><td style='padding: 8px; font-weight: bold;'>45</td></tr><tr><td style='padding: 8px; font-weight: bold;'>Children</td><td style='padding: 8px;'>15</td><td style='padding: 8px;'>20</td><td style='padding: 8px; font-weight: bold;'>35</td></tr><tr style='font-weight: bold; background-color: #f9f9f9;'><td style='padding: 8px;'>Total</td><td style='padding: 8px;'>40</td><td style='padding: 8px;'>40</td><td style='padding: 8px;'>80</td></tr></tbody></table>",
+        "Row 1 (Adults): 25 Swimming, 20 Running. Total Adults = $25 + 20 = 45$.",
+        "Row 2 (Children): 15 Swimming, 20 Running. Total Children = $15 + 20 = 35$.",
+        "Column Totals: Swimming $= 25 + 15 = 40$ and Running $= 20 + 20 = 40$.",
+        "The overall combined total is $45 + 35 = 80$, which matches our survey pool and completes the table.",
+        "For part (b), we are given the condition that the chosen participant is an adult.",
+        "This restricts our sample space from the total of 80 participants to only the 45 adults.",
+        "The number of adults who choose swimming is 25.",
+        "This gives the conditional probability as: $\\text{P}(\\text{Swimming} | \\text{Adult}) = \\dfrac{25}{45}$.",
+        "We simplify the fraction by dividing the numerator and denominator by 5, which yields: $\\dfrac{5}{9}$.",
+        "Final Answer: $$(a)\\ \\text{Two-way table constructed}\\ (b)\\ \\dfrac{5}{9}$$"
+    ],
+    "wrong_options": [
+        {
+            "ans": "$$(a)\\ \\text{Two-way table constructed}\\ (b)\\ \\dfrac{5}{16}$$",
+            "feedback": "You calculated the probability using the entire survey pool of 80 as your denominator instead of restricting it to the 45 adults."
         },
-        "payhip_link": "https://payhip.com/b/MoE4j",
-        "button_text": "Master IGCSE Probability: Download the Pack"
+        {
+            "ans": "$$(a)\\ \\text{Two-way table constructed}\\ (b)\\ \\dfrac{5}{8}$$",
+            "feedback": "You used the total number of swimming participants (40) as your denominator instead of restricting it to the 45 adults."
+        },
+        {
+            "ans": "$$(a)\\ \\text{Two-way table constructed}\\ (b)\\ \\dfrac{4}{9}$$",
+            "feedback": "You calculated the probability that the adult chooses running (20/45) instead of swimming."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Subgroup Conditioning",
+        "content": "On two-way tables, conditional probability queries starting with 'Given that...' require you to limit your sample size. For part (b), the condition is that the participant is an adult, so your denominator must be the sum of all elements inside the adult row (45), not the overall total of 80."
     },
+    "payhip_link": "https://payhip.com/b/MoE4j",
+    "button_text": "Master IGCSE Probability: Download the Pack"
+},
     {
         "id": "003212",
         "date": "31 July 2026",
