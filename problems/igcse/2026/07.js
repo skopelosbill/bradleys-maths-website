@@ -865,7 +865,7 @@ const problemBank = [
         "major_area": "Algebra",
         "topic": "Linear Graphs",
         "subtopic": "Equations of Linear Graphs",
-        "difficulty": "5/6",
+        "difficulty": "C/D",
         "q": "A rescue helicopter flies along a straight-line path, $L_1$, that passes through the coordinates $A(-2, 3)$ and $B(4, 15)$ on a navigational map.<br>(a) Find the equation of the flight path $L_1$. Give your answer in the form $y = mx + c$.<br>(b) A secondary drone flight path, $L_2$, is perpendicular to $L_1$ and passes through the point $C(2, 5)$. Find the equation of $L_2$, giving your answer in the form $ay + bx = c$, where $a$, $b$, and $c$ are integers.",
         "steps": [
             "For part (a), we first determine the gradient, $m$, of the flight path $L_1$ using the coordinates $A(-2, 3)$ and $B(4, 15)$.",
@@ -884,15 +884,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": $$(a)\\ y = 2x + 7\\ (b)\\ y = -0.5x + 6$$",
+                "ans": "$$(a)\\ y = 2x + 7\\ (b)\\ y = -0.5x + 6$$",
                 "feedback": "For part (b), you found the correct equation for $L_2$, but you forgot to rearrange it into the required integer form $ay + bx = c$."
             },
             {
-                "ans": $$(a)\\ y = 0.5x + 4\\ (b)\\ y = -2x + 9$$",
+                "ans": "$$(a)\\ y = 0.5x + 4\\ (b)\\ y = -2x + 9$$",
                 "feedback": "You calculated the gradient of $L_1$ as $\\dfrac{\\text{change in } x}{\\text{change in } y}$ instead of $\\dfrac{\\text{change in } y}{\\text{change in } x}$ in part (a)."
             },
             {
-                "ans": $$(a)\\ y = 2x + 7\\ (b)\\ 2y + x = 5$$",
+                "ans": "$$(a)\\ y = 2x + 7\\ (b)\\ 2y + x = 5$$",
                 "feedback": "Your flight path $L_1$ is correct, but you made an arithmetic sign error when expanding the bracket $-0.5(x - 2)$ in part (b), writing $-0.5x - 1$ instead of $-0.5x + 1$."
             }
         ],
@@ -910,7 +910,7 @@ const problemBank = [
         "major_area": "Probability & Statistics",
         "topic": "Sets and Venn Diagrams",
         "subtopic": "Sets and Venn Diagrams",
-        "difficulty": "6/7",
+        "difficulty": "B/c",
         "img": "true",
         "q": "The Venn diagram shows the distribution of 120 school students who participate in Drama ($D$), Music ($M$), and Art ($A$).<br>(a) Find the number of students represented by the region $n(D \\cap M \\cap A')$.<br>(b) Calculate the probability that a student chosen at random participates in at least two of these activities.<br>(c) A student is selected at random. Given that this student participates in Music, calculate the probability that they also participate in Art.",
         "steps": [
@@ -930,11 +930,11 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": $$(a)\\ 6\\ (b)\\ \\dfrac{1}{3}\\ (c)\\ \\dfrac{5}{19}$$",
+                "ans": "$$(a)\\ 6\\ (b)\\ \\dfrac{1}{3}\\ (c)\\ \\dfrac{5}{19}$$",
                 "feedback": "For part (a), you stated the number of students who participate in all three activities ($n(D \\cap M \\cap A)$) instead of excluding those who participate in Art."
             },
             {
-                "ans": $$(a)\\ 14\\ (b)\\ \\dfrac{1}{4}\\ (c)\\ \\dfrac{5}{19}$$",
+                "ans": "$$(a)\\ 14\\ (b)\\ \\dfrac{1}{4}\\ (c)\\ \\dfrac{5}{19}$$",
                 "feedback": "For part (b), you forgot to include the 6 students who do all three activities when summing the 'at least two' regions."
             },
             {
@@ -956,7 +956,7 @@ const problemBank = [
         "major_area": "Number",
         "topic": "Ratio and Proportion",
         "subtopic": "Direct and Inverse Proportion",
-        "difficulty": "7/8",
+        "difficulty": "A/B",
         "q": "The rate of heat loss, $R$ watts, of a spherical metal cylinder is directly proportional to its surface area, $A\\text{ cm}^2$. The surface area $A$ is directly proportional to the square of its radius, $r\\text{ cm}$.<br>When the radius of the sphere is $3\\text{ cm}$, the rate of heat loss is $108\\text{ watts}$.<br>(a) Show that the rate of heat loss $R$ can be written as $R = k r^2$, and calculate the constant of proportionality, $k$.<br>(b) Calculate the rate of heat loss when the radius of the sphere is $5\\text{ cm}$.<br>(c) Calculate the radius of the sphere when the rate of heat loss is exactly $192\\text{ watts}$.",
         "steps": [
             "For part (a), we are given two proportional relationships: $R \\propto A$ and $A \\propto r^2$.",
@@ -973,15 +973,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": $$(a)\\ k = 36\\ (b)\\ 900\\text{ watts}\\ (c)\\ 2.31\\text{ cm}$$",
+                "ans": "$$(a)\\ k = 36\\ (b)\\ 900\\text{ watts}\\ (c)\\ 2.31\\text{ cm}$$",
                 "feedback": "You did not square the radius of 3 when solving for the constant of proportionality $k$ in part (a), using $3k = 108$ instead of $9k = 108$."
             },
             {
-                "ans": $$(a)\\ k = 12\\ (b)\\ 60\\text{ watts}\\ (c)\\ 16\\text{ cm}$$",
+                "ans": "$$(a)\\ k = 12\\ (b)\\ 60\\text{ watts}\\ (c)\\ 16\\text{ cm}$$",
                 "feedback": "You treated the relationship as directly proportional to the radius $r$ instead of directly proportional to the square of the radius $r^2$ in parts (b) and (c)."
             },
             {
-                "ans": $$(a)\\ k = 12\\ (b)\\ 300\\text{ watts}\\ (c)\\ 16\\text{ cm}$$",
+                "ans": "$$(a)\\ k = 12\\ (b)\\ 300\\text{ watts}\\ (c)\\ 16\\text{ cm}$$",
                 "feedback": "Your formula and part (b) are correct, but in part (c) you forgot to take the square root of $r^2 = 16$ to find the final radius $r$."
             }
         ],
@@ -999,7 +999,7 @@ const problemBank = [
         "major_area": "Geometry",
         "topic": "Trigonometry",
         "subtopic": "Cosine Rule",
-        "difficulty": "7/8",
+        "difficulty": "A/B",
         "img": "true",
         "q": "The diagram shows a triangular clearing in a forest with vertices $P$, $Q$, and $R$. The distance $PQ = 14\\text{ m}$ and the distance $QR = 9\\text{ m}$. The angle $PQR$ is $125^\\circ$.<br>(a) Calculate the direct distance $PR$ across the clearing. Give your answer in metres correct to 3 significant figures.<br>(b) Calculate the total area of the clearing. Give your answer in square metres correct to 1 decimal place.",
         "steps": [
@@ -1019,15 +1019,15 @@ const problemBank = [
         ],
         "wrong_options": [
             {
-                "ans": $$(a)\\ 11.5\\text{ m}\\ (b)\\ 51.6\\text{ m}^2$$",
+                "ans": "$$(a)\\ 11.5\\text{ m}\\ (b)\\ 51.6\\text{ m}^2$$",
                 "feedback": "You made a sign error in your Cosine Rule calculation by failing to recognise that $\\cos(125^\\circ)$ is negative, which led you to subtract $144.541$ instead of adding it."
             },
             {
-                "ans": $$(a)\\ 20.5\\text{ m}\\ (b)\\ -36.1\\text{ m}^2$$",
+                "ans": "$$(a)\\ 20.5\\text{ m}\\ (b)\\ -36.1\\text{ m}^2$$",
                 "feedback": "Your distance calculation is correct, but you used the cosine ratio instead of the sine ratio in your triangle area formula."
             },
             {
-                "ans": $$(a)\\ 422\\text{ m}\\ (b)\\ 51.6\\text{ m}^2$$",
+                "ans": "$$(a)\\ 422\\text{ m}\\ (b)\\ 51.6\\text{ m}^2$$",
                 "feedback": "For part (a), you calculated the value of $q^2$ correctly but forgot to perform the final step of taking the square root to find the actual distance $q$."
             }
         ],
@@ -1045,7 +1045,7 @@ const problemBank = [
         "major_area": "Number",
         "topic": "Indices",
         "subtopic": "Fractional Indices and Roots",
-        "difficulty": "8/9",
+        "difficulty": "A/B",
         "q": "(a) Evaluate $125^{-\\frac{2}{3}}$.<br>(b) Simplify completely $(16x^{12} y^{-8})^{\\frac{3}{4}}$.<br>(c) Solve the equation $3^{y+5} = 27^{y-1}$.",
         "steps": [
             "For part (a), we address the negative index first. A negative exponent indicates the reciprocal of the term: $125^{-\\frac{2}{3}} = \\dfrac{1}{125^{\\frac{2}{3}}}$.",
@@ -1086,8 +1086,270 @@ const problemBank = [
         },
         "payhip_link": "https://payhip.com/b/iU6Nj",
         "button_text": "Master IGCSE Algebra: Download the Pack"
+    },
+    {
+        "id": "003207",
+        "date": "26 July 2026",
+        "major_area": "Algebra",
+        "topic": "Quadratic Equations",
+        "subtopic": "Completing the Square",
+        "difficulty": "A/B",
+        "q": "The curve $y = 2x^2 - 12x + 5$ represents the path of a model rocket.<br>(a) Express the quadratic equation $2x^2 - 12x + 5$ in the form $a(x - b)^2 + c$, where $a$, $b$, and $c$ are integers.<br>(b) Write down the coordinates of the turning point of the curve.",
+        "steps": [
+            "For part (a), we begin by factoring out the coefficient of $x^2$, which is 2, from the first two terms of the expression: $2(x^2 - 6x) + 5$.",
+            "Next, we complete the square for the quadratic expression inside the bracket, $x^2 - 6x$.",
+            "We halve the coefficient of $x$ (which is $-6$) to get $-3$, giving the squared term: $(x - 3)^2$.",
+            "To keep the expression equal, we subtract the square of this value inside the bracket: $x^2 - 6x = (x - 3)^2 - 3^2 = (x - 3)^2 - 9$.",
+            "Substituting this completed square back into our factored expression: $2[(x - 3)^2 - 9] + 5$.",
+            "We expand the outer bracket by multiplying both terms by 2: $2(x - 3)^2 - 18 + 5$.",
+            "Simplifying the constant terms: $2(x - 3)^2 - 13$, which is in the required form where $a = 2$, $b = 3$, and $c = -13$.",
+            "For part (b), the turning point of a curve in the form $y = a(x - b)^2 + c$ occurs at the coordinates $(b, c)$.",
+            "Since the expression is $2(x - 3)^2 - 13$, the minimum value of $y$ is $-13$, which occurs when the squared term is zero, meaning $x - 3 = 0 \\implies x = 3$.",
+            "The coordinates of the turning point are therefore $(3, -13)$.",
+            "Final Answer: $$(a)\\ 2(x - 3)^2 - 13\\ (b)\\ (3, -13)$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ 2(x - 3)^2 - 13\\ (b)\\ (-3, -13)$$",
+                "feedback": "You gave the incorrect sign for your x-coordinate. In the completed square form $(x-b)^2$, the turning point occurs at positive $b$."
+            },
+            {
+                "ans": "$$(a)\\ 2(x - 6)^2 - 31\\ (b)\\ (6, -31)$$",
+                "feedback": "You forgot to factor out the coefficient of 2 before halving your linear term, subtracting the incorrect squared constant."
+            },
+            {
+                "ans": "$$(a)\\ 2(x - 3)^2 - 4\\ (b)\\ (3, -4)$$",
+                "feedback": "You forgot to multiply the subtracted constant $-9$ by the factored coefficient of 2 before adding the $+5$ at the end of your expansion."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Coefficient Distribution",
+            "content": "The most common error when completing the square with an $x^2$ coefficient is forgetting to distribute that coefficient to your subtracted constant. When expanding $2[(x-3)^2 - 9] + 5$, make sure you multiply the $-9$ by 2 to get $-18$ before adding 5."
+        },
+        "payhip_link": "https://payhip.com/b/miLap",
+        "button_text": "Master IGCSE Algebra: Download the Pack"
+    },
+    {
+        "id": "003208",
+        "date": "27 July 2026",
+        "major_area": "Geometry",
+        "topic": "Circle Geometry",
+        "subtopic": "Circle Theorem Proofs",
+        "difficulty": "A/A*",
+        "img": "true",
+        "q": "The diagram shows a circle with centre $O$. Points $A$ and $B$ lie on the circumference, and point $C$ lies on the major arc $AB$. The straight line $CD$ passes through the centre $O$.<br>(a) Prove that angle $AOD = 2 \\times \\text{angle } ACO$.<br>(b) Complete the algebraic proof to show that the angle subtended by the arc $AB$ at the centre of the circle is twice the angle subtended at the circumference.",
+        "steps": [
+            "For part (a), we consider the triangle $AOC$. Since $OA$ and $OC$ are both radii of the same circle, $OA = OC$.",
+            "This makes triangle $AOC$ an isosceles triangle. Since the angles opposite the equal sides in an isosceles triangle are equal, we can define angle $OAC = \\text{angle } ACO = x$.",
+            "The sum of angles in a triangle is $180^\\circ$. Therefore, angle $AOC = 180^\\circ - 2x$.",
+            "Since $CD$ is a straight diameter line passing through the centre $O$, the adjacent angles on a straight line must sum to $180^\\circ$.",
+            "This gives: angle $AOD = 180^\\circ - \\text{angle } AOC = 180^\\circ - (180^\\circ - 2x) = 2x$.",
+            "Since angle $ACO = x$ and angle $AOD = 2x$, we have proved that angle $AOD = 2 \\times \\text{angle } ACO$.",
+            "For part (b), we apply the exact same geometric logic to the right side of the circle to analyse triangle $BOC$.",
+            "Since $OB = OC$ (both are radii), triangle $BOC$ is also an isosceles triangle. We can define angle $OBC = \\text{angle } BCO = y$.",
+            "Following the same steps as in part (a), the exterior angle at the centre is: angle $BOD = 2y$.",
+            "The total angle subtended at the circumference is: angle $ACB = \\text{angle } ACO + \\text{angle } BCO = x + y$.",
+            "The total angle subtended at the centre is: angle $AOB = \\text{angle } AOD + \\text{angle } BOD = 2x + 2y = 2(x + y)$.",
+            "Since angle $AOB = 2(x + y)$ and angle $ACB = x + y$, this proves that angle $AOB = 2 \\times \\text{angle } ACB$, completing the proof.",
+            "Final Answer: $$(a)\\ \\text{Proof that angle } AOD = 2x \\text{ completed}$$<br>$$(b)\\ \\text{Proof that angle } AOB = 2(x+y) \\text{ completed}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ \\text{Proof based on tangent rules completed}$$<br>$$(b)\\ \\text{Proof that angle } AOB = 2(x+y) \\text{ completed}$$",
+                "feedback": "Your proof for part (a) incorrectly cited tangent-radius perpendicular properties. The straight line $CD$ is a diameter, not a tangent line."
+            },
+            {
+                "ans": "$$(a)\\ \\text{Proof that angle } AOD = 2x \\text{ completed}$$<br>$$(b)\\ \\text{Proof based on cyclic quadrilateral properties completed}$$",
+                "feedback": "Your proof for part (b) cited opposite angles in a cyclic quadrilateral. This is incorrect because the centre point $O$ does not lie on the circumference."
+            },
+            {
+                "ans": "$$(a)\\ \\text{Proof that angle } AOD = x^2 \\text{ completed}$$<br>$$(b)\\ \\text{Proof based on angle ratio errors completed}$$",
+                "feedback": "You modeled the relationship as a square power rather than a linear multiplication of two, which violates the angles subtended theorem."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Structuring Circle Proofs",
+            "content": "Circle theorem proofs are highly structured. The critical step is drawing the diameter line through the centre from the circumference point. This splits the shape into two distinct isosceles triangles, allowing you to use the exterior angle theorem of triangles to easily construct the final $2(x+y)$ relationship."
+        },
+        "payhip_link": "https://payhip.com/b/1rJUj",
+        "button_text": "Master Circle Theorems: Download the Proofs Pack"
+    },
+    {
+        "id": "003209",
+        "date": "28 July 2026",
+        "major_area": "Number",
+        "topic": "Bounds",
+        "subtopic": "Limits of Accuracy and Bounds",
+        "difficulty": "A/B",
+        "q": "A solid metal sphere has a mass of $m = 320\\text{ g}$, correct to 2 significant figures. The volume of the sphere is $V = 40\\text{ cm}^3$, correct to 1 significant figure.<br>(a) Find the lower bound and upper bound for both the mass and the volume.<br>(b) Calculate the lower bound for the density of the metal in grams per cubic centimetre ($\\text{g/cm}^3$).",
+        "steps": [
+            "For part (a), the mass $m = 320\\text{ g}$ is rounded to 2 significant figures, which is equivalent to the nearest $10\\text{ g}$.",
+            "The boundary offset is found by halving this unit of accuracy: $10 \\div 2 = 5\\text{ g}$.",
+            "This gives the mass bounds as: $\\text{Lower Bound} = 320 - 5 = 315\\text{ g}$ and $\\text{Upper Bound} = 320 + 5 = 325\\text{ g}$.",
+            "The volume $V = 40\\text{ cm}^3$ is rounded to 1 significant figure, which is equivalent to the nearest $10\\text{ cm}^3$.",
+            "The boundary offset is found by halving this unit of accuracy: $10 \\div 2 = 5\\text{ cm}^3$.",
+            "This gives the volume bounds as: $\\text{Lower Bound} = 40 - 5 = 35\\text{ cm}^3$ and $\\text{Upper Bound} = 40 + 5 = 45\\text{ cm}^3$.",
+            "For part (b), we find the minimum possible density. Since density is defined as $\\text{Density} = \\dfrac{\\text{Mass}}{\\text{Volume}}$, we must divide the lower bound of mass by the upper bound of volume.",
+            "This gives the calculation: $\\text{Density}_{\\text{LB}} = \\dfrac{315\\text{ g}}{45\\text{ cm}^3}$.",
+            "Evaluating the division yields: $\\text{Density}_{\\text{LB}} = 7\\text{ g/cm}^3$.",
+            "Final Answer: $$(a)\\ 315 \\le m < 325\\text{ g},\\ 35 \\le V < 45\\text{ cm}^3\\ (b)\\ 7\\text{ g/cm}^3$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ 315 \\le m < 325\\text{ g},\\ 35 \\le V < 45\\text{ cm}^3\\ (b)\\ 9.29\\text{ g/cm}^3$$",
+                "feedback": "You calculated the upper bound of density by dividing the upper bound of mass by the lower bound of volume instead of finding the lower bound."
+            },
+            {
+                "ans": "$$(a)\\ 319.5 \\le m < 320.5\\text{ g},\\ 39.5 \\le V < 40.5\\text{ cm}^3\\ (b)\\ 8.09\\text{ g/cm}^3$$",
+                "feedback": "You calculated the bounds of mass and volume as if they were recorded to the nearest integer unit instead of using their significant figure accuracies."
+            },
+            {
+                "ans": "$$(a)\\ 315 \\le m < 325\\text{ g},\\ 35 \\le V < 45\\text{ cm}^3\\ (b)\\ 9.00\\text{ g/cm}^3$$",
+                "feedback": "You divided the lower bound of mass by the lower bound of volume instead of using the upper bound of the denominator to find the minimum."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Significant Figure Bounds",
+            "content": "Take extra care when identifying the unit of rounding for significant figures. A value of $40$ rounded to 1 significant figure means it is accurate to the nearest ten, yielding bounds of $35$ and $45$. Do not confuse this with rounding to the nearest integer, which would incorrectly yield $39.5$ and $40.5$."
+        },
+        "payhip_link": "https://payhip.com/b/qYp8g",
+        "button_text": "Master IGCSE Bounds: Download the Pack"
+    },
+    {
+        "id": "003210",
+        "date": "29 July 2026",
+        "major_area": "Geometry",
+        "topic": "Trigonometry",
+        "subtopic": "Trigonometry in 3D",
+        "difficulty": "A/A*",
+        "img": "true",
+        "q": "The diagram shows a right square-based pyramid $VABCD$. The base $ABCD$ is a square of side $10\\text{ cm}$. The slant height $VA = 13\\text{ cm}$ and $O$ is the centre of the base.<br>(a) Calculate the exact length of the base diagonal segment $AO$ in the form $a\\sqrt{b}\\text{ cm}$.<br>(b) Calculate the angle that the slant edge $VA$ makes with the horizontal base $ABCD$. Give your answer correct to 1 decimal place.",
+        "steps": [
+            "For part (a), we first find the length of the base diagonal $AC$. The square base $ABCD$ has a right angle at $B$, forming right-angled triangle $ABC$.",
+            "Applying Pythagoras' theorem: $AC^2 = AB^2 + BC^2 = 10^2 + 10^2 = 100 + 100 = 200$.",
+            "Taking the square root of both sides: $AC = \\sqrt{200} = \\sqrt{100 \\times 2} = 10\\sqrt{2}\\text{ cm}$.",
+            "The segment $AO$ is exactly half the length of the full diagonal $AC$: $AO = \\dfrac{10\\sqrt{2}}{2} = 5\\sqrt{2}\\text{ cm}$.",
+            "For part (b), the angle $\\theta$ that the slant edge $VA$ makes with the horizontal base is the angle $VAO$ in the vertical right-angled triangle $VOA$.",
+            "The adjacent side is $AO = 5\\sqrt{2}\\text{ cm}$ and the hypotenuse is $VA = 13\\text{ cm}$.",
+            "We use the cosine trigonometric ratio: $\\cos(\\theta) = \\dfrac{\\text{Adjacent}}{\\text{Hypotenuse}} = \\dfrac{5\\sqrt{2}}{13}$.",
+            "Evaluating using a calculator: $\\cos(\\theta) = \\dfrac{7.0711}{13} \\approx 0.54393$.",
+            "Taking the inverse cosine: $\\theta = \\arccos(0.54393) \\approx 57.05^\\circ$.",
+            "Rounding this angle to 1 decimal place gives $57.1^\\circ$.",
+            "Final Answer: $$(a)\\ 5\\sqrt{2}\\text{ cm}\\ (b)\\ 57.1^\\circ$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ 5\\sqrt{2}\\text{ cm}\\ (b)\\ 32.9^\\circ$$",
+                "feedback": "You calculated the angle that the slant edge makes with the vertical height axis ($V$) at the top of the pyramid instead of the angle with the base."
+            },
+            {
+                "ans": "$$(a)\\ 10\\sqrt{2}\\text{ cm}\\ (b)\\ 57.1^\\circ$$",
+                "feedback": "Your angle is correct, but you stated the length of the full diagonal $AC$ instead of half the diagonal segment $AO$ in part (a)."
+            },
+            {
+                "ans": "$$(a)\\ 5\\sqrt{2}\\text{ cm}\\ (b)\\ 39.8^\\circ$$",
+                "feedback": "You used the tangent ratio directly with your diagonal segment and the slant height, which is incorrect because the slant height is the hypotenuse of the vertical triangle."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Identifying Right-Angles in 3D",
+            "content": "In 3D pyramid trigonometry, always isolate the vertical right-angled triangle $VOA$. The vertical height $VO$ is perpendicular to any line in the base plane, making angle $VOA = 90^\\circ$. This allows you to safely apply standard 2D cosine and sine ratios to solve for the slant angles."
+        },
+        "payhip_link": "https://payhip.com/b/QsiXK",
+        "button_text": "Master IGCSE 3D Trigonometry: Download the Pack"
+    },
+    {
+        "id": "003211",
+        "date": "30 July 2026",
+        "major_area": "Probability & Statistics",
+        "topic": "Probability",
+        "subtopic": "Conditional Probability",
+        "difficulty": "B/C",
+        "q": "A leisure centre surveys 80 participants about their preferred exercise class. The results are summarised below:<br>- Of the 45 adults surveyed, 25 choose swimming and 20 choose running.<br>- Of the 35 children surveyed, 15 choose swimming and 20 choose running.<br>(a) Construct a two-way table to fully represent this information.<br>(b) A participant is selected at random. Given that this participant is an adult, calculate the probability that they choose swimming.",
+        "steps": [
+            "For part (a), we construct a two-way table with rows representing age groups (Adults, Children) and columns representing their class choice (Swimming, Running), along with total columns and rows.",
+            "Row 1 (Adults): 25 Swimming, 20 Running. Total Adults = $25 + 20 = 45$.",
+            "Row 2 (Children): 15 Swimming, 20 Running. Total Children = $15 + 20 = 35$.",
+            "Column Totals: Swimming $= 25 + 15 = 40$ and Running $= 20 + 20 = 40$.",
+            "The overall combined total is $45 + 35 = 80$, which matches our survey pool and completes the table.",
+            "For part (b), we are given the condition that the chosen participant is an adult.",
+            "This restricts our sample space from the total of 80 participants to only the 45 adults.",
+            "The number of adults who choose swimming is 25.",
+            "This gives the conditional probability as: $\\text{P}(\\text{Swimming} | \\text{Adult}) = \\dfrac{25}{45}$.",
+            "We simplify the fraction by dividing the numerator and denominator by 5, which yields: $\\dfrac{5}{9}$.",
+            "Final Answer: $$(a)\\ \\text{Two-way table constructed}\\ (b)\\ \\dfrac{5}{9}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ \\text{Two-way table constructed}\\ (b)\\ \\dfrac{5}{16}$$",
+                "feedback": "You calculated the probability using the entire survey pool of 80 as your denominator instead of restricting it to the 45 adults."
+            },
+            {
+                "ans": "$$(a)\\ \\text{Two-way table constructed}\\ (b)\\ \\dfrac{5}{8}$$",
+                "feedback": "You used the total number of swimming participants (40) as your denominator instead of restricting it to the 45 adults."
+            },
+            {
+                "ans": "$$(a)\\ \\text{Two-way table constructed}\\ (b)\\ \\dfrac{4}{9}$$",
+                "feedback": "You calculated the probability that the adult chooses running (20/45) instead of swimming."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Subgroup Conditioning",
+            "content": "On two-way tables, conditional probability queries starting with 'Given that...' require you to limit your sample size. For part (b), the condition is that the participant is an adult, so your denominator must be the sum of all elements inside the adult row (45), not the overall total of 80."
+        },
+        "payhip_link": "https://payhip.com/b/MoE4j",
+        "button_text": "Master IGCSE Probability: Download the Pack"
+    },
+    {
+        "id": "003212",
+        "date": "31 July 2026",
+        "major_area": "Algebra",
+        "topic": "Graphs of Equations and Functions",
+        "subtopic": "Sketching Graphs",
+        "difficulty": "A/B",
+        "img": "true",
+        "q": "The diagram shows three sketched functions, labelled (1), (2), and (3), on separate coordinate axes.<br>(a) Match each numbered sketch to its correct equation from the following list:<br>$$y = 3^x,\\ \\ \\ y = \\dfrac{1}{x},\\ \\ \\ y = x^3 - 4x$$<br>(b) State the coordinates of all points of intersection of the cubic curve $y = x^3 - 4x$ with the coordinate axes.<br>(c) Describe what happens to the value of $y$ on the reciprocal curve $y = \\dfrac{1}{x}$ as the value of $x$ becomes very large. Explain why the curve never touches the horizontal axis.",
+        "steps": [
+            "For part (a), we analyze the shape and behavior of each sketch to identify its equation.",
+            "Sketch (1) is an exponential curve. It lies entirely above the horizontal axis, passes through the vertical axis at $(0,1)$, and increases rapidly as $x$ increases. This matches the equation $y = 3^x$.",
+            "Sketch (2) consists of two curves in opposite quadrants (first and third quadrants) that approach both the horizontal and vertical axes but never touch them. This matches the reciprocal equation $y = \\dfrac{1}{x}$.",
+            "Sketch (3) is a classic cubic curve showing a smooth S-shape that crosses the horizontal axis at three separate points. This matches the equation $y = x^3 - 4x$.",
+            "For part (b), we find the intercepts of $y = x^3 - 4x$ with both coordinate axes.",
+            "To find the vertical intercept (y-intercept), we substitute $x = 0$ into the equation: $y = 0^3 - 4(0) = 0$. This gives the coordinate $(0,0)$.",
+            "To find the horizontal intercepts (x-intercepts), we set $y = 0$ and solve the cubic equation: $x^3 - 4x = 0$.",
+            "We factorise the expression: $x(x^2 - 4) = 0$. This further factorises using the difference of two squares: $x(x - 2)(x + 2) = 0$.",
+            "The roots of this equation are $x = 0$, $x = 2$, and $x = -2$. This gives three coordinate pairs: $(0,0)$, $(2,0)$, and $(-2,0)$.",
+            "For part (c), as the value of $x$ becomes very large, the denominator of the fraction $y = \\dfrac{1}{x}$ grows infinitely large.",
+            "This causes the overall value of $y$ to get smaller and closer and closer to $0$ (for example, if $x = 1000$, then $y = 0.001$).",
+            "The curve never touches the horizontal axis because we cannot divide $1$ by any finite number to get an answer of exactly $0$. The division will always result in a positive value, no matter how small, so $y$ never reaches $0$.",
+            "Final Answer: $$(a)\\ 1: y = 3^x,\\ 2: y = \\dfrac{1}{x},\\ 3: y = x^3 - 4x$$<br>$$(b)\\ (0,0),\\ (2,0),\\ (-2,0)$$<br>$$(c)\\ y \\text{ gets closer to } 0 \\text{ but never touches the axis because } 1 \\div x \\neq 0$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ 1: y = \\dfrac{1}{x},\\ 2: y = 3^x,\\ 3: y = x^3 - 4x$$<br>$$(b)\\ (0,0),\\ (2,0),\\ (-2,0)$$<br>$$(c)\\ y \\text{ gets infinitely large and moves away from the axis}$$",
+                "feedback": "You mismatched the exponential and reciprocal graphs in part (a). An exponential graph increases continuously, whereas a reciprocal graph decreases as $x$ increases."
+            },
+            {
+                "ans": "$$(a)\\ 1: y = 3^x,\\ 2: y = \\dfrac{1}{x},\\ 3: y = x^3 - 4x$$<br>$$(b)\\ (0,0),\\ (4,0),\\ (-4,0)$$<br>$$(c)\\ y \\text{ gets closer to } 0 \\text{ but never touches the axis because } 1 \\div x \\neq 0$$",
+                "feedback": "Your graph matching and reciprocal explanations are correct, but you factorised $x^2 - 4 = 0$ incorrectly in part (b), stating the roots as $\\pm 4$ instead of $\\pm 2$."
+            },
+            {
+                "ans": "$$(a)\\ 1: y = 3^x,\\ 2: y = \\dfrac{1}{x},\\ 3: y = x^3 - 4x$$<br>$$(b)\\ (2,0),\\ (-2,0)$$<br>$$(c)\\ y \\text{ reaches exactly } 0 \\text{ when } x \\text{ is extremely large}$$",
+                "feedback": "In part (b), you forgot to include the origin $(0,0)$ as one of your coordinates. For part (c), remember that a reciprocal curve never actually touches the horizontal axis."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Understanding Reciprocal Trends",
+            "content": "When explaining why reciprocal curves like $y = \\dfrac{1}{x}$ never touch the horizontal axis, focus on the algebra of division. You can divide 1 into as many tiny pieces as you like, but you can never have 'zero pieces'. This boundary line represents an asymptote—a line the graph gets closer to but never meets."
+        },
+        "payhip_link": "https://payhip.com/b/t8xQq",
+        "button_text": "Master Graph Sketches: Download the Pack"
     }
 
-
-
-]
+   ]
