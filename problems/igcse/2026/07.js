@@ -5,7 +5,7 @@ const problemBank = [
         "major_area": "Number",
         "topic": "Surds",
         "subtopic": "Surds",
-        "difficulty": "8/9",
+        "difficulty": "B/A",
         "q": "A closed cylinder has a radius of $\\sqrt{3}\\text{ cm}$ and a height of $(4 + \\sqrt{12})\\text{ cm}$.<br>(a) Show that the height of the cylinder can be written in the form $a + b\\sqrt{3}$, where $a$ and $b$ are integers.<br>(b) Calculate the total surface area of the cylinder. Give your answer in the form $\\pi(c\\sqrt{d} + e)\\text{ cm}^2$, where $c$, $d$, and $e$ are integers.",
         "steps": [
             "For part (a), we simplify the surd $\\sqrt{12}$ by identifying its largest square factor.",
@@ -47,7 +47,7 @@ const problemBank = [
         "major_area": "Geometry",
         "topic": "Similarity in 2D",
         "subtopic": "Similarity in 2D",
-        "difficulty": "6/7",
+        "difficulty": "B/C",
         "img": "true",
         "q": "The diagram shows two mathematically similar triangular warning signs, $A$ and $B$. Sign $A$ has a vertical height of $30\\text{ cm}$ and an area of $540\\text{ cm}^2$. Sign $B$ has an area of $960\\text{ cm}^2$.<br>(a) Find the area scale factor from Sign $A$ to Sign $B$ as a fraction in its simplest form.<br>(b) Calculate the vertical height of Sign $B$.",
         "steps": [
@@ -89,7 +89,7 @@ const problemBank = [
         "major_area": "Algebra",
         "topic": "Functions: Domain and Range",
         "subtopic": "Functions: Domain and Range",
-        "difficulty": "7/8",
+        "difficulty": "A/B",
         "q": "The safety speed rating $S$ of a rollercoaster carriage is modelled by the function $g(x) = \\dfrac{8}{15 - 3x}$ for the domain $0 \\le x \\le 4$, where $x$ represents the track friction coefficient.<br>(a) Explain why the value $x = 5$ is excluded if the domain of the function were defined for all real numbers.<br>(b) Find the range of the function $g(x)$ for the given domain $0 \\le x \\le 4$. Give your answer using inequalities.",
         "steps": [
             "For part (a), we examine the denominator of the function: $15 - 3x$.",
@@ -131,7 +131,7 @@ const problemBank = [
         "major_area": "Geometry",
         "topic": "Circle Geometry",
         "subtopic": "Circle Theorems 1",
-        "difficulty": "7/8",
+        "difficulty": "A/B",
         "img": "true",
         "q": "The diagram shows a circular gear with centre $O$. Points $A$, $B$, and $C$ lie on the circumference. $AC$ is a straight diameter line passing through the centre $O$. The reflex angle $AOB$ is $244^\\circ$.<br>(a) Find the size of the obtuse angle $AOB$.<br>(b) Calculate the size of angle $OBC$. State the geometric reasons for your calculations.",
         "steps": [
@@ -173,7 +173,7 @@ const problemBank = [
         "major_area": "Probability & Statistics",
         "topic": "Sets and Venn Diagrams",
         "subtopic": "Sets and Venn Diagrams",
-        "difficulty": "5/6",
+        "difficulty": "C/D",
         "q": "A cohort of 80 students are surveyed about their language choices. 42 study French ($F$), 35 study Spanish ($S$), and 15 study both languages.<br>(a) Find the number of students who study Spanish but not French.<br>(b) A student is chosen at random from the cohort. Calculate the probability that this student studies neither French nor Spanish.",
         "steps": [
             "For part (a), we understand that the total number of students studying Spanish (35) includes those who study both Spanish and French.",
@@ -216,7 +216,7 @@ const problemBank = [
         "major_area": "Algebra",
         "topic": "Formulas",
         "subtopic": "Changing the Subject of a Formula",
-        "difficulty": "6/7",
+        "difficulty": "B/C",
         "q": "The time period, $T$, of a physical pendulum is given by the formula $T = 2\\pi\\sqrt{\\dfrac{L - x}{g}}$.<br>(a) Rearrange the formula to make the length, $L$, the subject.<br>(b) Calculate the value of $L$ when $T = 3.1$, $g = 9.81$, $x = 0.4$, and $\\pi \\approx 3.142$. Give your answer correct to 3 significant figures.",
         "steps": [
             "For part (a), we isolate the square root term by dividing both sides of the equation by $2\\pi$: $\\dfrac{T}{2\\pi} = \\sqrt{\\dfrac{L - x}{g}}$.",
@@ -259,7 +259,7 @@ const problemBank = [
         "major_area": "Geometry",
         "topic": "Similarity in 3D",
         "subtopic": "Similarity in 3D",
-        "difficulty": "7/8",
+        "difficulty": "A/B",
         "img": "true",
         "q": "The diagram shows two mathematically similar cylindrical metal tins, $P$ and $Q$, made of the same sheet metal. Tin $P$ has a diameter of $12\\text{ cm}$ and a mass of $450\\text{ g}$. Tin $Q$ has a diameter of $18\\text{ cm}$.<br>(a) Find the linear scale factor of enlargement from Tin $P$ to Tin $Q$.<br>(b) Calculate the mass of Tin $Q$. Give your answer in kilograms.",
         "steps": [
@@ -300,7 +300,7 @@ const problemBank = [
         "major_area": "Number",
         "topic": "Standard Form",
         "subtopic": "Standard Form",
-        "difficulty": "5/6",
+        "difficulty": "C/D",
         "q": "A rectangular microchip component has a length of $3.5 \\times 10^{-5}\\text{ m}$ and a width of $2.4 \\times 10^{-6}\\text{ m}$.<br>(a) Calculate the total perimeter of the component. Give your answer in standard form.<br>(b) Calculate the total surface area of the component. Give your answer in standard form.",
         "steps": [
             "For part (a), the formula for the perimeter of a rectangle is: $\\text{Perimeter} = 2 \\times (\\text{length} + \\text{width})$.",
@@ -344,7 +344,7 @@ const problemBank = [
         "major_area": "Probability & Statistics",
         "topic": "Histograms",
         "subtopic": "Histograms",
-        "difficulty": "7/8",
+        "difficulty": "A/B",
         "q": "The masses of 200 bags checked onto a flight were recorded. The class interval $20 < m \\le 25\\text{ kg}$ has a frequency of 75 and is represented by a bar of height $15\\text{ cm}$ on the grid.<br>(a) Find the frequency density of this class interval.<br>(b) The class interval $25 < m \\le 35\\text{ kg}$ is represented by a bar of height $6\\text{ cm}$ on the same grid. Calculate the frequency of bags in this interval.",
         "steps": [
             "For part (a), the class width of the interval $20 < m \\le 25$ is: $25 - 20 = 5\\text{ kg}$.",
@@ -384,7 +384,7 @@ const problemBank = [
         "major_area": "Geometry",
         "topic": "Pythagoras Theorem",
         "subtopic": "Pythagoras Theorem",
-        "difficulty": "7/8",
+        "difficulty": "A/B",
         "img": "true",
         "q": "A greenhouse is built in the shape of a right square-based pyramid $VABCD$ as shown in the diagram. The base $ABCD$ is a square of side length $6\\text{ m}$. The vertical height $VO$ from the centre of the base $O$ to the apex $V$ is $4\\text{ m}$.<br>(a) Calculate the length of the diagonal $AC$ on the square base. Give your answer correct to 3 significant figures.<br>(b) Calculate the slant height $VA$ of the pyramid. Give your answer correct to 3 significant figures.",
         "steps": [
@@ -427,7 +427,7 @@ const problemBank = [
         "major_area": "Geometry",
         "topic": "Trigonometry",
         "subtopic": "Exact Trigonometric values",
-        "difficulty": "7/8",
+        "difficulty": "A/B",
         "img": "true",
         "q": "The diagram shows a right-angled triangle $ABC$ and an adjacent right-angled triangle $ACD$. Angle $ABC = 90^\\circ$, angle $ACB = 45^\\circ$, angle $ACD = 90^\\circ$, angle $ADC = 30^\\circ$, and $BC = 8\\text{ cm}$.<br>(a) Find the exact length of the hypotenuse $AC$ of triangle $ABC$. Give your answer in the form $a\\sqrt{b}\\text{ cm}$, where $a$ and $b$ are integers.<br>(b) Calculate the exact length of the side $AD$ of triangle $ACD$. Give your answer in the form $c\\sqrt{d}\\text{ cm}$, where $c$ and $d$ are integers.",
         "steps": [
@@ -470,7 +470,7 @@ const problemBank = [
     "major_area": "Algebra",
     "topic": "Differentiation",
     "subtopic": "Rates of Change from Graphs",
-    "difficulty": "8/9",
+    "difficulty": "A/A*",
     "q": "The depth of water, $y$ metres, in a harbour $t$ hours after midnight is modelled by the formula $y = 12t - t^3 + 10$ for the domain $0 \\le t \\le 3$.<br>(a) Find an expression for $\\dfrac{\\text{d}y}{\\text{d}t}$, the rate of change of the water depth.<br>(b) Find the time, $t$, at which the water is at its maximum depth.<br>(c) Calculate this maximum depth of the water.",
     "steps": [
         "For part (a), we differentiate the depth equation $y = 12t - t^3 + 10$ with respect to $t$ using the power rule.",
@@ -515,7 +515,7 @@ const problemBank = [
         "major_area": "Number",
         "topic": "Rounding, Estimation and Accuracy",
         "subtopic": "Rounding, Estimation and Error Intervals",
-        "difficulty": "5/6",
+        "difficulty": "C/D",
         "q": "A standard shipping carton is recorded as having a mass of $w = 14.8\\text{ kg}$, correct to 1 decimal place.<br>(a) Write down the error interval for the mass $w$ of a single carton using inequalities.<br>(b) A pallet contains exactly 45 of these identical cartons. Calculate the error interval for the total mass, $W$, of the cartons on the pallet.",
         "steps": [
             "For part (a), the mass $w = 14.8\\text{ kg}$ is recorded to 1 decimal place. The unit of accuracy is therefore $0.1\\text{ kg}$.",
@@ -557,7 +557,7 @@ const problemBank = [
         "major_area": "Geometry",
         "topic": "Mensuration",
         "subtopic": "Arcs and Sectors",
-        "difficulty": "6/7",
+        "difficulty": "B/C",
         "img": "true",
         "q": "A lawn sprinkler sprays water over a sector $OAB$ of a circle with centre $O$ and radius $12\\text{ m}$ as shown in the diagram. The angle of the sector $AOB$ is $135^\\circ$.<br>(a) Calculate the total area watered by the sprinkler. Give your answer in terms of $\\pi$ in its simplest form.<br>(b) Calculate the total perimeter of the sector $OAB$. Give your answer in the form $a + b\\pi$, where $a$ and $b$ are integers.",
         "steps": [
@@ -599,7 +599,7 @@ const problemBank = [
         "major_area": "Probability & Statistics",
         "topic": "Probability",
         "subtopic": "Probability of Combined Events",
-        "difficulty": "6/7",
+        "difficulty": "B/C",
         "q": "A drawer contains 8 striped shirts and 6 plain shirts. Two shirts are selected at random from the drawer, one after another, without replacement.<br>(a) Find the probability that both selected shirts are plain.<br>(b) Calculate the probability that the two selected shirts are of different designs.",
         "steps": [
             "For part (a), the total number of shirts in the drawer is $8 + 6 = 14$ shirts.",
@@ -643,7 +643,7 @@ const problemBank = [
         "major_area": "Geometry",
         "topic": "Trigonometry",
         "subtopic": "Sine Rule",
-        "difficulty": "7/8",
+        "difficulty": "A/B",
         "img": "true",
         "q": "The diagram shows a triangular plot of land $ABC$. $AC = 15\\text{ m}$, $BC = 11\\text{ m}$, and angle $BAC = 38^\\circ$.<br>(a) Find the size of the acute angle $ABC$. Give your answer correct to 1 decimal place.<br>(b) A secondary boundary post can be positioned at a different point $B'$ along the line $AB$ such that the length $CB' = 11\\text{ m}$ is preserved. State the size of the obtuse angle $AB'C$ correct to 1 decimal place.",
         "steps": [
@@ -691,7 +691,7 @@ const problemBank = [
         "major_area": "Algebra",
         "topic": "Algebraic Fractions",
         "subtopic": "Algebraic Fractions 2",
-        "difficulty": "8/9",
+        "difficulty": "A/A*",
         "q": "Solve the algebraic equation for $x$:<br>$$\\dfrac{4}{2x - 3} + \\dfrac{3}{x + 2} = 3$$<br>Give your answers correct to 3 significant figures.",
         "steps": [
             "We begin by finding a common denominator to combine the two algebraic fractions: $(2x - 3)(x + 2)$.",
@@ -737,7 +737,7 @@ const problemBank = [
         "major_area": "Number",
         "topic": "Bounds",
         "subtopic": "Limits of Accuracy and Bounds",
-        "difficulty": "8/9",
+        "difficulty": "A/B",
         "q": "A racing car completes a single lap of a test track of length $d = 4.2\\text{ km}$, correct to 2 significant figures. The time taken to complete the lap is $t = 54\\text{ seconds}$, correct to the nearest second.<br>(a) Find the lower bound and upper bound of the track length in metres.<br>(b) Calculate the upper bound for the average speed of the car during the lap in metres per second ($\\text{m/s}$). Give your answer correct to 1 decimal place.",
         "steps": [
             "For part (a), the track length $d = 4.2\\text{ km}$ is rounded to 2 significant figures, which is equivalent to the nearest $0.1\\text{ km}$.",
@@ -780,7 +780,7 @@ const problemBank = [
         "major_area": "Geometry",
         "topic": "Circle Geometry",
         "subtopic": "Circle Theorems 2",
-        "difficulty": "7/8",
+        "difficulty": "A/B",
         "img": "true",
         "q": "A circular dial has a centre $O$. A straight indicator line $TBC$ is tangent to the circle at point $B$. $A$ and $D$ are points on the circumference such that $ABD$ is a triangle. The tangent angle $DBC$ is $62^\\circ$.<br>(a) Find the size of angle $DAB$. Give a geometric reason for your answer.<br>(b) Given that the angle subtended at the centre, $AOD$, is $112^\\circ$, calculate the size of angle $ABD$.",
         "steps": [
@@ -824,7 +824,7 @@ const problemBank = [
         "major_area": "Probability & Statistics",
         "topic": "Probability",
         "subtopic": "Relative and Expected Frequencies",
-        "difficulty": "5/6",
+        "difficulty": "C/D",
         "q": "A manufacturer tests a batch of LED light bulbs to estimate the probability of a bulb being defective. In a random sample of 250 bulbs, 4 are found to be defective.<br>(a) Find the relative frequency of defective bulbs in this sample as a decimal.<br>(b) The manufacturer produces a total of 180,000 bulbs in a month. Calculate the expected number of defective bulbs in this monthly production run.<br>(c) Explain how the manufacturer can make their estimate of the probability of a defective bulb more reliable.",
         "steps": [
             "For part (a), the relative frequency is the number of defective bulbs divided by the total number of bulbs in the sample.",
@@ -858,6 +858,234 @@ const problemBank = [
         },
         "payhip_link": "https://payhip.com/b/csAoM",
         "button_text": "Master IGCSE Statistics: Download the Pack"
+    },
+    {
+        "id": "003202",
+        "date": "21 July 2026",
+        "major_area": "Algebra",
+        "topic": "Linear Graphs",
+        "subtopic": "Equations of Linear Graphs",
+        "difficulty": "5/6",
+        "q": "A rescue helicopter flies along a straight-line path, $L_1$, that passes through the coordinates $A(-2, 3)$ and $B(4, 15)$ on a navigational map.<br>(a) Find the equation of the flight path $L_1$. Give your answer in the form $y = mx + c$.<br>(b) A secondary drone flight path, $L_2$, is perpendicular to $L_1$ and passes through the point $C(2, 5)$. Find the equation of $L_2$, giving your answer in the form $ay + bx = c$, where $a$, $b$, and $c$ are integers.",
+        "steps": [
+            "For part (a), we first determine the gradient, $m$, of the flight path $L_1$ using the coordinates $A(-2, 3)$ and $B(4, 15)$.",
+            "The gradient formula is: $m = \\dfrac{y_2 - y_1}{x_2 - x_1} = \\dfrac{15 - 3}{4 - (-2)} = \\dfrac{12}{6} = 2$.",
+            "To find the equation of $L_1$, we use the straight-line formula: $y - y_1 = m(x - x_1)$.",
+            "Substituting the gradient $m = 2$ and the coordinate $A(-2, 3)$ yields: $y - 3 = 2(x - (-2))$.",
+            "Expanding the bracket: $y - 3 = 2(x + 2) \\implies y - 3 = 2x + 4$.",
+            "Adding 3 to both sides gives the equation of $L_1$: $y = 2x + 7$.",
+            "For part (b), the gradient of the perpendicular path $L_2$ is the negative reciprocal of the gradient of $L_1$.",
+            "Since the gradient of $L_1$ is 2, the perpendicular gradient is: $m_{\\perp} = -\\dfrac{1}{2}$ (or $-0.5$).",
+            "Using the straight-line equation with $m = -\\dfrac{1}{2}$ and the point $C(2, 5)$ yields: $y - 5 = -\\dfrac{1}{2}(x - 2)$.",
+            "Expanding the bracket: $y - 5 = -\\dfrac{1}{2}x + 1$.",
+            "To clear the fraction, we multiply the entire equation by 2: $2y - 10 = -x + 2$.",
+            "We rearrange this into the form $ay + bx = c$ by adding $x$ and $10$ to both sides, which gives: $2y + x = 12$.",
+            "Final Answer: $$(a)\\ y = 2x + 7\\ (b)\\ 2y + x = 12$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": $$(a)\\ y = 2x + 7\\ (b)\\ y = -0.5x + 6$$",
+                "feedback": "For part (b), you found the correct equation for $L_2$, but you forgot to rearrange it into the required integer form $ay + bx = c$."
+            },
+            {
+                "ans": $$(a)\\ y = 0.5x + 4\\ (b)\\ y = -2x + 9$$",
+                "feedback": "You calculated the gradient of $L_1$ as $\\dfrac{\\text{change in } x}{\\text{change in } y}$ instead of $\\dfrac{\\text{change in } y}{\\text{change in } x}$ in part (a)."
+            },
+            {
+                "ans": $$(a)\\ y = 2x + 7\\ (b)\\ 2y + x = 5$$",
+                "feedback": "Your flight path $L_1$ is correct, but you made an arithmetic sign error when expanding the bracket $-0.5(x - 2)$ in part (b), writing $-0.5x - 1$ instead of $-0.5x + 1$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: The Point-Slope Formula",
+            "content": "Using the point-slope formula $y - y_1 = m(x - x_1)$ is significantly faster and less prone to arithmetic sign slips than substituting into $y = mx + c$ and solving for $c$. Once you have your gradient and any coordinate point, simply substitute them directly into this equation and expand."
+        },
+        "payhip_link": "https://payhip.com/b/U8umo",
+        "button_text": "Master IGCSE Algebra: Download the Pack"
+    },
+    {
+        "id": "003203",
+        "date": "22 July 2026",
+        "major_area": "Probability & Statistics",
+        "topic": "Sets and Venn Diagrams",
+        "subtopic": "Sets and Venn Diagrams",
+        "difficulty": "6/7",
+        "img": "true",
+        "q": "The Venn diagram shows the distribution of 120 school students who participate in Drama ($D$), Music ($M$), and Art ($A$).<br>(a) Find the number of students represented by the region $n(D \\cap M \\cap A')$.<br>(b) Calculate the probability that a student chosen at random participates in at least two of these activities.<br>(c) A student is selected at random. Given that this student participates in Music, calculate the probability that they also participate in Art.",
+        "steps": [
+            "For part (a), the notation $n(D \\cap M \\cap A')$ represents the number of students who participate in both Drama and Music, but do not participate in Art.",
+            "Looking at the Venn diagram, this corresponds to the region where circles $D$ and $M$ overlap, but excludes the intersection with circle $A$. This region contains exactly 14 students.",
+            "For part (b), participating in 'at least two' activities includes those who do exactly two activities, and those who do all three.",
+            "These regions on the diagram correspond to the overlaps: $14$ (Drama & Music only), $11$ (Drama & Art only), $9$ (Music & Art only), and $6$ (all three).",
+            "We sum these overlapping regions: $\\text{Total} = 14 + 11 + 9 + 6 = 40$ students.",
+            "The probability of choosing one of these students from the total cohort of 120 is: $\\text{P}(\\text{At least two}) = \\dfrac{40}{120}$.",
+            "Simplifying the fraction by dividing the numerator and denominator by 40 yields: $\\dfrac{1}{3}$.",
+            "For part (c), we calculate the conditional probability: $\\text{P}(\\text{Art} | \\text{Music}) = \\dfrac{n(\\text{Art} \\cap \\text{Music})}{n(\\text{Music})}$.",
+            "The total number of students who participate in Music, $n(M)$, is the sum of all regions inside circle $M$: $n(M) = 28 + 14 + 6 + 9 = 57$ students.",
+            "The number of those Music students who also participate in Art is the intersection of circle $M$ and circle $A$: $n(M \\cap A) = 6 + 9 = 15$ students.",
+            "This gives the conditional probability as: $\\text{P}(\\text{Art} | \\text{Music}) = \\dfrac{15}{57}$.",
+            "We simplify the fraction by dividing the numerator and denominator by 3, which yields: $\\dfrac{5}{19}$.",
+            "Final Answer: $$(a)\\ 14\\ (b)\\ \\dfrac{1}{3}\\ (c)\\ \\dfrac{5}{19}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": $$(a)\\ 6\\ (b)\\ \\dfrac{1}{3}\\ (c)\\ \\dfrac{5}{19}$$",
+                "feedback": "For part (a), you stated the number of students who participate in all three activities ($n(D \\cap M \\cap A)$) instead of excluding those who participate in Art."
+            },
+            {
+                "ans": $$(a)\\ 14\\ (b)\\ \\dfrac{1}{4}\\ (c)\\ \\dfrac{5}{19}$$",
+                "feedback": "For part (b), you forgot to include the 6 students who do all three activities when summing the 'at least two' regions."
+            },
+            {
+                "ans": "$$(a)\\ 14\\ (b)\\ \\dfrac{1}{3}\\ (c)\\ \\dfrac{1}{8}$$",
+                "feedback": "For part (c), you calculated the probability using the entire school cohort of 120 as your denominator instead of restricting the sample space to the 57 students who participate in Music."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Conditional Restricting",
+            "content": "On 3-set Venn diagrams, conditional probability questions starting with 'Given that...' require you to completely change your denominator. For part (c), the condition is that the student does Music, so your denominator must be the sum of all elements inside circle $M$ (57), not the overall total of 120."
+        },
+        "payhip_link": "https://payhip.com/b/oW2c1",
+        "button_text": "Master IGCSE Sets: Download the Pack"
+    },
+    {
+        "id": "003204",
+        "date": "23 July 2026",
+        "major_area": "Number",
+        "topic": "Ratio and Proportion",
+        "subtopic": "Direct and Inverse Proportion",
+        "difficulty": "7/8",
+        "q": "The rate of heat loss, $R$ watts, of a spherical metal cylinder is directly proportional to its surface area, $A\\text{ cm}^2$. The surface area $A$ is directly proportional to the square of its radius, $r\\text{ cm}$.<br>When the radius of the sphere is $3\\text{ cm}$, the rate of heat loss is $108\\text{ watts}$.<br>(a) Show that the rate of heat loss $R$ can be written as $R = k r^2$, and calculate the constant of proportionality, $k$.<br>(b) Calculate the rate of heat loss when the radius of the sphere is $5\\text{ cm}$.<br>(c) Calculate the radius of the sphere when the rate of heat loss is exactly $192\\text{ watts}$.",
+        "steps": [
+            "For part (a), we are given two proportional relationships: $R \\propto A$ and $A \\propto r^2$.",
+            "This can be written as the equations: $R = c_1 A$ and $A = c_2 r^2$, where $c_1$ and $c_2$ are constants.",
+            "Substituting the expression for $A$ into the first equation: $R = c_1 (c_2 r^2) = (c_1 c_2) r^2$. Since the product of two constants is a new constant, we can write: $R = k r^2$, completing the proof.",
+            "To find $k$, we substitute the known values $r = 3$ and $R = 108$ into our equation: $108 = k (3)^2 \\implies 108 = 9k$.",
+            "Dividing both sides by 9 gives the constant: $k = \\dfrac{108}{9} = 12$. The formula is: $R = 12r^2$.",
+            "For part (b), we calculate the rate of heat loss by substituting $r = 5$ into our formula: $R = 12(5)^2$.",
+            "Evaluating the square first: $R = 12 \\times 25 = 300\\text{ watts}$.",
+            "For part (c), we substitute $R = 192$ into our formula to calculate the radius: $192 = 12r^2$.",
+            "Dividing both sides by 12 gives: $r^2 = \\dfrac{192}{12} = 16$.",
+            "Taking the positive square root of both sides gives the radius: $r = \\sqrt{16} = 4\\text{ cm}$.",
+            "Final Answer: $$(a)\\ k = 12\\ (b)\\ 300\\text{ watts}\\ (c)\\ 4\\text{ cm}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": $$(a)\\ k = 36\\ (b)\\ 900\\text{ watts}\\ (c)\\ 2.31\\text{ cm}$$",
+                "feedback": "You did not square the radius of 3 when solving for the constant of proportionality $k$ in part (a), using $3k = 108$ instead of $9k = 108$."
+            },
+            {
+                "ans": $$(a)\\ k = 12\\ (b)\\ 60\\text{ watts}\\ (c)\\ 16\\text{ cm}$$",
+                "feedback": "You treated the relationship as directly proportional to the radius $r$ instead of directly proportional to the square of the radius $r^2$ in parts (b) and (c)."
+            },
+            {
+                "ans": $$(a)\\ k = 12\\ (b)\\ 300\\text{ watts}\\ (c)\\ 16\\text{ cm}$$",
+                "feedback": "Your formula and part (b) are correct, but in part (c) you forgot to take the square root of $r^2 = 16$ to find the final radius $r$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Compound Proportionality",
+            "content": "When two variables are connected via a third intermediary variable, their direct proportional relationship compounds. Because $R$ depends on $A$, and $A$ depends on $r^2$, $R$ directly scales with $r^2$. Always prove this combined relationship first before trying to calculate your constants."
+        },
+        "payhip_link": "https://payhip.com/b/JYBkq",
+        "button_text": "Master IGCSE Proportion: Download the Pack"
+    },
+    {
+        "id": "003205",
+        "date": "24 July 2026",
+        "major_area": "Geometry",
+        "topic": "Trigonometry",
+        "subtopic": "Cosine Rule",
+        "difficulty": "7/8",
+        "img": "true",
+        "q": "The diagram shows a triangular clearing in a forest with vertices $P$, $Q$, and $R$. The distance $PQ = 14\\text{ m}$ and the distance $QR = 9\\text{ m}$. The angle $PQR$ is $125^\\circ$.<br>(a) Calculate the direct distance $PR$ across the clearing. Give your answer in metres correct to 3 significant figures.<br>(b) Calculate the total area of the clearing. Give your answer in square metres correct to 1 decimal place.",
+        "steps": [
+            "For part (a), we use the Cosine Rule because we are given two sides and the included angle (SAS).",
+            "The Cosine Rule is: $q^2 = p^2 + r^2 - 2pr \\cos(Q)$.",
+            "Substituting our known values $p = 9\\text{ m}$, $r = 14\\text{ m}$, and angle $Q = 125^\\circ$ gives: $q^2 = 9^2 + 14^2 - 2(9)(14) \\cos(125^\\circ)$.",
+            "Evaluating the squared values and multiplication: $q^2 = 81 + 196 - 252 \\cos(125^\\circ) = 277 - 252 \\cos(125^\\circ)$.",
+            "Using a calculator, we find $\\cos(125^\\circ) \\approx -0.573576$.",
+            "Since the cosine of an obtuse angle is negative, this term becomes positive: $q^2 \\approx 277 - 252(-0.573576) = 277 + 144.541 = 421.541$.",
+            "Taking the square root of both sides gives the length $q$: $q = \\sqrt{421.541} \\approx 20.531\\text{ m}$.",
+            "Rounding this distance to 3 significant figures gives $20.5\\text{ m}$.",
+            "For part (b), the formula for the area of a non-right-angled triangle is: $\\text{Area} = \\dfrac{1}{2}pr \\sin(Q)$.",
+            "Substituting our values into the formula yields: $\\text{Area} = \\dfrac{1}{2} \\times 9 \\times 14 \\times \\sin(125^\\circ) = 63 \\times \\sin(125^\\circ)$.",
+            "Using a calculator, we evaluate $\\sin(125^\\circ) \\approx 0.819152$, giving: $\\text{Area} \\approx 63 \\times 0.819152 \\approx 51.606\\text{ m}^2$.",
+            "Rounding this area to 1 decimal place gives $51.6\\text{ m}^2$.",
+            "Final Answer: $$(a)\\ 20.5\\text{ m}\\ (b)\\ 51.6\\text{ m}^2$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": $$(a)\\ 11.5\\text{ m}\\ (b)\\ 51.6\\text{ m}^2$$",
+                "feedback": "You made a sign error in your Cosine Rule calculation by failing to recognise that $\\cos(125^\\circ)$ is negative, which led you to subtract $144.541$ instead of adding it."
+            },
+            {
+                "ans": $$(a)\\ 20.5\\text{ m}\\ (b)\\ -36.1\\text{ m}^2$$",
+                "feedback": "Your distance calculation is correct, but you used the cosine ratio instead of the sine ratio in your triangle area formula."
+            },
+            {
+                "ans": $$(a)\\ 422\\text{ m}\\ (b)\\ 51.6\\text{ m}^2$$",
+                "feedback": "For part (a), you calculated the value of $q^2$ correctly but forgot to perform the final step of taking the square root to find the actual distance $q$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Obtuse Angles and Signs",
+            "content": "Always remember that the cosine of any obtuse angle (between $90^\\circ$ and $180^\\circ$) is negative. This means the final term in your Cosine Rule equation ($- 2pr \\cos(Q)$) will always become an addition. Ensure your final calculated side is the longest side of the triangle, as it must be opposite the largest angle."
+        },
+        "payhip_link": "https://payhip.com/b/RHeNL",
+        "button_text": "Master IGCSE Trigonometry: Download the Pack"
+    },
+    {
+        "id": "003206",
+        "date": "25 July 2026",
+        "major_area": "Number",
+        "topic": "Indices",
+        "subtopic": "Fractional Indices and Roots",
+        "difficulty": "8/9",
+        "q": "(a) Evaluate $125^{-\\frac{2}{3}}$.<br>(b) Simplify completely $(16x^{12} y^{-8})^{\\frac{3}{4}}$.<br>(c) Solve the equation $3^{y+5} = 27^{y-1}$.",
+        "steps": [
+            "For part (a), we address the negative index first. A negative exponent indicates the reciprocal of the term: $125^{-\\frac{2}{3}} = \\dfrac{1}{125^{\\frac{2}{3}}}$.",
+            "The fractional index $\\dfrac{2}{3}$ represents the square of the cube root: $125^{\\frac{2}{3}} = (\\sqrt[3]{125})^2$.",
+            "The cube root of 125 is 5, so this simplifies to $5^2 = 25$.",
+            "Substituting this back into the fraction gives the final evaluated value: $\\dfrac{1}{25}$ (or $0.04$).",
+            "For part (b), we apply the fractional index $\\dfrac{3}{4}$ to every term inside the parentheses.",
+            "This gives: $(16x^{12} y^{-8})^{\\frac{3}{4}} = 16^{\\frac{3}{4}} \\times (x^{12})^{\\frac{3}{4}} \\times (y^{-8})^{\\frac{3}{4}}$.",
+            "Evaluating the coefficient: $16^{\\frac{3}{4}} = (\\sqrt[4]{16})^3 = 2^3 = 8$.",
+            "Applying the power of a power rule to the $x$ term: $12 \\times \\dfrac{3}{4} = 9$, which gives $x^9$.",
+            "Applying the power of a power rule to the $y$ term: $-8 \\times \\dfrac{3}{4} = -6$, which gives $y^{-6}$.",
+            "Combining these components gives the simplified expression: $8x^9 y^{-6}$ (or $\\dfrac{8x^9}{y^6}$).",
+            "For part (c), we express both sides of the equation using an identical base.",
+            "Since $27 = 3^3$, we can rewrite the right side of the equation as: $(3^3)^{y-1} = 3^{3(y-1)} = 3^{3y-3}$.",
+            "Our equation is now: $3^{y+5} = 3^{3y-3}$. Since the bases are identical, we can equate the exponents: $y + 5 = 3y - 3$.",
+            "Subtracting $y$ from both sides: $5 = 2y - 3$.",
+            "Adding 3 to both sides: $8 = 2y$, which yields the solution: $y = 4$.",
+            "Final Answer: $$(a)\\ \\dfrac{1}{25}\\ (b)\\ 8x^9 y^{-6}\\ (c)\\ y = 4$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ -25\\ (b)\\ 12x^9 y^{-6}\\ (c)\\ y = 2$$",
+                "feedback": "For part (a), you treated the negative index as a sign for the final value instead of taking the reciprocal. For part (b), you multiplied the coefficient 16 by $\\dfrac{3}{4}$ instead of raising it to the power of $\\dfrac{3}{4}$."
+            },
+            {
+                "ans": "$$(a)\\ \\dfrac{1}{25}\\ (b)\\ 8x^{\\frac{51}{4}} y^{-\\frac{29}{4}}\\ (c)\\ y = 4$$",
+                "feedback": "Your values for (a) and (c) are correct, but in part (b) you added the exponents together instead of multiplying them when applying the power of a power rule."
+            },
+            {
+                "ans": "$$(a)\\ \\dfrac{1}{25}\\ (b)\\ 8x^9 y^{-6}\\ (c)\\ y = -2$$",
+                "feedback": "Your calculations for (a) and (b) are correct, but in part (c) you made an expansion error, writing $3(y-1)$ as $3y - 1$ instead of $3y - 3$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Root Order of Operations",
+            "content": "When evaluating fractional exponents manually, always take the root first before applying the power. Evaluating $\\sqrt[3]{125} = 5$ and then squaring it ($5^2 = 25$) is significantly easier to calculate mentally than trying to square 125 first ($15,625$) and then finding its cube root."
+        },
+        "payhip_link": "https://payhip.com/b/iU6Nj",
+        "button_text": "Master IGCSE Algebra: Download the Pack"
     }
 
 
