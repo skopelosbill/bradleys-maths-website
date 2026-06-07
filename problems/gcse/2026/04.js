@@ -14,7 +14,7 @@ const problemBank = [
             "Part (a) Answer: $(3x - 5)(2x - 3)$.",
             "(b) Recognise that $19x - 6x^2 - 15$ is $-1(6x^2 - 19x + 15)$.",
             "Multiply one bracket by $-1$: $(5 - 3x)(2x - 3)$.",
-            "Final Answer: $$(5 - 3x)(2x - 3)$$"
+            "Final Answer: $$(a)\\ (3x - 5)(2x - 3), (b)\\ (5 - 3x)(2x - 3)$$"
         ],
         "wrong_options": [
             {
@@ -316,19 +316,19 @@ const problemBank = [
             "(a) Exterior angles of any polygon sum to $360^\\circ$.",
             "One exterior angle = $360 \\div 10 = 36^\\circ$.",
             "(b) Interior and exterior angles lie on a straight line: $180 - 36 = 144$.",
-            "Final Answer: $$144^\\circ$$"
+            "Final Answer: $$(a)\\ 36^\\circ,\\ (b)\\ 144^\\circ$$"
         ],
         "wrong_options": [
             {
-                "ans": "$$\\text{(a) } 144^\\circ, \\text{ (b) } 36^\\circ$$",
+                "ans": "$$(a)\\ 144^\\circ,\\ (b)\\ 36^\\circ$$",
                 "feedback": "You swapped the definitions of interior and exterior angles! The exterior angle is on the outside ($360^\\circ \\div n$), which is the smaller angle for a regular decagon."
             },
             {
-                "ans": "$$\\text{(a) } 36^\\circ, \\text{ (b) } 324^\\circ$$",
+                "ans": "$$(a)\\ 36^\\circ,\\ (b)\\ 324^\\circ$$",
                 "feedback": "You correctly found the exterior angle, but you assumed interior and exterior angles add up to $360^\\circ$. They lie on a straight line, meaning they sum to exactly $180^\\circ$."
             },
             {
-                "ans": "$$\\text{(a) } 1440^\\circ, \\text{ (b) } 144^\\circ$$",
+                "ans": "$$(a)\\ 1440^\\circ,\\ (b)\\ 144^\\circ$$",
                 "feedback": "For part (a), you calculated the total sum of all the interior angles using $(n-2) \\times 180^\\circ$. The question asked for a single exterior angle, which is simply $360^\\circ \\div n$."
             }
         ],
@@ -1063,16 +1063,16 @@ const problemBank = [
         ],
         "wrong_options": [
     {
-        "ans": "$$(a)\\ r = \sqrt{24}$$",
+        "ans": "$$(a)\\ r = \\sqrt{24},\\ (b)\\ 8\\pi$$",
         "feedback": "You forgot the $\\frac{1}{6}$ factor from the $60^\circ$ angle. The area is not $\\pi r^2 = 24\\pi$."
     },
     {
-        "ans": "$$(b)\\ \text{Arc length} = 12\pi$$",
+        "ans": "$$(a)\\ r=12,\\ (b)\\ \text{Arc length} = 12\pi$$",
         "feedback": "You calculated the full circumference instead of the fraction for a $60^\circ$ sector."
     },
     {
-        "ans": "$$(b)\\ \text{Arc length} = 2\pi$$",
-        "feedback": "You used $r=6$ instead of $r=12$. The radius must be found from part (a)."
+        "ans": "$$(a)\\ r=6,\\ (b)\\ \text{Arc length} = 2\pi$$",
+        "feedback": "You divided your answer in part (a) by two but you had found the radius not the diameter."
     }
 ],
         "bradley_insight": {

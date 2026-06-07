@@ -305,9 +305,6 @@ const BradleyHub = {
     },
 async init(mode, tier) {
 
-    // 🔐 NEW: Block access unless unlocked
-    if (!this.checkPremiumAccess()) return;
-
     this.state.isTeacherMode = (mode === 'audit');
     this.state.tier = tier || this.state.tier;
     localStorage.setItem('bradley_tier', this.state.tier);
@@ -855,4 +852,4 @@ checkPremiumAccess() {
     }
 };
  //TEMPORARY: Force paywall for testing
-    //BradleyHub.state.freeQuestionsLeft = 0;
+  //  //BradleyHub.state.freeQuestionsLeft = 0;
