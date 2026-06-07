@@ -427,7 +427,7 @@ const problemBank = [
         "major_area": "Geometry",
         "topic": "Trigonometry",
         "subtopic": "Exact Trigonometric values",
-        "difficulty": "5/6",
+        "difficulty": "7/8",
         "img": "true",
         "q": "The diagram shows a right-angled triangle $ABC$ and an adjacent right-angled triangle $ACD$. Angle $ABC = 90^\\circ$, angle $ACB = 45^\\circ$, angle $ACD = 90^\\circ$, angle $ADC = 30^\\circ$, and $BC = 8\\text{ cm}$.<br>(a) Find the exact length of the hypotenuse $AC$ of triangle $ABC$. Give your answer in the form $a\\sqrt{b}\\text{ cm}$, where $a$ and $b$ are integers.<br>(b) Calculate the exact length of the side $AD$ of triangle $ACD$. Give your answer in the form $c\\sqrt{d}\\text{ cm}$, where $c$ and $d$ are integers.",
         "steps": [
@@ -464,50 +464,51 @@ const problemBank = [
         "payhip_link": "https://payhip.com/b/GToVZ",
         "button_text": "Master IGCSE Trigonometry: Download the Pack"
     },
-    {
-        "id": "003193",
-        "date": "12 July 2026",
-        "major_area": "Algebra",
-        "topic": "Numerical Methods",
-        "subtopic": "Iteration",
-        "difficulty": "7/8",
-        "q": "The depth of water, $h$ metres, in a shipping channel is modelled by the equation $h^3 - 6h + 4 = 0$.<br>(a) Show that a root of this equation lies between $h = 0.5$ and $h = 1.0$.<br>(b) Using the iterative formula $h_{n+1} = \\dfrac{h_n^3 + 4}{6}$ and starting with $h_0 = 0.7$, calculate the values of $h_1$ and $h_2$. Give your answers correct to 4 decimal places.",
-        "steps": [
-            "For part (a), we define our function as $f(h) = h^3 - 6h + 4$.",
-            "We substitute the lower boundary $h = 0.5$ into the function: $f(0.5) = (0.5)^3 - 6(0.5) + 4 = 0.125 - 3 + 4 = 1.125$.",
-            "We substitute the upper boundary $h = 1.0$ into the function: $f(1.0) = (1.0)^3 - 6(1.0) + 4 = 1 - 6 + 4 = -1$.",
-            "Since $f(0.5)$ is positive ($1.125$) and $f(1.0)$ is negative ($-1$), there is a change of sign over the interval.",
-            "Because the polynomial function is continuous, this sign change proves that a root must lie in the interval $0.5 < h < 1.0$.",
-            "For part (b), we substitute our initial value $h_0 = 0.7$ into the iterative formula to calculate $h_1$: $h_1 = \\dfrac{(0.7)^3 + 4}{6}$.",
-            "Evaluating the cube: $(0.7)^3 = 0.343$. This gives: $h_1 = \\dfrac{0.343 + 4}{6} = \\dfrac{4.343}{6} \\approx 0.723833$.",
-            "Rounding to 4 decimal places gives $h_1 = 0.7238$.",
-            "Next, we use our unrounded value of $h_1 \\approx 0.723833$ in the iterative formula to calculate $h_2$: $h_2 = \\dfrac{(0.723833)^3 + 4}{6}$.",
-            "Evaluating the cube using a calculator: $(0.723833)^3 \\approx 0.379237$. This gives: $h_2 = \\dfrac{0.379237 + 4}{6} = \\dfrac{4.379237}{6} \\approx 0.729873$.",
-            "Rounding to 4 decimal places gives $h_2 = 0.7299$.",
-            "Final Answer: $$(a)\\ f(0.5) = 1.125,\\ f(1) = -1\\ (b)\\ h_1 = 0.7238,\\ h_2 = 0.7299$$"
-        ],
-        "wrong_options": [
-            {
-                "ans": "$$(a)\\ f(0.5) = 1.125,\\ f(1) = -1\\ (b)\\ h_1 = 0.7238,\\ h_2 = 0.7297$$",
-                "feedback": "You used the rounded value of $h_1 = 0.7238$ to calculate $h_2$, which introduced a premature rounding error in your fourth decimal place."
-            },
-            {
-                "ans": "$$(a)\\ f(0.5) = 1.125,\\ f(1) = -1\\ (b)\\ h_1 = 1.0167,\\ h_2 = 1.1750$$",
-                "feedback": "You multiplied $h_n$ by 3 instead of cubing it ($h_n^3$) when calculating your iterations."
-            },
-            {
-                "ans": "$$(a)\\ f(0.5) = -1.125,\\ f(1) = 1\\ (b)\\ h_1 = 0.7238,\\ h_2 = 0.7299$$",
-                "feedback": "Your iterative calculations are correct, but you evaluated the boundary values of the function incorrectly in part (a)."
-            }
-        ],
-        "bradley_insight": {
-            "type": "deeper",
-            "title": "The Head Teacher's Eye: The Sign Change Rule",
-            "content": "The sign-change method relies on the continuous nature of polynomial curves. If a function's output switches from positive to negative over an interval, the curve must cross the horizontal axis ($y=0$) at some point between those coordinates, mathematically demonstrating that a root exists."
+   {
+    "id": "003193",
+    "date": "12 July 2026",
+    "major_area": "Algebra",
+    "topic": "Differentiation",
+    "subtopic": "Rates of Change from Graphs",
+    "difficulty": "8/9",
+    "q": "The depth of water, $y$ metres, in a harbour $t$ hours after midnight is modelled by the formula $y = 12t - t^3 + 10$ for the domain $0 \\le t \\le 3$.<br>(a) Find an expression for $\\dfrac{\\text{d}y}{\\text{d}t}$, the rate of change of the water depth.<br>(b) Find the time, $t$, at which the water is at its maximum depth.<br>(c) Calculate this maximum depth of the water.",
+    "steps": [
+        "For part (a), we differentiate the depth equation $y = 12t - t^3 + 10$ with respect to $t$ using the power rule.",
+        "Differentiating the term $12t$ gives $12$.",
+        "Differentiating the term $-t^3$ gives $-3t^2$ (multiplying by the exponent and reducing the power by 1).",
+        "Differentiating the constant term $10$ gives $0$.",
+        "Combining these derivatives gives: $\\dfrac{\\text{d}y}{\\text{d}t} = 12 - 3t^2$.",
+        "For part (b), the water is at its maximum depth at the stationary turning point, where the rate of change of the depth is zero: $\\dfrac{\\text{d}y}{\\text{d}t} = 0$.",
+        "This gives the equation: $12 - 3t^2 = 0$.",
+        "We solve for $t$: $3t^2 = 12 \\implies t^2 = 4$.",
+        "Taking the positive square root (since time must be a positive quantity) yields: $t = 2$ hours.",
+        "For part (c), we find the maximum depth by substituting the time $t = 2$ back into our *original* depth formula.",
+        "This gives the calculation: $y = 12(2) - (2)^3 + 10$.",
+        "Evaluating the arithmetic: $y = 24 - 8 + 10 = 16 + 10 = 26\\text{ m}$.",
+        "Final Answer: $$(a)\\ \\dfrac{\\text{d}y}{\\text{d}t} = 12 - 3t^2\\ (b)\\ t = 2\\text{ hours}\\ (c)\\ 26\\text{ m}$$"
+    ],
+    "wrong_options": [
+        {
+            "ans": "$$(a)\\ \\dfrac{\\text{d}y}{\\text{d}t} = 12 - t^2\\ (b)\\ t = 3.46\\text{ hours}\\ (c)\\ 37.7\\text{ m}$$",
+            "feedback": "You integrated or differentiated the cubic term incorrectly in part (a), failing to multiply by the power of 3 before reducing the index."
         },
-        "payhip_link": "https://payhip.com/b/IoYTp",
-        "button_text": "Master IGCSE Algebra: Download the Pack"
+        {
+            "ans": "$$(a)\\ \\dfrac{\\text{d}y}{\\text{d}t} = 12 - 3t^2\\ (b)\\ t = 4\\text{ hours}\\ (c)\\ -6\\text{ m}$$",
+            "feedback": "Your derivative is correct, but you solved $3t^2 = 12$ incorrectly, arriving at $t^2 = 16$ and $t = 4$."
+        },
+        {
+            "ans": "$$(a)\\ \\dfrac{\\text{d}y}{\\text{d}t} = 12 - 3t^2\\ (b)\\ t = 2\\text{ hours}\\ (c)\\ 0\\text{ m}$$",
+            "feedback": "You substituted the turning-point time $t = 2$ back into your derivative equation $\\dfrac{\\text{d}y}{\\text{d}t}$ instead of the original depth equation $y$."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Choosing the Right Equation",
+        "content": "A very common mistake when calculating maximums in calculus is substituting the turning-point value (here, $t = 2$) back into the derivative. Substituting into $\\dfrac{\\text{d}y}{\\text{d}t}$ will simply give you $0$, which is the gradient at that point. You must substitute back into the original function $y$ to find the actual depth."
     },
+    "payhip_link": "https://payhip.com/b/cpuDV",
+    "button_text": "Master IGCSE Differentiation: Download the Pack"
+},
     {
         "id": "003194",
         "date": "13 July 2026",
