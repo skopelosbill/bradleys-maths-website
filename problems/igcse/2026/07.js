@@ -636,7 +636,230 @@ const problemBank = [
         },
         "payhip_link": "https://payhip.com/b/FGC0u",
         "button_text": "Master IGCSE Probability: Download the Pack"
+    },
+    {
+        "id": "003197",
+        "date": "16 July 2026",
+        "major_area": "Geometry",
+        "topic": "Trigonometry",
+        "subtopic": "Sine Rule",
+        "difficulty": "7/8",
+        "img": "true",
+        "q": "The diagram shows a triangular plot of land $ABC$. $AC = 15\\text{ m}$, $BC = 11\\text{ m}$, and angle $BAC = 38^\\circ$.<br>(a) Find the size of the acute angle $ABC$. Give your answer correct to 1 decimal place.<br>(b) A secondary boundary post can be positioned at a different point $B'$ along the line $AB$ such that the length $CB' = 11\\text{ m}$ is preserved. State the size of the obtuse angle $AB'C$ correct to 1 decimal place.",
+        "steps": [
+            "For part (a), we use the Sine Rule because we are given two sides and an angle opposite to one of them.",
+            "The Sine Rule states: $\\dfrac{\\sin(ABC)}{AC} = \\dfrac{\\sin(BAC)}{BC}$.",
+            "Substituting our known values gives the equation: $\\dfrac{\\sin(ABC)}{15} = \\dfrac{\\sin(38^\\circ)}{11}$.",
+            "Rearranging to solve for $\\sin(ABC)$: $\\sin(ABC) = \\dfrac{15 \\times \\sin(38^\\circ)}{11}$.",
+            "Evaluating using a calculator: $\\sin(38^\\circ) \\approx 0.61566$.",
+            "This yields: $\\sin(ABC) = \\dfrac{15 \\times 0.61566}{11} = \\dfrac{9.2349}{11} \\approx 0.83954$.",
+            "Taking the inverse sine: $\\text{angle } ABC = \\arcsin(0.83954) \\approx 57.088^\\circ$.",
+            "Rounding this value to 1 decimal place gives $57.1^\\circ$.",
+            "For part (b), we consider the alternative triangle $AB'C$ created by swinging the side $BC$ inward.",
+            "This creates an internal isosceles triangle $CB'B$ where $CB' = CB = 11\\text{ m}$.",
+            "Since the base angles of an isosceles triangle are equal, angle $CB'B = \\text{angle } CBB' = 57.1^\\circ$.",
+            "The angles on a straight line at $B'$ sum to $180^\\circ$. Therefore, the obtuse angle $AB'C$ is supplementary to the acute angle $ABC$.",
+            "We calculate this as: $\\text{angle } AB'C = 180^\\circ - 57.088^\\circ = 122.912^\\circ$.",
+            "Rounding to 1 decimal place gives $122.9^\\circ$.",
+            "Final Answer: $$(a)\\ 57.1^\\circ\\ (b)\\ 122.9^\\circ$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ 57.1^\\circ\\ (b)\\ 32.9^\\circ$$",
+                "feedback": "For part (b), you subtracted the acute angle from $90^\\circ$ instead of $180^\\circ$. Obtuse angles must be greater than $90^\\circ$."
+            },
+            {
+                "ans": "$$(a)\\ 26.8^\\circ\\ (b)\\ 153.2^\\circ$$",
+                "feedback": "You set up your Sine Rule ratio incorrectly, multiplying by 11 and dividing by 15 when rearranging."
+            },
+            {
+                "ans": "$$(a)\\ 57.1^\\circ\\ (b)\\ 302.9^\\circ$$",
+                "feedback": "For part (b), you calculated the reflex angle around $B'$ instead of finding the obtuse interior angle of the triangle."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: The Ambiguous Case",
+            "content": "The ambiguous case of the Sine Rule occurs when you are given two sides and a non-included angle (SSA). If the side opposite the known angle is shorter than the other known side, two mathematically distinct triangles can be formed. The acute and obtuse angles at the second vertex will always sum to exactly $180^\\circ$ due to the properties of the internal isosceles triangle."
+        },
+        "payhip_link": "https://payhip.com/b/EaYM1",
+        "button_text": "Master IGCSE Trigonometry: Download the Pack"
+    },
+    {
+        "id": "003198",
+        "date": "17 July 2026",
+        "major_area": "Algebra",
+        "topic": "Algebraic Fractions",
+        "subtopic": "Algebraic Fractions 2",
+        "difficulty": "8/9",
+        "q": "Solve the algebraic equation for $x$:<br>$$\\dfrac{4}{2x - 3} + \\dfrac{3}{x + 2} = 3$$<br>Give your answers correct to 3 significant figures.",
+        "steps": [
+            "We begin by finding a common denominator to combine the two algebraic fractions: $(2x - 3)(x + 2)$.",
+            "Rewriting each fraction with the common denominator: $\\dfrac{4(x + 2) + 3(2x - 3)}{(2x - 3)(x + 2)} = 3$.",
+            "We expand the numerator: $4x + 8 + 6x - 9 = 10x - 1$.",
+            "Our equation is now: $\\dfrac{10x - 1}{(2x - 3)(x + 2)} = 3$.",
+            "To clear the fraction, we multiply both sides by the denominator: $10x - 1 = 3(2x - 3)(x + 2)$.",
+            "We expand the quadratic brackets on the right side: $3(2x^2 + 4x - 3x - 6) = 3(2x^2 + x - 6) = 6x^2 + 3x - 18$.",
+            "Equating the two sides gives: $10x - 1 = 6x^2 + 3x - 18$.",
+            "We subtract $10x$ and add $1$ to both sides to form a quadratic equation equal to zero: $6x^2 - 7x - 17 = 0$.",
+            "Applying the quadratic formula with $a = 6$, $b = -7$, and $c = -17$: $x = \\dfrac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+            "Substituting these coefficients yields: $x = \\dfrac{-(-7) \\pm \\sqrt{(-7)^2 - 4(6)(-17)}}{2(6)} = \\dfrac{7 \\pm \\sqrt{49 + 408}}{12} = \\dfrac{7 \\pm \\sqrt{457}}{12}$.",
+            "Evaluating the square root using a calculator: $\\sqrt{457} \\approx 21.3776$.",
+            "Calculating our two distinct solutions: $x_1 = \\dfrac{7 + 21.3776}{12} \\approx 2.3648$ and $x_2 = \\dfrac{7 - 21.3776}{12} \\approx -1.1981$.",
+            "Rounding both answers to 3 significant figures gives the final solutions as $x = 2.36$ or $x = -1.20$.",
+            "Final Answer: $$x = 2.36 \\text{ or } x = -1.20$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$x = 5.00 \\text{ or } x = -0.500$$",
+                "feedback": "You forgot to multiply the entire expanded denominator on the right side by the factor of 3, only equating the numerator to $(2x - 3)(x + 2)$."
+            },
+            {
+                "ans": "$$x = -2.36 \\text{ or } x = 1.20$$",
+                "feedback": "You made a sign error when applying the quadratic formula, using $-b = -7$ instead of $+7$ at the start of your calculation."
+            },
+            {
+                "ans": "$$x = 2.45 \\text{ or } x = -1.12$$",
+                "feedback": "You expanded the numerator incorrectly, writing $3(2x-3)$ as $6x - 3$ instead of distributing the 3 to both terms inside the bracket to get $6x - 9$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Distributing Multipliers",
+            "content": "A very common mistake when clearing denominators is forgetting to multiply the entire expanded quadratic on the right side of the equation by the constant (in this case, 3). Ensure you keep your expanded brackets inside a single set of parentheses before distributing your constant multiplier."
+        },
+        "payhip_link": "https://payhip.com/b/jJHdP",
+        "button_text": "Master IGCSE Algebra: Download the Pack"
+    },
+    {
+        "id": "003199",
+        "date": "18 July 2026",
+        "major_area": "Number",
+        "topic": "Bounds",
+        "subtopic": "Limits of Accuracy and Bounds",
+        "difficulty": "8/9",
+        "q": "A racing car completes a single lap of a test track of length $d = 4.2\\text{ km}$, correct to 2 significant figures. The time taken to complete the lap is $t = 54\\text{ seconds}$, correct to the nearest second.<br>(a) Find the lower bound and upper bound of the track length in metres.<br>(b) Calculate the upper bound for the average speed of the car during the lap in metres per second ($\\text{m/s}$). Give your answer correct to 1 decimal place.",
+        "steps": [
+            "For part (a), the track length $d = 4.2\\text{ km}$ is rounded to 2 significant figures, which is equivalent to the nearest $0.1\\text{ km}$.",
+            "The boundary offset is found by halving this unit of accuracy: $0.1 \\div 2 = 0.05\\text{ km}$.",
+            "This gives the bounds in kilometres: $\\text{Lower Bound} = 4.2 - 0.05 = 4.15\\text{ km}$ and $\\text{Upper Bound} = 4.2 + 0.05 = 4.25\\text{ km}$.",
+            "We convert these bounds to metres by multiplying by 1000: $\\text{Lower Bound} = 4150\\text{ m}$ and $\\text{Upper Bound} = 4250\\text{ m}$.",
+            "For part (b), we first find the bounds for the time. The time $t = 54\\text{ seconds}$ is recorded to the nearest second.",
+            "The boundary offset is: $1 \\div 2 = 0.5\\text{ seconds}$.",
+            "This gives the bounds: $\\text{Lower Bound of Time} = 53.5\\text{ s}$ and $\\text{Upper Bound of Time} = 54.5\\text{ s}$.",
+            "To calculate the upper bound of average speed (where $\\text{Speed} = \\text{Distance} \\div \\text{Time}$), we divide the upper bound of distance by the lower bound of time.",
+            "This gives the calculation: $\\text{Speed}_{\\text{UB}} = \\dfrac{4250\\text{ m}}{53.5\\text{ s}} \\approx 79.439\\text{ m/s}$.",
+            "Rounding this calculation to 1 decimal place gives $79.4\\text{ m/s}$.",
+            "Final Answer: $$(a)\\ \\text{Lower Bound: } 4150\\text{ m, Upper Bound: } 4250\\text{ m}\\ (b)\\ 79.4\\text{ m/s}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ \\text{Lower Bound: } 4150\\text{ m, Upper Bound: } 4250\\text{ m}\\ (b)\\ 76.1\\text{ m/s}$$",
+                "feedback": "You calculated the lower bound of speed instead of the upper bound by dividing the lower bound of distance by the upper bound of time."
+            },
+            {
+                "ans": "$$(a)\\ \\text{Lower Bound: } 4.15\\text{ m, Upper Bound: } 4.25\\text{ m}\\ (b)\\ 0.1\\text{ m/s}$$",
+                "feedback": "You forgot to convert the distance from kilometres to metres before calculating your speed bounds."
+            },
+            {
+                "ans": "$$(a)\\ \\text{Lower Bound: } 4150\\text{ m, Upper Bound: } 4250\\text{ m}\\ (b)\\ 78.0\\text{ m/s}$$",
+                "feedback": "You divided the upper bound of distance by the upper bound of time. To find the maximum speed, you must divide by the minimum possible time."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Dual Units and Maximising Fractions",
+            "content": "This question contains two major traps. First, check the units: distance is in kilometres but speed must be in m/s, so convert your distance bounds to metres first. Second, remember that to find the upper bound of any division, you must divide the upper bound of the numerator by the lower bound of the denominator."
+        },
+        "payhip_link": "https://payhip.com/b/qYp8g",
+        "button_text": "Master IGCSE Bounds: Download the Pack"
+    },
+    {
+        "id": "003200",
+        "date": "19 July 2026",
+        "major_area": "Geometry",
+        "topic": "Circle Geometry",
+        "subtopic": "Circle Theorems 2",
+        "difficulty": "8/9",
+        "img": "true",
+        "q": "A circular dial has a centre $O$. A straight indicator line $TBC$ is tangent to the circle at point $B$. $A$ and $D$ are points on the circumference such that $ABD$ is a triangle. The tangent angle $DBC$ is $62^\\circ$.<br>(a) Find the size of angle $DAB$. Give a geometric reason for your answer.<br>(b) Given that the angle subtended at the centre, $AOD$, is $112^\\circ$, calculate the size of angle $ABD$.",
+        "steps": [
+            "For part (a), we observe that $TBC$ is a tangent to the circle at point $B$, and $BD$ is a chord.",
+            "The angle formed between the tangent and the chord is given as angle $DBC = 62^\\circ$.",
+            "According to the alternate segment theorem, the angle between a tangent and a chord through the point of contact is equal to the angle subtended by the chord in the alternate segment.",
+            "The angle subtended by the chord $BD$ in the alternate segment is angle $DAB$.",
+            "Therefore, angle $DAB = 62^\\circ$. Our geometric reason is: 'The Alternate Segment Theorem'.",
+            "For part (b), we find the angle $ABD$ using the relationship between angles at the centre and angles at the circumference.",
+            "The angle subtended by the arc $AD$ at the centre is given as angle $AOD = 112^\\circ$.",
+            "According to the circle theorem, the angle subtended by an arc at the centre is twice the angle subtended at the circumference.",
+            "The angle subtended by the same arc at the circumference is angle $ABD$.",
+            "This gives: $\\text{angle } ABD = \\dfrac{1}{2} \\times \\text{angle } AOD = \\dfrac{112^\\circ}{2} = 56^\\circ$.",
+            "Final Answer: $$(a)\\ 62^\\circ\\ (b)\\ 56^\\circ$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ 62^\\circ\\ (b)\\ 224^\\circ$$",
+                "feedback": "You multiplied the angle at the centre by 2 instead of halving it to find the angle at the circumference in part (b)."
+            },
+            {
+                "ans": "$$(a)\\ 62^\\circ\\ (b)\\ 28^\\circ$$",
+                "feedback": "You assumed that the tangent-radius rule applies directly to make angle $ABD = 90^\\circ - 62^\\circ = 28^\\circ$."
+            },
+            {
+                "ans": "$$(a)\\ 28^\\circ\\ (b)\\ 56^\\circ$$",
+                "feedback": "You used the tangent-radius perpendicular rule incorrectly in part (a), subtracting $62^\\circ$ from $90^\\circ$ instead of applying the alternate segment theorem."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Identifying Segments",
+            "content": "To apply the alternate segment theorem correctly, identify the chord touching the tangent point. The angle between that chord and the tangent is equal to the angle at the circumference that looks directly at that chord. Practise drawing these triangles to visually lock in the theorem."
+        },
+        "payhip_link": "https://payhip.com/b/wm0xL",
+        "button_text": "Master IGCSE Circle Geometry: Download the Pack"
+    },
+    {
+        "id": "003201",
+        "date": "20 July 2026",
+        "major_area": "Probability & Statistics",
+        "topic": "Probability",
+        "subtopic": "Relative and Expected Frequencies",
+        "difficulty": "5/6",
+        "q": "A manufacturer tests a batch of LED light bulbs to estimate the probability of a bulb being defective. In a random sample of 250 bulbs, 4 are found to be defective.<br>(a) Find the relative frequency of defective bulbs in this sample as a decimal.<br>(b) The manufacturer produces a total of 180,000 bulbs in a month. Calculate the expected number of defective bulbs in this monthly production run.<br>(c) Explain how the manufacturer can make their estimate of the probability of a defective bulb more reliable.",
+        "steps": [
+            "For part (a), the relative frequency is the number of defective bulbs divided by the total number of bulbs in the sample.",
+            "This is calculated as: $\\text{Relative Frequency} = \\dfrac{4}{250}$.",
+            "To convert this to a decimal easily without a calculator, we multiply the numerator and the denominator by 4: $\\dfrac{16}{1000} = 0.016$.",
+            "For part (b), the expected number of defective bulbs is the product of the total monthly production and the relative frequency of defects.",
+            "This gives: $\\text{Expected Defectives} = 180,000 \\times 0.016$.",
+            "Evaluating the multiplication: $180,000 \\times \\dfrac{16}{1000} = 180 \\times 16 = 2,880\\text{ bulbs}$.",
+            "For part (c), we explain the relationship between sample size and statistical reliability.",
+            "The manufacturer can make their estimate more reliable by testing a larger sample size of bulbs. Larger samples reduce the impact of random variations and make the experimental relative frequency closer to the true probability.",
+            "Final Answer: $$(a)\\ 0.016\\ (b)\\ 2880\\text{ bulbs}\\ (c)\\ \\text{Test a larger sample size of bulbs}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ 0.016\\ (b)\\ 720\\text{ bulbs}\\ (c)\\ \\text{Test a larger sample size of bulbs}$$",
+                "feedback": "You made an arithmetic error when calculating the expected value in part (b), possibly by dividing by 40 instead of multiplying by $0.016$."
+            },
+            {
+                "ans": "$$(a)\\ 0.016\\ (b)\\ 720,000\\text{ bulbs}\\ (c)\\ \\text{Test a larger sample size of bulbs}$$",
+                "feedback": "You multiplied the total production by 4 directly instead of using the relative frequency of $0.016$ calculated in part (a)."
+            },
+            {
+                "ans": "$$(a)\\ 0.016\\ (b)\\ 2880\\text{ bulbs}\\ (c)\\ \\text{Test a smaller, more focused sample size}$$",
+                "feedback": "Your calculations are correct, but your explanation in part (c) is incorrect. Decreasing the sample size decreases statistical reliability and increases experimental error."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Scaling Decimal Fractions",
+            "content": "When working with decimals manually, converting them back to simple base-10 fractions makes the arithmetic clean. Evaluating $180,000 \\times \\dfrac{16}{1000}$ allows you to cross out three zeros instantly and perform the simple integer multiplication $180 \\times 16$."
+        },
+        "payhip_link": "https://payhip.com/b/csAoM",
+        "button_text": "Master IGCSE Statistics: Download the Pack"
     }
+
 
 
 ]
