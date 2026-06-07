@@ -831,6 +831,7 @@ h1, h2, h3 {
 /* Caution/Warning (Yellow) */
 .insight-caution {
     background-color: #fffde7;
+    border-color: #ffb300;
     color: #f57f17;
 }
 

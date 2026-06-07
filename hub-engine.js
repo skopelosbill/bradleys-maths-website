@@ -553,10 +553,10 @@ checkPremiumAccess() {
             <div id="sol-${prob.id}" class="step-container" style="display:none;">
                 <h3 style="text-align:left; color: var(--brand-purple);">Model Solution</h3>
                 ${prob.steps.map(s => `<div class="step" style="display:block;"><span class="step-text">Step</span>${s}</div>`).join('')}
-                <div class="bradley-insight-box insight-caution">
-                    <span class="insight-title">The Head Teacher's Eye</span>
-                    ${prob.bradley_insight.content}
-                </div>
+                <div class="bradley-insight-box insight-${prob.bradley_insight.type}">
+                <span class="insight-title">The Head Teacher's Eye</span>
+                ${prob.bradley_insight.content}
+            </div>
                 ${!isAudit ? `<div style="display:flex; gap:10px; margin-top:20px;"><button class="btn btn-purple" style="flex:1;" onclick="BradleyHub.serveArena('${this.state.currentGroup}')">Next Question</button><button class="btn" style="flex:1; background: var(--text-muted); color: white !important;" onclick="BradleyHub.renderMenu()">Change Area</button></div>` : ''}
                 <a href="${link}" target="_blank" class="btn-buy" style="display:block; text-align:center; margin-top:20px; background: var(--brand-green); color: white !important;">${bText}</a>
             </div>`;
@@ -778,7 +778,7 @@ checkPremiumAccess() {
                 <h3 style="text-align:left; color: var(--brand-purple);">Model Solution</h3>
                 ${prob.steps.map(s => `<div class="step" style="display:block !important; visibility:visible !important; opacity:1 !important; height:auto !important; margin-bottom:12px;"><span class="step-text" style="font-weight:bold; color:var(--brand-purple); margin-right:8px;">Step</span>${s}</div>`).join('')}
 
-                <div class="bradley-insight-box insight-caution" style="margin-top: 20px;">
+                <div class="bradley-insight-box insight-${prob.bradley_insight.type}" style="margin-top: 20px;">
                     <span class="insight-title">The Head Teacher's Eye</span>
                     ${prob.bradley_insight.content}
                 </div>

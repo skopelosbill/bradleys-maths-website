@@ -34,7 +34,7 @@ const problemBank = [
             }
         ],
         "bradley_insight": {
-            "type": "insight-caution",
+            "type": "caution",
             "title": "The Head Teacher's Eye: Base Area Duplication",
             "content": "A very common mistake when calculating the surface area of a cylinder is forgetting that a closed cylinder has two circular bases. Make sure you use $2\\pi r^2$ rather than just $\\pi r^2$. Additionally, simplifying surds at the very start of a problem prevents large numbers and arithmetic slips when expanding brackets later on."
         },
@@ -76,7 +76,7 @@ const problemBank = [
             }
         ],
         "bradley_insight": {
-            "type": "insight-pro-tip",
+            "type": "pro-tip",
             "title": "The Head Teacher's Eye: Fractional Roots",
             "content": "On non-calculator papers, scale factors are designed to simplify into perfect squares. If you convert fractions to decimals (like $\\dfrac{16}{9} \\approx 1.777...$), finding the square root becomes extremely difficult. Keep your ratios as simplified fractions, where taking the square root of the numerator and denominator is instantaneous."
         },
@@ -118,7 +118,7 @@ const problemBank = [
             }
         ],
         "bradley_insight": {
-            "type": "insight-deeper",
+            "type": "deeper",
             "title": "The Head Teacher's Eye: Output Variables in Range",
             "content": "A very common exam mistake is writing the final range inequality using the variable $x$. Remember that domain refers to inputs ($x$) and range refers to outputs ($g(x)$ or $y$). Writing $\\dfrac{8}{15} \\le x \\le \\dfrac{8}{3}$ will result in a lost mark, even if your boundary calculations are completely correct."
         },
@@ -160,7 +160,7 @@ const problemBank = [
             }
         ],
         "bradley_insight": {
-            "type": "insight-caution",
+            "type": "caution",
             "title": "The Head Teacher's Eye: Full Geometric Reasons",
             "content": "To get full reasoning marks, you must write out the complete geometric theorems. Shorthand phrases like 'angles on a line' or 'isosceles triangle' are frequently rejected by examiners. Write 'angles on a straight line sum to 180 degrees' and 'base angles of an isosceles triangle are equal' to guarantee the marks."
         },
@@ -203,7 +203,7 @@ const problemBank = [
             }
         ],
         "bradley_insight": {
-            "type": "insight-deeper",
+            "type": "deeper",
             "title": "The Head Teacher's Eye: Set Diagram Planning",
             "content": "Even if the question does not ask for a Venn diagram, sketching a quick one on your working page is the safest way to avoid mistakes. Fill in the central overlap (15) first, then subtract this from the main circles to find French-only (27) and Spanish-only (20). Subtracting these three segments from 80 easily reveals the 18 students on the outside."
         },
@@ -246,7 +246,7 @@ const problemBank = [
             }
         ],
         "bradley_insight": {
-            "type": "insight-caution",
+            "type": "caution",
             "title": "The Head Teacher's Eye: Squaring External Coefficients",
             "content": "When squaring both sides of an equation to clear a square root, remember that any coefficient outside the root must also be squared. In this formula, the leading $2\\pi$ must become $4\\pi^2$. Forgetting to square the numerical constant or the variable $\\pi$ is one of the most common algebraic errors in exams."
         },
@@ -287,7 +287,7 @@ const problemBank = [
             }
         ],
         "bradley_insight": {
-            "type": "insight-deeper",
+            "type": "deeper",
             "title": "The Head Teacher's Eye: Mass Scales with Volume",
             "content": "Always identify the dimensional property you are scaling. Lengths scale by $k$, areas scale by $k^2$, and volumes scale by $k^3$. Because mass is directly proportional to volume (assuming uniform density), any similarity question involving mass must use the cubic scale factor ($k^3$)."
         },
@@ -331,7 +331,7 @@ const problemBank = [
             }
         ],
         "bradley_insight": {
-            "type": "insight-pro-tip",
+            "type": "pro-tip",
             "title": "The Head Teacher's Eye: Standard Form Addition",
             "content": "When adding or subtracting small numbers in standard form, writing them using the more negative power of 10 is the safest strategy. Converting $3.5 \\times 10^{-5}$ into $35 \\times 10^{-6}$ allows you to complete the addition as a simple, error-free decimal sum ($35 + 2.4$)."
         },
@@ -371,7 +371,7 @@ const problemBank = [
             }
         ],
         "bradley_insight": {
-            "type": "insight-caution",
+            "type": "caution",
             "title": "The Head Teacher's Eye: Variable Class Widths",
             "content": "The single most common mistake in histogram questions is assuming all bars have the same width, as they do in bar charts. In histograms, the width of each bar represents the class interval. Always check the width of *each* interval independently before calculating your frequencies."
         },
@@ -414,7 +414,7 @@ const problemBank = [
             }
         ],
         "bradley_insight": {
-            "type": "insight-deeper",
+            "type": "deeper",
             "title": "The Head Teacher's Eye: Internal Pyramid Triangles",
             "content": "To calculate a slant height on a pyramid, you must construct a right-angled triangle using the vertical height $VO$, the diagonal segment from a corner to the centre $AO$, and the slant edge $VA$. Keep $AO$ in its exact surd form ($AO^2 = 18$) to prevent rounding errors when adding it to $VO^2$ to find $VA^2$."
         },
@@ -457,7 +457,7 @@ const problemBank = [
             }
         ],
         "bradley_insight": {
-            "type": "insight-pro-tip",
+            "type": "pro-tip",
             "title": "The Head Teacher's Eye: Rationalising Denominators",
             "content": "Whenever you divide an integer by a root (such as $\\dfrac{16}{\\sqrt{2}}$), you can quickly rationalise the fraction mentally. Halve the numerator and multiply it by the root on the bottom: $\\dfrac{16}{2} \\times \\sqrt{2} = 8\\sqrt{2}$. This instant trick is a massive time-saver on non-calculator papers."
         },
@@ -502,7 +502,7 @@ const problemBank = [
         }
     ],
     "bradley_insight": {
-        "type": "insight-caution",
+        "type": "caution",
         "title": "The Head Teacher's Eye: Choosing the Right Equation",
         "content": "A very common mistake when calculating maximums in calculus is substituting the turning-point value (here, $t = 2$) back into the derivative. Substituting into $\\dfrac{\\text{d}y}{\\text{d}t}$ will simply give you $0$, which is the gradient at that point. You must substitute back into the original function $y$ to find the actual depth."
     },
@@ -544,7 +544,7 @@ const problemBank = [
             }
         ],
         "bradley_insight": {
-            "type": "insight-caution",
+            "type": "caution",
             "title": "The Head Teacher's Eye: Upper Bound Inequality Symbols",
             "content": "When writing an error interval, the lower bound always uses the inclusive 'greater than or equal to' symbol ($\\le$), but the upper bound must use the exclusive 'less than' symbol ($<$). This is because any weight exactly equal to $14.85\\text{ kg}$ would round up to $14.9\\text{ kg}$ rather than down to $14.8\\text{ kg}$."
         },
@@ -586,7 +586,7 @@ const problemBank = [
             }
         ],
         "bradley_insight": {
-            "type": "insight-deeper",
+            "type": "deeper",
             "title": "The Head Teacher's Eye: Arc Length vs Sector Perimeter",
             "content": "Do not confuse arc length with sector perimeter. The arc length only represents the curved portion of the boundary. To find the total perimeter of a sector, you must always add the two straight enclosing radii ($2r$) back to your calculated arc length."
         },
@@ -630,7 +630,7 @@ const problemBank = [
             }
         ],
         "bradley_insight": {
-            "type": "insight-pro-tip",
+            "type": "pro-tip",
             "title": "The Head Teacher's Eye: Order in Combined Events",
             "content": "When a probability question asks for 'different designs', remember that order matters. Getting a striped shirt first and a plain shirt second (SP) is a completely separate branch on a tree diagram from getting a plain shirt first and a striped shirt second (PS). You must calculate both paths and add them together."
         },
@@ -678,7 +678,7 @@ const problemBank = [
             }
         ],
         "bradley_insight": {
-            "type": "insight-deeper",
+            "type": "deeper",
             "title": "The Head Teacher's Eye: The Ambiguous Case",
             "content": "The ambiguous case of the Sine Rule occurs when you are given two sides and a non-included angle (SSA). If the side opposite the known angle is shorter than the other known side, two mathematically distinct triangles can be formed. The acute and obtuse angles at the second vertex will always sum to exactly $180^\\circ$ due to the properties of the internal isosceles triangle."
         },
@@ -724,7 +724,7 @@ const problemBank = [
             }
         ],
         "bradley_insight": {
-            "type": "insight-caution",
+            "type": "caution",
             "title": "The Head Teacher's Eye: Distributing Multipliers",
             "content": "A very common mistake when clearing denominators is forgetting to multiply the entire expanded quadratic on the right side of the equation by the constant (in this case, 3). Ensure you keep your expanded brackets inside a single set of parentheses before distributing your constant multiplier."
         },
@@ -767,7 +767,7 @@ const problemBank = [
             }
         ],
         "bradley_insight": {
-            "type": "insight-caution",
+            "type": "caution",
             "title": "The Head Teacher's Eye: Dual Units and Maximising Fractions",
             "content": "This question contains two major traps. First, check the units: distance is in kilometres but speed must be in m/s, so convert your distance bounds to metres first. Second, remember that to find the upper bound of any division, you must divide the upper bound of the numerator by the lower bound of the denominator."
         },
@@ -811,7 +811,7 @@ const problemBank = [
             }
         ],
         "bradley_insight": {
-            "type": "insight-deeper",
+            "type": "deeper",
             "title": "The Head Teacher's Eye: Identifying Segments",
             "content": "To apply the alternate segment theorem correctly, identify the chord touching the tangent point. The angle between that chord and the tangent is equal to the angle at the circumference that looks directly at that chord. Practise drawing these triangles to visually lock in the theorem."
         },
@@ -852,7 +852,7 @@ const problemBank = [
             }
         ],
         "bradley_insight": {
-            "type": "insight-pro-tip",
+            "type": "pro-tip",
             "title": "The Head Teacher's Eye: Scaling Decimal Fractions",
             "content": "When working with decimals manually, converting them back to simple base-10 fractions makes the arithmetic clean. Evaluating $180,000 \\times \\dfrac{16}{1000}$ allows you to cross out three zeros instantly and perform the simple integer multiplication $180 \\times 16$."
         },
