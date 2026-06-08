@@ -23,6 +23,10 @@ self.addEventListener('install', event => {
         })
     );
     self.skipWaiting();
+
+    // ⭐ INSTALL TRACKING — fires once per install
+    fetch("https://api.countapi.xyz/hit/bradleysmaths/sw-installs")
+        .catch(() => {}); // fail silently if offline
 });
 
 // Activate: clean old caches
