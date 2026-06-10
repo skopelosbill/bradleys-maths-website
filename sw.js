@@ -1,5 +1,5 @@
 // sw.js – Bradley's Maths PWA Service Worker
-const CACHE_NAME = 'bradleys-maths-v2';
+const CACHE_NAME = 'bradleys-maths-v3';
 
 // Files that must always be available offline
 const APP_SHELL = [
