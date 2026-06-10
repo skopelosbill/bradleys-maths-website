@@ -8,7 +8,7 @@ const BradleyHub = {
         freeQuestionsLeft: localStorage.getItem('bradley_free_left') !== null ? parseInt(localStorage.getItem('bradley_free_left')) : 20,
         isPremium: localStorage.getItem('bradley_premium') === 'true',
         masterVault: [],
-        activeMonths: ['-01','01', '02', '03', '04', '05', '06', '07'], 
+        activeMonths: ['2025-12', '2026-01', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06', '2026-07'],
         currentGroup: null, 
         isTeacherMode: false
     },
@@ -322,16 +322,20 @@ async init(mode, tier) {
 
     // --- DATA LOADING ---
     async loadAllActiveMonths() {
-        this.state.masterVault = [];
-        for (const mm of this.state.activeMonths) {
-            await this.fetchFile(`problems/${this.state.tier}/2026/${mm}.js`);
-        }
-    },
+    this.state.masterVault = [];
+    for (const period of this.state.activeMonths) {
+        // period is "2025-12" -> splits into year="2025" and mm="12"
+        const [year, mm] = period.split('-');
+        
+        // Dynamically fetches: problems/igcse/2025/12.js
+        await this.fetchFile(`problems/${this.state.tier}/${year}/${mm}.js`);
+    }
+}
 
-    async loadMonthData(mm) {
+    /*async loadMonthData(mm) {
         this.state.masterVault = [];
         await this.fetchFile(`problems/${this.state.tier}/2026/${mm}.js`);
-    },
+    },*/
 
     async fetchFile(path) {
         try {
