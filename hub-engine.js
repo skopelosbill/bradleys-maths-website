@@ -552,10 +552,9 @@ if (prob.img === "true") {
     if (mm === '12' && d.getFullYear() === 2025) {
         mm = '-01';
     }
-    
     const dd = String(d.getDate()).padStart(2, '0');
     const t = this.state.tier === 'gcse' ? 'g' : 'i';
-    imgHTML = `<img src="images/${mm}/${t}_${dd}.png" class="question-img" style="margin: 20px auto; display: block;">`;
+    imgHTML = `<img src="images/${yyyy}-${mm}/${t}_${dd}.png" class="question-img" style="margin: 20px auto; display: block;">`;
 }
     const link = forcedLink || prob.payhip_link;
         const bText = forcedText || prob.button_text;
