@@ -6,11 +6,12 @@ function toggleMenu() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {      
-    // --- 1. DATE LOGIC ---
-    const today = new Date();
-    const dayNumeric = today.getDate(); // e.g., 22
-    const dayPadded = dayNumeric.toString().padStart(2, '0'); // e.g., "22"
-    const monthPadded = (today.getMonth() + 1).toString().padStart(2, '0'); // e.g., "04"
+   // --- 1. DATE LOGIC ---
+const today = new Date();
+const dayNumeric = today.getDate(); // e.g., 22
+const dayPadded = dayNumeric.toString().padStart(2, '0'); // e.g., "22"
+const monthPadded = (today.getMonth() + 1).toString().padStart(2, '0'); // e.g., "04"
+const yearNumeric = today.getFullYear(); // ⭐ ADDED: e.g., 2026
     
     const dateDisplay = document.getElementById('dateDisplay');
     if (dateDisplay) {
@@ -27,9 +28,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // --- 3. AUTOMATIC IMAGE PATH ---
-    // Determines tier based on URL and builds path: images/04/g_26.png
-    const tierSuffix = window.location.pathname.includes('igcse') ? 'i' : 'g';
-    const autoImgPath = `images/${monthPadded}/${tierSuffix}_${dayPadded}.png`;
+// Determines tier based on URL and builds path: images/2026-04/g_26.png
+const tierSuffix = window.location.pathname.includes('igcse') ? 'i' : 'g';
+const folderName = `${yearNumeric}-${monthPadded}`; // ⭐ ADDED: e.g., "2026-04" or "2025-12"
+const autoImgPath = `images/${folderName}/${tierSuffix}_${dayPadded}.png`;
 
     // --- 4. DISPLAY QUESTION ---
     const questionContainer = document.getElementById('math-question');

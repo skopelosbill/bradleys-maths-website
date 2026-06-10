@@ -1,5 +1,5 @@
-// hub-engine.js - Bradley Gold Standard Unified Engine (Monday Realignment)
-const BradleyHub = {
+// hub-engine.js - Bradley Gold Standard Unified Engine 
+  const BradleyHub = {
     state: {
         tier: localStorage.getItem('bradley_tier') || 'gcse',
         seenIds: JSON.parse(localStorage.getItem('bradley_seen_ids') || '[]'),
@@ -8,10 +8,11 @@ const BradleyHub = {
         freeQuestionsLeft: localStorage.getItem('bradley_free_left') !== null ? parseInt(localStorage.getItem('bradley_free_left')) : 20,
         isPremium: localStorage.getItem('bradley_premium') === 'true',
         masterVault: [],
-        activeMonths: ['2025-12', '2026-01', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06', '2026-07'],
+        activeMonths: ['2025-12', '2026-01', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06', '2026-07'], // Updated with standard YYYY-MM
         currentGroup: null, 
         isTeacherMode: false
     },
+
     // AUTOMATIC WORKSHEET LOOKUP DIRECTORY (Separated by Tier)
     worksheetDirectory: {
         gcse: {
@@ -303,44 +304,36 @@ const BradleyHub = {
             ];
         }
     },
-async init(mode, tier) {
 
-    this.state.isTeacherMode = (mode === 'audit');
-    this.state.tier = tier || this.state.tier;
-    localStorage.setItem('bradley_tier', this.state.tier);
+    async init(mode, tier) {
+        this.state.isTeacherMode = (mode === 'audit');
+        this.state.tier = tier || this.state.tier;
+        localStorage.setItem('bradley_tier', this.state.tier);
 
-    if (this.state.isTeacherMode) {
-        const picker = document.getElementById('month-picker');
-        await this.loadMonthData(picker ? picker.value : '04');
-        this.renderAuditList(); 
-    } else {
-        await this.loadAllActiveMonths();
-        this.renderMenu();
-    }
-},
-
+        if (this.state.isTeacherMode) {
+            const picker = document.getElementById('month-picker');
+            await this.loadMonthData(picker ? picker.value : '2026-04');
+            this.renderAuditList(); 
+        } else {
+            await this.loadAllActiveMonths();
+            this.renderMenu();
+        }
+    },
 
     // --- DATA LOADING ---
     async loadAllActiveMonths() {
-    this.state.masterVault = [];
-    for (const period of this.state.activeMonths) {
-        // period is "2025-12" -> splits into year="2025" and mm="12"
-        const [year, mm] = period.split('-');
-        
-        // Dynamically fetches: problems/igcse/2025/12.js
-        await this.fetchFile(`problems/${this.state.tier}/${year}/${mm}.js`);
-    }
-},
+        this.state.masterVault = [];
+        for (const period of this.state.activeMonths) {
+            const [year, mm] = period.split('-');
+            await this.fetchFile(`problems/${this.state.tier}/${year}/${mm}.js`);
+        }
+    },
 
-   async loadMonthData(period) {
-    this.state.masterVault = [];
-    
-    // period is "2025-12" -> splits into year="2025" and mm="12"
-    const [year, mm] = period.split('-');
-    
-    // Dynamically fetches: problems/igcse/2025/12.js or problems/igcse/2026/07.js
-    await this.fetchFile(`problems/${this.state.tier}/${year}/${mm}.js`);
-},
+    async loadMonthData(period) {
+        this.state.masterVault = [];
+        const [year, mm] = period.split('-');
+        await this.fetchFile(`problems/${this.state.tier}/${year}/${mm}.js`);
+    },
 
     async fetchFile(path) {
         try {
@@ -358,11 +351,8 @@ async init(mode, tier) {
     // --- VIEW B: THE STUDENT HUB (GAMIFIED) ---
     renderMenu() {
         const mapping = this.getMenuMapping();
-        
-        // Count only the correct answers for their tier
         const score = this.state.correctIds.filter(id => (this.state.tier === 'gcse' ? id.startsWith('002') : id.startsWith('003'))).length;
 
-        // Rank System Logic
         let rank = "Novice";
         let nextTarget = 5;
         if (score >= 50) { rank = "Grade 9 Elite"; nextTarget = "MAX"; }
@@ -380,7 +370,6 @@ async init(mode, tier) {
             ? `<div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(0,0,0,0.1); font-weight: bold; color: #059669;">🔓 Premium Access Unlocked</div>`
             : `<div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(0,0,0,0.1); font-weight: bold; color: #d97706;">⏳ Free Trial: ${this.state.freeQuestionsLeft} Questions Remaining</div>`;
 
-        // Exam Countdown Logic
         const today = new Date();
         const p1 = new Date("2026-05-14");
         const p2 = new Date("2026-06-03");
@@ -398,19 +387,14 @@ async init(mode, tier) {
 
         document.getElementById('hub-stage').innerHTML = `
             <div class="info-panel" style="background: white; border: 1px solid #ddd; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-                
-                <!-- THE COUNTDOWN HOOK -->
                 <div style="background: #fee2e2; border: 1px solid #f87171; color: #991b1b; padding: 12px; border-radius: 8px; font-size: 1.2rem; margin-bottom: 20px;">
                     ${this.state.tier === 'gcse' ? countdownText : 'IGCSE Exams Complete!'}
                 </div>
-
-                <!-- THE GAMIFICATION HOOK -->
                 <div class="hub-stats" style="background: var(--brand-green-light); padding: 20px; border-radius: 8px; margin-bottom: 25px; border: 2px solid var(--brand-green);">
                     <h3 style="margin: 0 0 10px 0; color: var(--brand-purple-dark);">Your Revision Rank: ${rank}</h3>
                     ${progressHTML}
                     ${premiumStatus}
                 </div>
-
                 <h3 style="color: var(--brand-purple);">Step 1: Choose an Area</h3>
                 <div class="menu-grid">
                     ${mapping.map(m => `<button class="menu-btn" onclick="BradleyHub.showDifficultyMenu('${m.id}')">${m.label}</button>`).join('')}
@@ -419,10 +403,9 @@ async init(mode, tier) {
                 <p style="margin-top:30px;"><a href="index.html" style="color: var(--text-muted); font-size: 0.85rem; text-decoration: underline;">Return to Homepage</a></p>
             </div>`;
     },
-    // --- STEP 2: THE NEW TARGET GRADE MENU ---
+
     showDifficultyMenu(groupId) {
         let diffButtons = '';
-        
         if (this.state.tier === 'gcse') {
             diffButtons = `
                 <button class="menu-btn" onclick="BradleyHub.serveArena('${groupId}', '35')">Grades 3 - 5</button>
@@ -454,23 +437,19 @@ async init(mode, tier) {
             </div>
         `;
     },
-    // --- PREMIUM ACCESS CHECK ---
-checkPremiumAccess() {
-    const unlocked = localStorage.getItem('app_unlocked') === 'true';
 
-    if (!unlocked) {
-        // User is not unlocked → send them to unlock page
-        window.location.href = "unlock.html";
-        return false;
-    }
+    checkPremiumAccess() {
+        const unlocked = localStorage.getItem('app_unlocked') === 'true';
+        if (!unlocked) {
+            window.location.href = "unlock.html";
+            return false;
+        }
+        this.state.isPremium = true;
+        return true;
+    },
 
-    // User is unlocked → allow access
-    this.state.isPremium = true;
-    return true;
-},
- serveArena(groupId, targetDifficulty = 'all') {
+    serveArena(groupId, targetDifficulty = 'all') {
         this.state.currentGroup = groupId;
-        // --- NEW: PAYWALL INTERCEPTOR ---
         if (!this.state.isPremium && this.state.freeQuestionsLeft <= 0) {
             this.renderPaywall();
             return;
@@ -485,10 +464,8 @@ checkPremiumAccess() {
             const unseen = !this.state.correctIds.includes(p.id);
             const isPast = new Date(p.date) <= today;
             
-            // --- NEW: THE DIFFICULTY MATCHER ---
             let diffMatch = true;
             if (targetDifficulty !== 'all' && p.difficulty) {
-                // This splits "7/8" into ["7", "8"], or "B/A*" into ["B", "A*"]
                 let grades = p.difficulty.replace(/[^A-Za-z0-9*]/g, ' ').split(/\s+/).filter(Boolean);
                 
                 const targetMap = {
@@ -497,7 +474,6 @@ checkPremiumAccess() {
                 };
                 
                 const validGrades = targetMap[targetDifficulty] || [];
-                // If any of the question's grades fall into the chosen bucket, it's a match!
                 diffMatch = grades.some(g => validGrades.includes(g));
             }
 
@@ -507,7 +483,6 @@ checkPremiumAccess() {
             return areaMatch && unseen && isPast && diffMatch;
         });
 
-        // What happens if they've answered all questions for that specific grade?
         if (pool.length === 0) {
             document.getElementById('hub-stage').innerHTML = `
                 <div class="info-panel" style="text-align: center;">
@@ -543,20 +518,18 @@ checkPremiumAccess() {
         card.className = 'daily-widget';
         if (isAudit) card.style.borderLeft = "8px solid #d9534f";
 
-       let imgHTML = '';
-if (prob.img === "true") {
-    const d = new Date(prob.date);
-    let mm = String(d.getMonth() + 1).padStart(2, '0');
-    
-    // ⭐ FIX: Redirect December 2025 images to the '-01' folder
-    if (mm === '12' && d.getFullYear() === 2025) {
-        mm = '-01';
-    }
-    const dd = String(d.getDate()).padStart(2, '0');
-    const t = this.state.tier === 'gcse' ? 'g' : 'i';
-    imgHTML = `<img src="images/${yyyy}-${mm}/${t}_${dd}.png" class="question-img" style="margin: 20px auto; display: block;">`;
-}
-    const link = forcedLink || prob.payhip_link;
+        let imgHTML = '';
+        if (prob.img === "true") {
+            const d = new Date(prob.date);
+            const yyyy = d.getFullYear(); 
+            const mm = String(d.getMonth() + 1).padStart(2, '0'); 
+            const folderName = `${yyyy}-${mm}`; 
+            const dd = String(d.getDate()).padStart(2, '0');
+            const t = this.state.tier === 'gcse' ? 'g' : 'i';
+            imgHTML = `<img src="images/${folderName}/${t}_${dd}.png" class="question-img" style="margin: 20px auto; display: block;">`;
+        }
+
+        const link = forcedLink || prob.payhip_link;
         const bText = forcedText || prob.button_text;
 
         card.innerHTML = `
@@ -568,32 +541,26 @@ if (prob.img === "true") {
                 <h3 style="text-align:left; color: var(--brand-purple);">Model Solution</h3>
                 ${prob.steps.map(s => `<div class="step" style="display:block;"><span class="step-text">Step</span>${s}</div>`).join('')}
                 <div class="bradley-insight-box insight-${prob.bradley_insight.type}">
-                <span class="insight-title">The Head Teacher's Eye</span>
-                ${prob.bradley_insight.content}
-            </div>
+                    <span class="insight-title">The Head Teacher's Eye</span>
+                    ${prob.bradley_insight.content}
+                </div>
                 ${!isAudit ? `<div style="display:flex; gap:10px; margin-top:20px;"><button class="btn btn-purple" style="flex:1;" onclick="BradleyHub.serveArena('${this.state.currentGroup}')">Next Question</button><button class="btn" style="flex:1; background: var(--text-muted); color: white !important;" onclick="BradleyHub.renderMenu()">Change Area</button></div>` : ''}
                 <a href="${link}" target="_blank" class="btn-buy" style="display:block; text-align:center; margin-top:20px; background: var(--brand-green); color: white !important;">${bText}</a>
             </div>`;
         return card;
     },
-       // --- THE UNIVERSAL ANSWER EXTRACTOR ---
+
     extractFinalAnswer(finalStep) {
         if (!finalStep) return "";
-
         let answerPart = finalStep.split("Final Answer:")[1];
         if (!answerPart) return "";
-
-        // Remove HTML tags but KEEP all the LaTeX formatting and $$ markers
         answerPart = answerPart.replace(/<[^>]*>/g, "");
         answerPart = answerPart.replace(/\s+/g, " ").trim();
-
         return answerPart;
     },
-   // --- THE DISTRACTOR GENERATOR ---
+
     generateDistractors(correct, prob) {
-        const distractors =[];
-        
-        // INEQUALITY HANDLER (Flips signs for plausible mistakes)
+        const distractors = [];
         if (correct.includes("<") || correct.includes(">") || correct.includes("\\le") || correct.includes("\\ge")) {
             let d1 = correct.replace(/(<|>|\\le|\\ge)/g, match => {
                 if (match === '<') return '>';
@@ -602,17 +569,15 @@ if (prob.img === "true") {
                 if (match === '\\ge') return '\\le';
                 return match;
             });
-            let d2 = correct.replace(/<|\\le/g, "="); // Changes range to an exact value
-            let d3 = correct.replace(/-?\d+/g, m => (parseInt(m) + 1).toString()); // Tweaks numbers slightly
+            let d2 = correct.replace(/<|\\le/g, "="); 
+            let d3 = correct.replace(/-?\d+/g, m => (parseInt(m) + 1).toString()); 
             return [...new Set([d1, d2, d3])];
         }
 
-        // STANDARD NUMBER HANDLER
         const numRegex = /-?\d+(\.\d+)?/g;
         const matches = correct.match(numRegex);
-
         if (!matches) {
-            return["Not enough information", "The opposite of the correct answer", "None of the parts are correct"];
+            return ["Not enough information", "The opposite of the correct answer", "None of the parts are correct"];
         }
 
         const tweakNumber = (valStr, strategy) => {
@@ -642,14 +607,13 @@ if (prob.img === "true") {
         distractors.push(d1, d2, d3);
         return [...new Set(distractors)];
     },
-  // --- THE ANSWER CHECKER ---
+
     checkAnswer(probId, isCorrect, feedbackHTML) {
         const feedbackBox = document.getElementById(`feedback-${probId}`);
         const optionsBox = document.getElementById(`options-${probId}`);
         if (!feedbackBox) return;
 
         feedbackBox.style.display = "block";
-
         let justLeveledUp = false;
         let rankName = "";
         
@@ -676,7 +640,6 @@ if (prob.img === "true") {
             feedbackBox.style.background = "#d1fae5";
             feedbackBox.style.color = "#065f46";
             feedbackBox.style.border = "1px solid #34d399";
-            // Uses the correct feedback passed from the button
             feedbackBox.innerHTML = feedbackHTML + extraMessage;
         
         } else {
@@ -686,7 +649,6 @@ if (prob.img === "true") {
             feedbackBox.style.background = "#fee2e2";
             feedbackBox.style.color = "#991b1b";
             feedbackBox.style.border = "1px solid #f87171";
-            // Uses the specific diagnostic feedback passed from the button
             feedbackBox.innerHTML = feedbackHTML + extraMessage;
         }
 
@@ -702,7 +664,6 @@ if (prob.img === "true") {
         const finalStep = prob.steps[prob.steps.length - 1];
         const correct = this.extractFinalAnswer(finalStep);
 
-        // Build options array as Objects containing the answer and the specific feedback
         let optionsObj = [];
         optionsObj.push({ 
             text: correct, 
@@ -710,7 +671,6 @@ if (prob.img === "true") {
             feedback: `<strong>Correct!</strong> Outstanding work. Here is the fully worked solution:` 
         });
 
-        // If we have written diagnostic options for this question, use them!
         if (prob.wrong_options && prob.wrong_options.length > 0) {
             prob.wrong_options.forEach(wo => {
                 optionsObj.push({ 
@@ -720,7 +680,6 @@ if (prob.img === "true") {
                 });
             });
         } else {
-            // Fallback for older questions not yet updated
             const distractors = this.generateDistractors(correct, prob);
             distractors.forEach(d => {
                 optionsObj.push({ 
@@ -731,26 +690,26 @@ if (prob.img === "true") {
             });
         }
 
-        // TRUE RANDOM SHUFFLE ALGORITHM for the generated options
         for (let i = optionsObj.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [optionsObj[i], optionsObj[j]] = [optionsObj[j], optionsObj[i]];
         }
         
-        // Pin "None of the above" to the bottom
         optionsObj.push({ 
             text: "None of the above", 
             isCorrect: false, 
-            feedback: `<strong>Not quite!</strong> It looks like you need some extra help with this topic.  Perhaps you should consider purchasing the worksheet below for targeted help.` 
+            feedback: `<strong>Not quite!</strong> It looks like you need some extra help with this topic. Perhaps you should consider purchasing the worksheet below for targeted help.` 
         });
 
         let imgHTML = '';
         if (prob.img === "true") {
             const d = new Date(prob.date);
+            const yyyy = d.getFullYear(); 
             const mm = String(d.getMonth() + 1).padStart(2, '0');
+            const folderName = `${yyyy}-${mm}`; 
             const dd = String(d.getDate()).padStart(2, '0');
             const t = this.state.tier === 'gcse' ? 'g' : 'i';
-            imgHTML = `<img src="images/${mm}/${t}_${dd}.png" class="question-img" style="margin: 20px auto; display: block;">`;
+            imgHTML = `<img src="images/${folderName}/${t}_${dd}.png" class="question-img" style="margin: 20px auto; display: block;">`;
         }
 
         const tierDirectory = this.worksheetDirectory[this.state.tier] || {};
@@ -775,7 +734,6 @@ if (prob.img === "true") {
                 <p style="margin-bottom: 15px; font-weight: bold; color: var(--brand-purple); text-align: center;">Select your answer:</p>
                 <div style="display: flex; flex-direction: column; gap: 8px; align-items: center;">
                     ${optionsObj.map(opt => {
-                        // Safely escape backslashes and quotes to prevent breaking the HTML onclick handler
                         const safeFeedback = opt.feedback.replace(/\\/g, "\\\\").replace(/'/g, "\\'").replace(/"/g, "&quot;");
                         return `
                         <button class="mcq-btn" style="width: 100%; max-width: 400px; padding: 12px; font-size: 1rem; border: 1px solid var(--brand-purple); border-radius: 6px; background: white; cursor: pointer;" 
@@ -805,16 +763,16 @@ if (prob.img === "true") {
                 <a href="${finalLink}" target="_blank" class="btn-buy" style="display:block; text-align:center; margin-top:20px; background: var(--brand-green); color: white !important;">${finalText}</a>
             </div>
         `;
-
         return card;
     },
-    // --- REVEAL OPTIONS ---
+
     revealOptions(id) {
         const opts = document.getElementById(`options-${id}`);
         const act = document.getElementById(`action-area-${id}`);
         if (opts) opts.style.display = 'block';
         if (act) act.style.display = 'none';
     },
+
     revealSolution(id, isAudit) {
         const sol = document.getElementById(`sol-${id}`);
         const act = document.getElementById(`action-area-${id}`);
@@ -824,8 +782,6 @@ if (prob.img === "true") {
         if (!isAudit && !this.state.seenIds.includes(id)) {
             this.state.seenIds.push(id);
             localStorage.setItem('bradley_seen_ids', JSON.stringify(this.state.seenIds));
-            
-            // --- NEW: TICK DOWN THE FREE TRIAL ---
             if (!this.state.isPremium) {
                 this.state.freeQuestionsLeft--;
                 localStorage.setItem('bradley_free_left', this.state.freeQuestionsLeft.toString());
@@ -843,27 +799,17 @@ if (prob.img === "true") {
         if (window.MathJax) MathJax.typesetPromise();
     },
 
-    // --- AUDIT PAGE CONTROLS ---
-    
-    // 1. Fix for changing the month
     loadSpecificMonth(mm) { 
-        // Update the dropdown visually so it matches what we clicked
         const picker = document.getElementById('month-picker');
         if (picker && picker.value !== mm) {
             picker.value = mm;
         }
-        // Re-initialize to fetch the new data
         this.init('audit', this.state.tier); 
     },
 
-    // 2. New Fix for changing the tier (GCSE to IGCSE)
     switchAuditTier(newTier) {
         this.state.tier = newTier;
         localStorage.setItem('bradley_tier', newTier);
-        
-        // Re-initialize the page with the newly selected tier
         this.init('audit', newTier);
     }
 };
- //TEMPORARY: Force paywall for testing
-  //  //BradleyHub.state.freeQuestionsLeft = 0;
