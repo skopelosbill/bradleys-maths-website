@@ -534,14 +534,20 @@ checkPremiumAccess() {
         card.className = 'daily-widget';
         if (isAudit) card.style.borderLeft = "8px solid #d9534f";
 
-        let imgHTML = '';
-        if (prob.img === "true") {
-            const d = new Date(prob.date);
-            const mm = String(d.getMonth() + 1).padStart(2, '0');
-            const dd = String(d.getDate()).padStart(2, '0');
-            const t = this.state.tier === 'gcse' ? 'g' : 'i';
-            imgHTML = `<img src="images/${mm}/${t}_${dd}.png" class="question-img" style="margin: 20px auto; display: block;">`;
-        }
+       let imgHTML = '';
+if (prob.img === "true") {
+    const d = new Date(prob.date);
+    let mm = String(d.getMonth() + 1).padStart(2, '0');
+    
+    // ⭐ FIX: Redirect December 2025 images to the '-01' folder
+    if (mm === '12' && d.getFullYear() === 2025) {
+        mm = '-01';
+    }
+    
+    const dd = String(d.getDate()).padStart(2, '0');
+    const t = this.state.tier === 'gcse' ? 'g' : 'i';
+    imgHTML = `<img src="images/${mm}/${t}_${dd}.png" class="question-img" style="margin: 20px auto; display: block;">`;
+}
     const link = forcedLink || prob.payhip_link;
         const bText = forcedText || prob.button_text;
 
