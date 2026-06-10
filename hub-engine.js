@@ -8,7 +8,7 @@ const BradleyHub = {
         freeQuestionsLeft: localStorage.getItem('bradley_free_left') !== null ? parseInt(localStorage.getItem('bradley_free_left')) : 20,
         isPremium: localStorage.getItem('bradley_premium') === 'true',
         masterVault: [],
-        activeMonths: ['01', '02', '03', '04', '05', '06', '07'], // (Make sure 06 is in here now!)
+        activeMonths: ['-01','01', '02', '03', '04', '05', '06', '07'], 
         currentGroup: null, 
         isTeacherMode: false
     },

@@ -48,7 +48,7 @@ const problemBank = [
         "topic": "Algebraic Expressions",
         "subtopic": "Expanding Products",
         "difficulty": "B/C",
-        "q": "Expand and simplify the following expression:<br>$$(x - 4)(x + 2)(2x + 1)$$$",
+        "q": "Expand and simplify the following expression:<br>$$(x - 4)(x + 2)(2x + 1)$$",
         "steps": [
             "We begin by expanding the first two brackets, $(x - 4)(x + 2)$.",
             "Multiplying the terms inside: $x^2 + 2x - 4x - 8$.",
@@ -87,7 +87,7 @@ const problemBank = [
         "topic": "Standard Form",
         "subtopic": "Standard Form",
         "difficulty": "C/D",
-        "q": "Work out the value of:<br>$$(5 \\times 10^4) + (6 \\times 10^3)$$$<br>Give your answer in standard form.",
+        "q": "Work out the value of:<br>$$(5 \\times 10^4) + (6 \\times 10^3)$$<br>Give your answer in standard form.",
         "steps": [
             "To add these numbers, we can first convert them from standard form into ordinary decimal numbers.",
             "The first term is: $5 \\times 10^4 = 50000$.",
@@ -125,7 +125,7 @@ const problemBank = [
         "topic": "Differentiation",
         "subtopic": "Stationary Points",
         "difficulty": "A/A*",
-        "q": "An open-topped box has a square base of side $x\\text{ cm}$ and a height of $h\\text{ cm}$. The volume of the box is $500\\text{ cm}^3$.<br>(a) Show that the external surface area, $S\\text{ cm}^2$, of the box is given by:<br>$$S = x^2 + \\dfrac{2000}{x}$$$<br>(b) Find $\\dfrac{\\text{d}S}{\\text{d}x}$.<br>(c) Calculate the value of $x$ that minimises the surface area of the box.",
+        "q": "An open-topped box has a square base of side $x\\text{ cm}$ and a height of $h\\text{ cm}$. The volume of the box is $500\\text{ cm}^3$.<br>(a) Show that the external surface area, $S\\text{ cm}^2$, of the box is given by:<br>$$S = x^2 + \\dfrac{2000}{x}$$<br>(b) Find $\\dfrac{\\text{d}S}{\\text{d}x}$.<br>(c) Calculate the value of $x$ that minimises the surface area of the box.",
         "steps": [
             "For part (a), we first write down the formula for the volume $V$ of a cuboid with a square base of side $x$ and height $h$: $V = x^2 h$.",
             "Since the volume is given as $500\\text{ cm}^3$, we set up the equation: $x^2 h = 500$.",
