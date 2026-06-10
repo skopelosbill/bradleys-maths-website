@@ -332,10 +332,15 @@ async init(mode, tier) {
     }
 }
 
-    /*async loadMonthData(mm) {
-        this.state.masterVault = [];
-        await this.fetchFile(`problems/${this.state.tier}/2026/${mm}.js`);
-    },*/
+   async loadMonthData(period) {
+    this.state.masterVault = [];
+    
+    // period is "2025-12" -> splits into year="2025" and mm="12"
+    const [year, mm] = period.split('-');
+    
+    // Dynamically fetches: problems/igcse/2025/12.js or problems/igcse/2026/07.js
+    await this.fetchFile(`problems/${this.state.tier}/${year}/${mm}.js`);
+}
 
     async fetchFile(path) {
         try {
