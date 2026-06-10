@@ -25,7 +25,7 @@ self.addEventListener('install', event => {
     self.skipWaiting();
 
     // ⭐ INSTALL TRACKING — fires once per install
-    fetch("https://api.countapi.xyz/hit/bradleysmaths/sw-installs")
+    fetch("https://countapi.mileshilliard.com/api/v1/hit/bradleysmaths_sw_installs")
         .catch(() => {}); // fail silently if offline
 });
 
