@@ -330,7 +330,7 @@ async init(mode, tier) {
         // Dynamically fetches: problems/igcse/2025/12.js
         await this.fetchFile(`problems/${this.state.tier}/${year}/${mm}.js`);
     }
-}
+},
 
    async loadMonthData(period) {
     this.state.masterVault = [];
@@ -340,7 +340,7 @@ async init(mode, tier) {
     
     // Dynamically fetches: problems/igcse/2025/12.js or problems/igcse/2026/07.js
     await this.fetchFile(`problems/${this.state.tier}/${year}/${mm}.js`);
-}
+},
 
     async fetchFile(path) {
         try {
