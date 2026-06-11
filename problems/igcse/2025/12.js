@@ -1273,8 +1273,8 @@ const problemBank = [
                 "feedback": "You divided 16 by 2 instead of taking the square root to solve for $a$ at the final step."
             },
             {
-                "ans": "$$k = 0,\\ a = 4$$",
-                "feedback": "You assumed that $a^0 = 0$, which led to an incorrect value of $k = 0$."
+                "ans": "$$k = 4,\\ a = 3$$",
+                "feedback": "You mixed up the roles of $k$ and $a$. Using the point $(0,3)$ gives $k = 3$, not $a = 3$."
             },
             {
                 "ans": "$$k = 3,\\ a = -4$$",
