@@ -510,6 +510,273 @@ const problemBank = [
         },
         "payhip_link": "https://payhip.com/b/x02Ge",
         "button_text": "Master IGCSE Algebra: Download the Pack"
+    },
+    {
+        "id": "002982",
+        "date": "13 December 2025",
+        "major_area": "Algebra",
+        "topic": "Simultaneous Equations",
+        "subtopic": "Simultaneous Linear Equations",
+        "difficulty": "C/D",
+        "q": "Solve the simultaneous equations:<br>$$3x + 2y = 14$$<br>$$5x - 3y = 17$$<br>You must show all your working.",
+        "steps": [
+            "We begin by multiplying the equations to make the absolute coefficients of $y$ equal.",
+            "We multiply the first equation by 3: $3(3x + 2y) = 3(14) \\implies 9x + 6y = 42$.",
+            "We multiply the second equation by 2: $2(5x - 3y) = 2(17) \\implies 10x - 6y = 34$.",
+            "Now, we add the two modified equations together to eliminate the $y$ terms: $(9x + 10x) + (6y - 6y) = 42 + 34 \\implies 19x = 76$.",
+            "Dividing both sides by 19: $x = \\dfrac{76}{19} = 4$.",
+            "We substitute $x = 4$ back into the first original equation to find $y$: $3(4) + 2y = 14$.",
+            "This simplifies to: $12 + 2y = 14 \\implies 2y = 2 \\implies y = 1$.",
+            "Final Answer: $$x = 4,\\ y = 1$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$x = 4,\\ y = 13$$",
+                "feedback": "You calculated $x = 4$ correctly, but you made an arithmetic error when substituting it back to solve for $y$."
+            },
+            {
+                "ans": "$$x = 8,\\ y = 1$$",
+                "feedback": "You made an arithmetic error when adding your equations, which led to an incorrect value for $x$."
+            },
+            {
+                "ans": "$$x = 1,\\ y = 4$$",
+                "feedback": "You calculated the correct numerical values of 1 and 4, but you reversed the identities of the variables $x$ and $y$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Checking Simultaneous Roots",
+            "content": "You can always guarantee full marks on simultaneous equations by substituting your final values back into the equation you did not use for substitution. In this case, checking $5(4) - 3(1) = 20 - 3 = 17$ confirms your answers are completely correct."
+        },
+        "payhip_link": "https://payhip.com/b/XW1im",
+        "button_text": "Master IGCSE Simultaneous Equations: Download the Pack"
+    },
+    {
+        "id": "002983",
+        "date": "14 December 2025",
+        "major_area": "Algebra",
+        "topic": "Differentiation",
+        "subtopic": "Stationary Points",
+        "difficulty": "A/B",
+        "q": "A curve has the equation $y = 2x^3 - 5x^2 + 8$.<br>(a) Find $\\dfrac{\\text{d}y}{\\text{d}x}$.<br>(b) Find the coordinates of the two turning points of the curve.",
+        "steps": [
+            "For part (a), we differentiate $y = 2x^3 - 5x^2 + 8$ with respect to $x$ using the power rule.",
+            "Differentiating $2x^3$ gives $6x^2$. Differentiating $-5x^2$ gives $-10x$. Differentiating the constant 8 gives 0.",
+            "This yields the derivative: $\\dfrac{\\text{d}y}{\\text{d}x} = 6x^2 - 10x$.",
+            "For part (b), turning points occur at the stationary points where the gradient is zero: $\\dfrac{\\text{d}y}{\\text{d}x} = 0$.",
+            "We set our derivative to zero: $6x^2 - 10x = 0$.",
+            "We factorise the quadratic expression: $2x(3x - 5) = 0$.",
+            "This yields two roots: $x = 0$ or $x = \\dfrac{5}{3}$ (or approximately $1.67$).",
+            "To find the corresponding y-coordinates, we substitute these $x$ values back into the <strong>original</strong> curve equation.",
+            "When $x = 0$: $y = 2(0)^3 - 5(0)^2 + 8 = 8$. The first turning point is $(0, 8)$.",
+            "When $x = \\dfrac{5}{3}$: $y = 2\\left(\\dfrac{5}{3}\\right)^3 - 5\\left(\\dfrac{5}{3}\\right)^2 + 8 = 2\\left(\\dfrac{125}{27}\\right) - 5\\left(\\dfrac{25}{9}\\right) + 8$.",
+            "Using a common denominator of 27: $y = \\dfrac{250}{27} - \\dfrac{375}{27} + \\dfrac{216}{27} = \\dfrac{91}{27}$ (or approximately $3.37$).",
+            "The coordinates of the two turning points are $(0, 8)$ and $\\left(\\dfrac{5}{3}, \\dfrac{91}{27}\\right)$.",
+            "Final Answer: $$(a)\\ \\dfrac{\\text{d}y}{\\text{d}x} = 6x^2 - 10x\\ (b)\\ (0, 8) \\text{ and } \\left(\\dfrac{5}{3}, \\dfrac{91}{27}\\right)$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ \\dfrac{\\text{d}y}{\\text{d}x} = 6x^2 - 10x\\ (b)\\ (0, 0) \\text{ and } \\left(\\dfrac{5}{3}, 0\\right)$$",
+                "feedback": "You substituted your $x$ coordinates back into your derivative $\\dfrac{\\text{d}y}{\\text{d}x}$ instead of the original curve equation $y$."
+            },
+            {
+                "ans": "$$(a)\\ \\dfrac{\\text{d}y}{\\text{d}x} = 6x^2 - 10x\\ (b)\\ (0, 8) \\text{ and } \\left(-\\dfrac{5}{3}, \\dfrac{401}{27}\\right)$$",
+                "feedback": "You factorised $6x^2 - 10x = 0$ incorrectly, resulting in a positive sign inside the bracket and an incorrect root of $x = -\\dfrac{5}{3}$."
+            },
+            {
+                "ans": "$$(a)\\ \\dfrac{\\text{d}y}{\\text{d}x} = 2x^2 - 5x\\ (b)\\ (0, 8) \\text{ and } \\left(2.5, 4\\right)$$",
+                "feedback": "You did not apply the power rule correctly when differentiating. Remember to multiply by the power before reducing it."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Choosing the Right Equation",
+            "content": "A very common mistake when calculating turning points is substituting the $x$-coordinates back into the derivative. Substituting into $\\dfrac{\\text{d}y}{\\text{d}x}$ will simply give you $0$ (which is the gradient at that point). You must substitute back into the original function $y$ to find the actual coordinates."
+        },
+        "payhip_link": "https://payhip.com/b/pL8io",
+        "button_text": "Master IGCSE Stationary Points: Download the Pack"
+    },
+    {
+        "id": "002984",
+        "date": "15 December 2025",
+        "major_area": "Probability & Statistics",
+        "topic": "Data Presentation",
+        "subtopic": "Statistical Charts and Diagrams",
+        "difficulty": "D/E",
+        "q": "The marks scored by 11 students in a test are shown below:<br>$$\\text{24, 18, 32, 27, 19, 24, 35, 15, 29, 24, 31}$$<br>(a) Complete the stem-and-leaf diagram to show this information.<br>(b) Find the median mark.",
+        "steps": [
+            "For part (a), we organise the data by grouping the scores into stems based on their tens digit (1, 2, and 3).",
+            "The leaves represent the units digits. According to standard practice, the leaves must be arranged in ascending numerical order.",
+            "For stem 1 (tens of 10): the numbers are 15, 18, 19, which give leaves: 5, 8, 9.",
+            "For stem 2 (tens of 20): the numbers are 24, 24, 24, 27, 29, which give leaves: 4, 4, 4, 7, 9.",
+            "For stem 3 (tens of 30): the numbers are 31, 32, 35, which give leaves: 1, 2, 5.",
+            "This completes our ordered stem-and-leaf diagram as modelled below.",
+            "For part (b), to find the median, we first note there are 11 data points.",
+            "The position of the median is: $\\text{Position} = \\dfrac{11 + 1}{2} = 6\\text{th value}$.",
+            "Counting to the 6th value on our ordered diagram: the 6th leaf is 4 in the 2nd stem, which represents a score of $24$.",
+            "Final Answer: $$(a)\\ \\text{Ordered diagram completed}\\ (b)\ 24$$<img src='images/2025-12/i_15_ans.png' alt='ordered stem and leaf diagram' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'>"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ \\text{Unordered diagram completed}\\ (b)\ 24$$",
+                "feedback": "Your median is correct, but the leaves in your stem-and-leaf diagram are not in ascending numerical order."
+            },
+            {
+                "ans": "$$(a)\\ \\text{Ordered diagram completed}\\ (b)\ 25.6$$",
+                "feedback": "You calculated the mean average ($282 \\div 11 \\approx 25.6$) instead of finding the middle median value."
+            },
+            {
+                "ans": "$$(a)\\ \\text{Ordered diagram completed}\\ (b)\ 27$$",
+                "feedback": "You miscalculated the position of the median or made a counting error on the diagram, arriving at the 7th value ($27$) instead of the 6th value ($24$)."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Ordering the Leaves",
+            "content": "Leaving the units digits unordered on a stem-and-leaf diagram is a very frequent source of lost marks. Always complete a rough, unordered draft first, then write out your final version with the leaves sorted in strict ascending order from left to right."
+        },
+        "payhip_link": "https://payhip.com/b/xuigq",
+        "button_text": "Master IGCSE Charts: Download the Pack"
+    },
+    {
+        "id": "002985",
+        "date": "16 December 2025",
+        "major_area": "Geometry",
+        "topic": "Trigonometry",
+        "subtopic": "The Cosine Rule",
+        "difficulty": "A/B",
+        "img": "true",
+        "q": "A ship sails from a port $O$ for $15\\text{ km}$ on a bearing of $040^\\circ$ to point $A$. A second ship sails from port $O$ for $22\\text{ km}$ on a bearing of $110^\\circ$ to point $B$.<br>(a) Calculate the distance $AB$. Give your answer correct to 3 significant figures.<br>(b) Calculate the bearing of $B$ from $A$. Give your answer correct to 1 decimal place.",
+        "steps": [
+            "For part (a), we first find the interior angle $AOB$ between the two ships\\' paths.",
+            "This is the difference between their bearings: $\\text{angle } AOB = 110^\\circ - 40^\\circ = 70^\\circ$.",
+            "We apply the Cosine Rule to find the unknown side $AB$ (which lies opposite the angle $O = 70^\\circ$): $AB^2 = OA^2 + OB^2 - 2(OA)(OB) \\cos(AOB)$.",
+            "Substituting our known values: $AB^2 = 15^2 + 22^2 - 2(15)(22) \\cos(70^\\circ)$.",
+            "Evaluating the arithmetic: $AB^2 = 225 + 484 - 660 \\cos(70^\\circ) = 709 - 660 \\cos(70^\\circ)$.",
+            "Using a calculator: $\\cos(70^\\circ) \\approx 0.34202$. This gives: $AB^2 = 709 - 660(0.34202) = 709 - 225.733 = 483.267$.",
+            "Taking the square root of both sides gives: $AB = \\sqrt{483.267} \\approx 21.983\\text{ km}$.",
+            "Rounding this distance to 3 significant figures gives $22.0\\text{ km}$.",
+            "For part (b), we calculate the bearing of $B$ from $A$.",
+            "First, we draw the parallel North lines at both $O$ and $A$. The alternate interior angle from the North line at $O$ to the segment $OA$ shows that the bearing of $O$ from $A$ is $040^\\circ + 180^\\circ = 220^\\circ$.",
+            "Next, we use the Sine Rule to calculate the interior angle $OAB$: $\\dfrac{\\sin(OAB)}{OB} = \\dfrac{\\sin(AOB)}{AB}$.",
+            "Substituting the values: $\\dfrac{\\sin(OAB)}{22} = \\dfrac{\\sin(70^\\circ)}{21.983}$.",
+            "Rearranging to solve for $\\sin(OAB)$: $\\sin(OAB) = \\dfrac{22 \\times \\sin(70^\\circ)}{21.983}$.",
+            "Evaluating the right side: $\\sin(OAB) \\approx \\dfrac{22 \\times 0.93969}{21.983} \\approx 0.94042$.",
+            "Taking the inverse sine: $\\text{angle } OAB \\approx \\arcsin(0.94042) \\approx 70.1^\\circ$.",
+            "Since Port $B$ lies to the left of the line $AO$ when viewed from $A$, we subtract the interior angle $OAB$ from the back bearing of $220^\\circ$: $\\text{Bearing} = 220^\\circ - 70.1^\\circ = 149.9^\\circ$.",
+            "Final Answer: $$(a)\\ 22.0\\text{ km}\\ (b)\\ 149.9^\\circ$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ 30.6\\text{ km}\\ (b)\\ 149.9^\\circ$$",
+                "feedback": "You made a sign error in your Cosine Rule equation, adding the $2(OA)(OB)\\cos(Q)$ term instead of subtracting it."
+            },
+            {
+                "ans": "$$(a)\\ 22.0\\text{ km}\\ (b)\\ 290.1^\\circ$$",
+                "feedback": "For part (b), you added the interior angle $OAB$ ($70.1^\\circ$) to the back bearing of $220^\\circ$ instead of subtracting it."
+            },
+            {
+                "ans": "$$(a)\\ 32.5\\text{ km}\\ (b)\\ 140.0^\\circ$$",
+                "feedback": "You calculated an incorrect interior angle $AOB$ by adding the bearings instead of subtracting them."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Alternate Interior Angles in Bearings",
+            "content": "Always draw a vertical North line at every point where a direction changes. Drawing parallel North lines allows you to use co-interior or alternate interior angles (like the $40^\\circ$ angle at $O$ and $A$) to establish an initial reference line, simplifying your final bearing calculations."
+        },
+        "payhip_link": "https://payhip.com/b/KLYAp",
+        "button_text": "Master IGCSE Trigonometry: Download the Pack"
+    },
+    {
+        "id": "002986",
+        "date": "17 December 2025",
+        "major_area": "Geometry",
+        "topic": "Circle Geometry",
+        "subtopic": "Circle Theorems 1",
+        "difficulty": "B/C",
+        "img": "true",
+        "q": "$P$, $Q$, $R$, and $S$ are points on a circle with centre $O$. $PR$ is a diameter of the circle. Angle $PQS = 44^\\circ$ and angle $QSR = 31^\\circ$.<br>(a) Find angle $PRS$.<br>(b) Find angle $RQS$.<br>(c) Find angle $POQ$.",
+        "steps": [
+            "For part (a), we look at the angle $PRS$. This angle is subtended by the arc $PS$ at the circumference.",
+            "According to the circle theorem, angles subtended by the same arc (or in the same segment) are equal.",
+            "Since angle $PQS$ is also subtended by the arc $PS$ at the circumference, we have: $\\text{angle } PRS = \\text{angle } PQS = 44^\\circ$.",
+            "For part (b), we find the angle $RQS$. Since $PR$ is a diameter of the circle, the angle in a semicircle $PQR$ must be exactly $90^\\circ$.",
+            "This means the total angle $PQR = \\text{angle } PQS + \\text{angle } RQS = 90^\\circ$.",
+            "We calculate our angle as: $\\text{angle } RQS = 90^\\circ - 44^\\circ = 46^\\circ$.",
+            "For part (c), we find the angle $POQ$ subtended by the arc $PQ$ at the centre.",
+            "The angle subtended by the same arc $PQ$ at the circumference is angle $PRQ$.",
+            "Let\\'s find angle $PRQ$ first. In the right-angled triangle $PQR$ (where the angle in a semicircle $PQR$ is $90^\\circ$), the angles in the same segment show that angle $QPR = \\text{angle } QSR = 31^\\circ$.",
+            "Using the sum of angles in a triangle: $\\text{angle } PRQ = 180^\\circ - (90^\\circ + 31^\\circ) = 59^\\circ$.",
+            "Since the angle subtended by an arc at the centre is twice the angle subtended at the circumference: $\\text{angle } POQ = 2 \\times \\text{angle } PRQ = 2 \\times 59^\\circ = 118^\\circ$.",
+            "Final Answer: $$(a)\\ 44^\\circ\\ (b)\\ 46^\\circ\\ (c)\\ 118^\\circ$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ 44^\\circ\\ (b)\\ 46^\\circ\\ (c)\\ 29.5^\\circ$$",
+                "feedback": "You divided the circumference angle by 2 instead of multiplying by 2 to find the angle at the centre in part (c)."
+            },
+            {
+                "ans": "$$(a)\\ 44^\\circ\\ (b)\\ 44^\\circ\\ (c)\\ 88^\\circ$$",
+                "feedback": "You assumed that angle $RQS$ is equal to angle $PQS$, which is incorrect because they are subtended by different arcs."
+            },
+            {
+                "ans": "$$(a)\\ 31^\\circ\\ (b)\\ 59^\\circ\\ (c)\\ 118^\\circ$$",
+                "feedback": "You swapped the values for parts (a) and (b), misapplying the same segment theorem."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Identifying Segments",
+            "content": "To apply the same segment theorem correctly, trace the lines of your angles back to the circumference. Both angle $PQS$ and angle $PRS$ rest on the same arc $PS$, making them equal. Finding these matching arcs is key to unlocking multi-step circle problems."
+        },
+        "payhip_link": "https://payhip.com/b/1y6TA",
+        "button_text": "Master IGCSE Circle Geometry: Download the Pack"
+    },
+    {
+        "id": "002987",
+        "date": "18 December 2025",
+        "major_area": "Geometry",
+        "topic": "Coordinate Geometry",
+        "subtopic": "Parallel and Perpendicular Lines, Mixed Problems",
+        "difficulty": "B/C",
+        "q": "The point $A$ has coordinates $(2, -1)$ and the point $B$ has coordinates $(8, 7)$.<br>(a) Calculate the length $|AB|$.<br>(b) Find the equation of the perpendicular bisector of the line segment $AB$. Give your answer in the form $y = mx + c$.",
+        "steps": [
+            "For part (a), we calculate the length of the line segment $|AB|$ using the distance formula: $|AB| = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$.",
+            "Substituting the coordinates of $A(2, -1)$ and $B(8, 7)$: $|AB| = \\sqrt{(8 - 2)^2 + (7 - (-1))^2} = \\sqrt{6^2 + 8^2}$.",
+            "Evaluating the squares: $|AB| = \\sqrt{36 + 64} = \\sqrt{100} = 10$.",
+            "For part (b), we find the equation of the perpendicular bisector of $AB$. A perpendicular bisector passes through the midpoint of the line segment and has a perpendicular gradient.",
+            "We find the midpoint of $AB$: $\\text{Midpoint} = \\left(\\dfrac{x_1 + x_2}{2}, \\dfrac{y_1 + y_2}{2}\\right) = \\left(\\dfrac{2 + 8}{2}, \\dfrac{-1 + 7}{2}\\right) = (5, 3)$.",
+            "Next, we find the gradient of the line $AB$: $m_{AB} = \\dfrac{y_2 - y_1}{x_2 - x_1} = \\dfrac{7 - (-1)}{8 - 2} = \\dfrac{8}{6} = \\dfrac{4}{3}$.",
+            "Using the perpendicular gradient rule ($m_1 \\times m_2 = -1$), the perpendicular gradient is: $m_{\\perp} = -\\dfrac{3}{4}$ (or $-0.75$).",
+            "Using the straight-line equation $y - y_1 = m(x - x_1)$ with our midpoint $(5, 3)$ and perpendicular gradient $m = -0.75$:",
+            "This gives: $y - 3 = -0.75(x - 5) \\implies y - 3 = -0.75x + 3.75$.",
+            "Adding 3 to both sides gives the final equation in the form $y = mx + c$: $y = -0.75x + 6.75$.",
+            "Final Answer: $$(a)\\ 10\\ (b)\\ y = -0.75x + 6.75$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ 10\\ (b)\\ y = 1.33x - 3.67$$",
+                "feedback": "You used the original gradient of $AB$ ($\\dfrac{4}{3}$) instead of finding the negative reciprocal perpendicular gradient ($-\\dfrac{3}{4}$)."
+            },
+            {
+                "ans": "$$(a)\\ 10\\ (b)\\ y = -0.75x + 0.5$$",
+                "feedback": "You substituted the point $A(2, -1)$ instead of the midpoint $(5, 3)$ to find the y-intercept $c$."
+            },
+            {
+                "ans": "$$(a)\\ 14\\ (b)\\ y = -0.75x + 6.75$$",
+                "feedback": "You added the coordinate differences ($6 + 8 = 14$) in part (a) instead of taking the square root of the sum of their squares."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Perpendicular Bisector Steps",
+            "content": "Finding a perpendicular bisector is a three-step process. First, find the midpoint (the coordinate the line passes through). Second, find the original gradient and take its negative reciprocal. Finally, use these two new values in $y - y_1 = m(x - x_1)$ to construct your equation."
+        },
+        "payhip_link": "https://payhip.com/b/yhHQo",
+        "button_text": "Master IGCSE Coordinate Geometry: Download the Pack"
     }
+
+
 
 ]
