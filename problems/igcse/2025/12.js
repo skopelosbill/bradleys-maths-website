@@ -1039,6 +1039,299 @@ const problemBank = [
     },
     "payhip_link": "https://payhip.com/b/3AZnV",
     "button_text": "Master IGCSE Probability: Download the Pack"
-}
+},
+    {
+        "id": "002994",
+        "date": "25 December 2025",
+        "major_area": "Number",
+        "topic": "Functions",
+        "subtopic": "Functions, Domain, Range and Notation",
+        "difficulty": "A/B",
+        "q": "We are given the following functions:<br>$$f(x) = 2x - 3,\\ \\ \\ g(x) = x^2 + 1,\\ \\ \\ h(x) = \\dfrac{1}{x - 2}$$<br>(a) Find the value of the composite function $fg(4)$.<br>(b) Find the inverse function $f^{-1}(x)$.<br>(c) State the value of $x$ that must be excluded from the domain of $h(x)$.<br>(d) State the range of $g(x)$ for the domain $x \\in \\mathbb{R}$.",
+        "steps": [
+            "For part (a), to evaluate the composite function $fg(4)$, we first evaluate the inner function $g(4)$.",
+            "Substituting 4 into $g(x)$: $g(4) = 4^2 + 1 = 16 + 1 = 17$.",
+            "Now, we substitute this output value into the outer function $f(x)$: $f(17) = 2(17) - 3 = 34 - 3 = 31$.",
+            "For part (b), to find the inverse function $f^{-1}(x)$, we set the equation to $y$: $y = 2x - 3$.",
+            "We rearrange the equation to make $x$ the subject. Adding 3 to both sides: $y + 3 = 2x$.",
+            "Dividing both sides by 2: $x = \\dfrac{y + 3}{2}$.",
+            "We replace $x$ with $f^{-1}(x)$ and $y$ with $x$ to state the final inverse function: $f^{-1}(x) = \\dfrac{x + 3}{2}$.",
+            "For part (c), the domain of $h(x) = \\dfrac{1}{x-2}$ must exclude any value of $x$ that results in a denominator of zero.",
+            "Setting the denominator to zero: $x - 2 = 0 \\implies x = 2$. Therefore, $x = 2$ must be excluded.",
+            "For part (d), the range represents all possible output values of $g(x) = x^2 + 1$.",
+            "Since the minimum value of $x^2$ is 0 (for any real number $x$), the minimum value of $g(x)$ is $0 + 1 = 1$. Therefore, the range is $g(x) \\ge 1$.",
+            "Final Answer: $$(a)\ 31\\ (b)\ f^{-1}(x) = \\dfrac{x+3}{2}\\ (c)\ 2\\ (d)\ g(x) \\ge 1$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\ 31\\ (b)\ f^{-1}(x) = 2x + 3\\ (c)\ 2\\ (d)\ g(x) \\ge 1$$",
+                "feedback": "You made an algebraic error when rearranging the equation to find the inverse function $f^{-1}(x)$ in part (b), multiplying by 2 instead of dividing."
+            },
+            {
+                "ans": "$$(a)\ 13\\ (b)\ f^{-1}(x) = \\dfrac{x+3}{2}\\ (c)\ -2\\ (d)\ g(x) > 0$$",
+                "feedback": "For part (a), you evaluated the composite function in the wrong order, calculating $gf(4)$ instead of $fg(4)$. For part (d), the minimum value of $x^2+1$ is 1, not 0."
+            },
+            {
+                "ans": "$$(a)\ 31\\ (b)\ f^{-1}(x) = \\dfrac{x+3}{2}\\ (c)\ 2\\ (d)\ x \\ge 1$$",
+                "feedback": "Your boundary calculation in part (d) is correct, but you used the input variable $x$ in your range inequality. Range must always be written in terms of $g(x)$ or $y$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Composite Order of Operations",
+            "content": "When evaluating composite functions like $fg(4)$, always work from the inside out. Evaluate the inner function first to find $g(4) = 17$, and then feed that output directly into the outer function to calculate $f(17)$. Working from the outside in is a very common source of error."
+        },
+        "payhip_link": "https://payhip.com/b/Ttui3",
+        "button_text": "Master IGCSE Functions: Download the Pack"
+    },
+    {
+        "id": "002995",
+        "date": "26 December 2025",
+        "major_area": "Geometry",
+        "topic": "Trigonometry",
+        "subtopic": "Pythagoras and Trigonometry in 3D",
+        "difficulty": "A/A*",
+        "img": "true",
+        "q": "$ABCDEFGH$ is a cuboid. The dimensions of the cuboid are $AB = 12\\text{ cm}$, $BC = 7\\text{ cm}$, and $CG = 5\\text{ cm}$.<br>Calculate the angle between the space diagonal $AG$ and the horizontal base $ABCD$. Give your answer correct to 1 decimal place.",
+        "steps": [
+            "We first identify the right-angled triangles needed to isolate the target angle $\\theta$.",
+            "The angle $\\theta$ between the space diagonal $AG$ and the horizontal base is the angle $CAG$ in the vertical right-angled triangle $ACG$.",
+            "The base diagonal $AC$ is found by applying Pythagoras' theorem to the right-angled triangle $ABC$ on the horizontal base: $AC^2 = AB^2 + BC^2 = 12^2 + 7^2$.",
+            "Evaluating the squares: $AC^2 = 144 + 49 = 193 \\implies AC = \\sqrt{193}\\text{ cm}$ (approximately $13.89\\text{ cm}$).",
+            "In the vertical right-angled triangle $ACG$, the side opposite to the angle $\\theta$ is the vertical edge $CG = 5\\text{ cm}$, and the adjacent side is the base diagonal $AC = \\sqrt{193}\\text{ cm}$.",
+            "We apply the tangent trigonometric ratio: $\\tan(\\theta) = \\dfrac{\\text{Opposite}}{\\text{Adjacent}} = \\dfrac{CG}{AC} = \\dfrac{5}{\\sqrt{193}}$.",
+            "Evaluating using a calculator: $\\tan(\\theta) \\approx 0.35991$.",
+            "Taking the inverse tangent to solve for $\\theta$: $\\theta = \\arctan(0.35991) \\approx 19.794^\\circ$.",
+            "Rounding the angle to 1 decimal place gives $19.8^\\circ$.",
+            "Final Answer: $$19.8^\\circ$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$22.6^\\circ$$",
+                "feedback": "You calculated the angle that the space diagonal $AG$ makes with the vertical edge $CG$ (at the top of the cuboid) instead of the angle it makes with the horizontal base."
+            },
+            {
+                "ans": "$$19.5^\\circ$$",
+                "feedback": "You used premature rounding in your calculations, using the rounded value of $13.9$ for $AC$ instead of carrying through the exact value of $\\sqrt{193}$."
+            },
+            {
+                "ans": "$$15.6^\\circ$$",
+                "feedback": "You used the sine ratio directly with the adjacent base diagonal and the opposite vertical edge, which violates standard trigonometric ratios."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Isolating 3D Triangles",
+            "content": "To solve any 3D trigonometry problem, always draw the key right-angled triangles in 2D on your working page. For this question, isolating triangle $ABC$ on the base first, and then drawing the vertical slice triangle $ACG$, makes the trigonometric ratios completely clear."
+        },
+        "payhip_link": "https://payhip.com/b/udQPT",
+        "button_text": "Master IGCSE 3D Trigonometry: Download the Pack"
+    },
+    {
+        "id": "002996",
+        "date": "27 December 2025",
+        "major_area": "Number",
+        "topic": "Surds",
+        "subtopic": "Surds",
+        "difficulty": "A/B",
+        "q": "(a) Write $\\sqrt{75} + \\sqrt{12}$ in the form $k\\sqrt{3}$, where $k$ is an integer.<br>(b) Hence, find the exact value of $\\dfrac{1}{\\sqrt{75} + \\sqrt{12}}$ giving your answer in its simplest form.",
+        "steps": [
+            "For part (a), we simplify both surds by extracting their largest square factors.",
+            "For the first term: $\\sqrt{75} = \\sqrt{25 \\times 3} = \\sqrt{25}\\sqrt{3} = 5\\sqrt{3}$.",
+            "For the second term: $\\sqrt{12} = \\sqrt{4 \\times 3} = \\sqrt{4}\\sqrt{3} = 2\\sqrt{3}$.",
+            "Adding these terms together: $5\\sqrt{3} + 2\\sqrt{3} = 7\\sqrt{3}$.",
+            "For part (b), we substitute our simplified surd sum into the denominator of the fraction: $\\dfrac{1}{7\\sqrt{3}}$.",
+            "To rationalise the denominator, we multiply the numerator and the denominator by $\\sqrt{3}$.",
+            "This gives: $\\dfrac{1}{7\\sqrt{3}} \\times \\dfrac{\\sqrt{3}}{\\sqrt{3}} = \\dfrac{\\sqrt{3}}{7 \\times 3}$.",
+            "Evaluating the denominator product gives the simplified exact value: $\\dfrac{\\sqrt{3}}{21}$.",
+            "Final Answer: $$(a)\ 7\\sqrt{3}\\ (b)\ \\dfrac{\\sqrt{3}}{21}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\ 7\\sqrt{3}\\ (b)\ \\dfrac{7\\sqrt{3}}{147}$$",
+                "feedback": "Your value is correct, but you forgot to simplify the fraction by dividing the numerator and denominator by 7 to write it in its simplest form."
+            },
+            {
+                "ans": "$$(a)\ \\sqrt{87}\\ (b)\ \\dfrac{\\sqrt{87}}{87}$$",
+                "feedback": "You added the numbers under the roots directly ($\\sqrt{75} + \\sqrt{12} = \\sqrt{87}$). You cannot add surds directly unless they have identical radicands."
+            },
+            {
+                "ans": "$$(a)\ 7\\sqrt{3}\\ (b)\ \\dfrac{1}{21}$$",
+                "feedback": "You rationalised the denominator incorrectly, forgetting to multiply the numerator by $\\sqrt{3}$ during the expansion."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Rationalising Single Surds",
+            "content": "To rationalise a fraction with a single surd on the bottom like $\\dfrac{1}{a\\sqrt{b}}$, simply multiply the top and bottom by $\\sqrt{b}$. This turns the denominator into the integer $ab$ and moves the root to the top, making the fraction exceptionally clean and easy to simplify."
+        },
+        "payhip_link": "https://payhip.com/b/QTHoU",
+        "button_text": "Master IGCSE Surds: Download the Pack"
+    },
+    {
+        "id": "002997",
+        "date": "28 December 2025",
+        "major_area": "Number",
+        "topic": "Interest",
+        "subtopic": "Percentage Change and Interest",
+        "difficulty": "B/C",
+        "q": "Malik invests $1500 in Account A paying simple interest at a rate of $4.5\\%$ per year.<br>He also invests $1500 in Account B paying compound interest at a rate of $4.2\\%$ per year.<br>Calculate the difference in the total value of the two accounts at the end of 6 years. Give your answer correct to the nearest cent.",
+        "steps": [
+            "We first calculate the final value of Account A using simple interest.",
+            "The formula for simple interest is: $\\text{Interest} = \\dfrac{P \\times R \\times T}{100}$.",
+            "Substituting the values: $\\text{Interest} = \\dfrac{1500 \\times 4.5 \\times 6}{100} = 405$.",
+            "The final value of Account A is: $\\text{Value}_A = 1500 + 405 = 1905$.",
+            "Next, we calculate the final value of Account B using compound interest.",
+            "The formula for the total value with compound interest is: $\\text{Value}_B = P \\times (1 + r)^t$.",
+            "Substituting the values: $\\text{Value}_B = 1500 \\times (1 + 0.042)^6 = 1500 \\times (1.042)^6$.",
+            "Evaluating using a calculator: $\\text{Value}_B \\approx 1500 \\times 1.280084 = 1920.126$.",
+            "To find the difference, we subtract the final value of Account A from Account B: $\\text{Difference} = 1920.126 - 1905 = 15.126$.",
+            "Rounding this difference to the nearest cent (2 decimal places) gives: $15.13$.",
+            "Final Answer: $$15.13$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$15.12$$",
+                "feedback": "You truncated your final decimal value of $15.126...$ instead of rounding up correctly to $15.13$."
+            },
+            {
+                "ans": "$$420.13$$",
+                "feedback": "You calculated the difference in the interest earned on Account B compared to the original principal, instead of finding the difference between the total values of the two accounts."
+            },
+            {
+                "ans": "$$15.00$$",
+                "feedback": "You rounded your intermediate values prematurely, which introduced a small rounding discrepancy in your final cent value."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Simple vs Compound Multipliers",
+            "content": "Ensure you use the correct interest formulas. Simple interest adds a flat amount of interest based only on the initial principal each year, whereas compound interest multiplies the updated balance annually, creating an exponential growth curve represented by the exponent $^6$."
+        },
+        "payhip_link": "https://payhip.com/b/Ebcut",
+        "button_text": "Master IGCSE Interest: Download the Pack"
+    },
+    {
+        "id": "002998",
+        "date": "29 December 2025",
+        "major_area": "Number",
+        "topic": "Surds",
+        "subtopic": "Surds",
+        "difficulty": "C/D",
+        "q": "Expand and simplify the following brackets:<br>$$(2 + \\sqrt{5})(2 - \\sqrt{5})$$$",
+        "steps": [
+            "We expand the double brackets using the distributive property.",
+            "This expands to: $2(2) - 2\\sqrt{5} + 2\\sqrt{5} - (\\sqrt{5} \\times \\sqrt{5})$.",
+            "We simplify the terms: $4 - 2\\sqrt{5} + 2\\sqrt{5} - 5$.",
+            "The middle opposite surd terms cancel out: $-2\\sqrt{5} + 2\\sqrt{5} = 0$.",
+            "This leaves: $4 - 5 = -1$.",
+            "Final Answer: $$-1$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$9$$",
+                "feedback": "You squared both terms but added them together instead of subtracting, writing $4 + 5 = 9$."
+            },
+            {
+                "ans": "$$4 - 5\\sqrt{5}$$",
+                "feedback": "You expanded the terms incorrectly, failing to cancel the middle opposite surd terms."
+            },
+            {
+                "ans": "$$-3$$",
+                "feedback": "You squared the root of 5 incorrectly, evaluating $(\\sqrt{5})^2$ as $25$ instead of $5$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Difference of Two Squares",
+            "content": "This expansion is a classic case of the Difference of Two Squares: $(a+b)(a-b) = a^2 - b^2$. Since the terms are $2$ and $\\sqrt{5}$, the result is simply $2^2 - (\\sqrt{5})^2 = 4 - 5 = -1$. Spotting this pattern instantly bypasses the need for full bracket expansion."
+        },
+        "payhip_link": "https://payhip.com/b/QTHoU",
+        "button_text": "Master IGCSE Surds: Download the Pack"
+    },
+    {
+        "id": "002999",
+        "date": "30 December 2025",
+        "major_area": "Algebra",
+        "topic": "Curved Graphs",
+        "subtopic": "Plotting Curved Graphs",
+        "difficulty": "A/B",
+        "q": "A curve has the equation $y = k a^x$, where $k$ and $a$ are positive constants.<br>The curve passes through the points $(0, 3)$ and $(2, 48)$.<br>Find the values of $k$ and $a$.",
+        "steps": [
+            "We begin by substituting the coordinates of the first point $(0, 3)$ into the curve\\'s equation.",
+            "This yields: $3 = k \\times a^0$.",
+            "Since any non-zero number raised to the power of 0 is 1 ($a^0 = 1$), we have: $3 = k \\times 1 \\implies k = 3$.",
+            "Now, we substitute the coordinates of the second point $(2, 48)$ and our calculated value of $k = 3$ into the equation.",
+            "This yields: $48 = 3 \\times a^2$.",
+            "Dividing both sides of the equation by 3: $a^2 = \\dfrac{48}{3} = 16$.",
+            "Taking the square root of both sides to solve for $a$: $a = \\sqrt{16} = 4$ (since we are given that $a$ is positive).",
+            "Final Answer: $$k = 3,\\ a = 4$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$k = 3,\\ a = 8$$",
+                "feedback": "You divided 16 by 2 instead of taking the square root to solve for $a$ at the final step."
+            },
+            {
+                "ans": "$$k = 0,\\ a = 4$$",
+                "feedback": "You assumed that $a^0 = 0$, which led to an incorrect value of $k = 0$."
+            },
+            {
+                "ans": "$$k = 3,\\ a = -4$$",
+                "feedback": "Although $a^2 = 16$ mathematically yields $a = \\pm 4$, the question explicitly states that $a$ must be a positive constant."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Zero Index Rule",
+            "content": "In exponential equations of the form $y = k a^x$, the y-intercept $(0, y)$ always yields the value of $k$ instantly. This is because $a^0 = 1$ for any positive base, leaving $y = k$. Always locate the $x=0$ point first to isolate your scaling constant."
+        },
+        "payhip_link": "https://payhip.com/b/D82tp",
+        "button_text": "Master IGCSE Graphs: Download the Pack"
+    },
+    {
+        "id": "003000",
+        "date": "31 December 2025",
+        "major_area": "Probability & Statistics",
+        "topic": "Probability",
+        "subtopic": "Probability of Combined Events",
+        "difficulty": "B/C",
+        "img": "true",
+        "q": "A bag contains 4 red counters and 5 green counters. A counter is taken from the bag at random and is <strong>not</strong> replaced. A second counter is then taken from the bag at random.<br>(a) Complete the probability tree diagram.<br>(b) Calculate the probability that the two counters taken are the same colour.",
+        "steps": [
+            "For part (a), we complete the branches of the probability tree diagram step-by-step.",
+            "The first branch for Green is found by subtracting the Red probability from 1: $1 - \\dfrac{4}{9} = \\dfrac{5}{9}$.",
+            "For the second draw branches, since the first counter is not replaced, only 8 total counters remain in the bag.",
+            "If the first counter was Red, 3 Red and 5 Green remain. This gives the branches: $\\text{P}(\\text{Red}_2 | \\text{Red}_1) = \\dfrac{3}{8}$ and $\\text{P}(\\text{Green}_2 | \\text{Red}_1) = \\dfrac{5}{8}$.",
+            "If the first counter was Green, 4 Red and 4 Green remain. This gives the branches: $\\text{P}(\\text{Red}_2 | \\text{Green}_1) = \\dfrac{4}{8}$ and $\\text{P}(\\text{Green}_2 | \\text{Green}_1) = \\dfrac{4}{8}$.",
+            "For part (b), we find the probability of drawing two counters of the same colour: (Red, Red) or (Green, Green).",
+            "The probability of two Reds is: $\\text{P}(\\text{R, R}) = \\dfrac{4}{9} \\times \\dfrac{3}{8} = \\dfrac{12}{72}$.",
+            "The probability of two Greens is: $\\text{P}(\\text{G, G}) = \\dfrac{5}{9} \\times \\dfrac{4}{8} = \\dfrac{20}{72}$.",
+            "Adding these probabilities together: $\\text{P}(\\text{Same Colour}) = \\dfrac{12}{72} + \\dfrac{20}{72} = \\dfrac{32}{72}$.",
+            "Simplifying the fraction by dividing the numerator and denominator by 8 yields: $\\dfrac{4}{9}$.",
+            "Final Answer: $$(a)\\ \\text{Tree diagram completed}\\ (b)\\ \\dfrac{4}{9}$$<img src='images/2025-12/i_31_ans.png' alt='completed probability tree diagram' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ \\text{Tree diagram completed}\\ (b)\\ \\dfrac{41}{81}$$",
+                "feedback": "You completed your calculations using 'with replacement' rules, keeping the denominator as 9 for the second draw."
+            },
+            {
+                "ans": "$$(a)\\ \\text{Tree diagram completed}\\ (b)\\ \\dfrac{1}{6}$$",
+                "feedback": "You calculated the probability of selecting only two red counters, forgetting to add the probability of selecting two green counters."
+            },
+            {
+                "ans": "$$(a)\\ \\text{Tree diagram completed}\\ (b)\\ \\dfrac{4}{17}$$",
+                "feedback": "You added the denominators when multiplying your branch fractions or made an arithmetic error when expanding your joint paths."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Denominator Reductions",
+            "content": "When completing tree diagrams without replacement, always remember to decrease both the numerator and the denominator by 1 for the second branch. The total number of remaining counters must drop from 9 to 8."
+        },
+        "payhip_link": "https://payhip.com/b/3AZnV",
+        "button_text": "Master IGCSE Probability: Download the Pack"
+    }
 
 ]
