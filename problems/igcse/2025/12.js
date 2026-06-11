@@ -248,5 +248,268 @@ const problemBank = [
         },
         "payhip_link": "https://payhip.com/b/9LFtZ",
         "button_text": "Master IGCSE Bounds: Download the Pack"
+    },
+    {
+        "id": "002976",
+        "date": "7 December 2025",
+        "major_area": "Geometry",
+        "topic": "Trigonometry",
+        "subtopic": "Exact Trigonometric Values",
+        "difficulty": "A/B",
+        "img": "true",
+        "q": "Do not use a calculator on this question.<br>A right-angled triangle has an angle of $30^\\circ$ and a hypotenuse of length $8\\sqrt{3}\\text{ cm}$.<br>(a) Calculate the exact length of the adjacent side, $x$.<br>(b) Find the exact length of the third side, $y$.<br>(c) Use Pythagoras' theorem to show that your answers in parts (a) and (b) are mathematically consistent with a right angle.",
+        "steps": [
+            "For part (a), we use the cosine ratio, which relates the adjacent side to the hypotenuse: $\\cos(\\theta) = \\dfrac{\\text{Adjacent}}{\\text{Hypotenuse}}$.",
+            "This gives: $\\cos(30^\\circ) = \\dfrac{x}{8\\sqrt{3}}$.",
+            "We substitute the exact trigonometric value $\\cos(30^\\circ) = \\dfrac{\\sqrt{3}}{2}$: $\\dfrac{\\sqrt{3}}{2} = \\dfrac{x}{8\\sqrt{3}}$.",
+            "Rearranging to solve for $x$: $x = \\dfrac{\\sqrt{3}}{2} \\times 8\\sqrt{3} = \\dfrac{8 \\times 3}{2} = \\dfrac{24}{2} = 12\\text{ cm}$.",
+            "For part (b), we use the sine ratio, which relates the opposite side to the hypotenuse: $\\sin(\\theta) = \\dfrac{\\text{Opposite}}{\\text{Hypotenuse}}$.",
+            "This gives: $\\sin(30^\\circ) = \\dfrac{y}{8\\sqrt{3}}$.",
+            "We substitute the exact trigonometric value $\\sin(30^\\circ) = \\dfrac{1}{2}$: $\\dfrac{1}{2} = \\dfrac{y}{8\\sqrt{3}}$.",
+            "Rearranging to solve for $y$: $y = \\dfrac{1}{2} \\times 8\\sqrt{3} = 4\\sqrt{3}\\text{ cm}$.",
+            "For part (c), we use Pythagoras' theorem, $a^2 = b^2 + c^2$, to verify that the square of the hypotenuse is equal to the sum of the squares of the other two sides.",
+            "Evaluating the square of the hypotenuse: $(8\\sqrt{3})^2 = 8^2 \\times 3 = 64 \\times 3 = 192$.",
+            "Evaluating the sum of the squares of the other two sides: $12^2 + (4\\sqrt{3})^2 = 144 + (4^2 \\times 3) = 144 + 48 = 192$.",
+            "Since $192 = 192$, the calculations are consistent and Pythagoras' theorem holds true, completing the proof.",
+            "Final Answer: $$(a)\ 12\\text{ cm}\\ (b)\ 4\\sqrt{3}\\text{ cm}\\ (c)\ \\text{Proof completed}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\ 10.4\\text{ cm}\\ (b)\ 6.93\\text{ cm}\\ (c)\ \\text{Proof completed}$$",
+                "feedback": "The question explicitly demands exact values. Giving decimal approximations like $10.4$ and $6.93$ instead of integers and exact surds is incorrect."
+            },
+            {
+                "ans": "$$(a)\ 4\\sqrt{3}\\text{ cm}\\ (b)\ 12\\text{ cm}\\ (c)\ \\text{Proof completed}$$",
+                "feedback": "You reversed the definitions of sine and cosine, using sine to calculate the adjacent side and cosine to calculate the opposite side."
+            },
+            {
+                "ans": "$$(a)\ 12\\text{ cm}\\ (b)\ 4\\sqrt{3}\\text{ cm}\\ (c)\ 144 + 144 = 288$$",
+                "feedback": "You squared the opposite side incorrectly in part (c), evaluating $(4\\sqrt{3})^2$ as $16 \\times 9 = 144$ instead of $16 \\times 3 = 48$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Exact Surd Verification",
+            "content": "When squaring terms like $4\\sqrt{3}$ inside Pythagoras' theorem, square both parts of the term individually: $4^2 = 16$ and $(\\sqrt{3})^2 = 3$, giving $16 \\times 3 = 48$. This makes it very easy to verify your exact values without any decimal approximations."
+        },
+        "payhip_link": "https://payhip.com/b/cHHoW",
+        "button_text": "Master IGCSE Trigonometry: Download the Pack"
+    },
+    {
+        "id": "002977",
+        "date": "8 December 2025",
+        "major_area": "Algebra",
+        "topic": "Quadratic Equations",
+        "subtopic": "Quadratic Equations 1",
+        "difficulty": "A/B",
+        "q": "Adam runs a distance of $12\\text{ km}$ at a constant speed of $x\\text{ km/h}$. Ben runs the same $12\\text{ km}$ at a constant speed of $(x + 3)\\text{ km/h}$. Adam takes 20 minutes longer than Ben to complete the run.<br>(a) Write down an equation in $x$ and show that it simplifies to: $x^2 + 3x - 108 = 0$.<br>(b) Solve the equation $x^2 + 3x - 108 = 0$ to find the running speed of Adam. Show all your working.",
+        "steps": [
+            "For part (a), we write down expressions for the time taken by both runners, using the formula: $\\text{Time} = \\dfrac{\\text{Distance}}{\\text{Speed}}$.",
+            "The time taken by Adam is: $T_{\\text{Adam}} = \\dfrac{12}{x}$ hours.",
+            "The time taken by Ben is: $T_{\\text{Ben}} = \\dfrac{12}{x + 3}$ hours.",
+            "The difference in their times is given as 20 minutes. Since speeds are in km/h, we must convert this time difference into hours: $20\\text{ minutes} = \\dfrac{20}{60} = \\dfrac{1}{3}\\text{ hour}$.",
+            "Since Adam takes longer, we set up our equation as: $\\dfrac{12}{x} - \\dfrac{12}{x + 3} = \\dfrac{1}{3}$.",
+            "To clear the denominators, we multiply every term on both sides by the common denominator $3x(x + 3)$.",
+            "This simplifies the equation to: $36(x + 3) - 36x = x(x + 3)$.",
+            "Expanding the brackets on both sides: $36x + 108 - 36x = x^2 + 3x \\implies 108 = x^2 + 3x$.",
+            "Subtracting 108 from both sides gives the required quadratic equation: $x^2 + 3x - 108 = 0$, completing the proof.",
+            "For part (b), we solve the quadratic equation $x^2 + 3x - 108 = 0$ by factorising.",
+            "We find two numbers that multiply to $-108$ and sum to $+3$. These numbers are $+12$ and $-9$.",
+            "This allows us to write the factorised equation as: $(x + 12)(x - 9) = 0$.",
+            "This yields two mathematical solutions: $x = -12$ or $x = 9$.",
+            "Since speed must be a positive physical quantity, we discard the negative root. The running speed of Adam is therefore $9\\text{ km/h}$.",
+            "Final Answer: $$(a)\\ \\text{Proof completed}\\ (b)\ 9\\text{ km/h}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ \\text{Proof completed}\\ (b)\ x = 9 \\text{ or } x = -12$$",
+                "feedback": "Speed is a physical scalar quantity and cannot be negative. You must discard the negative root ($x = -12$) in the context of this real-world problem."
+            },
+            {
+                "ans": "$$(a)\ x^2 + 3x - 1.8 = 0\\ (b)\ 0.512\\text{ km/h}$$",
+                "feedback": "You did not convert the time difference of 20 minutes into hours, which led to an incorrect algebraic formulation."
+            },
+            {
+                "ans": "$$(a)\\ \\text{Proof completed}\\ (b)\ 12\\text{ km/h}$$",
+                "feedback": "You factorised the quadratic as $(x - 12)(x + 9) = 0$, which reversed the signs of your roots."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Physical Constraints on Roots",
+            "content": "Always read the context of the question when solving algebraic equations. A quadratic equation will mathematically yield two roots, but physical quantities like speed, length, or time cannot be negative. You must explicitly state which root you are discarding and why to secure full marks."
+        },
+        "payhip_link": "https://payhip.com/b/elEAX",
+        "button_text": "Master IGCSE Quadratics: Download the Pack"
+    },
+    {
+        "id": "002978",
+        "date": "9 December 2025",
+        "major_area": "Number",
+        "topic": "Indices",
+        "subtopic": "Fractional Indices and Roots",
+        "difficulty": "B/C",
+        "q": "Simplify fully:<br>$$(16x^{12}y^8)^{\\frac{1}{4}}$$$",
+        "steps": [
+            "We apply the fractional power of $\\dfrac{1}{4}$ to every term inside the parentheses.",
+            "This separates the expression into: $(16)^{\\frac{1}{4}} \\times (x^{12})^{\\frac{1}{4}} \\times (y^8)^{\\frac{1}{4}}$.",
+            "Evaluating the numerical coefficient: $16^{\\frac{1}{4}} = \\sqrt[4]{16} = 2$.",
+            "Applying the power of a power rule to the $x$ term by multiplying the exponents: $12 \\times \\dfrac{1}{4} = 3$, giving $x^3$.",
+            "Applying the power of a power rule to the $y$ term by multiplying the exponents: $8 \\times \\dfrac{1}{4} = 2$, giving $y^2$.",
+            "Combining these terms gives the fully simplified expression: $2x^3 y^2$.",
+            "Final Answer: $$2x^3 y^2$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$4x^3 y^2$$",
+                "feedback": "You divided the coefficient 16 by 4. A fractional exponent of $\\dfrac{1}{4}$ represents the fourth root ($\\sqrt[4]{16}$), not division by 4."
+            },
+            {
+                "ans": "$$2x^8 y^4$$",
+                "feedback": "You subtracted the power of $\\dfrac{1}{4}$ or divided the exponents incorrectly. You must multiply power indices when raising a power to another power."
+            },
+            {
+                "ans": "$$16x^3 y^2$$",
+                "feedback": "You forgot to apply the fourth root of $\\dfrac{1}{4}$ to the numerical coefficient of 16."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Root Index Power Rules",
+            "content": "When dealing with index rules, remember: coefficients are raised to the power (so $16^{1/4} = \\sqrt[4]{16} = 2$), while variables have their exponents multiplied by the power (so $x^{12 \\times 1/4} = x^3$). Treating coefficients and powers identically is the most common source of error."
+        },
+        "payhip_link": "https://payhip.com/b/ZKKG2",
+        "button_text": "Master IGCSE Indices: Download the Pack"
+    },
+    {
+        "id": "002979",
+        "date": "10 December 2025",
+        "major_area": "Probability & Statistics",
+        "topic": "Data Presentation",
+        "subtopic": "Cumulative Frequency Diagrams",
+        "difficulty": "B/C",
+        "q": "The table shows information about the scores of 120 students in a mathematics test.<br><br><table border='1' style='border-collapse: collapse; text-align: center; margin: 10px 0; width: 100%; max-width: 500px;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px;'>Score ($s$)</th><th style='padding: 8px;'>$s \\le 20$</th><th style='padding: 8px;'>$s \\le 40$</th><th style='padding: 8px;'>$s \\le 60$</th><th style='padding: 8px;'>$s \\le 80$</th><th style='padding: 8px;'>$s \\le 100$</th></tr></thead><tbody><tr><td style='padding: 8px; font-weight: bold;'>Cumulative Frequency</td><td style='padding: 8px;'>12</td><td style='padding: 8px;'>40</td><td style='padding: 8px;'>85</td><td style='padding: 8px;'>110</td><td style='padding: 8px;'>120</td></tr></tbody></table><br>(a) On the grid provided, draw a cumulative frequency diagram to represent this data.<br>(b) Use your graph to estimate the 90th percentile score.<br>(c) Students who score more than 65 pass the test. Use your graph to estimate the number of students who pass the test.",
+        "steps": [
+            "For part (a), we plot our cumulative frequencies against the upper boundaries of each score interval.",
+            "The points to plot are: $(20, 12)$, $(40, 40)$, $(60, 85)$, $(80, 110)$, and $(100, 120)$.",
+            "We connect these plotted points with a smooth S-shaped curve starting from $(0,0)$ on the origin to complete the diagram.",
+            "For part (b), to find the 90th percentile, we calculate $90\\%$ of the total number of students (120): $\\text{Position} = 120 \\times 0.90 = 108$.",
+            "We read horizontally across from a cumulative frequency of 108 to meet our curve, and then read vertically down to the horizontal axis to find the corresponding score.",
+            "This gives an estimated 90th percentile score of $78$ (accept any value in the range of 76 to 80).",
+            "For part (c), we find the number of students who scored 65 or less by reading vertically up from a score of $65$ on the horizontal axis to meet our curve.",
+            "Reading horizontally across to the vertical axis gives an estimated cumulative frequency of $92$ students.",
+            "Since this represents the number of students who scored 65 or less, the number of students who passed (scored more than 65) is found by subtracting this from the total: $120 - 92 = 28$ students.",
+            "Final Answer: $$(a)\\ \\text{Graph plotted}\\ (b)\ 78\\ (c)\ 28$$<img src='images/2025-12/i_10_ans.png' alt='cumulative frequency graph with dashed lines for working' style='width:100%; max-width:400px; margin: 15px auto; display:block; border: 1px solid #ccc;'"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\ \\text{Graph plotted}\\ (b)\ 78\\ (c)\ 92$$",
+                "feedback": "For part (c), 91 represents the number of students who scored 65 or less (failed). You must subtract this from the total of 120 to find those who scored more than 65 (passed)."
+            },
+            {
+                "ans": "$$(a)\ \\text{Graph plotted}\\ (b)\ 63\\ (c)\ 28$$",
+                "feedback": "For part (b), you used a cumulative frequency of 90 to find your percentile. 90 represents the 75th percentile (or upper quartile position), not the 90th percentile ($120 \\times 0.90 = 108$)"
+            },
+            {
+                "ans": "$$(a)\ \\text{Midpoints plotted}\\ (b)\ 68\\ (c)\ 19$$",
+                "feedback": "You must always plot cumulative frequency against the upper boundary of each class interval, not the midpoints."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Plotting Boundaries vs Midpoints",
+            "content": "In cumulative frequency diagrams, always plot your frequency values against the upper boundary of each interval. Plotting against class midpoints is a major error that will distort your curve and lose you multiple plotting and accuracy marks."
+        },
+        "payhip_link": "https://payhip.com/b/NhqEx",
+        "button_text": "Master IGCSE Statistics: Download the Pack"
+    },
+    {
+        "id": "002980",
+        "date": "11 December 2025",
+        "major_area": "Geometry",
+        "topic": "Coordinate Geometry",
+        "subtopic": "Graphs in Practical Situations",
+        "difficulty": "C/D",
+        "img": "true",
+        "q": "The speed-time graph shows the first 20 seconds of a car journey.<br>(a) Calculate the acceleration of the car during the first 10 seconds.<br>(b) Calculate the total distance travelled by the car in the 20 seconds.",
+        "steps": [
+            "For part (a), the acceleration is represented by the gradient of the speed-time graph during the first 10 seconds.",
+            "The formula for gradient is: $\\text{Acceleration} = \\dfrac{\\text{Change in Velocity}}{\\text{Time taken}}$.",
+            "From the graph, the velocity increases from $0$ to $12\\text{ m/s}$ in $10\\text{ seconds}$.",
+            "This gives: $\\text{Acceleration} = \\dfrac{12 - 0}{10} = 1.2\\text{ m/s}^2$.",
+            "For part (b), the total distance travelled is represented by the area under the speed-time graph.",
+            "The shape under the graph is a trapezium. The formula for the area of a trapezium is: $\\text{Area} = \\dfrac{1}{2}(a + b)h$.",
+            "The top parallel base $a$ is the constant speed interval: $20 - 10 = 10\\text{ s}$.",
+            "The bottom parallel base $b$ is the total time interval: $20\\text{ s}$.",
+            "The height $h$ is the maximum speed: $12\\text{ m/s}$.",
+            "Substituting these values into the area formula: $\\text{Distance} = \\dfrac{1}{2}(10 + 20) \\times 12$.",
+            "Evaluating the calculation: $\\text{Distance} = \\dfrac{1}{2}(30) \\times 12 = 15 \\times 12 = 180\\text{ m}$.",
+            "Final Answer: $$(a)\ 1.2\\text{ m/s}^2\\ (b)\ 180\\text{ m}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\ 1.2\\text{ m/s}^2\\ (b)\ 240\\text{ m}$$",
+                "feedback": "You multiplied the maximum speed by the total time ($12 \\times 20 = 240$), which assumes the car traveled at a constant speed of 12 m/s for the entire duration."
+            },
+            {
+                "ans": "$$(a)\ 1.2\\text{ m/s}^2\\ (b)\ 120\\text{ m}$$",
+                "feedback": "You calculated the area of a single triangle of base 20 ($0.5 \\times 20 \\times 12 = 120$), which fails to account for the flat constant-speed section."
+            },
+            {
+                "ans": "$$(a)\ 120\\text{ m/s}^2\\ (b)\ 180\\text{ m}$$",
+                "feedback": "You multiplied the change in speed by the time ($12 \\times 10$) instead of dividing to find the gradient."
+            }
+        ],
+        "bradley_insight": {
+            "type": "pro-tip",
+            "title": "The Head Teacher's Eye: Splitting Complex Areas",
+            "content": "If you do not want to use the trapezium area formula, you can always split the area under the graph into two simpler shapes: a triangle representing the acceleration phase ($0.5 \\times 10 \\times 12 = 60\\text{ m}$) and a rectangle representing the constant-speed phase ($10 \\times 12 = 120\\text{ m}$). Summing these gives the same total of $180\\text{ m}$."
+        },
+        "payhip_link": "https://payhip.com/b/wyZ3k",
+        "button_text": "Master IGCSE Kinematics: Download the Pack"
+    },
+    {
+        "id": "002981",
+        "date": "12 December 2025",
+        "major_area": "Algebra",
+        "topic": "Algebraic Fractions",
+        "subtopic": "Algebraic Fractions 2",
+        "difficulty": "A/B",
+        "q": "Solve the equation:<br>$$\\dfrac{15}{x} - \\dfrac{15}{x + 2} = 2$$<br>You must show all your algebraic working.",
+        "steps": [
+            "We begin by finding a common denominator to combine the fractions on the left side: $x(x + 2)$.",
+            "We rewrite the equation by multiplying every term by the common denominator $x(x + 2)$ to clear the fractions.",
+            "This yields: $15(x + 2) - 15x = 2x(x + 2)$.",
+            "We expand both sides of the equation: $15x + 30 - 15x = 2x^2 + 4x$.",
+            "Combining the linear terms on the left side: $30 = 2x^2 + 4x$.",
+            "We rearrange all terms to one side to form a quadratic equation equal to zero: $2x^2 + 4x - 30 = 0$.",
+            "To make the equation simpler to factorise, we divide every term by 2: $x^2 + 2x - 15 = 0$.",
+            "We factorise the quadratic by finding two numbers that multiply to $-15$ and sum to $+2$. These numbers are $+5$ and $-3$.",
+            "This gives the factorised form: $(x + 5)(x - 3) = 0$.",
+            "Solving for $x$ yields two distinct solutions: $x = -5$ or $x = 3$.",
+            "Final Answer: $$x = -5 \\text{ or } x = 3$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$x = 5 \\text{ or } x = -3$$",
+                "feedback": "You factorised the quadratic as $(x - 5)(x + 3) = 0$, which reversed the signs of your final roots."
+            },
+            {
+                "ans": "$$x = -0.5 \\text{ or } x = 1.5$$",
+                "feedback": "You forgot to multiply the right side of the equation (the 2) by the common denominator $x(x+2)$ when clearing the fractions."
+            },
+            {
+                "ans": "$$x = 0 \\text{ or } x = -2$$",
+                "feedback": "You made a sign error during expansion, which caused the $x$ terms to not cancel out on the left side."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Clearing Every Term",
+            "content": "When clearing denominators by multiplying, you must multiply *every* term on both sides of the equation by the common denominator. A very frequent error is to multiply the fractional terms on the left but forget to multiply the constant integer on the right side."
+        },
+        "payhip_link": "https://payhip.com/b/x02Ge",
+        "button_text": "Master IGCSE Algebra: Download the Pack"
     }
+
 ]
