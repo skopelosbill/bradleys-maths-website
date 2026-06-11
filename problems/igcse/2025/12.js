@@ -349,7 +349,7 @@ const problemBank = [
         "topic": "Indices",
         "subtopic": "Fractional Indices and Roots",
         "difficulty": "B/C",
-        "q": "Simplify fully:<br>$$(16x^{12}y^8)^{\\frac{1}{4}}$$$",
+        "q": "Simplify fully:<br>$$(16x^{12}y^8)^{\\frac{1}{4}}$$",
         "steps": [
             "We apply the fractional power of $\\dfrac{1}{4}$ to every term inside the parentheses.",
             "This separates the expression into: $(16)^{\\frac{1}{4}} \\times (x^{12})^{\\frac{1}{4}} \\times (y^8)^{\\frac{1}{4}}$.",
@@ -506,7 +506,7 @@ const problemBank = [
         "bradley_insight": {
             "type": "caution",
             "title": "The Head Teacher's Eye: Clearing Every Term",
-            "content": "When clearing denominators by multiplying, you must multiply *every* term on both sides of the equation by the common denominator. A very frequent error is to multiply the fractional terms on the left but forget to multiply the constant integer on the right side."
+            "content": "When clearing denominators by multiplying, you must multiply <strong>every</strong> term on both sides of the equation by the common denominator. A very frequent error is to multiply the fractional terms on the left but forget to multiply the constant integer on the right side."
         },
         "payhip_link": "https://payhip.com/b/x02Ge",
         "button_text": "Master IGCSE Algebra: Download the Pack"
