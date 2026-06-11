@@ -775,7 +775,272 @@ const problemBank = [
         },
         "payhip_link": "https://payhip.com/b/yhHQo",
         "button_text": "Master IGCSE Coordinate Geometry: Download the Pack"
+    },
+    {
+        "id": "002988",
+        "date": "19 December 2025",
+        "major_area": "Number",
+        "topic": "Ratio and Proportion",
+        "subtopic": "Proportion",
+        "difficulty": "A/B",
+        "q": "The variable $y$ is inversely proportional to the square root of $x$. When $x = 25$, $y = 4$.<br>(a) Find the value of $y$ when $x = 100$.<br>(b) Find the value of $x$ when $y = 10$.",
+        "steps": [
+            "For part (a), we write the statement of inverse proportion as an algebraic equation: $y = \\dfrac{k}{\\sqrt{x}}$, where $k$ is the constant of proportionality.",
+            "We substitute the known values $x = 25$ and $y = 4$ into this equation: $4 = \\dfrac{k}{\\sqrt{25}}$.",
+            "Since the square root of 25 is 5, this simplifies to: $4 = \\dfrac{k}{5}$.",
+            "Multiplying both sides by 5 gives the constant of proportionality: $k = 4 \\times 5 = 20$. Our formula is: $y = \\dfrac{20}{\\sqrt{x}}$.",
+            "To find the value of $y$ when $x = 100$, we substitute $x = 100$ into our formula: $y = \\dfrac{20}{\\sqrt{100}}$.",
+            "Since the square root of 100 is 10, we calculate: $y = \\dfrac{20}{10} = 2$.",
+            "For part (b), we find the value of $x$ when $y = 10$ by substituting $y = 10$ into our formula: $10 = \\dfrac{20}{\\sqrt{x}}$.",
+            "We multiply both sides by $\\sqrt{x}$ to clear the fraction: $10\\sqrt{x} = 20$.",
+            "Dividing both sides by 10 gives: $\\sqrt{x} = \\dfrac{20}{10} = 2$.",
+            "To solve for $x$, we square both sides of the equation: $x = 2^2 = 4$.",
+            "Final Answer: $$(a)\ 2\\ (b)\ 4$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\ 1\\ (b)\ 16$$",
+                "feedback": "You modeled the relationship as inversely proportional to $x$ instead of the square root of $x$ ($\\sqrt{x}$)."
+            },
+            {
+                "ans": "$$(a)\ 2\\ (b)\ 2$$",
+                "feedback": "Your value for part (a) is correct, but for part (b) you forgot to square the equation, giving $\\sqrt{x} = 2$ as your final value of $x$."
+            },
+            {
+                "ans": "$$(a)\ 80\\ (b)\ 0.04$$",
+                "feedback": "You modeled the relationship as directly proportional to $\\sqrt{x}$ instead of inversely proportional."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Root Inverse Proportions",
+            "content": "Make sure you read the relationship terms carefully. 'Inversely proportional to the square root' means you must write your variable as $\\sqrt{x}$ in the denominator. When solving for $x$ in part (b), remember that the opposite of taking a square root is squaring, so you must square 2 to get $x = 4$."
+        },
+        "payhip_link": "https://payhip.com/b/e47ks",
+        "button_text": "Master IGCSE Proportion: Download the Pack"
+    },
+    {
+        "id": "002989",
+        "date": "20 December 2025",
+        "major_area": "Algebra",
+        "topic": "Simultaneous Equations",
+        "subtopic": "Simultaneous Equations (Linear – Quadratic)",
+        "difficulty": "A/A*",
+        "q": "Solve the simultaneous equations:<br>$$y = x - 2$$<br>$$x^2 + y^2 = 34$$<br>You must show all your algebraic working.",
+        "steps": [
+            "We solve this system of equations by substituting the linear expression for $y$ directly into the quadratic equation.",
+            "Substituting $y = x - 2$ into $x^2 + y^2 = 34$ yields: $x^2 + (x - 2)^2 = 34$.",
+            "We expand the squared linear bracket carefully: $(x - 2)^2 = x^2 - 4x + 4$.",
+            "Substituting this expansion back into our equation: $x^2 + (x^2 - 4x + 4) = 34 \\implies 2x^2 - 4x + 4 = 34$.",
+            "We subtract 34 from both sides to form a quadratic equation equal to zero: $2x^2 - 4x - 30 = 0$.",
+            "To make the quadratic simpler to factorise, we divide every term by 2: $x^2 - 2x - 15 = 0$.",
+            "We factorise the quadratic by finding two numbers that multiply to $-15$ and sum to $-2$. These numbers are $-5$ and $+3$.",
+            "This gives the factorised equation: $(x - 5)(x + 3) = 0$.",
+            "This yields two $x$ values: $x = 5$ or $x = -3$.",
+            "We substitute each $x$ value back into our linear equation $y = x - 2$ to find the corresponding $y$ values.",
+            "When $x = 5$: $y = 5 - 2 = 3$. This gives the first solution pair: $(5, 3)$.",
+            "When $x = -3$: $y = -3 - 2 = -5$. This gives the second solution pair: $(-3, -5)$.",
+            "Final Answer: $$x = 5,\\ y = 3 \\text{ or } x = -3,\\ y = -5$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$x = 5,\\ y = 3$$",
+                "feedback": "Your first coordinate pair is correct, but you forgot to state the second mathematical solution pair ($x = -3, y = -5$)."
+            },
+            {
+                "ans": "$$x = -5,\\ y = -7 \\text{ or } x = 3,\\ y = 1$$",
+                "feedback": "You factorised the quadratic incorrectly as $(x + 5)(x - 3) = 0$, which reversed the signs of your $x$ coordinates."
+            },
+            {
+                "ans": "$$x = 5,\\ y = 3 \\text{ or } x = -3,\\ y = -1$$",
+                "feedback": "You calculated your $x$ values correctly, but you made an arithmetic error when substituting $x = -3$ back into the linear equation to solve for $y$."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Pairing Coordinates",
+            "content": "A common mistake in quadratic simultaneous equations is failing to pair your $x$ and $y$ values correctly. Always substitute your calculated $x$ values back into the linear equation one by one, and write your final answers as distinct, paired coordinates to avoid confusion."
+        },
+        "payhip_link": "https://payhip.com/b/0CP5n",
+        "button_text": "Master IGCSE Simultaneous Equations: Download the Pack"
+    },
+    {
+        "id": "002990",
+        "date": "21 December 2025",
+        "major_area": "Algebra",
+        "topic": "Sequences",
+        "subtopic": "Sequences",
+        "difficulty": "B/C",
+        "q": "In an arithmetic sequence, the 3rd term is 11 and the 7th term is 27.<br>(a) Find an expression, in terms of $n$, for the $n$th term of this sequence.<br>(b) State, with full working to support your answer, whether 120 is a member of this sequence.",
+        "steps": [
+            "For part (a), the formula for the $n$th term of an arithmetic sequence is given by: $T_n = a + (n - 1)d$, where $a$ is the first term and $d$ is the common difference.",
+            "We set up simultaneous equations using our given terms.",
+            "For the 3rd term: $a + 2d = 11$.",
+            "For the 7th term: $a + 6d = 27$.",
+            "Subtracting the first equation from the second to eliminate $a$: $(a + 6d) - (a + 2d) = 27 - 11 \\implies 4d = 16$.",
+            "Dividing by 4 gives the common difference: $d = 4$.",
+            "We substitute $d = 4$ back into our first equation to find $a$: $a + 2(4) = 11 \\implies a + 8 = 11 \\implies a = 3$.",
+            "The formula for the $n$th term is: $T_n = 3 + (n - 1)4 = 3 + 4n - 4 = 4n - 1$.",
+            "For part (b), to determine if 120 is a member of the sequence, we set our $n$th term formula equal to 120: $4n - 1 = 120$.",
+            "Adding 1 to both sides of the equation: $4n = 121$.",
+            "Dividing both sides by 4: $n = 30.25$.",
+            "Since the term position $n$ must be a positive integer, and $30.25$ is a decimal, 120 is not a member of this sequence.",
+            "Final Answer: $$(a)\ 4n - 1\\ (b)\ \\text{No, because } n = 30.25 \\text{ is not an integer}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\ 4n + 3\\ (b)\ \\text{No, because } n = 29.25 \\text{ is not an integer}$$",
+                "feedback": "You found the correct first term $a = 3$ and common difference $d = 4$, but you wrote your $n$th term formula as $dn + a$ ($4n + 3$) instead of $dn + (a - d)$ ($4n - 1$)."
+            },
+            {
+                "ans": "$$(a)\ 4n - 1\\ (b)\ \\text{Yes, because } n = 30 \\text{ is an integer}$$",
+                "feedback": "You made an arithmetic error when checking the term position, incorrectly dividing 121 by 4 as 30 instead of 30.25."
+            },
+            {
+                "ans": "$$(a)\ 8n - 13\\ (b)\ \\text{No, because } n = 16.63 \\text{ is not an integer}$$",
+                "feedback": "You calculated an incorrect common difference of $d = 8$ by dividing 16 by 2 instead of 4."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Fractional Term Positions",
+            "content": "To prove whether a number belongs to a sequence, always set your $n$th term expression equal to that number and solve for $n$. Since $n$ represents the physical position of a term (1st, 2nd, 3rd, etc.), it must always evaluate to a positive whole number. A decimal solution means the number falls between two terms and is not in the sequence."
+        },
+        "payhip_link": "https://payhip.com/b/5HqEG",
+        "button_text": "Master IGCSE Sequences: Download the Pack"
+    },
+    {
+        "id": "002991",
+        "date": "22 December 2025",
+        "major_area": "Geometry",
+        "topic": "Circle Geometry",
+        "subtopic": "Circle Theorems 2",
+        "difficulty": "A/B",
+        "img": "true",
+        "q": "The diagram shows a circle with points $A$, $B$, $C$, and $D$ on the circumference. The chords $AC$ and $BD$ intersect at point $X$.<br>(a) Prove that triangle $AXB$ is similar to triangle $DXC$.<br>(b) $AX = 6\\text{ cm}$, $XB = 4\\text{ cm}$, and $DX = 7.5\\text{ cm}$. Calculate the length of $XC$.",
+        "steps": [
+            "For part (a), to prove two triangles are similar, we must show that all three corresponding angles are equal (Angle-Angle-Angle).",
+            "First, angle $AXB = \\text{angle } DXC$ because they are vertically opposite angles.",
+            "Second, angle $BAX = \\text{angle } CDX$ because they are angles subtended by the same arc $BC$ (angles in the same segment).",
+            "Third, angle $ABX = \\text{angle } DCX$ because they are angles subtended by the same arc $AD$ (angles in the same segment).",
+            "Since all three corresponding angles are equal, triangle $AXB$ is similar to triangle $DXC$ (AAA), completing the proof.",
+            "For part (b), we use the Intersecting Chords Theorem, which states that when two chords intersect inside a circle, the product of their segments is equal.",
+            "This gives the relationship: $AX \\times XC = BX \\times DX$.",
+            "Substituting our known values: $6 \\times XC = 4 \\times 7.5$.",
+            "Evaluating the multiplication: $6XC = 30$.",
+            "Dividing both sides by 6 yields: $XC = 5\\text{ cm}$.",
+            "Final Answer: $$(a)\ \\text{Proof completed}\\ (b)\ 5\\text{ cm}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\ \\text{Proof completed}\\ (b)\ 11.25\\text{ cm}$$",
+                "feedback": "You set up your intersecting chords ratio incorrectly, multiplying $AX \\times BX = XC \\times DX$ instead of multiplying the segments of the same chord together."
+            },
+            {
+                "ans": "$$(a)\ \\text{Proof based on congruent triangles completed}\\ (b)\ 5\\text{ cm}$$",
+                "feedback": "For part (a), your proof incorrectly claimed the triangles were congruent. These triangles are similar (same shape but different sizes), not congruent (identical)."
+            },
+            {
+                "ans": "$$(a)\ \\text{Proof completed}\\ (b)\ 3.2\\text{ cm}$$",
+                "feedback": "You made an arithmetic error when solving the equation, dividing 30 by 6 incorrectly or setting up the wrong cross-multiplication."
+            }
+        ],
+        "bradley_insight": {
+            "type": "deeper",
+            "title": "The Head Teacher's Eye: Intersecting Chords",
+            "content": "The Intersecting Chords Theorem is a direct consequence of similar triangles. Because triangle $AXB$ is similar to triangle $DXC$, the ratio of their corresponding sides is equal: $\\dfrac{AX}{DX} = \\dfrac{BX}{XC}$. Cross-multiplying this ratio yields the theorem: $AX \\times XC = BX \\times DX$."
+        },
+        "payhip_link": "https://payhip.com/b/xrmnz",
+        "button_text": "Master IGCSE Circle Geometry: Download the Pack"
+    },
+    {
+        "id": "002992",
+        "date": "23 December 2025",
+        "major_area": "Geometry",
+        "topic": "Transformations",
+        "subtopic": "Transformations",
+        "difficulty": "C/D",
+        "img": "true",
+        "q": "The diagram shows three triangles, $A$, $B$, and $C$, plotted on a coordinate grid.<br>(a) Describe fully the single transformation that maps triangle $A$ onto triangle $B$.<br>(b) Describe fully the single transformation that maps triangle $A$ onto triangle $C$.",
+        "steps": [
+            "For part (a), we observe that triangle $A$ and triangle $B$ have the same orientation and size, which indicates a translation.",
+            "We trace a single vertex of triangle $A$ to its corresponding vertex on triangle $B$.",
+            "The bottom-left vertex of $A(1,1)$ moves to the bottom-left vertex of $B(-4,2)$.",
+            "This movement represents a horizontal displacement of $-5$ (5 units left) and a vertical displacement of $+1$ (1 unit up).",
+            "We express this fully as: a translation by the vector $\\begin{pmatrix} -5 \\\\ 1 \\end{pmatrix}$.",
+            "For part (b), we observe that triangle $C$ is a flipped version of triangle $A$ across a horizontal line, which indicates a reflection.",
+            "By tracing the vertical distances from the vertices of $A$ and $C$ to the horizontal axis ($y = 0$), we see that the horizontal axis acts as the mirror line.",
+            "We express this fully as: a reflection in the x-axis (or the line $y = 0$).",
+            "Final Answer: $$(a)\ \\text{Translation by vector } \\begin{pmatrix} -5 \\\\ 1 \\end{pmatrix}\\ (b)\ \\text{Reflection in the x-axis (or line } y = 0\\text{)}$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\ \\text{Translation by vector } \\begin{pmatrix} 1 \\\\ -5 \\end{pmatrix}\\ (b)\ \\text{Reflection in the y-axis}$$",
+                "feedback": "For part (a), you reversed the components of your translation vector, writing the vertical change on top and the horizontal change on the bottom."
+            },
+            {
+                "ans": "$$(a)\ \\text{Rotation of 90 degrees}\\ (b)\ \\text{Reflection in the line } y = -x$$",
+                "feedback": "Triangle $B$ has the exact same orientation as triangle $A$, so no rotation has occurred."
+            },
+            {
+                "ans": "$$(a)\ \\text{Translation by vector } \\begin{pmatrix} -5 \\\\ 1 \\end{pmatrix}\\ (b)\ \\text{Reflection}$$",
+                "feedback": "For part (b), a description of a reflection is incomplete without explicitly naming the mirror line (the x-axis or $y = 0$)."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Complete Descriptions",
+            "content": "In transformation questions, you will lose multiple marks if your description is incomplete. A translation must always include the word 'translation' and a column vector. A reflection must always include the word 'reflection' and the equation of the mirror line."
+        },
+        "payhip_link": "https://payhip.com/b/U2nMw",
+        "button_text": "Master IGCSE Transformations: Download the Pack"
+    },
+    {
+        "id": "002993",
+        "date": "24 December 2025",
+        "major_area": "Probability & Statistics",
+        "topic": "Probability",
+        "subtopic": "Probability of Combined Events",
+        "difficulty": "A/A*",
+        "q": "A bag contains $n$ sweets. 3 of the sweets are red, and the rest are green. Tom takes two sweets from the bag at random, without replacement. The probability that Tom takes two red sweets is $\\dfrac{1}{20}$.<br>(a) Show that $n^2 - n - 120 = 0$.<br>(b) Find the number of sweets originally in the bag.",
+        "steps": [
+            "For part (a), we model the probability of selecting two red sweets consecutively without replacement.",
+            "The probability of selecting a red sweet on the first draw is: $\\text{P}(\\text{Red}_1) = \\dfrac{3}{n}$.",
+            "Since selection is without replacement, $n-1$ total sweets remain, of which $2$ are red. The probability of selecting a red sweet on the second draw is: $\\text{P}(\\text{Red}_2) = \\dfrac{2}{n - 1}$.",
+            "The combined probability of selecting two red sweets is the product of these fractions: $\\text{P}(\\text{Both Red}) = \\dfrac{3}{n} \\times \\dfrac{2}{n - 1} = \\dfrac{6}{n(n - 1)}$.",
+            "We set this expression equal to the given probability of $\\dfrac{1}{20}$: $\\dfrac{6}{n^2 - n} = \\dfrac{1}{20}$.",
+            "We cross-multiply to eliminate the fractions: $6 \\times 20 = 1 \\times (n^2 - n) \\implies 120 = n^2 - n$.",
+            "Subtracting 120 from both sides gives the required quadratic equation: $n^2 - n - 120 = 0$, completing the proof.",
+            "For part (b), we solve the quadratic equation $n^2 - n - 120 = 0$ by factorising.",
+            "We find two numbers that multiply to $-120$ and sum to $-1$. These numbers are $-12$ and $+10$.",
+            "This gives the factorised form: $(n - 12)(n + 10) = 0$.",
+            "This yields two mathematical solutions: $n = 12$ or $n = -10$.",
+            "Since $n$ represents a physical quantity (the number of sweets), it must be a positive integer. We discard the negative root, leaving the original number of sweets as $12$.",
+            "Final Answer: $$(a)\\ \\text{Proof completed}\\ (b)\ 12$$"
+        ],
+        "wrong_options": [
+            {
+                "ans": "$$(a)\\ \\text{Proof completed}\\ (b)\ 12 \\text{ or } -10$$",
+                "feedback": "The number of sweets cannot be a negative value. You must discard the negative root $n = -10$ in this context."
+            },
+            {
+                "ans": "$$(a)\ n^2 - 180 = 0\\ (b)\ 13$$",
+                "feedback": "You calculated the probability with replacement ($\\dfrac{3}{n} \\times \\dfrac{3}{n} = \\dfrac{9}{n^2}$), which is incorrect for this sequential selection."
+            },
+            {
+                "ans": "$$(a)\\ \\text{Proof completed}\\ (b)\ 10$$",
+                "feedback": "You factorised the quadratic incorrectly as $(n + 12)(n - 10) = 0$, which reversed the values and signs of your roots."
+            }
+        ],
+        "bradley_insight": {
+            "type": "caution",
+            "title": "The Head Teacher's Eye: Changing Denominators",
+            "content": "In algebraic probability questions without replacement, always remember to reduce both the numerator (representing the specific item) and the denominator (representing the total items) by 1 for the second branch: $\\dfrac{3}{n} \\times \\dfrac{2}{n-1}$."
+        },
+        "payhip_link": "https://payhip.com/b/3AZnV",
+        "button_text": "Master IGCSE Probability: Download the Pack"
     }
+
 
 
 
