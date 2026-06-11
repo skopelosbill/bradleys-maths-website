@@ -1175,7 +1175,7 @@ const problemBank = [
         "topic": "Interest",
         "subtopic": "Percentage Change and Interest",
         "difficulty": "B/C",
-        "q": "Malik invests $1500 in Account A paying simple interest at a rate of $4.5\\%$ per year.<br>He also invests $1500 in Account B paying compound interest at a rate of $4.2\\%$ per year.<br>Calculate the difference in the total value of the two accounts at the end of 6 years. Give your answer correct to the nearest cent.",
+        "q": "Malik invests \\$1500 in Account A paying simple interest at a rate of $4.5\\%$ per year.<br>He also invests \\$1500 in Account B paying compound interest at a rate of $4.2\\%$ per year.<br>Calculate the difference in the total value of the two accounts at the end of 6 years. Give your answer correct to the nearest cent.",
         "steps": [
             "We first calculate the final value of Account A using simple interest.",
             "The formula for simple interest is: $\\text{Interest} = \\dfrac{P \\times R \\times T}{100}$.",
@@ -1218,7 +1218,7 @@ const problemBank = [
         "topic": "Surds",
         "subtopic": "Surds",
         "difficulty": "C/D",
-        "q": "Expand and simplify the following brackets:<br>$$(2 + \\sqrt{5})(2 - \\sqrt{5})$$$",
+        "q": "Expand and simplify the following brackets:<br>$$(2 + \\sqrt{5})(2 - \\sqrt{5})$$",
         "steps": [
             "We expand the double brackets using the distributive property.",
             "This expands to: $2(2) - 2\\sqrt{5} + 2\\sqrt{5} - (\\sqrt{5} \\times \\sqrt{5})$.",
@@ -1258,7 +1258,7 @@ const problemBank = [
         "difficulty": "A/B",
         "q": "A curve has the equation $y = k a^x$, where $k$ and $a$ are positive constants.<br>The curve passes through the points $(0, 3)$ and $(2, 48)$.<br>Find the values of $k$ and $a$.",
         "steps": [
-            "We begin by substituting the coordinates of the first point $(0, 3)$ into the curve\\'s equation.",
+            "We begin by substituting the coordinates of the first point $(0, 3)$ into the curve\\text{'}s equation.",
             "This yields: $3 = k \\times a^0$.",
             "Since any non-zero number raised to the power of 0 is 1 ($a^0 = 1$), we have: $3 = k \\times 1 \\implies k = 3$.",
             "Now, we substitute the coordinates of the second point $(2, 48)$ and our calculated value of $k = 3$ into the equation.",
