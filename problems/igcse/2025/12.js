@@ -996,52 +996,49 @@ const problemBank = [
         "button_text": "Master IGCSE Transformations: Download the Pack"
     },
     {
-        "id": "002993",
-        "date": "24 December 2025",
-        "major_area": "Probability & Statistics",
-        "topic": "Probability",
-        "subtopic": "Probability of Combined Events",
-        "difficulty": "A/A*",
-        "q": "A bag contains $n$ sweets. 3 of the sweets are red, and the rest are green. Tom takes two sweets from the bag at random, without replacement. The probability that Tom takes two red sweets is $\\dfrac{1}{20}$.<br>(a) Show that $n^2 - n - 120 = 0$.<br>(b) Find the number of sweets originally in the bag.",
-        "steps": [
-            "For part (a), we model the probability of selecting two red sweets consecutively without replacement.",
-            "The probability of selecting a red sweet on the first draw is: $\\text{P}(\\text{Red}_1) = \\dfrac{3}{n}$.",
-            "Since selection is without replacement, $n-1$ total sweets remain, of which $2$ are red. The probability of selecting a red sweet on the second draw is: $\\text{P}(\\text{Red}_2) = \\dfrac{2}{n - 1}$.",
-            "The combined probability of selecting two red sweets is the product of these fractions: $\\text{P}(\\text{Both Red}) = \\dfrac{3}{n} \\times \\dfrac{2}{n - 1} = \\dfrac{6}{n(n - 1)}$.",
-            "We set this expression equal to the given probability of $\\dfrac{1}{20}$: $\\dfrac{6}{n^2 - n} = \\dfrac{1}{20}$.",
-            "We cross-multiply to eliminate the fractions: $6 \\times 20 = 1 \\times (n^2 - n) \\implies 120 = n^2 - n$.",
-            "Subtracting 120 from both sides gives the required quadratic equation: $n^2 - n - 120 = 0$, completing the proof.",
-            "For part (b), we solve the quadratic equation $n^2 - n - 120 = 0$ by factorising.",
-            "We find two numbers that multiply to $-120$ and sum to $-1$. These numbers are $-12$ and $+10$.",
-            "This gives the factorised form: $(n - 12)(n + 10) = 0$.",
-            "This yields two mathematical solutions: $n = 12$ or $n = -10$.",
-            "Since $n$ represents a physical quantity (the number of sweets), it must be a positive integer. We discard the negative root, leaving the original number of sweets as $12$.",
-            "Final Answer: $$(a)\\ \\text{Proof completed}\\ (b)\ 12$$"
-        ],
-        "wrong_options": [
-            {
-                "ans": "$$(a)\\ \\text{Proof completed}\\ (b)\ 12 \\text{ or } -10$$",
-                "feedback": "The number of sweets cannot be a negative value. You must discard the negative root $n = -10$ in this context."
-            },
-            {
-                "ans": "$$(a)\ n^2 - 180 = 0\\ (b)\ 13$$",
-                "feedback": "You calculated the probability with replacement ($\\dfrac{3}{n} \\times \\dfrac{3}{n} = \\dfrac{9}{n^2}$), which is incorrect for this sequential selection."
-            },
-            {
-                "ans": "$$(a)\\ \\text{Proof completed}\\ (b)\ 10$$",
-                "feedback": "You factorised the quadratic incorrectly as $(n + 12)(n - 10) = 0$, which reversed the values and signs of your roots."
-            }
-        ],
-        "bradley_insight": {
-            "type": "caution",
-            "title": "The Head Teacher's Eye: Changing Denominators",
-            "content": "In algebraic probability questions without replacement, always remember to reduce both the numerator (representing the specific item) and the denominator (representing the total items) by 1 for the second branch: $\\dfrac{3}{n} \\times \\dfrac{2}{n-1}$."
+    "id": "002993",
+    "date": "24 December 2025",
+    "major_area": "Probability & Statistics",
+    "topic": "Probability",
+    "subtopic": "Probability of Combined Events",
+    "difficulty": "A/A*",
+    "q": "A bag contains $n$ sweets. 3 of the sweets are red, and the rest are green. Tom takes two sweets from the bag at random, without replacement. The probability that Tom takes two red sweets is $\\dfrac{1}{22}$.<br>(a) Show that $n^2 - n - 132 = 0$.<br>(b) Find the number of sweets originally in the bag.",
+    "steps": [
+        "For part (a), we model the probability of selecting two red sweets consecutively without replacement.",
+        "The probability of selecting a red sweet on the first draw is: $\\text{P}(\\text{Red}_1) = \\dfrac{3}{n}$.",
+        "Since selection is without replacement, $n-1$ total sweets remain, of which $2$ are red. The probability of selecting a red sweet on the second draw is: $\\text{P}(\\text{Red}_2) = \\dfrac{2}{n - 1}$.",
+        "The combined probability of selecting two red sweets is the product of these fractions: $\\text{P}(\\text{Both Red}) = \\dfrac{3}{n} \\times \\dfrac{2}{n - 1} = \\dfrac{6}{n(n - 1)}$.",
+        "We set this expression equal to the given probability of $\\dfrac{1}{22}$: $\\dfrac{6}{n^2 - n} = \\dfrac{1}{22}$.",
+        "We cross-multiply to eliminate the fractions: $6 \\times 22 = 1 \\times (n^2 - n) \\implies 132 = n^2 - n$.",
+        "Subtracting 132 from both sides gives the required quadratic equation: $n^2 - n - 132 = 0$, completing the proof.",
+        "For part (b), we solve the quadratic equation $n^2 - n - 132 = 0$ by factorising.",
+        "We find two numbers that multiply to $-132$ and sum to $-1$. These numbers are $-12$ and $+11$.",
+        "This gives the factorised form: $(n - 12)(n + 11) = 0$.",
+        "This yields two mathematical solutions: $n = 12$ or $n = -11$.",
+        "Since $n$ represents a physical quantity (the number of sweets), it must be a positive integer. We discard the negative root, leaving the original number of sweets as $12$.",
+        "Final Answer: $$(a)\\ \\text{Proof completed}\\ (b)\ 12$$"
+    ],
+    "wrong_options": [
+        {
+            "ans": "$$(a)\\ \\text{Proof completed}\\ (b)\ 12 \\text{ or } -11$$",
+            "feedback": "The number of sweets cannot be a negative value. You must discard the negative root $n = -11$ in this context."
         },
-        "payhip_link": "https://payhip.com/b/3AZnV",
-        "button_text": "Master IGCSE Probability: Download the Pack"
-    }
-
-
-
+        {
+            "ans": "$$(a)\ n^2 - 198 = 0\\ (b)\ 14$$",
+            "feedback": "You calculated the probability with replacement ($\\dfrac{3}{n} \\times \\dfrac{3}{n} = \\dfrac{9}{n^2}$), which is incorrect for this sequential selection."
+        },
+        {
+            "ans": "$$(a)\\ \\text{Proof completed}\\ (b)\ 11$$",
+            "feedback": "You factorised the quadratic incorrectly as $(n + 12)(n - 11) = 0$, which reversed the values and signs of your roots."
+        }
+    ],
+    "bradley_insight": {
+        "type": "caution",
+        "title": "The Head Teacher's Eye: Changing Denominators",
+        "content": "In algebraic probability questions without replacement, always remember to reduce both the numerator (representing the specific item) and the denominator (representing the total items) by 1 for the second branch: $\\dfrac{3}{n} \\times \\dfrac{2}{n-1}$."
+    },
+    "payhip_link": "https://payhip.com/b/3AZnV",
+    "button_text": "Master IGCSE Probability: Download the Pack"
+}
 
 ]
