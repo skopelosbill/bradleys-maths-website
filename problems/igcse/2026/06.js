@@ -428,7 +428,7 @@ const problemBank = [
             "Female/Coffee = Total Coffee (65) - Male/Coffee (30) = 35.",
             "Male/Tea = Male Total (45) - Male/Coffee (30) = 15.",
             "Total Tea = 15 + 20 = 35. We check our columns and rows: 35 + 65 = 100. Perfect.",
-            "<img src='images/2026/06/i_16_ans.png' style='width:100%; max-width:450px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+            "<img src='images/2026-06/i_16_ans.png' style='width:100%; max-width:450px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
             "For part (b), we look for the specific intersection of Female and Coffee, which is 35 out of the total 100 students.",
             "Calculation: $\\dfrac{35}{100}$, which simplifies to $\\dfrac{7}{20}$.",
             "For part (c), the phrase 'Given that' restricts our denominator. We only look at the 'Total Tea' column, which has 35 students.",
