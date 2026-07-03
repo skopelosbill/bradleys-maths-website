@@ -8,7 +8,7 @@
         freeQuestionsLeft: localStorage.getItem('bradley_free_left') !== null ? parseInt(localStorage.getItem('bradley_free_left')) : 20,
         isPremium: localStorage.getItem('bradley_premium') === 'true',
         masterVault: [],
-        activeMonths: ['2025-12', '2026-01', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06', '2026-07'], // Updated with standard YYYY-MM
+        activeMonths: ['2025-12', '2026-01', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06', '2026-07','2026-08'], // Updated with standard YYYY-MM
         currentGroup: null, 
         isTeacherMode: false
     },
