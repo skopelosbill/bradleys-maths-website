@@ -812,4 +812,5 @@
         localStorage.setItem('bradley_tier', newTier);
         this.init('audit', newTier);
     }
+     
 };
