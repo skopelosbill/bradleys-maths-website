@@ -311,9 +311,9 @@ const problemBank = [
       "Now we find $\\overrightarrow{OM}$ by following the path from $O$ to $M$ via $A$: $\\overrightarrow{OM} = \\overrightarrow{OA} + \\overrightarrow{AM}$.",
       "Substituting our vectors: $\\overrightarrow{OM} = \\mathbf{a} + \\dfrac{1}{2}(-\\mathbf{a} + \\mathbf{b}) = \\mathbf{a} - \\dfrac{1}{2}\\mathbf{a} + \\dfrac{1}{2}\\mathbf{b} = \\dfrac{1}{2}\\mathbf{a} + \\dfrac{1}{2}\\mathbf{b}$.",
       "For part (b), we wish to find the vector $\\overrightarrow{AP}$. We follow the path from $A$ to $P$ via $O$: $\\overrightarrow{AP} = \\overrightarrow{AO} + \\overrightarrow{OP}$.",
-      "We are given that $OP = \\dfrac{2}{3}OM$, so the vector $\\overrightarrow{OP} = \\dfrac{2}{3}\\overrightarrow{OM} = \\dfrac{2}{3}\\left(\\dfrac{1}{2}\\mathbf{a} + \\dfrac{1}{2}\\mathbf{b}\\right) = \\dfrac{1}{3}\\mathbf{a} + \\dfrac{1}{3}\\mathbf{b}$.",
-      "Now, we substitute this into our path: $\\overrightarrow{AP} = -\\mathbf{a} + \\left(\\dfrac{1}{3}\\mathbf{a} + \\dfrac{1}{3}\\mathbf{b}\\right)$.",
-      "Grouping the $\\mathbf{a}$ terms: $\\overrightarrow{AP} = \\left(-1 + \\dfrac{1}{3}\\right)\\mathbf{a} + \\dfrac{1}{3}\\mathbf{b} = -\\dfrac{2}{3}\\mathbf{a} + \\dfrac{1}{3}\\mathbf{b}$.",
+      "We are given that $OP = \\dfrac{2}{3}OM$, so the vector $\\overrightarrow{OP} = \\dfrac{2}{3}\\overrightarrow{OM} = \\dfrac{2}{3}\\left(\\dfrac{1}{2}\\mathbf{a} + \\dfrac{1}{2}\\mathbf{b}\right) = \\dfrac{1}{3}\\mathbf{a} + \\dfrac{1}{3}\\mathbf{b}$.",
+      "Now, we substitute this into our path: $\\overrightarrow{AP} = -\\mathbf{a} + \\left(\\dfrac{1}{3}\\mathbf{a} + \\dfrac{1}{3}\\mathbf{b}\right)$.",
+      "Grouping the $\\mathbf{a}$ terms: $\\overrightarrow{AP} = \\left(-1 + \\dfrac{1}{3}\right)\\mathbf{a} + \\dfrac{1}{3}\\mathbf{b} = -\\dfrac{2}{3}\\mathbf{a} + \\dfrac{1}{3}\\mathbf{b}$.",
       "Factoring out the fraction $\\dfrac{1}{3}$ yields the required expression: $\\overrightarrow{AP} = \\dfrac{1}{3}(\\mathbf{b} - 2\\mathbf{a})$.",
       "Final Answer: $$(a)\\ \\dfrac{1}{2}\\mathbf{a} + \\dfrac{1}{2}\\mathbf{b}\\ (b)\\ \\text{Vector shown}$$"
     ],
@@ -424,5 +424,4 @@ const problemBank = [
     "payhip_link": "https://payhip.com/b/iBzE5",
     "button_text": "Master GCSE Similarity: Download the Pack"
   }
-
 ]
