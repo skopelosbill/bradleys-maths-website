@@ -173,6 +173,7 @@ const problemBank = [
     "topic": "Trigonometry",
     "subtopic": "Sine rule",
     "difficulty": "6/7",
+    "img": "true"
     "q": "In triangle $PQR$, the side length $PQ = 14\\text{ cm}$, angle $PRQ = 42^\\circ$, and angle $QPR = 58^\\circ$.<br>(a) Calculate the length of the side $QR$. Give your answer correct to $3\\text{ significant figures}$.<br>(b) Calculate the angle $PQR$.",
     "steps": [
       "For part (a), we are given two angles and a non-included side of a triangle, which means we can apply the Sine Rule: $\\dfrac{a}{\\sin(A)} = \\dfrac{b}{\\sin(B)}$.",
