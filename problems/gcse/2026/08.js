@@ -1,7 +1,7 @@
 const problemBank = [
   {
     "id": "003213",
-    "date": "1 Aug 2026",
+    "date": "1 August 2026",
     "major_area": "Number",
     "topic": "Estimation & Bounds",
     "subtopic": "Upper and lower bounds",
