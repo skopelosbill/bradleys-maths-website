@@ -209,5 +209,220 @@ const problemBank = [
     },
     "payhip_link": "https://payhip.com/b/EaYM1",
     "button_text": "Master GCSE Sine Rule: Download the Pack"
+  },
+  {
+    "id": "003218",
+    "date": "6 August 2026",
+    "major_area": "Algebra",
+    "topic": "Graphs",
+    "subtopic": "Transformations of graphs",
+    "difficulty": "6/7",
+    "img": "true",
+    "q": "The diagram shows a sketch of the curve with equation $y = f(x)$. The point $P(3, -4)$ is the turning point of the curve.<br>Write down the coordinates of the turning point of the curve with equation:<br>(a) $y = f(x - 2)$<br>(b) $y = -f(x) + 3$",
+    "steps": [
+      "For part (a), the transformation $y = f(x - 2)$ represents a horizontal translation of the graph.",
+      "Any transformation of the form $y = f(x - h)$ shifts the entire curve parallel to the x-axis by $+h$ units (to the right).",
+      "For $y = f(x - 2)$, the horizontal translation is $+2$ units, while the y-coordinates remain unchanged.",
+      "We apply this shift to the turning point $P(3, -4)$: the new x-coordinate is $3 + 2 = 5$, and the y-coordinate remains $-4$.",
+      "The new coordinates are $(5, -4)$.",
+      "For part (b), the transformation $y = -f(x) + 3$ combines two vertical operations: a reflection and a translation.",
+      "First, the transformation $y = -f(x)$ reflects the curve in the x-axis, which negates the y-coordinates of all points: $(x, y) \\rightarrow (x, -y)$.",
+      "Applying this reflection to $P(3, -4)$ gives the intermediate coordinates $(3, 4)$.",
+      "Second, the $+3$ constant represents a vertical translation of $+3$ units (upwards), which increases the y-coordinate by 3.",
+      "Applying this vertical translation to $(3, 4)$ gives our final coordinates: $(3, 4 + 3) = (3, 7)$.",
+      "Final Answer: $$(a)\\ (5, -4)\\ (b)\\ (3, 7)$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$(a)\\ (1, -4)\\ (b)\\ (3, 23)$$",
+        "feedback": "You subtracted 2 from the x-coordinate instead of adding it in part (a), and you used a non-standard transformation scale in part (b)."
+      },
+      {
+        "ans": "$$(a)\\ (5, -4)\\ (b)\\ (-3, 23)$$",
+        "feedback": "In part (a), you successfully calculated the translation, but in part (b) you gave the incorrect signs for your final coordinates."
+      },
+      {
+        "ans": "$$(a)\\ (5, -4)\\ (b)\\ (3, -13)$$",
+        "feedback": "You solved part (a) correctly, but in part (b), you forgot that $-y$ is applied first, leading to a sign error when adding the $+3$ constant."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Order of Operations in Transformations",
+      "content": "When a curve undergoes multiple vertical transformations like $y = -f(x) + 3$, always follow BIDMAS rules. Apply the multiplication/reflection $-f(x)$ first by negating the y-coordinate, and then apply the addition/translation $+3$ second. Reversing this order will result in incorrect coordinates."
+    },
+    "payhip_link": "https://payhip.com/b/FDaTw",
+    "button_text": "Master Graph Transformations: Download the Pack"
+  },
+  {
+    "id": "003219",
+    "date": "7 August 2026",
+    "major_area": "Number",
+    "topic": "Decimals",
+    "subtopic": "Converting between decimals and fractions",
+    "difficulty": "6/7",
+    "q": "Express the recurring decimal $0.2\\dot{7}\\dot{5}$ as a fraction in its simplest form.",
+    "steps": [
+      "We start by setting a variable $x$ equal to the recurring decimal: $x = 0.2757575...$.",
+      "We observe that the recurring part has two digits ($7$ and $5$), while the digit $2$ does not recur.",
+      "To align the recurring parts, we first multiply $x$ by 10 to move the non-recurring digit to the left of the decimal point: $10x = 2.757575...$ (Equation 1).",
+      "Because there are two recurring digits, we multiply Equation 1 by 100 to shift the decimal point past one full set of recurring digits: $1000x = 275.757575...$ (Equation 2).",
+      "Next, we subtract Equation 1 from Equation 2 to eliminate the infinite recurring decimal part: $1000x - 10x = 275.757575... - 2.757575...$.",
+      "Performing the subtraction: $990x = 273$.",
+      "We solve for $x$ by writing it as a fraction: $x = \\dfrac{273}{990}$.",
+      "Finally, we simplify the fraction by finding a common factor. Both 273 and 990 are divisible by 3.",
+      "Dividing the numerator and denominator by 3 yields: $x = \\dfrac{91}{330}$.",
+      "Final Answer: $$\\dfrac{91}{330}$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$\\dfrac{275}{999}$$",
+        "feedback": "You treated the entire decimal as recurring, subtracting $x$ from $1000x$ instead of separating the non-recurring digit $2$."
+      },
+      {
+        "ans": "$$\\dfrac{273}{900}$$",
+        "feedback": "You set up the denominator incorrectly as 900 instead of 990 when subtracting $10x$ from $1000x$."
+      },
+      {
+        "ans": "$$\\dfrac{137}{495}$$",
+        "feedback": "You made a simplification or division error when dividing the numerator 273 by its common factors."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Matching Recurring Parts",
+      "content": "Always ensure the digits after the decimal point line up perfectly before subtracting your equations. Subtracting $x$ (which has $.275...$) from $100x$ (which has $.575...$) will leave non-zero terms after the decimal point, ruining the method. Using $1000x$ and $10x$ aligns the $.7575...$ columns beautifully."
+    },
+    "payhip_link": "https://payhip.com/b/dAvne",
+    "button_text": "Master Recurring Decimals: Download the Pack"
+  },
+  {
+    "id": "003220",
+    "date": "8 August 2026",
+    "major_area": "Geometry & Measures",
+    "topic": "Vectors",
+    "subtopic": "Vector addition",
+    "difficulty": "8/9",
+    "img": "true",
+    "q": "The diagram shows a triangle $OAB$ where $\\overrightarrow{OA} = \\mathbf{a}$ and $\\overrightarrow{OB} = \\mathbf{b}$.<br>The point $M$ is the midpoint of $AB$ and $P$ is a point on $OM$ such that $OP = \\dfrac{2}{3}OM$.<br>(a) Find the vector $\\overrightarrow{OM}$ in terms of $\\mathbf{a}$ and $\\mathbf{b}$.<br>(b) Show that the vector $\\overrightarrow{AP} = \\dfrac{1}{3}(\\mathbf{b} - 2\\mathbf{a})$.",
+    "steps": [
+      "For part (a), to find the vector $\\overrightarrow{OM}$, we first express the vector $\\overrightarrow{AB}$ by following the path from $A$ to $B$ via $O$: $\\overrightarrow{AB} = \\overrightarrow{AO} + \\overrightarrow{OB} = -\\mathbf{a} + \\mathbf{b}$.",
+      "Since $M$ is the midpoint of $AB$, the vector $\\overrightarrow{AM} = \\dfrac{1}{2}\\overrightarrow{AB} = \\dfrac{1}{2}(-\\mathbf{a} + \\mathbf{b})$.",
+      "Now we find $\\overrightarrow{OM}$ by following the path from $O$ to $M$ via $A$: $\\overrightarrow{OM} = \\overrightarrow{OA} + \\overrightarrow{AM}$.",
+      "Substituting our vectors: $\\overrightarrow{OM} = \\mathbf{a} + \\dfrac{1}{2}(-\\mathbf{a} + \\mathbf{b}) = \\mathbf{a} - \\dfrac{1}{2}\\mathbf{a} + \\dfrac{1}{2}\\mathbf{b} = \\dfrac{1}{2}\\mathbf{a} + \\dfrac{1}{2}\\mathbf{b}$.",
+      "For part (b), we wish to find the vector $\\overrightarrow{AP}$. We follow the path from $A$ to $P$ via $O$: $\\overrightarrow{AP} = \\overrightarrow{AO} + \\overrightarrow{OP}$.",
+      "We are given that $OP = \\dfrac{2}{3}OM$, so the vector $\\overrightarrow{OP} = \\dfrac{2}{3}\\overrightarrow{OM} = \\dfrac{2}{3}\\left(\\dfrac{1}{2}\\mathbf{a} + \\dfrac{1}{2}\\mathbf{b}\\right) = \\dfrac{1}{3}\\mathbf{a} + \\dfrac{1}{3}\\mathbf{b}$.",
+      "Now, we substitute this into our path: $\\overrightarrow{AP} = -\\mathbf{a} + \\left(\\dfrac{1}{3}\\mathbf{a} + \\dfrac{1}{3}\\mathbf{b}\\right)$.",
+      "Grouping the $\\mathbf{a}$ terms: $\\overrightarrow{AP} = \\left(-1 + \\dfrac{1}{3}\\right)\\mathbf{a} + \\dfrac{1}{3}\\mathbf{b} = -\\dfrac{2}{3}\\mathbf{a} + \\dfrac{1}{3}\\mathbf{b}$.",
+      "Factoring out the fraction $\\dfrac{1}{3}$ yields the required expression: $\\overrightarrow{AP} = \\dfrac{1}{3}(\\mathbf{b} - 2\\mathbf{a})$.",
+      "Final Answer: $$(a)\\ \\dfrac{1}{2}\\mathbf{a} + \\dfrac{1}{2}\\mathbf{b}\\ (b)\\ \\text{Vector shown}$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$(a)\\ \\dfrac{1}{2}\\mathbf{a} + \\dfrac{1}{2}\\mathbf{b}\\ (b)\\ \\dfrac{1}{3}(\\mathbf{b} - \\mathbf{a})$$",
+        "feedback": "In part (b), you miscalculated the fraction for $\\overrightarrow{OP}$, forgetting to distribute the factor of $\\dfrac{2}{3}$ across both vector components."
+      },
+      {
+        "ans": "$$(a)\\ \\mathbf{a} + \\mathbf{b}\\ (b)\\ \\dfrac{1}{3}(\\mathbf{b} - 2\\mathbf{a})$$",
+        "feedback": "In part (a), you calculated the vector sum of $OA$ and $OB$ instead of finding the midpoint vector path $\\overrightarrow{OM}$."
+      },
+      {
+        "ans": "$$(a)\\ \\dfrac{1}{2}\\mathbf{a} + \\dfrac{1}{2}\\mathbf{b}\\ (b)\\ \\dfrac{1}{3}(\\mathbf{b} + 2\\mathbf{a})$$",
+        "feedback": "In part (b), you made a sign error when adding the negative vector $\\overrightarrow{AO} = -\\mathbf{a}$ to the path."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Finding Midpoint Vectors Directly",
+      "content": "A beautiful shortcut for finding a vector to a midpoint $M$ from the origin $O$ is to take the average of the two outer position vectors: $\\overrightarrow{OM} = \\dfrac{1}{2}(\\overrightarrow{OA} + \\overrightarrow{OB}) = \\dfrac{1}{2}(\\mathbf{a} + \\mathbf{b})$. Memorizing this shortcut can save you critical time on multi-step geometry proofs."
+    },
+    "payhip_link": "https://payhip.com/b/CZOJ4",
+    "button_text": "Master GCSE Vector Geometry: Download the Pack"
+  },
+  {
+    "id": "003221",
+    "date": "9 August 2026",
+    "major_area": "Probability",
+    "topic": "Conditional Probability",
+    "subtopic": "Conditional Probability",
+    "difficulty": "8/9",
+    "q": "A bag contains $n$ sweets, of which 6 are lemon and the rest are strawberry.<br>Two sweets are chosen at random from the bag without replacement.<br>Given that the probability that both sweets chosen are lemon is $\\dfrac{1}{3}$, show that $n^2 - n - 90 = 0$, and find the total number of sweets in the bag.",
+    "steps": [
+      "The total number of sweets in the bag is $n$.",
+      "The number of lemon sweets is 6, so the probability of choosing a lemon sweet on the first pick is: $\\text{P}(\\text{Lemon}_1) = \\dfrac{6}{n}$.",
+      "Since the choice is without replacement, the total number of sweets left in the bag is now $n - 1$.",
+      "The number of lemon sweets left is now $6 - 1 = 5$, so the probability of choosing a lemon sweet on the second pick is: $\\text{P}(\\text{Lemon}_2) = \\dfrac{5}{n - 1}$.",
+      "The probability of choosing two lemon sweets is: $\\text{P}(\\text{Both Lemon}) = \\text{P}(\\text{Lemon}_1) \\times \\text{P}(\\text{Lemon}_2) = \\dfrac{6}{n} \\times \\dfrac{5}{n - 1} = \\dfrac{30}{n(n - 1)}$.",
+      "We are given that this probability is equal to $\\dfrac{1}{3}$, so we set up the equation: $\\dfrac{30}{n^2 - n} = \\dfrac{1}{3}$.",
+      "Cross-multiplying to clear the fraction yields: $30 \\times 3 = n^2 - n \\implies 90 = n^2 - n$.",
+      "Rearranging the quadratic equation into standard form: $n^2 - n - 90 = 0$ (as required).",
+      "We solve the quadratic equation by factorisation, looking for two numbers that multiply to $-90$ and add to $-1$. These numbers are $-10$ and $+9$.",
+      "This gives: $(n - 10)(n + 9) = 0$.",
+      "The roots are $n = 10$ and $n = -9$. Since the number of sweets in a bag must be a positive integer, $n = 10$.",
+      "Final Answer: $$n^2 - n - 90 = 0\\ \\text{shown,}\\ n = 10$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$n^2 - n - 90 = 0\\ \\text{shown,}\\ n = 9$$",
+        "feedback": "You solved the quadratic equation but selected the negative root ($n = -9$) or misapplied the signs in your factorisation."
+      },
+      {
+        "ans": "$$n^2 - n - 30 = 0\\ \\text{shown,}\\ n = 6$$",
+        "feedback": "You forgot to multiply the numerator 30 by 3 when cross-multiplying, resulting in an incorrect quadratic constant."
+      },
+      {
+        "ans": "$$n^2 - n - 90 = 0\\ \\text{shown,}\\ n = 15$$",
+        "feedback": "You set up the quadratic correctly but made a factorisation error when finding the roots of the equation."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Discarding Non-Physical Roots",
+      "content": "In quadratic probability equations, you will always get two mathematical roots (one positive and one negative). Since the number of sweets $n$ represents a real, physical quantity, a negative root is physically impossible. Always explicitly discard the negative root and state the positive value as your final answer."
+    },
+    "payhip_link": "https://payhip.com/b/MoE4j",
+    "button_text": "Master GCSE Conditional Probability: Download the Pack"
+  },
+  {
+    "id": "003222",
+    "date": "10 August 2026",
+    "major_area": "Geometry & Measures",
+    "topic": "Similarity & Congruence",
+    "subtopic": "Similar shapes",
+    "difficulty": "6/7",
+    "img": "true",
+    "q": "The diagram shows two mathematically similar cylinders, Cylinder A and Cylinder B.<br>The height of Cylinder A is $6\\text{ cm}$ and the height of Cylinder B is $15\\text{ cm}$.<br>The volume of Cylinder A is $80\\text{ cm}^3$.<br>(a) Find the volume scale factor from Cylinder A to Cylinder B.<br>(b) Calculate the volume of Cylinder B.",
+    "steps": [
+      "For part (a), we first find the linear scale factor ($k$) between the heights of the two mathematically similar cylinders.",
+      "The linear scale factor is: $k = \\dfrac{\\text{Height}_B}{\\text{Height}_A} = \\dfrac{15\\text{ cm}}{6\\text{ cm}} = 2.5$.",
+      "The volume scale factor is the cube of the linear scale factor ($k^3$).",
+      "We calculate this as: $\\text{Volume Scale Factor} = k^3 = 2.5^3 = 15.625$ (or $\\dfrac{125}{8}$).",
+      "For part (b), we calculate the volume of Cylinder B by multiplying the volume of Cylinder A by the volume scale factor.",
+      "This yields: $\\text{Volume}_B = \\text{Volume}_A \\times k^3 = 80\\text{ cm}^3 \\times 15.625$.",
+      "Evaluating the multiplication: $80 \\times 15.625 = 1250\\text{ cm}^3$.",
+      "Final Answer: $$(a)\\ 15.625\\ (b)\\ 1250\\text{ cm}^3$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$(a)\\ 6.25\\ (b)\\ 500\\text{ cm}^3$$",
+        "feedback": "You used the area scale factor ($k^2 = 2.5^2 = 6.25$) instead of the volume scale factor ($k^3$) to calculate the volume of Cylinder B."
+      },
+      {
+        "ans": "$$(a)\\ 2.5\\ (b)\\ 200\\text{ cm}^3$$",
+        "feedback": "You multiplied by the linear scale factor ($k = 2.5$) directly to find the volume, which is incorrect because volume scales cubically."
+      },
+      {
+        "ans": "$$(a)\\ 15.625\\ (b)\\ 3125\\text{ cm}^3$$",
+        "feedback": "You calculated the volume scale factor correctly but multiplied by the wrong base volume for Cylinder A."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Linear, Area, and Volume Scale Relationships",
+      "content": "Always remember the golden dimensional rule for mathematically similar shapes: if the linear scale factor is $k$, then the area scale factor is $k^2$, and the volume scale factor is $k^3$. Never multiply a volume directly by the height scale factor."
+    },
+    "payhip_link": "https://payhip.com/b/iBzE5",
+    "button_text": "Master GCSE Similarity: Download the Pack"
   }
+
 ]
