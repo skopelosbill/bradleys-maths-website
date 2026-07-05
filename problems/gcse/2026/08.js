@@ -656,9 +656,9 @@ const problemBank = [
       "Since the price is reduced by $20\\%$, the sale price represents: $100\\% - 20\\% = 80\\%$ of the normal price.",
       "We are given that this $80\\%$ sale price is £76.",
       "This allows us to set up the relationship: $80\\% = £76$.",
-      "To find the value representing $1\\%$, we divide both sides by 80: $1\\% = \\pounds 60 \\div 2 = \\pounds 30$ is incorrect. Let us calculate: $1\\% = \\pounds 76 \\div 19$ ... wait.",
-      "Let us re-evaluate: $80\\% \\text{ of the total} = £76$ is incorrect because the sale price is $\\pounds 76$ more? No, Charlie received $\\pounds 60$ more in the previous question.",
-      "Let us recalculate: the sale price is $\\pounds 76$, which represents $80\\%$ of the normal price.",
+      "To find the value representing $1\\%$, we divide both sides by 80: $1\\% = £ 60 \\div 2 = £ 30$ is incorrect. Let us calculate: $1\\% = £ 76 \\div 19$ ... wait.",
+      "Let us re-evaluate: $80\\% \\text{ of the total} = £76$ is incorrect because the sale price is $£ 76$ more? No, Charlie received $£ 60$ more in the previous question.",
+      "Let us recalculate: the sale price is $£ 76$, which represents $80\\%$ of the normal price.",
       "To find the value of $10\\%$, we divide the sale price by 8: $10\\% = £76 \\div 8 = £9.50$.",
       "Finally, we calculate the normal price ($100\\%$) by multiplying the $10\\%$ value by 10: $\\text{Normal Price} = £9.50 \\times 10 = £95$."
     ],
