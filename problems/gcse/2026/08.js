@@ -767,50 +767,51 @@ const problemBank = [
     "button_text": "Master Right Angled Trigonometry: Download the Pack"
   },
   {
-    "id": "003231",
-    "date": "19 August 2026",
-    "major_area": "Probability",
-    "topic": "Sets and Venn Diagrams",
-    "subtopic": "Sets and Venn Diagrams",
-    "difficulty": "6/7",
-    "img": "true",
-    "q": "The Venn diagram shows the number of elements in sets $A$ and $B$, which are subsets of a universal set $\\xi$.<br>There are 50 elements in the universal set in total.<br>(a) Find the value of $x$.<br>(b) An element is selected at random from $\\xi$. Find the probability that this element is in the set $A \\cap B'$.",
-    "steps": [
-      "For part (a), the universal set $\\xi$ has a total of 50 elements.",
-      "The elements are divided into four regions: inside only $A$ ($2x$), inside both $A$ and $B$ ($x + 2$), inside only $B$ ($12$), and outside both sets ($15$).",
-      "The sum of all regions must equal the total of 50: $2x + (x + 2) + 12 + 15 = 50$.",
-      "Combining like terms yields: $3x + 17 = 50$.",
-      "We solve for $x$ by subtracting 17 from both sides: $3x = 33$, which yields $x = 11$.",
-      "For part (b), we look at triangle $ADE$. The angle $DAE$ (which is angle $CAD$) is $41^\\circ$.",
-      "We are asked to find the probability of a participant being inside the set $A$ but NOT in $B$, which corresponds to the region $\\text{A} \\cap \\text{B}'$.",
-      "This is represented by the 'Alice only' portion of the Venn Diagram: $2x$ elements.",
-      "Substituting our value $x = 11$: $\\text{Number of elements} = 2 \\times 11 = 22$.",
-      "To find the probability, we divide this frequency by the total number of participants (80): $\\text{P}(\\text{At least one Red}) = \\dfrac{22}{80}$.",
-      "We simplify this fraction by dividing the numerator and denominator by 2: $\\dfrac{11}{40}$.",
-      "Final Answer: $$(a)\\ 11\\ (b)\\ \\dfrac{11}{40}$$"
-    ],
-    "wrong_options": [
-      {
-        "ans": "$$(a)\\ 11\\ (b)\\ \\dfrac{13}{40}$$",
-        "feedback": "In part (b), you used the region representing 'both' ($x+2 = 13$ elements) instead of 'only A' ($2x = 22$ elements)."
-      },
-      {
-        "ans": "$$(a)\\ 8\\ (b)\\ \\dfrac{8}{25}$$",
-        "feedback": "You miscalculated the value of $x$ as 8 in part (a), leading to incorrect element counts throughout."
-      },
-      {
-        "ans": "$$(a)\\ 11\\ (b)\\ \\dfrac{11}{20}$$",
-        "feedback": "In part (b), you used the total number of elements in set $A$ ($2x + x + 2 = 35$ elements) instead of restricting it to 'A only'."
-      }
-    ],
-    "bradley_insight": {
-      "type": "caution",
-      "title": "The Head Teacher's Eye: Decoding Set Notation",
-      "content": "In Venn diagram probability questions, make sure you can translate the symbols correctly. The intersection symbol $\\cap$ means 'AND', and the prime symbol $'$ means 'NOT'. Therefore, $A \\cap B'$ means the element must be in $A$ AND NOT in $B$. This isolates the crescent shape on the left side of set $A$."
+  "id": "003231",
+  "date": "19 August 2026",
+  "major_area": "Probability",
+  "topic": "Sets and Venn Diagrams",
+  "subtopic": "Sets and Venn Diagrams",
+  "difficulty": "6/7",
+  "img": "true",
+  "q": "The Venn diagram shows the number of elements in sets $A$ and $B$, which are subsets of a universal set $\\xi$.<br>There are 50 elements in the universal set in total.<br>(a) Find the value of $x$.<br>(b) An element is selected at random from $\\xi$. Find the probability that this element is in the set $A \\cap B'$.",
+  "steps": [
+    "For part (a), the universal set $\\xi$ has a total of 50 elements.",
+    "The elements are divided into four regions: inside only $A$ ($2x$), inside both $A$ and $B$ ($x + 2$), inside only $B$ ($12$), and outside both sets ($15$).",
+    "The sum of all regions must equal the total of 50: $2x + (x + 2) + 12 + 15 = 50$.",
+    "Combining like terms yields: $3x + 29 = 50$.",
+    "To solve for $x$, we subtract 29 from both sides: $3x = 21$, which yields $x = 7$.",
+    "For part (b), we want to find the probability that a randomly selected element is in the set $A \\cap B'$.",
+    "The notation $A \\cap B'$ represents the set of elements that are in $A$ and NOT in $B$ (which is the region 'inside only $A$').",
+    "The number of elements in this region is $2x$.",
+    "Substituting our value $x = 7$: $\\text{Number of elements} = 2 \\times 7 = 14$.",
+    "The total number of elements in the universal set is 50.",
+    "Therefore, the probability is: $\\text{P}(A \\cap B') = \\dfrac{14}{50}$.",
+    "We simplify the fraction by dividing the numerator and denominator by 2, which yields: $\\dfrac{7}{25}$.",
+    "Final Answer: $$(a)\\ 7\\ (b)\\ \\dfrac{7}{25}$$"
+  ],
+  "wrong_options": [
+    {
+      "ans": "$$(a)\\ 7\\ (b)\\ \\dfrac{14}{25}$$",
+      "feedback": "In part (b), you calculated the probability using the unsimplified fraction $\\dfrac{14}{50}$ but misapplied the simplification, or you used the wrong denominator."
     },
-    "payhip_link": "https://payhip.com/b/oW2c1",
-    "button_text": "Master Venn Diagrams: Download the Pack"
+    {
+      "ans": "$$(a)\\ 8\\ (b)\\ \\dfrac{8}{25}$$",
+      "feedback": "You miscalculated the value of $x$ as 8 in part (a), leading to incorrect element counts throughout."
+    },
+    {
+      "ans": "$$(a)\\ 7\\ (b)\\ \\dfrac{9}{50}$$",
+      "feedback": "In part (b), you calculated the probability of the intersection $A \\cap B$ ($x+2 = 9$ elements) instead of $A$ and NOT $B$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Decoding Set Notation",
+    "content": "In Venn diagram probability questions, make sure you can translate the symbols correctly. The intersection symbol $\\cap$ means 'AND', and the prime symbol $' $ means 'NOT'. Therefore, $A \\cap B'$ means the element must be in $A$ AND NOT in $B$. This isolates the crescent shape on the left side of set $A$."
   },
+  "payhip_link": "https://payhip.com/b/oW2c1",
+  "button_text": "Master Venn Diagrams: Download the Pack"
+},
   {
     "id": "003232",
     "date": "20 August 2026",
