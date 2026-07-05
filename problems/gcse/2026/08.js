@@ -904,14 +904,14 @@ const problemBank = [
     "subtopic": "Fractional indices",
     "difficulty": "6/7",
     "img": "false",
-    "q": "Evaluate the exact value of the expression:<br>$$\\left(\\dfrac{64}{125}\right)^{-\\frac{2}{3}}$$",
+    "q": "Evaluate the exact value of the expression:<br>$$\\left(\\dfrac{64}{125}\\right)^{-\\frac{2}{3}}$$",
     "steps": [
       "We begin by resolving the negative sign in the index. A negative index represents taking the reciprocal of the base fraction.",
-      "This yields: $\\left(\\dfrac{64}{125}\right)^{-\\frac{2}{3}} = \\left(\\dfrac{125}{64}\right)^{\\frac{2}{3}}$.",
+      "This yields: $\\left(\\dfrac{64}{125}\\right)^{-\\frac{2}{3}} = \\left(\\dfrac{125}{64}\\right)^{\\frac{2}{3}}$.",
       "Next, we apply the fractional index $\\dfrac{2}{3}$. The denominator of 3 represents taking the cube root, and the numerator of 2 represents squaring the result.",
       "We apply the cube root to both the numerator and the denominator: $\\left(\\dfrac{\\sqrt[3]{125}}{\\sqrt[3]{64}}\\right)^2$.",
       "Evaluating the cube roots: $\\sqrt[3]{125} = 5$ (since $5 \\times 5 \\times 5 = 125$) and $\\sqrt[3]{64} = 4$ (since $4 \\times 4 \\times 4 = 64$).",
-      "This simplifies our expression to: $\\left(\\dfrac{5}{4}\right)^2$.",
+      "This simplifies our expression to: $\\left(\\dfrac{5}{4}\\right)^2$.",
       "Finally, we square both the numerator and the denominator: $\\dfrac{5^2}{4^2} = \\dfrac{25}{16}$.",
       "Final Answer: $$\\dfrac{25}{16}$$"
     ],
