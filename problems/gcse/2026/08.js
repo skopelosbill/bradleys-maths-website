@@ -1078,7 +1078,7 @@ const problemBank = [
     "payhip_link": "https://payhip.com/b/RLgSJ",
     "button_text": "Master Circle Theorems: Download the Pack"
   }
-]
+
 
 
 ];
