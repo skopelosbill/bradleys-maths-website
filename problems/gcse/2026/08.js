@@ -423,5 +423,224 @@ const problemBank = [
     },
     "payhip_link": "https://payhip.com/b/iBzE5",
     "button_text": "Master GCSE Similarity: Download the Pack"
+  },
+  {
+    "id": "003223",
+    "date": "11 August 2026",
+    "major_area": "Ratio, Proportion & Rates of Change",
+    "topic": "Ratio",
+    "subtopic": "Sharing in a ratio",
+    "difficulty": "4/5",
+    "img": "false",
+    "q": "A sum of money is shared between Alice, Ben, and Charlie in the ratio $3 : 4 : 5$.<br>Charlie receives $\\pounds 60$ more than Alice.<br>Calculate the total amount of money shared.",
+    "steps": [
+      "We are given the ratio of money shared between Alice ($A$), Ben ($B$), and Charlie ($C$) as $3 : 4 : 5$.",
+      "This means Alice receives 3 parts, Ben receives 4 parts, and Charlie receives 5 parts of the total money.",
+      "We are given that Charlie receives $\\pounds 60$ more than Alice.",
+      "We find the difference in ratio parts between Charlie and Alice: $5 \\text{ parts} - 3 \\text{ parts} = 2 \\text{ parts}$.",
+      "Since these 2 parts represent a difference of $\\pounds 60$, we can calculate the value of 1 single part: $1 \\text{ part} = \\pounds 60 \\div 2 = \\pounds 30$.",
+      "Next, we find the total number of parts shared between all three people: $3 + 4 + 5 = 12 \\text{ parts}$.",
+      "Finally, we calculate the total amount of money shared by multiplying the total parts by the value of 1 part: $\\text{Total Money} = 12 \\text{ parts} \\times \\pounds 30 = \\pounds 360$.",
+      "Final Answer: $$\\pounds 360$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$\\pounds 150$$",
+        "feedback": "You calculated the amount of money Charlie receives ($5 \\times \\pounds 30$) instead of the total amount shared."
+      },
+      {
+        "ans": "$$\\pounds 180$$",
+        "feedback": "You assumed the difference of $\\pounds 60$ represented 4 parts instead of 2 parts when calculating the value of 1 part."
+      },
+      {
+        "ans": "$$\\pounds 720$$",
+        "feedback": "You doubled the total amount of money, possibly by dividing by 1 part instead of 2 parts when finding the value of a single part."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Finding the Difference",
+      "content": "Always focus on what the given value actually represents. The $\\pounds 60$ is the *difference* between Charlie and Alice, not the total. By finding the difference in their ratio parts first ($5 - 3 = 2$), you can easily find the value of 1 part without setting up complex algebraic equations."
+    },
+    "payhip_link": "https://payhip.com/b/o7A2P",
+    "button_text": "Master GCSE Ratio and Sharing: Download the Pack"
+  },
+  {
+    "id": "003224",
+    "date": "12 August 2026",
+    "major_area": "Algebra",
+    "topic": "Algebraic Fractions",
+    "subtopic": "Adding/subtracting",
+    "difficulty": "8/9",
+    "img": "false",
+    "q": "Solve the equation:<br>$$\\dfrac{2}{x} + \\dfrac{3}{x + 2} = 1$$",
+    "steps": [
+      "To solve the fractional equation, we first find a common denominator for the left-hand side, which is $x(x + 2)$.",
+      "We rewrite each fraction with the common denominator: $\\dfrac{2(x + 2)}{x(x + 2)} + \\dfrac{3x}{x(x + 2)} = 1$.",
+      "Combining the numerators over the common denominator: $\\dfrac{2(x + 2) + 3x}{x(x + 2)} = 1$.",
+      "We multiply both sides of the equation by the denominator $x(x + 2)$ to clear the fractions: $2(x + 2) + 3x = x(x + 2)$.",
+      "We expand the brackets on both sides: $2x + 4 + 3x = x^2 + 2x$.",
+      "Simplifying the left-hand side by combining like terms: $5x + 4 = x^2 + 2x$.",
+      "We rearrange the terms to form a standard quadratic equation $ax^2 + bx + c = 0$ by subtracting $5x$ and $4$ from both sides: $x^2 - 3x - 4 = 0$.",
+      "We solve the quadratic equation by factorisation, looking for two numbers that multiply to $-4$ and add to $-3$. These numbers are $-4$ and $+1$.",
+      "This yields: $(x - 4)(x + 1) = 0$.",
+      "Solving for $x$ gives the two solutions: $x = 4$ and $x = -1$.",
+      "Final Answer: $$x = 4\\ \\text{and}\\ x = -1$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$x = 4\\ \\text{and}\\ x = 1$$",
+        "feedback": "You factorised the quadratic equation with incorrect signs, using $(x-4)(x-1) = 0$ instead of $(x-4)(x+1) = 0$."
+      },
+      {
+        "ans": "$$x = 2\\ \\text{and}\\ x = -2$$",
+        "feedback": "You made an algebraic simplification error when expanding the right-hand side, leading to an incorrect quadratic equation."
+      },
+      {
+        "ans": "$$x = -4\\ \\text{and}\\ x = 1$$",
+        "feedback": "You solved the quadratic equation with inverted signs, stating the roots as $-4$ and $1$ instead of $4$ and $-1$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Expanding Quadratic Right-Hand Sides",
+      "content": "When multiplying both sides of an equation by a common denominator $x(x+2)$ where the right-hand side is $1$, always remember to multiply the $1$ by the entire denominator. It is a very common slip to leave the right-hand side as $1$ without expanding it, which completely changes the quadratic."
+    },
+    "payhip_link": "https://payhip.com/b/jJHdP",
+    "button_text": "Master Algebraic Fractions: Download the Pack"
+  },
+  {
+    "id": "003225",
+    "date": "13 August 2026",
+    "major_area": "Geometry & Measures",
+    "topic": "Trigonometry",
+    "subtopic": "Cosine rule",
+    "difficulty": "6/7",
+    "img": "true",
+    "q": "The diagram shows a triangle $ABC$ where side $AB = 5\\text{ cm}$, side $AC = 8\\text{ cm}$, and angle $BAC = 60^\\circ$.<br>(a) Find the exact length of the side $BC$.<br>(b) Calculate the area of triangle $ABC$, giving your answer in the form $a\\sqrt{b}\\text{ cm}^2$.",
+    "steps": [
+      "For part (a), we are given two sides and the included angle (SAS) of a triangle. We apply the Cosine Rule to find the opposite side $BC$: $a^2 = b^2 + c^2 - 2bc\\cos(A)$.",
+      "Here, $b = AC = 8\\text{ cm}$, $c = AB = 5\\text{ cm}$, and angle $A = 60^\\circ$.",
+      "Substituting these values: $BC^2 = 8^2 + 5^2 - 2(8)(5)\\cos(60^\\circ)$.",
+      "We use the exact trigonometric value: $\\cos(60^\\circ) = 0.5$ (or $\\dfrac{1}{2}$).",
+      "This yields: $BC^2 = 64 + 25 - 80(0.5) = 89 - 40 = 49$.",
+      "Taking the square root of both sides gives: $BC = \\sqrt{49} = 7\\text{ cm}$.",
+      "For part (b), we use the non-right-angled triangle area formula: $\\text{Area} = \\dfrac{1}{2}bc\\sin(A)$.",
+      "Substituting our values: $\\text{Area} = \\dfrac{1}{2}(8)(5)\\sin(60^\\circ)$.",
+      "We use the exact trigonometric value: $\\sin(60^\\circ) = \\dfrac{\\sqrt{3}}{2}$.",
+      "Evaluating the area: $\\text{Area} = 20 \\times \\dfrac{\\sqrt{3}}{2} = 10\\sqrt{3}\\text{ cm}^2$.",
+      "Final Answer: $$(a)\\ 7\\text{ cm}\\ (b)\\ 10\\sqrt{3}\\text{ cm}^2$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$(a)\\ 7.35\\text{ cm}\\ (b)\\ 17.3\\text{ cm}^2$$",
+        "feedback": "You calculated decimal approximations instead of stating the exact answers as required by the question."
+      },
+      {
+        "ans": "$$(a)\\ 7\\text{ cm}\\ (b)\\ 20\\sqrt{3}\\text{ cm}^2$$",
+        "feedback": "In part (b), you forgot to multiply by the factor of $\\dfrac{1}{2}$ in the area formula."
+      },
+      {
+        "ans": "$$(a)\\ 9.43\\text{ cm}\\ (b)\\ 10\\sqrt{3}\\text{ cm}^2$$",
+        "feedback": "In part (a), you made a sign error in the Cosine Rule, adding the $2bc\\cos(A)$ term instead of subtracting it."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Exact Values in Trigonometry",
+      "content": "GCSE non-calculator papers frequently use angles like $30^\\circ, 45^\\circ,$ or $60^\\circ$ because they result in exact fractional or surd values. Memorizing that $\\cos(60^\\circ) = \\dfrac{1}{2}$ and $\\sin(60^\\circ) = \\dfrac{\\sqrt{3}}{2}$ is highly useful for picking up full marks on non-calculator active papers."
+    },
+    "payhip_link": "https://payhip.com/b/RHeNL",
+    "button_text": "Master GCSE Cosine Rule: Download the Pack"
+  },
+  {
+    "id": "003226",
+    "date": "14 August 2026",
+    "major_area": "Statistics",
+    "topic": "Frequency Tables",
+    "subtopic": "Grouped data",
+    "difficulty": "4/5",
+    "img": "false",
+    "q": "The table shows information about the masses, in kilograms, of 40 parcels.<br><br><table border='1' style='border-collapse: collapse; text-align: center; margin: 10px 0; width: 100%; max-width: 400px;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px;'>Mass ($w$ kg)</th><th style='padding: 8px;'>Frequency</th></tr></thead><tbody><tr><td style='padding: 8px;'>$0 < w \\le 4$</td><td style='padding: 8px;'>12</td></tr><tr><td style='padding: 8px;'>$4 < w \\le 8$</td><td style='padding: 8px;'>18</td></tr><tr><td style='padding: 8px;'>$8 < w \\le 12$</td><td style='padding: 8px;'>6</td></tr><tr><td style='padding: 8px;'>$12 < w \\le 16$</td><td style='padding: 8px;'>4</td></tr></tbody></table><br>Calculate an estimate for the mean mass of the 40 parcels.",
+    "steps": [
+      "To calculate an estimate for the mean of grouped data, we first find the midpoint ($x$) of each mass class interval.",
+      "For $0 < w \\le 4$, the midpoint is: $\\dfrac{0 + 4}{2} = 2$.",
+      "For $4 < w \\le 8$, the midpoint is: $\\dfrac{4 + 8}{2} = 6$.",
+      "For $8 < w \\le 12$, the midpoint is: $\\dfrac{8 + 12}{2} = 10$.",
+      "For $12 < w \\le 16$, the midpoint is: $\\dfrac{12 + 16}{2} = 14$.",
+      "Next, we multiply each midpoint ($x$) by its corresponding class frequency ($f$) to find the $fx$ values.",
+      "For class 1: $2 \\times 12 = 24$.",
+      "For class 2: $6 \\times 18 = 108$.",
+      "For class 3: $10 \\times 6 = 60$.",
+      "For class 4: $14 \\times 4 = 56$.",
+      "We find the sum of these values ($\\sum fx$): $\\sum fx = 24 + 108 + 60 + 56 = 248$.",
+      "We are given that the total number of parcels is $40$ ($\\sum f = 40$).",
+      "Finally, we calculate the estimated mean by dividing the sum of $fx$ by the total frequency: $\\text{Mean} = \\dfrac{\\sum fx}{\\sum f} = \\dfrac{248}{40} = 6.2\\text{ kg}$.",
+      "Final Answer: $$6.2\\text{ kg}$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$8.0\\text{ kg}$$",
+        "feedback": "You calculated the mean of the class midpoints ($2+6+10+14 \\div 4 = 8$) without accounting for the frequencies of each class."
+      },
+      {
+        "ans": "$$248.0\\text{ kg}$$",
+        "feedback": "You calculated the sum of the $fx$ column (248) but forgot to perform the final division by the total frequency of 40."
+      },
+      {
+        "ans": "$$5.5\\text{ kg}$$",
+        "feedback": "You made an arithmetic or midpoint calculation error when multiplying the class frequencies."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Why is it an Estimate?",
+      "content": "GCSE exams frequently ask why this calculation is an 'estimate'. Always remember: because the data is grouped, we do not know the exact mass of each individual parcel within the intervals. We assume they are evenly spread around the midpoint, which makes the calculated mean an estimate rather than an exact value."
+    },
+    "payhip_link": "https://payhip.com/b/vZuiV",
+    "button_text": "Master Grouped Data: Download the Pack"
+  },
+  {
+    "id": "003227",
+    "date": "15 August 2026",
+    "major_area": "Geometry & Measures",
+    "topic": "Circle Theorems",
+    "subtopic": "Cyclic quadrilaterals",
+    "difficulty": "8/9",
+    "img": "true",
+    "q": "The diagram shows a cyclic quadrilateral $ABCD$ inside a circle. The diagonal lines intersect at $E$. Angle $BAC = 32^\\circ$, angle $CAD = 41^\\circ$, and angle $ADE = 54^\\circ$.<br>(a) Find the size of angle $BDC$. State the geometric reason for your answer.<br>(b) Calculate the size of angle $CED$.",
+    "steps": [
+      "For part (a), we identify that the angles subtended by the same arc at the circumference of a circle are equal.",
+      "Both angle $BAC$ and angle $BDC$ are subtended by the same arc $BC$ (or 'are in the same segment').",
+      "Since angle $BAC = 32^\\circ$, we can state directly that angle $BDC = 32^\\circ$. Our geometric reason is: 'Angles in the same segment are equal'.",
+      "For part (b), we look at triangle $ADE$. The angle $DAE$ (which is angle $CAD$) is $41^\\circ$.",
+      "The angle $ADE$ is given as $54^\\circ$.",
+      "The sum of angles in triangle $ADE$ must equal $180^\\circ$, so we find the third angle $AED$: $\\text{angle } AED = 180^\\circ - (41^\\circ + 54^\\circ) = 180^\\circ - 95^\\circ = 85^\\circ$.",
+      "Since $A-E-C$ is a straight line, angles on a straight line sum to $180^\\circ$.",
+      "Therefore, angle $CED = 180^\\circ - \\text{angle } AED = 180^\\circ - 85^\\circ = 95^\\circ$ (or we can use the exterior angle theorem directly: $41^\\circ + 54^\\circ = 95^\\circ$).",
+      "Final Answer: $$(a)\\ 32^\\circ\\ (b)\\ 95^\\circ$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$(a)\\ 32^\\circ\\ (b)\\ 85^\\circ$$",
+        "feedback": "You successfully calculated the angle $AED$ inside the triangle ($85^\\circ$), but you forgot to subtract it from $180^\\circ$ to find the supplementary angle $CED$."
+      },
+      {
+        "ans": "$$(a)\\ 54^\\circ\\ (b)\\ 95^\\circ$$",
+        "feedback": "In part (a), you assumed angle $BDC$ was equal to angle $ADE$ ($54^\\circ$), which is not subtended by the same arc."
+      },
+      {
+        "ans": "$$(a)\\ 32^\\circ\\ (b)\\ 126^\\circ$$",
+        "feedback": "In part (b), you used the incorrect interior angles when summing the opposite interior angles of the triangle."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Naming Subtended Arcs",
+      "content": "When using the theorem 'angles in the same segment are equal', always trace the two legs of both angles back to the circumference. Both angle $BAC$ and angle $BDC$ start at $B$ and end at $C$, confirming they are subtended by the same arc $BC$ and are therefore equal."
+    },
+    "payhip_link": "https://payhip.com/b/wm0xL",
+    "button_text": "Master Circle Theorems: Download the Pack"
   }
-]
+
+];
