@@ -1032,52 +1032,311 @@ const problemBank = [
     "button_text": "Master Cumulative Frequency: Download the Pack"
   },
   {
-    "id": "003237",
-    "date": "25 August 2026",
-    "major_area": "Geometry & Measures",
-    "topic": "Circle Theorems",
-    "subtopic": "Tangents",
-    "difficulty": "8/9",
-    "img": "true",
-    "q": "The diagram shows a circle with centre $O$. The lines $TA$ and $TB$ are tangents to the circle at points $A$ and $B$ respectively.<br>The tangent lengths are given as $TA = 3x + 1\\text{ cm}$ and $TB = x + 7\\text{ cm}$. The radius of the circle is $OA = 5\\text{ cm}$.<br>(a) Find the value of $x$.<br>(b) Calculate the exact length of the line $OT$ from the centre $O$ to the external point $T$.",
+  "id": "003237",
+  "date": "25 August 2026",
+  "major_area": "Geometry & Measures",
+  "topic": "Circle Theorems",
+  "subtopic": "Tangents",
+  "difficulty": "8/9",
+  "img": "true",
+  "q": "The diagram shows a circle with centre $O$. The lines $TA$ and $TB$ are tangents to the circle at points $A$ and $B$ respectively.<br>The tangent lengths are given as $TA = 3x + 1\\text{ cm}$ and $TB = x + 7\\text{ cm}$. The radius of the circle is $OA = 5\\text{ cm}$.<br>(a) Find the value of $x$.<br>(b) Calculate the exact length of the line $OT$ from the centre $O$ to the external point $T$.<br>(c) Calculate the size of the angle $ATB$. Give your answer correct to $1\\text{ decimal place}$.",
+  "steps": [
+    "For part (a), we apply the circle theorem: 'The lengths of two tangents drawn from an external point to a circle are equal'.",
+    "This means the length of tangent $TA$ is equal to the length of tangent $TB$: $TA = TB$.",
+    "Setting up our algebraic equation: $3x + 1 = x + 7$.",
+    "We subtract $x$ from both sides: $2x + 1 = 7$.",
+    "Subtracting 1 from both sides: $2x = 6$, which yields: $x = 3$.",
+    "For part (b), we find the length of the tangent $TA$ by substituting $x = 3$ back into its expression: $TA = 3(3) + 1 = 10\\text{ cm}$.",
+    "We apply another circle theorem: 'A tangent to a circle is perpendicular to the radius at the point of contact'.",
+    "This means the angle $OAT = 90^\\circ$, making triangle $OAT$ a right-angled triangle where the line segment $OT$ is the hypotenuse.",
+    "The adjacent side is the radius $OA = 5\\text{ cm}$ and the opposite side is the tangent $TA = 10\\text{ cm}$.",
+    "Applying Pythagoras' theorem to find $OT$: $OT^2 = OA^2 + TA^2$.",
+    "Substituting our values: $OT^2 = 5^2 + 10^2 = 25 + 100 = 125$.",
+    "Taking the square root of both sides to find the exact length: $OT = \\sqrt{125}\\text{ cm}$.",
+    "We simplify the surd: $\\sqrt{125} = \\sqrt{25 \\times 5} = 5\\sqrt{5}\\text{ cm}$.",
+    "For part (c), due to the symmetry of the congruent right-angled triangles $OAT$ and $OBT$, the line $OT$ bisects the angle $ATB$.",
+    "This means the full angle $ATB$ is exactly twice the size of angle $ATO$: $\\text{angle } ATB = 2 \\times \\text{angle } ATO$.",
+    "We can calculate angle $ATO$ in the right-angled triangle $OAT$ using any trigonometric ratio. Using the tangent ratio: $\\tan(\\text{angle } ATO) = \\dfrac{\\text{Opposite}}{\\text{Adjacent}} = \\dfrac{OA}{TA} = \\dfrac{5}{10} = 0.5$.",
+    "Taking the inverse tangent of both sides: $\\text{angle } ATO = \\arctan(0.5) \\approx 26.565^\\circ$.",
+    "Finally, we double this value to find the full angle $ATB$: $\\text{angle } ATB = 2 \\times 26.565^\\circ = 53.13^\\circ$.",
+    "Rounding to $1\\text{ decimal place}$ gives $53.1^\\circ$.",
+    "Final Answer: $$(a)\\ x = 3\\ (b)\\ 5\\sqrt{5}\\text{ cm}\\ (c)\\ 53.1^\\circ$$"
+  ],
+  "wrong_options": [
+    {
+      "ans": "$$(a)\\ x = 3\\ (b)\\ 5\\sqrt{5}\\text{ cm}\\ (c)\\ 26.6^\\circ$$",
+      "feedback": "For part (c), you calculated the half-angle $ATO$ successfully ($26.6^\\circ$) but forgot to double it to find the full angle $ATB$."
+    },
+    {
+      "ans": "$$(a)\\ x = 3\\ (b)\\ 11.2\\text{ cm}\\ (c)\\ 53.1^\\circ$$",
+      "feedback": "For part (b), you successfully calculated the length of $OT$ but stated a decimal approximation instead of leaving your answer in exact surd form."
+    },
+    {
+      "ans": "$$(a)\\ x = 4\\ (b)\\ 13\\text{ cm}\\ (c)\\ 45.2^\\circ$$",
+      "feedback": "You miscalculated the value of $x$ as 4 in part (a), leading to an incorrect tangent length and subsequent angle calculation errors throughout."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Identifying Right-Angles on Tangents",
+    "content": "Always remember that the right-angle on tangent theorems occurs at the circumference of the circle, where the radius meets the tangent (angle $OAT = 90^\\circ$). The line connecting the centre to the external point ($OT$) is always the hypotenuse of this right-angled system. Identifying this perpendicular contact point allows you to safely apply Pythagoras."
+  },
+  "payhip_link": "https://payhip.com/b/RLgSJ",
+  "button_text": "Master Circle Theorems: Download the Pack"
+},
+  {
+    "id": "003238",
+    "date": "26 August 2026",
+    "major_area": "Ratio, Proportion & Rates of Change",
+    "topic": "Financial Maths",
+    "subtopic": "Compound interest",
+    "difficulty": "4/5",
+    "img": "false",
+    "q": "A bank account pays $2.5\\%$ compound interest per annum. David invests £4000 in this account.<br>Calculate the total value of the investment after 3 years. Give your answer correct to the nearest penny.",
     "steps": [
-      "For part (a), we apply the circle theorem: 'The lengths of two tangents drawn from an external point to a circle are equal'.",
-      "This means the length of tangent $TA$ is equal to the length of tangent $TB$: $TA = TB$.",
-      "Setting up our algebraic equation: $3x + 1 = x + 7$.",
-      "We subtract $x$ from both sides: $2x + 1 = 7$.",
-      "Subtracting 1 from both sides: $2x = 6$, which yields: $x = 3$.",
-      "For part (b), we find the length of the tangent $TA$ by substituting $x = 3$ back into its expression: $TA = 3(3) + 1 = 10\\text{ cm}$.",
-      "We apply another circle theorem: 'A tangent to a circle is perpendicular to the radius at the point of contact'.",
-      "This means the angle $OAT = 90^\\circ$, making triangle $OAT$ a right-angled triangle where the line segment $OT$ is the hypotenuse.",
-      "The adjacent side is the radius $OA = 5\\text{ cm}$ and the opposite side is the tangent $TA = 10\\text{ cm}$.",
-      "Applying Pythagoras' theorem to find $OT$: $OT^2 = OA^2 + TA^2$.",
-      "Substituting our values: $OT^2 = 5^2 + 10^2 = 25 + 100 = 125$.",
-      "Taking the square root of both sides to find the exact length: $OT = \\sqrt{125}\\text{ cm}$.",
-      "We simplify the surd: $\\sqrt{125} = \\sqrt{25 \\times 5} = 5\\sqrt{5}\\text{ cm}$.",
-      "Final Answer: $$(a)\\ x = 3\\ (b)\\ 5\\sqrt{5}\\text{ cm}$$"
+      "The compound interest rate is $2.5\\%$ per annum. To find the multiplier for a $2.5\\%$ increase, we add $2.5\\%$ to $100\\%$: $100\\% + 2.5\\% = 102.5\\%$.",
+      "We convert this percentage to a decimal multiplier by dividing by 100: $102.5 \\div 100 = 1.025$.",
+      "Because the money is invested for 3 years, the compound interest formula is: $\\text{Value} = \\text{Principal} \\times \\text{Multiplier}^3$.",
+      "Substituting our values: $\\text{Value} = £4000 \\times 1.025^3$.",
+      "First, we calculate the cube of the multiplier: $1.025^3 = 1.025 \\times 1.025 \\times 1.025 = 1.076890625$.",
+      "Next, we multiply the principal by this value: $\\text{Value} = £4000 \\times 1.076890625 = £4307.5625$.",
+      "Rounding this value to the nearest penny (which is $2\\text{ decimal places}$) gives £4307.56.",
+      "Final Answer: $$£4307.56$$"
     ],
     "wrong_options": [
       {
-        "ans": "$$(a)\\ x = 3\\ (b)\\ 11.2\\text{ cm}$$",
-        "feedback": "For part (b), you successfully calculated the length but stated a decimal approximation instead of leaving your answer in exact surd form as required."
+        "ans": "$$£4300.00$$",
+        "feedback": "You calculated simple interest over 3 years (£300 total interest) instead of compound interest."
       },
       {
-        "ans": "$$(a)\\ x = 4\\ (b)\\ 13\\text{ cm}$$",
-        "feedback": "You miscalculated the value of $x$ as 4 in part (a), leading to an incorrect tangent length and incorrect hypotenuse calculation."
+        "ans": "$$£4307.5625$$",
+        "feedback": "Your calculation is correct, but you forgot to round your final answer to the nearest penny as required by the question."
       },
       {
-        "ans": "$$(a)\\ x = 3\\ (b)\\ 5\\sqrt{3}\\text{ cm}$$",
-        "feedback": "You made an arithmetic simplification error when simplifying the surd $\\sqrt{125}$, stating it as $5\\sqrt{3}$ instead of $5\\sqrt{5}$."
+        "ans": "$$£4100.00$$",
+        "feedback": "You calculated the value of the investment after only 1 year instead of 3 years."
       }
     ],
     "bradley_insight": {
       "type": "caution",
-      "title": "The Head Teacher's Eye: Identifying Right-Angles on Tangents",
-      "content": "Always remember that the right-angle on tangent theorems occurs at the circumference of the circle, where the radius meets the tangent (angle $OAT = 90^\\circ$). The line connecting the centre to the external point ($OT$) is always the hypotenuse of this right-angled system. Identifying this perpendicular contact point allows you to safely apply Pythagoras."
+      "title": "The Head Teacher's Eye: Compound vs. Simple Interest",
+      "content": "On GCSE papers, always check whether the question specifies compound or simple interest. Simple interest adds the same flat amount every year, whereas compound interest multiplies the previous year's total. Always raise your multiplier to the power of the number of years."
     },
-    "payhip_link": "https://payhip.com/b/RLgSJ",
-    "button_text": "Master Circle Theorems: Download the Pack"
+    "payhip_link": "https://payhip.com/b/X8Yo2",
+    "button_text": "Master GCSE Percentages and Interest: Download the Pack"
+  },
+  {
+    "id": "003239",
+    "date": "27 August 2026",
+    "major_area": "Algebra",
+    "topic": "Sequences",
+    "subtopic": "Quadratic sequences",
+    "difficulty": "6/7",
+    "img": "false",
+    "q": "Find the $n$th term expression for the quadratic sequence:<br>$$3,\\ 10,\\ 21,\\ 36,\\ 55,\\ \\dots$$",
+    "steps": [
+      "We begin by finding the first differences between consecutive terms of the sequence: $10 - 3 = 7$, $21 - 10 = 11$, $36 - 21 = 15$, and $55 - 36 = 19$. This gives the first differences: $7,\\ 11,\\ 15,\\ 19$.",
+      "Next, we find the second differences between these first differences: $11 - 7 = 4$, $15 - 11 = 4$, and $19 - 15 = 4$. This gives a constant second difference of 4.",
+      "The coefficient of the $n^2$ term in a quadratic sequence is always exactly half of the constant second difference: $\\text{Coefficient} = 4 \\div 2 = 2$. This tells us our $n$th term begins with $2n^2$.",
+      "We calculate the values of $2n^2$ for the first five terms ($n = 1, 2, 3, 4, 5$): $2(1)^2 = 2$, $2(2)^2 = 8$, $2(3)^2 = 18$, $2(4)^2 = 32$, and $2(5)^2 = 50$. This gives the sequence: $2,\\ 8,\\ 18,\\ 32,\\ 50$.",
+      "We subtract these $2n^2$ values from our original sequence to find the remaining linear sequence: $(3 - 2), (10 - 8), (21 - 18), (36 - 32), (55 - 50)$.",
+      "This yields the linear sequence: $1,\\ 2,\\ 3,\\ 4,\\ 5$.",
+      "We find the $n$th term of this simple linear sequence, which increases by $+1$ each time, as: $n$.",
+      "Finally, we combine our quadratic and linear parts to find the complete $n$th term: $2n^2 + n$.",
+      "Final Answer: $$2n^2 + n$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$4n^2 - n$$",
+        "feedback": "You forgot to halve the second difference when calculating your $n^2$ coefficient, using 4 instead of 2."
+      },
+      {
+        "ans": "$$2n^2 + 1$$",
+        "feedback": "You calculated the quadratic term correctly but made an error when finding the $n$th term of the remaining linear sequence."
+      },
+      {
+        "ans": "$$2n^2 - n$$",
+        "feedback": "You made a sign error when calculating the linear sequence, subtracting $n$ instead of adding it."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Checking Your Sequence",
+      "content": "A very fast and reliable way to check your quadratic $n$th term in an exam is to substitute $n = 5$ into your final expression. For $2n^2 + n$, this yields $2(25) + 5 = 55$. Since this matches the fifth term of the original sequence exactly, you can be confident your expression is correct."
+    },
+    "payhip_link": "https://payhip.com/b/GWKby",
+    "button_text": "Master GCSE Sequences: Download the Pack"
+  },
+  {
+    "id": "003240",
+    "date": "28 August 2026",
+    "major_area": "Geometry & Measures",
+    "topic": "Trigonometry",
+    "subtopic": "Area of triangle 1/2 ab sin C",
+    "difficulty": "6/7",
+    "img": "true",
+    "q": "The diagram shows a triangle $ABC$ with side length $AB = 6\\text{ cm}$, side length $BC = 10\\text{ cm}$, and angle $ABC = 45^\\circ$.<br>Calculate the exact area of the triangle $ABC$. Give your answer in the form $a\\sqrt{b}\\text{ cm}^2$.",
+    "steps": [
+      "To find the area of a non-right-angled triangle when given two sides and the included angle (SAS), we use the area formula: $\\text{Area} = \\dfrac{1}{2}ac\\sin(B)$.",
+      "Here, $a = BC = 10\\text{ cm}$, $c = AB = 6\\text{ cm}$, and angle $B = 45^\\circ$.",
+      "Substituting these values: $\\text{Area} = \\dfrac{1}{2}(10)(6)\\sin(45^\\circ)$.",
+      "We use the exact trigonometric value: $\\sin(45^\\circ) = \\dfrac{\\sqrt{2}}{2}$ (or $\\dfrac{1}{\\sqrt{2}}$).",
+      "This yields: $\\text{Area} = 30 \\times \\dfrac{\\sqrt{2}}{2}$.",
+      "Evaluating the multiplication: $\\text{Area} = 15\\sqrt{2}\\text{ cm}^2$.",
+      "Final Answer: $$15\\sqrt{2}\\text{ cm}^2$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$21.2\\text{ cm}^2$$",
+        "feedback": "You calculated a decimal approximation instead of stating the exact area in surd form as required by the question."
+      },
+      {
+        "ans": "$$30\\sqrt{2}\\text{ cm}^2$$",
+        "feedback": "You forgot to multiply by the factor of $\\dfrac{1}{2}$ in the triangle area formula."
+      },
+      {
+        "ans": "$$15\\sqrt{3}\\text{ cm}^2$$",
+        "feedback": "You used the incorrect exact trigonometric value, using $\\sin(60^\\circ) = \\dfrac{\\sqrt{3}}{2}$ instead of $\\sin(45^\\circ)$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Exact Area Formats",
+      "content": "Non-calculator GCSE papers frequently ask for the 'exact area' of triangles involving $30^\\circ, 45^\\circ,$ or $60^\\circ$ angles. Memorizing that $\\sin(45^\\circ) = \\dfrac{\\sqrt{2}}{2}$ is highly useful for completing these calculations cleanly without a calculator."
+    },
+    "payhip_link": "https://payhip.com/b/GToVZ",
+    "button_text": "Master Exact Trig Values: Download the Pack"
+  },
+  {
+    "id": "003241",
+    "date": "29 August 2026",
+    "major_area": "Statistics",
+    "topic": "Averages & Range",
+    "subtopic": "Mean",
+    "difficulty": "4/5",
+    "img": "false",
+    "q": "The heights of five boys are $135\\text{ cm}$, $142\\text{ cm}$, $x\\text{ cm}$, $150\\text{ cm}$, and $155\\text{ cm}$.<br>The mean height of the five boys is $145\\text{ cm}$.<br>Calculate the value of $x$.",
+    "steps": [
+      "The formula for the mean of a set of data is: $\\text{Mean} = \\dfrac{\\text{Sum of all values}}{\\text{Total number of values}}$.",
+      "We are given that there are 5 boys and their mean height is $145\\text{ cm}$.",
+      "We calculate the total combined height of all 5 boys by multiplying the mean by the total number of boys: $\\text{Total Height} = 145\\text{ cm} \\times 5 = 725\\text{ cm}$.",
+      "Next, we find the sum of the four known heights: $135 + 142 + 150 + 155 = 582\\text{ cm}$.",
+      "Since the sum of all 5 heights must equal $725\\text{ cm}$, we can solve for $x$ by subtracting the sum of the known heights from the total: $x = 725 - 582$.",
+      "Evaluating the subtraction: $x = 143\\text{ cm}$.",
+      "Final Answer: $$143$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$145$$",
+        "feedback": "You assumed the missing value $x$ was equal to the mean height of the group, which is not supported by the calculation."
+      },
+      {
+        "ans": "$$582$$",
+        "feedback": "You calculated the sum of the four known heights (582) but forgot to perform the subtraction from the total combined height."
+      },
+      {
+        "ans": "$$141$$",
+        "feedback": "You made an arithmetic slip when summing the four known heights or when subtracting from the total."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Working Backwards from the Mean",
+      "content": "Whenever you are given the mean of a dataset and need to find a missing value, your very first step should always be to multiply the mean by the total number of values. Finding this total sum simplifies the rest of the problem into a simple subtraction."
+    },
+    "payhip_link": "https://payhip.com/b/vRHXh",
+    "button_text": "Master GCSE Averages: Download the Pack"
+  },
+  {
+    "id": "003242",
+    "date": "30 August 2026",
+    "major_area": "Algebra",
+    "topic": "Algebraic Notation",
+    "subtopic": "General Iterative Processes",
+    "difficulty": "8/9",
+    "img": "false",
+    "q": "An approximate solution to the equation $x^3 - 3x - 1 = 0$ is found using the iterative formula:<br>$$x_{n+1} = \\sqrt[3]{3x_n + 1}$$<br>Using the starting value $x_0 = 1.8$, calculate the values of the iterations $x_1$, $x_2$, and $x_3$. Give your answers correct to $3\\text{ decimal places}$.",
+    "steps": [
+      "To find the first iteration $x_1$, we substitute $x_0 = 1.8$ into the formula: $x_1 = \\sqrt[3]{3(1.8) + 1}$.",
+      "Evaluating the inside of the cube root: $3 \\times 1.8 + 1 = 5.4 + 1 = 6.4$.",
+      "Taking the cube root: $x_1 = \\sqrt[3]{6.4} \\approx 1.85664$.",
+      "Rounding to $3\\text{ decimal places}$ gives: $x_1 = 1.857$.",
+      "To find the second iteration $x_2$, we substitute the unrounded value of $x_1$ ($1.85664$) back into the formula: $x_2 = \\sqrt[3]{3(1.85664) + 1}$.",
+      "Evaluating the inside of the cube root: $3 \\times 1.85664 + 1 = 5.56992 + 1 = 6.56992$.",
+      "Taking the cube root: $x_2 = \\sqrt[3]{6.56992} \\approx 1.87291$.",
+      "Rounding to $3\\text{ decimal places}$ gives: $x_2 = 1.873$.",
+      "To find the third iteration $x_3$, we substitute the unrounded value of $x_2$ ($1.87291$) back into the formula: $x_3 = \\sqrt[3]{3(1.87291) + 1}$.",
+      "Evaluating the inside of the cube root: $3 \\times 1.87291 + 1 = 5.61873 + 1 = 6.61873$.",
+      "Taking the cube root: $x_3 = \\sqrt[3]{6.61873} \\approx 1.87752$.",
+      "Rounding to $3\\text{ decimal places}$ gives: $x_3 = 1.878$.",
+      "Final Answer: $$x_1 = 1.857,\\ x_2 = 1.873,\\ x_3 = 1.878$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$x_1 = 1.857,\\ x_2 = 1.871,\\ x_3 = 1.876$$",
+        "feedback": "You used your rounded $3\\text{ decimal place}$ values during subsequent iterations, which led to compound rounding errors in $x_2$ and $x_3$."
+      },
+      {
+        "ans": "$$x_1 = 1.857,\\ x_2 = 1.873,\\ x_3 = 1.884$$",
+        "feedback": "You made an arithmetic calculation error when multiplying by 3 inside the cube root on the third iteration."
+      },
+      {
+        "ans": "$$x_1 = 1.857,\\ x_2 = 2.455,\\ x_3 = 2.871$$",
+        "feedback": "You calculated square roots instead of cube roots for each iteration step."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Carry Forward Unrounded Values",
+      "content": "When performing sequential iterations in an exam, never use your rounded answer (e.g. 1.857) to compute the next step. Always carry forward the full, unrounded value stored in your calculator memory (or use the 'ANS' key). Using rounded values will lead to intermediate rounding errors."
+    },
+    "payhip_link": "https://payhip.com/b/rAIp4",
+    "button_text": "Master GCSE Iteration: Download the Pack"
+  },
+  {
+    "id": "003243",
+    "date": "31 August 2026",
+    "major_area": "Geometry & Measures",
+    "topic": "3D Shapes",
+    "subtopic": "Surface area",
+    "difficulty": "8/9",
+    "img": "true",
+    "q": "The diagram shows a solid cone with a base radius of $r = 6\\text{ cm}$ and a vertical height of $h = 8\\text{ cm}$.<br>Calculate the total surface area of the cone. Give your answer exact in terms of $\\pi$.",
+    "steps": [
+      "The total surface area of a solid cone consists of two parts: the circular base area ($\\pi r^2$) and the curved surface area ($\\pi r l$), where $l$ is the slant height.",
+      "We are given the radius $r = 6\\text{ cm}$ and the vertical height $h = 8\\text{ cm}$. We must calculate the slant height $l$ first.",
+      "The vertical height, radius, and slant height form a right-angled triangle where the slant height $l$ is the hypotenuse.",
+      "Applying Pythagoras' theorem: $l^2 = r^2 + h^2$.",
+      "Substituting our values: $l^2 = 6^2 + 8^2 = 36 + 64 = 100$.",
+      "Taking the square root: $l = \\sqrt{100} = 10\\text{ cm}$.",
+      "Now, we calculate the circular base area: $\\text{Area}_{\\text{base}} = \\pi r^2 = \\pi \\times 6^2 = 36\\pi\\text{ cm}^2$.",
+      "Next, we calculate the curved surface area: $\\text{Area}_{\\text{curved}} = \\pi r l = \\pi \\times 6 \\times 10 = 60\\pi\\text{ cm}^2$.",
+      "Finally, we find the total surface area by summing the two areas together: $\\text{Total Area} = 36\\pi + 60\\pi = 96\\pi\\text{ cm}^2$.",
+      "Final Answer: $$96\\pi\\text{ cm}^2$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$60\\pi\\text{ cm}^2$$",
+        "feedback": "You calculated only the curved surface area of the cone, forgetting to add the circular base area to find the total surface area."
+      },
+      {
+        "ans": "$$301.6\\text{ cm}^2$$",
+        "feedback": "You calculated a decimal approximation instead of leaving your final answer as an exact value in terms of $\\pi$."
+      },
+      {
+        "ans": "$$84\\pi\\text{ cm}^2$$",
+        "feedback": "You used the vertical height $h = 8\\text{ cm}$ in your curved surface area formula instead of calculating and using the slant height $l = 10\\text{ cm}$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Total vs. Curved Surface Area",
+      "content": "Always read carefully to check if a question asks for the 'total surface area' or just the 'curved surface area' of a cone. Total surface area must include the flat circular base ($\\pi r^2$). Also, ensure you never use the vertical height ($h$) directly in the curved surface area formula—you must calculate the slant height ($l$) using Pythagoras first."
+    },
+    "payhip_link": "https://payhip.com/b/aJhQL",
+    "button_text": "Master GCSE Surface Area: Download the Pack"
   }
+
 
 
 
