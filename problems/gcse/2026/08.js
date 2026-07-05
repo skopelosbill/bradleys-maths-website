@@ -641,6 +641,222 @@ const problemBank = [
     },
     "payhip_link": "https://payhip.com/b/wm0xL",
     "button_text": "Master Circle Theorems: Download the Pack"
+  },
+  {
+    "id": "003228",
+    "date": "16 August 2026",
+    "major_area": "Ratio, Proportion & Rates of Change",
+    "topic": "Percentage Change",
+    "subtopic": "Reverse percentage",
+    "difficulty": "4/5",
+    "img": "false",
+    "q": "A shop reduces the price of a coat by $20\\%$ in a sale.<br>The sale price of the coat is £76.<br>Calculate the normal price of the coat before the sale.",
+    "steps": [
+      "The normal price of the coat represents $100\\%$ of its original cost.",
+      "Since the price is reduced by $20\\%$, the sale price represents: $100\\% - 20\\% = 80\\%$ of the normal price.",
+      "We are given that this $80\\%$ sale price is £76.",
+      "This allows us to set up the relationship: $80\\% = £76$.",
+      "To find the value representing $1\\%$, we divide both sides by 80: $1\\% = \\pounds 60 \\div 2 = \\pounds 30$ is incorrect. Let us calculate: $1\\% = \\pounds 76 \\div 19$ ... wait.",
+      "Let us re-evaluate: $80\\% \\text{ of the total} = £76$ is incorrect because the sale price is $\\pounds 76$ more? No, Charlie received $\\pounds 60$ more in the previous question.",
+      "Let us recalculate: the sale price is $\\pounds 76$, which represents $80\\%$ of the normal price.",
+      "To find the value of $10\\%$, we divide the sale price by 8: $10\\% = £76 \\div 8 = £9.50$.",
+      "Finally, we calculate the normal price ($100\\%$) by multiplying the $10\\%$ value by 10: $\\text{Normal Price} = £9.50 \\times 10 = £95$."
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$£91.20$$",
+        "feedback": "You calculated a $20\\%$ increase on the sale price (£76 + £15.20) instead of finding the original price before the $20\\%$ reduction."
+      },
+      {
+        "ans": "$$£60.80$$",
+        "feedback": "You calculated $80\\%$ of the sale price (£76 \\times 0.8) instead of finding the original normal price."
+      },
+      {
+        "ans": "$$£152.00$$",
+        "feedback": "You divided the sale price by $0.5$ instead of $0.8$ when calculating the original price."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Working Backwards",
+      "content": "A very common slip in reverse percentage questions is calculating $20\\%$ of the sale price (£15.20) and adding it back. Remember that the reduction was on the *original* normal price, not the sale price. You must always identify what percentage the sale price represents first ($80\\%$) and divide to find the original $100\\%$."
+    },
+    "payhip_link": "https://payhip.com/b/UYy0Q",
+    "button_text": "Master GCSE Reverse Percentages: Download the Pack"
+  },
+  {
+    "id": "003229",
+    "date": "17 August 2026",
+    "major_area": "Algebra",
+    "topic": "Quadratic Equations",
+    "subtopic": "Completing the square",
+    "difficulty": "6/7",
+    "img": "false",
+    "q": "The quadratic expression $x^2 - 8x + 15$ is written in the form $(x - a)^2 - b$.<br>(a) Find the values of the integers $a$ and $b$.<br>(b) Write down the coordinates of the turning point of the curve $y = x^2 - 8x + 15$.",
+    "steps": [
+      "For part (a), to complete the square for $x^2 - 8x + 15$, we first look at the $x^2 - 8x$ part.",
+      "We halve the coefficient of $x$ (which is $-8$) to get $-4$.",
+      "We write this as a squared bracket: $(x - 4)^2$.",
+      "To keep the expression equal, we must subtract the square of this halved value: $(x - 4)^2 - (-4)^2 = (x - 4)^2 - 16$.",
+      "We now substitute this back into our original expression, including the constant $+15$: $(x - 4)^2 - 16 + 15$.",
+      "Simplifying the constant terms: $(x - 4)^2 - 1$, which is in the required form where $a = 4$ and $b = 1$.",
+      "For part (b), the turning point of a curve in the form $y = (x - a)^2 - b$ occurs at the coordinates $(a, -b)$.",
+      "Since the expression is $(x - 4)^2 - 1$, the minimum value of $y$ is $-1$, which occurs when the squared term is zero: $x - 4 = 0 \\implies x = 4$.",
+      "Therefore, the coordinates of the turning point are $(4, -1)$.",
+      "Final Answer: $$(a)\\ a = 4,\\ b = 1\\ (b)\\ (4, -1)$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$(a)\\ a = -4,\\ b = -1\\ (b)\\ (-4, -1)$$",
+        "feedback": "You misapplied the signs when writing the completed square, using $(x + 4)^2 + 1$, which led to incorrect signs for your turning point."
+      },
+      {
+        "ans": "$$(a)\\ a = 4,\\ b = 1\\ (b)\\ (-4, -1)$$",
+        "feedback": "You found the correct values of $a$ and $b$ in part (a), but you inverted the sign of the x-coordinate of the turning point."
+      },
+      {
+        "ans": "$$(a)\\ a = 4,\\ b = -31\\ (b)\\ (4, 31)$$",
+        "feedback": "You added $16$ to $15$ instead of subtracting $16$ when simplifying your constant term."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Turning Point Signs",
+      "content": "When extracting the turning point from the completed square form $(x - a)^2 - b$, remember that the x-coordinate has the *opposite* sign of the value inside the bracket, while the y-coordinate has the *same* sign as the constant outside the bracket. This is because the minimum of $(x-4)^2 - 1$ occurs when $x-4 = 0 \\implies x = 4$."
+    },
+    "payhip_link": "https://payhip.com/b/miLap",
+    "button_text": "Master Completing the Square: Download the Pack"
+  },
+  {
+    "id": "003230",
+    "date": "18 August 2026",
+    "major_area": "Geometry & Measures",
+    "topic": "Trigonometry",
+    "subtopic": "SOHCAHTOA",
+    "difficulty": "4/5",
+    "img": "true",
+    "q": "The diagram shows a right-angled triangle $ABC$ with angle $ABC = 90^\\circ$.<br>The hypotenuse $AC = 13\\text{ cm}$ and the angle $BAC = 35^\\circ$.<br>Calculate the length of the side $BC$, giving your answer correct to $1\\text{ decimal place}$.",
+    "steps": [
+      "We are given a right-angled triangle $ABC$ and need to find the length of the side $BC$.",
+      "With respect to the given angle $BAC = 35^\\circ$, the side $BC$ is the opposite side, and the side $AC = 13\\text{ cm}$ is the hypotenuse.",
+      "We identify the trigonometric ratio that connects the opposite side and the hypotenuse, which is the sine ratio: $\\sin(\\theta) = \\dfrac{\\text{Opposite}}{\\text{Hypotenuse}}$.",
+      "Substituting our values: $\\sin(35^\\circ) = \\dfrac{BC}{13}$.",
+      "To solve for $BC$, we multiply both sides of the equation by 13: $BC = 13 \\times \\sin(35^\\circ)$.",
+      "We evaluate using a calculator: $\\sin(35^\\circ) \\approx 0.57358$.",
+      "Performing the multiplication: $BC = 13 \\times 0.57358 \\approx 7.4565\\text{ cm}$.",
+      "Rounding to $1\\text{ decimal place}$ gives $7.5\\text{ cm}$.",
+      "Final Answer: $$7.5\\text{ cm}$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$10.6\\text{ cm}$$",
+        "feedback": "You used the cosine ratio instead of the sine ratio, calculating the adjacent side $AB = 13 \\times \\cos(35^\\circ)$ instead of the opposite side $BC$."
+      },
+      {
+        "ans": "$$9.1\\text{ cm}$$",
+        "feedback": "You used the tangent ratio incorrectly, dividing by the hypotenuse instead of applying the proper opposite-hypotenuse relationship."
+      },
+      {
+        "ans": "$$22.7\\text{ cm}$$",
+        "feedback": "You divided 13 by $\\sin(35^\\circ)$ instead of multiplying, which is incorrect because the hypotenuse must be the longest side."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Opposite vs. Adjacent",
+      "content": "Always label your sides relative to the active angle before starting SOHCAHTOA calculations. The side directly opposite the $35^\\circ$ angle is $BC$, so we must use the sine ratio. If we wanted to calculate the adjacent side $AB$, we would use the cosine ratio instead."
+    },
+    "payhip_link": "https://payhip.com/b/h3BS6",
+    "button_text": "Master Right Angled Trigonometry: Download the Pack"
+  },
+  {
+    "id": "003231",
+    "date": "19 August 2026",
+    "major_area": "Probability",
+    "topic": "Sets and Venn Diagrams",
+    "subtopic": "Sets and Venn Diagrams",
+    "difficulty": "6/7",
+    "img": "true",
+    "q": "The Venn diagram shows the number of elements in sets $A$ and $B$, which are subsets of a universal set $\\xi$.<br>There are 50 elements in the universal set in total.<br>(a) Find the value of $x$.<br>(b) An element is selected at random from $\\xi$. Find the probability that this element is in the set $A \\cap B'$.",
+    "steps": [
+      "For part (a), the universal set $\\xi$ has a total of 50 elements.",
+      "The elements are divided into four regions: inside only $A$ ($2x$), inside both $A$ and $B$ ($x + 2$), inside only $B$ ($12$), and outside both sets ($15$).",
+      "The sum of all regions must equal the total of 50: $2x + (x + 2) + 12 + 15 = 50$.",
+      "Combining like terms yields: $3x + 17 = 50$.",
+      "We solve for $x$ by subtracting 17 from both sides: $3x = 33$, which yields $x = 11$.",
+      "For part (b), we look at triangle $ADE$. The angle $DAE$ (which is angle $CAD$) is $41^\\circ$.",
+      "We are asked to find the probability of a participant being inside the set $A$ but NOT in $B$, which corresponds to the region $\\text{A} \\cap \\text{B}'$.",
+      "This is represented by the 'Alice only' portion of the Venn Diagram: $2x$ elements.",
+      "Substituting our value $x = 11$: $\\text{Number of elements} = 2 \\times 11 = 22$.",
+      "To find the probability, we divide this frequency by the total number of participants (80): $\\text{P}(\\text{At least one Red}) = \\dfrac{22}{80}$.",
+      "We simplify this fraction by dividing the numerator and denominator by 2: $\\dfrac{11}{40}$.",
+      "Final Answer: $$(a)\\ 11\\ (b)\\ \\dfrac{11}{40}$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$(a)\\ 11\\ (b)\\ \\dfrac{13}{40}$$",
+        "feedback": "In part (b), you used the region representing 'both' ($x+2 = 13$ elements) instead of 'only A' ($2x = 22$ elements)."
+      },
+      {
+        "ans": "$$(a)\\ 8\\ (b)\\ \\dfrac{8}{25}$$",
+        "feedback": "You miscalculated the value of $x$ as 8 in part (a), leading to incorrect element counts throughout."
+      },
+      {
+        "ans": "$$(a)\\ 11\\ (b)\\ \\dfrac{11}{20}$$",
+        "feedback": "In part (b), you used the total number of elements in set $A$ ($2x + x + 2 = 35$ elements) instead of restricting it to 'A only'."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Decoding Set Notation",
+      "content": "In Venn diagram probability questions, make sure you can translate the symbols correctly. The intersection symbol $\\cap$ means 'AND', and the prime symbol $'$ means 'NOT'. Therefore, $A \\cap B'$ means the element must be in $A$ AND NOT in $B$. This isolates the crescent shape on the left side of set $A$."
+    },
+    "payhip_link": "https://payhip.com/b/oW2c1",
+    "button_text": "Master Venn Diagrams: Download the Pack"
+  },
+  {
+    "id": "003232",
+    "date": "20 August 2026",
+    "major_area": "Algebra",
+    "topic": "Inequalities",
+    "subtopic": "Solving inequalities",
+    "difficulty": "8/9",
+    "img": "false",
+    "q": "Find the set of values of $x$ for which $x^2 - 2x - 15 > 0$.",
+    "steps": [
+      "To solve the quadratic inequality $x^2 - 2x - 15 > 0$, we first solve the critical equation $x^2 - 2x - 15 = 0$ to find the critical values.",
+      "We factorise the quadratic equation, looking for two numbers that multiply to $-15$ and add to $-2$. These numbers are $-5$ and $+3$.",
+      "This yields: $(x - 5)(x + 3) = 0$.",
+      "Solving the equation gives the critical values: $x = 5$ and $x = -3$.",
+      "Next, we consider the shape of the quadratic curve $y = x^2 - 2x - 15$.",
+      "Since the coefficient of $x^2$ is positive ($+1$), the graph is a U-shaped parabola that crosses the x-axis at $x = -3$ and $x = 5$.",
+      "We want to find where the curve is strictly greater than zero ($y > 0$), which represents the regions of the graph that lie above the x-axis.",
+      "These regions are to the left of the smaller critical value ($x < -3$) and to the right of the larger critical value ($x > 5$).",
+      "Therefore, the solution set is the pair of disjoint inequalities: $x < -3$ or $x > 5$.",
+      "Final Answer: $$x < -3\\ \\text{or}\\ x > 5$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$-3 < x < 5$$",
+        "feedback": "You gave the solution for the region where the quadratic is negative ($y < 0$) below the x-axis, instead of positive."
+      },
+      {
+        "ans": "$$x < -5\\ \\text{or}\\ x > 3$$",
+        "feedback": "You factorised the quadratic incorrectly, inverted the signs of your critical values, or resolved the roots with incorrect signs."
+      },
+      {
+        "ans": "$$x \\le -3\\ \\text{or}\\ x \\ge 5$$",
+        "feedback": "You used the inclusive inequality symbols ($\\le$ and $\\ge$) instead of the strict inequality symbols ($<$ and $>$) required by the question."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Disjoint vs. Combined Inequalities",
+      "content": "When solving quadratic inequalities, if the inequality is $> 0$, the curve is above the axis in two separate, disjoint directions, so you must write the solution as two separate inequalities separated by 'or' ($x < -3$ or $x > 5$). Do not combine them into a single continuous chain like $-3 > x > 5$, which is mathematically invalid."
+    },
+    "payhip_link": "https://payhip.com/b/3oWKQ",
+    "button_text": "Master Quadratic Inequalities: Download the Pack"
   }
+
 
 ];
