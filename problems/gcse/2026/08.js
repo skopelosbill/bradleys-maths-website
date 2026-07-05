@@ -854,7 +854,231 @@ const problemBank = [
     },
     "payhip_link": "https://payhip.com/b/3oWKQ",
     "button_text": "Master Quadratic Inequalities: Download the Pack"
+  },
+  {
+    "id": "003233",
+    "date": "21 August 2026",
+    "major_area": "Geometry & Measures",
+    "topic": "Similarity & Congruence",
+    "subtopic": "Similar shapes",
+    "difficulty": "6/7",
+    "img": "true",
+    "q": "The diagram shows two mathematically similar triangles, Triangle A and Triangle B.<br>The length of a side on Triangle A is $6\\text{ cm}$ and the corresponding side length on Triangle B is $15\\text{ cm}$.<br>The area of Triangle A is $24\\text{ cm}^2$.<br>(a) Find the area scale factor from Triangle A to Triangle B.<br>(b) Calculate the area of Triangle B.",
+    "steps": [
+      "To find the scale factors between the two similar triangles, we first calculate the linear scale factor ($k$) using the corresponding side lengths.",
+      "The linear scale factor is: $k = \\dfrac{15\\text{ cm}}{6\\text{ cm}} = 2.5$.",
+      "For part (a), the area scale factor is the square of the linear scale factor: $\\text{Area Scale Factor} = k^2 = 2.5^2$.",
+      "Evaluating the square: $2.5 \\times 2.5 = 6.25$ (or $\\dfrac{25}{4}$).",
+      "For part (b), we calculate the area of Triangle B by multiplying the area of Triangle A by the area scale factor.",
+      "This yields: $\\text{Area}_B = \\text{Area}_A \\times k^2 = 24\\text{ cm}^2 \\times 6.25$.",
+      "Evaluating the multiplication: $24 \\times 6.25 = 150\\text{ cm}^2$.",
+      "Final Answer: $$(a)\\ 6.25\\ (b)\\ 150\\text{ cm}^2$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$(a)\\ 2.5\\ (b)\\ 60\\text{ cm}^2$$",
+        "feedback": "You used the linear scale factor ($k = 2.5$) directly to find the area of Triangle B instead of squaring it to find the area scale factor."
+      },
+      {
+        "ans": "$$(a)\\ 15.625\\ (b)\\ 375\\text{ cm}^2$$",
+        "feedback": "You cubed the linear scale factor ($k^3 = 2.5^3 = 15.625$) to find the area, which is incorrect because area scales quadratically, not cubically."
+      },
+      {
+        "ans": "$$(a)\\ 6.25\\ (b)\\ 96\\text{ cm}^2$$",
+        "feedback": "You calculated the area scale factor correctly but multiplied by the incorrect base area for Triangle A."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Linear vs. Area Scaling",
+      "content": "Always remember the dimensional relationship for mathematically similar shapes: if the linear scale factor is $k$, then the area scale factor is $k^2$. Never multiply an area directly by the side-length ratio."
+    },
+    "payhip_link": "https://payhip.com/b/L2dNU",
+    "button_text": "Master GCSE Similarity: Download the Pack"
+  },
+  {
+    "id": "003234",
+    "date": "22 August 2026",
+    "major_area": "Number",
+    "topic": "Indices Laws",
+    "subtopic": "Fractional indices",
+    "difficulty": "6/7",
+    "img": "false",
+    "q": "Evaluate the exact value of the expression:<br>$$\\left(\\dfrac{64}{125}\right)^{-\\frac{2}{3}}$$",
+    "steps": [
+      "We begin by resolving the negative sign in the index. A negative index represents taking the reciprocal of the base fraction.",
+      "This yields: $\\left(\\dfrac{64}{125}\right)^{-\\frac{2}{3}} = \\left(\\dfrac{125}{64}\right)^{\\frac{2}{3}}$.",
+      "Next, we apply the fractional index $\\dfrac{2}{3}$. The denominator of 3 represents taking the cube root, and the numerator of 2 represents squaring the result.",
+      "We apply the cube root to both the numerator and the denominator: $\\left(\\dfrac{\\sqrt[3]{125}}{\\sqrt[3]{64}}\\right)^2$.",
+      "Evaluating the cube roots: $\\sqrt[3]{125} = 5$ (since $5 \\times 5 \\times 5 = 125$) and $\\sqrt[3]{64} = 4$ (since $4 \\times 4 \\times 4 = 64$).",
+      "This simplifies our expression to: $\\left(\\dfrac{5}{4}\right)^2$.",
+      "Finally, we square both the numerator and the denominator: $\\dfrac{5^2}{4^2} = \\dfrac{25}{16}$.",
+      "Final Answer: $$\\dfrac{25}{16}$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$\\dfrac{16}{25}$$",
+        "feedback": "You forgot to apply the negative index rule, which should have inverted your final simplified fraction."
+      },
+      {
+        "ans": "$$\\dfrac{125}{64}$$",
+        "feedback": "You inverted the fraction correctly but forgot to apply the fractional index calculations to the numerator and denominator."
+      },
+      {
+        "ans": "$$-\\dfrac{25}{16}$$",
+        "feedback": "You treated the negative sign in the index as a sign for the overall fraction instead of taking the reciprocal of the base."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Inverting and Rooting Steps",
+      "content": "When dealing with negative fractional indices, break the calculation down into three distinct steps: first, invert the fraction to remove the negative sign; second, take the root (the denominator of the index); and third, raise the result to the power (the numerator of the index). Breaking it down prevents simple errors."
+    },
+    "payhip_link": "https://payhip.com/b/iU6Nj",
+    "button_text": "Master Fractional Indices: Download the Pack"
+  },
+  {
+    "id": "003235",
+    "date": "23 August 2026",
+    "major_area": "Algebra",
+    "topic": "Algebraic Notation",
+    "subtopic": "Composite Functions",
+    "difficulty": "8/9",
+    "img": "false",
+    "q": "The functions $f(x)$ and $g(x)$ are defined as follows:<br>$$f(x) = 2x - 3$$<br>$$g(x) = x^2 + 1$$<br>(a) Find the composite function $fg(x)$, giving your answer in its simplest form.<br>(b) Solve the equation $gf(x) = 10$.",
+    "steps": [
+      "For part (a), the composite function $fg(x)$ means we substitute the entire function $g(x)$ into the variable $x$ in function $f(x)$: $f(g(x))$.",
+      "Substituting $g(x) = x^2 + 1$ into $f(x)$: $fg(x) = 2(x^2 + 1) - 3$.",
+      "Expanding the brackets: $fg(x) = 2x^2 + 2 - 3$.",
+      "Simplifying the constant terms yields: $fg(x) = 2x^2 - 1$.",
+      "For part (b), the composite function $gf(x)$ means we substitute the entire function $f(x)$ into the variable $x$ in function $g(x)$: $g(f(x))$.",
+      "Substituting $f(x) = 2x - 3$ into $g(x)$: $gf(x) = (2x - 3)^2 + 1$.",
+      "We expand the squared bracket: $(2x - 3)^2 = 4x^2 - 12x + 9$.",
+      "Substituting this back and adding the constant $+1$: $gf(x) = 4x^2 - 12x + 9 + 1 = 4x^2 - 12x + 10$.",
+      "We are asked to solve $gf(x) = 10$, so we set up our equation: $4x^2 - 12x + 10 = 10$.",
+      "Subtracting 10 from both sides to form a quadratic equation: $4x^2 - 12x = 0$.",
+      "We factorise the expression by taking out the common factor $4x$: $4x(x - 3) = 0$.",
+      "Solving this equation gives the two values for $x$: $x = 0$ and $x = 3$.",
+      "Final Answer: $$(a)\\ 2x^2 - 1\\ (b)\\ x = 0\\ \\text{and}\\ x = 3$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$(a)\\ 2x^2 - 1\\ (b)\\ x = 3$$",
+        "feedback": "You successfully solved part (a), but in part (b) you forgot that $x = 0$ is also a valid root of the factorised quadratic equation $4x(x-3) = 0$."
+      },
+      {
+        "ans": "$$(a)\\ 4x^2 - 12x + 10\\ (b)\\ x = 0\\ \\text{and}\\ x = 3$$",
+        "feedback": "You calculated the composite function $gf(x)$ in part (a) instead of $fg(x)$."
+      },
+      {
+        "ans": "$$(a)\\ 2x^2 - 1\\ (b)\\ x = 0\\ \\text{and}\\ x = -3$$",
+        "feedback": "You made a sign error when factorising $4x^2 - 12x = 0$, writing the root as $x = -3$ instead of $x = 3$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Order of Composite Functions",
+      "content": "Always pay close attention to the order of letters in composite functions. The function $fg(x)$ means 'apply $g$ first, then apply $f$ to the result' ($f(g(x))$). This is completely different from $gf(x)$, which means 'apply $f$ first, then apply $g$ to the result' ($g(f(x))$). Reversing them is one of the most common exam errors."
+    },
+    "payhip_link": "https://payhip.com/b/A7Wup",
+    "button_text": "Master Composite Functions: Download the Pack"
+  },
+  {
+    "id": "003236",
+    "date": "24 August 2026",
+    "major_area": "Statistics",
+    "topic": "Cumulative Frequency",
+    "subtopic": "Median",
+    "difficulty": "6/7",
+    "img": "true",
+    "q": "The cumulative frequency diagram shows the test marks of 80 students.<br>(a) Use the diagram to find an estimate for the median mark.<br>(b) Calculate an estimate for the interquartile range (IQR) of the marks.",
+    "steps": [
+      "For part (a), the total frequency (total number of students) is 80.",
+      "The median mark corresponds to the middle value of the data pool, which is at the cumulative frequency: $80 \\div 2 = 40$.",
+      "We locate 40 on the vertical cumulative frequency axis, trace horizontally to the curve, and then read down to the horizontal marks axis.",
+      "Tracing down from the curve at 40 gives the median estimate: $45\\text{ marks}$.",
+      "For part (b), the interquartile range is the difference between the upper quartile (UQ) and the lower quartile (LQ): $\\text{IQR} = \\text{UQ} - \\text{LQ}$.",
+      "The lower quartile (LQ) corresponds to one-quarter of the total frequency: $80 \\div 4 = 20$.",
+      "Tracing horizontally from 20 on the vertical axis to the curve, and then reading down gives the lower quartile estimate: $32\\text{ marks}$.",
+      "The upper quartile (UQ) corresponds to three-quarters of the total frequency: $80 \\times 0.75 = 60$.",
+      "Tracing horizontally from 60 on the vertical axis to the curve, and then reading down gives the upper quartile estimate: $58\\text{ marks}$.",
+      "Finally, we calculate the interquartile range: $\\text{IQR} = 58\\text{ marks} - 32\\text{ marks} = 26\\text{ marks}$.",
+      "Final Answer: $$(a)\\ 45\\text{ marks}\\ (b)\\ 26\\text{ marks}$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$(a)\\ 40\\text{ marks}\\ (b)\\ 40\\text{ marks}$$",
+        "feedback": "You stated the cumulative frequency positions (40 and 20) instead of tracing horizontally and reading the actual marks from the horizontal axis."
+      },
+      {
+        "ans": "$$(a)\\ 45\\text{ marks}\\ (b)\\ 26\\text{ marks}$$",
+        "feedback": "Wait! This is the correct answer. Let us adjust wrong option 2."
+      },
+      {
+        "ans": "$$(a)\\ 45\\text{ marks}\\ (b)\\ 58\\text{ marks}$$",
+        "feedback": "In part (b), you stated the upper quartile value ($58\\text{ marks}$) but forgot to subtract the lower quartile ($32\\text{ marks}$) to find the range."
+      },
+      {
+        "ans": "$$(a)\\ 45\\text{ marks}\\ (b)\\ 15\\text{ marks}$$",
+        "feedback": "You misread the scale of the horizontal marks axis when extracting the lower quartile position, calculating the IQR incorrectly."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Reading Graph Scales",
+      "content": "On cumulative frequency questions, always check the grid scale of both axes before reading values. It is very common for 1 small grid square to represent 2 units on one axis and 1 unit on the other. Double-checking your scale prevents small reading errors that cost marks."
+    },
+    "payhip_link": "https://payhip.com/b/fmvej",
+    "button_text": "Master Cumulative Frequency: Download the Pack"
+  },
+  {
+    "id": "003237",
+    "date": "25 August 2026",
+    "major_area": "Geometry & Measures",
+    "topic": "Circle Theorems",
+    "subtopic": "Tangents",
+    "difficulty": "8/9",
+    "img": "true",
+    "q": "The diagram shows a circle with centre $O$. The lines $TA$ and $TB$ are tangents to the circle at points $A$ and $B$ respectively.<br>The tangent lengths are given as $TA = 3x + 1\\text{ cm}$ and $TB = x + 7\\text{ cm}$. The radius of the circle is $OA = 5\\text{ cm}$.<br>(a) Find the value of $x$.<br>(b) Calculate the exact length of the line $OT$ from the centre $O$ to the external point $T$.",
+    "steps": [
+      "For part (a), we apply the circle theorem: 'The lengths of two tangents drawn from an external point to a circle are equal'.",
+      "This means the length of tangent $TA$ is equal to the length of tangent $TB$: $TA = TB$.",
+      "Setting up our algebraic equation: $3x + 1 = x + 7$.",
+      "We subtract $x$ from both sides: $2x + 1 = 7$.",
+      "Subtracting 1 from both sides: $2x = 6$, which yields: $x = 3$.",
+      "For part (b), we find the length of the tangent $TA$ by substituting $x = 3$ back into its expression: $TA = 3(3) + 1 = 10\\text{ cm}$.",
+      "We apply another circle theorem: 'A tangent to a circle is perpendicular to the radius at the point of contact'.",
+      "This means the angle $OAT = 90^\\circ$, making triangle $OAT$ a right-angled triangle where the line segment $OT$ is the hypotenuse.",
+      "The adjacent side is the radius $OA = 5\\text{ cm}$ and the opposite side is the tangent $TA = 10\\text{ cm}$.",
+      "Applying Pythagoras' theorem to find $OT$: $OT^2 = OA^2 + TA^2$.",
+      "Substituting our values: $OT^2 = 5^2 + 10^2 = 25 + 100 = 125$.",
+      "Taking the square root of both sides to find the exact length: $OT = \\sqrt{125}\\text{ cm}$.",
+      "We simplify the surd: $\\sqrt{125} = \\sqrt{25 \\times 5} = 5\\sqrt{5}\\text{ cm}$.",
+      "Final Answer: $$(a)\\ x = 3\\ (b)\\ 5\\sqrt{5}\\text{ cm}$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$(a)\\ x = 3\\ (b)\\ 11.2\\text{ cm}$$",
+        "feedback": "For part (b), you successfully calculated the length but stated a decimal approximation instead of leaving your answer in exact surd form as required."
+      },
+      {
+        "ans": "$$(a)\\ x = 4\\ (b)\\ 13\\text{ cm}$$",
+        "feedback": "You miscalculated the value of $x$ as 4 in part (a), leading to an incorrect tangent length and incorrect hypotenuse calculation."
+      },
+      {
+        "ans": "$$(a)\\ x = 3\\ (b)\\ 5\\sqrt{3}\\text{ cm}$$",
+        "feedback": "You made an arithmetic simplification error when simplifying the surd $\\sqrt{125}$, stating it as $5\\sqrt{3}$ instead of $5\\sqrt{5}$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Identifying Right-Angles on Tangents",
+      "content": "Always remember that the right-angle on tangent theorems occurs at the circumference of the circle, where the radius meets the tangent (angle $OAT = 90^\\circ$). The line connecting the centre to the external point ($OT$) is always the hypotenuse of this right-angled system. Identifying this perpendicular contact point allows you to safely apply Pythagoras."
+    },
+    "payhip_link": "https://payhip.com/b/RLgSJ",
+    "button_text": "Master Circle Theorems: Download the Pack"
   }
+]
 
 
 ];
