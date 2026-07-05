@@ -432,35 +432,35 @@ const problemBank = [
     "subtopic": "Sharing in a ratio",
     "difficulty": "4/5",
     "img": "false",
-    "q": "A sum of money is shared between Alice, Ben, and Charlie in the ratio $3 : 4 : 5$.<br>Charlie receives $\\pounds 60$ more than Alice.<br>Calculate the total amount of money shared.",
+    "q": "A sum of money is shared between Alice, Ben, and Charlie in the ratio $3 : 4 : 5$.<br>Charlie receives $£ 60$ more than Alice.<br>Calculate the total amount of money shared.",
     "steps": [
       "We are given the ratio of money shared between Alice ($A$), Ben ($B$), and Charlie ($C$) as $3 : 4 : 5$.",
       "This means Alice receives 3 parts, Ben receives 4 parts, and Charlie receives 5 parts of the total money.",
-      "We are given that Charlie receives $\\pounds 60$ more than Alice.",
+      "We are given that Charlie receives $£ 60$ more than Alice.",
       "We find the difference in ratio parts between Charlie and Alice: $5 \\text{ parts} - 3 \\text{ parts} = 2 \\text{ parts}$.",
-      "Since these 2 parts represent a difference of $\\pounds 60$, we can calculate the value of 1 single part: $1 \\text{ part} = \\pounds 60 \\div 2 = \\pounds 30$.",
+      "Since these 2 parts represent a difference of $£ 60$, we can calculate the value of 1 single part: $1 \\text{ part} = £ 60 \\div 2 = £ 30$.",
       "Next, we find the total number of parts shared between all three people: $3 + 4 + 5 = 12 \\text{ parts}$.",
-      "Finally, we calculate the total amount of money shared by multiplying the total parts by the value of 1 part: $\\text{Total Money} = 12 \\text{ parts} \\times \\pounds 30 = \\pounds 360$.",
-      "Final Answer: $$\\pounds 360$$"
+      "Finally, we calculate the total amount of money shared by multiplying the total parts by the value of 1 part: $\\text{Total Money} = 12 \\text{ parts} \\times £ 30 = £ 360$.",
+      "Final Answer: $$£ 360$$"
     ],
     "wrong_options": [
       {
-        "ans": "$$\\pounds 150$$",
-        "feedback": "You calculated the amount of money Charlie receives ($5 \\times \\pounds 30$) instead of the total amount shared."
+        "ans": "$$£ 150$$",
+        "feedback": "You calculated the amount of money Charlie receives ($5 \\times £ 30$) instead of the total amount shared."
       },
       {
-        "ans": "$$\\pounds 180$$",
-        "feedback": "You assumed the difference of $\\pounds 60$ represented 4 parts instead of 2 parts when calculating the value of 1 part."
+        "ans": "$$£ 180$$",
+        "feedback": "You assumed the difference of $£ 60$ represented 4 parts instead of 2 parts when calculating the value of 1 part."
       },
       {
-        "ans": "$$\\pounds 720$$",
+        "ans": "$$£ 720$$",
         "feedback": "You doubled the total amount of money, possibly by dividing by 1 part instead of 2 parts when finding the value of a single part."
       }
     ],
     "bradley_insight": {
       "type": "pro-tip",
       "title": "The Head Teacher's Eye: Finding the Difference",
-      "content": "Always focus on what the given value actually represents. The $\\pounds 60$ is the *difference* between Charlie and Alice, not the total. By finding the difference in their ratio parts first ($5 - 3 = 2$), you can easily find the value of 1 part without setting up complex algebraic equations."
+      "content": "Always focus on what the given value actually represents. The $£ 60$ is the *difference* between Charlie and Alice, not the total. By finding the difference in their ratio parts first ($5 - 3 = 2$), you can easily find the value of 1 part without setting up complex algebraic equations."
     },
     "payhip_link": "https://payhip.com/b/o7A2P",
     "button_text": "Master GCSE Ratio and Sharing: Download the Pack"
