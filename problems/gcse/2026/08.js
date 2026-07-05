@@ -642,48 +642,45 @@ const problemBank = [
     "payhip_link": "https://payhip.com/b/wm0xL",
     "button_text": "Master Circle Theorems: Download the Pack"
   },
-  {
-    "id": "003228",
-    "date": "16 August 2026",
-    "major_area": "Ratio, Proportion & Rates of Change",
-    "topic": "Percentage Change",
-    "subtopic": "Reverse percentage",
-    "difficulty": "4/5",
-    "img": "false",
-    "q": "A shop reduces the price of a coat by $20\\%$ in a sale.<br>The sale price of the coat is £76.<br>Calculate the normal price of the coat before the sale.",
-    "steps": [
-      "The normal price of the coat represents $100\\%$ of its original cost.",
-      "Since the price is reduced by $20\\%$, the sale price represents: $100\\% - 20\\% = 80\\%$ of the normal price.",
-      "We are given that this $80\\%$ sale price is £76.",
-      "This allows us to set up the relationship: $80\\% = £76$.",
-      "To find the value representing $1\\%$, we divide both sides by 80: $1\\% = £ 60 \\div 2 = £ 30$ is incorrect. Let us calculate: $1\\% = £ 76 \\div 19$ ... wait.",
-      "Let us re-evaluate: $80\\% \\text{ of the total} = £76$ is incorrect because the sale price is $£ 76$ more? No, Charlie received $£ 60$ more in the previous question.",
-      "Let us recalculate: the sale price is $£ 76$, which represents $80\\%$ of the normal price.",
-      "To find the value of $10\\%$, we divide the sale price by 8: $10\\% = £76 \\div 8 = £9.50$.",
-      "Finally, we calculate the normal price ($100\\%$) by multiplying the $10\\%$ value by 10: $\\text{Normal Price} = £9.50 \\times 10 = £95$."
-    ],
-    "wrong_options": [
-      {
-        "ans": "$$£91.20$$",
-        "feedback": "You calculated a $20\\%$ increase on the sale price (£76 + £15.20) instead of finding the original price before the $20\\%$ reduction."
-      },
-      {
-        "ans": "$$£60.80$$",
-        "feedback": "You calculated $80\\%$ of the sale price (£76 \\times 0.8) instead of finding the original normal price."
-      },
-      {
-        "ans": "$$£152.00$$",
-        "feedback": "You divided the sale price by $0.5$ instead of $0.8$ when calculating the original price."
-      }
-    ],
-    "bradley_insight": {
-      "type": "caution",
-      "title": "The Head Teacher's Eye: Working Backwards",
-      "content": "A very common slip in reverse percentage questions is calculating $20\\%$ of the sale price (£15.20) and adding it back. Remember that the reduction was on the *original* normal price, not the sale price. You must always identify what percentage the sale price represents first ($80\\%$) and divide to find the original $100\\%$."
+ {
+  "id": "003228",
+  "date": "16 August 2026",
+  "major_area": "Ratio, Proportion & Rates of Change",
+  "topic": "Percentage Change",
+  "subtopic": "Reverse percentage",
+  "difficulty": "4/5",
+  "img": "false",
+  "q": "A shop reduces the price of a coat by $20\\%$ in a sale.<br>The sale price of the coat is £76.<br>Calculate the normal price of the coat before the sale.",
+  "steps": [
+    "The normal price of the coat represents $100\\%$ of its original cost.",
+    "Since the price is reduced by $20\\%$, the sale price of £76 represents: $100\\% - 20\\% = 80\\%$ of the normal price.",
+    "This allows us to set up the percentage relationship: $80\\% = £76$.",
+    "To find the value representing $10\\%$, we divide both sides of the relationship by 8: $10\\% = £76 \\div 8 = £9.50$.",
+    "Finally, we calculate the normal price ($100\\%$) by multiplying the $10\\%$ value by 10: $\\text{Normal Price} = £9.50 \\times 10 = £95$.",
+    "Final Answer: $$£95$$"
+  ],
+  "wrong_options": [
+    {
+      "ans": "$$£91.20$$",
+      "feedback": "You calculated a $20\\%$ increase on the sale price (£76 + £15.20) instead of finding the original price before the $20\\%$ reduction."
     },
-    "payhip_link": "https://payhip.com/b/UYy0Q",
-    "button_text": "Master GCSE Reverse Percentages: Download the Pack"
+    {
+      "ans": "$$£60.80$$",
+      "feedback": "You calculated $80\\%$ of the sale price (£76 \\times 0.8) instead of finding the original normal price."
+    },
+    {
+      "ans": "$$£152.00$$",
+      "feedback": "You divided the sale price by $0.5$ instead of $0.8$ when calculating the original price."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Working Backwards",
+    "content": "A very common slip in reverse percentage questions is calculating $20\\%$ of the sale price (£15.20) and adding it back. Remember that the reduction was on the *original* normal price, not the sale price. You must always identify what percentage the sale price represents first ($80\\%$) and divide to find the original $100\\%$."
   },
+  "payhip_link": "https://payhip.com/b/UYy0Q",
+  "button_text": "Master GCSE Reverse Percentages: Download the Pack"
+},
   {
     "id": "003229",
     "date": "17 August 2026",
