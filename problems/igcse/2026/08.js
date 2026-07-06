@@ -216,5 +216,6 @@ const problemBank = [
     "payhip_link": "https://payhip.com/b/w0oYj",
     "button_text": "Master IGCSE Inverse Functions: Download the Pack"
   }
+  
 
 ];
