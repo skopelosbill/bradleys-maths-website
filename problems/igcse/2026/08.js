@@ -135,45 +135,55 @@ const problemBank = [
     "payhip_link": "https://payhip.com/b/udQPT",
     "button_text": "Master IGCSE 3D Trigonometry: Download the Pack"
   },
-  {
-    "id": "003216",
-    "date": "4 August 2026",
-    "major_area": "Statistics",
-    "topic": "Histograms",
-    "subtopic": "Frequency density",
-    "difficulty": "B/C",
-    "img": "false",
-    "q": "The table shows information about the times, in minutes, that 120 students spent revising for an exam.<br><br><table border='1' style='border-collapse: collapse; text-align: center; margin: 10px 0; width: 100%; max-width: 400px;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px;'>Time ($t$ minutes)</th><th style='padding: 8px;'>Frequency</th></tr></thead><tbody><tr><td style='padding: 8px;'>$0 < t \\le 10$</td><td style='padding: 8px;'>15</td></tr><tr><td style='padding: 8px;'>$10 < t \\le 30$</td><td style='padding: 8px;'>48</td></tr><tr><td style='padding: 8px;'>$30 < t \\le 40$</td><td style='padding: 8px;'>36</td></tr><tr><td style='padding: 8px;'>$40 < t \\le 60$</td><td style='padding: 8px;'>21</td></tr></tbody></table><br>Calculate the frequency densities for the four class intervals to represent this data on a histogram.",
-    "steps": [
-      "To calculate the frequency density for a class interval, we use the formula: $\\text{Frequency Density} = \\dfrac{\\text{Frequency}}{\\text{Class Width}}$.",
-      "For the first interval $0 < t \\le 10$, the class width is $10 - 0 = 10$. The frequency density is: $\\dfrac{15}{10} = 1.5$.",
-      "For the second interval $10 < t \\le 30$, the class width is $30 - 10 = 20$. The frequency density is: $\\dfrac{48}{20} = 2.4$.",
-      "For the third interval $30 < t \\le 40$, the class width is $40 - 30 = 10$. The frequency density is: $\\dfrac{36}{10} = 3.6$.",
-      "For the fourth interval $40 < t \\le 60$, the class width is $60 - 40 = 20$. The frequency density is: $\\dfrac{21}{20} = 1.05$.",
-      "Final Answer: $$1.5,\\ 2.4,\\ 3.6,\\ 1.05$$"
-    ],
-    "wrong_options": [
-      {
-        "ans": "$$1.5,\\ 1.6,\\ 3.6,\\ 0.35$$",
-        "feedback": "You assumed all class widths were equal to 10 or 30 when calculating the frequency densities for the second and fourth intervals."
-      },
-      {
-        "ans": "$$150,\\ 960,\\ 360,\\ 420$$",
-        "feedback": "You multiplied the frequencies by the class widths instead of dividing them to find the heights."
-      },
-      {
-        "ans": "$$1.5,\\ 2.4,\\ 3.6,\\ 1.50$$",
-        "feedback": "You made an arithmetic calculation error when dividing 21 by 20 on the final class interval."
-      }
-    ],
-    "bradley_insight": {
-      "type": "caution",
-      "title": "The Head Teacher's Eye: Variable Class Widths",
-      "content": "Cambridge 0580 histograms almost always feature variable class widths. Never assume the class widths are equal. Always calculate each class width individually by subtracting the lower boundary from the upper boundary before performing your division."
+ {
+  "id": "003216",
+  "date": "4 August 2026",
+  "major_area": "Statistics",
+  "topic": "Histograms",
+  "subtopic": "Frequency density",
+  "difficulty": "B/C",
+  "img": "false",
+  "q": "The table shows information about the times, in minutes, that 120 students spent revising for an exam.<br><br><table border='1' style='border-collapse: collapse; text-align: center; margin: 10px 0; width: 100%; max-width: 500px;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px;'>Time ($t$ minutes)</th><th style='padding: 8px;'>Frequency</th><th style='padding: 8px;'>Class Width ($w$)</th><th style='padding: 8px;'>Frequency Density ($FD$)</th></tr></thead><tbody><tr><td style='padding: 8px;'>$0 < t \\le 10$</td><td style='padding: 8px;'>15</td><td style='padding: 8px;'></td><td style='padding: 8px;'></td></tr><tr><td style='padding: 8px;'>$10 < t \\le 30$</td><td style='padding: 8px;'>48</td><td style='padding: 8px;'></td><td style='padding: 8px;'></td></tr><tr><td style='padding: 8px;'>$30 < t \\le 40$</td><td style='padding: 8px;'>36</td><td style='padding: 8px;'></td><td style='padding: 8px;'></td></tr><tr><td style='padding: 8px;'>$40 < t \\le 60$</td><td style='padding: 8px;'>21</td><td style='padding: 8px;'></td><td style='padding: 8px;'></td></tr></tbody></table><br>(a) Copy and complete the table to find the Class Width ($w$) and Frequency Density ($FD$) for each interval.<br>(b) Construct a histogram on the grid to represent this information.",
+  "steps": [
+    "For part (a), we calculate the Class Width ($w$) for each interval by subtracting the lower boundary from the upper boundary: $w = \\text{Upper} - \\text{Lower}$.",
+    "We calculate the Frequency Density ($FD$) for each interval using the formula: $FD = \\dfrac{\\text{Frequency}}{\\text{Class Width}}$.",
+    "For $0 < t \\le 10$: $w = 10 - 0 = 10$. The frequency density is: $FD = \\dfrac{15}{10} = 1.5$.",
+    "For $10 < t \\le 30$: $w = 30 - 10 = 20$. The frequency density is: $FD = \\dfrac{48}{20} = 2.4$.",
+    "For $30 < t \\le 40$: $w = 40 - 30 = 10$. The frequency density is: $FD = \\dfrac{36}{10} = 3.6$.",
+    "For $40 < t \\le 60$: $w = 60 - 40 = 20$. The frequency density is: $FD = \\dfrac{21}{20} = 1.05$.",
+    "This completes the calculation table:<br><br><table border='1' style='border-collapse: collapse; text-align: center; margin: 10px 0; width: 100%; max-width: 500px;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px;'>Time ($t$ minutes)</th><th style='padding: 8px;'>Frequency</th><th style='padding: 8px;'>Class Width ($w$)</th><th style='padding: 8px;'>Frequency Density ($FD$)</th></tr></thead><tbody><tr><td style='padding: 8px; font-weight: bold;'>0 < t &le; 10</td><td style='padding: 8px;'>15</td><td style='padding: 8px; font-weight: bold;'>10</td><td style='padding: 8px; font-weight: bold;'>1.5</td></tr><tr><td style='padding: 8px; font-weight: bold;'>10 < t &le; 30</td><td style='padding: 8px;'>48</td><td style='padding: 8px; font-weight: bold;'>20</td><td style='padding: 8px; font-weight: bold;'>2.4</td></tr><tr><td style='padding: 8px; font-weight: bold;'>30 < t &le; 40</td><td style='padding: 8px;'>36</td><td style='padding: 8px; font-weight: bold;'>10</td><td style='padding: 8px; font-weight: bold;'>3.6</td></tr><tr><td style='padding: 8px; font-weight: bold;'>40 < t &le; 60</td><td style='padding: 8px;'>21</td><td style='padding: 8px; font-weight: bold;'>20</td><td style='padding: 8px; font-weight: bold;'>1.05</td></tr></tbody></table>",
+    "For part (b), we construct the histogram on the coordinate grid.",
+    "The horizontal axis represents the Time ($t$ minutes) from 0 to 60, and the vertical axis represents the Frequency Density ($FD$) from 0 to 4.",
+    "We draw four adjacent rectangular bars with widths matching the intervals and heights matching our calculated frequency densities:",
+    "- Bar 1: from 0 to 10 with a height of 1.5",
+    "- Bar 2: from 10 to 30 with a height of 2.4",
+    "- Bar 3: from 30 to 40 with a height of 3.6",
+    "- Bar 4: from 40 to 60 with a height of 1.05",
+    "<img src='images/2026-08/i_04_ans.png' style='width:100%; max-width:450px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+    "Final Answer: $$(a)\\ \\text{Table completed}\\ (b)\\ \\text{Histogram constructed}$$"
+  ],
+  "wrong_options": [
+    {
+      "ans": "$$(a)\\ FDs:\\ 1.5,\\ 1.6,\\ 3.6,\\ 0.35\\ (b)\\ \\text{Histogram constructed}$$",
+      "feedback": "You assumed all class widths were equal to 10 or 30 when calculating the frequency densities for the second and fourth intervals."
     },
-    "payhip_link": "https://payhip.com/b/4AZYG",
-    "button_text": "Master IGCSE Histograms: Download the Pack"
+    {
+      "ans": "$$(a)\\ FDs:\\ 150,\\ 960,\\ 360,\\ 420\\ (b)\\ \\text{Histogram constructed}$$",
+      "feedback": "You multiplied the frequencies by the class widths instead of dividing them to find the frequency density heights."
+    },
+    {
+      "ans": "$$(a)\\ FDs:\\ 1.5,\\ 2.4,\\ 3.6,\\ 1.50\\ (b)\\ \\text{Histogram constructed}$$",
+      "feedback": "You made an arithmetic calculation error when dividing 21 by 20 on the final class interval."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Class Width vs. Frequency Density",
+    "content": "Cambridge 0580 histograms almost always feature variable class widths. Copying and completing a table with explicit 'Class Width' and 'Frequency Density' columns is a highly effective way to structure your work and prevent division mistakes before drawing your bars."
   },
+  "payhip_link": "https://payhip.com/b/4AZYG",
+  "button_text": "Master IGCSE Histograms: Download the Pack"
+},
   {
   "id": "003217",
   "date": "5 August 2026",
