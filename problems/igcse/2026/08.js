@@ -175,47 +175,48 @@ const problemBank = [
     "button_text": "Master IGCSE Histograms: Download the Pack"
   },
   {
-    "id": "003217",
-    "date": "5 August 2026",
-    "major_area": "Algebra",
-    "topic": "Algebraic Notation",
-    "subtopic": "Inverse Functions",
-    "difficulty": "B/A",
-    "img": "false",
-    "q": "The function $f(x)$ is defined as:<br>$$f(x) = \\dfrac{3x + 1}{2x - 5},\\ \\ \\ x \\neq 2.5$$<br>Find an expression for the inverse function $f^{-1}(x)$.",
-    "steps": [
-      "To find the inverse function $f^{-1}(x)$, we set $y = f(x)$ and rearrange the equation to make $x$ the subject: $y = \\dfrac{3x + 1}{2x - 5}$.",
-      "We multiply both sides by the denominator $(2x - 5)$ to clear the fraction: $y(2x - 5) = 3x + 1$.",
-      "We expand the bracket on the left-hand side: $2xy - 5y = 3x + 1$.",
-      "To collect all terms containing $x$ on one side of the equation, we subtract $3x$ from both sides: $2xy - 3x - 5y = 1$.",
-      "Next, we move the term without $x$ (which is $-5y$) to the right-hand side by adding $5y$ to both sides: $2xy - 3x = 5y + 1$.",
-      "We factorise the left-hand side by taking out $x$ as a common factor: $x(2y - 3) = 5y + 1$.",
-      "We isolate $x$ by dividing both sides by $(2y - 3)$: $x = \\dfrac{5y + 1}{2y - 3}$.",
-      "Finally, we replace the variable $y$ with $x$ to state our inverse function: $f^{-1}(x) = \\dfrac{5x + 1}{2x - 3}$.",
-      "Final Answer: $$f^{-1}(x) = \\dfrac{5x + 1}{2x - 3}$$"
-    ],
-    "wrong_options": [
-      {
-        "ans": "$$f^{-1}(x) = \\dfrac{5x + 1}{2x + 3}$$",
-        "feedback": "You made a sign error when rearranging the terms, adding $3x$ to the left-hand side instead of subtracting it."
-      },
-      {
-        "ans": "$$f^{-1}(x) = \\dfrac{5x - 1}{2x - 3}$$",
-        "feedback": "You made a sign error on your constant term when rearranging, subtracting 1 instead of adding it."
-      },
-      {
-        "ans": "$$f^{-1}(x) = \\dfrac{2x - 5}{3x + 1}$$",
-        "feedback": "You simply inverted the fraction of $f(x)$, which is incorrect. The reciprocal of a function is not its inverse."
-      }
-    ],
-    "bradley_insight": {
-      "type": "caution",
-      "title": "The Head Teacher's Eye: Isolating the Target Variable",
-      "content": "When finding the inverse of a fractional function, the target variable $x$ will initially appear in two places. You must multiply out the denominator, collect both $x$ terms on one side, and factorise. This is a highly standard Cambridge Paper 2 algebraic rearrangement."
+  "id": "003217",
+  "date": "5 August 2026",
+  "major_area": "Algebra",
+  "topic": "Algebraic Notation",
+  "subtopic": "Inverse Functions",
+  "difficulty": "B/A",
+  "img": "false",
+  "q": "The function $f(x)$ is defined as:<br>$$f(x) = \\dfrac{3x + 1}{2x - 5},\\ \\ \\ x \\neq 2.5$$<br>Find an expression for the inverse function $f^{-1}(x)$.",
+  "steps": [
+    "We begin by writing the function as an equation: $y = \\dfrac{3x + 1}{2x - 5}$.",
+    "To find the inverse function, we swap $x$ and $y$, which represents a reflection in the line $y = x$: $x = \\dfrac{3y + 1}{2y - 5}$.",
+    "We now rearrange this new equation to solve for $y$ (making $y$ the subject).",
+    "We multiply both sides by the denominator $(2y - 5)$ to clear the fraction: $x(2y - 5) = 3y + 1$.",
+    "We expand the bracket on the left-hand side: $2xy - 5x = 3y + 1$.",
+    "We collect all terms containing $y$ on one side of the equation. We subtract $3y$ and add $5x$ to both sides: $2xy - 3y = 5x + 1$.",
+    "We factorise the left-hand side by taking out $y$ as a common factor: $y(2x - 3) = 5x + 1$.",
+    "We isolate $y$ by dividing both sides by $(2x - 3)$: $y = \\dfrac{5x + 1}{2x - 3}$.",
+    "Since $y$ now represents the output of the inverse function, we write our final expression: $f^{-1}(x) = \\dfrac{5x + 1}{2x - 3}$.",
+    "Final Answer: $$f^{-1}(x) = \\dfrac{5x + 1}{2x - 3}$$"
+  ],
+  "wrong_options": [
+    {
+      "ans": "$$f^{-1}(x) = \\dfrac{5x + 1}{2x + 3}$$",
+      "feedback": "You made a sign error when rearranging the terms, adding $3x$ to the left-hand side instead of subtracting it."
     },
-    "payhip_link": "https://payhip.com/b/w0oYj",
-    "button_text": "Master IGCSE Inverse Functions: Download the Pack"
-  }
+    {
+      "ans": "$$f^{-1}(x) = \\dfrac{5x - 1}{2x - 3}$$",
+      "feedback": "You made a sign error on your constant term when rearranging, subtracting 1 instead of adding it."
+    },
+    {
+      "ans": "$$f^{-1}(x) = \\dfrac{2x - 5}{3x + 1}$$",
+      "feedback": "You simply inverted the fraction of $f(x)$, which is incorrect. The reciprocal of a function is not its inverse."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Swapping Variables First",
+    "content": "When finding the inverse of a fractional function, always swap your $x$ and $y$ variables at the very first step to represent a reflection in $y = x$. Once swapped, focus on rearranging to isolate your new $y$ variable by clearing the denominator, expanding, collecting like terms, and factorising."
+  },
+  "payhip_link": "https://payhip.com/b/w0oYj",
+  "button_text": "Master IGCSE Inverse Functions: Download the Pack"
+}
 
 
 ];
