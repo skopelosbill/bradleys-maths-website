@@ -226,7 +226,222 @@ const problemBank = [
   },
   "payhip_link": "https://payhip.com/b/w0oYj",
   "button_text": "Master IGCSE Inverse Functions: Download the Pack"
-}
+},
+  {
+    "id": "003218",
+    "date": "6 August 2026",
+    "major_area": "Algebra",
+    "topic": "Exponential Growth & Decay",
+    "subtopic": "",
+    "difficulty": "B/A",
+    "img": "false",
+    "q": "The value of a car decreases exponentially at a rate of $12\\%$ per year.<br>The initial value of the car is £18000.<br>Calculate the value of the car at the end of 4 years. Give your answer correct to the nearest £10.",
+    "steps": [
+      "The value of the car decreases exponentially at a rate of $12\\%$ per year. To find the decimal multiplier for a $12\\%$ decrease, we subtract $12\\%$ from $100\\%$: $100\\% - 12\\% = 88\\%$.",
+      "We convert $88\\%$ to a decimal multiplier by dividing by 100: $88 \\div 100 = 0.88$.",
+      "Because the value decreases over 4 years, the exponential decay formula is: $\\text{Value} = \\text{Initial Value} \\times \\text{Multiplier}^4$.",
+      "Substituting our values: $\\text{Value} = £18000 \\times 0.88^4$.",
+      "First, we calculate the fourth power of the multiplier: $0.88^4 = 0.59969536$.",
+      "Next, we multiply the initial value by this multiplier: $\\text{Value} = £18000 \\times 0.59969536 = £10794.51648$.",
+      "The question asks for the answer correct to the nearest £10.",
+      "Rounding £10794.51648 to the nearest £10 yields: £10790.",
+      "Final Answer: $$£10790$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$£10795$$",
+        "feedback": "You rounded your final answer to the nearest integer (£10795) instead of the nearest £10 as required."
+      },
+      {
+        "ans": "$$£9360$$",
+        "feedback": "You calculated simple depreciation over 4 years ($4 \\times 12\\% = 48\\%$ total decrease, £18000 \\times 0.52 = £9360$) instead of exponential decay."
+      },
+      {
+        "ans": "$$£10800$$",
+        "feedback": "You rounded your final answer to the nearest £100 instead of the nearest £10."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Checking Rounding Instructions",
+      "content": "Cambridge 0580 questions often include specific rounding instructions (e.g. 'nearest £10', 'nearest dollar', or '3 significant figures'). Always perform the full unrounded calculation first, and then apply the exact rounding requested at the very end to prevent losing the final accuracy mark."
+    },
+    "payhip_link": "https://payhip.com/b/JrS9d",
+    "button_text": "Master IGCSE Growth and Decay: Download the Pack"
+  },
+  {
+    "id": "003219",
+    "date": "7 August 2026",
+    "major_area": "Algebra",
+    "topic": "Algebraic Fractions",
+    "subtopic": "Simplifying",
+    "difficulty": "A/A*",
+    "img": "false",
+    "q": "Simplify fully the algebraic fraction:<br>$$\\dfrac{2x^2 - 5x - 3}{x^2 - 9}$$",
+    "steps": [
+      "To simplify the algebraic fraction, we must factorise both the numerator and the denominator completely.",
+      "First, we factorise the quadratic numerator: $2x^2 - 5x - 3$.",
+      "We look for two numbers that multiply to $2 \\times (-3) = -6$ and add to $-5$. These numbers are $-6$ and $+1$.",
+      "Splitting the middle term and factorising by grouping: $2x^2 - 6x + x - 3 = 2x(x - 3) + 1(x - 3) = (2x + 1)(x - 3)$.",
+      "Second, we factorise the denominator: $x^2 - 9$.",
+      "We recognize $x^2 - 9$ as a difference of two squares: $x^2 - 3^2 = (x - 3)(x + 3)$.",
+      "We substitute these factorised expressions back into our fraction: $\\dfrac{(2x + 1)(x - 3)}{(x - 3)(x + 3)}$.",
+      "We divide the numerator and denominator by the common factor $(x - 3)$ to simplify: $\\dfrac{2x + 1}{x + 3}$.",
+      "Final Answer: $$\\dfrac{2x + 1}{x + 3}$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$\\dfrac{2x - 1}{x + 3}$$",
+        "feedback": "You factorised the quadratic numerator with incorrect signs, using $(2x-1)(x+3)$ instead of $(2x+1)(x-3)$."
+      },
+      {
+        "ans": "$$\\dfrac{2x^2 - 5x}{x^2}$$",
+        "feedback": "You attempted to simplify individual terms directly by canceling $x^2$ and the constants. You can only cancel common factors that multiply the entire numerator and denominator."
+      },
+      {
+        "ans": "$$\\dfrac{2x + 1}{x - 3}$$",
+        "feedback": "You canceled the incorrect factor, leaving $(x-3)$ in the denominator instead of $(x+3)$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Never Cancel Terms Directly",
+      "content": "A very common error in algebraic fraction questions is canceling terms (like the $x^2$ or the $-3$ and $-9$) directly. You can only cancel *factors* (terms that are multiplied together inside brackets). Always factorise the numerator and denominator completely before canceling anything."
+    },
+    "payhip_link": "https://payhip.com/b/V07A3",
+    "button_text": "Master IGCSE Rational Expressions: Download the Pack"
+  },
+  {
+    "id": "003220",
+    "date": "8 August 2026",
+    "major_area": "Geometry & Measures",
+    "topic": "Vectors",
+    "subtopic": "Vector addition",
+    "difficulty": "B/A",
+    "img": "true",
+    "q": "The diagram shows a vector $\\mathbf{p}$ representing the journey from point $A(1, 2)$ to point $B(5, 5)$.<br>(a) Write the vector $\\mathbf{p}$ as a column vector.<br>(b) Calculate the magnitude of the vector $\\mathbf{p}$, representing the exact distance between $A$ and $B$.",
+    "steps": [
+      "For part (a), the column vector $\\mathbf{p}$ represents the horizontal change ($x$) and vertical change ($y$) from point $A$ to point $B$: $\\mathbf{p} = \\begin{pmatrix} x_B - x_A \\\\ y_B - y_A \\end{pmatrix}$.",
+      "Given $A(1, 2)$ and $B(5, 5)$, the horizontal change is: $5 - 1 = 4$.",
+      "The vertical change is: $5 - 2 = 3$.",
+      "Therefore, we write $\\mathbf{p}$ as the column vector: $\\begin{pmatrix} 4 \\\\ 3 \\end{pmatrix}$.",
+      "For part (b), the magnitude (length) of a column vector $\\begin{pmatrix} x \\\\ y \\end{pmatrix}$ is calculated using Pythagoras' theorem: $|\\mathbf{p}| = \\sqrt{x^2 + y^2}$.",
+      "Substituting our components: $|\\mathbf{p}| = \\sqrt{4^2 + 3^2}$.",
+      "Evaluating the squares: $|\\mathbf{p}| = \\sqrt{16 + 9} = \\sqrt{25}$.",
+      "Taking the square root yields: $|\\mathbf{p}| = 5$.",
+      "Final Answer: $$(a)\\ \\begin{pmatrix} 4 \\\\ 3 \\end{pmatrix}\\ (b)\\ 5$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$(a)\\ \\begin{pmatrix} 4 \\\\ 3 \\end{pmatrix}\\ (b)\\ 7$$",
+        "feedback": "In part (b), you added the vector components directly ($4+3 = 7$) instead of applying Pythagoras' theorem to calculate the magnitude."
+      },
+      {
+        "ans": "$$(a)\\ \\begin{pmatrix} 5 \\\\ 5 \\end{pmatrix}\\ (b)\\ 5$$",
+        "feedback": "In part (a), you stated the coordinates of point $B$ as your column vector instead of calculating the change from $A$ to $B$."
+      },
+      {
+        "ans": "$$(a)\\ \\begin{pmatrix} 3 \\\\ 4 \\end{pmatrix}\\ (b)\\ 5$$",
+        "feedback": "In part (a), you inverted your horizontal and vertical components, stating the vertical change at the top of the column vector."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Column Vector Components",
+      "content": "Remember that a column vector has its horizontal change (the x-direction) on top and its vertical change (the y-direction) on the bottom. The magnitude is simply the hypotenuse of the right-angled triangle formed by these two changes, which is calculated using Pythagoras."
+    },
+    "payhip_link": "https://payhip.com/b/LbBqE",
+    "button_text": "Master IGCSE Vector Magnitude: Download the Pack"
+  },
+  {
+    "id": "003221",
+    "date": "9 August 2026",
+    "major_area": "Probability",
+    "topic": "Probability of Combined Events",
+    "subtopic": "",
+    "difficulty": "B/C",
+    "img": "false",
+    "q": "A bag contains 5 yellow marbles and 3 green marbles. Two marbles are drawn at random with replacement.<br>(a) Find the probability that both marbles drawn are green.<br>(b) Find the probability that the two marbles are of different colours.",
+    "steps": [
+      "The total number of marbles in the bag is $5 + 3 = 8$.",
+      "Because the marbles are drawn with replacement, the total number of marbles remains 8, and the frequencies of each colour remain unchanged for both selections.",
+      "The probability of drawing a green marble on any pick is: $\\text{P}(\\text{Green}) = \\dfrac{3}{8}$.",
+      "The probability of drawing a yellow marble on any pick is: $\\text{P}(\\text{Yellow}) = \\dfrac{5}{8}$.",
+      "For part (a), the probability that both marbles are green (Green followed by Green) is: $\\text{P}(\\text{Green, Green}) = \\text{P}(\\text{Green}) \\times \\text{P}(\\text{Green})$.",
+      "Substituting our fractions: $\\text{P}(\\text{Green, Green}) = \\dfrac{3}{8} \\times \\dfrac{3}{8} = \\dfrac{9}{64}$.",
+      "For part (b), there are two different ways the marbles can be of different colours: (Yellow then Green) or (Green then Yellow).",
+      "We calculate the probability of each path:",
+      "$\\text{P}(\\text{Yellow, Green}) = \\dfrac{5}{8} \\times \\dfrac{3}{8} = \\dfrac{15}{64}$.",
+      "$\\text{P}(\\text{Green, Yellow}) = \\dfrac{3}{8} \\times \\dfrac{5}{8} = \\dfrac{15}{64}$.",
+      "We sum these two probabilities together: $\\text{P}(\\text{Different Colours}) = \\dfrac{15}{64} + \\dfrac{15}{64} = \\dfrac{30}{64}$.",
+      "Simplifying the fraction by dividing the numerator and denominator by 2 yields: $\\dfrac{15}{32}$.",
+      "Final Answer: $$(a)\\ \\dfrac{9}{64}\\ (b)\\ \\dfrac{15}{32}$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$(a)\\ \\dfrac{3}{28}\\ (b)\\ \\dfrac{15}{28}$$",
+        "feedback": "You calculated the probabilities assuming the selection was without replacement, reducing your denominators to 7 on the second pick."
+      },
+      {
+        "ans": "$$(a)\\ \\dfrac{9}{64}\\ (b)\\ \\dfrac{15}{64}$$",
+        "feedback": "In part (b), you calculated only one of the two possible paths (Yellow then Green), forgetting to double it to account for the alternative order (Green then Yellow)."
+      },
+      {
+        "ans": "$$(a)\\ \\dfrac{3}{8}\\ (b)\\ \\dfrac{15}{32}$$",
+        "feedback": "In part (a), you stated the probability of picking a single green marble instead of calculating the probability of picking both."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: With vs. Without Replacement",
+      "content": "Always read the question extremely carefully to check if the selection is 'with replacement' or 'without replacement'. When replacement occurs, the probabilities on the second branch remain identical to the first. Also, remember that different colours can happen in two different orders (YG or GY), so you must sum both paths."
+    },
+    "payhip_link": "https://payhip.com/b/3AZnV",
+    "button_text": "Master IGCSE Probability: Download the Pack"
+  },
+  {
+    "id": "003222",
+    "date": "10 August 2026",
+    "major_area": "Geometry & Measures",
+    "topic": "Circle Theorems",
+    "subtopic": "",
+    "difficulty": "A/A*",
+    "img": "true",
+    "q": "The diagram shows a circle with centre $O$. $A$, $B$, and $C$ are points on the circumference. The line $TA$ is a tangent to the circle at point $A$.<br>The tangent angle $TAB = 58^\\circ$.<br>(a) Find the size of angle $ACB$. State the geometric reason for your answer.<br>(b) Calculate the size of angle $AOB$. State the geometric reasons for your calculations.",
+    "steps": [
+      "For part (a), the angle between the tangent $TA$ and the chord $AB$ is angle $TAB = 58^\\circ$.",
+      "According to the alternate segment theorem, the angle between a tangent and a chord is equal to the angle subtended by the chord in the alternate segment (angle $ACB$).",
+      "Therefore, angle $ACB = 58^\\circ$. Our geometric reason is: 'The Alternate Segment Theorem'.",
+      "For part (b), we know that the radius $OA$ is perpendicular to the tangent $TA$, so angle $OAT = 90^\\circ$.",
+      "We calculate the interior angle $OAB$: $\\text{angle } OAB = 90^\\circ - 58^\\circ = 32^\\circ$.",
+      "Since $OA$ and $OB$ are both radii, triangle $OAB$ is isosceles, which means base angles are equal: $\\text{angle } OBA = \\text{angle } OAB = 32^\\circ$.",
+      "Since the angles in any triangle must sum to $180^\\circ$, we calculate the remaining angle $AOB$ at the centre:",
+      "$\\text{angle } AOB = 180^\\circ - (32^\\circ + 32^\\circ) = 180^\\circ - 64^\\circ = 116^\\circ$.",
+      "Final Answer: $$(a)\\ 58^\\circ\\ (b)\\ 116^\\circ$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$(a)\\ 58^\\circ\\ (b)\\ 64^\\circ$$",
+        "feedback": "In part (b), you calculated the sum of the two base angles ($32^\\circ + 32^\\circ = 64^\\circ$) but forgot to subtract this from $180^\\circ$."
+      },
+      {
+        "ans": "$$(a)\\ 32^\\circ\\ (b)\\ 116^\\circ$$",
+        "feedback": "In part (a), you used the perpendicular tangent-radius rule incorrectly, stating angle $ACB$ is $90-58 = 32^\\circ$ instead of applying the alternate segment theorem."
+      },
+      {
+        "ans": "$$(a)\\ 58^\\circ\\ (b)\\ 122^\\circ$$",
+        "feedback": "In part (b), you made an arithmetic calculation error when subtracting your angles from $180^\\circ$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Alternate Segment Theorem",
+      "content": "The Alternate Segment Theorem is one of the most frequently tested circle theorems in Paper 2 and 4. Always identify the tangent-chord angle first (here, angle $TAB = 58^\\circ$). The angle subtended by that same chord in the opposite segment is always identical (angle $ACB = 58^\\circ$)."
+    },
+    "payhip_link": "https://payhip.com/b/xrmnz",
+    "button_text": "Master IGCSE Circle Geometry: Download the Pack"
+  }
+
 
 
 ];
