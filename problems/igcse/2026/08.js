@@ -102,7 +102,7 @@ const problemBank = [
     "q": "The diagram shows a solid cuboid $ABCDEFGH$. The dimensions of the cuboid are $AB = 8\\text{ cm}$, $BC = 6\\text{ cm}$, and vertical height $CG = 5\\text{ cm}$.<br>(a) Calculate the exact length of the base diagonal line $BD$.<br>(b) Calculate the angle that the long diagonal line $BH$ makes with the horizontal base plane $ABCD$. Give your answer correct to $1\\text{ decimal place}$.",
     "steps": [
       "For part (a), the base of the cuboid $ABCD$ is a horizontal rectangle with a right angle at $A$. Triangle $ABD$ is right-angled at $A$.",
-      "We apply Pythagoras' theorem to find the diagonal $D$: $AC^2 = BD^2 + AD^2$.",
+      "We apply Pythagoras' theorem to find the diagonal $BD$: $BD^2 = AB^2 + AD^2$.",
       "Substituting our values: $BD^2 = 8^2 + 6^2 = 64 + 36 = 100$.",
       "Taking the square root: $BD = \\sqrt{100} = 10\\text{ cm}$.",
       "For part (b), the angle $\\theta$ that the diagonal $BH$ makes with the base plane is the angle $HBD$ in the vertical right-angled triangle $DBH$.",
