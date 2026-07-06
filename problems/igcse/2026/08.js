@@ -1,5 +1,4 @@
 const problemBank = [
-    [
   {
     "id": "003213",
     "date": "1 August 2026",
@@ -217,5 +216,5 @@ const problemBank = [
     "payhip_link": "https://payhip.com/b/w0oYj",
     "button_text": "Master IGCSE Inverse Functions: Download the Pack"
   }
-]
+
 ];
