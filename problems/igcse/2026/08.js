@@ -99,14 +99,14 @@ const problemBank = [
     "subtopic": "3D Pythagoras",
     "difficulty": "B/A",
     "img": "true",
-    "q": "The diagram shows a solid cuboid $ABCDEFGH$. The dimensions of the cuboid are $AB = 8\\text{ cm}$, $BC = 6\\text{ cm}$, and vertical height $CG = 5\\text{ cm}$.<br>(a) Calculate the exact length of the base diagonal line $AC$.<br>(b) Calculate the angle that the long diagonal line $AG$ makes with the horizontal base plane $ABCD$. Give your answer correct to $1\\text{ decimal place}$.",
+    "q": "The diagram shows a solid cuboid $ABCDEFGH$. The dimensions of the cuboid are $AB = 8\\text{ cm}$, $BC = 6\\text{ cm}$, and vertical height $CG = 5\\text{ cm}$.<br>(a) Calculate the exact length of the base diagonal line $BD$.<br>(b) Calculate the angle that the long diagonal line $BH$ makes with the horizontal base plane $ABCD$. Give your answer correct to $1\\text{ decimal place}$.",
     "steps": [
-      "For part (a), the base of the cuboid $ABCD$ is a horizontal rectangle with a right angle at $B$. Triangle $ABC$ is right-angled at $B$.",
-      "We apply Pythagoras' theorem to find the diagonal $AC$: $AC^2 = AB^2 + BC^2$.",
-      "Substituting our values: $AC^2 = 8^2 + 6^2 = 64 + 36 = 100$.",
-      "Taking the square root: $AC = \\sqrt{100} = 10\\text{ cm}$.",
-      "For part (b), the angle $\\theta$ that the diagonal $AG$ makes with the base plane is the angle $GAC$ in the vertical right-angled triangle $ACG$.",
-      "In triangle $ACG$, the angle at $C$ is a right angle ($90^\\circ$). The adjacent side is $AC = 10\\text{ cm}$ and the opposite side (vertical height) is $CG = 5\\text{ cm}$.",
+      "For part (a), the base of the cuboid $ABCD$ is a horizontal rectangle with a right angle at $A$. Triangle $ABD$ is right-angled at $A$.",
+      "We apply Pythagoras' theorem to find the diagonal $D$: $AC^2 = BD^2 + AD^2$.",
+      "Substituting our values: $BD^2 = 8^2 + 6^2 = 64 + 36 = 100$.",
+      "Taking the square root: $BD = \\sqrt{100} = 10\\text{ cm}$.",
+      "For part (b), the angle $\\theta$ that the diagonal $BH$ makes with the base plane is the angle $HBD$ in the vertical right-angled triangle $DBH$.",
+      "In triangle $BDH$, the angle at $D$ is a right angle ($90^\\circ$). The adjacent side is $BD = 10\\text{ cm}$ and the opposite side (vertical height) is $DH = 5\\text{ cm}$.",
       "We identify the trigonometric ratio that connects the opposite and adjacent sides, which is the tangent ratio: $\\tan(\\theta) = \\dfrac{\\text{Opposite}}{\\text{Adjacent}}$.",
       "Substituting our values: $\\tan(\\theta) = \\dfrac{5}{10} = 0.5$.",
       "To find the angle $\\theta$, we take the inverse tangent: $\\theta = \\arctan(0.5) \\approx 26.565^\\circ$.",
@@ -130,7 +130,7 @@ const problemBank = [
     "bradley_insight": {
       "type": "pro-tip",
       "title": "The Head Teacher's Eye: Identifying Planes in 3D Trig",
-      "content": "For 3D trigonometry on cuboids, always visualize the two-dimensional right-angled triangles. The base diagonal ($AC$) must be calculated first using 2D Pythagoras on the base rectangle. Once $AC$ is found, it acts as the adjacent side for the vertical triangle $ACG$, allowing you to solve for the slant angle."
+      "content": "For 3D trigonometry on cuboids, always visualize the two-dimensional right-angled triangles. The base diagonal ($BD$) must be calculated first using 2D Pythagoras on the base rectangle. Once $BD$ is found, it acts as the adjacent side for the vertical triangle $BDH$, allowing you to solve for the slant angle."
     },
     "payhip_link": "https://payhip.com/b/udQPT",
     "button_text": "Master IGCSE 3D Trigonometry: Download the Pack"
@@ -216,6 +216,6 @@ const problemBank = [
     "payhip_link": "https://payhip.com/b/w0oYj",
     "button_text": "Master IGCSE Inverse Functions: Download the Pack"
   }
-  
+
 
 ];
