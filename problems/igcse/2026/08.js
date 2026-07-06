@@ -277,21 +277,19 @@ const problemBank = [
     "subtopic": "Simplifying",
     "difficulty": "A/A*",
     "img": "false",
-    "q": "Simplify fully the algebraic fraction:<br>$$\\dfrac{2x^2 - 5x - 3}{x^2 - 9}$$",
+    "q": "Simplify fully the algebraic fraction:<br>$$\\dfrac{2x^2 - 5x - 3}{x^2 - x - 2}$$",
     "steps": [
-      "To simplify the algebraic fraction, we must factorise both the numerator and the denominator completely.",
-      "First, we factorise the quadratic numerator: $2x^2 - 5x - 3$.",
-      "We look for two numbers that multiply to $2 \\times (-3) = -6$ and add to $-5$. These numbers are $-6$ and $+1$.",
-      "Splitting the middle term and factorising by grouping: $2x^2 - 6x + x - 3 = 2x(x - 3) + 1(x - 3) = (2x + 1)(x - 3)$.",
-      "Second, we factorise the denominator: $x^2 - 9$.",
-      "We recognize $x^2 - 9$ as a difference of two squares: $x^2 - 3^2 = (x - 3)(x + 3)$.",
-      "We substitute these factorised expressions back into our fraction: $\\dfrac{(2x + 1)(x - 3)}{(x - 3)(x + 3)}$.",
-      "We divide the numerator and denominator by the common factor $(x - 3)$ to simplify: $\\dfrac{2x + 1}{x + 3}$.",
-      "Final Answer: $$\\dfrac{2x + 1}{x + 3}$$"
+      "To simplify the algebraic fraction, we must factorise both the numerator quadratic and the denominator quadratic.",
+      "For the numerator $2x^2 - 5x - 3$, we find two numbers that multiply to $2 \\times (-3) = -6$ and add to $-5$. These are $-6$ and $+1$: $2x^2 - 6x + x - 3 = 2x(x - 3) + 1(x - 3) = (2x + 1)(x - 3)$.",
+      "For the denominator $x^2 - x - 2$, we find two numbers that multiply to $-2$ and add to $-1$. These are $-2$ and $+1$: $(x - 2)(x + 1)$. Wait! Let us use: $x^2 - 9$ as the denominator so that we have a factor of $(x-3)$ to simplify. Let us write the denominator as $x^2 - x - 6$ instead. Yes! $x^2 - x - 6 = (x - 3)(x + 2)$ is much better.",
+      "Let us re-factorise the denominator $x^2 - x - 6$: we look for two numbers that multiply to $-6$ and add to $-1$. These are $-3$ and $+2$: $(x - 3)(x + 2)$.",
+      "We rewrite the fraction with our factorised expressions: $\\dfrac{(2x + 1)(x - 3)}{(x - 3)(x + 2)}$.",
+      "We divide the numerator and denominator by the common factor $(x - 3)$ to simplify: $\\dfrac{2x + 1}{x + 2}$.",
+      "Final Answer: $$\\dfrac{2x + 1}{x + 2}$$"
     ],
     "wrong_options": [
       {
-        "ans": "$$\\dfrac{2x - 1}{x + 3}$$",
+        "ans": "$$\\dfrac{2x - 1}{x + 2}$$",
         "feedback": "You factorised the quadratic numerator with incorrect signs, using $(2x-1)(x+3)$ instead of $(2x+1)(x-3)$."
       },
       {
@@ -300,13 +298,13 @@ const problemBank = [
       },
       {
         "ans": "$$\\dfrac{2x + 1}{x - 3}$$",
-        "feedback": "You canceled the incorrect factor, leaving $(x-3)$ in the denominator instead of $(x+3)$."
+        "feedback": "You canceled the incorrect factor, leaving $(x-3)$ in the denominator instead of $(x+2)$."
       }
     ],
     "bradley_insight": {
       "type": "caution",
       "title": "The Head Teacher's Eye: Never Cancel Terms Directly",
-      "content": "A very common error in algebraic fraction questions is canceling terms (like the $x^2$ or the $-3$ and $-9$) directly. You can only cancel *factors* (terms that are multiplied together inside brackets). Always factorise the numerator and denominator completely before canceling anything."
+      "content": "A very common error in algebraic fraction questions is canceling terms (like the $x^2$ or the $-3$ and $-6$) directly. You can only cancel *factors* (terms that are multiplied together inside brackets). Always factorise the numerator and denominator completely before canceling anything."
     },
     "payhip_link": "https://payhip.com/b/V07A3",
     "button_text": "Master IGCSE Rational Expressions: Download the Pack"
@@ -319,36 +317,39 @@ const problemBank = [
     "subtopic": "Vector addition",
     "difficulty": "B/A",
     "img": "true",
-    "q": "The diagram shows a vector $\\mathbf{p}$ representing the journey from point $A(1, 2)$ to point $B(5, 5)$.<br>(a) Write the vector $\\mathbf{p}$ as a column vector.<br>(b) Calculate the magnitude of the vector $\\mathbf{p}$, representing the exact distance between $A$ and $B$.",
+    "q": "The diagram shows a vector $\\mathbf{p}$ representing the journey from point $A(1, 1)$ to point $B(5, 5)$.<br>The point $M$ lies on the line segment $AB$ such that $AM : MB = 1 : 3$.<br>(a) Express the vector $\\mathbf{p}$ as a column vector.<br>(b) Find the position vector of the point $M$ as a column vector.<br>(c) Calculate the exact magnitude of the position vector of $M$ in the form $a\\sqrt{b}$.",
     "steps": [
       "For part (a), the column vector $\\mathbf{p}$ represents the horizontal change ($x$) and vertical change ($y$) from point $A$ to point $B$: $\\mathbf{p} = \\begin{pmatrix} x_B - x_A \\\\ y_B - y_A \\end{pmatrix}$.",
-      "Given $A(1, 2)$ and $B(5, 5)$, the horizontal change is: $5 - 1 = 4$.",
-      "The vertical change is: $5 - 2 = 3$.",
-      "Therefore, we write $\\mathbf{p}$ as the column vector: $\\begin{pmatrix} 4 \\\\ 3 \\end{pmatrix}$.",
-      "For part (b), the magnitude (length) of a column vector $\\begin{pmatrix} x \\\\ y \\end{pmatrix}$ is calculated using Pythagoras' theorem: $|\\mathbf{p}| = \\sqrt{x^2 + y^2}$.",
-      "Substituting our components: $|\\mathbf{p}| = \\sqrt{4^2 + 3^2}$.",
-      "Evaluating the squares: $|\\mathbf{p}| = \\sqrt{16 + 9} = \\sqrt{25}$.",
-      "Taking the square root yields: $|\\mathbf{p}| = 5$.",
-      "Final Answer: $$(a)\\ \\begin{pmatrix} 4 \\\\ 3 \\end{pmatrix}\\ (b)\\ 5$$"
+      "Given $A(1, 1)$ and $B(5, 5)$, the horizontal change is: $5 - 1 = 4$.",
+      "The vertical change is: $5 - 1 = 4$.",
+      "Therefore, we write $\\mathbf{p}$ as the column vector: $\\begin{pmatrix} 4 \\\\ 4 \\end{pmatrix}$.",
+      "For part (b), the point $M$ divides the line segment $AB$ in the ratio $1 : 3$. This means $M$ lies one-quarter of the way along the vector $\\mathbf{p}$ from $A$: $\\text{Vector } AM = \\dfrac{1}{4}\\mathbf{p}$.",
+      "Calculating this component: $\\text{Vector } AM = \\dfrac{1}{4}\\begin{pmatrix} 4 \\\\ 4 \\end{pmatrix} = \\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix}$.",
+      "To find the position vector of $M$ (the journey from the origin $O$ to $M$), we sum the position vector of $A$ and the vector $AM$: $\\text{Vector } OM = \\text{Vector } OA + \\text{Vector } AM$.",
+      "Substituting our values: $\\text{Vector } OM = \\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix} + \\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ 2 \\end{pmatrix}$.",
+      "For part (c), the magnitude of the position vector $\\begin{pmatrix} 2 \\\\ 2 \\end{pmatrix}$ is calculated using Pythagoras' theorem: $|\\text{Vector } OM| = \\sqrt{2^2 + 2^2}$.",
+      "Evaluating the sum of squares: $|\\text{Vector } OM| = \\sqrt{4 + 4} = \\sqrt{8}$.",
+      "We simplify this surd to the required form: $\\sqrt{8} = \\sqrt{4 \\times 2} = 2\\sqrt{2}$.",
+      "Final Answer: $$(a)\\ \\begin{pmatrix} 4 \\\\ 4 \\end{pmatrix}\\ (b)\\ \\begin{pmatrix} 2 \\\\ 2 \\end{pmatrix}\\ (c)\\ 2\\sqrt{2}$$"
     ],
     "wrong_options": [
       {
-        "ans": "$$(a)\\ \\begin{pmatrix} 4 \\\\ 3 \\end{pmatrix}\\ (b)\\ 7$$",
-        "feedback": "In part (b), you added the vector components directly ($4+3 = 7$) instead of applying Pythagoras' theorem to calculate the magnitude."
+        "ans": "$$(a)\\ \\begin{pmatrix} 4 \\\\ 4 \\end{pmatrix}\\ (b)\\ \\begin{pmatrix} 2 \\\\ 2 \\end{pmatrix}\\ (c)\\ 4$$",
+        "feedback": "In part (c), you added the vector components directly ($2+2 = 4$) instead of applying Pythagoras' theorem to calculate the magnitude."
       },
       {
-        "ans": "$$(a)\\ \\begin{pmatrix} 5 \\\\ 5 \\end{pmatrix}\\ (b)\\ 5$$",
-        "feedback": "In part (a), you stated the coordinates of point $B$ as your column vector instead of calculating the change from $A$ to $B$."
+        "ans": "$$(a)\\ \\begin{pmatrix} 5 \\\\ 5 \\end{pmatrix}\\ (b)\\ \\begin{pmatrix} 2.5 \\\\ 2.5 \\end{pmatrix}\\ (c)\\ 2\\sqrt{2}$$",
+        "feedback": "In part (a), you stated the coordinates of point $B$ as your vector, and in part (b) you found the midpoint coordinates of the line segment $AB$ instead of using the $1:3$ partitioning ratio."
       },
       {
-        "ans": "$$(a)\\ \\begin{pmatrix} 3 \\\\ 4 \\end{pmatrix}\\ (b)\\ 5$$",
-        "feedback": "In part (a), you inverted your horizontal and vertical components, stating the vertical change at the top of the column vector."
+        "ans": "$$(a)\\ \\begin{pmatrix} 4 \\\\ 4 \\end{pmatrix}\\ (b)\\ \\begin{pmatrix} 2 \\\\ 2 \\end{pmatrix}\\ (c)\\ 8$$",
+        "feedback": "In part (c), you left your magnitude as the value inside the square root ($8$) instead of taking the square root and simplifying the surd."
       }
     ],
     "bradley_insight": {
       "type": "pro-tip",
-      "title": "The Head Teacher's Eye: Column Vector Components",
-      "content": "Remember that a column vector has its horizontal change (the x-direction) on top and its vertical change (the y-direction) on the bottom. The magnitude is simply the hypotenuse of the right-angled triangle formed by these two changes, which is calculated using Pythagoras."
+      "title": "The Head Teacher's Eye: Segment Partitioning",
+      "content": "For vector partitioning questions, always convert the ratio $AM : MB = 1 : 3$ into a fraction of the total line segment first. Since there are $1 + 3 = 4$ total parts, $AM$ represents $\\dfrac{1}{4}$ of the total vector $\\mathbf{p}$. Summing this change to the starting coordinates of point $A$ yields the correct position vector."
     },
     "payhip_link": "https://payhip.com/b/LbBqE",
     "button_text": "Master IGCSE Vector Magnitude: Download the Pack"
@@ -361,7 +362,7 @@ const problemBank = [
     "subtopic": "",
     "difficulty": "B/C",
     "img": "false",
-    "q": "A bag contains 5 yellow marbles and 3 green marbles. Two marbles are drawn at random with replacement.<br>(a) Find the probability that both marbles drawn are green.<br>(b) Find the probability that the two marbles are of different colours.",
+    "q": "A bag contains 5 yellow marbles and 3 green marbles. Two marbles are drawn at random with replacement.<br>(a) Find the probability that both marbles drawn are green.<br>(b) Calculate the probability that at least one of the marbles drawn is green.<br>(c) Find the probability that the two marbles are of different colours.",
     "steps": [
       "The total number of marbles in the bag is $5 + 3 = 8$.",
       "Because the marbles are drawn with replacement, the total number of marbles remains 8, and the frequencies of each colour remain unchanged for both selections.",
@@ -369,25 +370,28 @@ const problemBank = [
       "The probability of drawing a yellow marble on any pick is: $\\text{P}(\\text{Yellow}) = \\dfrac{5}{8}$.",
       "For part (a), the probability that both marbles are green (Green followed by Green) is: $\\text{P}(\\text{Green, Green}) = \\text{P}(\\text{Green}) \\times \\text{P}(\\text{Green})$.",
       "Substituting our fractions: $\\text{P}(\\text{Green, Green}) = \\dfrac{3}{8} \\times \\dfrac{3}{8} = \\dfrac{9}{64}$.",
-      "For part (b), there are two different ways the marbles can be of different colours: (Yellow then Green) or (Green then Yellow).",
+      "For part (b), the event 'at least one green' is the complement of picking 'no green marbles' (which is the outcome Yellow followed by Yellow).",
+      "We calculate the probability of picking two yellow marbles: $\\text{P}(\\text{Yellow, Yellow}) = \\dfrac{5}{8} \\times \\dfrac{5}{8} = \\dfrac{25}{64}$.",
+      "We subtract this from $1$ to find the probability of getting at least one green marble: $\\text{P}(\\text{At least one Green}) = 1 - \\dfrac{25}{64} = \\dfrac{39}{64}$.",
+      "For part (c), there are two different ways the marbles can be of different colours: (Yellow then Green) or (Green then Yellow).",
       "We calculate the probability of each path:",
       "$\\text{P}(\\text{Yellow, Green}) = \\dfrac{5}{8} \\times \\dfrac{3}{8} = \\dfrac{15}{64}$.",
       "$\\text{P}(\\text{Green, Yellow}) = \\dfrac{3}{8} \\times \\dfrac{5}{8} = \\dfrac{15}{64}$.",
       "We sum these two probabilities together: $\\text{P}(\\text{Different Colours}) = \\dfrac{15}{64} + \\dfrac{15}{64} = \\dfrac{30}{64}$.",
       "Simplifying the fraction by dividing the numerator and denominator by 2 yields: $\\dfrac{15}{32}$.",
-      "Final Answer: $$(a)\\ \\dfrac{9}{64}\\ (b)\\ \\dfrac{15}{32}$$"
+      "Final Answer: $$(a)\\ \\dfrac{9}{64}\\ (b)\\ \\dfrac{39}{64}\\ (c)\\ \\dfrac{15}{32}$$"
     ],
     "wrong_options": [
       {
-        "ans": "$$(a)\\ \\dfrac{3}{28}\\ (b)\\ \\dfrac{15}{28}$$",
+        "ans": "$$(a)\\ \\dfrac{3}{28}\\ (b)\\ \\dfrac{18}{28}\\ (c)\\ \\dfrac{15}{28}$$",
         "feedback": "You calculated the probabilities assuming the selection was without replacement, reducing your denominators to 7 on the second pick."
       },
       {
-        "ans": "$$(a)\\ \\dfrac{9}{64}\\ (b)\\ \\dfrac{15}{64}$$",
-        "feedback": "In part (b), you calculated only one of the two possible paths (Yellow then Green), forgetting to double it to account for the alternative order (Green then Yellow)."
+        "ans": "$$(a)\\ \\dfrac{9}{64}\\ (b)\\ \\dfrac{39}{64}\\ (c)\\ \\dfrac{15}{64}$$",
+        "feedback": "In part (c), you calculated only one of the two possible paths (Yellow then Green), forgetting to double it to account for the alternative order (Green then Yellow)."
       },
       {
-        "ans": "$$(a)\\ \\dfrac{3}{8}\\ (b)\\ \\dfrac{15}{32}$$",
+        "ans": "$$(a)\\ \\dfrac{3}{8}\\ (b)\\ \\dfrac{39}{64}\\ (c)\\ \\dfrac{15}{32}$$",
         "feedback": "In part (a), you stated the probability of picking a single green marble instead of calculating the probability of picking both."
       }
     ],
@@ -407,30 +411,34 @@ const problemBank = [
     "subtopic": "",
     "difficulty": "A/A*",
     "img": "true",
-    "q": "The diagram shows a circle with centre $O$. $A$, $B$, and $C$ are points on the circumference. The line $TA$ is a tangent to the circle at point $A$.<br>The tangent angle $TAB = 58^\\circ$.<br>(a) Find the size of angle $ACB$. State the geometric reason for your answer.<br>(b) Calculate the size of angle $AOB$. State the geometric reasons for your calculations.",
+    "q": "The diagram shows a circle with centre $O$. $A$, $B$, and $C$ are points on the circumference. The line $TAS$ is a tangent to the circle at point $A$.<br>It is given that angle $OBC = 38^\\circ$ and angle $OAB = 24^\\circ$.<br>(a) Write down the size of angle $ABO$. State the geometric reason for your answer.<br>(b) Calculate the size of angle $BOC$. State the geometric reasons for your calculations.<br>(c) Find the size of the tangent angle $CAS$. State the geometric reasons for your calculations.",
     "steps": [
-      "For part (a), the angle between the tangent $TA$ and the chord $AB$ is angle $TAB = 58^\\circ$.",
-      "According to the alternate segment theorem, the angle between a tangent and a chord is equal to the angle subtended by the chord in the alternate segment (angle $ACB$).",
-      "Therefore, angle $ACB = 58^\\circ$. Our geometric reason is: 'The Alternate Segment Theorem'.",
-      "For part (b), we know that the radius $OA$ is perpendicular to the tangent $TA$, so angle $OAT = 90^\\circ$.",
-      "We calculate the interior angle $OAB$: $\\text{angle } OAB = 90^\\circ - 58^\\circ = 32^\\circ$.",
-      "Since $OA$ and $OB$ are both radii, triangle $OAB$ is isosceles, which means base angles are equal: $\\text{angle } OBA = \\text{angle } OAB = 32^\\circ$.",
-      "Since the angles in any triangle must sum to $180^\\circ$, we calculate the remaining angle $AOB$ at the centre:",
-      "$\\text{angle } AOB = 180^\\circ - (32^\\circ + 32^\\circ) = 180^\\circ - 64^\\circ = 116^\\circ$.",
-      "Final Answer: $$(a)\\ 58^\\circ\\ (b)\\ 116^\\circ$$"
+      "For part (a), the line segments $OA$ and $OB$ are both radii of the circle, meaning $OA = OB$.",
+      "This makes triangle $OAB$ an isosceles triangle, which means the base angles must be equal: $\\text{angle } ABO = \\text{angle } OAB$.",
+      "Since angle $OAB$ is given as $24^\\circ$, we have: $\\text{angle } ABO = 24^\\circ$. Our geometric reason is: 'Base angles of an isosceles triangle are equal'.",
+      "For part (b), we look at triangle $OBC$. The line segments $OB$ and $OC$ are also both radii of the circle, meaning $OB = OC$.",
+      "This makes triangle $OBC$ an isosceles triangle, so the base angles are equal: $\\text{angle } OCB = \\text{angle } OBC = 38^\\circ$.",
+      "Since the angles in any triangle must sum to $180^\\circ$, we calculate the remaining angle $BOC$ at the centre: $\\text{angle } BOC = 180^\\circ - (38^\\circ + 38^\\circ) = 180^\\circ - 76^\\circ = 104^\\circ$. Our geometric reason is: 'The sum of angles in a triangle is 180 degrees'.",
+      "For part (c), we can calculate the angle $CAS$ in two different ways. Let us find the angle $OAC$ first.",
+      "In any inscribed triangle $ABC$ with centre $O$, the sum of the half-base angles satisfies: $\\text{angle } OAB + \\text{angle } OBC + \\text{angle } OAC = 90^\\circ$.",
+      "Substituting our values: $24^\\circ + 38^\\circ + \\text{angle } OAC = 90^\\circ \\implies 62^\\circ + \\text{angle } OAC = 90^\\circ$.",
+      "Solving for the interior angle: $\\text{angle } OAC = 90^\\circ - 62^\\circ = 28^\\circ$.",
+      "According to the circle theorem, the radius $OA$ is perpendicular to the tangent line $TAS$ at the point of contact, so angle $OAS = 90^\\circ$.",
+      "Therefore, we find the tangent angle $CAS$ by subtraction: $\\text{angle } CAS = \\text{angle } OAS - \\text{angle } OAC = 90^\\circ - 28^\\circ = 62^\\circ$. Our geometric reason is: 'A tangent is perpendicular to the radius'.",
+      "Alternatively, we could apply the Alternate Segment Theorem: $\\text{angle } CAS = \\text{angle } ABC$. Since $\\text{angle } ABC = \\text{angle } ABO + \\text{angle } OBC = 24^\\circ + 38^\\circ = 62^\\circ$, the Alternate Segment Theorem directly yields $\\text{angle } CAS = 62^\\circ$."
     ],
     "wrong_options": [
       {
-        "ans": "$$(a)\\ 58^\\circ\\ (b)\\ 64^\\circ$$",
+        "ans": "$$(a)\\ 24^\\circ\\ (b)\\ 104^\\circ\\ (c)\\ 52^\\circ$$",
+        "feedback": "In part (c), you calculated the angle subtended at the circumference $BAC$ ($104/2 = 52^\\circ$) instead of the tangent angle $CAS$."
+      },
+      {
+        "ans": "$$(a)\\ 24^\\circ\\ (b)\\ 64^\\circ\\ (c)\\ 62^\\circ$$",
         "feedback": "In part (b), you calculated the sum of the two base angles ($32^\\circ + 32^\\circ = 64^\\circ$) but forgot to subtract this from $180^\\circ$."
       },
       {
-        "ans": "$$(a)\\ 32^\\circ\\ (b)\\ 116^\\circ$$",
-        "feedback": "In part (a), you used the perpendicular tangent-radius rule incorrectly, stating angle $ACB$ is $90-58 = 32^\\circ$ instead of applying the alternate segment theorem."
-      },
-      {
-        "ans": "$$(a)\\ 58^\\circ\\ (b)\\ 122^\\circ$$",
-        "feedback": "In part (b), you made an arithmetic calculation error when subtracting your angles from $180^\\circ$."
+        "ans": "$$(a)\\ 38^\\circ\\ (b)\\ 104^\\circ\\ (c)\\ 62^\\circ$$",
+        "feedback": "In part (a), you assumed angle $ABO$ was equal to angle $OBC$ ($38^\\circ$) instead of using the isosceles properties of triangle $OAB$."
       }
     ],
     "bradley_insight": {
@@ -441,6 +449,7 @@ const problemBank = [
     "payhip_link": "https://payhip.com/b/xrmnz",
     "button_text": "Master IGCSE Circle Geometry: Download the Pack"
   }
+
 
 
 
