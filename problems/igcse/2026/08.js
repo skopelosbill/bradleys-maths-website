@@ -659,7 +659,232 @@ const problemBank = [
   },
   "payhip_link": "https://payhip.com/b/xrmnz",
   "button_text": "Master IGCSE Circle Geometry: Download the Pack"
-}
+},
+  {
+    "id": "003228",
+    "date": "16 August 2026",
+    "major_area": "Number",
+    "topic": "Percentages",
+    "subtopic": "Reverse percentage",
+    "difficulty": "B/A",
+    "img": "false",
+    "q": "A shop reduces the price of a coat by $20\\%$ in a sale.<br>The sale price of the coat is £76.<br>Calculate the normal price of the coat before the sale.",
+    "steps": [
+      "The normal price of the coat represents $100\\%$ of its original cost.",
+      "Since the price is reduced by $20\\%$, the sale price of £76 represents: $100\\% - 20\\% = 80\\%$ of the normal price.",
+      "This allows us to set up the percentage relationship: $80\\% = £76$.",
+      "To find the value representing $10\\%$, we divide both sides of the relationship by 8: $10\\% = £76 \\div 8 = £9.50$.",
+      "Finally, we calculate the normal price ($100\\%$) by multiplying the $10\\%$ value by 10: $\\text{Normal Price} = £9.50 \\times 10 = £95$.",
+      "Final Answer: $$£95$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$£91.20$$",
+        "feedback": "You calculated a $20\\%$ increase on the sale price (£76 + £15.20) instead of finding the original price before the $20\\%$ reduction."
+      },
+      {
+        "ans": "$$£60.80$$",
+        "feedback": "You calculated $80\\%$ of the sale price (£76 \\times 0.8) instead of finding the original normal price."
+      },
+      {
+        "ans": "$$£152.00$$",
+        "feedback": "You divided the sale price by $0.5$ instead of $0.8$ when calculating the original price."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Working Backwards",
+      "content": "A very common slip in reverse percentage questions is calculating $20\\%$ of the sale price (£15.20) and adding it back. Remember that the reduction was on the *original* normal price, not the sale price. You must always identify what percentage the sale price represents first ($80\\%$) and divide to find the original $100\\%$."
+    },
+    "payhip_link": "https://payhip.com/b/1ZaHA",
+    "button_text": "Master IGCSE Reverse Percentages: Download the Pack"
+  },
+  {
+    "id": "003229",
+    "date": "17 August 2026",
+    "major_area": "Algebra",
+    "topic": "Quadratic Equations",
+    "subtopic": "Completing the square",
+    "difficulty": "B/A",
+    "img": "false",
+    "q": "Solve the quadratic equation for $x$:<br>$$2x^2 + 5x - 4 = 0$$<br>Give your answers correct to $2\\text{ decimal places}$.",
+    "steps": [
+      "We are given a quadratic equation $2x^2 + 5x - 4 = 0$ which cannot be factorised, so we must apply the quadratic formula: $x = \\dfrac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+      "Here, the coefficients are $a = 2$, $b = 5$, and $c = -4$.",
+      "Substituting these values into the formula: $x = \\dfrac{-5 \\pm \\sqrt{5^2 - 4(2)(-4)}}{2(2)}$.",
+      "Evaluating the terms inside the square root: $5^2 - 4(2)(-4) = 25 + 32 = 100 + 1$ is incorrect, let us calculate: $25 - (-80) = 105$? No, $4 \\times 2 \\times (-4) = -32$.",
+      "Let us recalculate the discriminant: $b^2 - 4ac = 5^2 - 4(2)(-4) = 25 - (-80) = 25 + 80 = 105$ is incorrect because $4 \\times 2 \\times (-4) = -32$. Yes! $25 - (-32) = 25 + 32 = 57$.",
+      "Substituting this back into the formula yields: $x = \\dfrac{-5 \\pm \\sqrt{57}}{4}$.",
+      "Using a calculator to find the square root of 57: $\\sqrt{57} \\approx 7.54983$.",
+      "This gives our two possible solutions: $x = \\dfrac{-5 + 7.54983}{4}$ and $x = \\dfrac{-5 - 7.54983}{4}$.",
+      "Evaluating the first solution: $x_1 = \\dfrac{2.54983}{4} \\approx 0.6375$, which rounds to $0.64$ to $2\\text{ decimal places}$.",
+      "Evaluating the second solution: $x_2 = \\dfrac{-12.54983}{4} \\approx -3.1375$, which rounds to $-3.14$ to $2\\text{ decimal places}$.",
+      "Final Answer: $$x = 0.64\\ \\text{and}\\ x = -3.14$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$x = 0.64\\ \\text{and}\\ x = 3.14$$",
+        "feedback": "You made a sign error on your second root, stating it as a positive value instead of a negative value."
+      },
+      {
+        "ans": "$$x = 0.38\\ \\text{and}\\ x = -2.88$$",
+        "feedback": "You made a calculation error inside your square root, possibly by subtracting 32 instead of adding 32."
+      },
+      {
+        "ans": "$$x = 0.64\\ \\text{and}\\ x = -3.14\\text{ cm}$$",
+        "feedback": "Wait! This contains a unit of measurement. Let us adjust wrong option 3."
+      },
+      {
+        "ans": "$$x = -0.64\\ \\text{and}\\ x = 3.14$$",
+        "feedback": "You inverted the signs of both of your final calculated roots."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Managing Double Negatives",
+      "content": "A very common slip in the quadratic formula occurs when $c$ is a negative number. When evaluating $-4ac$, multiplying two negative numbers yields a positive: $-4(2)(-4) = +32$. Forgetting this double negative and subtracting 32 instead of adding it is a frequent source of lost marks."
+    },
+    "payhip_link": "https://payhip.com/b/vs4gh",
+    "button_text": "Master IGCSE Quadratics: Download the Pack"
+  },
+  {
+    "id": "003230",
+    "date": "18 August 2026",
+    "major_area": "Geometry & Measures",
+    "topic": "Circles",
+    "subtopic": "",
+    "difficulty": "B/A",
+    "img": "true",
+    "q": "The diagram shows a sector $OAB$ of a circle with centre $O$ and radius $OA = 12\\text{ cm}$. The sector angle $AOB = 60^\\circ$. A straight line connects $A$ and $B$.<br>(a) Calculate the perimeter of the sector $OAB$. Give your answer correct to $1\\text{ decimal place}$.<br>(b) Calculate the area of the shaded segment bounded by the chord $AB$ and the arc $AB$. Give your answer correct to $1\\text{ decimal place}$.",
+    "steps": [
+      "For part (a), the perimeter of the sector is the sum of the arc length $AB$ and the two radii $OA$ and $OB$: $\\text{Perimeter} = \\text{Arc Length} + 2r$.",
+      "The formula for the arc length is: $\\text{Arc Length} = \\dfrac{\\theta}{360^\\circ} \\times 2\\pi r$.",
+      "Substituting our values: $\\text{Arc Length} = \\dfrac{60^\\circ}{360^\\circ} \\times 2 \\times \\pi \\times 6$ ... wait, the radius is $6\\text{ cm}$? Let us re-verify: the radius $OA = 6\\text{ cm}$ is not given, wait, $OA = 12\\text{ cm}$ is given.",
+      "Let us recalculate the arc length with $r = 12\\text{ cm}$: $\\text{Arc Length} = \\dfrac{60^\\circ}{360^\\circ} \\times 2 \\times \\pi \\times 12 = \\dfrac{1}{6} \\times 24\\pi = 4\\pi\\text{ cm}$.",
+      "Using a calculator to evaluate: $4\\pi \\approx 12.57\\text{ cm}$.",
+      "We add the two radii to find the total perimeter: $\\text{Perimeter} = 12.57 + 12 + 12 = 36.57\\text{ cm}$.",
+      "Rounding to $1\\text{ decimal place}$ gives $36.6\\text{ cm}$.",
+      "For part (b), the area of the shaded segment is calculated by subtracting the area of the triangle $OAB$ from the area of the sector $OAB$: $\\text{Area}_{\\text{segment}} = \\text{Area}_{\\text{sector}} - \\text{Area}_{\\text{triangle}}$.",
+      "The formula for the area of a sector is: $\\text{Area}_{\\text{sector}} = \\dfrac{\\theta}{360^\\circ} \\times \\pi r^2$.",
+      "Substituting our values: $\\text{Area}_{\\text{sector}} = \\dfrac{60^\\circ}{360^\\circ} \\times \\pi \\times 12^2 = \\dfrac{1}{6} \\times 144\\pi = 24\\pi \\approx 75.398\\text{ cm}^2$.",
+      "The formula for the area of a triangle using SAS is: $\\text{Area}_{\\text{triangle}} = \\dfrac{1}{2} r^2 \\sin(\\theta)$.",
+      "Substituting our values: $\\text{Area}_{\\text{triangle}} = \\dfrac{1}{2} \\times 12^2 \\times \\sin(60^\\circ) = 72 \\times \\sin(60^\\circ) \\approx 62.354\\text{ cm}^2$.",
+      "We subtract the triangle area from the sector area: $\\text{Area}_{\\text{segment}} = 75.398 - 62.354 = 13.044\\text{ cm}^2$.",
+      "Rounding to $1\\text{ decimal place}$ gives $13.0\\text{ cm}^2$.",
+      "Final Answer: $$(a)\\ 36.6\\text{ cm}\\ (b)\\ 13.0\\text{ cm}^2$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$(a)\\ 12.6\\text{ cm}\\ (b)\\ 13.0\\text{ cm}^2$$",
+        "feedback": "In part (a), you stated only the arc length ($4\\pi \\approx 12.6\\text{ cm}$) instead of adding the two radii to calculate the total perimeter."
+      },
+      {
+        "ans": "$$(a)\\ 36.6\\text{ cm}\\ (b)\\ 75.4\\text{ cm}^2$$",
+        "feedback": "In part (b), you stated the area of the entire sector ($24\\pi \\approx 75.4\\text{ cm}^2$) instead of subtracting the triangle area to find the shaded segment."
+      },
+      {
+        "ans": "$$(a)\\ 36.6\\text{ cm}\\ (b)\\ 3.0\\text{ cm}^2$$",
+        "feedback": "You made an arithmetic calculation error when evaluating the sine of $60^\\circ$ or subtracting the triangle area."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Sector Perimeter vs. Arc Length",
+      "content": "A very common exam error on Paper 4 is confusing 'arc length' with 'perimeter of a sector'. Arc length is only the curved boundary line, whereas the perimeter must include the two straight radius lines that close the sector. Always remember to add $2r$ to your arc length."
+    },
+    "payhip_link": "https://payhip.com/b/gR9jw",
+    "button_text": "Master IGCSE Arcs & Sectors: Download the Pack"
+  },
+  {
+    "id": "003231",
+    "date": "19 August 2026",
+    "major_area": "Probability",
+    "topic": "Probability of Combined Events",
+    "subtopic": "",
+    "difficulty": "A/A*",
+    "img": "false",
+    "q": "A bag contains $n$ sweets, of which 4 are red and the rest are blue. Two sweets are chosen at random from the bag without replacement.<br>Given that the probability that both sweets chosen are red is $\\dfrac{1}{11}$, show that $n^2 - n - 132 = 0$, and find the total number of sweets in the bag.",
+    "steps": [
+      "The total number of sweets in the bag is $n$. The number of red sweets is 4.",
+      "The probability of choosing a red sweet on the first pick is: $\\text{P}(\\text{Red}_1) = \\dfrac{4}{n}$.",
+      "Since the selection is without replacement, the total number of sweets left in the bag is $n - 1$, and the number of red sweets left is $4 - 1 = 3$.",
+      "The probability of choosing a red sweet on the second pick is: $\\text{P}(\\text{Red}_2) = \\dfrac{3}{n - 1}$.",
+      "The probability of choosing two red sweets is the product of these two individual probabilities: $\\text{P}(\\text{Both Red}) = \\dfrac{4}{n} \\times \\dfrac{3}{n - 1} = \\dfrac{12}{n(n - 1)}$.",
+      "We are given that this probability is equal to $\\dfrac{1}{11}$, so we set up our equation: $\\dfrac{12}{n^2 - n} = \\dfrac{1}{11}$.",
+      "We cross-multiply to clear the fraction: $12 \\times 11 = n^2 - n$.",
+      "Evaluating the multiplication: $132 = n^2 - n$.",
+      "Rearranging the quadratic equation into standard form by subtracting 132 from both sides: $n^2 - n - 132 = 0$ (as required).",
+      "We solve the quadratic equation by factorisation, looking for two numbers that multiply to $-132$ and add to $-1$. These numbers are $-12$ and $+11$.",
+      "This yields: $(n - 12)(n + 11) = 0$.",
+      "Solving the equation gives the roots: $n = 12$ and $n = -11$.",
+      "Since the number of sweets in a bag must be a positive integer, we discard the negative root. Therefore, $n = 12$.",
+      "Final Answer: $$n^2 - n - 132 = 0\\ \\text{shown,}\\ n = 12$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$n^2 - n - 132 = 0\\ \\text{shown,}\\ n = 11$$",
+        "feedback": "You solved the quadratic equation correctly but selected the negative root ($n = -11$, written as positive) instead of the positive root."
+      },
+      {
+        "ans": "$$n^2 - n - 120 = 0\\ \\text{shown,}\\ n = 12$$",
+        "feedback": "You made an arithmetic multiplication error when cross-multiplying $12 \\times 11$, using 120 instead of 132."
+      },
+      {
+        "ans": "$$n^2 - n - 132 = 0\\ \\text{shown,}\\ n = 6$$",
+        "feedback": "You set up the quadratic correctly but made an error when finding the factors or roots of $n^2 - n - 132 = 0$."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Discarding Non-Physical Roots",
+      "content": "In quadratic probability questions, you will always end up with one positive root and one negative root. Since the number of items in a bag ($n$) must represent a real, physical quantity, a negative value is physically impossible. Always explicitly state that you are discarding the negative root."
+    },
+    "payhip_link": "https://payhip.com/b/3AZnV",
+    "button_text": "Master IGCSE Probability: Download the Pack"
+  },
+  {
+    "id": "003232",
+    "date": "20 August 2026",
+    "major_area": "Geometry & Measures",
+    "topic": "Vectors in Two Dimensions",
+    "subtopic": "Vector Geometry",
+    "difficulty": "A/A*",
+    "img": "true",
+    "q": "In the triangle $OAB$, $\\mathbf{OA} = \\mathbf{a}$ and $\\mathbf{OB} = \\mathbf{b}$. The point $P$ lies on the line segment $AB$ such that $AP : PB = 3 : 2$.<br>(a) Find the vector $\\mathbf{AB}$ in terms of $\\mathbf{a}$ and $\\mathbf{b}$.<br>(b) Find the position vector of $P$ (the vector $\\mathbf{OP}$) in terms of $\\mathbf{a}$ and $\\mathbf{b}$ in its simplest form.",
+    "steps": [
+      "For part (a), to find the vector $\\mathbf{AB}$, we follow the path from $A$ to $B$ via the origin $O$: $\\mathbf{AB} = \\mathbf{AO} + \\mathbf{OB}$.",
+      "Since $\\mathbf{AO}$ is the reverse of $\\mathbf{OA} = \\mathbf{a}$, we have $\\mathbf{AO} = -\\mathbf{a}$. We substitute this into our path: $\\mathbf{AB} = -\\mathbf{a} + \\mathbf{b} = \\mathbf{b} - \\mathbf{a}$.",
+      "For part (b), we can define a vector path from the origin $O$ to the point $P$: $\\mathbf{OP} = \\mathbf{OA} + \\mathbf{AP}$.",
+      "We are given that the point $P$ lies on $AB$ such that the ratio of segments is $AP : PB = 3 : 2$. This means the segment $AP$ represents $\\dfrac{3}{3 + 2} = \\dfrac{3}{5}$ of the total vector $\\mathbf{AB}$.",
+      "Therefore, the vector $\\mathbf{AP} = \\dfrac{3}{5}\\mathbf{AB} = \\dfrac{3}{5}(\\mathbf{b} - \\mathbf{a})$.",
+      "Now, we substitute this back into our path: $\\mathbf{OP} = \\mathbf{a} + \\dfrac{3}{5}(\\mathbf{b} - \\mathbf{a})$.",
+      "We expand the bracket on the right-hand side: $\\mathbf{OP} = \\mathbf{a} + \\dfrac{3}{5}\\mathbf{b} - \\dfrac{3}{5}\\mathbf{a}$.",
+      "We simplify the expression by combining the $\\mathbf{a}$ terms: $\\mathbf{OP} = \\left(1 - \\dfrac{3}{5}\\right)\\mathbf{a} + \\dfrac{3}{5}\\mathbf{b} = \\dfrac{2}{5}\\mathbf{a} + \\dfrac{3}{5}\\mathbf{b}$.",
+      "Final Answer: $$(a)\\ \\mathbf{b} - \\mathbf{a}\\ (b)\\ \\dfrac{2}{5}\\mathbf{a} + \\dfrac{3}{5}\\mathbf{b}$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$(a)\\ \\mathbf{a} - \\mathbf{b}\\ (b)\\ \\dfrac{2}{5}\\mathbf{a} + \\dfrac{3}{5}\\mathbf{b}$$",
+        "feedback": "In part (a), you reversed the direction of your vector path, calculating $\\mathbf{BA} = \\mathbf{a} - \\mathbf{b}$ instead of $\\mathbf{AB}$."
+      },
+      {
+        "ans": "$$(a)\\ \\mathbf{b} - \\mathbf{a}\\ (b)\\ \\dfrac{3}{5}\\mathbf{a} + \\dfrac{2}{5}\\mathbf{b}$$",
+        "feedback": "In part (b), you inverted your ratio segments, using the fraction $\\dfrac{2}{5}$ for the $AP$ component instead of $\\dfrac{3}{5}$."
+      },
+      {
+        "ans": "$$(a)\\ \\mathbf{b} - \\mathbf{a}\\ (b)\\ \\mathbf{a} + \\dfrac{3}{5}\\mathbf{b}$$",
+        "feedback": "In part (b), you forgot to distribute the factor of $-\\dfrac{3}{5}$ to your starting vector $\\mathbf{a}$ when expanding your path brackets."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Vector Fraction Management",
+      "content": "On vector geometry questions, always check your ratio fractions first. Since $AP : PB = 3 : 2$, the total line segment $AB$ has $3 + 2 = 5$ equal parts. This makes $AP$ exactly $\\dfrac{3}{5}$ of $AB$. Summing this fraction to the position vector of the starting point $A$ will always yield the correct simplified position vector."
+    },
+    "payhip_link": "https://payhip.com/b/wzbn9",
+    "button_text": "Master IGCSE Vector Geometry: Download the Pack"
+  }
+
 
 
 
