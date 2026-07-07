@@ -743,53 +743,52 @@ const problemBank = [
   "button_text": "Master IGCSE Quadratics: Download the Pack"
 },
   {
-    "id": "003230",
-    "date": "18 August 2026",
-    "major_area": "Geometry & Measures",
-    "topic": "Circles",
-    "subtopic": "",
-    "difficulty": "B/A",
-    "img": "true",
-    "q": "The diagram shows a sector $OAB$ of a circle with centre $O$ and radius $OA = 12\\text{ cm}$. The sector angle $AOB = 60^\\circ$. A straight line connects $A$ and $B$.<br>(a) Calculate the perimeter of the sector $OAB$. Give your answer correct to $1\\text{ decimal place}$.<br>(b) Calculate the area of the shaded segment bounded by the chord $AB$ and the arc $AB$. Give your answer correct to $1\\text{ decimal place}$.",
-    "steps": [
-      "For part (a), the perimeter of the sector is the sum of the arc length $AB$ and the two radii $OA$ and $OB$: $\\text{Perimeter} = \\text{Arc Length} + 2r$.",
-      "The formula for the arc length is: $\\text{Arc Length} = \\dfrac{\\theta}{360^\\circ} \\times 2\\pi r$.",
-      "Substituting our values: $\\text{Arc Length} = \\dfrac{60^\\circ}{360^\\circ} \\times 2 \\times \\pi \\times 6$ ... wait, the radius is $6\\text{ cm}$? Let us re-verify: the radius $OA = 6\\text{ cm}$ is not given, wait, $OA = 12\\text{ cm}$ is given.",
-      "Let us recalculate the arc length with $r = 12\\text{ cm}$: $\\text{Arc Length} = \\dfrac{60^\\circ}{360^\\circ} \\times 2 \\times \\pi \\times 12 = \\dfrac{1}{6} \\times 24\\pi = 4\\pi\\text{ cm}$.",
-      "Using a calculator to evaluate: $4\\pi \\approx 12.57\\text{ cm}$.",
-      "We add the two radii to find the total perimeter: $\\text{Perimeter} = 12.57 + 12 + 12 = 36.57\\text{ cm}$.",
-      "Rounding to $1\\text{ decimal place}$ gives $36.6\\text{ cm}$.",
-      "For part (b), the area of the shaded segment is calculated by subtracting the area of the triangle $OAB$ from the area of the sector $OAB$: $\\text{Area}_{\\text{segment}} = \\text{Area}_{\\text{sector}} - \\text{Area}_{\\text{triangle}}$.",
-      "The formula for the area of a sector is: $\\text{Area}_{\\text{sector}} = \\dfrac{\\theta}{360^\\circ} \\times \\pi r^2$.",
-      "Substituting our values: $\\text{Area}_{\\text{sector}} = \\dfrac{60^\\circ}{360^\\circ} \\times \\pi \\times 12^2 = \\dfrac{1}{6} \\times 144\\pi = 24\\pi \\approx 75.398\\text{ cm}^2$.",
-      "The formula for the area of a triangle using SAS is: $\\text{Area}_{\\text{triangle}} = \\dfrac{1}{2} r^2 \\sin(\\theta)$.",
-      "Substituting our values: $\\text{Area}_{\\text{triangle}} = \\dfrac{1}{2} \\times 12^2 \\times \\sin(60^\\circ) = 72 \\times \\sin(60^\\circ) \\approx 62.354\\text{ cm}^2$.",
-      "We subtract the triangle area from the sector area: $\\text{Area}_{\\text{segment}} = 75.398 - 62.354 = 13.044\\text{ cm}^2$.",
-      "Rounding to $1\\text{ decimal place}$ gives $13.0\\text{ cm}^2$.",
-      "Final Answer: $$(a)\\ 36.6\\text{ cm}\\ (b)\\ 13.0\\text{ cm}^2$$"
-    ],
-    "wrong_options": [
-      {
-        "ans": "$$(a)\\ 12.6\\text{ cm}\\ (b)\\ 13.0\\text{ cm}^2$$",
-        "feedback": "In part (a), you stated only the arc length ($4\\pi \\approx 12.6\\text{ cm}$) instead of adding the two radii to calculate the total perimeter."
-      },
-      {
-        "ans": "$$(a)\\ 36.6\\text{ cm}\\ (b)\\ 75.4\\text{ cm}^2$$",
-        "feedback": "In part (b), you stated the area of the entire sector ($24\\pi \\approx 75.4\\text{ cm}^2$) instead of subtracting the triangle area to find the shaded segment."
-      },
-      {
-        "ans": "$$(a)\\ 36.6\\text{ cm}\\ (b)\\ 3.0\\text{ cm}^2$$",
-        "feedback": "You made an arithmetic calculation error when evaluating the sine of $60^\\circ$ or subtracting the triangle area."
-      }
-    ],
-    "bradley_insight": {
-      "type": "caution",
-      "title": "The Head Teacher's Eye: Sector Perimeter vs. Arc Length",
-      "content": "A very common exam error on Paper 4 is confusing 'arc length' with 'perimeter of a sector'. Arc length is only the curved boundary line, whereas the perimeter must include the two straight radius lines that close the sector. Always remember to add $2r$ to your arc length."
+  "id": "003230",
+  "date": "18 August 2026",
+  "major_area": "Geometry & Measures",
+  "topic": "Circles",
+  "subtopic": "",
+  "difficulty": "B/A",
+  "img": "true",
+  "q": "The diagram shows a sector $OAB$ of a circle with centre $O$ and radius $OA = 12\\text{ cm}$. The sector angle $AOB = 60^\\circ$. A straight line connects $A$ and $B$.<br>(a) Calculate the perimeter of the sector $OAB$. Give your answer correct to $1\\text{ decimal place}$.<br>(b) Calculate the area of the shaded segment bounded by the chord $AB$ and the arc $AB$. Give your answer correct to $1\\text{ decimal place}$.",
+  "steps": [
+    "For part (a), the perimeter of the sector is the sum of the arc length $AB$ and the two radii $OA$ and $OB$: $\\text{Perimeter} = \\text{Arc Length} + 2r$.",
+    "The formula for the arc length of a sector is: $\\text{Arc Length} = \\dfrac{\\theta}{360^\\circ} \\times 2\\pi r$.",
+    "Substituting our values where $r = 12\\text{ cm}$ and $\\theta = 60^\\circ$: $\\text{Arc Length} = \\dfrac{60^\\circ}{360^\\circ} \\times 2 \\times \\pi \\times 12 = 4\\pi\\text{ cm}$.",
+    "Evaluating the arc length using a calculator: $4\\pi \\approx 12.57\\text{ cm}$.",
+    "We add the two radii of $12\\text{ cm}$ each to find the total perimeter: $\\text{Perimeter} = 12.57 + 12 + 12 = 36.57\\text{ cm}$.",
+    "Rounding to $1\\text{ decimal place}$ gives $36.6\\text{ cm}$.",
+    "For part (b), the area of the shaded segment is calculated by subtracting the area of the triangle $OAB$ from the area of the sector $OAB$: $\\text{Area}_{\\text{segment}} = \\text{Area}_{\\text{sector}} - \\text{Area}_{\\text{triangle}}$.",
+    "The formula for the area of a sector is: $\\text{Area}_{\\text{sector}} = \\dfrac{\\theta}{360^\\circ} \\times \\pi r^2$.",
+    "Substituting our values: $\\text{Area}_{\\text{sector}} = \\dfrac{60^\\circ}{360^\\circ} \\times \\pi \\times 12^2 = 24\\pi \\approx 75.40\\text{ cm}^2$.",
+    "The formula for the area of a triangle using SAS is: $\\text{Area}_{\\text{triangle}} = \\dfrac{1}{2} r^2 \\sin(\\theta)$.",
+    "Substituting our values: $\\text{Area}_{\\text{triangle}} = \\dfrac{1}{2} \\times 12^2 \\times \\sin(60^\\circ) = 72 \\times \\sin(60^\\circ) \\approx 62.35\\text{ cm}^2$.",
+    "We subtract the triangle area from the sector area: $\\text{Area}_{\\text{segment}} = 75.40 - 62.35 = 13.05\\text{ cm}^2$.",
+    "Rounding to $1\\text{ decimal place}$ gives $13.0\\text{ cm}^2$.",
+    "Final Answer: $$(a)\\ 36.6\\text{ cm}\\ (b)\\ 13.0\\text{ cm}^2$$"
+  ],
+  "wrong_options": [
+    {
+      "ans": "$$(a)\\ 12.6\\text{ cm}\\ (b)\\ 13.0\\text{ cm}^2$$",
+      "feedback": "In part (a), you stated only the arc length ($4\\pi \\approx 12.6\\text{ cm}$) instead of adding the two radii to calculate the total perimeter."
     },
-    "payhip_link": "https://payhip.com/b/gR9jw",
-    "button_text": "Master IGCSE Arcs & Sectors: Download the Pack"
+    {
+      "ans": "$$(a)\\ 36.6\\text{ cm}\\ (b)\\ 75.4\\text{ cm}^2$$",
+      "feedback": "In part (b), you stated the area of the entire sector ($24\\pi \\approx 75.4\\text{ cm}^2$) instead of subtracting the triangle area to find the shaded segment."
+    },
+    {
+      "ans": "$$(a)\\ 36.6\\text{ cm}\\ (b)\\ 3.0\\text{ cm}^2$$",
+      "feedback": "You made an arithmetic calculation error when evaluating the sine of $60^\\circ$ or subtracting the triangle area."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Sector Perimeter vs. Arc Length",
+    "content": "A very common exam error on Paper 4 is confusing 'arc length' with 'perimeter of a sector'. Arc length is only the curved boundary line, whereas the perimeter must include the two straight radius lines that close the sector. Always remember to add $2r$ to your arc length."
   },
+  "payhip_link": "https://payhip.com/b/gR9jw",
+  "button_text": "Master IGCSE Arcs & Sectors: Download the Pack"
+},
   {
     "id": "003231",
     "date": "19 August 2026",
