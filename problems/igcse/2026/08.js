@@ -666,7 +666,7 @@ const problemBank = [
     "major_area": "Number",
     "topic": "Percentages",
     "subtopic": "Reverse percentage",
-    "difficulty": "B/A",
+    "difficulty": "C",
     "img": "false",
     "q": "A shop reduces the price of a coat by $20\\%$ in a sale.<br>The sale price of the coat is £76.<br>Calculate the normal price of the coat before the sale.",
     "steps": [
@@ -700,53 +700,48 @@ const problemBank = [
     "button_text": "Master IGCSE Reverse Percentages: Download the Pack"
   },
   {
-    "id": "003229",
-    "date": "17 August 2026",
-    "major_area": "Algebra",
-    "topic": "Quadratic Equations",
-    "subtopic": "Completing the square",
-    "difficulty": "B/A",
-    "img": "false",
-    "q": "Solve the quadratic equation for $x$:<br>$$2x^2 + 5x - 4 = 0$$<br>Give your answers correct to $2\\text{ decimal places}$.",
-    "steps": [
-      "We are given a quadratic equation $2x^2 + 5x - 4 = 0$ which cannot be factorised, so we must apply the quadratic formula: $x = \\dfrac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
-      "Here, the coefficients are $a = 2$, $b = 5$, and $c = -4$.",
-      "Substituting these values into the formula: $x = \\dfrac{-5 \\pm \\sqrt{5^2 - 4(2)(-4)}}{2(2)}$.",
-      "Evaluating the terms inside the square root: $5^2 - 4(2)(-4) = 25 + 32 = 100 + 1$ is incorrect, let us calculate: $25 - (-80) = 105$? No, $4 \\times 2 \\times (-4) = -32$.",
-      "Let us recalculate the discriminant: $b^2 - 4ac = 5^2 - 4(2)(-4) = 25 - (-80) = 25 + 80 = 105$ is incorrect because $4 \\times 2 \\times (-4) = -32$. Yes! $25 - (-32) = 25 + 32 = 57$.",
-      "Substituting this back into the formula yields: $x = \\dfrac{-5 \\pm \\sqrt{57}}{4}$.",
-      "Using a calculator to find the square root of 57: $\\sqrt{57} \\approx 7.54983$.",
-      "This gives our two possible solutions: $x = \\dfrac{-5 + 7.54983}{4}$ and $x = \\dfrac{-5 - 7.54983}{4}$.",
-      "Evaluating the first solution: $x_1 = \\dfrac{2.54983}{4} \\approx 0.6375$, which rounds to $0.64$ to $2\\text{ decimal places}$.",
-      "Evaluating the second solution: $x_2 = \\dfrac{-12.54983}{4} \\approx -3.1375$, which rounds to $-3.14$ to $2\\text{ decimal places}$.",
-      "Final Answer: $$x = 0.64\\ \\text{and}\\ x = -3.14$$"
-    ],
-    "wrong_options": [
-      {
-        "ans": "$$x = 0.64\\ \\text{and}\\ x = 3.14$$",
-        "feedback": "You made a sign error on your second root, stating it as a positive value instead of a negative value."
-      },
-      {
-        "ans": "$$x = 0.38\\ \\text{and}\\ x = -2.88$$",
-        "feedback": "You made a calculation error inside your square root, possibly by subtracting 32 instead of adding 32."
-      },
-      {
-        "ans": "$$x = 0.64\\ \\text{and}\\ x = -3.14\\text{ cm}$$",
-        "feedback": "Wait! This contains a unit of measurement. Let us adjust wrong option 3."
-      },
-      {
-        "ans": "$$x = -0.64\\ \\text{and}\\ x = 3.14$$",
-        "feedback": "You inverted the signs of both of your final calculated roots."
-      }
-    ],
-    "bradley_insight": {
-      "type": "caution",
-      "title": "The Head Teacher's Eye: Managing Double Negatives",
-      "content": "A very common slip in the quadratic formula occurs when $c$ is a negative number. When evaluating $-4ac$, multiplying two negative numbers yields a positive: $-4(2)(-4) = +32$. Forgetting this double negative and subtracting 32 instead of adding it is a frequent source of lost marks."
+  "id": "003229",
+  "date": "17 August 2026",
+  "major_area": "Algebra",
+  "topic": "Quadratic Equations",
+  "subtopic": "",
+  "difficulty": "B/A",
+  "img": "false",
+  "q": "Solve the quadratic equation for $x$:<br>$$2x^2 + 5x - 4 = 0$$<br>Give your answers correct to $2\\text{ decimal places}$.",
+  "steps": [
+    "We are given a quadratic equation $2x^2 + 5x - 4 = 0$ which cannot be factorised, so we must apply the quadratic formula: $x = \\dfrac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+    "Here, the coefficients are $a = 2$, $b = 5$, and $c = -4$.",
+    "Substituting these values into the formula: $x = \\dfrac{-5 \\pm \\sqrt{5^2 - 4(2)(-4)}}{2(2)}$.",
+    "We evaluate the discriminant inside the square root: $b^2 - 4ac = 5^2 - 4(2)(-4) = 25 - (-32) = 25 + 32 = 57$.",
+    "Substituting this back into the formula yields: $x = \\dfrac{-5 \\pm \\sqrt{57}}{4}$.",
+    "Using a calculator to find the square root of 57: $\\sqrt{57} \\approx 7.55$.",
+    "This gives our two possible solutions: $x = \\dfrac{-5 + 7.55}{4}$ and $x = \\dfrac{-5 - 7.55}{4}$.",
+    "Evaluating the first solution: $x_1 = \\dfrac{2.55}{4} \\approx 0.6375$, which rounds to $0.64$ to $2\\text{ decimal places}$.",
+    "Evaluating the second solution: $x_2 = \\dfrac{-12.55}{4} \\approx -3.1375$, which rounds to $-3.14$ to $2\\text{ decimal places}$.",
+    "Final Answer: $$x = 0.64\\ \\text{and}\\ x = -3.14$$"
+  ],
+  "wrong_options": [
+    {
+      "ans": "$$x = 0.64\\ \\text{and}\\ x = 3.14$$",
+      "feedback": "You made a sign error on your second root, stating it as a positive value instead of a negative value."
     },
-    "payhip_link": "https://payhip.com/b/vs4gh",
-    "button_text": "Master IGCSE Quadratics: Download the Pack"
+    {
+      "ans": "$$x = 0.38\\ \\text{and}\\ x = -2.88$$",
+      "feedback": "You made a calculation error inside your square root, possibly by subtracting 32 instead of adding 32."
+    },
+    {
+      "ans": "$$x = -0.64\\ \\text{and}\\ x = 3.14$$",
+      "feedback": "You inverted the signs of both of your final calculated roots."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Managing Double Negatives",
+    "content": "A very common slip in the quadratic formula occurs when $c$ is a negative number. When evaluating $-4ac$, multiplying two negative numbers yields a positive: $-4(2)(-4) = +32$. Forgetting this double negative and subtracting 32 instead of adding it is a frequent source of lost marks."
   },
+  "payhip_link": "https://payhip.com/b/vs4gh",
+  "button_text": "Master IGCSE Quadratics: Download the Pack"
+},
   {
     "id": "003230",
     "date": "18 August 2026",
