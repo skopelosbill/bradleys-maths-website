@@ -448,7 +448,218 @@ const problemBank = [
     },
     "payhip_link": "https://payhip.com/b/xrmnz",
     "button_text": "Master IGCSE Circle Geometry: Download the Pack"
-  }
+  },
+  {
+    "id": "003223",
+    "date": "11 August 2026",
+    "major_area": "Algebra",
+    "topic": "Rearranging Formulae",
+    "subtopic": "Changing the subject",
+    "difficulty": "B/A",
+    "img": "false",
+    "q": "Rearrange the formula to make $x$ the subject:<br>$$P = \\sqrt{\\dfrac{x + 2a}{3x - b}}$$",
+    "steps": [
+      "We begin by squaring both sides of the equation to eliminate the square root: $P^2 = \\dfrac{x + 2a}{3x - b}$.",
+      "We multiply both sides by the denominator $(3x - b)$ to clear the fraction: $P^2(3x - b) = x + 2a$.",
+      "We expand the bracket on the left-hand side: $3P^2x - P^2b = x + 2a$.",
+      "To collect all terms containing $x$ on one side of the equation, we subtract $x$ from both sides: $3P^2x - x - P^2b = 2a$.",
+      "We then move the term without $x$ (which is $-P^2b$) to the right-hand side by adding $P^2b$ to both sides: $3P^2x - x = 2a + P^2b$.",
+      "We factorise the left-hand side by taking out $x$ as a common factor: $x(3P^2 - 1) = 2a + P^2b$.",
+      "Finally, we divide both sides by $(3P^2 - 1)$ to isolate $x$: $x = \\dfrac{2a + P^2b}{3P^2 - 1}$.",
+      "Final Answer: $$x = \\dfrac{2a + P^2b}{3P^2 - 1}$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$x = \\dfrac{2a - P^2b}{3P^2 - 1}$$",
+        "feedback": "You made a sign error when moving the $-P^2b$ term to the right-hand side, subtracting it instead of adding it."
+      },
+      {
+        "ans": "$$x = \\dfrac{2a + Pb}{3P - 1}$$",
+        "feedback": "You forgot to square the terms $P$ on the right-hand side when carrying out your algebraic expansions."
+      },
+      {
+        "ans": "$$x = \\dfrac{2a + P^2b}{3P^2 + 1}$$",
+        "feedback": "You made a sign error when factorising the left-hand side, adding 1 inside the bracket instead of subtracting it."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Squaring the Base first",
+      "content": "When rearranging a formula where the subject is trapped inside a square root fraction, your absolute first step must be to square both sides. Once the root is cleared, clear the denominator, collect your subject terms on one side, and factorise to isolate the variable."
+    },
+    "payhip_link": "https://payhip.com/b/Ipgz3",
+    "button_text": "Master IGCSE Subject Rearranging: Download the Pack"
+  },
+  {
+    "id": "003224",
+    "date": "12 August 2026",
+    "major_area": "Geometry & Measures",
+    "topic": "Trigonometry",
+    "subtopic": "Sine rule",
+    "difficulty": "B/A",
+    "img": "true",
+    "q": "The diagram shows a triangle $ABC$ with side length $AB = 11\\text{ cm}$ and side length $BC = 8\\text{ cm}$. The angle $BAC = 35^\\circ$.<br>Given that the angle $ACB$ is obtuse, calculate the size of the angle $ACB$. Give your answer correct to $1\\text{ decimal place}$.",
+    "steps": [
+      "We are given two sides and a non-included angle, so we apply the Sine Rule: $\\dfrac{\\sin(C)}{c} = \\dfrac{\\sin(A)}{a}$.",
+      "Here, $a = BC = 8\\text{ cm}$, $c = AB = 11\\text{ cm}$, and angle $A = 35^\\circ$.",
+      "Substituting these values: $\\dfrac{\\sin(ACB)}{11} = \\dfrac{\\sin(35^\\circ)}{8}$.",
+      "To solve for $\\sin(ACB)$, we multiply both sides by 11: $\\sin(ACB) = \\dfrac{11 \\times \\sin(35^\\circ)}{8}$.",
+      "Evaluating using a calculator: $\\sin(35^\\circ) \\approx 0.57358$.",
+      "This yields: $\\sin(ACB) = \\dfrac{11 \\times 0.57358}{8} = \\dfrac{6.30934}{8} \\approx 0.78867$.",
+      "We calculate the acute angle by taking the inverse sine: $\\text{angle } ACB_{\\text{acute}} = \\arcsin(0.78867) \\approx 52.1^\\circ$.",
+      "Since the question states that the angle $ACB$ is obtuse ($> 90^\\circ$), we apply the ambiguous case identity: $\\sin(180^\\circ - \\theta) = \\sin(\\theta)$.",
+      "We subtract our acute angle from $180^\\circ$: $\\text{angle } ACB = 180^\\circ - 52.1^\\circ = 127.9^\\circ$.",
+      "Final Answer: $$127.9^\\circ$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$52.1^\\circ$$",
+        "feedback": "You calculated the acute angle correctly but forgot to subtract your value from $180^\\circ$ to find the obtuse angle as required by the question."
+      },
+      {
+        "ans": "$$142.1^\\circ$$",
+        "feedback": "You made an arithmetic calculation error when subtracting your acute angle from $180^\\circ$."
+      },
+      {
+        "ans": "$$35.0^\\circ$$",
+        "feedback": "You assumed triangle $ABC$ was isosceles, making angle $ACB$ equal to angle $BAC$, which is not supported by the side lengths."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: The Ambiguous Case of the Sine Rule",
+      "content": "Always look out for the word 'obtuse' in Sine Rule questions. Because $\\sin(180^\\circ - \\theta) = \\sin(\\theta)$, there are always two possible angles that yield the same sine ratio. If the diagram or text specifies an obtuse angle, you must subtract your calculator's acute result from $180^\\circ$."
+    },
+    "payhip_link": "https://payhip.com/b/5UfgG",
+    "button_text": "Master IGCSE Sine Rule: Download the Pack"
+  },
+  {
+    "id": "003225",
+    "date": "13 August 2026",
+    "major_area": "Statistics",
+    "topic": "Frequency Tables",
+    "subtopic": "Grouped data",
+    "difficulty": "B/A",
+    "img": "false",
+    "q": "The table shows information about the masses, in kilograms, of some animals.<br><br><table border='1' style='border-collapse: collapse; text-align: center; margin: 10px 0; width: 100%; max-width: 400px;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px;'>Mass ($w$ kg)</th><th style='padding: 8px;'>Frequency</th></tr></thead><tbody><tr><td style='padding: 8px;'>$0 < w \\le 10$</td><td style='padding: 8px;'>8</td></tr><tr><td style='padding: 8px;'>$10 < w \\le 20$</td><td style='padding: 8px;'>$x$</td></tr><tr><td style='padding: 8px;'>$20 < w \\le 30$</td><td style='padding: 8px;'>12</td></tr></tbody></table><br>Given that the estimated mean mass of these animals is $16\\text{ kg}$, calculate the value of the frequency $x$.",
+    "steps": [
+      "To find the estimated mean, we first calculate the midpoints ($mp$) of each interval: the midpoint for $0 < w \\le 10$ is 5, for $10 < w \\le 20$ is 15, and for $20 < w \\le 30$ is 25.",
+      "We express the sum of the frequencies ($\\sum f$): $\\sum f = 8 + x + 12 = 20 + x$.",
+      "We calculate the products of the frequencies and their midpoints ($f \\times mp$): for the first interval is $8 \\times 5 = 40$, for the second is $15 \\times x = 15x$, and for the third is $12 \\times 25 = 300$.",
+      "We sum these products to find the total estimated mass ($\\sum f \\times mp$): $\\sum f \\times mp = 40 + 15x + 300 = 340 + 15x$.",
+      "Since the estimated mean is defined as $\\text{Mean} = \\dfrac{\\sum f \\times mp}{\\sum f}$, we set up our algebraic equation: $16 = \\dfrac{340 + 15x}{20 + x}$.",
+      "We multiply both sides by $(20 + x)$ to clear the fraction: $16(20 + x) = 340 + 15x$.",
+      "We expand the bracket on the left-hand side: $320 + 16x = 340 + 15x$.",
+      "To solve for $x$, we subtract $15x$ from both sides: $320 + x = 340$.",
+      "Subtracting 320 from both sides yields: $x = 20$.",
+      "Final Answer: $$20$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$10$$",
+        "feedback": "You made an arithmetic error when expanding the bracket on the left-hand side, using $16(20) = 300$ instead of $320$."
+      },
+      {
+        "ans": "$$15$$",
+        "feedback": "You set up the midpoints incorrectly or made an algebraic error when rearranging your linear equation to isolate $x$."
+      },
+      {
+        "ans": "$$25$$",
+        "feedback": "You made a sign error when grouping your $x$ terms, adding them together on one side instead of performing subtraction."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Algebraic Grouped Means",
+      "content": "This is an excellent Paper 4 algebraic statistics challenge. Treat the unknown frequency $x$ exactly like a normal number in your calculations. Sum your frequencies as $(20 + x)$ and your products as $(340 + 15x)$, then cross-multiply to solve the resulting linear equation."
+    },
+    "payhip_link": "https://payhip.com/b/reAKG",
+    "button_text": "Master Grouped Mean: Download the Pack"
+  },
+  {
+    "id": "003226",
+    "date": "14 August 2026",
+    "major_area": "Algebra",
+    "topic": "Indices Laws",
+    "subtopic": "",
+    "difficulty": "B/A",
+    "img": "false",
+    "q": "Solve the exponential equation for $x$:<br>$$9^x = 27^{x - 1}$$",
+    "steps": [
+      "To solve the exponential equation, we express both bases as powers of the same prime base, which is 3.",
+      "We write $9$ as $3^2$ and $27$ as $3^3$.",
+      "Substituting these bases into our equation: $(3^2)^x = (3^3)^{x - 1}$.",
+      "We apply the power of a power index law, multiplying the powers: $3^{2x} = 3^{3(x - 1)}$.",
+      "Expanding the power on the right-hand side: $3^{2x} = 3^{3x - 3}$.",
+      "Since the bases are now identical, we can equate the exponents directly: $2x = 3x - 3$.",
+      "To solve for $x$, we subtract $2x$ and add 3 to both sides of the equation: $x = 3$.",
+      "Final Answer: $$x = 3$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$x = 1.5$$",
+        "feedback": "You divided 3 by 2 instead of resolving the linear equation $2x = 3x - 3$ correctly."
+      },
+      {
+        "ans": "$$x = -3$$",
+        "feedback": "You made a sign error when rearranging your linear terms, subtracting 3 from the right-hand side instead of adding it."
+      },
+      {
+        "ans": "$$x = 2.5$$",
+        "feedback": "You did not write both bases in terms of base 3, leading to an incorrect exponent equation."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Equating Base Powers",
+      "content": "When solving exponential equations in Paper 2, always convert both sides to the lowest possible common prime base. Once the bases match, you can completely ignore them and solve the linear equation of the exponents."
+    },
+    "payhip_link": "https://payhip.com/b/ao0mZ",
+    "button_text": "Master IGCSE Indices: Download the Pack"
+  },
+{
+  "id": "003227",
+  "date": "15 August 2026",
+  "major_area": "Geometry & Measures",
+  "topic": "Circle Theorems",
+  "subtopic": "",
+  "difficulty": "8/9",
+  "img": "true",
+  "q": "The diagram shows a cyclic quadrilateral $ABCD$ inside a circle with centre $O$.<br>The opposite angles are given as angle $DAB = 3x + 15^\\circ$ and angle $BCD = 2x - 5^\\circ$. The reflex angle $BOD$ at the centre is $y^\\circ$.<br>(a) Find the value of $x$. State the geometric reason for your answer.<br>(b) Calculate the value of $y$. State the geometric reasons for your calculations.",
+  "steps": [
+    "For part (a), we apply the circle theorem: 'Opposite angles of a cyclic quadrilateral sum to 180 degrees'.",
+    "We set up our algebraic equation using the opposite angles $DAB$ and $BCD$: $(3x + 15) + (2x - 5) = 180$.",
+    "Combining like terms yields: $5x + 10 = 180$.",
+    "Subtracting 10 from both sides: $5x = 170$.",
+    "Dividing both sides by 5: $x = 34$.",
+    "For part (b), we first find the size of the interior angle $DAB$ by substituting $x = 34$ back into its expression: $\\text{angle } DAB = 3(34) + 15 = 102 + 15 = 117^\\circ$.",
+    "Next, we apply the circle theorem: 'The angle subtended by an arc at the centre is twice the angle subtended at the circumference'.",
+    "The reflex angle $BOD$ (which is $y^\\circ$) at the centre and the angle $DAB$ at the circumference are subtended by the same major arc $BCD$.",
+    "Therefore, the reflex angle is exactly twice the size of angle $DAB$: $y = 2 \\times 117 = 234$.",
+    "Final Answer: $$(a)\\ 34\\ (b)\\ 234$$"
+  ],
+  "wrong_options": [
+    {
+      "ans": "$$(a)\\ 34\\ (b)\\ 126$$",
+      "feedback": "For part (b), you calculated the obtuse angle $BOD$ at the centre ($2 \\times 63 = 126^\\circ$) instead of the reflex angle $y^\\circ$."
+    },
+    {
+      "ans": "$$(a)\\ 38\\ (b)\\ 234$$",
+      "feedback": "You miscalculated the value of $x$ as 38 in part (a) by writing your equation as $5x - 10 = 180$, leading to incorrect angles throughout."
+    },
+    {
+      "ans": "$$(a)\\ 34\\ (b)\\ 117$$",
+      "feedback": "For part (b), you forgot to double the circumference angle to find the angle at the centre, leaving $y$ equal to angle $DAB$."
+    }
+  ],
+  "bradley_insight": {
+    "type": "caution",
+    "title": "The Head Teacher's Eye: Major vs. Minor Subtended Arcs",
+    "content": "When applying the theorem 'angle at the centre is twice the angle at the circumference', ensure you match the correct arcs. The reflex angle $y^\\circ$ at the centre is subtended by the major arc $BCD$, which means it is twice the opposite angle $DAB$ ($117^\\circ$), not the closer angle $BCD$ ($63^\\circ$)."
+  },
+  "payhip_link": "https://payhip.com/b/xrmnz",
+  "button_text": "Master IGCSE Circle Geometry: Download the Pack"
+}
 
 
 
