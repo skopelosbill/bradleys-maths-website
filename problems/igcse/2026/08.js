@@ -1023,24 +1023,24 @@ const problemBank = [
     "subtopic": "Median",
     "difficulty": "6/7",
     "img": "false",
-    "q": "The table shows information about the heights, in centimetres, of 120 plants.<br><br><table border='1' style='border-collapse: collapse; text-align: center; margin: 10px 0; width: 100%; max-width: 400px;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px;'>Height ($h$ cm)</th><th style='padding: 8px;'>Frequency</th></tr></thead><tbody><tr><td style='padding: 8px;'>$0 < h \\le 15$</td><td style='padding: 8px;'>12</td></tr><tr><td style='padding: 8px;'>$15 < h \\le 30$</td><td style='padding: 8px;'>18</td></tr><tr><td style='padding: 8px;'>$30 < h \\le 45$</td><td style='padding: 8px;'>30</td></tr><tr><td style='padding: 8px;'>$45 < h \\le 60$</td><td style='padding: 8px;'>30</td></tr><tr><td style='padding: 8px;'>$60 < h \\le 75$</td><td style='padding: 8px;'>30</td></tr></tbody></table><br>(a) Construct a cumulative frequency table for this data.<br>(b) Construct a cumulative frequency curve on the grid and use it to estimate the median height and the interquartile range (IQR).",
+    "q": "The table shows information about the heights, in centimetres, of 120 plants.<br><br><table border='1' style='border-collapse: collapse; text-align: center; margin: 10px 0; width: 100%; max-width: 400px;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px;'>Height ($h$ cm)</th><th style='padding: 8px;'>Frequency</th></tr></thead><tbody><tr><td style='padding: 8px;'>$0 < h \\le 15$</td><td style='padding: 8px;'>12</td></tr><tr><td style='padding: 8px;'>$15 < h \\le 30$</td><td style='padding: 8px;'>18</td></tr><tr><td style='padding: 8px;'>$30 < h \\le 45$</td><td style='padding: 8px;'>40</td></tr><tr><td style='padding: 8px;'>$45 < h \\le 60$</td><td style='padding: 8px;'>30</td></tr><tr><td style='padding: 8px;'>$20 < h \\le 75$</td><td style='padding: 8px;'>30</td></tr></tbody></table><br>(a) Construct a cumulative frequency table for this data.<br>(b) Construct a cumulative frequency curve on the grid and use it to estimate the median height and the interquartile range (IQR).",
     "steps": [
       "For part (a), we construct the cumulative frequency table by adding up the frequencies consecutively:",
       "- Height $h \\le 15$: Cumulative Frequency = 12",
       "- Height $h \\le 30$: Cumulative Frequency = $12 + 18 = 30$",
-      "- Height $h \\le 45$: Cumulative Frequency = $30 + 30 = 60$",
-      "- Height $h \\le 60$: Cumulative Frequency = $60 + 30 = 90$",
-      "- Height $h \\le 75$: Cumulative Frequency = $90 + 30 = 120$",
-      "This completes our cumulative frequency coordinates to plot: (15, 12), (30, 30), (45, 60), (60, 90), and (75, 120).",
+      "- Height $h \\le 45$: Cumulative Frequency = $30 + 40 = 70$",
+      "- Height $h \\le 60$: Cumulative Frequency = $70 + 30 = 100$",
+      "- Height $h \\le 75$: Cumulative Frequency = $100 + 20 = 120$",
+      "This completes our cumulative frequency coordinates to plot: (15, 12), (30, 30), (45, 70), (60, 100), and (75, 120).",
       "For part (b), we plot these coordinates alongside the starting point (0,0) on our grid and connect them with a smooth S-curve.",
       "We estimate the median height by locating half of the total frequency ($120 \\div 2 = 60$) on the vertical axis, tracing horizontally to the curve, and reading down to the horizontal height axis.",
       "Tracing down from 60 on the curve yields the median estimate: 42 cm.",
       "To find the interquartile range (IQR), we calculate the upper quartile (UQ) and lower quartile (LQ) positions.",
-      "The lower quartile corresponds to one-quarter of the total frequency ($120 \\div 4 = 30$). Tracing horizontally from 30 to the curve and reading down yields the LQ: 28 cm.",
+      "The lower quartile corresponds to one-quarter of the total frequency ($120 \\div 4 = 30$). Tracing horizontally from 30 to the curve and reading down yields the LQ: 30 cm.",
       "The upper quartile corresponds to three-quarters of the total frequency ($120 \\times 0.75 = 90$). Tracing horizontally from 90 to the curve and reading down yields the UQ: 55 cm.",
-      "We calculate the interquartile range: IQR = UQ - LQ = 55 cm - 28 cm = 27 cm.",
+      "We calculate the interquartile range: IQR = UQ - LQ = 55 cm - 30 cm = 25 cm.",
       "<img src='images/2026-08/i_24_ans.png' style='width:100%; max-width:450px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
-      "Final Answer: $$(a)\\ \\text{Table completed}\\ (b)\\ \\text{Median} = 42\\text{ cm},\\ \\text{IQR} = 27\\text{ cm}$$"
+      "Final Answer: $$(a)\\ \\text{Table completed}\\ (b)\\ \\text{Median} = 42\\text{ cm},\\ \\text{IQR} = 25\\text{ cm}$$"
     ],
     "wrong_options": [
       {
@@ -1049,7 +1049,7 @@ const problemBank = [
       },
       {
         "ans": "$$(a)\\ \\text{Table completed}\\ (b)\\ \\text{Median} = 42\\text{ cm},\\ \\text{IQR} = 55\\text{ cm}$$",
-        "feedback": "In part (b), you stated the upper quartile value (55 cm) but forgot to subtract the lower quartile (28 cm) to calculate the range."
+        "feedback": "In part (b), you stated the upper quartile value (55 cm) but forgot to subtract the lower quartile (30 cm) to calculate the range."
       },
       {
         "ans": "$$(a)\\ \\text{Table completed}\\ (b)\\ \\text{Median} = 42\\text{ cm},\\ \\text{IQR} = 15\\text{ cm}$$",
