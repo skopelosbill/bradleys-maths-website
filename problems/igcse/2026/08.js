@@ -937,7 +937,7 @@ const problemBank = [
       "The area of a rectangle is: $\\text{Area}_{\\text{rect}} = \\text{length} \\times \\text{width} = (2x - 1)(x + 2)$.",
       "We expand this quadratic expression: $(2x - 1)(x + 2) = 2x^2 + 4x - x - 2 = 2x^2 + 3x - 2$.",
       "The area of a triangle is: $\\text{Area}_{\\text{tri}} = \\dfrac{1}{2} \\times \\text{base} \\times \\text{height} = \\dfrac{1}{2}(2x + 4)(x + 1)$.",
-      "We simplify the product: \\dfrac{1}{2}(2x + 4)(x + 1) = (x + 2)(x + 1) = x^2 + 3x + 2.",
+    "We simplify the product: $\\dfrac{1}{2}(2x + 4)(x + 1) = (x + 2)(x + 1) = x^2 + 3x + 2$.",
       "We are given that these two areas are equal, so we equate them: $2x^2 + 3x - 2 = x^2 + 3x + 2$.",
       "We rearrange the terms to solve the equation. We subtract $x^2$, $3x$, and 2 from both sides of the equation: $2x^2 - x^2 + 3x - 3x - 2 - 2 = 0$.",
       "This simplifies directly to: $x^2 - 4 = 0$ (as required).",
@@ -1154,47 +1154,47 @@ const problemBank = [
     "button_text": "Master IGCSE Circles: Download the Pack"
   },
   {
-    "id": "003239",
-    "date": "27 August 2026",
-    "major_area": "Algebra",
-    "topic": "Sequences",
-    "subtopic": "",
-    "difficulty": "6/7",
-    "img": "false",
-    "q": "Find the $n$th term expression for the quadratic sequence:<br>$$6,\\ 13,\\ 26,\\ 45,\\ 70,\\ \\dots$$",
-    "steps": [
-      "We begin by finding the first differences between consecutive terms of the sequence: $13 - 6 = 7$, $26 - 13 = 13$, $45 - 26 = 19$, and $70 - 45 = 25$. This gives the first differences: $7,\\ 13,\\ 19,\\ 25$.",
-      "Next, we find the second differences between these first differences: $13 - 7 = 6$, $19 - 13 = 6$, and $25 - 19 = 6$. This gives a constant second difference of 6.",
-      "The coefficient of the $n^2$ term in a quadratic sequence is always exactly half of the constant second difference: $\\text{Coefficient} = 6 \\div 2 = 3$. This tells us our $n$th term begins with $3n^2$.",
-      "We calculate the values of $2n^2$ for the first five terms ($n = 1, 2, 3, 4, 5$): $2(1)^2 = 2$, $2(2)^2 = 8$, $2(3)^2 = 18$, $2(4)^2 = 32$, and $2(5)^2 = 50$. This gives the sequence: $2,\\ 8,\\ 18,\\ 32,\\ 50$.",
-      "We subtract these $2n^2$ values from our original sequence to find the remaining linear sequence: $(5 - 2), (12 - 8), (23 - 18), (38 - 32), (57 - 50)$.",
-      "This yields the linear sequence: $3,\\ 4,\\ 5,\\ 6,\\ 7$.",
-      "We find the $n$th term of this simple linear sequence, which increases by $+1$ each time and has a zero-term of 2, as: $n + 2$.",
-      "Finally, we combine our quadratic and linear parts to find the complete $n$th term: $2n^2 + n + 2$.",
-      "Final Answer: $$3n^2 - 2n + 5$$"
-    ],
-    "wrong_options": [
-      {
-        "ans": "$$6n^2 - 2n + 2$$",
-        "feedback": "You forgot to halve the second difference when calculating your $n^2$ coefficient, using 6 instead of 3."
-      },
-      {
-        "ans": "$$3n^2 + 5$$",
-        "feedback": "You calculated the quadratic term correctly but made an error when finding the $n$th term of the remaining linear sequence."
-      },
-      {
-        "ans": "$$3n^2 + 2n + 1$$",
-        "feedback": "You made a sign error when calculating the linear sequence, adding $2n$ instead of subtracting it."
-      }
-    ],
-    "bradley_insight": {
-      "type": "pro-tip",
-      "title": "The Head Teacher's Eye: Checking Your Sequence",
-      "content": "A very fast and reliable way to check your quadratic $n$th term in an exam is to substitute $n = 5$ into your final expression. For $2n^2 + n + 2$, this yields $2(25) + 5 + 2 = 57$. Since this matches the fifth term of the original sequence exactly, you can be confident your expression is correct."
+  "id": "003239",
+  "date": "27 August 2026",
+  "major_area": "Algebra",
+  "topic": "Sequences",
+  "subtopic": "",
+  "difficulty": "6/7",
+  "img": "false",
+  "q": "Find the $n$th term expression for the quadratic sequence:<br>$$6,\\ 13,\\ 26,\\ 45,\\ 70,\\ \\dots$$",
+  "steps": [
+    "We begin by finding the first differences between consecutive terms of the sequence: $13 - 6 = 7$, $26 - 13 = 13$, $45 - 26 = 19$, and $70 - 45 = 25$. This gives the first differences: $7,\\ 13,\\ 19,\\ 25$.",
+    "Next, we find the second differences between these first differences: $13 - 7 = 6$, $19 - 13 = 6$, and $25 - 19 = 6$. This gives a constant second difference of 6.",
+    "The coefficient of the $n^2$ term in a quadratic sequence is always exactly half of the constant second difference: $\\text{Coefficient} = 6 \\div 2 = 3$. This tells us our $n$th term begins with $3n^2$.",
+    "We calculate the values of $3n^2$ for the first five terms ($n = 1, 2, 3, 4, 5$): $3(1)^2 = 3$, $3(2)^2 = 12$, $3(3)^2 = 27$, $3(4)^2 = 48$, and $3(5)^2 = 75$. This gives the sequence: $3,\\ 12,\\ 27,\\ 48,\\ 75$.",
+    "We subtract these $3n^2$ values from our original sequence to find the remaining linear sequence: $(6 - 3), (13 - 12), (26 - 27), (45 - 48), (70 - 75)$.",
+    "This yields the linear sequence: $3,\\ 1,\\ -1,\\ -3,\\ -5$.",
+    "We find the $n$th term of this simple linear sequence. The terms decrease by $-2$ each time, meaning the gradient is $-2n$. The zero-term (the value before $n=1$) is $3 - (-2) = 5$. This gives the linear expression: $-2n + 5$.",
+    "Finally, we combine our quadratic and linear parts to find the complete $n$th term: $3n^2 - 2n + 5$.",
+    "Final Answer: $$3n^2 - 2n + 5$$"
+  ],
+  "wrong_options": [
+    {
+      "ans": "$$6n^2 - 2n + 2$$",
+      "feedback": "You forgot to halve the second difference when calculating your $n^2$ coefficient, using 6 instead of 3."
     },
-    "payhip_link": "https://payhip.com/b/5HqEG",
-    "button_text": "Master IGCSE Sequences: Download the Pack"
+    {
+      "ans": "$$3n^2 + 5$$",
+      "feedback": "You calculated the quadratic term correctly but made an error when finding the $n$th term of the remaining linear sequence."
+    },
+    {
+      "ans": "$$3n^2 + 2n + 1$$",
+      "feedback": "You made a sign error when calculating the linear sequence, adding $2n$ instead of subtracting it."
+    }
+  ],
+  "bradley_insight": {
+    "type": "pro-tip",
+    "title": "The Head Teacher's Eye: Checking Your Sequence",
+    "content": "A very fast and reliable way to check your quadratic $n$th term in an exam is to substitute $n = 5$ into your final expression. For $3n^2 - 2n + 5$, this yields $3(25) - 2(5) + 5 = 75 - 10 + 5 = 70$. Since this matches the fifth term of the original sequence exactly, you can be confident your expression is correct."
   },
+  "payhip_link": "https://payhip.com/b/5HqEG",
+  "button_text": "Master IGCSE Sequences: Download the Pack"
+},
   {
     "id": "003240",
     "date": "28 August 2026",
@@ -1231,7 +1231,7 @@ const problemBank = [
     "bradley_insight": {
       "type": "caution",
       "title": "The Head Teacher's Eye: Trigonometric Domains",
-      "content": "Always find both solutions when solving trigonometric equations. Taking the inverse cosine on your calculator will only ever give you the 'principal value' ($60^\circ$). You must use the unit circle or the cosine wave symmetry ($360^\circ - \theta$) to find the second solution before finishing."
+      "content": "Always find both solutions when solving trigonometric equations. Taking the inverse cosine on your calculator will only ever give you the 'principal value' ($60^\\circ$). You must use the unit circle or the cosine wave symmetry ($360^\\circ - \\theta$) to find the second solution before finishing. If you are not familiar with the quadrant diagram for trigonometry, a quick sketch of $y=\\cos x$ will show you wheter the two solutions lie."
     },
     "payhip_link": "https://payhip.com/b/ea1Ti",
     "button_text": "Master IGCSE Trig Equations: Download the Pack"
