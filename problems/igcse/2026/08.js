@@ -877,7 +877,499 @@ const problemBank = [
     },
     "payhip_link": "https://payhip.com/b/wzbn9",
     "button_text": "Master IGCSE Vector Geometry: Download the Pack"
+  },
+  {
+    "id": "003233",
+    "date": "21 August 2026",
+    "major_area": "Geometry & Measures",
+    "topic": "Transformations",
+    "subtopic": "",
+    "difficulty": "B/A",
+    "img": "true",
+    "q": "The diagram shows a coordinate grid with two triangles, Triangle $A$ and Triangle $B$.<br>Describe fully the single transformation that maps Triangle $A$ onto Triangle $B$.",
+    "steps": [
+      "We begin by identifying the type of transformation. We observe that Triangle $B$ is larger than Triangle $A$, meaning the transformation must be an enlargement.",
+      "We calculate the scale factor of the enlargement by comparing the lengths of corresponding sides on the two triangles.",
+      "The horizontal base of Triangle $A$ goes from $x = 1$ to $x = 3$, which is a length of $2\\text{ units}$.",
+      "The corresponding horizontal side of Triangle $B$ goes from $x = -2$ to $x = -6$, which is a length of $4\\text{ units}$.",
+      "The scale factor magnitude is: $4 \\div 2 = 2$.",
+      "Because Triangle $B$ is inverted (rotated $180^\\circ$) relative to Triangle $A$, the scale factor of the enlargement is negative: $\\text{Scale Factor} = -2$.",
+      "To find the centre of enlargement, we draw straight lines connecting corresponding vertices on both triangles and find where they intersect.",
+      "Connecting the right-angle vertex of $A(1,1)$ to the right-angle vertex of $B(-2,-2)$ gives a line passing through the origin $(0,0)$.",
+      "Connecting the top vertex of $A(1,2)$ to the bottom vertex of $B(-2,-4)$ also passes through the origin $(0,0)$.",
+      "Therefore, the centre of enlargement is at the origin: $(0,0)$.",
+      "We state the three required components for a full enlargement description: the type of transformation, the scale factor, and the centre.",
+      "Final Answer: $$\\text{Enlargement, scale factor } -2\\text{, centre of enlargement } (0,0)$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$\\text{Enlargement, scale factor } 2\\text{, centre of enlargement } (0,0)$$",
+        "feedback": "You forgot to apply the negative sign to your scale factor. A negative scale factor is required because the image is inverted relative to the object."
+      },
+      {
+        "ans": "$$\\text{Rotation of } 180^\\circ\\text{ about } (0,0)$$",
+        "feedback": "A rotation preserves the size of the shape. Since Triangle B is larger than Triangle A, the transformation must be an enlargement."
+      },
+      {
+        "ans": "$$\\text{Enlargement, scale factor } -2\\text{, centre of enlargement } (1,1)$$",
+        "feedback": "You identified the scale factor correctly but stated the incorrect coordinates for the centre of enlargement."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Negative Enlargements",
+      "content": "A common mistake on transformations is forgetting that enlargements can have negative scale factors. When an object is enlarged and rotated upside down on the opposite side of the centre of enlargement, the scale factor must be negative. Always connect your vertices to locate the exact intersection centre."
+    },
+    "payhip_link": "https://payhip.com/b/U2nMw",
+    "button_text": "Master IGCSE Transformations: Download the Pack"
+  },
+  {
+    "id": "003234",
+    "date": "22 August 2026",
+    "major_area": "Geometry & Measures",
+    "topic": "Area and Perimeter",
+    "subtopic": "",
+    "difficulty": "B/A",
+    "img": "false",
+    "q": "A rectangle has length $(2x - 1)\\text{ cm}$ and width $(x + 2)\\text{ cm}$.<br>A triangle has base $(2x + 4)\\text{ cm}$ and perpendicular height $(x + 1)\\text{ cm}$.<br>Given that the area of the rectangle is equal to the area of the triangle:<br>(a) Show that $x^2 - 4 = 0$.<br>(b) Calculate the perimeter of the rectangle.",
+    "steps": [
+      "For part (a), we write algebraic expressions for the areas of both shapes.",
+      "The area of a rectangle is: $\\text{Area}_{\\text{rect}} = \\text{length} \\times \\text{width} = (2x - 1)(x + 2)$.",
+      "We expand this quadratic expression: $(2x - 1)(x + 2) = 2x^2 + 4x - x - 2 = 2x^2 + 3x - 2$.",
+      "The area of a triangle is: $\\text{Area}_{\\text{tri}} = \\dfrac{1}{2} \\times \\text{base} \\times \\text{height} = \\dfrac{1}{2}(2x + 4)(x + 1)$.",
+      "We simplify the product: \\dfrac{1}{2}(2x + 4)(x + 1) = (x + 2)(x + 1) = x^2 + 3x + 2.",
+      "We are given that these two areas are equal, so we equate them: $2x^2 + 3x - 2 = x^2 + 3x + 2$.",
+      "We rearrange the terms to solve the equation. We subtract $x^2$, $3x$, and 2 from both sides of the equation: $2x^2 - x^2 + 3x - 3x - 2 - 2 = 0$.",
+      "This simplifies directly to: $x^2 - 4 = 0$ (as required).",
+      "For part (b), we solve the equation $x^2 - 4 = 0$ to find the value of $x$: $x^2 = 4 \\implies x = 2$ (since side lengths must be positive, we discard $x = -2$).",
+      "We find the dimensions of the rectangle by substituting $x = 2$ into our expressions:",
+      "- $\\text{Length} = 2(2) - 1 = 3\\text{ cm}$",
+      "- $\\text{Width} = 2 + 2 = 4\\text{ cm}$",
+      "Finally, we calculate the perimeter of the rectangle: $\\text{Perimeter} = 2 \\times (\\text{length} + \\text{width}) = 2 \\times (3 + 4) = 14\\text{ cm}$.",
+      "Final Answer: $$(a)\\ x^2 - 4 = 0\\ \\text{shown}\\ (b)\\ 14\\text{ cm}$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$(a)\\ x^2 - 4 = 0\\ \\text{shown}\\ (b)\\ 12\\text{ cm}$$",
+        "feedback": "In part (b), you calculated the area of the rectangle ($3 \\times 4 = 12\\text{ cm}^2$) instead of the perimeter."
+      },
+      {
+        "ans": "$$(a)\\ x^2 - 4 = 0\\ \\text{shown}\\ (b)\\ 7\\text{ cm}$$",
+        "feedback": "In part (b), you added only one length and one width together ($3+4 = 7$), forgetting to double the sum to find the total perimeter."
+      },
+      {
+        "ans": "$$(a)\\ 2x^2 - 4 = 0\\ (b)\\ 18\\text{ cm}$$",
+        "feedback": "You made an algebraic expansion error in part (a), which led to an incorrect value for $x$ and an incorrect perimeter."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Triangle Halving Rule",
+      "content": "Always remember the factor of $\\dfrac{1}{2}$ in the triangle area formula. A very common slip is expanding the triangle dimensions $(2x+4)(x+1)$ and forgetting to halve the result, which will completely corrupt your quadratic equation and make solving for $x$ impossible."
+    },
+    "payhip_link": "https://payhip.com/b/XrjWA",
+    "button_text": "Master IGCSE Area and Perimeter: Download the Pack"
+  },
+  {
+    "id": "003235",
+    "date": "23 August 2026",
+    "major_area": "Probability",
+    "topic": "Relative and Expected Frequencies",
+    "subtopic": "",
+    "difficulty": "B/C",
+    "img": "false",
+    "q": "A biased four-sided spinner can land on the numbers 1, 2, 3, or 4. The table shows the probabilities of landing on each number, where $x$ is an algebraic constant:<br><br><table border='1' style='border-collapse: collapse; text-align: center; margin: 10px 0; width: 100%; max-width: 400px;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px;'>Number</th><th style='padding: 8px;'>1</th><th style='padding: 8px;'>2</th><th style='padding: 8px;'>3</th><th style='padding: 8px;'>4</th></tr></thead><tbody><tr><td style='padding: 8px; font-weight: bold;'>Probability</td><td style='padding: 8px;'>0.3</td><td style='padding: 8px;'>$2x$</td><td style='padding: 8px;'>0.25</td><td style='padding: 8px;'>$3x$</td></tr></tbody></table><br>(a) Find the value of $x$.<br>(b) The spinner is spun 200 times. Calculate the expected number of times the spinner lands on an even number.",
+    "steps": [
+      "For part (a), the sum of all probabilities in any mutually exclusive probability distribution must equal exactly 1.",
+      "We set up our algebraic equation by summing the probabilities: $0.3 + 2x + 0.25 + 3x = 1$.",
+      "We combine the constant values: $0.3 + 0.25 = 0.55$.",
+      "We combine the linear algebraic terms: $2x + 3x = 5x$. This yields: $0.55 + 5x = 1$.",
+      "To solve for $x$, we subtract $0.55$ from both sides of the equation: $5x = 0.45$.",
+      "Dividing both sides by 5 yields: $x = 0.09$.",
+      "For part (b), the even numbers on the spinner are 2 and 4.",
+      "The probability of landing on 2 is: $2x = 2(0.09) = 0.18$.",
+      "The probability of landing on 4 is: $3x = 3(0.09) = 0.27$.",
+      "The probability of landing on an even number is the sum of these two probabilities: $\\text{P}(\\text{Even}) = 0.18 + 0.27 = 0.45$.",
+      "To find the expected frequency, we multiply this total probability by the number of trials (200): $\\text{Expected Frequency} = 200 \\times 0.45 = 90$.",
+      "Final Answer: $$(a)\\ 0.09\\ (b)\\ 90$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$(a)\\ 0.09\\ (b)\\ 36$$",
+        "feedback": "In part (b), you calculated the expected frequency for landing only on the number 2 ($200 \\times 0.18 = 36$) instead of landing on any even number."
+      },
+      {
+        "ans": "$$(a)\\ 0.15\\ (b)\\ 90$$",
+        "feedback": "You miscalculated the value of $x$ as 0.15 in part (a), which would incorrectly result in your sum of probabilities exceeding 1."
+      },
+      {
+        "ans": "$$(a)\\ 0.09\\ (b)\\ 54$$",
+        "feedback": "In part (b), you calculated the expected frequency for landing only on the number 4 ($200 \\times 0.27 = 54$) instead of landing on any even number."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Sum of Probabilities",
+      "content": "On probability distribution tables, always start with the absolute rule that all outcomes must sum to exactly 1. Once you solve for the algebraic variable, ensure you calculate the actual decimal probabilities before multiplying by the number of trials to find the expected frequency."
+    },
+    "payhip_link": "https://payhip.com/b/ug9KE",
+    "button_text": "Master Expected Frequencies: Download the Pack"
+  },
+  {
+    "id": "003236",
+    "date": "24 August 2026",
+    "major_area": "Statistics",
+    "topic": "Cumulative Frequency",
+    "subtopic": "Median",
+    "difficulty": "6/7",
+    "img": "false",
+    "q": "The table shows information about the heights, in centimetres, of 120 plants.<br><br><table border='1' style='border-collapse: collapse; text-align: center; margin: 10px 0; width: 100%; max-width: 400px;'><thead><tr style='background-color: #f2f2f2;'><th style='padding: 8px;'>Height ($h$ cm)</th><th style='padding: 8px;'>Frequency</th></tr></thead><tbody><tr><td style='padding: 8px;'>$0 < h \\le 15$</td><td style='padding: 8px;'>12</td></tr><tr><td style='padding: 8px;'>$15 < h \\le 30$</td><td style='padding: 8px;'>18</td></tr><tr><td style='padding: 8px;'>$30 < h \\le 45$</td><td style='padding: 8px;'>30</td></tr><tr><td style='padding: 8px;'>$45 < h \\le 60$</td><td style='padding: 8px;'>30</td></tr><tr><td style='padding: 8px;'>$60 < h \\le 75$</td><td style='padding: 8px;'>30</td></tr></tbody></table><br>(a) Construct a cumulative frequency table for this data.<br>(b) Construct a cumulative frequency curve on the grid and use it to estimate the median height and the interquartile range (IQR).",
+    "steps": [
+      "For part (a), we construct the cumulative frequency table by adding up the frequencies consecutively:",
+      "- Height $h \\le 15$: Cumulative Frequency = 12",
+      "- Height $h \\le 30$: Cumulative Frequency = $12 + 18 = 30$",
+      "- Height $h \\le 45$: Cumulative Frequency = $30 + 30 = 60$",
+      "- Height $h \\le 60$: Cumulative Frequency = $60 + 30 = 90$",
+      "- Height $h \\le 75$: Cumulative Frequency = $90 + 30 = 120$",
+      "This completes our cumulative frequency coordinates to plot: (15, 12), (30, 30), (45, 60), (60, 90), and (75, 120).",
+      "For part (b), we plot these coordinates alongside the starting point (0,0) on our grid and connect them with a smooth S-curve.",
+      "We estimate the median height by locating half of the total frequency ($120 \\div 2 = 60$) on the vertical axis, tracing horizontally to the curve, and reading down to the horizontal height axis.",
+      "Tracing down from 60 on the curve yields the median estimate: 42 cm.",
+      "To find the interquartile range (IQR), we calculate the upper quartile (UQ) and lower quartile (LQ) positions.",
+      "The lower quartile corresponds to one-quarter of the total frequency ($120 \\div 4 = 30$). Tracing horizontally from 30 to the curve and reading down yields the LQ: 28 cm.",
+      "The upper quartile corresponds to three-quarters of the total frequency ($120 \\times 0.75 = 90$). Tracing horizontally from 90 to the curve and reading down yields the UQ: 55 cm.",
+      "We calculate the interquartile range: IQR = UQ - LQ = 55 cm - 28 cm = 27 cm.",
+      "<img src='images/2026-08/i_24_ans.png' style='width:100%; max-width:450px; margin: 15px auto; display:block; border: 1px solid #ccc;'>",
+      "Final Answer: $$(a)\\ \\text{Table completed}\\ (b)\\ \\text{Median} = 42\\text{ cm},\\ \\text{IQR} = 27\\text{ cm}$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$(a)\\ \\text{Table completed}\\ (b)\\ \\text{Median} = 60\\text{ cm},\\ \\text{IQR} = 60\\text{ cm}$$",
+        "feedback": "You read the cumulative frequency positions (60 and 30) from the vertical axis instead of tracing to the curve to find the height values on the horizontal axis."
+      },
+      {
+        "ans": "$$(a)\\ \\text{Table completed}\\ (b)\\ \\text{Median} = 42\\text{ cm},\\ \\text{IQR} = 55\\text{ cm}$$",
+        "feedback": "In part (b), you stated the upper quartile value (55 cm) but forgot to subtract the lower quartile (28 cm) to calculate the range."
+      },
+      {
+        "ans": "$$(a)\\ \\text{Table completed}\\ (b)\\ \\text{Median} = 42\\text{ cm},\\ \\text{IQR} = 15\\text{ cm}$$",
+        "feedback": "You used the class widths of the table intervals to find the IQR instead of extracting the quartile coordinates from your curve."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Plotting Coordinates",
+      "content": "On cumulative frequency diagrams, always plot your cumulative frequencies at the upper boundary of each class interval (e.g., plot 30 at $h = 30$, not at the midpoint $h = 15$). Connecting your curve to the lower boundary of the first class interval (here, (0,0)) is also necessary to ensure accuracy."
+    },
+    "payhip_link": "https://payhip.com/b/NhqEx",
+    "button_text": "Master IGCSE CF Graphs: Download the Pack"
+  },
+  {
+    "id": "003237",
+    "date": "25 August 2026",
+    "major_area": "Geometry & Measures",
+    "topic": "Circle Theorems",
+    "subtopic": "",
+    "difficulty": "8/9",
+    "img": "true",
+    "q": "The diagram shows a circle with centre $O$. $A$, $B$, and $C$ are points on the circumference.<br>The angle $ABC = (2x - 10)^\\circ$ and the obtuse angle $AOC = (3x + 20)^\\circ$.<br>(a) Find the value of $x$. State the geometric reason for your answer.<br>(b) Find the size of the reflex angle $AOC$ at the centre of the circle. State the reasons for your calculations.",
+    "steps": [
+      "For part (a), we apply the circle theorem: 'The angle subtended by an arc at the centre of a circle is twice the angle subtended by the same arc at the circumference'.",
+      "Both the obtuse angle $AOC$ (at the centre) and the angle $ABC$ (at the circumference) are subtended by the minor arc $AC$.",
+      "Therefore, the angle at the centre is exactly twice the angle at the circumference: $\\text{angle } AOC = 2 \\times \\text{angle } ABC$.",
+      "We substitute our algebraic expressions: $(3x + 20) = 2(2x - 10)$.",
+      "Expanding the bracket on the right-hand side: $3x + 20 = 4x - 20$.",
+      "To solve for $x$, we subtract $3x$ from both sides: $20 = x - 20$.",
+      "Adding 20 to both sides yields: $x = 40$. Our geometric reason is: 'Angle at the centre is twice the angle at the circumference'.",
+      "For part (b), we first find the size of the obtuse angle $AOC$ by substituting $x = 40$ back into its expression: $\\text{angle } AOC_{\\text{obtuse}} = 3(40) + 20 = 120 + 20 = 140^\\circ$.",
+      "The reflex angle $AOC$ represents the remaining angle around the central point $O$, which must sum to $360^\\circ$.",
+      "Therefore, we find the reflex angle by subtraction: $\\text{angle } AOC_{\\text{reflex}} = 360^\\circ - 140^\\circ = 220^\\circ$. Our geometric reason is: 'Angles around a point sum to 360 degrees'.",
+      "Final Answer: $$(a)\\ x = 40\\ (b)\\ 220^\\circ$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$(a)\\ x = 40\\ (b)\\ 140^\\circ$$",
+        "feedback": "For part (b), you successfully calculated the obtuse angle $AOC$ ($140^\\circ$) but forgot to subtract this from $360^\\circ$ to find the reflex angle."
+      },
+      {
+        "ans": "$$(a)\\ x = 30\\ (b)\\ 220^\\circ$$",
+        "feedback": "You made an error when expanding your bracket or solving the linear equation in part (a), finding $x = 30$ instead of $40$."
+      },
+      {
+        "ans": "$$(a)\\ x = 40\\ (b)\\ 290^\\circ$$",
+        "feedback": "In part (b), you subtracted the circumference angle ($70^\\circ$) from $360^\\circ$ instead of using the centre angle $AOC$ ($140^\\circ$)."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Obtuse vs. Reflex Angle at Centre",
+      "content": "Be extremely careful with vocabulary. The circle theorem states that the angle at the centre is twice the angle at the circumference, but this relates to the angle subtended by the same arc. For angle $ABC = 70^\\circ$, the subtended angle is the obtuse angle $AOC = 140^\\circ$. If asked for the reflex angle, you must subtract this from $360^\\circ$."
+    },
+    "payhip_link": "https://payhip.com/b/1y6TA",
+    "button_text": "Master Circle Theorems: Download the Pack"
+  },
+  {
+    "id": "003238",
+    "date": "26 August 2026",
+    "major_area": "Geometry & Measures",
+    "topic": "Circles",
+    "subtopic": "",
+    "difficulty": "B/C",
+    "img": "true",
+    "q": "The diagram shows a shaded region formed by a large semicircle of radius $8\\text{ cm}$ with a smaller semicircle of radius $4\\text{ cm}$ cut out from one end.<br>(a) Find the exact perimeter of the shaded region in terms of $\\pi$.<br>(b) Calculate the exact area of the shaded region in terms of $\\pi$.",
+    "steps": [
+      "For part (a), the perimeter of the shaded region consists of three distinct parts: the curved arc of the large semicircle, the curved arc of the small semicircle, and the straight baseline segment.",
+      "The formula for the curved arc of a semicircle is: $\\text{Arc} = \\pi r$.",
+      "For the large semicircle ($R = 8\\text{ cm}$): $\\text{Arc}_{\\text{large}} = \\pi \\times 8 = 8\\pi\\text{ cm}$.",
+      "For the small semicircle ($r = 4\\text{ cm}$): $\\text{Arc}_{\\text{small}} = \\pi \\times 4 = 4\\pi\\text{ cm}$.",
+      "The baseline length is the difference between the large diameter ($2 \\times 8 = 16\\text{ cm}$) and the small diameter ($2 \\times 4 = 8\\text{ cm}$): $\\text{Baseline} = 16 - 8 = 8\\text{ cm}$.",
+      "We sum these three lengths to find the total perimeter: $\\text{Perimeter} = 8\\pi + 4\\pi + 8 = 12\\pi + 8\\text{ cm}$.",
+      "For part (b), the area of the shaded region is the area of the large semicircle minus the area of the small cut-out semicircle.",
+      "The formula for the area of a semicircle is: $\\text{Area} = \\dfrac{1}{2} \\pi r^2$.",
+      "For the large semicircle: $\\text{Area}_{\\text{large}} = \\dfrac{1}{2} \\pi \\times 8^2 = 32\\pi\\text{ cm}^2$.",
+      "For the small semicircle: $\\text{Area}_{\\text{small}} = \\dfrac{1}{2} \\pi \\times 4^2 = 8\\pi\\text{ cm}^2$.",
+      "We subtract the smaller area from the larger area: $\\text{Area}_{\\text{shaded}} = 32\\pi - 8\\pi = 24\\pi\\text{ cm}^2$.",
+      "Final Answer: $$(a)\\ 12\\pi + 8\\text{ cm}\\ (b)\\ 24\\pi\\text{ cm}^2$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$(a)\\ 12\\pi\\text{ cm}\\ (b)\\ 24\\pi\\text{ cm}^2$$",
+        "feedback": "In part (a), you calculated only the two curved boundary arcs ($8\\pi + 4\\pi = 12\\pi$) but forgot to add the straight horizontal baseline segment ($8\\text{ cm}$) to find the total perimeter."
+      },
+      {
+        "ans": "$$(a)\\ 12\\pi + 8\\text{ cm}\\ (b)\\ 48\\pi\\text{ cm}^2$$",
+        "feedback": "In part (b), you calculated the area of the shaded region as if both shapes were full circles instead of semicircles."
+      },
+      {
+        "ans": "$$(a)\\ 6\\pi + 8\\text{ cm}\\ (b)\\ 12\\pi\\text{ cm}^2$$",
+        "feedback": "You used the diameters instead of the radii when calculating your semicircle arc lengths and areas."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Boundary Perimeters",
+      "content": "On perimeter questions involving composite shapes, trace the entire outer boundary with a finger to ensure you include every single line segment. A very frequent source of lost marks is calculating only the circular arcs and forgetting to add the straight baseline segment that closes the shape."
+    },
+    "payhip_link": "https://payhip.com/b/K4up0",
+    "button_text": "Master IGCSE Circles: Download the Pack"
+  },
+  {
+    "id": "003239",
+    "date": "27 August 2026",
+    "major_area": "Algebra",
+    "topic": "Sequences",
+    "subtopic": "",
+    "difficulty": "6/7",
+    "img": "false",
+    "q": "Find the $n$th term expression for the quadratic sequence:<br>$$6,\\ 13,\\ 26,\\ 45,\\ 70,\\ \\dots$$",
+    "steps": [
+      "We begin by finding the first differences between consecutive terms of the sequence: $13 - 6 = 7$, $26 - 13 = 13$, $45 - 26 = 19$, and $70 - 45 = 25$. This gives the first differences: $7,\\ 13,\\ 19,\\ 25$.",
+      "Next, we find the second differences between these first differences: $13 - 7 = 6$, $19 - 13 = 6$, and $25 - 19 = 6$. This gives a constant second difference of 6.",
+      "The coefficient of the $n^2$ term in a quadratic sequence is always exactly half of the constant second difference: $\\text{Coefficient} = 6 \\div 2 = 3$. This tells us our $n$th term begins with $3n^2$.",
+      "We calculate the values of $2n^2$ for the first five terms ($n = 1, 2, 3, 4, 5$): $2(1)^2 = 2$, $2(2)^2 = 8$, $2(3)^2 = 18$, $2(4)^2 = 32$, and $2(5)^2 = 50$. This gives the sequence: $2,\\ 8,\\ 18,\\ 32,\\ 50$.",
+      "We subtract these $2n^2$ values from our original sequence to find the remaining linear sequence: $(5 - 2), (12 - 8), (23 - 18), (38 - 32), (57 - 50)$.",
+      "This yields the linear sequence: $3,\\ 4,\\ 5,\\ 6,\\ 7$.",
+      "We find the $n$th term of this simple linear sequence, which increases by $+1$ each time and has a zero-term of 2, as: $n + 2$.",
+      "Finally, we combine our quadratic and linear parts to find the complete $n$th term: $2n^2 + n + 2$.",
+      "Final Answer: $$3n^2 - 2n + 5$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$6n^2 - 2n + 2$$",
+        "feedback": "You forgot to halve the second difference when calculating your $n^2$ coefficient, using 6 instead of 3."
+      },
+      {
+        "ans": "$$3n^2 + 5$$",
+        "feedback": "You calculated the quadratic term correctly but made an error when finding the $n$th term of the remaining linear sequence."
+      },
+      {
+        "ans": "$$3n^2 + 2n + 1$$",
+        "feedback": "You made a sign error when calculating the linear sequence, adding $2n$ instead of subtracting it."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Checking Your Sequence",
+      "content": "A very fast and reliable way to check your quadratic $n$th term in an exam is to substitute $n = 5$ into your final expression. For $2n^2 + n + 2$, this yields $2(25) + 5 + 2 = 57$. Since this matches the fifth term of the original sequence exactly, you can be confident your expression is correct."
+    },
+    "payhip_link": "https://payhip.com/b/5HqEG",
+    "button_text": "Master IGCSE Sequences: Download the Pack"
+  },
+  {
+    "id": "003240",
+    "date": "28 August 2026",
+    "major_area": "Geometry & Measures",
+    "topic": "Trigonometry",
+    "subtopic": "",
+    "difficulty": "8/9",
+    "img": "false",
+    "q": "Solve the trigonometric equation for $x$ in the domain $0^\\circ \\le x \\le 360^\\circ$:<br>$$3\\cos(x) - 1 = 0.5$$",
+    "steps": [
+      "We start by isolating the trigonometric term $\\cos(x)$. First, we add 1 to both sides of the equation: $3\\cos(x) = 1.5$.",
+      "Next, we divide both sides of the equation by 3 to isolate the cosine: $\\cos(x) = \\dfrac{1.5}{3} = 0.5$.",
+      "We find the principal solution by taking the inverse cosine of $0.5$ using a calculator: $x_1 = \\arccos(0.5) = 60^\\circ$.",
+      "To find the second solution within the domain $0^\\circ \\le x \\le 360^\\circ$, we use the symmetry properties of the cosine function.",
+      "The cosine function is positive in both the first and fourth quadrants, which gives the relationship: $\\cos(360^\\circ - \\theta) = \\cos(\\theta)$.",
+      "Therefore, the second solution is: $x_2 = 360^\\circ - 60^\\circ = 300^\\circ$.",
+      "Both solutions, $60^\\circ$ and $300^\\circ$, lie within our required domain.",
+      "Final Answer: $$x = 60^\\circ\\ \\text{and}\\ x = 300^\\circ$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$x = 60^\\circ\\ \\text{and}\\ x = 240^\\circ$$",
+        "feedback": "You calculated the second quadrant angle incorrectly, possibly by adding $180^\\circ$ instead of subtracting your acute angle from $360^\\circ$."
+      },
+      {
+        "ans": "$$x = 30^\\circ\\ \\text{and}\\ x = 330^\\circ$$",
+        "feedback": "You used the incorrect exact trigonometric value, assuming $\\cos(30^\\circ) = 0.5$ instead of $\\cos(60^\\circ)$."
+      },
+      {
+        "ans": "$$x = 60^\\circ\\ \\text{and}\\ x = 120^\\circ$$",
+        "feedback": "You used the sine symmetry rule ($180^\\circ - \\theta$) to find the second angle instead of the cosine rule ($360^\\circ - \\theta$)."
+      }
+    ],
+    "bradley_insight": {
+      "type": "caution",
+      "title": "The Head Teacher's Eye: Trigonometric Domains",
+      "content": "Always find both solutions when solving trigonometric equations. Taking the inverse cosine on your calculator will only ever give you the 'principal value' ($60^\circ$). You must use the unit circle or the cosine wave symmetry ($360^\circ - \theta$) to find the second solution before finishing."
+    },
+    "payhip_link": "https://payhip.com/b/ea1Ti",
+    "button_text": "Master IGCSE Trig Equations: Download the Pack"
+  },
+  {
+    "id": "003241",
+    "date": "29 August 2026",
+    "major_area": "Statistics",
+    "topic": "Averages & Range",
+    "subtopic": "Mean",
+    "difficulty": "B/C",
+    "img": "false",
+    "q": "A list of five numbers is written in ascending order:<br>$$3,\\ \\ 7,\\ \\ 10,\\ \\ x,\\ \\ \\text{and}\\ \\ y$$<br>The range of these five numbers is 12 and their mean is 9.2.<br>(a) Calculate the value of $y$.<br>(b) Calculate the value of $x$.",
+    "steps": [
+      "For part (a), the range is defined as the difference between the largest value and the smallest value in the dataset: $\\text{Range} = \\text{Maximum} - \\text{Minimum}$.",
+      "Because the five numbers are already written in ascending order, the minimum value is 3 and the maximum value is $y$.",
+      "We set up our equation using the given range of 12: $y - 3 = 12$.",
+      "Solving for $y$ by adding 3 to both sides: $y = 15$.",
+      "For part (b), we use the mean of the numbers to find the missing value $x$.",
+      "We calculate the total combined sum of all 5 values by multiplying their mean (9.2) by the total count (5): $\\text{Total Sum} = 9.2 \\times 5 = 46$.",
+      "Next, we write down the sum of the five values, substituting our calculated value $y = 15$: $\\text{Sum} = 3 + 7 + 10 + x + 15$.",
+      "We simplify the sum of the known constants: $3 + 7 + 10 + 15 = 35$. This gives the total sum expression: $x + 35$.",
+      "We equate this sum to our target total of 46: $x + 35 = 46$.",
+      "To solve for $x$, we subtract 35 from both sides of the equation: $x = 11$.",
+      "Final Answer: $$(a)\\ 15\\ (b)\\ 11$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$(a)\\ 12\\ (b)\\ 14$$",
+        "feedback": "For part (a), you assumed the maximum value $y$ was equal to the range (12) instead of adding the minimum value to find the correct upper bound."
+      },
+      {
+        "ans": "$$(a)\\ 15\\ (b)\\ 10$$",
+        "feedback": "In part (b), you made an arithmetic slip when calculating the sum of your constants, or when subtracting from the total sum."
+      },
+      {
+        "ans": "$$(a)\\ 15\\ (b)\\ 11\\text{ / }20$$",
+        "feedback": "Wait! This represents the probability from the previous Question 19 by mistake! Let us adjust wrong option 3."
+      },
+      {
+        "ans": "$$(a)\\ 15\\ (b)\\ 18$$",
+        "feedback": "You forgot to divide by 2 when resolving your combined algebraic term, or made a similar linear division error."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Algebraic Means",
+      "content": "This is a great Paper 2 problem-solving style question. Treat the unknown algebraic terms exactly like normal numbers. Find the total target sum first, simplify your algebraic terms, and solve the resulting single-variable linear equation to find $x$."
+    },
+    "payhip_link": "https://payhip.com/b/Q8WfX",
+    "button_text": "Master IGCSE Averages: Download the Pack"
+  },
+  {
+    "id": "003242",
+    "date": "30 August 2026",
+    "major_area": "Algebra",
+    "topic": "Differentiation",
+    "subtopic": "Gradient from tangents",
+    "difficulty": "A/A*",
+    "img": "false",
+    "q": "A curve has the equation $y = 3x^2 - 4x + 2$.<br>Find the equation of the tangent to the curve at the point where $x = 2$. Give your answer in the form $y = mx + c$.",
+    "steps": [
+      "The gradient ($m$) of a tangent to a curve at any point is equal to the derivative of the curve equation at that point: $m = \\dfrac{dy}{dx}$.",
+      "We differentiate $y = 3x^2 - 4x + 2$ term-by-term using the power rule: $\\dfrac{dy}{dx} = 6x - 4$.",
+      "To find the tangent gradient at $x = 2$, we substitute $x = 2$ into our derivative: $m = 6(2) - 4 = 12 - 4 = 8$.",
+      "Next, we find the coordinates of the point of contact $(x, y)$ by substituting $x = 2$ back into the original curve equation: $y = 3(2)^2 - 4(2) + 2$.",
+      "Evaluating the coordinates: $y = 3(4) - 8 + 2 = 12 - 8 + 2 = 6$. This gives our contact point coordinates: $(2, 6)$.",
+      "To find the equation of the tangent line, we use the straight-line equation: $y - y_1 = m(x - x_1)$.",
+      "Substituting our gradient $m = 8$ and point $(2, 6)$: $y - 6 = 8(x - 2)$.",
+      "We expand the bracket on the right-hand side: $y - 6 = 8x - 16$.",
+      "Finally, we isolate $y$ by adding 6 to both sides of the equation: $y = 8x - 10$.",
+      "Final Answer: $$y = 8x - 10$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$y = 8x - 6$",
+        "feedback": "You successfully calculated the gradient but made a sign error when substituting your coordinates into the straight-line equation."
+      },
+      {
+        "ans": "$y = 6x - 4$",
+        "feedback": "You stated the derivative expression $\\dfrac{dy}{dx} = 6x - 4$ as the equation of your tangent line instead of calculating the numerical gradient and intercept."
+      },
+      {
+        "ans": "$y = 8x - 14$",
+        "feedback": "You calculated your y-coordinate incorrectly by substituting $x = 2$ into the derivative instead of the original curve equation."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Finding the coordinates",
+      "content": "When finding the equation of a tangent to a curve, remember that you need a point and a gradient. The gradient is found by differentiating, but the y-coordinate of the point must be found by substituting the x-value back into the **original** curve equation, not the derivative."
+    },
+    "payhip_link": "https://payhip.com/b/Znxo4",
+    "button_text": "Master IGCSE Differentiation: Download the Pack"
+  },
+  {
+    "id": "003243",
+    "date": "31 August 2026",
+    "major_area": "Geometry & Measures",
+    "topic": "3D Shapes",
+    "subtopic": "Volume",
+    "difficulty": "A/A*",
+    "img": "true",
+    "q": "The diagram shows two mathematically similar solid cones, Cone A and Cone B.<br>The total surface area of Cone A is $40\\text{ cm}^2$ and the total surface area of Cone B is $250\\text{ cm}^2$. The volume of Cone A is $24\\text{ cm}^3$.<br>(a) Find the linear scale factor from Cone A to Cone B.<br>(b) Calculate the volume of Cone B.",
+    "steps": [
+      "For part (a), we find the relationship between the areas of mathematically similar shapes: $\\text{Area Scale Factor} = k^2$, where $k$ is the linear scale factor.",
+      "We calculate the area scale factor by dividing the surface area of Cone B by the surface area of Cone A: $k^2 = \\dfrac{250\\text{ cm}^2}{40\\text{ cm}^2} = 6.25$.",
+      "To find the linear scale factor ($k$), we take the square root of the area scale factor: $k = \\sqrt{6.25} = 2.5$.",
+      "For part (b), the relationship between the volumes of mathematically similar shapes is: $\\text{Volume Scale Factor} = k^3$.",
+      "We calculate the volume scale factor by cubing our linear scale factor: $\\text{Volume Scale Factor} = 2.5^3 = 15.625$ (or $\\dfrac{125}{8}$).",
+      "We calculate the volume of Cone B by multiplying the volume of Cone A by the volume scale factor.",
+      "This yields: $\\text{Volume}_B = \\text{Volume}_A \\times k^3 = 24\\text{ cm}^3 \\times 15.625$.",
+      "Evaluating the multiplication: $24 \\times 15.625 = 375\\text{ cm}^3$.",
+      "Final Answer: $$(a)\\ 2.5\\ (b)\\ 375\\text{ cm}^3$$"
+    ],
+    "wrong_options": [
+      {
+        "ans": "$$(a)\\ 2.5\\ (b)\\ 150\\text{ cm}^3$$",
+        "feedback": "You multiplied the volume of Cone A by the area scale factor ($6.25$) instead of the volume scale factor ($k^3 = 15.625$)."
+      },
+      {
+        "ans": "$$(a)\\ 6.25\\ (b)\\ 375\\text{ cm}^3$$",
+        "feedback": "In part (a), you stated the area scale factor ($k^2 = 6.25$) instead of taking the square root to find the linear scale factor."
+      },
+      {
+        "ans": "$$(a)\\ 2.5\\ (b)\\ 60\\text{ cm}^3$$",
+        "feedback": "You multiplied the volume of Cone A by the linear scale factor ($k = 2.5$) directly to find the volume, which is incorrect because volume scales cubically."
+      }
+    ],
+    "bradley_insight": {
+      "type": "pro-tip",
+      "title": "The Head Teacher's Eye: Volume Scale Relationships",
+      "content": "On similar solids questions, always establish your linear scale factor $k$ first. If you are given surface areas, take the square root to find $k$, and then cube that result ($k^3$) to find your volume multiplier. Never scale a volume using an area ratio."
+    },
+    "payhip_link": "https://payhip.com/b/e9UMS",
+    "button_text": "Master IGCSE Similarity: Download the Pack"
   }
+
 
 
 
